@@ -21,7 +21,7 @@ if [ ! -d dist/_site/ ]; then
     exit 1
 fi
 
-docker build  --build-arg VCS_REF=`git rev-parse --short HEAD` \ 
+docker build --build-arg VCS_REF=`git rev-parse --short HEAD` \
     --no-cache=true \
     --force-rm=true \
     -t chatopera/docs:latest .

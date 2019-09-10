@@ -7,17 +7,23 @@
         }
       ],
       "dest": "api",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableGitFeatures": true,
+      "disableDefaultFilter": true
     }
   ],
   "build": {
     "content": [
       {
-        "files": ["api/**.yml", "api/index.md"]
+        "files": [
+          "products/chatbot-platform/**.yml",
+          "products/chatbot-platform/**.md"
+        ]
       },
       {
-        "files": ["articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md"]
+        "files": ["products/cskefu/**.yml", "products/cskefu/**.md"]
+      },
+      {
+        "files": ["toc.yml", "*.md"]
       }
     ],
     "resource": [
@@ -27,13 +33,13 @@
     ],
     "overwrite": [
       {
-        "files": ["apidoc/**.md"],
+        "files": [],
         "exclude": ["obj/**", "_site/**"]
       }
     ],
     "dest": "_site",
     "globalMetadataFiles": ["global.json"],
-    "fileMetadataFiles": [],
+    "fileMetadataFiles": ["file1.json"],
     "template": ["default", "material/material"],
     "postProcessors": [],
     "markdownEngineName": "markdig",

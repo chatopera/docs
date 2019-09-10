@@ -71,3 +71,4 @@ _deps
 **/CMakeScripts
 **/compile_commands.json
 dist/_site/
+docfx_project/obj/

@@ -35,3 +35,17 @@ open https://0.0.0.0:8027
 ## 项目基于
 
 https://github.com/chatopera/docfx-get-started
+
+## 发布
+
+构建文档中心镜像
+
+```
+./admin/docker/image.sh
+```
+
+运行镜像
+
+```
+docker run -it --rm -p 8000:80 chatopera/docs:latest
+```
