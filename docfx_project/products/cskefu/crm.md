@@ -36,3 +36,14 @@ _左侧菜单_ -> _全部客户_ -> _客户列表_ -> _选中一个客户_ -> _�
 ## 删除客
 
 _左侧菜单_ -> _全部客户_ -> _客户列表_ -> _选中一个客户_ -> _点击“删除”按钮_
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

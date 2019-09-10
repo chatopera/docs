@@ -21,3 +21,14 @@
 ## 修改头像
 
 登录后，在右上角看到头像，点击头像，在菜单中点击“个人中心”，来到“个人中心”页面后，点击屏幕中间的“头像”，弹出上传头像表单。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

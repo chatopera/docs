@@ -9,3 +9,14 @@
 ## 可靠性保证
 
 Chatopera 云服务是企业级的服务，依托于 Chatopera 的 PaaS 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

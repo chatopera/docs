@@ -157,3 +157,14 @@ YateClient，linephone，eyebeam)。
 (4) 呼叫中心坐席电话弹屏自动弹出，并且当前的客户信息已经自动填写在里面；
 
 (5) 挂断，更新数据，一键保存数据；
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

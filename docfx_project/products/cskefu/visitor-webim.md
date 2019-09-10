@@ -46,3 +46,14 @@
 </table>
 
 【提示】春松客服提供一个测试网页客户端的例子，可以使用 _http://{{春松春松客服IP:[PORT]}}/testclient.html_ 进行访问。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

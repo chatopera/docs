@@ -201,3 +201,14 @@ Secret 对应"密钥"
 <caption align="bottom">退出小助手</caption>
 <tr><td><img width="300" src="../../images/products/assistant/9.png" alt="退出小助手"/></td></tr>
 </table>
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

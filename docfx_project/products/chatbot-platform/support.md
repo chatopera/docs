@@ -7,3 +7,14 @@
 - 获取技术支持的邮箱是 <a href="mailto:info@chatopera.com?Subject=【Chatopera云服务】" target="_top">info@chatopera.com</a>
 
 - Chatopera 云服务 QQ 交流群：809987971
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

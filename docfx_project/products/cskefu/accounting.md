@@ -208,3 +208,14 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _修改角色_
         <td><img width="800" src="../../images/products/cosin/Picture21.png" alt="" /></td>
     </tr>
 </table>
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

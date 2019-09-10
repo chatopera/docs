@@ -37,3 +37,14 @@
 
 系统设置是不被隔离的资源。
 如果李四和张三都被赋予了"系统管理"的权限，二者看到的系统管理面板是一致的。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -60,3 +60,14 @@
 </table>
 
 [_下载视频合集_](https://pan.baidu.com/s/1YH7d7nMm5wZQp7P8kID3KA)
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -19,3 +19,14 @@ https://github.com/chatopera/cosin
         <td><img width="800" src="../../images/products/chatopera_love_os.png" alt="Chatopera拥抱开源" /></td>
     </tr>
 </table>
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

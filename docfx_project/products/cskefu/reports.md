@@ -29,3 +29,14 @@ _左侧菜单_ -> _外呼系统_ -> _通话记录_
         <td><img width="800" src="../../images/products/cosin/Picture73.png" alt="" /></td>
     </tr>
 </table>
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -38,7 +38,7 @@
 
 <table class="image">
 <caption align="bottom">多轮对话设计器打开后页面</caption>
-<tr><td><img width="800" src="images/products/cde/mac-homepage.png" alt="多轮对话设计器打开后页面"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/mac-homepage.png" alt="多轮对话设计器打开后页面"/></td></tr>
 </table>
 
 ### 可能遇到的问题
@@ -47,7 +47,7 @@
 
 <table class="image">
 <caption align="bottom">MacOS权限问题</caption>
-<tr><td><img width="800" src="images/products/cde/mac-install-0.png" alt="macos权限问题"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/mac-install-0.png" alt="macos权限问题"/></td></tr>
 </table>
 
 **解决方案**
@@ -56,14 +56,14 @@
 
 <table class="image">
 <caption align="bottom">应用中心</caption>
-<tr><td><img width="800" src="images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
 </table>
 
 选择“多轮对话设计器”并且右键：
 
 <table class="image">
 <caption align="bottom">右键打开</caption>
-<tr><td><img width="800" src="images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
 </table>
 
 点击“打开”(“Open”)。
@@ -76,7 +76,7 @@
 
 <table class="image">
 <caption align="bottom">应用主面板</caption>
-<tr><td><img width="800" src="images/products/cde/cde-1.png" alt="应用主面板"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-1.png" alt="应用主面板"/></td></tr>
 </table>
 
 ### 导入示例程序
@@ -87,21 +87,21 @@
 
 <table class="image">
 <caption align="bottom">示例程序下载地址</caption>
-<tr><td><img width="800" src="images/products/cde/cde-2.png" alt="示例程序下载地址"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-2.png" alt="示例程序下载地址"/></td></tr>
 </table>
 
 在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*小叮当-1.0.0-conversations.c66*如图：
 
 <table class="image">
 <caption align="bottom">导入对话框</caption>
-<tr><td><img width="800" src="images/products/cde/cde-3.png" alt="导入对话框"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-3.png" alt="导入对话框"/></td></tr>
 </table>
 
 导入成功，可以看到在聊天机器人界面有一条数据显示，“名字 小叮当”等；点击小叮当的“管理”按钮，可以看到它的多轮对话列表，包括：chatopera，profile，weather。如下图：
 
 <table class="image">
 <caption align="bottom">多轮对话列表</caption>
-<tr><td><img width="800" src="images/products/cde/cde-5.png" alt="多轮对话列表"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-5.png" alt="多轮对话列表"/></td></tr>
 </table>
 
 | 对话      | 功能                      |
@@ -128,21 +128,21 @@
 
 <table class="image">
 <caption align="bottom">多轮对话编辑窗口</caption>
-<tr><td><img width="800" src="images/products/cde/cde-6.png" alt="多轮对话编辑窗口"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-6.png" alt="多轮对话编辑窗口"/></td></tr>
 </table>
 
 点击“发送”按钮，可以看到对话区域有了问答的信息流，并且“逻辑”区域也有了对话状态，对话路径显示“绿色”高亮。
 
 <table class="image">
 <caption align="bottom">测试对话</caption>
-<tr><td><img width="800" src="images/products/cde/cde-7.png" alt="测试对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-7.png" alt="测试对话"/></td></tr>
 </table>
 
 在此界面可以进行多轮对话测试，如下截图：
 
 <table class="image">
 <caption align="bottom">多轮对话</caption>
-<tr><td><img width="800" src="images/products/cde/cde-8.png" alt="多轮对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-8.png" alt="多轮对话"/></td></tr>
 </table>
 
 ### 增加新的对话
@@ -169,14 +169,14 @@
 
 <table class="image">
 <caption align="bottom">查看快照</caption>
-<tr><td><img width="800" src="images/products/cde/cde-11.png" alt="查看快照"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-11.png" alt="查看快照"/></td></tr>
 </table>
 
 回到聊天机器人列表页面，可以点击“发布”按钮，可以将当前聊天机器人生成新版本，相关的信息如图：
 
 <table class="image">
 <caption align="bottom">发布新版本</caption>
-<tr><td><img width="800" src="images/products/cde/cde-12.png" alt="发布新版本"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-12.png" alt="发布新版本"/></td></tr>
 </table>
 
 点击上图的“确认”按钮，发布新版本成功，点击“版本管理”，看到刚才发布的 1.0.1 版本的信息。
@@ -204,7 +204,7 @@
 
 <table class="image">
 <caption align="bottom">版本之间比较差异</caption>
-<tr><td><img width="800" src="images/products/cde/cde-13.png" alt="版本之间比较差异"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-13.png" alt="版本之间比较差异"/></td></tr>
 </table>
 
 对比的差异部分为绿色，表示新增。
@@ -217,7 +217,7 @@
 
 <table class="image">
 <caption align="bottom">导出文件</caption>
-<tr><td><img width="800" src="images/products/cde/cde-14.png" alt="导出文件"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-14.png" alt="导出文件"/></td></tr>
 </table>
 
 ## 脚本语法
@@ -237,7 +237,7 @@
 
 <table class="image">
 <caption align="bottom">对话</caption>
-<tr><td><img width="800" src="images/products/cde/cde-15.png" alt="对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-15.png" alt="对话"/></td></tr>
 </table>
 
 <pre class="prettyprint">
@@ -394,7 +394,7 @@
 
 <table class="image">
 <caption align="bottom">机器人对话逻辑</caption>
-<tr><td><img width="800" src="images/products/cde/cde-16.png" alt="机器人对话逻辑"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-16.png" alt="机器人对话逻辑"/></td></tr>
 </table>
 
 如果不想让系统丢掉使用过的回复，可以在回复前添加{keep}。
@@ -468,7 +468,7 @@
 
 <table class="image">
 <caption align="bottom">槽位取值</caption>
-<tr><td><img width="800" src="images/products/cde/cde-16.png" alt="槽位取值"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-16.png" alt="槽位取值"/></td></tr>
 </table>
 
 此处，还有一个重要语法：**%**。(%) 开头的句子代表触发器“你猜我叫什么？”只服务于“你好，&#60;cap1&#62;”作为回复时，它会被优先匹配。上一轮对话的回复通过(%)的方式指定了接下来的逻辑，形成多轮对话。 关于(%)的用法，后文还会进行详细介绍，此处，读者只需要掌握从上下文的槽位取值便可。
@@ -595,7 +595,7 @@ exports.nestedBFunction = function(cb) {
 
 <table class="image">
 <caption align="bottom">和风天气</caption>
-<tr><td><img width="800" src="images/products/cde/cde-18.png" alt="和风天气"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-18.png" alt="和风天气"/></td></tr>
 </table>
 
 ### AI 音箱
@@ -604,7 +604,7 @@ Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我�
 
 <table class="image">
 <caption align="bottom">任你说官网</caption>
-<tr><td><img width="800" src="images/products/cde/cde-19.png" alt="任你说官网"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-19.png" alt="任你说官网"/></td></tr>
 </table>
 
 ### 第一条规则
@@ -613,21 +613,21 @@ Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我�
 
 <table class="image">
 <caption align="bottom">和风天气</caption>
-<tr><td><img width="800" src="images/products/cde/cde-20.png" alt="和风天气"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-20.png" alt="和风天气"/></td></tr>
 </table>
 
 点击新建按钮，弹出创建机器人的表单：
 
 <table class="image">
 <caption align="bottom">创建聊天机器人</caption>
-<tr><td><img width="800" src="images/products/cde/cde-21.png" alt="创建聊天机器人"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-21.png" alt="创建聊天机器人"/></td></tr>
 </table>
 
 填入“小叮当”，当前多轮对话设计器支持中文(zh_CN)和英文(en_US)，我们选择“zh_CN”，点击“确认”。然后我们就得到了一个聊天机器人。
 
 <table class="image">
 <caption align="bottom">聊天机器人</caption>
-<tr><td><img width="800" src="images/products/cde/cde-22.png" alt="聊天机器人"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-22.png" alt="聊天机器人"/></td></tr>
 </table>
 
 在操作中，有几个按钮：
@@ -646,7 +646,7 @@ Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我�
 
 <table class="image">
 <caption align="bottom">创建对话</caption>
-<tr><td><img width="800" src="images/products/cde/cde-23.png" alt="创建对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-23.png" alt="创建对话"/></td></tr>
 </table>
 
 点击“编辑”，进入**对话编辑窗口**。在左侧的“脚本区域”，写下第一条规则。
@@ -660,7 +660,7 @@ Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我�
 
 <table class="image">
 <caption align="bottom">对话编辑窗口</caption>
-<tr><td><img width="800" src="images/products/cde/cde-24.png" alt="对话编辑窗口"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-24.png" alt="对话编辑窗口"/></td></tr>
 </table>
 
 从我们需求上看，这没什么用，但是它工作了，我们就一点点优化它。对于在这条规则中，我们使用的语法，(\*)代表一个槽位，<cap1>代表在回复中取槽位的值，[怎么样]是可有的字符串，{keep}代表这条规则始终生效，keep 涉及到对话的状态管理，我们将在文档中提供更多规则的描述，现在，读者看懂本示例就可以了。
@@ -771,7 +771,7 @@ exports.getDresscodeByCity = function(city, cb){
 
 <table class="image">
 <caption align="bottom">测试对话</caption>
-<tr><td><img width="800" src="images/products/cde/cde-25.png" alt="测试对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-25.png" alt="测试对话"/></td></tr>
 </table>
 
 这次，我们看到了期望的回复，正是从和风天气返回的北京今天的天气状况。
@@ -784,7 +784,7 @@ exports.getDresscodeByCity = function(city, cb){
 
 <table class="image">
 <caption align="bottom">设置环境变量</caption>
-<tr><td><img width="800" src="images/products/cde/cde-26.png" alt="设置环境变量"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-26.png" alt="设置环境变量"/></td></tr>
 </table>
 
 读者可以从和风天气获得该密钥，为验证用途，可以粘贴下面的值：
@@ -971,14 +971,14 @@ exports.getDresscodeByCity = function(city, cb){
 
 <table class="image">
 <caption align="bottom">机器人思维逻辑</caption>
-<tr><td><img width="800" src="images/products/cde/cde-27.png" alt="机器人思维逻辑"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-27.png" alt="机器人思维逻辑"/></td></tr>
 </table>
 
 另外，在设计过程中，每次保存自动为脚本和函数生成快照，使用快照下拉列表，我们能方便的回退。
 
 <table class="image">
 <caption align="bottom">快照管理</caption>
-<tr><td><img width="800" src="images/products/cde/cde-28.png" alt="快照管理"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-28.png" alt="快照管理"/></td></tr>
 </table>
 
 在**多轮对话设计器**中，业务人员可以更专注于对话机器人的对话逻辑满足需求。
@@ -989,7 +989,7 @@ exports.getDresscodeByCity = function(city, cb){
 
 <table class="image">
 <caption align="bottom">发布机器人</caption>
-<tr><td><img width="800" src="images/products/cde/cde-29.png" alt="发布机器人"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-29.png" alt="发布机器人"/></td></tr>
 </table>
 
 ### 导出机器人
@@ -1003,3 +1003,14 @@ exports.getDresscodeByCity = function(city, cb){
 - 覆盖：使用这个版本覆盖当前机器人，包括脚本和函数等。
 
 多轮对话设计器支持导出机器人后，极大的方便了分发和部署。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
