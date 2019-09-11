@@ -1,10 +1,8 @@
-# Chatopera InfoCenter
+# Chatopera Docs
 
 文档中心
 
 Code as Docs.
-
-https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html
 
 ## 编译
 
@@ -49,3 +47,7 @@ https://github.com/chatopera/docfx-get-started
 ```
 docker run -it --rm -p 8000:80 chatopera/docs:latest
 ```
+
+## 工具
+
+https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html

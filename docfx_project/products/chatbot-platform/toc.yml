@@ -6,6 +6,8 @@
   href: support.md
 - name: 配额
   href: capacity.md
+- name: 意图识别
+  href: intent.md
 - name: 多轮对话
   href: conversation.md
 - name: 知识库
