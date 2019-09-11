@@ -4,7 +4,7 @@
 
 > 提示：请保证填写正确的邮箱地址用于找回密码，接收系统通知，该邮箱不会泄漏给第三方。
 
-机器人平台的地址是：<a href="https://bot.chatopera.com" target="_blank">https://bot.chatopera.com</a>
+Chatopera 云服务的地址是：<a href="https://bot.chatopera.com" target="_blank">https://bot.chatopera.com</a>
 
 从浏览器打开后，点击“立即使用”，跳转到*登录/注册*页面，输入*邮箱*和*密码*，使用“回车键”【Enter】提交，即完成。
 
