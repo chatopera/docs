@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#21628;&#21483;&#20013;&#24515; | Chatopera&#25991;&#26723;&#20013;&#24515; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#21628;&#21483;&#20013;&#24515; | Chatopera&#25991;&#26723;&#20013;&#24515; ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="呼叫中心">呼叫中心</h1>
+
+<blockquote>
+<p>提示：</p>
+</blockquote>
+<pre><code>春松客服 on QingCloud 目前尚不支持呼叫中心模块。
+呼叫中心只能用过其他方式部署。
+预计在下一版本 春松客服 on QingCloud会支持，敬请期待。
+</code></pre>
+<p>简单定义：在一个相对集中的场所，由一批服务人员组成的服务机构．通常利用计算机通信技术，处理来自企业、顾客的电话垂询，尤其具备同时处理大量来话的能力，还具备主叫号码显示，可将来电自动分配给具备相应技能的人员处理，并能记录和储存所有来话信息。</p>
+<p>春松客服支持呼叫中心业务，但是需要企业额外采购语音网关和客服电话，其中，客服电话可以使用软电话，软电话有免费版本(比如
+YateClient，linephone，eyebeam)。</p>
+<ul>
+<li>语音网关</li>
+</ul>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture34.png" alt=""></td>
+    </tr>
+</table>
+<ul>
+<li>软电话</li>
+</ul>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="300" src="../../images/products/cosin/Picture35.png" alt=""></td>
+    </tr>
+</table>
+<p>关于具体搭建带有呼叫中心功能的春松客服系统，请联系我们(info@chatopera.com)。</p>
+<p>呼叫中心服务需要保证系统至少有一个 SIP 坐席客服，即在春松客服系统中设置好的“呼叫中心坐席”。</p>
+<h2 id="自动批量外呼">自动批量外呼</h2>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture43.png" alt=""></td>
+    </tr>
+</table>
+<p>(1) 语音交换网关正常：确保电话交换设备已经正常工作；</p>
+<p>(2) 呼叫中心坐席设置：确保需要作为坐席的用户具有“呼叫中心坐席”，已经拥有 SIP 地址；</p>
+<p>(3) 电话机/软电话设置：把 2 中的 sip 地址绑定在电话机/设置软电话中；这里设为 1003</p>
+<p>(4) 技能组部门就位：需要一个部门，且已经启用了“技能组”功能，把 2 中的用户账号加在里面；</p>
+<p>(5) 拥有权限：把 “坐席对话”与“坐席工作台”授权给此部门；</p>
+<p>(6) 呼叫中心坐席上线：保证该坐席用户已经登录系统；</p>
+<p>(7) 创建任务：用管理员或者具有“外呼系统”-&gt;”任务列表”-&gt;”新建任务”的权限的账号创建一个拨号计划；</p>
+<p>(8) 初始化成功：确保创建的任务已经“初始化”完毕，可以执行“开始”任务；</p>
+<p>(9) 开始：开始执行任务；</p>
+<p>不同操作的说明：</p>
+<ul>
+<li><p>“开始” 启动一个任务，对于已经开始了任务，此按钮将不能再被触发；</p>
+</li>
+<li><p>“停止” 停止一个正在进行呼叫的任务，任务停止之后，此按钮将不能再被触发；</p>
+</li>
+<li><p>“监控” 对于一个任务，我们都可以通过监控看到它的具体状态；</p>
+</li>
+<li><p>“编辑” 对于一个任务可以再次编辑，目前编辑内容只能编辑“最大并发数”，“坐席并发比”，只有“已停止”的任务才可以编辑；</p>
+</li>
+<li><p>“删除” 只能删除“已停止”的任务，删除之后会进入到“已删除任务”中，方便后期对数据进行分析；</p>
+</li>
+</ul>
+<p>不同状态的说明：</p>
+<ul>
+<li><p>“初始化”的呼叫计划不能“删除“，不能“开始“，也不能“暂停“；</p>
+</li>
+<li><p>“初始化”后自动转移到“已停止”；</p>
+</li>
+<li><p>“执行中”在系统打完所有电话后，自动转移到“已停止”；</p>
+</li>
+<li><p>除了“初始化”状态，无法删除外，其他状态都可以点击“删除”（执行中的计划会先停止，再删除）；</p>
+</li>
+<li><p>“执行中”的呼叫计划，不能编辑，其他状态可以编辑，但是不能修改“电话号码”和“技能组”；</p>
+</li>
+</ul>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture44.png" alt=""></td>
+    </tr>
+</table>
+<p>对于已经开始了的任务，具有以下的特点</p>
+<ul>
+<li><p>“开始” 启动一个任务，对于已经开始了任务，此按钮将不能再被触发；</p>
+</li>
+<li><p>任务状态变为“执行中”；</p>
+</li>
+<li><p>客户会接到电话；</p>
+</li>
+<li><p>呼叫中心坐席 也会接到 电话响铃提醒；</p>
+</li>
+<li><p>同时当呼叫中坐席接通电话后会有自动弹屏 --“坐席工作台”；</p>
+</li>
+<li><p>呼叫中心坐席的对话列表会显示“在线”，并且头像旁边会显示一个正在接通的电话图标；</p>
+</li>
+<li><p>默认会把当前客户的相关信息记录在“坐席工作台”的表单中 ，不需要客服手动关联；</p>
+</li>
+<li><p>在通话过程中就可以记录此客户的是否意向等数据，最后直接一键保存到 CRM 数据库中；</p>
+</li>
+</ul>
+<p>开始执行任务，接通自动弹屏</p>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture51.png" alt=""></td>
+    </tr>
+</table>
+<p>(10) 被叫呼叫成功，客户会接到电话</p>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture48.png" alt=""></td>
+    </tr>
+</table>
+<p>(11) 挂断，一键保存数据；</p>
+<ul>
+<li>“呼叫中心坐席“的 ”对话列表”状态显示为“离开”，并且头像的电话显示为“灰色”；</li>
+<li>可以对刚才的客户信息继续编辑或者直接保存到 CRM 数据库中；</li>
+<li>如果保存了用户，并且成功，则下次再次呼出到此用户时，都可以关联到此信息，并且再次自动弹出，可以再次编辑。</li>
+</ul>
+<p>(12) 监听拨号计划，暂停拨号计划。</p>
+<p>(13) 删除拨号计划</p>
+<h2 id="手动外呼">手动外呼</h2>
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture55.png" alt=""></td>
+    </tr>
+</table>
+<p>(1) 在拥有 SIP 地址的电话机/软电话 拨打目标号码；</p>
+<p>(2) 开始：开始执行任务；</p>
+<p>(3) 被叫呼叫成功；</p>
+<p>(4) 呼叫中心坐席电话弹屏自动弹出，并且当前的客户信息已经自动填写在里面；</p>
+<p>(5) 挂断，更新数据，一键保存数据；</p>
+<h2 id="评论">评论</h2>
+<script src="https://utteranc.es/client.js" repo="chatopera/docs" issue-term="pathname" label="Comment" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©2019 <a href="https://www.chatopera.com" target="_blank">北京华夏春松科技有限公司</a> 京ICP备17070907号-1
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

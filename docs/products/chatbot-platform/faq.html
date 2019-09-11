@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#30693;&#35782;&#24211; | Chatopera&#25991;&#26723;&#20013;&#24515; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#30693;&#35782;&#24211; | Chatopera&#25991;&#26723;&#20013;&#24515; ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="知识库">知识库</h1>
+
+<p>知识库是基于信息检索系统的一问一答的问答服务，通过建立【问题-扩展问-答案】和近义词实现智能问答，常用于常见问题集的机器人对话。</p>
+<table class="image">
+    <caption align="bottom">知识库管理</caption>
+    <tr>
+        <td><img width="800" src="../../images/platform/2.png" alt=""></td>
+    </tr>
+</table>
+<h2 id="问答对">问答对</h2>
+<ul>
+<li>新建</li>
+</ul>
+<table class="image">
+    <caption align="bottom">创建问答对</caption>
+    <tr>
+        <td><img width="800" src="../../images/platform/3.png" alt=""></td>
+    </tr>
+</table>
+<ul>
+<li><p>编辑</p>
+</li>
+<li><p>调试知识库</p>
+</li>
+</ul>
+<table class="image">
+    <caption align="bottom">调试命中率</caption>
+    <tr>
+        <td><img width="400" src="../../images/platform/4.png" alt=""></td>
+    </tr>
+</table>
+<p>系统集成聊天机器人时，发送的知识库检索或多轮对话检索，会返回置信度<em>score</em>（也称为命中域值），该值在[0~1]区间，值越大代表机器人越确定回复的准确性。</p>
+<p>对知识库的评测，常常用一系列测试问题查询返回结果，进而计算机器人回答的准确率评价检索系统。</p>
+<p>在系统集成时，常常设定一个置信度，在高于该值时，可以将机器人的回复返回给消费者。或在某个区间时，询问消费者<em>是否问以下问题</em>，这是目前智能客服常见的场景。</p>
+<p>通过知识库管理页面的命中率调试窗口，开发者可以调整置信度（也称为命中域值）来调试知识库。</p>
+<ul>
+<li>启用/禁用问答对</li>
+</ul>
+<p>在问答对列表，使用<em>拨动开关</em>切换状态。</p>
+<h2 id="导入知识库">导入知识库</h2>
+<p>Chatopera 云服务支持导入一个文件，批量创建问答对。</p>
+<table class="image">
+    <caption align="bottom">导入知识库</caption>
+    <tr>
+        <td><img width="800" src="../../images/platform/5.png" alt=""></td>
+    </tr>
+</table>
+<p>目前，该文件格式必须为**.xlsx**，并且在表头注名各列的含义。</p>
+<table>
+<thead>
+<tr>
+<th>列</th>
+<th>含义</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一列</td>
+<td>是否开启</td>
+<td>问答对在知识库中有<em>启用/禁用</em>两个状态，只有<em>启用</em>的问答对在检索时有效。<em>禁用</em>状态的问答对可以是草稿，被废弃但是不想删除等情况。</td>
+</tr>
+<tr>
+<td>第二列</td>
+<td>问题</td>
+<td>用文本描述的问题</td>
+</tr>
+<tr>
+<td>第三列</td>
+<td>答案</td>
+<td>用文本描述的答案</td>
+</tr>
+<tr>
+<td>第四列</td>
+<td>*扩展问 1</td>
+<td>问题的另一种问法</td>
+</tr>
+<tr>
+<td>第五列</td>
+<td>*扩展问 2</td>
+<td>问题的另一种问法</td>
+</tr>
+<tr>
+<td>第六列</td>
+<td>*扩展问 3</td>
+<td>问题的另一种问法</td>
+</tr>
+</tbody>
+</table>
+<p>其中，<em>第一列</em>，<em>第二列</em>，<em>第三列</em> 是必填项，扩展问不是必填项，但是扩展问越多，机器人越智能。</p>
+<p>另外，<em>*扩展问 N</em>必须出现在当列有值的时候，用户可以添加多个扩展问。</p>
+<p>在知识库管理页面，也有下载<em>知识库模版</em>文件的链接。</p>
+<h2 id="导出知识库">导出知识库</h2>
+<p>用户可以随时将知识库文件导出，导出文件可以更好的使用其他工具编辑，或作为备份，导出文件的格式为 Excel。</p>
+<h3 id="近义词">近义词</h3>
+<blockquote>
+<p>提示：目前添加近义词是可以优化命中率的，但近期会升级优化这部分，得到更显著的提升。</p>
+</blockquote>
+<p>近义词是另一种增加聊天机器人智能化水平的另外一个手段。</p>
+<ul>
+<li>新建</li>
+</ul>
+<p>在知识库管理页面，点击<em>近义词</em>，就可以看到<em>新建</em>按钮。</p>
+<ul>
+<li>编辑</li>
+</ul>
+<table class="image">
+    <caption align="bottom">创建近义词</caption>
+    <tr>
+        <td><img width="800" src="../../images/platform/6.png" alt=""></td>
+    </tr>
+</table>
+<h2 id="知识库小助手">知识库小助手</h2>
+<p>Chatopera 知识库小助手（简称“小助手”）是面向企业的客户服务人员发布的一款从<strong>知识库</strong>检索建议回复的桌面软件。长期以来，客户服务占据着企业运营的重要位置，因为回复不及时、不标准和不准确都会给企业造成损失，对于常见问题集的管理，主要使用的工具是 Excel，客服人员想要快速回复客户消息非常困难，同时也有不容易维护的问题，小助手就是专门用于解决这个问题而开发的。</p>
+<h3 id="产品亮点">产品亮点</h3>
+<p>易于配合其他应用，通过复制面板和粘贴面板工作。</p>
+<p>悬浮窗口，占用很小空间。</p>
+<p>设计简洁，和桌面背景百搭。</p>
+<h3 id="下载和安装">下载和安装</h3>
+<blockquote>
+<p>提示：</p>
+</blockquote>
+<pre><code>目前，小助手只支持Windows客户端。
+</code></pre>
+<p>下载地址：</p>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>操作系统</th>
+<th>下载</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0.0</td>
+<td>Windows 7 或更高版本</td>
+<td><a href="http://cdndownload.chatopera.com/sw/product/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.0.0-Windows.msi" target="_blank">链接</a></td>
+</tr>
+</tbody>
+</table>
+<p>在下载后，浏览器可能提示“这种类型的文件可能会损坏您的计算机”或者“Windows Defender SmartScreen 已组织启动一个未识别的应用。”，这时请点击“保留”及“更多信息”进行下一步。</p>
+<table class="image">
+<caption align="bottom">点击“仍要运行”</caption>
+<tr><td><img width="800" src="../../images/products/assistant/2.png" alt="Windows提示"></td></tr>
+</table>
+<h3 id="配置">配置</h3>
+<table class="image">
+<caption align="bottom">Chatopera小助手</caption>
+<tr><td><img width="100" src="../../images/products/assistant/3.png" alt="Chatopera小助手"></td></tr>
+</table>
+<p>双击图标，启动小助手，看到如下配置界面。</p>
+<table class="image">
+<caption align="bottom">配置小助手</caption>
+<tr><td><img width="300" src="../../images/products/assistant/4.png" alt="配置小助手"></td></tr>
+</table>
+<p>邮箱一栏填写正确的电子邮箱地址。</p>
+<ul>
+<li>获取应用 ID 和密钥</li>
+</ul>
+<blockquote>
+<p>提示</p>
+</blockquote>
+<pre><code>Chatopera机器人平台:
+Client ID对应&quot;应用ID&quot;
+Secret 对应&quot;密钥&quot;
+</code></pre>
+<p>安装完成后，可以在启动菜单和桌面看到“Chatopera 小助手”的快捷方式。</p>
+<p>已经具备了应用 ID 和密钥的用户跳过此步。作为团队组长/企业主管等角色使用或作为个人用途，可以通过注册<a href="https://bot.chatopera.com" target="_blank">Chatopera 机器人平台</a>，然后创建聊天机器人获得。</p>
+<table class="image">
+<caption align="bottom">获得应用ID和密钥</caption>
+<tr><td><img width="600" src="../../images/products/assistant/5.png" alt="获得应用ID和密钥"></td></tr>
+</table>
+<p>这三项都属于必填项，填写好后点击“保存”。</p>
+<h3 id="获得智能建议回复">获得智能建议回复</h3>
+<p>保存设置后，小助手是置顶在桌面的，在小助手的最右侧是切换<em>启用</em>和<em>停用</em>状态的按钮。</p>
+<table class="image">
+<caption align="bottom">悬浮状态下的小助手</caption>
+<tr><td><img width="300" src="../../images/products/assistant/6.png" alt="悬浮状态下的小助手"></td></tr>
+</table>
+<p>工作时，您可能处于不同的聊天软件中，甚至是文档中，都可以通过复制文本获得建议回复。比如，下面是在 QQ 群中，快速回复一个问题，就把这个问题复制到粘贴板，通常是通过【Ctrl + C】完成。</p>
+<table class="image">
+<caption align="bottom">复制问题</caption>
+<tr><td><img width="600" src="../../images/products/assistant/7.png" alt="复制问题"></td></tr>
+</table>
+<p>这时，小助手就从机器人的知识库中查询相似问题，并按照<em>问题相似度</em>展开一个智能建议回复列表。<strong>点击一个相似问题，就将该问题<em>答案</em>复制到粘贴板</strong>，再粘贴该答案到聊天窗口，通常通过 【Ctrl + V】完成。</p>
+<p>所以，这个过程可以简单的描述为<em>复制-&gt;点击-&gt;粘贴</em>。</p>
+<h3 id="临时停用">临时停用</h3>
+<p>小助手处于<em>启用</em>状态时，每次执行文本复制操作都会做智能建议回复的查询，被复制内容会被发送到远程服务，为了保护用户隐私，您可以临时停用小助手，这时并不执行智能建议回复，您的隐私数据也就得到保护。<strong>在任何状态，任何理由下，Chatopera 不会在未取得用户允许的情况下，获取或利用用户的隐私数据。</strong></p>
+<table class="image">
+<caption align="bottom">停用状态下的小助手</caption>
+<tr><td><img width="300" src="../../images/products/assistant/8.png" alt="停用状态下的小助手"></td></tr>
+</table>
+<h3 id="退出">退出</h3>
+<p>彻底关闭小助手，在小助手的悬浮区域右键，在弹出的菜单中点击“退出”。</p>
+<table class="image">
+<caption align="bottom">退出小助手</caption>
+<tr><td><img width="300" src="../../images/products/assistant/9.png" alt="退出小助手"></td></tr>
+</table>
+<h2 id="评论">评论</h2>
+<script src="https://utteranc.es/client.js" repo="chatopera/docs" issue-term="pathname" label="Comment" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©2019 <a href="https://www.chatopera.com" target="_blank">北京华夏春松科技有限公司</a> 京ICP备17070907号-1
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

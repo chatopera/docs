@@ -1,0 +1,2560 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#31995;&#32479;&#38598;&#25104; | Chatopera&#25991;&#26723;&#20013;&#24515; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#31995;&#32479;&#38598;&#25104; | Chatopera&#25991;&#26723;&#20013;&#24515; ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="系统集成">系统集成</h1>
+
+<p>企业或开发者可以选择两种集成 Chatopera 云服务的方式：SDK 以及 RestAPI。
+SDK 是 Chatopera 团队将 RestAPI 封装好的面向不同编程语言的库，包括 Node.js、Go、PHP 和 Java 等。
+SDK 简化了集成的复杂度，甚至可以通过不同语言的包管理工具直接安装。
+RestAPI 接口是面向未发布 SDK 的语言进行集成时候的选择，推荐您优先选择 SDK，下面分别介绍两种方案。</p>
+<h2 id="sdk">SDK</h2>
+<p>Chatopera 机器人平台提供集成聊天机器人的方案为 SDK，目前支持 Java、Node.js、PHP 和 Golang，近期也会补充更多语言的 SDK。</p>
+<p>在聊天机器人的一级菜单，可以进入<em>集成</em>页面。</p>
+<table class="image">
+    <caption align="bottom">集成</caption>
+    <tr>
+        <td><img width="800" src="../../images/platform/8.png" alt=""></td>
+    </tr>
+</table>
+<p>对于不同语言而言，其安装配置方式有别，但是用代码取得一个聊天机器人实例的方式大同小异，参数是一致的，请求结果也全部采用 JSON 数据格式。</p>
+<p>各 SDK 的配置文档、接口文档和示例程序可以在<em>集成</em>页面得到。以下内容是对不同接口返回接口的解释。</p>
+<h3 id="获得机器人详情">获得机器人详情</h3>
+<pre><code>chatbot.details
+</code></pre>
+<pre class="prettyprint">
+{
+  "name": "test1",
+  "fallback": "我不明白您的意思。",
+  "description": "ss",
+  "welcome": "你好！我是机器人客服。",
+  "primaryLanguage": "zh_CN"
+}
+</pre>
+<p><em>name</em>: 机器人名字
+<em>fallback</em>: 兜底回复
+<em>description</em>: 机器人描述
+<em>welcome</em>: 机器人问候语
+<em>primaryLanguage</em>: 机器人语言</p>
+<h3 id="检索多轮对话">检索多轮对话</h3>
+<pre><code>chatbot.conversation
+</code></pre>
+<pre class="prettyprint">
+{
+  "state": "default",
+  "createdAt": 1541677323194,
+  "string": "欢迎惠顾！",
+  "topicName": "greetings",
+  "subReplies": [],
+  "service": {
+    "provider": "conversation"
+  },
+  "logic_is_fallback": false,
+  "botName": "test1"
+}
+</pre>
+<p><em>state</em>: 业务字段，可以在多轮对话脚本中设置
+<em>string</em>: 机器人回复的文本内容
+<em>topicName</em>: 机器人会话主题
+<em>logic_is_fallback</em>: 是否是兜底回复
+<em>botName</em>: 机器人的名字</p>
+<p><code>service</code>代表返回的数据来源，<strong>provider:script</strong>指<strong>多轮对话</strong>，<strong>provider:faq</strong>指<strong>知识库</strong>；不同数据来源也会提供相应信息。</p>
+<table>
+<thead>
+<tr>
+<th>provider</th>
+<th>key</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>faq</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>docId</td>
+<td>文档 ID</td>
+</tr>
+<tr>
+<td></td>
+<td>post</td>
+<td>标准问</td>
+</tr>
+<tr>
+<td></td>
+<td>score</td>
+<td>分数</td>
+</tr>
+<tr>
+<td></td>
+<td>threshold</td>
+<td>阀值</td>
+</tr>
+<tr>
+<td>conversation</td>
+<td>多轮对话</td>
+<td></td>
+</tr>
+<tr>
+<td>fallback</td>
+<td>兜底回复</td>
+<td></td>
+</tr>
+<tr>
+<td>mute</td>
+<td>该用户被该机器人屏蔽</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>回复处理逻辑</li>
+</ul>
+<p>多轮对话获取回复的逻辑解释如下：</p>
+<table class="image">
+    <caption align="bottom">查询逻辑</caption>
+    <tr>
+        <td><img width="800" src="../../images/products/chatbot-engine-1.png" alt="查询逻辑"></td>
+    </tr>
+</table>
+<ol>
+<li>用户输入，以文本的形式输入，语音输入也需要转化成文字。</li>
+<li>[知识库检索] 如果知识库检索出相似度大于 0.8 的问答对，直接返回得分最高的问题的答案。</li>
+<li>[多轮对话检索] 如果知识库没有检索出相似度大于 0.8 的问答对，检索多轮对话，如果命中了一个规则，直接返回答案。</li>
+<li>[兜底回复] 如果多轮对话也没有检索出答案，返回兜底回复。</li>
+</ol>
+<h3 id="检索知识库">检索知识库</h3>
+<pre><code>chatbot.faq
+</code></pre>
+<pre class="prettyprint">
+[
+  {
+    "id": "AWbyu9DYjTtqn-PFv1GV",
+    "score": 1,
+    "post": "停效期间的保单是否能办理减保？",
+    "reply": "停效期间的保单可以办理减"
+  },
+  {
+    "id": "AWbyu86_jTtqn-PFv1GR",
+    "score": 0.3333333333333333,
+    "post": "主险期缴期间，附加险能不能办理减额缴清？",
+    "reply": "根据目前的业务规定：附加险缴费方式应与主险一致"
+  }
+]
+</pre>
+<p><em>id</em>: 问答对 Id
+<em>score</em>: 置信度
+<em>post</em>: 标准问
+<em>reply</em>: 答案</p>
+<h3 id="获得用户列表">获得用户列表</h3>
+<pre><code>chatbot.users
+</code></pre>
+<pre class="prettyprint">
+[
+  {
+    "userId": "nodesdk",
+    "lasttime": "2018-11-08T11:45:44.268Z",
+    "created": "2018-11-08T11:42:02.104Z"
+  },
+  {
+    "userId": "superadmin",
+    "lasttime": "2018-11-08T11:33:23.163Z",
+    "created": "2018-11-08T11:33:23.167Z"
+  },
+  {
+    "userId": "c100680c10dc534dac3e28a024e59207",
+    "lasttime": "2018-11-08T08:58:48.575Z",
+    "created": "2018-11-08T08:57:16.915Z"
+  }
+]
+</pre>
+<p><em>userId</em>: 和机器人对话的用户标识
+<em>lasttime</em>: 最后沟通时间
+<em>created</em>: 第一次沟通时间</p>
+<h3 id="屏蔽用户">屏蔽用户</h3>
+<pre><code>chatbot.mute
+</code></pre>
+<p>正常返回时，statusCode 200, body 为 <code>{}</code>。</p>
+<h3 id="取消屏蔽">取消屏蔽</h3>
+<pre><code>chatbot.unmute
+</code></pre>
+<p>正常返回时，statusCode 200, body 为 <code>{}</code>。</p>
+<h3 id="是否被屏蔽">是否被屏蔽</h3>
+<pre><code>chatbot.ismute
+</code></pre>
+<p>返回 Boolean 类型值。</p>
+<pre class="prettyprint">
+true
+</pre>
+<h3 id="获取聊天历史">获取聊天历史</h3>
+<pre><code>chatbot.chats
+</code></pre>
+<pre class="prettyprint">
+{
+  "total": 4,
+  "current_page": 1,
+  "total_page": 1,
+  "data": [
+    {
+      "userId": "nodesdk",
+      "textMessage": "xx",
+      "direction": "outbound",
+      "service": "faq",
+      "confidence": 1,
+      "created": "2018-11-08T11:45:44.448Z"
+    },
+    {
+      "userId": "nodesdk",
+      "textMessage": "xxx",
+      "direction": "inbound",
+      "service": "faq",
+      "created": "2018-11-08T11:45:44.276Z"
+    },
+    {
+      "userId": "nodesdk",
+      "textMessage": "xx",
+      "direction": "outbound",
+      "service": "conversation",
+      "confidence": 1,
+      "created": "2018-11-08T11:42:03.234Z"
+    },
+    {
+      "userId": "nodesdk",
+      "textMessage": "你好",
+      "direction": "inbound",
+      "service": "conversation",
+      "created": "2018-11-08T11:42:02.110Z"
+    }
+  ]
+}
+</pre>
+<p><em>total</em>: 该用户和机器人之间对话总数
+<em>current_page</em>： 当前页
+<em>total_page</em>: 总页数
+<em>userId</em>: 用户标识
+<em>textMessage</em>: 文本内容
+<em>direction</em>: 消息传递方向，【inbound】为消费者发送，【outbound】为机器人发送
+<em>service</em>: 提供回复的服务
+<em>confidence</em>: 置信度
+<em>created</em>: 消息创建时间</p>
+<h2 id="restapi">RestAPI</h2>
+<p>Chatopera云服务与其他服务集成的方式是暴露出来的Rest API接口，接口可以分为以下几类：</p>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>描述</th>
+<th>路径前缀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>聊天机器人</strong></td>
+<td>对象的增删改查</td>
+<td><code>/api/v1/chatbot</code></td>
+</tr>
+<tr>
+<td><strong>多轮对话</strong></td>
+<td>查询，导入和状态管理</td>
+<td><code>/api/v1/chatbot/:clientId/conversation</code></td>
+</tr>
+<tr>
+<td><strong>多轮对话</strong></td>
+<td>问答的使用情况统计数据</td>
+<td><code>/api/v1/chatbot/:clientId/conversation/query/counts</code></td>
+</tr>
+<tr>
+<td><strong>知识库FAQ问答对</strong></td>
+<td>增删改查和状态管理</td>
+<td><code>/api/v1/chatbot/:clientId/faq/database</code></td>
+</tr>
+<tr>
+<td><strong>知识库近义词</strong></td>
+<td>增删改查</td>
+<td><code>/api/v1/chatbot/:clientId/faq/synonyms</code></td>
+</tr>
+<tr>
+<td><strong>知识库</strong></td>
+<td>问答的使用情况统计数据</td>
+<td><code>/api/v1/chatbot/:clientId/faq/query/counts</code></td>
+</tr>
+<tr>
+<td><strong>历史管理</strong></td>
+<td>查询对话历史，用户列表</td>
+<td><code>/api/v1/chatbot/:clientId/users</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="基本规范">基本规范</h3>
+<p>在Rest API接口中，请求包括协议(http/https)，IP地址(Host)，PORT端口，HTTP头字段(Headers)，HTTP报文主体(Body <em>可选</em>)。</p>
+<ul>
+<li>请求(Request)</li>
+</ul>
+<p>在智能问答引擎服务启动后，通过 <em>http</em> 协议处理请求，如无特殊说明，每个接口都有如下设置：</p>
+<p>Host: <code>{{IP}}</code></p>
+<p>PORT: <code>{{PORT}}</code></p>
+<p>Headers: <code>Content-Type application/json</code></p>
+<p><strong>注意</strong>：</p>
+<ol>
+<li><code>{{变量}}</code>代表变量；</li>
+<li><code>{{IP}}</code>代表Chatopera云服务的提供地址，默认使用<strong>https://bot.chatopera.com</strong>。</li>
+<li><code>{{PORT}}</code>代表Chatopera云服务的提供的端口，HTTP协议默认使用80，HTTPS协议默认使用443。</li>
+</ol>
+<ul>
+<li>响应(Response)</li>
+</ul>
+<p>如无特殊说明，返回值都是<code>JSON</code>数据格式，在<strong>正常返回</strong>下，格式符合如下形式：</p>
+<pre class="prettyprint">
+{
+  "rc": 0,
+  "data": ...
+}    
+</pre>
+<p>其中，<code>rc</code>代表请求是否被满足，<code>0</code>代表满足；<code>rc</code>非<code>0</code>时，代表有异常，不同的异常类型使用不同的数字，在每个API中介绍。</p>
+<p>异常返回的一般形式：</p>
+<pre class="prettyprint">
+{
+  "rc": 非0的正整数,
+  "error": ...,
+  "msg": ...
+}    
+</pre>
+<h3 id="创建聊天机器人">创建聊天机器人</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId</li>
+</ul>
+<blockquote>
+<p>cURL：创建聊天机器人</p>
+</blockquote>
+<pre><code>curl --request POST \
+  --url 'http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  &quot;name&quot;: &quot;小叮当&quot;,
+  &quot;primaryLanguage&quot;: &quot;zh_CN&quot;
+}'
+</code></pre>
+<p>创建聊天机器人</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+  "name": "小叮当",
+  "primaryLanguage": "zh_CN"
+}    
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chatbotID</td>
+<td>是</td>
+<td>string</td>
+<td>机器人的唯一ID，是以字母开始的由[a-zA-Z0-9_]组成的字符串。</td>
+</tr>
+<tr>
+<td>name</td>
+<td>是</td>
+<td>string</td>
+<td>机器人的名称。</td>
+</tr>
+<tr>
+<td>primaryLanguage</td>
+<td>是</td>
+<td>string</td>
+<td>机器人的语言，现在支持两个选项：[&quot;zh_CN&quot;, &quot;en_US&quot;]，分别代表中文和英文。</td>
+</tr>
+<tr>
+<td>description</td>
+<td>否</td>
+<td>string</td>
+<td>机器人的描述</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "chatbotID": "{{clientId}}",
+        "name": "小叮当",
+        "fallback": "我不明白您的意思。",
+        "description": "智能问答和对话任务",
+        "welcome": "你好！我是机器人客服。",
+        "primaryLanguage": "zh_CN"
+    }
+} 
+</pre>
+<p>返回字段说明：</p>
+<p><code>fallback</code>：聊天机器人的兜底回复。</p>
+<p><code>description</code>：聊天机器人的描述。</p>
+<p><code>welcome</code>：欢迎语。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc":2,
+    "error":"already exists."
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>：非0正整数代表不同的异常类型，比如，当前<code>rc</code>是2，异常描述为“already exists.”，说明该{{clientId}}已经存在了。</p>
+<h3 id="更新聊天机器人">更新聊天机器人</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId</li>
+</ul>
+<blockquote>
+<p>cURL：更新聊天机器人</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}} \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;fallback&quot;: &quot;我不能理解您的意思。&quot;,
+    &quot;description&quot;: &quot;聊天机器人&quot;,
+    &quot;welcome&quot;: &quot;我的特长是聊天。&quot;
+}'
+</code></pre>
+<p>更新聊天机器人</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "fallback": "我不能理解您的意思。",
+    "description": "聊天机器人",
+    "welcome": "我的特长是聊天。"
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fallback</td>
+<td>否</td>
+<td>string</td>
+<td>机器人兜底回复，在多轮对话查询没有匹配到回复时使用。</td>
+</tr>
+<tr>
+<td>description</td>
+<td>否</td>
+<td>string</td>
+<td>描述该机器人。</td>
+</tr>
+<tr>
+<td>welcome</td>
+<td>否</td>
+<td>string</td>
+<td>欢迎语，保留字段，暂时未使用。</td>
+</tr>
+</tbody>
+</table>
+<p>对于机器人的<code>chatbotID</code>，<code>name</code>和<code>primaryLanguage</code>都是在创建时设定的，设定后不能变更。</p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "chatbotID": "{{clientId}}",
+        "fallback": ...,
+        "description": ...,
+        "welcome": ...
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ...
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获取聊天机器人信息">获取聊天机器人信息</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId</li>
+</ul>
+<blockquote>
+<p>cURL：获取聊天机器人信息</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}} \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>获取聊天机器人信息</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "chatbotID": "{{clientId}}",
+        "name": "小叮当",
+        "fallback": "我不明白您的意思。",
+        "description": "智能问答和对话任务",
+        "welcome": "你好！我是机器人客服。",
+        "primaryLanguage": "zh_CN"
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": "not exist."
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获取聊天机器人列表">获取聊天机器人列表</h3>
+<ul>
+<li>GET /api/v1/chatbot</li>
+</ul>
+<blockquote>
+<p>cURL：获取聊天机器人列表</p>
+</blockquote>
+<pre><code>curl -X GET \
+  'http://{{IP}}:{{PORT}}/api/v1/chatbot?sortby=-created&amp;q={&quot;chatbotID&quot;: &quot;department_1&quot;}' \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>获取聊天机器人列表</p>
+<ul>
+<li>QUERY</li>
+</ul>
+<p>支持在URL中添加query信息来查询机器人和翻页等操作，比如 <code>/api/v1/chatbot?page=1&amp;limit=10&amp;fields=chatbotID name&amp;q={&quot;name&quot;: &quot;test&quot;}</code>，各参数介绍如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>描述</th>
+<th>默认值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>返回本页数据的条数</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>返回哪一页(可根据total进行判断)</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>fields</td>
+<td>string</td>
+<td>返回哪些字段</td>
+<td>除_id 和 __v之外的所有字段</td>
+<td>chatbotID name</td>
+</tr>
+<tr>
+<td>sortby</td>
+<td>string</td>
+<td>按照哪个字段进行排序</td>
+<td>空</td>
+<td>-created (按照 created 降序)</td>
+</tr>
+<tr>
+<td>q</td>
+<td>string</td>
+<td>按照字段查询</td>
+<td>空</td>
+<td>{&quot;name&quot;: &quot;test&quot;}</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "total": 1,
+    "rc": 0,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "name": "小叮当",
+            "chatbotID": "{{clientId}}",
+            "primaryLanguage": "zh_CN",
+            "fallback": "我不明白您的意思。",
+            "welcome": "你好！我是机器人客服。",
+            "description": "智能问答和对话任务"
+        },
+        ...
+    ]
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>total</code>代表聊天机器人数量。</p>
+<p><code>current_page</code>代表当前页，<code>total_page</code>代表总页数。</p>
+<p><code>data</code>是聊天机器人数据。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ...
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="删除一个聊天机器人">删除一个聊天机器人</h3>
+<ul>
+<li>DELETE /api/v1/chatbot/:clientId</li>
+</ul>
+<blockquote>
+<p>cURL：删除一个聊天机器人</p>
+</blockquote>
+<pre><code>curl -X DELETE \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}} \
+  -H 'Content-Type: application/json' \
+</code></pre>
+<p>删除一个聊天机器人</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "message": "done."
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ...
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="创建问答对">创建问答对</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/faq/database</li>
+</ul>
+<blockquote>
+<p>cURL：创建问答对</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;post&quot;: &quot;怎么开通微信支付?&quot;,
+    &quot;reply&quot;: &quot;登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付&quot;,
+    &quot;enabled&quot;: true
+}'
+</code></pre>
+<p>创建问答对</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "post": "怎么开通微信支付?",
+    "reply": "登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付",
+    "enabled": true
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>post</td>
+<td>是</td>
+<td>string</td>
+<td>问答对的问题，也称“标准问”</td>
+</tr>
+<tr>
+<td>reply</td>
+<td>是</td>
+<td>string</td>
+<td>问题对应的回复</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>是</td>
+<td>boolean</td>
+<td>是否“启用”，启用代表该问答对在检索时被使用；否则不被检索</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "id": "{{docId}}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>docId</code>代表该问答对的唯一标识。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": ...
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="查询问答对详情">查询问答对详情</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/faq/database/:docId</li>
+</ul>
+<blockquote>
+<p>cURL：根据文档Id查询问答对详情</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}} \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>根据文档Id查询问答对详情</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "id": "{{docId}}",
+        "post": "怎么开通微信支付?",
+        "reply": "登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付",
+        "enabled": true
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": {
+        "msg": "Not Found"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="更新问答对">更新问答对</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId/faq/database/:docId</li>
+</ul>
+<blockquote>
+<p>cURL：根据文档ID更新问答对</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}} \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;post&quot;: &quot;怎么开通微信支付?&quot;,
+    &quot;reply&quot;: &quot;登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付&quot;,
+    &quot;enabled&quot;: true
+}'
+</code></pre>
+<p>根据文档ID更新问答对</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "post": "怎么开通微信支付?",
+    "reply": "登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付",
+    "enabled": true
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>post</td>
+<td>否</td>
+<td>string</td>
+<td>问答对的问题，也称“标准问”</td>
+</tr>
+<tr>
+<td>reply</td>
+<td>否</td>
+<td>string</td>
+<td>问题对应的回复</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>否</td>
+<td>boolean</td>
+<td>是否“启用”，启用代表该问答对在检索时被使用；否则不被检索</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "id": "{{docId}}"
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": {
+        "msg": "Not Found"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="删除问答对">删除问答对</h3>
+<ul>
+<li>DELETE /api/v1/chatbot/:clientId/faq/database/:docId</li>
+</ul>
+<blockquote>
+<p>cURL：根据文档ID删除问答对</p>
+</blockquote>
+<pre><code>curl -X DELETE \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}} \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>根据文档ID删除问答对</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "message": "done"
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": {
+        "msg": "Not Found"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="查询问答对列表">查询问答对列表</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/faq/database</li>
+</ul>
+<blockquote>
+<p>cURL：查询问答对列表，可根据字段查询，支持分页</p>
+</blockquote>
+<pre><code>curl -X GET \
+  'http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database?limit=30' \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>查询问答对列表，可根据字段查询，支持分页</p>
+<ul>
+<li>QUERY</li>
+</ul>
+<p>在url中，支持使用检索条件，比如 <code>/api/v1/chatbot/{{clientId}}/faq/database?page=1&amp;limit=10</code>，各参数介绍如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>描述</th>
+<th>默认值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>返回本页数据的条数</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>返回哪一页(可根据total进行判断)</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "total": 354,
+    "current_page": 1,
+    "total_page": 12,
+    "data": [
+        {
+            "post": "上架商品就不能修改了是吗？",
+            "is_original": true,
+            "reply": "没有订单产生时可以修改",
+            "enabled": true,
+            "id": "{{docId}}"
+        },
+        ...
+    ]
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": {
+        "msg": "[index_not_found_exception] no such index
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="创建扩展问">创建扩展问</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/faq/database/:docId/extend</li>
+</ul>
+<blockquote>
+<p>cURL：创建扩展问</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}}/extend \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;post&quot;: &quot;怎样支持微信支付?&quot;
+}
+'
+</code></pre>
+<p>创建扩展问，扩展问关联一个问答对，扩展问是标准问的另一种问法。一个问答对可以关联多个扩展问。</p>
+<p>扩展问可以使系统更智能，提高检索的准确率。</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "post": "怎样支持微信支付?"
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>post</td>
+<td>是</td>
+<td>string</td>
+<td>与标准问意思一致的另一种问法，也称“扩展问”。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "id": "{{extendId}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>extendId</code>是该扩展问的唯一标识。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ...
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="查询扩展问">查询扩展问</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/faq/database/:docId/extend</li>
+</ul>
+<blockquote>
+<p>cURL：查询扩展问</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}}/extend \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>查询扩展问</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "total": 1,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "post": "怎样支持微信支付?",
+            "is_original": false,
+            "postId": "{{docId}}",
+            "enabled": true,
+            "id": "{{extendId}}"
+        },
+        ...
+    ],
+    "rc": 0
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": ...
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="更新扩展问">更新扩展问</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId/faq/database/:docId/extend/:extendId</li>
+</ul>
+<blockquote>
+<p>cURL：更新扩展问</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}}/extend/{{extendId}} \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;post&quot;: &quot;怎样支持微信支付?&quot;
+}
+'
+</code></pre>
+<p>更新扩展问</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "post": "怎样支持微信支付?"
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>post</td>
+<td>是</td>
+<td>string</td>
+<td>与标准问意思一致的另一种问法，也称“扩展问”。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "id": "{{extendId}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>extendId</code>是该扩展问的唯一标识。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": {
+        "msg": "Not Found"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="删除扩展问">删除扩展问</h3>
+<ul>
+<li>DELETE /api/v1/chatbot/:clientId/faq/database/:docId/extend/:extendId</li>
+</ul>
+<blockquote>
+<p>cURL：删除扩展问</p>
+</blockquote>
+<pre><code>curl -X DELETE \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/{{docId}}/extend/{{extendId}} \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>删除扩展问</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "message": "done"
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 3,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="导出知识库">导出知识库</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/faq/database/export</li>
+</ul>
+<blockquote>
+<p>cURL：导出问答对数据</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/database/export \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>导出问答对数据</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": [
+        [
+            true,
+            "怎么开通微信支付?",
+            "登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付",
+            "如何支持微信支付"
+        ],
+        ...
+    ]
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>data</code>是问答对的所有数据，每个元素代表一个问答对。
+每个元素又是一个数组，按照顺序分别代表：[enabled，标准问，回复，0~多个扩展问]。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="创建近义词">创建近义词</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/faq/synonyms</li>
+</ul>
+<blockquote>
+<p>cURL：创建近义词</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/synonyms \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;text&quot;: &quot;番茄&quot;,
+    &quot;neighbors&quot;: [&quot;西红柿&quot;, &quot;狼桃&quot;]
+}'
+</code></pre>
+<p>创建近义词，近义词可以进一步提高系统的智能水平。</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "text": "番茄",
+    "neighbors": ["西红柿", "狼桃"]
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>是</td>
+<td>string</td>
+<td>词汇</td>
+</tr>
+<tr>
+<td>neighbors</td>
+<td>是</td>
+<td>[string]</td>
+<td>与text意思相近的词汇</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "text": "番茄",
+        "chatbot": "{{clientId}}",
+        "neighbors": [
+            "西红柿",
+            "狼桃"
+        ],
+        "id": "{{synonymsId}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>synonymsId</code>是该近义词组的唯一标识。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获取近义词详情">获取近义词详情</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/faq/synonyms/:synonymsId</li>
+</ul>
+<blockquote>
+<p>cURL：使用synonymsId获取近义词详情</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/synonyms/{{synonymsId}} \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>使用synonymsId获取近义词详情</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "text": "番茄",
+        "neighbors": [
+            "西红柿",
+            "狼桃"
+        ]
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="更新近义词">更新近义词</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId/faq/synonyms/:synonymsId</li>
+</ul>
+<blockquote>
+<p>cURL：更新近义词</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/synonyms/{{synonymsId}} \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;text&quot;: &quot;番茄&quot;,
+    &quot;neighbors&quot;: [&quot;西红柿&quot;, &quot;狼桃&quot;, &quot;洋柿子&quot;]
+}'
+</code></pre>
+<p>更新近义词</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "text": "番茄",
+    "neighbors": ["西红柿", "狼桃", "洋柿子"]
+}
+</pre>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "text": "番茄",
+        "neighbors": [
+            "西红柿",
+            "狼桃",
+            "洋柿子"
+        ]
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<h3 id="删除近义词">删除近义词</h3>
+<ul>
+<li>DELETE /api/v1/chatbot/:clientId/faq/synonyms/:synonymsId</li>
+</ul>
+<blockquote>
+<p>cURL：删除近义词</p>
+</blockquote>
+<pre><code>curl -X DELETE \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/synonyms/{{synonymsId}} \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>删除近义词</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "message": "done"
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="查询近义词列表">查询近义词列表</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/faq/synonyms</li>
+</ul>
+<blockquote>
+<p>cURL：查询近义词列表，支持分页和按字段查询</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/synonyms \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>查询近义词列表，支持分页和按字段查询</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "total": 1,
+    "rc": 0,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "text": "番茄",
+            "chatbot": "{{clientId}}",
+            "neighbors": [
+                "西红柿",
+                "狼桃",
+                "洋柿子"
+            ],
+            "id": "{{synonymsId}}"
+        },
+        ...
+    ]
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="检索知识库-1">检索知识库</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/faq/query</li>
+</ul>
+<blockquote>
+<p>cURL：根据查询句子查询答案, 返回答案列表，并带有分数</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/query \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;fromUserId&quot;: &quot;test&quot;,
+    &quot;query&quot;: &quot;如何开通微信支付&quot;
+}'
+</code></pre>
+<p><code>fromUserId</code> 代表用户的唯一标识，必填项。
+<code>query</code> 代表请求的查询，必填项。</p>
+<p>根据查询句子查询答案, 返回答案列表，并带有分数。</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "fromUserId": "xxx",
+    "query": "如何开通微信支付"
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fromUserId</td>
+<td>是</td>
+<td>string</td>
+<td>用户的唯一标识</td>
+</tr>
+<tr>
+<td>query</td>
+<td>是</td>
+<td>string</td>
+<td>从知识库中检索的目标</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": [
+        {
+            "id": "{{docId}}",
+            "score": 0.647,
+            "post": "怎么开通微信支付?",
+            "reply": "登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付"
+        }
+    ]
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>data</code>是一个数组，包含0～多个问答对，并且按照匹配程度降序，匹配程度就是该问答对的问题和<code>query</code>的相似度。</p>
+<p>相似度是属于[0-1]区间的值，越大代表语义越相似。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="记录faq点击事件">记录FAQ点击事件</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/faq/click</li>
+</ul>
+<blockquote>
+<p>cURL：记录FAQ点击事件</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/faq/click \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;query&quot;: &quot;如何开通微信支付&quot;,
+    &quot;groundtruth&quot;: &quot;如何支持微信支付&quot;,
+    &quot;negatives&quot;: [&quot;如何支持支付&quot;, &quot;怎么取消微信支付&quot;]
+}'
+</code></pre>
+<p>记录FAQ点击事件：在客服人员点击建议问时，将访客的问题和客服点击的问题记录下来。</p>
+<p>点击事件具有很重要的价值：</p>
+<ol>
+<li><p>梳理业务，提高商业智能;</p>
+</li>
+<li><p>方便统计系统使用情况;</p>
+</li>
+<li><p>评估系统准确率;</p>
+</li>
+<li><p>优化系统准确率，比如训练更好的机器学习模型。</p>
+</li>
+</ol>
+<p>所以，该接口应保证尽可能调用。</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "query": "如何开通微信支付",
+    "groundtruth": "如何支持微信支付",
+    "negatives": ["如何支持支付", "怎么取消微信支付"]
+}
+</pre>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>必须</th>
+<th>类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>query</td>
+<td>是</td>
+<td>string</td>
+<td>原始查询</td>
+</tr>
+<tr>
+<td>groundtruth</td>
+<td>是</td>
+<td>string</td>
+<td>准确答案</td>
+</tr>
+<tr>
+<td>negatives</td>
+<td>是</td>
+<td>[string]</td>
+<td>被展示为建议答案但是没有被选中的候选回复</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "message": "done"
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获得多轮对话列表">获得多轮对话列表</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/conversation</li>
+</ul>
+<blockquote>
+<p>cURL：获得对话列表</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>获得对话列表</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "total": 1,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "chatbotID": "{{clientId}}",
+            "name": "{{conversationName}}",
+            "enabled": true,
+            "id": "{{conversationId}}"
+        },
+        ...
+    ]
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获得多轮对话详情">获得多轮对话详情</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/conversation/:conversationId</li>
+</ul>
+<blockquote>
+<p>cURL：获得对话详情</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/{{conversationId}} \
+  -H 'Content-Type: application/json' \
+</code></pre>
+<p>获得对话详情</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "chatbotID": "{{clientId}}",
+        "name": "course",
+        "modified": "2018-07-11T09:39:58.349Z",
+        "created": "2018-07-02T12:02:43.037Z",
+        "scriptBody": "+ _resolve_course_\n- 您好，我是小云，您的课程顾问，请问您家小孩多大了？\n\n+ 一年级老师\n- ^get_teachers(1)",
+        "enabled": true,
+        "id": "{{conversationId}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="启用多轮对话">启用多轮对话</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId/conversation/:conversationId/enable</li>
+</ul>
+<blockquote>
+<p>cURL：使对话处于&quot;启用&quot;状态</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/{{conversationId}}/enable
+</code></pre>
+<p>使对话处于&quot;启用&quot;状态</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "name": "course",
+        "chatbotID": "{{clientId}}",
+        "enabled": true,
+        "id": "{{conversationId}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="禁用多轮对话">禁用多轮对话</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId/conversation/:conversationId/disable</li>
+</ul>
+<blockquote>
+<p>cURL：使对话处于&quot;禁用&quot;状态</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/{{conversationId}}/disable \
+</code></pre>
+<p>使对话处于&quot;禁用&quot;状态</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "name": "course",
+        "chatbotID": "{{clientId}}",
+        "enabled": false,
+        "id": "{{conversationId}}"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获取环境变量">获取环境变量</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/conversation/environment</li>
+</ul>
+<blockquote>
+<p>cURL：获取环境变量</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/environment \
+</code></pre>
+<p>获取环境变量</p>
+<p>环境变量是多轮对话的在“设计阶段”和“部署阶段”不共享的变量。具体应用场景见<a href="https://mp.weixin.qq.com/s/kTfUGsIOFIupWOgUiVam1Q">多轮对话设计器：快速开始</a>。</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "USERNAME": "张三"
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="更新环境变量">更新环境变量</h3>
+<ul>
+<li>PUT /api/v1/chatbot/:clientId/conversation/environment</li>
+</ul>
+<blockquote>
+<p>cURL：更新环境变量</p>
+</blockquote>
+<pre><code>curl -X PUT \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/environment \
+  -H 'Content-Type: application/json' \
+  -d '{
+        &quot;USERNAME&quot;: &quot;李四&quot;,
+        &quot;PASSWORD&quot;: &quot;123456&quot;
+    }'
+</code></pre>
+<p>更新环境变量</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "USERNAME": "李四",
+    "PASSWORD": "123456"
+}
+</pre>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "msg": "done"
+}
+</pre>
+<p>返回字段说明：</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="检索多轮对话-1">检索多轮对话</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/conversation/query</li>
+</ul>
+<blockquote>
+<p>cURL：对话问答查询</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/query \
+  -H 'Content-Type: application/json' \
+  -d '{
+    &quot;fromUserId&quot;: &quot;{{uid}}&quot;,
+    &quot;textMessage&quot;: &quot;北京今天天气怎么样&quot;,
+    &quot;isDebug&quot;: false
+}'
+</code></pre>
+<p>对话问答查询</p>
+<ul>
+<li>BODY</li>
+</ul>
+<pre class="prettyprint">
+{
+    "fromUserId": "{{uid}}",
+    "textMessage": "北京今天天气怎么样",
+    "isDebug": false
+}
+</pre>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "state": "default",
+        "createdAt": 1543559131688,
+        "string": "我不明白您的意思。",
+        "topicName": null,
+        "subReplies": [],
+        "service": {
+            "provider": "fallback"
+        },
+        "logic_is_fallback": true,
+        "logic_is_unexpected": true,
+        "botName": "test1",
+        "faq": [
+            {
+                "id": "AWdjRddmHR0CxALgXwY-",
+                "score": 0.75,
+                "post": "怎么开通微信支付?",
+                "reply": "登录微信公众号平台，点击左侧微信支付菜单栏，按照开通步骤开通微信支付"
+            }
+        ]
+    }
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>state</code>是一些业务需求的约定字段，比如，对话要完成“用户认证”，那么在完成认证后，<code>state</code>会返回<code>auth_succ</code>；认证失败时，返回<code>auth_fail</code>，该字段可通过对话脚本设定。</p>
+<p><code>logic_is_fallback</code>代表该回复是否是兜底。</p>
+<p><code>topicName</code>代表当前机器人正在聊的话题。</p>
+<p><code>botName</code>代表聊天机器人的名字。</p>
+<p><code>service</code>代表返回的数据来源，<strong>provider:script</strong>指<strong>多轮对话</strong>，<strong>provider:faq</strong>指<strong>知识库</strong>；不同数据来源也会提供相应信息。</p>
+<p><code>faq</code>代表知识库的检索结果，类型为数组，包括每个问答对的详情。</p>
+<table>
+<thead>
+<tr>
+<th>provider</th>
+<th>key</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>faq</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>docId</td>
+<td>文档ID</td>
+</tr>
+<tr>
+<td></td>
+<td>post</td>
+<td>标准问</td>
+</tr>
+<tr>
+<td></td>
+<td>score</td>
+<td>分数</td>
+</tr>
+<tr>
+<td></td>
+<td>threshold</td>
+<td>阀值</td>
+</tr>
+<tr>
+<td>conversation</td>
+<td>多轮对话</td>
+<td></td>
+</tr>
+<tr>
+<td>fallback</td>
+<td>兜底回复</td>
+<td></td>
+</tr>
+<tr>
+<td>mute</td>
+<td>该用户被该机器人屏蔽</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<ul>
+<li>回复处理逻辑</li>
+</ul>
+<p>多轮对话获取回复的逻辑解释如下：</p>
+<table class="image">
+<caption align="bottom">查询逻辑</caption>
+<tr><td><img width="800" src="../../images/products/chatbot-engine-1.png" alt="查询逻辑"></td></tr>
+</table>
+<ol>
+<li>用户输入，以文本的形式输入，语音输入也需要转化成文字。</li>
+<li>[知识库检索] 如果知识库检索出相似度大于0.8的问答对，直接返回得分最高的问题的答案。</li>
+<li>[多轮对话检索] 如果知识库没有检索出相似度大于0.8的问答对，检索多轮对话，如果命中了一个规则，直接返回答案。</li>
+<li>[兜底回复] 如果多轮对话也没有检索出答案，返回兜底回复。</li>
+</ol>
+<h3 id="导入对话应用">导入对话应用</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/conversation/droplet/import</li>
+</ul>
+<blockquote>
+<p>cURL：导入对话应用文件</p>
+</blockquote>
+<pre><code>ZIPFILE=小叮当-1.0.0-conversations.c66
+set -x
+curl -i -X POST -H &quot;Content-Type: multipart/form-data&quot; \
+    -F &quot;droplet=@$ZIPFILE&quot; \
+    -F &quot;USERNAME=李四&quot; \
+    -F &quot;PASSWORD=123456&quot; \
+    http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/conversation/droplet/import
+</code></pre>
+<p>导入对话应用文件</p>
+<p>对话应用文件示例详见<a href="https://github.com/chatopera/conversation-sampleapp">天气查询机器人:多轮对话示例程序</a>。</p>
+<ul>
+<li>BODY</li>
+</ul>
+<p>multipart表单，环境变量使用<code>-F</code>设定键值对，对话应用文件设置<code>droplet</code>的文件路径，参考cURL样例程序。</p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+  "rc": 0,
+  "data": {
+    "msg": "Import is done successfully."
+  }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获取用户列表">获取用户列表</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/users</li>
+</ul>
+<blockquote>
+<p>cURL：获取用户列表</p>
+</blockquote>
+<pre><code>curl -X GET \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/users \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>获取用户列表</p>
+<p>在智能问答引擎中，并不具备管理用户的功能，但是在每次请求**/api/v1/chatbot/{{clientId}}/conversation/query<strong>或</strong>/api/v1/chatbot/{{clientId}}/faq/query<strong>时，在body中传入的</strong>fromUserId**会被保存为一个用户。</p>
+<p>在智能问答引擎中，将<strong>chatbotID</strong>下的每个<strong>fromUserId</strong>视为该聊天机器人的用户唯一标识，所以<strong>chatbotID</strong>和<strong>fromUserId</strong>具有联合唯一的性质。</p>
+<ul>
+<li>QUERY</li>
+</ul>
+<p>在url中，支持使用检索条件，比如 <code>/api/v1/chatbot/{{clientId}}/users?page=1&amp;limit=10</code>，各参数介绍如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>描述</th>
+<th>默认值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>返回本页数据的条数</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>返回哪一页(可根据total进行判断)</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>sortby</td>
+<td>string</td>
+<td>返回值的排序条件</td>
+<td>-lasttime (按照最后一次对话时间降序)</td>
+<td>-created (按照初次对话时间降序), lasttime (按照最后一次对话升序)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "total": 1,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "chatbotID": "{{clientId}}",
+            "userId": "postman",
+            "lasttime": "2018-10-06T01:22:30.584Z",
+            "created": "2018-10-06T01:19:30.726Z"
+        }
+    ]
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>total</code>代表用户总数量。</p>
+<p><code>current_page</code>代表当前页，<code>total_page</code>代表总页数。</p>
+<p><code>data</code>是用户数据，<code>userId</code>是用户ID，<code>lasttime</code>是该用户最后一次对话时间，<code>create</code>是该用户第一次对话时间。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="屏蔽指定用户">屏蔽指定用户</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/users/:userId/mute</li>
+</ul>
+<blockquote>
+<p>cURL：屏蔽指定用户</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/users/{{userId}}/mute \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>屏蔽用户</p>
+<p>根据<strong>chatbotID</strong>和<strong>userId</strong>屏蔽该用户，该用户被屏蔽后，该用户作为<em>fromUserId</em>时，发起对轮对话查询时，返回结果如下：</p>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "state": "default",
+        "string": null,
+        "botName": "BOTNAME",
+        "logic_is_unexpected": false,
+        "service": {
+            "provider": "mute"
+        }
+    }
+}
+</pre>
+<p>【提示】返回*service.provider='mute'*的结果。</p>
+<p>发起知识库问答时，返回如下结果：</p>
+<pre class="prettyprint">
+{
+    "rc": 10,
+    "error": "userId [xxx] is blocked with chatbotID [xxx]"
+}
+</pre>
+<p>【提示】返回结果<em>rc=10</em> 。</p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {}
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="检查用户是否被屏蔽">检查用户是否被屏蔽</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/users/:userId/ismute</li>
+</ul>
+<blockquote>
+<p>cURL：检查用户是否被屏蔽</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/users/{{userId}}/ismute \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>检查用户是否被屏蔽</p>
+<p>根据<strong>chatbotID</strong>和<strong>userId</strong>检查该用户是否被屏蔽。</p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {
+        "mute": true
+    }
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="取消屏蔽用户">取消屏蔽用户</h3>
+<ul>
+<li>POST /api/v1/chatbot/:clientId/users/:userId/unmute</li>
+</ul>
+<blockquote>
+<p>cURL：取消屏蔽用户</p>
+</blockquote>
+<pre><code>curl -X POST \
+  http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/users/{{userId}}/unmute \
+  -H 'Content-Type: application/json'
+</code></pre>
+<p>根据chatbotID和userId取消对一个用户的屏蔽。</p>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "data": {}
+}
+</pre>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h3 id="获取用户聊天历史">获取用户聊天历史</h3>
+<ul>
+<li>GET /api/v1/chatbot/:clientId/users/:userId/chats</li>
+</ul>
+<blockquote>
+<p>cURL：获取用户聊天历史</p>
+</blockquote>
+<pre><code>curl -X GET \
+  'http://{{IP}}:{{PORT}}/api/v1/chatbot/{{clientId}}/users/{{userId}}/chats?limit=20' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+</code></pre>
+<p>获取用户聊天历史</p>
+<p>根据<strong>chatbotID</strong>和<strong>userId</strong>获取聊天历史记录</p>
+<ul>
+<li>QUERY</li>
+</ul>
+<p>在url中，支持使用检索条件，比如 <code>/api/v1/chatbot/{{clientId}}/users/{{userID}}/chats?page=1&amp;limit=10</code>，各参数介绍如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>描述</th>
+<th>默认值</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>返回本页数据的条数</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>返回哪一页(可根据total进行判断)</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>sortby</td>
+<td>string</td>
+<td>返回值的排序条件</td>
+<td>-created (按照对话时间降序)</td>
+<td>created (按照初次对话时间升序)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 0,
+    "total": 2,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "chatbotID": "gmis_department_11",
+            "userId": "postman",
+            "textMessage": "白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。",
+            "direction": "outbound",
+            "service": "conversation",
+            "created": "2018-10-06T01:58:27.828Z"
+        },
+        {
+            "chatbotID": "gmis_department_11",
+            "userId": "postman",
+            "textMessage": "北京今天天气怎么样",
+            "direction": "inbound",
+            "created": "2018-10-06T01:58:22.270Z"
+        }
+    ]
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>direction</code>代表数据传递方向，<code>inbound</code>是用户发送给聊天机器人，<code>outbound</code>是聊天机器人发送给用户。
+<code>textMessage</code>发送的文字消息。
+<code>service</code>在发送为<code>outbound</code>时，机器人获取答案的服务标识: <code>conversation</code> 代表多轮对话； <code>faq</code>代表知识库；<code>fallback</code>代表兜底回复。</p>
+<ul>
+<li>异常返回</li>
+</ul>
+<pre class="prettyprint">
+{
+    "rc": 1,
+    "error": ... 
+}
+</pre>
+<p>返回字段说明：</p>
+<p><code>rc</code>为正整数时，代表异常，异常描述为<code>error</code>。</p>
+<h2 id="评论">评论</h2>
+<script src="https://utteranc.es/client.js" repo="chatopera/docs" issue-term="pathname" label="Comment" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©2019 <a href="https://www.chatopera.com" target="_blank">北京华夏春松科技有限公司</a> 京ICP备17070907号-1
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
