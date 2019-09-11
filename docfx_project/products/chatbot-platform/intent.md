@@ -313,11 +313,107 @@
 
 ## 意图管理
 
+### 创建意图
+
+**命名规则与创建**
+
+ 命名规则：
+
+- 意图标识名为字母、数字、下划线的组合，1-32位，如：RailTypes
+- 同一个机器人下的意图标识名不能重复
+- 意图标识名一经确认后无法进行修改
+
+创建：
+
+在意图管理页面点击新建自定义词典，在弹出的对话框里输入正确的自定义词典名称，点击确定。与新建自定义词典一样
+
+### 编辑意图
+
+**槽位管理（槽位的增删改）**
+
+添加槽位：添加槽位时可以选择应用系统词典或自定义词典，可以设置是否必填和追问（必填的话必须设置追问）
+
+槽位引用系统词典
+
+槽位引用自定义词典
+ 
+槽位是否必填与追问   
+
+<table class="image">
+<caption align="bottom">添加槽位</caption>
+<tr><td><img width="600" src="../../images/intent/intent1.png" alt="添加槽位"/></td></tr>
+</table> 
+
+删除槽位：对于不需要的槽位可以进行删除，点击删除按钮即可
+
+修改槽位：对于需要修改的槽位，直接进行编辑和修改即可
+
+<table class="image">
+<caption align="bottom">修改槽位</caption>
+<tr><td><img width="600" src="../../images/intent/intent2.png" alt="修改槽位"/></td></tr>
+</table> 
+
+**说法管理（说法的增删改）**
+
+添加说法：对于用户的说法，可以添加没有槽位的说法，也可以用{}关联槽位，把槽名称放到{}里面即可
+
+添加没有槽位的说法
+
+添加绑定槽位的说法：一个说法可以绑定多个槽位
+
+<table class="image">
+<caption align="bottom">添加说法</caption>
+<tr><td><img width="600" src="../../images/intent/intent3.png" alt="添加说法"/></td></tr>
+</table> 
+
+删除说法：对于不需要的说法可以进行删除，点击删除按钮即可
+
+修改说法：对于需要修改的说法，直接进行编辑和修改即可
+
+**保存**
+
+在编辑完所有说法和槽位之后，需要进行保存。保存并且训练成功有提示。成功就可以到测试对话页面进行测试了
+
+<table class="image">
+<caption align="bottom">保存</caption>
+<tr><td><img width="600" src="../../images/intent/intent4.png" alt="保存"/></td></tr>
+</table>
+
 ## 版本管理
+
+### 调试版本
+
+每次保存并且训练成功后，都会自动更新调试版本。但是此时不该急于发布上线，需要多次在测试对话页面进行测试，确保无误之后，再发布上线
+
+测试：在测试对话页面与机器人进行对话。在右侧会把对应的意图、槽位以及槽位值之类的信息展示出来
+
+<table class="image">
+<caption align="bottom">测试</caption>
+<tr><td><img width="600" src="../../images/intent/version1.png" alt="测试"/></td></tr>
+</table>
+
+### 生产版本
+
+在调试版本中经过测试病确保无误之后，可以点击发布上线。上线后为生产版本
+
+<table class="image">
+<caption align="bottom">生产版本</caption>
+<tr><td><img width="600" src="../../images/intent/version2.png" alt="生产版本"/></td></tr>
+</table>
 
 ## 系统集成
 
 ## 查看使用情况
+
+### 在统计页面查看意图识别对话检索次数
+
+<table class="image">
+<caption align="bottom">生产版本</caption>
+<tr><td><img width="600" src="../../images/intent/view1.png" alt="生产版本"/></td></tr>
+</table>
+
+### 查看历史消息
+
 
 ## 评论
 
