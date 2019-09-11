@@ -50,7 +50,7 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 ## 创建聊天机器人
 
-登录[Chatopera 机器人平台](https://bot.chatopera.com/)，注册并在【控制台】中创建聊天机器人。
+登录[Chatopera 云服务](https://bot.chatopera.com/)，注册并在【控制台】中创建聊天机器人。
 
 <table class="image">
     <caption align="bottom">创建聊天机器人</caption>
@@ -94,13 +94,13 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 以管理员身份*春松客服坐席工作台*，导航【智能机器人-新建机器人】，按照如下内容填入创建表单。
 
-| 项目     | 值             | 描述                                                              |
-| -------- | -------------- | ----------------------------------------------------------------- |
-| 网站渠道 | localhost      | 根据网站地址选择网站渠道                                          |
-| ClientId | xxx            | [Chatopera 机器人平台机器人 ClientId](https://bot.chatopera.com/) |
-| Secret   | xxx            | [Chatopera 机器人平台机器人 Secret](https://bot.chatopera.com/)   |
-| 工作模式 | 机器人客服优先 | 目前支持【机器人客服优先】或【人工客服优先】两种类型              |
-| 描述     | 机器人客服     | 对机器人的简要介绍                                                |
+| 项目     | 值             | 描述                                                    |
+| -------- | -------------- | ------------------------------------------------------- |
+| 网站渠道 | localhost      | 根据网站地址选择网站渠道                                |
+| ClientId | xxx            | [Chatopera 云服务 ClientId](https://bot.chatopera.com/) |
+| Secret   | xxx            | [Chatopera 云服务 Secret](https://bot.chatopera.com/)   |
+| 工作模式 | 机器人客服优先 | 目前支持【机器人客服优先】或【人工客服优先】两种类型    |
+| 描述     | 机器人客服     | 对机器人的简要介绍                                      |
 
 <table class="image">
     <caption align="bottom">集成机器人客服</caption>
@@ -137,11 +137,11 @@ http[s]://春松客服IP[:PORT]/testclient.html
     </tr>
 </table>
 
-如果想使机器人变得更加智能，需要参考关于[Chatopera 机器人平台](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。
+如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。
 
 ## 问候语
 
-在默认情况下，机器人的问候语是在机器人平台的机器人属性页面进行设置，该设置只支持简单的文本。
+在默认情况下，机器人的问候语是在 Chatopera 云服务的机器人属性页面进行设置，该设置只支持简单的文本。
 
 <table class="image">
     <caption align="bottom">设置机器人问候语</caption>
@@ -263,7 +263,7 @@ exports.get_greetings = async function() {
 
 - 导出聊天机器人
 
-多轮对话设计器是企业聊天机器人的设计环境，[机器人平台](https://docs.chatopera.com/chatbot-platform.html)或[智能问答引擎](https://docs.chatopera.com/chatbot-engine.html)是机器人的运行时环境。
+多轮对话设计器是企业聊天机器人的设计环境，[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)或[智能问答引擎](https://docs.chatopera.com/chatbot-engine.html)是机器人的运行时环境。
 
 <table class="image">
     <caption align="bottom">发布并导出对话应用</caption>
@@ -276,10 +276,10 @@ exports.get_greetings = async function() {
 
 - 发布聊天机器人
 
-登录机器人平台，在目标机器人的多轮对话管理面板中，导入对话应用(`.c66`)文件。
+登录 Chatopera 云服务，在目标机器人的多轮对话管理面板中，导入对话应用(`.c66`)文件。
 
 <table class="image">
-    <caption align="bottom">导入机器人平台</caption>
+    <caption align="bottom">导入Chatopera云服务</caption>
     <tr>
         <td><img width="800" src="../../images/products/cosin/cards/image-7.png" alt="" /></td>
     </tr>
@@ -384,7 +384,7 @@ exports.get_shangyi = async function() {
 在上面的介绍中，Chatopera 的多轮对话机器人通过`c66`文件进行分发，Chatopera
 提供了在问候语中关联热门问题的多轮对话应用示例文件(`小松.1.0.7.c66`)，您可以点击[下载链接](https://github.com/chatopera/chatopera.samples/raw/master/%E5%8D%A1%E7%89%87%E6%B6%88%E6%81%AF/%E5%B0%8F%E6%9D%BE.1.0.7.c66)获得这个应用。
 
-该对话可以导入到多轮对话设计器中，进行浏览脚本和函数；也可以直接导入到机器人平台，然后在春松客服中进行体验。
+该对话可以导入到多轮对话设计器中，进行浏览脚本和函数；也可以直接导入到 Chatopera 云服务，然后在春松客服中进行体验。
 
 ## 评论
 

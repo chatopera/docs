@@ -6,7 +6,7 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
 
 本文档包含对 Chatopera 产品的详细使用介绍：
 
-- [机器人平台](/products/chatbot-platform/index.html)：聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。
+- [Chatopera 云服务](/products/chatbot-platform/index.html)：聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。
 
 - [春松客服](/products/cskefu/index.html)：针对目前智能客服的需求，我们为没有客服应答系统的客户提供全渠道智能客服系统。全渠道智能客服系统是客服应答系统和智能问答引擎的集成。
 

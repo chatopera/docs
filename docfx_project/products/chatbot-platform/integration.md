@@ -7,7 +7,7 @@ RestAPI 接口是面向未发布 SDK 的语言进行集成时候的选择，推�
 
 ## SDK
 
-Chatopera 机器人平台提供集成聊天机器人的方案为 SDK，目前支持 Java、Node.js、PHP 和 Golang，近期也会补充更多语言的 SDK。
+Chatopera 云服务提供集成聊天机器人的方案为 SDK，目前支持 Java、Node.js、PHP 和 Golang，近期也会补充更多语言的 SDK。
 
 在聊天机器人的一级菜单，可以进入*集成*页面。
 

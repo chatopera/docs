@@ -148,14 +148,14 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 > 提示
 
 ```
-Chatopera机器人平台:
+Chatopera云服务:
 Client ID对应"应用ID"
 Secret 对应"密钥"
 ```
 
 安装完成后，可以在启动菜单和桌面看到“Chatopera 小助手”的快捷方式。
 
-已经具备了应用 ID 和密钥的用户跳过此步。作为团队组长/企业主管等角色使用或作为个人用途，可以通过注册<a href="https://bot.chatopera.com" target="_blank">Chatopera 机器人平台</a>，然后创建聊天机器人获得。
+已经具备了应用 ID 和密钥的用户跳过此步。作为团队组长/企业主管等角色使用或作为个人用途，可以通过注册<a href="https://bot.chatopera.com" target="_blank">Chatopera 云服务</a>，然后创建聊天机器人获得。
 
 <table class="image">
 <caption align="bottom">获得应用ID和密钥</caption>
