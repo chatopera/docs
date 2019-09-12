@@ -166,7 +166,7 @@ http[s]://春松客服IP[:PORT]/testclient.html
     </tr>
 </table>
 
-在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](https://docs.chatopera.com/conversation-designer.html)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要
+在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要
 30 分钟时间**。
 
 下面是支持在问候语中关联热门问题，进行导航的方法：
@@ -180,7 +180,7 @@ http[s]://春松客服IP[:PORT]/testclient.html
     </tr>
 </table>
 
-下载连接也可以通过[多轮对话设计器使用教程](https://docs.chatopera.com/conversation-designer.html)获得。
+下载连接也可以通过[多轮对话设计器使用教程](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80)获得。
 
 - 新建聊天机器人
 
