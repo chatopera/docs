@@ -36,12 +36,12 @@
 
 <table class="image">
 <caption align="bottom">创建机器人</caption>
-<tr><td><img width="600" src="../../images/intent/fast1.png" alt="创建机器人"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast1.png" alt="创建机器人"/></td></tr>
 </table>
 
 <table class="image">
 <caption align="bottom">创建机器人</caption>
-<tr><td><img width="600" src="../../images/intent/fast2.png" alt="创建机器人"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast2.png" alt="创建机器人"/></td></tr>
 </table>
 
 ### 新建意图
@@ -50,7 +50,7 @@
 
 <table class="image">
 <caption align="bottom">新建意图</caption>
-<tr><td><img width="600" src="../../images/intent/fast3.png" alt="新建意图"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast3.png" alt="新建意图"/></td></tr>
 </table>
 
 ### 编辑意图
@@ -59,25 +59,25 @@
 
 <table class="image">
 <caption align="bottom">编辑意图</caption>
-<tr><td><img width="600" src="../../images/intent/fast4.png" alt="编辑意图"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast4.png" alt="编辑意图"/></td></tr>
 </table>
 <table class="image">
 <caption align="bottom">编辑意图</caption>
-<tr><td><img width="600" src="../../images/intent/fast5.png" alt="编辑意图"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast5.png" alt="编辑意图"/></td></tr>
 </table>
 
 逐一添加各个模块，例如：【用户说法】添加带槽位和不带槽位的用户说法
 
 <table class="image">
 <caption align="bottom">用户说法</caption>
-<tr><td><img width="600" src="../../images/intent/fast6.png" alt="用户说法"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast6.png" alt="用户说法"/></td></tr>
 </table>
 
 【槽位】添加槽位并进行相关设置
 
 <table class="image">
 <caption align="bottom">槽位</caption>
-<tr><td><img width="600" src="../../images/intent/fast7.png" alt="槽位"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast7.png" alt="槽位"/></td></tr>
 </table>
 
 ### 新建和配置自定义词典
@@ -86,14 +86,14 @@
 
 <table class="image">
 <caption align="bottom">选择词典</caption>
-<tr><td><img width="600" src="../../images/intent/fast8.png" alt="选择词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast8.png" alt="选择词典"/></td></tr>
 </table>
 
 也可先保存意图配置后，切换到【词典管理】模块新建自定义词典
 
 <table class="image">
 <caption align="bottom">新建自定义词典</caption>
-<tr><td><img width="600" src="../../images/intent/fast9.png" alt="新建自定义词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast9.png" alt="新建自定义词典"/></td></tr>
 </table>
 
 无论通过哪种途径新建自定义词典，都需要在【词典管理】模块对自定义词典进行配置，添加词条
@@ -102,14 +102,14 @@
 
 <table class="image">
 <caption align="bottom">编辑词典</caption>
-<tr><td><img width="600" src="../../images/intent/fast10.png" alt="编辑词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast10.png" alt="编辑词典"/></td></tr>
 </table>
 
 词典详情页面可以添加多个同义词与近义词，添加后进行保存
 
 <table class="image">
 <caption align="bottom">编辑词条</caption>
-<tr><td><img width="600" src="../../images/intent/fast11.png" alt="编辑词条"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast11.png" alt="编辑词条"/></td></tr>
 </table>
 
 ### 训练机器人
@@ -118,33 +118,33 @@
 
 <table class="image">
 <caption align="bottom">保存</caption>
-<tr><td><img width="600" src="../../images/intent/fast12.png" alt="保存"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast12.png" alt="保存"/></td></tr>
 </table>
 
 点击意图详情页面右上角“测试”按钮，进入测试对话页面
 
 <table class="image">
 <caption align="bottom">测试</caption>
-<tr><td><img width="600" src="../../images/intent/fast13.png" alt="测试"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast13.png" alt="测试"/></td></tr>
 </table>
 
 <table class="image">
 <caption align="bottom">测试</caption>
-<tr><td><img width="600" src="../../images/intent/fast14.png" alt="测试"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast14.png" alt="测试"/></td></tr>
 </table>
 
 测试对话窗口输入意图中的用户说法对机器人进行训练，机器人识别到意图后会对该意图下添加的槽位进行追问
 
 <table class="image">
 <caption align="bottom">对话</caption>
-<tr><td><img width="600" src="../../images/intent/fast15.png" alt="对话"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast15.png" alt="对话"/></td></tr>
 </table>
 
 机器人识别到所有槽位后会结束对话，建立新的会话
 
 <table class="image">
 <caption align="bottom">建立新的会话</caption>
-<tr><td><img width="600" src="../../images/intent/fast16.png" alt="建立新的会话"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast16.png" alt="建立新的会话"/></td></tr>
 </table>
 
 ### 发布机器人
@@ -153,14 +153,14 @@
 
 <table class="image">
 <caption align="bottom">调试版本</caption>
-<tr><td><img width="600" src="../../images/intent/fast17.png" alt="调试版本"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast17.png" alt="调试版本"/></td></tr>
 </table>
 
 机器人存在调试版本时，可进行测试，测试无误后可对当前调试版本进行发布上线
 
 <table class="image">
 <caption align="bottom">发布上线</caption>
-<tr><td><img width="600" src="../../images/intent/fast18.png" alt="发布上线"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/fast18.png" alt="发布上线"/></td></tr>
 </table>
 
 ## 词典管理
@@ -189,45 +189,45 @@
 
 <table class="image">
 <caption align="bottom">新建自定义词典</caption>
-<tr><td><img width="600" src="../../images/intent/dict1.png" alt="新建自定义词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict1.png" alt="新建自定义词典"/></td></tr>
 </table>
 
 <table class="image">
 <caption align="bottom">新建自定义词典</caption>
-<tr><td><img width="600" src="../../images/intent/dict2.png" alt="新建自定义词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict2.png" alt="新建自定义词典"/></td></tr>
 </table>
 
 如果创建的自定义词典名称不符合要求，会有相应的提示
 
 <table class="image">
 <caption align="bottom">不符合要求</caption>
-<tr><td><img width="600" src="../../images/intent/dict3.png" alt="不符合要求"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict3.png" alt="不符合要求"/></td></tr>
 </table>
 
 修改中文名：对于已经创建的自定义词典可以修改中文名
 
 <table class="image">
 <caption align="bottom">修改中文名</caption>
-<tr><td><img width="600" src="../../images/intent/dict4.png" alt="修改中文名"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict4.png" alt="修改中文名"/></td></tr>
 </table>
 
 删除：对于不需要的自定义词典点击删除按钮即可
 
 <table class="image">
 <caption align="bottom">删除自定义词典</caption>
-<tr><td><img width="600" src="../../images/intent/dict5.png" alt="删除自定义词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict5.png" alt="删除自定义词典"/></td></tr>
 </table>
 
 <table class="image">
 <caption align="bottom">删除自定义词典</caption>
-<tr><td><img width="600" src="../../images/intent/dict6.png" alt="删除自定义词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict6.png" alt="删除自定义词典"/></td></tr>
 </table>
 
 对于已经绑定了槽位的自定义词典不可删除
 
 <table class="image">
 <caption align="bottom">不可删除</caption>
-<tr><td><img width="600" src="../../images/intent/dict7.png" alt="不可删除"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict7.png" alt="不可删除"/></td></tr>
 </table>
 
 ### 编辑自定义词典
@@ -242,7 +242,7 @@
 
 <table class="image">
 <caption align="bottom">添加词条</caption>
-<tr><td><img width="600" src="../../images/intent/dict8.png" alt="添加词条"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict8.png" alt="添加词条"/></td></tr>
 </table>
 
 删除词条：对于不需要的词条可以进行删除，点击删除按钮即可
@@ -251,14 +251,14 @@
 
 <table class="image">
 <caption align="bottom">修改词条</caption>
-<tr><td><img width="600" src="../../images/intent/dict9.png" alt="修改词条"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict9.png" alt="修改词条"/></td></tr>
 </table>
 
 查找词条：对于词条较多对词典来说，可以快速搜索词条。在搜索框输入需要搜索的词条之后点击放大镜或者点击回车键即可搜索。搜索完成后搜索框中出现一个清除按钮，点击之后清除本次搜索
 
 <table class="image">
 <caption align="bottom">查找词条</caption>
-<tr><td><img width="600" src="../../images/intent/dict10.png" alt="查找词条"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict10.png" alt="查找词条"/></td></tr>
 </table>
 
 **保存**
@@ -267,12 +267,12 @@
 
 <table class="image">
 <caption align="bottom">保存</caption>
-<tr><td><img width="600" src="../../images/intent/dict11.png" alt="保存"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict11.png" alt="保存"/></td></tr>
 </table>
 
 <table class="image">
 <caption align="bottom">保存</caption>
-<tr><td><img width="600" src="../../images/intent/dict12.png" alt="保存"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict12.png" alt="保存"/></td></tr>
 </table>
 
 **自定义词典的维护**
@@ -291,7 +291,7 @@
 
 <table class="image">
 <caption align="bottom">系统词典</caption>
-<tr><td><img width="600" src="../../images/intent/dict13.png" alt="系统词典"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict13.png" alt="系统词典"/></td></tr>
 </table>
 
 各个系统词典的作用
@@ -309,7 +309,7 @@
 
 <table class="image">
 <caption align="bottom">引用与取消</caption>
-<tr><td><img width="600" src="../../images/intent/dict14.png" alt="引用与取消"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/dict14.png" alt="引用与取消"/></td></tr>
 </table>
 
 ## 意图管理
@@ -342,7 +342,7 @@
 
 <table class="image">
 <caption align="bottom">添加槽位</caption>
-<tr><td><img width="600" src="../../images/intent/intent1.png" alt="添加槽位"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/intent1.png" alt="添加槽位"/></td></tr>
 </table>
 
 删除槽位：对于不需要的槽位可以进行删除，点击删除按钮即可
@@ -351,7 +351,7 @@
 
 <table class="image">
 <caption align="bottom">修改槽位</caption>
-<tr><td><img width="600" src="../../images/intent/intent2.png" alt="修改槽位"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/intent2.png" alt="修改槽位"/></td></tr>
 </table>
 
 **说法管理**
@@ -364,7 +364,7 @@
 
 <table class="image">
 <caption align="bottom">添加说法</caption>
-<tr><td><img width="600" src="../../images/intent/intent3.png" alt="添加说法"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/intent3.png" alt="添加说法"/></td></tr>
 </table>
 
 删除说法：对于不需要的说法可以进行删除，点击删除按钮即可
@@ -377,7 +377,7 @@
 
 <table class="image">
 <caption align="bottom">保存</caption>
-<tr><td><img width="600" src="../../images/intent/intent4.png" alt="保存"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/intent4.png" alt="保存"/></td></tr>
 </table>
 
 ## 版本管理
@@ -390,7 +390,7 @@
 
 <table class="image">
 <caption align="bottom">测试</caption>
-<tr><td><img width="600" src="../../images/intent/version1.png" alt="测试"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/version1.png" alt="测试"/></td></tr>
 </table>
 
 ### 生产版本
@@ -399,7 +399,7 @@
 
 <table class="image">
 <caption align="bottom">生产版本</caption>
-<tr><td><img width="600" src="../../images/intent/version2.png" alt="生产版本"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/version2.png" alt="生产版本"/></td></tr>
 </table>
 
 ## 系统集成
@@ -410,7 +410,7 @@
 
 <table class="image">
 <caption align="bottom">生产版本</caption>
-<tr><td><img width="600" src="../../images/intent/view1.png" alt="生产版本"/></td></tr>
+<tr><td><img width="680" src="../../images/intent/view1.png" alt="生产版本"/></td></tr>
 </table>
 
 ### 查看历史消息
