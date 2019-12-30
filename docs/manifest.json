@@ -25,6 +25,435 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/intent/dict1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict10.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict11.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict12.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict13.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict14.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict7.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict8.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/dict9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/dict9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast10.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast11.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast12.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast13.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast14.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast15.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast15.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast16.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast17.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast17.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast18.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast18.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast5.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast6.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast7.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast8.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/fast9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/fast9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/intent1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/intent1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/intent2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/intent2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/intent3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/intent3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/intent4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/intent4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/version1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/version1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/version2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/version2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/intent/view1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/intent/view1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/logo.png",
       "output": {
         "resource": {
@@ -2394,7 +2823,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "6CSAH2xECAsLn34xfXPxdQ=="
+          "hash": "dfsHNNZabZ7gFFgtiIzYqw=="
         }
       },
       "is_incremental": false,
@@ -2406,7 +2835,7 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/account.html",
-          "hash": "Qrpt/aQRMGVLNcLCHizHyA=="
+          "hash": "4x5inqTc6xzv04Vlz4l/iQ=="
         }
       },
       "is_incremental": false,
@@ -2426,11 +2855,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "products/chatbot-platform/capacity.md",
+      "source_relative_path": "products/chatbot-platform/billing.md",
       "output": {
         ".html": {
-          "relative_path": "products/chatbot-platform/capacity.html",
-          "hash": "d+ceYqLJ20+yvBsRN/rlvg=="
+          "relative_path": "products/chatbot-platform/billing.html",
+          "hash": "FMXGGSYKgdDEQ29MR9cVkQ=="
         }
       },
       "is_incremental": false,
@@ -2442,7 +2871,7 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/conversation.html",
-          "hash": "u4HUWE12oeHzCWH7liAhsA=="
+          "hash": "sqD757TZW3WBSZbtCYC5GA=="
         }
       },
       "is_incremental": false,
@@ -2454,7 +2883,7 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/faq.html",
-          "hash": "NHEDWqtVlR5y7h4ICj/kKg=="
+          "hash": "Aq0R+Zl36zYfe56PqT7t4g=="
         }
       },
       "is_incremental": false,
@@ -2478,7 +2907,7 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/index.html",
-          "hash": "MX5KtLfcKE3vAJMLvzj79g=="
+          "hash": "Wt6XLlmt3ijCYk9Jn096rw=="
         }
       },
       "is_incremental": false,
@@ -2490,7 +2919,19 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/integration.html",
-          "hash": "c3Xdn7YCwm893CHjd+6Egg=="
+          "hash": "8ftchcMN2zmX17IwGxRsKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "products/chatbot-platform/intent.md",
+      "output": {
+        ".html": {
+          "relative_path": "products/chatbot-platform/intent.html",
+          "hash": "YozvM64IwubKdDhPWzbYkw=="
         }
       },
       "is_incremental": false,
@@ -2502,7 +2943,7 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/support.html",
-          "hash": "jX6olNhR3H7jc9f+HrViTA=="
+          "hash": "sTnDnEZDULnBFD0pPSAJ4g=="
         }
       },
       "is_incremental": false,
@@ -2514,7 +2955,7 @@
       "output": {
         ".html": {
           "relative_path": "products/chatbot-platform/toc.html",
-          "hash": "qQCZTge+dF6FsAAZkMUntw=="
+          "hash": "BvAu2noWLwdrP7H4q55LOw=="
         }
       },
       "is_incremental": false,
@@ -2670,7 +3111,7 @@
       "output": {
         ".html": {
           "relative_path": "products/cskefu/work-chatbot.html",
-          "hash": "FRiA5qOEX7JYe44pBHMKEw=="
+          "hash": "l5WHA9ozoLWN3z0DhAr91Q=="
         }
       },
       "is_incremental": false,
@@ -2722,7 +3163,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 23,
+          "total_file_count": 24,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

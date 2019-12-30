@@ -4,8 +4,8 @@
   href: account.md
 - name: 技术支持
   href: support.md
-- name: 配额
-  href: capacity.md
+- name: 计费
+  href: billing.md
 - name: 意图识别
   href: intent.md
 - name: 多轮对话
