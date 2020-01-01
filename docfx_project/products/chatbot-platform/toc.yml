@@ -2,19 +2,23 @@
   href: index.md
 - name: 账号管理
   href: account.md
-- name: 技术支持
-  href: support.md
-- name: 计费
-  href: billing.md
 - name: 词典管理
   href: dicts.md
+- name: 知识库
+  href: faq.md
 - name: 意图识别
   href: intent.md
 - name: 多轮对话
   href: conversation.md
-- name: 知识库
-  href: faq.md
-- name: 统计
-  href: audit.md
+- name: 测试对话
+  href: debug.md
 - name: 系统集成
   href: integration.md
+- name: 统计
+  href: audit.md
+- name: 历史记录
+  href: history.md
+- name: 计费及发票
+  href: billing.md
+- name: 技术支持
+  href: support.md
