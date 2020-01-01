@@ -6,6 +6,8 @@
   href: support.md
 - name: 计费
   href: billing.md
+- name: 词典管理
+  href: dicts.md
 - name: 意图识别
   href: intent.md
 - name: 多轮对话
