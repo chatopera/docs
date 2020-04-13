@@ -26,6 +26,6 @@ docker build --build-arg VCS_REF=`git rev-parse --short HEAD` \
     --force-rm=true \
     -t dockerhub.qingcloud.com/chatopera/docs:latest .
 
-if [ $? -eq 0 ]; then
-    docker push dockerhub.qingcloud.com/chatopera/docs:latest
-fi
+# if [ $? -eq 0 ]; then
+#     docker push dockerhub.qingcloud.com/chatopera/docs:latest
+# fi
