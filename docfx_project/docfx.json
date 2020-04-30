@@ -23,6 +23,12 @@
         "files": ["products/cskefu/**.yml", "products/cskefu/**.md"]
       },
       {
+        "files": [
+          "products/psych-assistant/**.yml",
+          "products/psych-assistant/**.md"
+        ]
+      },
+      {
         "files": ["toc.yml", "*.md"]
       }
     ],

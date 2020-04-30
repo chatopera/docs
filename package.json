@@ -1,0 +1,31 @@
+{
+  "name": "@chatopera/docs",
+  "version": "1.0.0",
+  "description": "文档中心",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "node_modules/nodemon/bin/nodemon.js -L -e md,yml --watch docfx_project --exec '/bin/bash -c' './admin/build.sh && ./admin/serve.sh'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatopera/docs.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/chatopera/docs/issues"
+  },
+  "homepage": "https://github.com/chatopera/docs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "tmp/*",
+      "docs/*"
+    ],
+    "delay": "2500"
+  }
+}
