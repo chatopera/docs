@@ -4,7 +4,7 @@
 SDK 是 Chatopera 团队将 RestAPI 封装好的面向不同编程语言的库，包括 Node.js、Go、PHP、Python, Java 等。
 SDK 简化了集成的复杂度，甚至可以通过不同语言的包管理工具直接安装。
 
-## SDK
+## 下载 SDK
 
 Chatopera 云服务提供集成聊天机器人的方案为 SDK，目前支持 Java、Node.js、PHP、Python 和 Golang，近期也会补充更多语言的 SDK。
 
@@ -28,6 +28,19 @@ Chatopera 云服务提供集成聊天机器人的方案为 SDK，目前支持 Ja
         <td><img width="800" src="../../images/platform/8.png" alt="" /></td>
     </tr>
 </table>
+
+**如以上没有满足您说使用环境/语言的 SDK，请创建[Issue](https://github.com/chatopera/docs/issues)进行描述，Chatopera 将尽快满足您的需求。**
+
+## 示例程序
+
+为了方便开发者调用 SDK，每个 SDK 内均有示例程序或测试程序，另外再提供如下程序示例和文档作为参考。
+
+| 语言    | 示例项目                                           |
+| ------- | -------------------------------------------------- |
+| Java    | https://github.com/chatopera/chatopera-sample-java |
+| Node.js | https://github.com/chatopera/chatopera-sample-node |
+
+## SDK 接口详情
 
 ### 获得机器人详情
 

@@ -6,7 +6,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "serve": "node_modules/nodemon/bin/nodemon.js -L -e md,yml --watch docfx_project --exec '/bin/bash -c' './admin/build.sh && ./admin/serve.sh'"
+    "start": "node_modules/nodemon/bin/nodemon.js -L -e md,yml --watch docfx_project --exec '/bin/bash -c' './admin/build.sh && ./admin/serve.sh'"
   },
   "repository": {
     "type": "git",

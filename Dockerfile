@@ -8,3 +8,6 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 
 
 COPY ./dist/_site /usr/share/nginx/html
+COPY ./assets/default.conf /etc/nginx/conf.d/default.conf
+COPY ./assets/404.html /usr/share/nginx/html/404.html
+COPY ./assets/50x.html /usr/share/nginx/html/50x.html

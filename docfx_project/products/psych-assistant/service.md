@@ -62,3 +62,14 @@
 </table>
 
 心理问答服务并不是面向开放域的聊天服务，请发送心理疾病、心理咨询相关的问题，参考前文[《机器人对话示例》](/products/psych-assistant/service.html#机器人对话示例)。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

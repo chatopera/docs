@@ -59,7 +59,7 @@ For Mac users.
 ```
 brew install docfx
 npm i
-npm run serve
+npm start
 # input `rs` for restart
 ```
 
