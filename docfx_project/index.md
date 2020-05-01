@@ -6,7 +6,7 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
 
 ## 春松客服
 
-- [春松客服](/products/cskefu/index.html)，针对目前企业智能客服的需求，我们提供多渠道智能客服系统的全解决方案。
+[春松客服](/products/cskefu/index.html)，针对目前企业智能客服的需求，我们提供多渠道智能客服系统的全解决方案。
 
 <img width="800" src="images/products/solution-1.png" alt="Chatopera产品&服务"/>
 
@@ -21,7 +21,7 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
 
 ## 心智能
 
-- [心智能](/products/psych-assistant/index.html)，心理咨询 AI 助手，应用人工智能技术，提升心理咨询过程中，咨询者的用户体验和心理咨询师的工作效率。`心智能`是 Chatopera 结合 Chatopera 机器人平台和其它成熟的 AI 技术，打造的面向心理咨询行业的平台级服务的解决方案，提供心理健康、心理支持机器人，客服系统等全方位的软件系统和服务，包括不同组件，根据企业客户实际需求灵活配置。
+[Chatopera 心智能](/products/psych-assistant/index.html)，心理咨询 AI 助手，应用人工智能技术，提升心理咨询过程中，咨询者的用户体验和心理咨询师的工作效率。`心智能`是 Chatopera 结合 Chatopera 机器人平台和其它成熟的 AI 技术，打造的面向心理咨询行业的平台级服务的解决方案，提供心理健康、心理支持机器人，客服系统等全方位的软件系统和服务，包括不同组件，根据企业客户实际需求灵活配置。
 
 ## 技术支持
 
@@ -38,4 +38,4 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
 
 [博客](https://blog.chatopera.com/)
 
-[价值观及愿景](https://blog.chatopera.com/vision-and-value/)
+[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)

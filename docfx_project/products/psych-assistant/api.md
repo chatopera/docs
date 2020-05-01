@@ -146,13 +146,13 @@ chatbot.psychChat(channel, channelId, userId, textMessage)
 
 `provider.name`值的含义：
 
-| 值       | 技能                                                   |
-| -------- | ------------------------------------------------------ |
-| relevant | 知识库                                                 |
-| intent   | 意图识别多轮对话                                       |
-| chichat  | 寒暄语料                                               |
-| fallback | 兜底回复                                               |
-| cipher   | 预定义暗号，适用于特殊的需求，比如 `@SESSION_DESTROY@` |
+| 值       | 技能                                                     |
+| -------- | -------------------------------------------------------- |
+| relevant | 知识库                                                   |
+| intent   | 意图识别多轮对话                                         |
+| chichat  | 寒暄语料                                                 |
+| fallback | 兜底回复                                                 |
+| cipher   | 预定义问答对，适用于特殊的需求，比如 `@SESSION_DESTROY@` |
 
 关于 `@SESSION_DESTROY@`的使用参考[示例程序](https://github.com/chatopera/efaqa-bot-demo/blob/master/app/demo.js)。
 
