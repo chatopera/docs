@@ -4,6 +4,8 @@
 
 在 Chatopera 云服务内，用户通过 SDK 调用心理问答 API，按照调用量付费，每个开发者账号每天有 1000 次免费的 API 请求(和其它接口一起汇总)，超过额度后资费参考[计费及发票](/products/chatbot-platform/billing.html)。
 
+心理问答 API 的实现，是爬取全网心理咨询问答多轮对话语料，标注，训练机器学习模型等方法构建。
+
 ## 快速开始
 
 为方便快速使用心理对话 API，以下内容以 Chatopera Node.js SDK 为例，介绍从零开始介绍集成服务的过程。
@@ -233,7 +235,12 @@ chatbot.psychSearch(query [,threshold])
       },
       ...
     ],
-    "score": 0.3999
+    "score": 0.3999,
+    "label": {
+        "s1": "1.9",
+        "s2": "2.7",
+        "s3": "3.4"
+    }
   },
   ...
 ]
@@ -253,8 +260,15 @@ chatbot.psychSearch(query [,threshold])
 | knowledge   | 回复是否带有知识性，给咨询者更多知识                                                                                             |
 | negative    | 是否是负面回复，负面回复帮倒忙                                                                                                   |
 | score       | 该标题与查询条件之间的相似度，值为`(0,1]`区间，`0`不相似，`1`完全一致，值越大越相似。两个问题越相似，越可以使用 chats 进行回复。 |
+| s1          | 烦恼类型， `ID`值对应类别，查看[文档](https://github.com/chatopera/efaqa-corpus-zh#s1-%E7%83%A6%E6%81%BC%E7%B1%BB%E5%9E%8B)      |
+| s2          | 心理疾病，`ID`值对应类别，查看[文档](https://github.com/chatopera/efaqa-corpus-zh#s2-%E5%BF%83%E7%90%86%E7%96%BE%E7%97%85)       |
+| s3          | SOS 紧急情况，`ID`值对应类别，查看[文档](https://github.com/chatopera/efaqa-corpus-zh#s3-sos)                                    |
 
 返回值中的数组，也是按照 `score` 降序进行排序的。
+
+**注意:** `s1`，`s2`和`s3`是人工标注的，但是我们不承诺做到 100%的准确，这并不代表我们的不尽力，，而是这项工作的困难，仅凭文本对话去推测是不客观的，因此这些标注可认为是`疑似`或`有这方面的倾向`。
+
+如果`score`比较高，比如大于 `0.5`，则查询条件很可能是和检索出来的文档具有相同的`s1`，`s2`和`s3`。
 
 ### 异常返回
 
