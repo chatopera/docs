@@ -96,9 +96,19 @@ let resp = await bot.psychChat(
 
 示例程序中，读取了一个配置文件[sample.json](https://github.com/chatopera/efaqa-bot-demo/blob/master/assets/sample.json)，可根据需要修改该文件进行测试。
 
-## 更多语言 SDK
+## 多语言 SDK
 
-除了 Node.js 外，Chatopera 还支持很多语言/框架/运行时，请参考[Chatopera SDK 列表](/products/chatbot-platform/integration.html)。
+除了 Node.js 外，Chatopera 还支持很多语言/框架/运行时。
+
+| 语言    | SDK 位置                                        | 版本要求                                                        |
+| ------- | ----------------------------------------------- | --------------------------------------------------------------- |
+| Python  | https://github.com/chatopera/chatopera-py-sdk   | [1.1.1 及以上](https://pypi.org/project/chatopera/)             |
+| Java    | https://github.com/chatopera/chatopera-java-sdk | [2.2.0 及以上](https://github.com/chatopera/chatopera-java-sdk) |
+| PHP     | https://github.com/chatopera/chatopera-php-sdk  | [1.2.0 及以上](https://github.com/chatopera/chatopera-php-sdk)  |
+| Node.js | https://www.npmjs.com/package/@chatopera/sdk    | [1.10.0 及以上](https://www.npmjs.com/package/@chatopera/sdk)   |
+| Go      | https://github.com/chatopera/chatopera-go-sdk   | 尚未支持                                                        |
+
+更多信息，请参考[Chatopera SDK 列表](/products/chatbot-platform/integration.html)。
 
 ## API 接口定义
 
