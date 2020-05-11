@@ -37,30 +37,48 @@ Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
 
 演示环境是为了帮助大家了解春松客服，一下是地址和管理员账号。
 
-| 网站                     | 用户名 | 密码      |
-| ------------------------ | ------ | --------- |
-| http://cc.chatopera.com/ | admin  | admin1234 |
+| 网站                      | 用户名 | 密码      |
+| ------------------------- | ------ | --------- |
+| https://cc.chatopera.com/ | admin  | admin1234 |
 
-Chatopera 提供面向企业客户的现有客服系统的集成开发服务，欢迎洽谈。
+## 春松客服质量管理体系
 
-<a href="mailto:info@chatopera.com?Subject=[春松客服]申请试用" target="_top">联系方式：info@chatopera.com</a>
+在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)。
 
-## 技术咨询及售后服务
+<table class="image">
+    <caption align="bottom">春松客服质量管理</caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cc-qa-sys.jpg" alt="春松客服质量管理" /></td>
+    </tr>
+</table>
 
-邮箱：info@chatopera.com
-电话：158-0121-3126
+## 使用培训及二次开发培训
+
+在线观看[《春松客服大讲堂》](https://ke.qq.com/course/464050)。
+
+<table class="image">
+    <caption align="bottom">《春松客服大讲堂》</caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cc-djt-cover.jpg" alt="《春松客服大讲堂》" /></td>
+    </tr>
+</table>
+
+[《春松客服团队官方博客专栏》](https://blog.csdn.net/watson243671/category_9915986.html)，订阅关注，及时获得最新的信息。
+
+## 开源版项目
+
+https://github.com/chatopera/cosin
+
+技术咨询：
 QQ 群：185659917
 
-## 服务水平协议&用户条款
+## 商业支持
 
-跳转至 <a href="https://github.com/chatopera/cosin/wiki/%E6%9C%8D%E5%8A%A1%E6%B0%B4%E5%B9%B3%E5%8D%8F%E8%AE%AE"
-    target="_blank">
-《春松客服：服务水平协议》& 《春松客服：服务条款》
-</a> 阅读。
+### 售前洽谈
 
 当前，Chatopera 提供春松客服的定制开发或私有部署服务，有合作意向的企业联系下面邮箱，进行洽谈：
 
-<a href="mailto:info@chatopera.com?Subject=[春松客服]申请试用" target="_top">联系方式：info@chatopera.com</a>
+<a href="mailto:info@chatopera.com?Subject=[春松客服]商业合作洽谈" target="_top">联系方式：info@chatopera.com，电话：(+86)136-9149-0568</a>
 
 洽谈内容包括：
 
@@ -73,6 +91,20 @@ QQ 群：185659917
 - 其他商业合作
 
 _对于企业服务，可提供发票。_
+
+### 售后服务
+
+技术支持和售后服务等，联系：
+
+邮箱：info@chatopera.com
+电话：158-0121-3126
+
+## 服务水平协议&用户条款
+
+跳转至 <a href="https://github.com/chatopera/cosin/wiki/%E6%9C%8D%E5%8A%A1%E6%B0%B4%E5%B9%B3%E5%8D%8F%E8%AE%AE"
+    target="_blank">
+《春松客服：服务水平协议》& 《春松客服：服务条款》
+</a> 阅读。
 
 ## 评论
 
