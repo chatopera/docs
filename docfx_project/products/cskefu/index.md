@@ -1,6 +1,6 @@
 # 春松客服
 
-全渠道智能客服，客服系统是企业的重要工具，尤其是移动互联网时代，企业需要响应来自任何地点任何时间的客户，渠道也是多样性的。企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。不管是微信公众号，还是电话外呼，或是 Telegram Messenger。
+多渠道智能客服，客服系统是企业的重要工具，尤其是移动互联网时代，企业需要响应来自任何地点任何时间的客户，渠道也是多样性的。企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。不管是微信公众号，还是电话外呼，或是 Telegram Messenger。
 
 <table class="image">
     <caption align="bottom">用户生命周期</caption>
@@ -14,9 +14,9 @@
 智能客服系统是拥有机器人客服、呼叫中心、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。**智能客服系统**是一个有能力打通企业各种应用的软件，尤其是市场、销售、售后相关的软件。
 
 <table class="image">
-    <caption align="bottom">全渠道智能客服</caption>
+    <caption align="bottom">多渠道智能客服</caption>
     <tr>
-        <td><img width="800" src="../../images/products/user-service-prod.png" alt="全渠道智能客服" /></td>
+        <td><img width="800" src="../../images/products/user-service-prod.png" alt="多渠道智能客服" /></td>
     </tr>
 </table>
 
@@ -41,7 +41,7 @@ Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
 | ------------------------- | ------ | --------- |
 | https://cc.chatopera.com/ | admin  | admin1234 |
 
-## 春松客服质量管理体系
+## 质量管理体系
 
 在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)。
 
@@ -52,7 +52,7 @@ Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
     </tr>
 </table>
 
-## 使用培训及二次开发培训
+## 使用及二次开发培训
 
 在线观看[《春松客服大讲堂》](https://ke.qq.com/course/464050)。
 
@@ -67,10 +67,9 @@ Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
 
 ## 开源版项目
 
-https://github.com/chatopera/cosin
+[https://github.com/chatopera/cosin](https://github.com/chatopera/cosin)
 
-技术咨询：
-QQ 群：185659917
+技术咨询：QQ 群 185659917 [(点击加入)](https://jq.qq.com/?_wv=1027&k=5I1cJLP)
 
 ## 商业支持
 
@@ -78,7 +77,7 @@ QQ 群：185659917
 
 当前，Chatopera 提供春松客服的定制开发或私有部署服务，有合作意向的企业联系下面邮箱，进行洽谈：
 
-<a href="mailto:info@chatopera.com?Subject=[春松客服]商业合作洽谈" target="_top">联系方式：info@chatopera.com，电话：(+86)136-9149-0568</a>
+联系方式：邮箱 <a href="mailto:info@chatopera.com?Subject=[春松客服]商业合作洽谈" target="_top">info@chatopera.com</a>，电话 (+86)136-9149-0568。
 
 洽谈内容包括：
 
@@ -94,10 +93,7 @@ _对于企业服务，可提供发票。_
 
 ### 售后服务
 
-技术支持和售后服务等，联系：
-
-邮箱：info@chatopera.com
-电话：158-0121-3126
+技术支持和售后服务等，联系邮箱 info@chatopera.com，电话 (+86)158-0121-3126。
 
 ## 服务水平协议&用户条款
 
