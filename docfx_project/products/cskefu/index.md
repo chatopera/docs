@@ -101,7 +101,7 @@
 
 解读 Chatopera 质量管理体系，上线定制化的客服系统。如何合理的规划测试工作？怎样搭建质量管理的支撑系统？Chatopera 反思、精进产品开发和服务支持体系，认真负责的帮助客户落地客服系统。本视频系 Chatopera 质量保证人员根据实际工作内容总结整理。
 
-在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)。
+在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)，同时，该视频相关的[文章](https://mp.weixin.qq.com/s/sah0e0q3HH2Ex4wZyfJXIg)中也有详细介绍。
 
 <table class="image">
     <tr>
