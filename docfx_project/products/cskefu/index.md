@@ -158,7 +158,7 @@ _对于企业服务，可提供发票。_
 
 ## 服务水平协议&用户条款
 
-跳转至 <a href="https://github.com/chatopera/cosin/wiki/%E6%9C%8D%E5%8A%A1%E6%B0%B4%E5%B9%B3%E5%8D%8F%E8%AE%AE"
+跳转至 <a href="/products/cskefu/sla.html"
     target="_blank">
 《春松客服：服务水平协议》& 《春松客服：服务条款》
 </a> 阅读。
