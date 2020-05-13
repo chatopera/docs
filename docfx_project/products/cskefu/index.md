@@ -1,6 +1,6 @@
 # 春松客服
 
-多渠道智能客服，客服系统是企业的重要工具，尤其是移动互联网时代，企业需要响应来自任何地点任何时间的客户，渠道也是多样性的。企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。不管是微信公众号，还是电话外呼，或是 Telegram Messenger。
+多渠道智能客服，客服系统是企业的重要工具，尤其是移动互联网时代，企业需要响应来自任何地点任何时间的客户，渠道也是多样性的。企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。不管是微信公众号，还是电话外呼，或是 Facebook Messenger、Skype。
 
 <table class="image">
     <caption align="bottom">用户生命周期</caption>
@@ -11,7 +11,14 @@
 
 ## 产品定义
 
-智能客服系统是拥有机器人客服、呼叫中心、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。**智能客服系统**是一个有能力打通企业各种应用的软件，尤其是市场、销售、售后相关的软件。
+<table class="image">
+    <caption align="bottom">春松客服</caption>
+    <tr>
+        <td><img width="600" src="../../images/products/cosin/g2.jpg" alt="春松客服" /></td>
+    </tr>
+</table>
+
+春松客服是拥有机器人客服、呼叫中心、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。**春松客服**是一个有能力打通企业各种应用的软件，尤其是市场、销售、售后相关的软件。
 
 <table class="image">
     <caption align="bottom">多渠道智能客服</caption>
@@ -20,28 +27,92 @@
     </tr>
 </table>
 
-Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
+春松客服是 Chatopera 自主研发以及基于且增强其它开源软件的方式实现的，春松客服会不断增强客服系统的智能化，这包括利用自然语言处理、机器学习和语音识别等技术让客服工作更有效率、客服满意度更高、成本更低。Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
 
-- 开放源码，Apache2.0 授权证书
-- CRM 模块：管理联系人，客户
-- 支持 IM 和呼叫中心
-- 机器人客服，与[Chatopera 云服务](/products/chatbot-platform/index.html)集成
-- 会话弹屏，联系人打标签、笔记
-- 数据分析，优化业务
-- 支持公有云和私有化等多种灵活的部署方式
-- 以容器化基础，安装使用，卸载等非常简单
+- 模块化设计：免费模块和付费模块适合企业长期使用，尤其是中小型企业，灵活购买高级插件；
 
-## 演示环境
+- 开放源码：免费模块使用 Apache2.0 授权证书发布，商业友好；
 
-> 该地址任何人都可以访问，请勿创建真实信息和修改密码。
+- 部署方便：以容器化基础，安装使用 Docker 编排，卸载等非常简单。
 
-演示环境是为了帮助大家了解春松客服，一下是地址和管理员账号。
+## 免费模块
+
+春松客服提供多个**开箱即用**的供企业**免费使用**的模块：
+
+- 账号及组织机构管理：按组织、角色分配账号权限
+
+- 坐席监控：设置坐席监控角色的人员可以看到并干预访客会话
+
+- 联系人和客户管理：CRM 模块，管理联系人和客户，细粒度维护客户信息，自定义标签和打标签，记录来往历史等
+
+- 网页聊天组件：一分钟接入对话窗口，支持技能组、邀请和关联联系人等
+
+- 坐席工作台：汇聚多渠道访客请求，坐席根据策略自动分配，自动弹屏，转接等
+
+- 机器人客服：与[Chatopera 云服务](/products/chatbot-platform/index.html)集成，通过插件形式安装，插件也以开源形式提供，查看插件源码。
+
+- 企业聊天：支持企业员工在春松客服系统中群聊和私聊
+
+- 质检：历史会话、服务小结、服务反馈及相关报表
+
+在本文档中，也称以上模块为*基础模块*。
+
+## 付费模块
+
+春松客服从 v5.0.0 版本开始提供如下付费模块：
+
+- 呼叫中心：全解决方案，包括呼入和呼出，可选的硬件语音网关，自动外呼，监听和报表等
+
+- Skype 渠道：通过 Skype 账号与用户进行沟通
+
+付费模块代码并不开源，并且使用**插件**的形式安装在源码中，请联系[“商务洽谈”](/products/cskefu/index.html#商业支持)获得插件和商业支持。
+
+## 产品演示
+
+演示环境是为了帮助大家了解春松客服，以下是地址和超级管理员账号。
 
 | 网站                      | 用户名 | 密码      |
 | ------------------------- | ------ | --------- |
 | https://cc.chatopera.com/ | admin  | admin1234 |
 
-## 质量管理体系
+> 提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据。
+
+## 角色设定
+
+### 客户
+
+需要智能客服系统的企业。
+
+### 客服人员
+
+指代客户的客服团队的工作人员。
+
+### 访客/消费者
+
+指代甲方的客户，是需要通过联系客服人员咨询问题的人。
+
+### 开发人员
+
+指代智能客服系统的开发者，开发人员应该是有权限修改智能客服系统代码的人，包括 Chatopera 工程师和春松客服开源社区开发者。
+
+### 业务专家
+
+指代熟悉客户业务的人员，业务专家可以提供产品设计的意见，可以参与智能问答的质量评定，也可以作为管理员登录智能客服系统，配置系统，管理智能对话和训练。
+
+## 开源项目
+
+[![Docker Layers](https://images.microbadger.com/badges/image/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own image badge on microbadger.com") [![Docker Version](https://images.microbadger.com/badges/version/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own version badge on microbadger.com") [![Docker Pulls](https://img.shields.io/docker/pulls/chatopera/contact-center.svg)](https://hub.docker.com/r/chatopera/contact-center/) [![Docker Stars](https://img.shields.io/docker/stars/chatopera/contact-center.svg)](https://hub.docker.com/r/chatopera/contact-center/) [![Docker Commit](https://images.microbadger.com/badges/commit/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own commit badge on microbadger.com")
+
+**开源项目地址：** [https://github.com/chatopera/cosin](https://github.com/chatopera/cosin)
+
+[**《春松客服团队官方博客专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)，订阅关注，及时获得最新的信息。
+
+<p align="center">
+  <b>春松客服QQ交流群：185659917， <a href="https://jq.qq.com/?_wv=1027&k=5I1cJLP" target="_blank">点击链接加入群聊</a></b><br>
+  <img src="../../images/products/cosin/g1.jpg" width="200">
+</p>
+
+## 质量管理
 
 在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)。
 
@@ -52,7 +123,7 @@ Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
     </tr>
 </table>
 
-## 使用及二次开发培训
+## 使用培训
 
 在线观看[《春松客服大讲堂》](https://ke.qq.com/course/464050)。
 
@@ -62,14 +133,6 @@ Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
         <td><img width="800" src="../../images/products/cc-djt-cover.jpg" alt="《春松客服大讲堂》" /></td>
     </tr>
 </table>
-
-[《春松客服团队官方博客专栏》](https://blog.csdn.net/watson243671/category_9915986.html)，订阅关注，及时获得最新的信息。
-
-## 开源版项目
-
-[https://github.com/chatopera/cosin](https://github.com/chatopera/cosin)
-
-技术咨询：QQ 群 185659917 [(点击加入)](https://jq.qq.com/?_wv=1027&k=5I1cJLP)
 
 ## 商业支持
 
