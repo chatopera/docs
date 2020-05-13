@@ -12,7 +12,6 @@
 ## 产品定义
 
 <table class="image">
-    <caption align="bottom">春松客服</caption>
     <tr>
         <td><img width="600" src="../../images/products/cosin/g2.jpg" alt="春松客服" /></td>
     </tr>
@@ -21,7 +20,6 @@
 春松客服是拥有机器人客服、呼叫中心、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。**春松客服**是一个有能力打通企业各种应用的软件，尤其是市场、销售、售后相关的软件。
 
 <table class="image">
-    <caption align="bottom">多渠道智能客服</caption>
     <tr>
         <td><img width="800" src="../../images/products/user-service-prod.png" alt="多渠道智能客服" /></td>
     </tr>
@@ -75,7 +73,7 @@
 | ------------------------- | ------ | --------- |
 | https://cc.chatopera.com/ | admin  | admin1234 |
 
-> 提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据。
+提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据。
 
 ## 角色设定
 
@@ -105,7 +103,7 @@
 
 **开源项目地址：** [https://github.com/chatopera/cosin](https://github.com/chatopera/cosin)
 
-[**《春松客服团队官方博客专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)，订阅关注，及时获得最新的信息。
+Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)火热 🔥 更新中，订阅关注，及时获得最新的信息。
 
 <p align="center">
   <b>春松客服QQ交流群：185659917， <a href="https://jq.qq.com/?_wv=1027&k=5I1cJLP" target="_blank">点击链接加入群聊</a></b><br>
@@ -117,7 +115,6 @@
 在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)。
 
 <table class="image">
-    <caption align="bottom">春松客服质量管理</caption>
     <tr>
         <td><img width="800" src="../../images/products/cc-qa-sys.jpg" alt="春松客服质量管理" /></td>
     </tr>
@@ -125,14 +122,15 @@
 
 ## 使用培训
 
-在线观看[《春松客服大讲堂》](https://ke.qq.com/course/464050)。
+在线观看[《春松客服大讲堂》](https://docs.chatopera.com/products/cskefu/training.html)。
 
 <table class="image">
-    <caption align="bottom">《春松客服大讲堂》</caption>
     <tr>
         <td><img width="800" src="../../images/products/cc-djt-cover.jpg" alt="《春松客服大讲堂》" /></td>
     </tr>
 </table>
+
+[春松客服大讲堂](https://docs.chatopera.com/products/cskefu/training.html)是面向企业 CTO、客服主管、客服及客服系统开发运维人员的在线课程，紧紧围绕春松客服开源代码，由浅入深的介绍春松客服**上线企业智能客服系统**、**运营客服工作**和**二次开发**的知识。
 
 ## 商业支持
 
