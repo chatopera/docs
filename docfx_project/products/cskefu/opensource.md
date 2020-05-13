@@ -30,22 +30,19 @@
 
 Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)火热 🔥 更新中，订阅关注，及时获得最新的信息。
 
-<table class="image">
-    <caption align="bottom">Chatopera拥抱开源</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/chatopera_love_os.png" alt="Chatopera拥抱开源" /></td>
-    </tr>
-</table>
+<p align="center">
+    <b>Chatopera拥抱开源</b>
+    <img width="800" src="../../images/products/chatopera_love_os.png" alt="Chatopera拥抱开源" />
+</p>
 
 ## 为我点赞
 
 您的关注、鼓励是我们工作动力之一，请大家给春松客服点赞 👍！
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/g4.jpg" alt="春松客服点赞" /></td>
-    </tr>
-</table>
+<p align="center">
+    <b>Chatopera拥抱开源</b>
+    <img width="800" src="../../images/products/cosin/g4.jpg" alt="春松客服点赞" />
+</p>
 
 ## 评论
 

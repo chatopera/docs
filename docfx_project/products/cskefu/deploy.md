@@ -1,120 +1,94 @@
 # 应用部署
 
-安装方式：
+春松客服适应各种部署方式，本文使用 Docker 和 Docker compose 的方式，适合体验、开发、测试和上线春松客服，此种方式简单快捷。
 
-- 单服务器部署：个人/开发者，体验服务
-- 公有云部署：青云 AppCenter，支持秒级计费、动态伸缩、备份恢复、高可用性、监控告警。
-- 私有部署：部署到企业 IT 基础设施。
+| 项目                | 说明                               |
+| ------------------- | ---------------------------------- |
+| 操作系统            | Linux (CentOS 7.x, Ubuntu 14.x 等) |
+| Docker 版本         | Docker version 1.13.x 及以上       |
+| Docker Compose 版本 | version 1.23.x 及以上              |
+| 防火墙端口          | 8035, 8036                         |
+| 其他软件            | git                                |
+| 内存                | >= 8GB                             |
+| CPU 颗数            | >= 2                               |
+| 硬盘                | >= 20GB                            |
 
-以上安装方式在文档的其余部分作详细介绍。
-
-## 单服务器部署
-
-满足个人和开发者快速部署，体验产品。
-
-[单服务器部署](https://github.com/chatopera/cosin/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2#%E5%8D%95%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2)
-
-## 公有云部署
-
-青云 AppCenter
-是一个云计算环境中的应用交付与运营管理平台，同时包含一整套用来开发云应用及云化已有应用的框架。让应用提供商和开发者可以从资源层管理的复杂性中脱离出来，从而更高效地开发、部署、运维及管理所提供的应用，让用户可以便捷地选择需要的应用来构建和管理自身的业务。
-
-春松客服的公有云部署默认采用青云 AppCenter 并充分发挥 PaaS 平台的强大计算能力，提供支持海量用户并发访问的春松客服实例，具体详细阅读<a
-    href="https://github.com/chatopera/cosin/wiki/%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D%E4%B8%8A%E6%9E%B6%E9%9D%92%E4%BA%91AppCenter"
-    target="_blank">春松客服上架青云 AppCenter</a>， 获得详细介绍，包括服务部署、管理等。
-
-## 企业私有部署
-
-部署到企业内部 IT 基础设施，获取服务镜像
-
-春松客服的拓扑结构介绍：
-
-| 组件                                                                     | 描述                            | 镜像                                                            | 开源码 |
-| ------------------------------------------------------------------------ | ------------------------------- | --------------------------------------------------------------- | ------ |
-| ------------------------------------------------------------------------ |
-| contact-center                                                           | 客服系统                        | [DockerHub](https://hub.docker.com/r/chatopera/contact-center/) |
-| [Github](https://github.com/chatopera/cosin/tree/develop/contact-center) |
-| cc-switch                                                                | 电话渠道软交换，基于 FreeSWITCH | [DockerHub](https://hub.docker.com/r/chatopera/cc-switch/)      |
-| [Github](https://github.com/chatopera/cosin/tree/develop/cc-switch)      |
-| mysql                                                                    | 数据库                          | [DockerHub](https://hub.docker.com/_/mysql/)                    | x      |
-| redis                                                                    | 数据库                          | [DockerHub](https://hub.docker.com/_/redis/)                    | x      |
-| elasticsearch                                                            | 检索服务                        | [DockerHub](https://hub.docker.com/_/elasticsearch/)            |
-| [Github](https://github.com/elastic/elasticsearch)                       |
-
-### 依赖环境
-
-智能问答引擎是使用 docker 镜像进行分发的，所以，只要是 docker v12+ 版本支持的操作系统都可以运行智能问答引擎服务，对于更详细的操作系统的兼容列表，请参考[Docker Community Edition
-(CE)](https://www.docker.com/community-edition)。
-
-硬件方面，Chatopera 推荐使用 4Core CPU(Intel E5 or better)， 16GB Memory，128GB Disk 运行服务。
-
-智能问答引擎的 docker 镜像可以安装在 docker 服务中，或[docker
-registry](https://docs.docker.com/registry/)中。然后通过容器管理框架，比如[kubernetes](https://kubernetes.io/)、[Apache
-Mesos](http://mesos.apache.org/)或[docker compose](https://docs.docker.com/compose/)。
-
-在本文档中，介绍使用 docker compose 的方式部署和管理服务，docker compose 是轻量级的 docker 服务编排方案。
-
-- docker 版本
-
-`Docker version 18.03.1-ce, build 9ee9f40`
-
-[安装文档](https://docs.docker.com/install/)，注意：docker 为开源码程序，本文档使用*社区版本（Docker CE）*。
-
-- docker-compose
-
-`docker-compose version 1.21.1, build 5a3f1a3`
-
-[安装文档](https://docs.docker.com/compose/install/)。
-
-### 安装
-
-假设 docker 已经被安装好，并且其进程已经启动，在命令行终端，执行下面命令：
-
-<pre class="prettyprint">
+```
 git clone https://github.com/chatopera/cosin.git
 cd cosin
-./scripts/start.sh
-</pre>
+cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
+```
 
-上述命令执行后，查看各个服务是否已经启动成功。
+- 配置项
 
-`docker-compose ps`
+| KEY                  | 默认值             | 说明                                           |
+| -------------------- | ------------------ | ---------------------------------------------- |
+| COMPOSE_FILE         | docker-compose.yml | 服务编排描述文件，保持默认值                   |
+| COMPOSE_PROJECT_NAME | cskefu             | 服务实例的容器前缀，可以用其它字符串           |
+| MYSQL_PORT           | 8037               | MySQL 数据库映射到宿主机器使用的端口           |
+| REDIS_PORT           | 8041               | Redis 映射到宿主机器的端口                     |
+| ES_PORT1             | 8039               | ElasticSearch RestAPI 映射到宿主机器的端口     |
+| ES_PORT2             | 8040               | ElasticSearch 服务发现端口映射到宿主机器的端口 |
+| CC_WEB_PORT          | 8035               | 春松客服 Web 服务地址映射到宿主机器的端口      |
+| CC_SOCKET_PORT       | 8036               | 春松客服 SocketIO 服务映射到宿主机器的端口     |
+| ACTIVEMQ_PORT1       | 8051               | ActiveMQ 端口                                  |
+| ACTIVEMQ_PORT2       | 8052               | ActiveMQ 端口                                  |
+| ACTIVEMQ_PORT2       | 8053               | ActiveMQ 端口                                  |
+| DB_PASSWD            | 123456             | 数据库密码，设置到 MySQL, Redis, ActiveMQ      |
+| LOG_LEVEL            | INFO               | 日志级别，可使用 WARN, ERROR, INFO, DEBUG      |
 
-智能客服系统的登录地址是：
+以上配置中，**端口的各默认值需要保证在宿主机器上还没有被占用；数据库的密码尽量复杂；CC_WEB_PORT 和 CC_SOCKET_PORT 这两个值尽量不要变更；生产环境下 LOG_LEVEL 使用至少 WARN 的级别**。
 
-`http://服务器IP地址:8035`
+- 安全组
 
-默认管理员用户名： admin， 密码：admin1234
+如果使用云主机，要考虑到不同云服务提供商的安全组设置，允许 8035 和 8036 端口下行。
 
-生产环境安装建议：
+- 启动服务
 
-| 事项                   | 内容                                                                         |
-| ---------------------- | ---------------------------------------------------------------------------- |
-| 部署方式               | 服务端软件使用 Docker 容器分发，支持公有云环境/本地服务器部署                |
-| 网络带宽配置要求       | 本地内部办公网 100 兆交换，服务器之间千兆交换                                |
-| 操作系统、相关软件要求 | 最小化部署：Ubuntu 16.04 或者其他服务器系统 , 资源要求为：8 核 CPU，16G 内存 |
-| 终端配置要求           | 座席电脑的配置 8G 内存，500G 硬盘，I5 CPU，支持 windows 7 或者 windows10     |
-| 服务方案               | 提供系统版本升级建议，优化建议等技术支持服务                                 |
+```
+cd cosin                             # 进入下载后的文件夹
+docker-compose pull                  # 拉取镜像
+docker-compose up -d contact-center  # 启动服务
+```
 
-### 停止服务
+然后，从浏览器打开 http://YOUR_IP:CC_WEB_PORT/ 访问服务。
+默认管理员账号： admin 密码： admin1234
 
-完成磁盘路径的创建后，就可以启动服务了。
+## 其他命令
 
-在命令行终端中，
+- 查看服务状态
 
-<pre class="prettyprint">
-cd cosin
-docker-compose down    
-</pre>
+```
+docker-compose ps
+```
 
-### 重启服务
+- 查看服务日志
 
-在命令行终端中，
+```
+docker-compose logs -f contact-center
+```
 
-<pre class="prettyprint">
-cd cosin
+- 关闭服务
+
+```
+docker-compose down
+```
+
+- 重启服务
+
+```
 docker-compose restart
-</pre>
+```
+
+## 配置 HTTPS
+
+[私有部署配置 HTTPS](https://github.com/chatopera/cosin/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
+
+- [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
+
+## 其它
+
+- [服务器没有互联网访问条件情况下怎么部署？](https://github.com/chatopera/cosin/issues/264)
 
 ## 评论
 

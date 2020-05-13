@@ -28,6 +28,53 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 **针对不同企业客户的需求，机器人客服的服务方式也可以调整，最主要的是，机器人客服可以利用多轮对话和知识库，提高用户满意度，提高效率，人工坐席专注于更加棘手的问题。**
 
+## 视频教程
+
+机器人客服是春松客服的特色功能之一，机器人客服设计的目标是自动完成固定话术和固定话术的问答。春松客服的机器人客服是从客服人员和访客两个角度展开的，提升生产力和客户满意度，比如智能建议回复、知识库问答和多轮对话。
+
+建议先看视频教程[https://ke.qq.com/course/475430](https://ke.qq.com/course/475430)，再看本文剩余内容。
+
+## 安装插件及配置
+
+### 安装插件
+
+如果使用春松客服官方的 docker 镜像部署，则无需此步。对于开源社区用户，在下载春松客服源码并启动后，不能立即得到机器人客服菜单，需要先安装插件。
+
+**安装插件文档 [https://github.com/chatopera/cosin/tree/osc/public/plugins](https://github.com/chatopera/cosin/tree/osc/public/plugins)**
+
+<p align="center">
+  <b>安装好机器人插件</b><br>
+  <img src="../../images/products/cosin/g5.png" width="800">
+</p>
+
+### 配置环境变量
+
+在机器人客服问答中，会从 Chatopera 云服务检索答案，答案有时候也包含多条记录，怎么回答访客的问题按照如下策略。
+
+1、 首先，每个答案包含与访客问题的相似度，该相似度在[0,1]区间，值越大二者越相似。
+
+2、 最高的相似度的答案如何大于或等于 **最佳回复阀值** 时，机器人客服将直接发送答案给访客。
+
+3、 如何 （_2_）中没有得到答案，那么则将相似度大于或等于 **建议回复阀值** 的记录，作为一个列表发送给访客。
+
+<p align="center">
+  <b>建议回复列表</b><br>
+  <img src="../../images/products/cosin/g6.png" width="800">
+</p>
+
+4、（_2_） 和 （_3_）都没有答案，则回复兜底回复。
+
+以上，我们引入了 **最佳回复阀值** 和 **建议回复阀值** 的概念，这两个值的默认值分别为 0.8 和 0.6。在启动服务时，也可以通过环境变量修改他们，其中 **最佳回复阀值** 需要大于 **建议回复阀值** 。
+
+- 环境变量
+
+```
+BOT_THRESHOLD_FAQ_BEST_REPLY # 最佳回复阀值
+BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
+```
+
+如果部署是按照文档[春松客服私有部署](/products/cskefu/deploy.html)进行，可以在 _.env_ 中设置配置项，参考 [sample.env](https://github.com/chatopera/cosin/blob/osc/sample.env)。
+
 ## 创建网站渠道
 
 以管理员身份*春松客服坐席工作台*，导航【系统-客服接入-网站列表-创建新网站】，按照如下内容设置网站渠道。
@@ -37,14 +84,10 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 | 网站名称 | localhost | 任意字符串      |
 | 网站地址 | localhost | 网站的域名或 IP |
 
-<table class="image">
-    <caption align="bottom">创建网站渠道</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/47127371-6fbc5480-d2bf-11e8-9983-b6f79e97cbf1.png"
-                alt="" />
-        </td>
-    </tr>
-</table>
+<p align="center">
+  <b>创建网站渠道</b><br>
+  <img src="../../images/products/cosin/47127371-6fbc5480-d2bf-11e8-9983-b6f79e97cbf1.png" width="600">
+</p>
 
 点击【立即提交】保存。
 
@@ -52,12 +95,10 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 登录[Chatopera 云服务](https://bot.chatopera.com/)，注册并在【控制台】中创建聊天机器人。
 
-<table class="image">
-    <caption align="bottom">创建聊天机器人</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cc-bot-1.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>创建聊天机器人</b><br>
+  <img src="../../images/products/cc-bot-1.png" width="600">
+</p>
 
 | 项目       | 值         | 描述                         |
 | ---------- | ---------- | ---------------------------- |
@@ -67,12 +108,10 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 机器人具有多轮对话和知识库两个管理对话能力的组件，在创建好机器人后，创建一个问答对作为测试示例。点击【知识库】图标，点击【新建问题】。
 
-<table class="image">
-    <caption align="bottom">新建问答对</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cc-bot-2.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>新建问答对</b><br>
+  <img src="../../images/products/cc-bot-2.png" width="600">
+</p>
 
 | 项目 | 值                                                       | 描述       |
 | ---- | -------------------------------------------------------- | ---------- |
@@ -83,12 +122,10 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 集成机器人的方式是通过 SDK 创建机器人实例，使用机器人接口进行对话和查询等。机器人实例的认证和授权是通过*ClientId*和*Secret*完成，点击【设置】查看*ClientId*和*Secret*。
 
-<table class="image">
-    <caption align="bottom">查看ClientId和Secret</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cc-bot-4.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>查看ClientId和Secret</b><br>
+  <img src="../../images/products/cc-bot-4.png" width="600">
+</p>
 
 ## 集成机器人客服
 
@@ -102,21 +139,17 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 | 工作模式 | 机器人客服优先 | 目前支持【机器人客服优先】或【人工客服优先】两种类型    |
 | 描述     | 机器人客服     | 对机器人的简要介绍                                      |
 
-<table class="image">
-    <caption align="bottom">集成机器人客服</caption>
-    <tr>
-        <td><img width="600" src="../../images/products/cc-bot-3.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>集成机器人客服</b><br>
+  <img src="../../images/products/cc-bot-3.png" width="800">
+</p>
 
 点击【保存】创建机器人，返回机器人列表页面，可以找到刚刚创建的机器人客服，创建后，默认状态，机器人是不开启的，在列表页通过【是否开启】设置该机器人为*开启*，如下图所示。
 
-<table class="image">
-    <caption align="bottom">开启机器人客服</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cc-bot-5.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>开启机器人客服</b><br>
+  <img src="../../images/products/cc-bot-5.png" width="800">
+</p>
 
 ## 测试机器人客服
 
@@ -130,12 +163,10 @@ http[s]://春松客服IP[:PORT]/testclient.html
 
 比如输入：_缴费年期变更后，佣金如何计算？_，能得到在知识库中设置的答案。
 
-<table class="image">
-    <caption align="bottom">访客端和机器人对话</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cc-bot-6.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>访客端和机器人对话</b><br>
+  <img src="../../images/products/cc-bot-6.png" width="800">
+</p>
 
 如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。
 
@@ -143,28 +174,22 @@ http[s]://春松客服IP[:PORT]/testclient.html
 
 在默认情况下，机器人的问候语是在 Chatopera 云服务的机器人属性页面进行设置，该设置只支持简单的文本。
 
-<table class="image">
-    <caption align="bottom">设置机器人问候语</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/cards/image-11.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>设置机器人问候语</b><br>
+  <img src="../../images/products/cosin/cards/image-11.png" width="800">
+</p>
 
-<table class="image">
-    <caption align="bottom">春松客服访客端</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/cards/image-1.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>春松客服访客端</b><br>
+  <img src="../../images/products/cosin/cards/image-1.png" width="800">
+</p>
 
 访客登录进入客服聊天窗口往往是有一些问题要咨询的，所以更为合理的用户体验是将一些常见问题作为导航用途显示在问候语下面，比如这样：
 
-<table class="image">
-    <caption align="bottom">常见问题列表</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/cards/image-8.png" alt="" /></td>
-    </tr>
-</table>
+<p align="center">
+  <b>常见问题列表</b><br>
+  <img src="../../images/products/cosin/cards/image-8.png" width="800">
+</p>
 
 在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要
 30 分钟时间**。
