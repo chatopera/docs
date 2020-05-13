@@ -97,20 +97,9 @@
 
 指代熟悉客户业务的人员，业务专家可以提供产品设计的意见，可以参与智能问答的质量评定，也可以作为管理员登录智能客服系统，配置系统，管理智能对话和训练。
 
-## 开源项目
-
-[![Docker Layers](https://images.microbadger.com/badges/image/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own image badge on microbadger.com") [![Docker Version](https://images.microbadger.com/badges/version/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own version badge on microbadger.com") [![Docker Pulls](https://img.shields.io/docker/pulls/chatopera/contact-center.svg)](https://hub.docker.com/r/chatopera/contact-center/) [![Docker Stars](https://img.shields.io/docker/stars/chatopera/contact-center.svg)](https://hub.docker.com/r/chatopera/contact-center/) [![Docker Commit](https://images.microbadger.com/badges/commit/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own commit badge on microbadger.com")
-
-**开源项目地址：** [https://github.com/chatopera/cosin](https://github.com/chatopera/cosin)
-
-Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)火热 🔥 更新中，订阅关注，及时获得最新的信息。
-
-<p align="center">
-  <b>春松客服QQ交流群：185659917， <a href="https://jq.qq.com/?_wv=1027&k=5I1cJLP" target="_blank">点击链接加入群聊</a></b><br>
-  <img src="../../images/products/cosin/g1.jpg" width="200">
-</p>
-
 ## 质量管理
+
+解读 Chatopera 质量管理体系，上线定制化的客服系统。如何合理的规划测试工作？怎样搭建质量管理的支撑系统？Chatopera 反思、精进产品开发和服务支持体系，认真负责的帮助客户落地客服系统。本视频系 Chatopera 质量保证人员根据实际工作内容总结整理。
 
 在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)。
 
@@ -119,18 +108,6 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
         <td><img width="800" src="../../images/products/cc-qa-sys.jpg" alt="春松客服质量管理" /></td>
     </tr>
 </table>
-
-## 使用培训
-
-在线观看[《春松客服大讲堂》](https://docs.chatopera.com/products/cskefu/training.html)。
-
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../images/products/cc-djt-cover.jpg" alt="《春松客服大讲堂》" /></td>
-    </tr>
-</table>
-
-[春松客服大讲堂](https://docs.chatopera.com/products/cskefu/training.html)是面向企业 CTO、客服主管、客服及客服系统开发运维人员的在线课程，紧紧围绕春松客服开源代码，由浅入深的介绍春松客服**上线企业智能客服系统**、**运营客服工作**和**二次开发**的知识。
 
 ## 商业支持
 
@@ -158,10 +135,7 @@ _对于企业服务，可提供发票。_
 
 ## 服务水平协议&用户条款
 
-跳转至 <a href="/products/cskefu/sla.html"
-    target="_blank">
-《春松客服：服务水平协议》& 《春松客服：服务条款》
-</a> 阅读。
+跳转至 <a href="/products/cskefu/sla.html">《春松客服：服务水平协议》& 《春松客服：服务条款》</a> 阅读。
 
 ## 评论
 
