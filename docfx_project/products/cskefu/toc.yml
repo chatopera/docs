@@ -24,6 +24,8 @@
   href: monitoring.md
 - name: 数据报表
   href: reports.md
+- name: REST APIs
+  href: restapi.md
 - name: 开发环境搭建
   href: engineering.md
 - name: 服务水平协议

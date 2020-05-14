@@ -18,9 +18,9 @@
 
 - [MySQL 管理客户端 Navicat for MySQL](https://www.navicat.com/en/products/navicat-for-mysql)
 
-## 修改 maven2 配置
+## 配置 Maven
 
-确保在 pom.xml 中存在如下的 maven 库。
+确保在 pom.xml 中存在如下的 maven 库，[Chatopera Nexus](https://nexus.chatopera.com/)是代理 Maven Central，Alibaba Maven Repo 等节点的混合 Maven Repository，使用 Chatopera Nexus 不会影响项目使用其它公共包（Artifacts）。
 
 在`<repositories><repository>`内存在：
 
@@ -160,7 +160,7 @@ Redis 启动后就可以，不需要其他操作。
 
 春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
 
-### IntelliJ IDEA
+春松客服团队使用[IntelliJ IDEA](https://www.jetbrains.com/idea/)作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
 
 ```
 cd cosin
@@ -177,9 +177,9 @@ cosin/contact-center/cc-core/src/main/resources/application.properties
 
 数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：1）使用 application-dev.properties；2）使用环境变量。
 
-### 使用 application-dev.properties 覆盖默认配置
+### 使用 Profile 文件覆盖默认配置
 
-有两种方式修改默认的配置，一种是用环境变量+properties 文件。
+使用 application-dev.properties 覆盖默认配置，有两种方式修改默认的配置：一种是用环境变量+properties 文件；另外一种是直接使用环境变量。
 
 - 设置环境变量
 
@@ -217,9 +217,9 @@ spring.activemq.password=123456
 
 **此处可以覆盖 application.properties 中的任何值。**
 
-### 使用环境变量覆盖默认配置
+### 环境变量
 
-同时，配置信息也可以通过环境变量方式映射，并覆盖 application.properties 中等配置，其映射方式为`propery`的键转为大写同时`.`和`-`转为`_`。部分环境变量：
+`application.properties`中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为`propery`的键转为大写同时`.`和`-`转为`_`。部分环境变量：
 
 ```
 SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
@@ -227,11 +227,11 @@ SPRING_DATASOURCE_USERNAME=root
 SPRING_DATASOURCE_PASSWORD=123456
 ```
 
-并且，环境变量的值优先级高于 properties 文件。
+并且，环境变量的值优先级高于 `properties` 文件。
 
 ## 导入项目到集成开发工具
 
-春松客服团队使用[IntelliJ IDEA](https://www.jetbrains.com/idea/)作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程，按照`IDEA`提示，导入`contact-center/cc-core`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
+按照`IDEA`提示，导入`contact-center/cc-core`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
 
 ## 配置执行/调试
 
@@ -279,15 +279,13 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 ## 接下来
 
-[《春松客服博客专栏》](https://blog.csdn.net/watson243671/category_9915986.html)提供更多开发技能介绍，敬请关注。
+[《春松客服博客专栏》](https://blog.csdn.net/watson243671/category_9915986.html)提供更多开发技能介绍，敬请关注，🔥 火热更新中 ...
 
-[春松客服里的机器人客服 | 春松客服](https://blog.csdn.net/samurais/article/details/103681908)
+- [春松客服里的机器人客服 | 春松客服](https://blog.csdn.net/samurais/article/details/103681908)
 
-[春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
+- [春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
 
-[春松客服的压力测试| 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
-
-🔥 火热更新中 ...
+- [春松客服的压力测试| 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
 
 ## 评论
 
