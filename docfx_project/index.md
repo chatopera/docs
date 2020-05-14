@@ -4,22 +4,24 @@
 
 Chatopera 提供企业实现**聊天机器人应用**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时我们面向心理咨询行业打造了应用人工智能技术的垂直行业解决方案。
 
-<video controls="" style="width:100%;" poster="images/products/introduction-video-cover.jpg" >
+<video controls="" style="width:600px;" poster="images/products/introduction-video-cover.jpg" >
   <source
     src="https://www.chatopera.com/files/introduction.mp4"
     type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
   >
 </video>
-
+</br>
+</br>
 本文档包含对 Chatopera 产品的详细使用介绍：
 
 ## 春松客服
 
-[春松客服](/products/cskefu/index.html)，针对目前企业智能客服的需求，我们提供多渠道智能客服系统的全解决方案。
+[春松客服](/products/cskefu/index.html)是拥有机器人客服、呼叫中心、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。**春松客服**是一个有能力打通企业各种应用的软件，尤其是市场、销售、售后相关的软件。
 
 ## 云服务
 
-[Chatopera 云服务](/products/chatbot-platform/index.html)，聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。
+[Chatopera 云服务](/products/chatbot-platform/index.html)，聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。一站式解决企业上线聊天机器人中的设计、测试和运行时。Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 云服务的企业版可私有部署。
+
 语言方面，Chatopera 的产品支持**汉语**和**英语**的企业聊天机器人开发。
 
 ## 小助手

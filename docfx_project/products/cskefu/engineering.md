@@ -1,0 +1,301 @@
+# 开发环境搭建
+
+本文介绍如何完成春松客服开发环境的搭建，面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](/products/cskefu/training.html)。
+
+## 依赖
+
+- [Git](https://git-scm.com/)
+
+- [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+- [Maven 3+](https://maven.apache.org/)
+
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)或[Eclipse](https://www.eclipse.org/)
+
+- [Docker 18+](https://www.docker.com/)
+
+- [Docker compose 1.22+ ](https://docs.docker.com/compose/install/)
+
+- [MySQL 管理客户端 Navicat for MySQL](https://www.navicat.com/en/products/navicat-for-mysql)
+
+## 修改 maven2 配置
+
+确保在 pom.xml 中存在如下的 maven 库。
+
+在`<repositories><repository>`内存在：
+
+```
+    <repositories>
+        <repository>
+            <id>chatopera</id>
+            <name>Chatopera Inc.</name>
+            <url>https://nexus.chatopera.com/repository/maven-public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+```
+
+配置文件的示例见 [pom.xml](https://github.com/chatopera/cosin/blob/develop/contact-center/app/pom.xml)。
+
+如配置后不能下载，请参考[配置文件](https://github.com/chatopera/cosin/issues/137)。
+
+## 下载代码
+
+```
+git clone https://github.com/chatopera/cosin.git
+```
+
+## 数据库
+
+在源码中，有默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cosin/blob/develop/docker-compose.yml)，用于快速准备开发环境。
+
+### Elasticsearch
+
+春松客服依赖 Elasticsearch 服务，如果没有 Elasticsearch 服务，可以用下面的方式创建。
+
+```
+cd cosin
+docker-compose up -d elasticsearch
+```
+
+Elasticsearch 的配置项在 application.properties 是
+
+```
+spring.data.elasticsearch.cluster-name=elasticsearch
+spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
+```
+
+将 cluster-nodes 配置为开发服务地址，默认为"YOUR_IP:9300"
+
+### ActiveMQ
+
+春松客服依赖 ActiveMQ 服务，如果没有 ActiveMQ 服务，可以用下面的方式创建。
+
+```
+cd cosin
+docker-compose up -d activemq
+```
+
+ActiveMQ 的配置项在 application.properties 是
+
+```
+spring.activemq.broker-url=tcp://localhost:61616
+spring.activemq.user=admin
+spring.activemq.password=admin
+spring.activemq.pool.enabled=true
+spring.activemq.pool.max-connections=50
+```
+
+将以上值修改为 ActiveMQ 的实际地址和密码。
+
+### MySQL
+
+春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
+
+```
+cd cosin
+docker-compose up -d mysql
+```
+
+**在第一次执行这个命令时，mysql 容器会自动创建`contactcenter`数据库并导入相关的表，因为该容器初始化时加载了`contact-center/config/sql/cskefu-MySQL-slim.sql`文件。**
+
+连接 MySQL 服务
+
+<p align="center">
+<img width="500" src="../../images/products/cosin/g7.png" alt="" />
+</p>
+
+使用`docker-compose`启动的服务
+
+| IP        | 用户名 | 密码   | 端口 |
+| --------- | ------ | ------ | ---- |
+| localhost | root   | 123456 | 8037 |
+
+#### MySQL 数据字典
+
+在线浏览[数据字典](https://chatopera.github.io/cosin/)
+
+<p align="center">
+<img width="600" src="../../images/products/cosin/g8.png" alt="" />
+</p>
+
+### Redis
+
+春松客服依赖 Redis 服务，如果没有 Redis 服务，可以用下面的方式创建。
+
+```
+docker-compose up -d redis
+```
+
+Redis 启动后就可以，不需要其他操作。
+
+## 安装插件
+
+春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如机器人客服插件就是免费开源的。
+
+插件的安装和源码参考：[https://github.com/chatopera/cosin/tree/osc/public/plugins
+](https://github.com/chatopera/cosin/tree/osc/public/plugins)
+
+## 生成项目描述
+
+文件目录介绍
+
+<p align="center">
+<img width="200" src="../../images/products/cosin/g9.png" alt="" />
+</p>
+
+| 目录     | 说明                         |
+| -------- | ---------------------------- |
+| `_m2`    | 用于 Dockerfile 中，构建镜像 |
+| `admin`  | 各种脚本                     |
+| `app`    | 源代码                       |
+| `config` | 数据库文件                   |
+| `data`   | 数据库数据                   |
+| `logs`   | 日志                         |
+
+春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
+
+### IntelliJ IDEA
+
+```
+cd cosin
+./admin/gen-idea.sh
+```
+
+## 配置文件
+
+春松客服是基于 [Spring Boot Release 1.5.9](https://spring.io/blog/2017/11/28/spring-boot-1-5-9-available-now) 开发，配置文件是
+
+```
+cosin/contact-center/cc-core/src/main/resources/application.properties
+```
+
+数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：1）使用 application-dev.properties；2）使用环境变量。
+
+### 使用 application-dev.properties 覆盖默认配置
+
+有两种方式修改默认的配置，一种是用环境变量+properties 文件。
+
+- 设置环境变量
+
+```
+SPRING_PROFILES_ACTIVE=dev
+```
+
+- 创建 application-dev.properties
+
+```
+touch contact-center/cc-core/src/main/resources/application.properties
+```
+
+内容如下：
+
+```
+# MySQL
+spring.datasource.url=jdbc:mysql://192.168.2.217:7111/cosinee?useUnicode=true&characterEncoding=UTF-8
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.redis.host=192.168.2.217
+
+
+# Redis服务器连接端口
+spring.redis.port=7114
+# Redis服务器连接密码（默认为空）
+spring.redis.password=123456
+
+
+# ActiveMQ
+spring.activemq.broker-url=tcp://192.168.2.217:9007
+spring.activemq.user=admin
+spring.activemq.password=123456
+```
+
+**此处可以覆盖 application.properties 中的任何值。**
+
+### 使用环境变量覆盖默认配置
+
+同时，配置信息也可以通过环境变量方式映射，并覆盖 application.properties 中等配置，其映射方式为`propery`的键转为大写同时`.`和`-`转为`_`。部分环境变量：
+
+```
+SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=123456
+```
+
+并且，环境变量的值优先级高于 properties 文件。
+
+## 导入项目到集成开发工具
+
+春松客服团队使用[IntelliJ IDEA](https://www.jetbrains.com/idea/)作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程，按照`IDEA`提示，导入`contact-center/cc-core`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
+
+## 配置执行/调试
+
+配置运行方式为 Spring，应用为 `com.chatopera.cc.app.Application`
+
+<p align="center">
+<img width="800" src="../../images/products/cosin/g10.png" alt="" />
+</p>
+
+## 配置环境变量
+
+<p align="center">
+<img width="400" src="../../images/products/cosin/g11.png" alt="" />
+</p>
+
+## 执行/调试
+
+<p align="center">
+<img width="500" src="../../images/products/cosin/g12.png" alt="" />
+</p>
+
+点击"执行"或"调试"，服务启动，然后访问 http://localhost:8035 确定服务正常运行了。
+
+<p align="center">
+<img width="500" src="../../images/products/cosin/g13.png" alt="" />
+</p>
+
+**用户名**：admin **密码**：admin1234
+
+## 热更新
+
+在开发过程中，修改了代码，更新正在以 **“调试”** 模式运行服务，点击"执行旁边的锤子"。
+
+<p align="center">
+<img width="500" src="../../images/products/cosin/g14.png" alt="" />
+</p>
+
+更新成功后，提示
+
+<p align="center">
+<img width="300" src="../../images/products/cosin/g15.png" alt="" />
+</p>
+
+另外， **“调试”** 模式下，也支持断点调试。
+
+## 接下来
+
+[《春松客服博客专栏》](https://blog.csdn.net/watson243671/category_9915986.html)提供更多开发技能介绍，敬请关注。
+
+[春松客服里的机器人客服 | 春松客服](https://blog.csdn.net/samurais/article/details/103681908)
+
+[春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
+
+[春松客服的压力测试| 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
+
+🔥 火热更新中 ...
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
