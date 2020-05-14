@@ -15,6 +15,13 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
 [Chatopera 云服务](/products/chatbot-platform/index.html)，聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。
 语言方面，Chatopera 的产品支持**汉语**和**英语**的企业聊天机器人开发。
 
+<video controls="" style="width:100%;" poster="images/products/introduction-video-cover.jpg" >
+  <source
+    src="https://www.chatopera.com/files/introduction.mp4"
+    type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
+  >
+</video>
+
 ## 小助手
 
 [Chatopera 小助手](/products/chatbot-platform/faq.html#知识库小助手)，简称“小助手”，是面向企业的客户服务人员发布的一款从知识库检索建议回复的桌面软件。
@@ -23,14 +30,15 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
 
 [Chatopera 心智能](/products/psych-assistant/index.html)，心理咨询 AI 助手，应用人工智能技术，提升心理咨询过程中，咨询者的用户体验和心理咨询师的工作效率。`心智能`是 Chatopera 结合 Chatopera 机器人平台和其它成熟的 AI 技术，打造的面向心理咨询行业的平台级服务的解决方案，提供心理健康、心理支持机器人，客服系统等全方位的软件系统和服务，包括不同组件，根据企业客户实际需求灵活配置。
 
-## 技术支持
+## 关注我们
 
-联系我们，获得支持：
+Chatopera 微信公众号发布 Chatopera 动态、产品信息和新闻等信息。
 
-<table class="image">
-<caption align="bottom">Chatopera微信公众号</caption>
-<tr><td><img width="200" align="middle" src="images/products/chatopera_gzh_1.png" alt="Chatopera微信公众号"/></td></tr>
-</table>
+<p align="center">
+<img width="200" src="images/products/chatopera_gzh_1.png" alt="Chatopera微信公众号" />
+</br>
+<b>Chatopera 微信公众号</b>
+</p>
 
 ## 常用链接
 

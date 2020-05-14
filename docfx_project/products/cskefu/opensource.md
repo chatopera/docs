@@ -40,8 +40,8 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
 您的关注、鼓励是我们工作动力之一，请大家给春松客服点赞 👍！
 
 <p align="center">
-    <b>Chatopera拥抱开源</b>
-    <img width="800" src="../../images/products/cosin/g4.jpg" alt="春松客服点赞" />
+    <b>点赞春松客服</b>
+    <img width="800" src="../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
 
 ## 评论
