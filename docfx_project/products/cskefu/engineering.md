@@ -172,7 +172,7 @@ cd cosin
 春松客服是基于 [Spring Boot Release 1.5.9](https://spring.io/blog/2017/11/28/spring-boot-1-5-9-available-now) 开发，配置文件是
 
 ```
-cosin/contact-center/cc-core/src/main/resources/application.properties
+cosin/contact-center/app/src/main/resources/application.properties
 ```
 
 数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：1）使用 application-dev.properties；2）使用环境变量。
@@ -190,7 +190,7 @@ SPRING_PROFILES_ACTIVE=dev
 - 创建 application-dev.properties
 
 ```
-touch contact-center/cc-core/src/main/resources/application.properties
+touch contact-center/app/src/main/resources/application.properties
 ```
 
 内容如下：
@@ -231,7 +231,7 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 ## 配置开发环境
 
-按照`IDEA`提示，导入`contact-center/cc-core`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
+按照`IDEA`提示，导入`contact-center/app`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
 
 ### 配置执行及调试
 
