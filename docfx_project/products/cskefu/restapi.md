@@ -10,9 +10,9 @@
 
 [https://www.postman.com/](https://www.postman.com/)
 
-## 导入春松客服 API Collection
+## 导入 Collection
 
-下载[Chatopera_cc_v1.postman_collection.20200312.zip](https://github.com/chatopera/cosin/files/4323043/Chatopera_cc_v1.postman_collection.20200312.zip)
+导入春松客服 API Collection，下载[Chatopera_cc_v1.postman_collection.20200312.zip](https://github.com/chatopera/cosin/files/4323043/Chatopera_cc_v1.postman_collection.20200312.zip)
 
 将 zip 文件解压，得到 `Chatopera_cc_v1.postman_collection.json`。
 
@@ -48,7 +48,7 @@ POST http://IP:PORT/tokens?username=USERNAME&password=PASSWORD
 
 回复结果为一个字符串，即 Auth token。
 
-## 业务 API 请求
+## API 请求
 
 在请求其它 API 时，在 header 中设置`authorization`为 Auth token 就可以，如下：
 

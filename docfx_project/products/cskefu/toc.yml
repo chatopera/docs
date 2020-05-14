@@ -30,3 +30,5 @@
   href: engineering.md
 - name: 服务水平协议
   href: sla.md
+- name: FAQ
+  href: faq.md

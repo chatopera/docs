@@ -247,7 +247,7 @@ SPRING_DATASOURCE_PASSWORD=123456
 <img width="400" src="../../images/products/cosin/g11.png" alt="" />
 </p>
 
-## 执行/调试
+## 运行及调试
 
 <p align="center">
 <img width="500" src="../../images/products/cosin/g12.png" alt="" />
@@ -276,6 +276,85 @@ SPRING_DATASOURCE_PASSWORD=123456
 </p>
 
 另外， **“调试”** 模式下，也支持断点调试。
+
+## 模拟访客端测试
+
+介绍如何测试网页端访客程序，假设服务是自动在本地 `http://localhost:8035` 端口。
+
+### 创建网站渠道
+
+```
+http://localhost:8035/
+用户名：admin
+密码：admin1234
+```
+
+保证有下面的一条网站渠道：
+
+<p align="center">
+<img width="800" src="../../images/products/cosin/g19.png" alt="" />
+</p>
+
+**注意**：网站地址为 _localhost_
+
+### 设计网页端样式
+
+在网站列表中，从右侧操作中点击“设计”。
+
+<p align="center">
+<img width="800" src="../../images/products/cosin/g20.png" alt="" />
+</p>
+
+按照需求配置各种属性。
+
+<p align="center">
+<img width="800" src="../../images/products/cosin/g21.png" alt="" />
+</p>
+
+### 访问测试程序
+
+浏览器打开
+
+```
+http://localhost:8035/testclient.html
+```
+
+<p align="center">
+<img width="800" src="../../images/products/cosin/g22.png" alt="" />
+</p>
+
+### 网站留言
+
+如果当前系统中没有"在线"并且"就绪"的客服人员，则进入留言。
+
+### 嵌入代码到网站中
+
+在目标接入访客聊天控件的网站中，网页 HTML 的 header 中加入一行代码，就可以访问了，代码：
+
+```
+<script defer="true" src="http://春松客服地址[:端口]/im/网站渠道标识.html"></script>
+```
+
+**注意**：如果使用 80 或 443 端口，可省略端口；请将网页放在 HTTP 服务器上，如果从浏览器中以本地文件打开因为安全限制会无法加载聊天控件。
+
+HTML 示例：
+
+```
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <!-- META -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script defer="true" src="http://cc.chatopera.com/im/104eac.html"></script>
+</head>
+<body>
+春松客服演示客户端
+
+</body>
+</html>
+```
 
 ## 接下来
 
