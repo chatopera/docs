@@ -229,11 +229,11 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 并且，环境变量的值优先级高于 `properties` 文件。
 
-## 导入项目到集成开发工具
+## 配置开发环境
 
 按照`IDEA`提示，导入`contact-center/cc-core`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
 
-## 配置执行/调试
+### 配置执行及调试
 
 配置运行方式为 Spring，应用为 `com.chatopera.cc.app.Application`
 
@@ -241,13 +241,13 @@ SPRING_DATASOURCE_PASSWORD=123456
 <img width="800" src="../../images/products/cosin/g10.png" alt="" />
 </p>
 
-## 配置环境变量
+### 配置环境变量
 
 <p align="center">
 <img width="400" src="../../images/products/cosin/g11.png" alt="" />
 </p>
 
-## 运行及调试
+### 运行及调试
 
 <p align="center">
 <img width="500" src="../../images/products/cosin/g12.png" alt="" />
@@ -261,7 +261,7 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 **用户名**：admin **密码**：admin1234
 
-## 热更新
+### 热更新
 
 在开发过程中，修改了代码，更新正在以 **“调试”** 模式运行服务，点击"执行旁边的锤子"。
 
