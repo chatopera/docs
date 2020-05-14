@@ -1,37 +1,46 @@
 # 春松客服
 
-多渠道智能客服，客服系统是企业的重要工具，尤其是移动互联网时代，企业需要响应来自任何地点任何时间的客户，渠道也是多样性的。企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。不管是微信公众号，还是电话外呼，或是 Facebook Messenger、Skype。
-
-<table class="image">
-    <caption align="bottom">用户生命周期</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/user-cycle-growth.png" alt="用户生命周期" /></td>
-    </tr>
-</table>
-
-## 产品定义
-
-<table class="image">
-    <tr>
-        <td><img width="600" src="../../images/products/cosin/g2.jpg" alt="春松客服" /></td>
-    </tr>
-</table>
+<p align="center">
+<b></b></br>
+<img width="800" src="../../images/products/cosin/g2.jpg" alt="春松客服" />
+</p>
 
 春松客服是拥有机器人客服、呼叫中心、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。**春松客服**是一个有能力打通企业各种应用的软件，尤其是市场、销售、售后相关的软件。
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../images/products/user-service-prod.png" alt="多渠道智能客服" /></td>
-    </tr>
-</table>
+## 产品定义
+
+客服系统是企业的重要工具，尤其是移动互联网时代，微信公众号、移动电话或是 Facebook Messenger、Skype 等渠道分散了企业的服务渠道，企业需要响应来自任何地点任何时间的客户。同时，企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。
+
+<p align="center">
+<b>用户生命周期</b></br>
+<img width="800" src="../../images/products/user-cycle-growth.png" alt="用户生命周期" />
+</p>
 
 春松客服是 Chatopera 自主研发以及基于且增强其它开源软件的方式实现的，春松客服会不断增强客服系统的智能化，这包括利用自然语言处理、机器学习和语音识别等技术让客服工作更有效率、客服满意度更高、成本更低。Chatopera 推出的智能客服产品，即**春松客服**有下面的亮点：
 
-- 模块化设计：免费模块和付费模块适合企业长期使用，尤其是中小型企业，灵活购买高级插件；
+### 模块化设计
 
-- 开放源码：免费模块使用 Apache2.0 授权证书发布，商业友好；
+免费模块和付费模块适合企业长期使用，尤其是中小型企业，灵活购买高级插件。
 
-- 部署方便：以容器化基础，安装使用 Docker 编排，卸载等非常简单。
+<p align="center">
+<img width="800" src="../../images/products/user-service-prod.png" alt="多渠道智能客服" />
+</p>
+
+### 开放源码
+
+免费模块使用 Apache2.0 授权证书发布，商业友好。
+
+### 部署方便
+
+以容器化基础，安装使用 Docker 编排，卸载等非常简单。
+
+### 机器人客服
+
+强大的机器人客服解决方案，与 Chatopera 机器人平台等产品集成。
+
+<p align="center">
+<img width="800" src="../../images/products/solution-1.png" alt="全解决方案" />
+</p>
 
 ## 免费模块
 

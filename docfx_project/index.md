@@ -1,19 +1,8 @@
 # Chatopera 文档中心
 
-Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动互联网的普及和人工智能技术的不断进步，企业服务向着更智能化、更自动化的方向发展。Chatopera 利用自身在自然语言处理、机器学习、搜索引擎和业务流程引擎上的积累，为企业提供快速、低成本、稳定的落地聊天机器人服务的产品。
+北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。`Chatopera` 是我们面向企业应用人工智能技术的品牌和产品线。
 
-本文档包含对 Chatopera 产品的详细使用介绍：
-
-## 春松客服
-
-[春松客服](/products/cskefu/index.html)，针对目前企业智能客服的需求，我们提供多渠道智能客服系统的全解决方案。
-
-<img width="800" src="images/products/solution-1.png" alt="Chatopera产品&服务"/>
-
-## 云服务
-
-[Chatopera 云服务](/products/chatbot-platform/index.html)，聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。
-语言方面，Chatopera 的产品支持**汉语**和**英语**的企业聊天机器人开发。
+Chatopera 提供企业实现**聊天机器人应用**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时我们面向心理咨询行业打造了应用人工智能技术的垂直行业解决方案。
 
 <video controls="" style="width:100%;" poster="images/products/introduction-video-cover.jpg" >
   <source
@@ -21,6 +10,17 @@ Chatopera 提供企业实现聊天机器人应用的解决方案，随着移动�
     type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
   >
 </video>
+
+本文档包含对 Chatopera 产品的详细使用介绍：
+
+## 春松客服
+
+[春松客服](/products/cskefu/index.html)，针对目前企业智能客服的需求，我们提供多渠道智能客服系统的全解决方案。
+
+## 云服务
+
+[Chatopera 云服务](/products/chatbot-platform/index.html)，聊天机器人即服务，面向聊天机器人开发者/开发商提供的立即获取的平台级服务，尤其是对中小型企业非常友好。
+语言方面，Chatopera 的产品支持**汉语**和**英语**的企业聊天机器人开发。
 
 ## 小助手
 
