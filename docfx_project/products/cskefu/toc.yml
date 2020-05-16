@@ -6,22 +6,22 @@
   href: opensource.md
 - name: 使用培训
   href: training.md
-- name: 客服应答
-  href: work.md
 - name: 账号体系
   href: accounting.md
 - name: 权限管理
   href: permission.md
+- name: 客服工作台
+  href: work.md
 - name: 客户关系管理
   href: crm.md
 - name: 网页聊天控件
   href: visitor-webim.md
+- name: 坐席监控
+  href: monitoring.md
 - name: 机器人客服
   href: work-chatbot.md
 - name: 呼叫中心
   href: callcenter.md
-- name: 坐席监控
-  href: monitoring.md
 - name: 数据报表
   href: reports.md
 - name: REST APIs
