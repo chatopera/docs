@@ -21,6 +21,11 @@
 hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 ```
 
+<p align="center">
+    <b>统计代码获取</b>
+    <img width="800" src="../../images/products/cosin/g25.jpg" alt="统计代码获取" />
+</p>
+
 得到`YOUR_SITE_KEY`后继续`设置环境变量`。
 
 ## 设置环境变量
