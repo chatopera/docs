@@ -21,7 +21,7 @@
 hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 ```
 
-`YOUR_SITE_KEY`即后文要使用的`TONGJI_BAIDU_SITEKEY`。
+得到`YOUR_SITE_KEY`后继续`设置环境变量`。
 
 ## 设置环境变量
 
@@ -30,7 +30,13 @@ hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 https://docs.chatopera.com/products/cskefu/deploy.html
 
 ```
-TONGJI_BAIDU_SITEKEY=xxxxx
+TONGJI_BAIDU_SITEKEY=YOUR_SITE_KEY
+```
+
+示例
+
+```
+TONGJI_BAIDU_SITEKEY=585cbac007x12es81b517031e9ec29c56e
 ```
 
 重启服务
