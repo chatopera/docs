@@ -4,6 +4,8 @@
   href: quickstart.md
 - name: 账号管理
   href: accounting.md
+- name: 首页管理
+  href: home.md
 - name: 客户管理
   href: accounts.md
 - name: 联系人管理
@@ -12,7 +14,9 @@
   href: opportunities.md
 - name: 备忘录管理
   href: notes.md
-- name: 电话和会议
-  href: meetings-n-calls.md
-- name: 首页管理
-  href: home.md
+- name: 任务管理
+  href: tasks.md
+- name: 电话管理
+  href: calls.md
+- name: 会议管理
+  href: meetings.md
