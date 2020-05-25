@@ -23,7 +23,7 @@
 管理员登录。
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/1.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/1.png" alt="" />
 </p>
 
 ### 用户组和角色
@@ -31,19 +31,19 @@
 创建一个用户组，“销售”
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/2.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/2.png" alt="" />
 </p>
 
 创建一个角色“售前”
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/3.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/3.png" alt="" />
 </p>
 
 在销售组中关联角色“售前”
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/4.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/4.png" alt="" />
 </p>
 
 ### 创建用户
@@ -51,12 +51,12 @@
 创建一个用户，比如“张三“，登陆用户名“user1”， 密码“admin1234”， 普通用户，添加到”销售“用户组。
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/5.png" alt="图：创建用户
+    <img width="800" src="../../images/products/dscrm/5.png" alt="图：创建用户
 " />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/6.png" alt="图：用户关联特定的组" />
+    <img width="800" src="../../images/products/dscrm/6.png" alt="图：用户关联特定的组" />
 </p>
 
 ## 销售创建客户
@@ -64,55 +64,55 @@
 张三，user1 登录
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/7.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/7.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/8.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/8.png" alt="" />
 </p>
 
 创建一个客户
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/9.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/9.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/10.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/10.png" alt="" />
 </p>
 
 创建一个联系人
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/11.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/11.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/12.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/12.png" alt="" />
 </p>
 
 联系人关联到客户
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/13.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/13.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/14.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/14.png" alt="" />
 </p>
 
 在客户的「历史记录」上创建备忘录。
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/15.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/15.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/16.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/16.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/17.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/17.png" alt="" />
 </p>
 
 ## 跟踪商业机会
@@ -120,27 +120,27 @@
 张三登录
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/18.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/18.png" alt="" />
 </p>
 
 创建一个商业机会
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/30.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/30.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/19.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/19.png" alt="" />
 </p>
 
 关联到之前的客户
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/20.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/20.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/21.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/21.png" alt="" />
 </p>
 
 ### 关联文档
@@ -148,11 +148,11 @@
 张三在这个商业机会上，创建文档
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/22.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/22.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/29.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/29.png" alt="" />
 </p>
 
 ### 关联会议
@@ -160,15 +160,15 @@
 张三在这个商业机会上，创建会议。
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/23.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/23.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/24.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/24.png" alt="" />
 </p>
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/25.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/25.png" alt="" />
 </p>
 
 ## 协作信息流
@@ -176,19 +176,19 @@
 管理员登录
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/26.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/26.png" alt="" />
 </p>
 
 在首页 `Feed` 流内能看到张三创建的资源，即客户、联系人和商业机会等。
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/27.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/27.png" alt="" />
 </p>
 
 销售总监或者有权限的相关人员都可以在这里方便快捷的看到以及回复每个销售流程中内容。
 
 <p align="center">
-    <img width="600" src="../../images/products/dscrm/28.png" alt="" />
+    <img width="800" src="../../images/products/dscrm/28.png" alt="" />
 </p>
 
 ## 评论
