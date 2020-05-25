@@ -201,6 +201,55 @@
     <img width="800" src="../../images/products/dscrm/259.png" alt="" />
 </p>
 
+## 系统设置
+根据您的组织机构的规范配置系统设置。用户可以在用户设置页面中修改自己的区域设置。
+
+### 系统设置
+- 在「系统设置」可以设置`用户接口`、`代理`、`高级`、`日志`等设置
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/260.png" alt="" />
+</p>
+
+#### 用户接口设置
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/261.png" alt="" />
+</p>
+
+#### 代理设置
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/262.png" alt="" />
+</p>
+
+#### 高级设置
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/263.png" alt="" />
+</p>
+
+#### 日志设置
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/264.png" alt="" />
+</p>
+
+
+### 导入向导
+在「大盛CRM」中所有启用了导入功能的模块的侧栏中都有“导入向导”。 选择要导入数据的模块，然后单击`「下一步」`启动导入向导。
+
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/265.png" alt="" />
+</p>
+
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/266.png" alt="" />
+</p>
+
+
+<!-- ## 邮件服务
+
+
+## 工作室 -->
+
+
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
