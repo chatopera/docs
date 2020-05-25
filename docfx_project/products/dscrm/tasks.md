@@ -4,44 +4,81 @@
 
 本教程主要列举最常用的功能。
 
-创建任务
+## 创建任务
+
 步骤：顶部菜单「全部」->「任务」→ 创建任务
 
 任务模块
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-24_23-53-2.png
+
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/180.png" alt="" />
+</p>
 
 创建任务
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-24_23-56-59.png
 
-查看任务
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/181.png" alt="" />
+</p>
+
+## 查看任务
+
 步骤：顶部菜单「全部」->「任务」→「查看任务」
 
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-24_23-58-9.png
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/182.png" alt="" />
+</p>
 
-任务详情
+## 任务详情
+
 步骤：「查看任务」->点击某个任务的名称
 
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-25_0-1-16.png
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/183.png" alt="" />
+</p>
 
-编辑任务
+## 编辑任务
+
 步骤：「查看任务」->点击某个任务的名称->「动作」→「编辑」
 
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-25_0-2-8.png
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/184.png" alt="" />
+</p>
 
-删除任务
+## 删除任务
+
 步骤：「查看任务」->点击某个任务的名称->「动作」→「删除」
 
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-25_0-3-47.png
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/185.png" alt="" />
+</p>
 
-团队协作维护任务
+## 团队协作维护任务
+
 对于一个有明确的「用户组」的任务，则该组下面的员工都可以管理这个任务。
 
 如：任务「CHATOPERA 智能问答引擎线上培训」属于「销售」组，张三李四也属于「销售」组，那么他们都可以管理这个任务。
 
 张三看到的任务
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-25_0-9-11.png
+
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/186.png" alt="" />
+</p>
 
 李四看到的任务
-春松客服 > 8*1_dscrm_doc*任务管理 > image2020-5-25_0-9-45.png
+
+<p align="center">
+    <img width="800" src="../../images/products/dscrm/187.png" alt="" />
+</p>
 
 可以看出他们对同一组下面的任务都有相同的权限。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
