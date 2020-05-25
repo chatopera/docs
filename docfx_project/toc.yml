@@ -1,6 +1,9 @@
 - name: 春松客服
   href: products/cskefu/
   topicHref: products/cskefu/index.md
+- name: 大盛CRM
+  href: products/dscrm/
+  topicHref: products/dscrm/index.md
 - name: 云服务
   href: products/chatbot-platform/
   topicHref: products/chatbot-platform/index.md
