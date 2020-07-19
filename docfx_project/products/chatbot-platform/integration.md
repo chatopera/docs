@@ -158,18 +158,18 @@ var chatbot = chatopera.Chatbot(clientId, secret)
 <h4><font color="purple">接口规范</font></h4>
 
 ```
-result = chatbot.command(method, path [, payload])
+result = chatbot.command(method, path [, body])
 ```
 
 > **提示：** result 返回在 Node.js 中使用`await`或`Promise`，参考[快速开始](/products/chatbot-platform/integration.html#调用接口示例)；其它语言直接用 `=` 便可获取。
 
 <h4><font color="purple">参数说明</font></h4>
 
-| name    | type           | required | description                                                                                  |
-| ------- | -------------- | -------- | -------------------------------------------------------------------------------------------- |
-| method  | string         | &#10004; | 对于资源的具体操作类型，由 HTTP 动词表示。有效值包括`GET`，`POST`，`PUT`，`DELETE`和`HEAD`等 |
-| path    | string         | &#10004; | 资源的执行路径，通常包含资源实体名称或唯一标识，也可能在 `path`中使用`queryString`传递参数   |
-| payload | `JSON`数据结构 | &#10067; | `payload` 是请求中的数据，对应 RestAPI 中的 Http Body                                        |
+| name   | type           | required | description                                                                                  |
+| ------ | -------------- | -------- | -------------------------------------------------------------------------------------------- |
+| method | string         | &#10004; | 对于资源的具体操作类型，由 HTTP 动词表示。有效值包括`GET`，`POST`，`PUT`，`DELETE`和`HEAD`等 |
+| path   | string         | &#10004; | 资源的执行路径，通常包含资源实体名称或唯一标识，也可能在 `path`中使用`queryString`传递参数   |
+| body   | `JSON`数据结构 | &#10067; | `body` 是请求中的数据，对应 RestAPI 中的 Http Body                                           |
 
 `method`不同动词代表的含义一般如下：
 
@@ -180,9 +180,9 @@ result = chatbot.command(method, path [, payload])
 
 还有更多类型的`method`，不如上述几种常用，在此不进行赘述。
 
-`queryString`是 URL 的一部分。典型的 URL 看起来像这样: <font color="green">http://server/resource?</font><font color="blue">foo=A&bar=B</font>。其中，<font color="blue">foo=A&bar=B</font>就是`queryString`，通常用来传递参数，这个例子中包含两个参数：`foo`值为`A`；`bar`值为`B`。在下文中，`path`参数中可能包含`queryString`，形式如<font color="blue">foo=${var1}&bar=${var2}</font>，需要把`${varN}`替换为实际值。
+`queryString`是 URL 的一部分。典型的 URL 看起来像这样: <font color="green">http://server/resource?</font><font color="blue">foo=A&bar=B</font>。其中，<font color="blue">foo=A&bar=B</font>就是`queryString`，通常用来传递参数，这个例子中包含两个参数：`foo`值为`A`；`bar`值为`B`。在下文中，`path`参数中可能包含`queryString`，形式如<font color="blue">foo={{var1}}&bar={{var2}}</font>，需要把`{{var1}}`和`{{var2}}`替换为实际值。
 
-`payload`是 JSON 或在不同语言下的等价结构。[JSON](https://www.json.org/json-en.html)是一种轻量级的数据交换格式，描述了使用键值对、数组、字符串、数字、日期和布尔类型等值存储对象。`payload`数据是 JSON 格式的，不同语言对于 JSON 格式支持方式不同，`payload`在不同语言下，等价数据结构如下。
+`body`是 JSON 或在不同语言下的等价结构。[JSON](https://www.json.org/json-en.html)是一种轻量级的数据交换格式，描述了使用键值对、数组、字符串、数字、日期和布尔类型等值存储对象。`body`数据是 JSON 格式的，不同语言对于 JSON 格式支持方式不同，`body`在不同语言下，等价数据结构如下。
 
 | 语言       | JSON Object                                                                            | JSON Array                                                                            |
 | ---------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -196,7 +196,7 @@ result = chatbot.command(method, path [, payload])
 
 > **提示：** 相对而言，JSON 等价的数据结构，在获得`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
 
-**`payload`是否必填以及是`JSON Object`还是`JSON Array`，取决于`method`和`path`的值，不同`method`和`path`的组合对应了不同的接口功能，满足不同需求，下文将介绍满足各种需求的`method`和`path`，并各个说明`payload`参数。**
+**`body`是否必填以及是`JSON Object`还是`JSON Array`，取决于`method`和`path`的值，不同`method`和`path`的组合对应了不同的接口功能，满足不同需求，下文将介绍满足各种需求的`method`和`path`，并各个说明`body`参数。**
 
 ### 返回值
 
@@ -214,97 +214,477 @@ result = chatbot.command(method, path [, payload])
 
 > **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatbot#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
 
-下文中使用的`method`，`path`，`payload`和`result`等均代表以上介绍的概念。
+下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
 ## 机器人画像
 
-### 获得机器人详情
+### 获得机器人画像
 
 ```
 Chatbot#command("GET", "/")
 ```
 
-<h4><font color="purple">result.data / JSON Object</font></h4>
+<h4><font color="purple">result / JSON Object</font></h4>
 
 ```
 {
-  "name": "test1",
-  "fallback": "我不明白您的意思。",
-  "description": "ss",
-  "welcome": "你好！我是机器人客服。",
-  "primaryLanguage": "zh_CN"
+    "rc": 0,
+    "data": {
+        "name": "hain111",
+        "fallback": "请联系客服。",
+        "description": "Performs Tasks or retrieves FAQ.",
+        "welcome": "你好，我是机器人小巴巴",
+        "primaryLanguage": "zh_CN",
+        "status": {
+            "reindex": 0,
+            "retrain": 0
+        }
+    }
 }
 ```
 
-| key               | type   | description  |
-| ----------------- | ------ | ------------ |
-| `name`            | string | 机器人名字   |
-| `fallback`        | string | 兜底回复     |
-| `welcome`         | string | 机器人问候语 |
-| `description`     | string | 机器人描述   |
-| `primaryLanguage` | string | 机器人语言   |
+| key               | type        | description                                                                                            |
+| ----------------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| `name`            | string      | 机器人名字                                                                                             |
+| `fallback`        | string      | 兜底回复，当请求机器人对话时，没有得到来自多轮对话、知识库或意图识别回复时，回复内容                   |
+| `welcome`         | string      | 机器人问候语                                                                                           |
+| `description`     | string      | 机器人描述                                                                                             |
+| `primaryLanguage` | string      | 机器人语言                                                                                             |
+| `status`          | JSON Object | 全局任务的执行状态，`reindex`代表知识库同步自定义词典的状态；`retrain`代表意图识别同步自定义词典的状态 |
+
+### 更新机器人画像
+
+```
+Chatbot#command("PUT", "/", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+ "fallback": "请联系客服。",
+ "description": "我的超级能力是对话",
+ "welcome": "你好，我是机器人小巴巴"
+}
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+ "rc": 0,
+ "data": {
+  "name": "hain111",
+  "fallback": "请联系客服。",
+  "description": "Performs Tasks or retrieves FAQ.",
+  "welcome": "你好，我是机器人小巴巴"
+}
+```
+
+### 获得全局任务状态
+
+```
+Chatbot#command("GET", "/status")
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+ "rc": 0,
+ "data": {
+  "status": {
+   "reindex": 0,
+   "retrain": 0
+  }
+}
+```
 
 ## 知识库
+
+### 创建问答对
+
+```
+Chatbot#command("post", "/faq/database", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+ "post": "如何查看快递单号",
+ "replies": [
+  {
+   "rtype": "plain",
+   "content": "foo",
+   "enabled": true
+  },
+  {
+   "rtype": "plain",
+   "content": "bar",
+   "enabled": true
+  }
+ ],
+ "enabled": true,
+ "categoryTexts": [
+  "一级分类名",
+  "二级分类名"
+ ]
+}
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+ "rc": 0,
+ "data": {
+  "id": "{docId}",
+  "replyLastUpdate": "{{replyLastUpdate}}"
+ }
+}
+```
+
+### 更新知识库问答对
+
+```
+Chatbot#command("PUT", "/faq/database/{{docId}}", body)
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key   | type   | default      | description |
+| ----- | ------ | ------------ | ----------- |
+| docId | string | 无默认, 必填 | 问答对标识  |
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"post": "怎么开通微信支付?",
+	"replyLastUpdate": "{{replyLastUpdate}}",
+	"replies": [
+		{
+			"rtype": "plain",
+			"content": "foo2",
+			"enabled": true
+		},
+		{
+			"rtype": "plain",
+			"content": "bar2",
+			"enabled": true
+		}
+	],
+	"enabled": true
+}
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "id": "{{docId}}",
+        "replyLastUpdate": "{{replyLastUpdate}}"
+    }
+}
+```
+
+### 获得问答对列表
+
+```
+Chatbot#command("GET", "/faq/database?limit={{limit}}&page={{page}}&q={{q}}")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key   | type   | default | description                      |
+| ----- | ------ | ------- | -------------------------------- |
+| limit | int    | 1       | 返回最多多少条数据               |
+| page  | int    | 20      | 返回第多少页                     |
+| q     | string | 空      | 问答对匹配时，问题应包含的关键字 |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "total": 3,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "post": "如何查看快递单号",
+            "categories": [
+                "wwQyjS310",
+                "I7vfx47i5I"
+            ],
+            "enabled": true,
+            "id": "{{docId}}"
+        }
+    ],
+    "rc": 0,
+    "status": {
+        "reindex": 0,
+        "retrain": 0
+    }
+}
+```
+
+### 创建问答对相似问
+
+```
+Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key   | type   | default      | description |
+| ----- | ------ | ------------ | ----------- |
+| docId | string | 无默认, 必填 | 问答对标识  |
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"post": "怎样支持微信支付?"
+}
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "id": "{{extendId}}"
+    }
+}
+```
+
+### 获得问答对相似问列表
+
+```
+Chatbot#command("GET", "/faq/database/{{docId}}/extend")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key   | type   | default      | description |
+| ----- | ------ | ------------ | ----------- |
+| docId | string | 无默认, 必填 | 问答对标识  |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "total": 1,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "post": "怎样支持微信支付?",
+            "postId": "{{docId}}",
+            "enabled": true,
+            "id": "{{extendId}}"
+        }
+    ],
+    "rc": 0
+}
+```
+
+### 更新问答对相似问
+
+```
+Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key      | type   | default      | description |
+| -------- | ------ | ------------ | ----------- |
+| docId    | string | 无默认, 必填 | 问答对标识  |
+| extendId | string | 无默认, 必填 | 扩展问标识  |
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"post": "怎样支持微信支付?"
+}
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "id": "{{extendId}}"
+    }
+}
+```
+
+### 删除问答对相似问
+
+```
+Chatbot#command("DELETE", "/faq/database/{{docId}}/extend/{{extendId}}")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key      | type   | default      | description |
+| -------- | ------ | ------------ | ----------- |
+| docId    | string | 无默认, 必填 | 问答对标识  |
+| extendId | string | 无默认, 必填 | 扩展问标识  |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "msg": "done"
+}
+```
+
+### 删除问答对
+
+```
+Chatbot#command("DELETE", "/faq/database/{{docId}}")
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "msg": "done"
+}
+```
 
 ### 检索知识库
 
 ```
-
-chatbot.faq
-
+Chatbot#command("POST", "/faq/query", body)
 ```
 
-<pre class="prettyprint">
-[
-  {
-    "id": "AWbyu9DYjTtqn-PFv1GV",
-    "score": 1,
-    "post": "停效期间的保单是否能办理减保？",
-    "reply": "停效期间的保单可以办理减"
-  },
-  {
-    "id": "AWbyu86_jTtqn-PFv1GR",
-    "score": 0.3333333333333333,
-    "post": "主险期缴期间，附加险能不能办理减额缴清？",
-    "reply": "根据目前的业务规定：附加险缴费方式应与主险一致"
-  }
-]
-</pre>
+<h4><font color="purple">body / JSON Object</font></h4>
 
-_id_: 问答对 Id
-_score_: 置信度
-_post_: 标准问
-_reply_: 答案
+```
+{
+	"query": "查找相似的问题",
+	"fromUserId": "{{userId}}",
+	"faq_sugg_reply": 0.1
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": [
+        {
+            "id": "{{docId}}",
+            "score": 0.48534,
+            "post": "查看相似问题不可能的",
+            "replies": [
+                {
+                    "rtype": "plain",
+                    "enabled": true,
+                    "content": "方法"
+                }
+            ]
+        },
+        {
+            "id": "{{docId}}",
+            "score": 0.32699,
+            "post": "聊天",
+            "replies": [
+                {
+                    "rtype": "plain",
+                    "content": "foo",
+                    "enabled": true
+                },
+                {
+                    "rtype": "plain",
+                    "content": "bar",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}
+```
 
 ## 多轮对话
 
 ### 检索多轮对话
 
 ```
-
-chatbot.conversation
-
+Chatbot#command("POST", "/conversation/query", body)
 ```
 
-<pre class="prettyprint">
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
 {
-  "state": "default",
-  "createdAt": 1541677323194,
-  "string": "欢迎惠顾！",
-  "topicName": "greetings",
-  "subReplies": [],
-  "service": {
-    "provider": "conversation"
-  },
-  "logic_is_fallback": false,
-  "botName": "test1"
+    "fromUserId": "{{userId}}",
+    "textMessage": "想要说些什么",
+    "faq_best_reply": 0.6,
+    "faq_sugg_reply": 0.35
 }
-</pre>
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "state": "default",
+        "string": [
+            {
+                "rtype": "plain",
+                "enabled": true,
+                "content": "方法"
+            }
+        ],
+        "logic_is_unexpected": false,
+        "logic_is_fallback": false,
+        "service": {
+            "provider": "faq",
+            "docId": "{{doctId}}",
+            "score": 0.3781,
+            "threshold": 0.37
+        },
+        "botName": "hain111",
+        "faq": [
+            {
+                "id": "{{doctId}}",
+                "score": 0.3781,
+                "post": "查看相似问题不可能的",
+                "replies": [
+                    {
+                        "rtype": "plain",
+                        "enabled": true,
+                        "content": "方法"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
 
 _state_: 业务字段，可以在多轮对话脚本中设置
+
 _string_: 机器人回复的文本内容
+
 _topicName_: 机器人会话主题
+
 _logic_is_fallback_: 是否是兜底回复
+
 _botName_: 机器人的名字
 
 `service`代表返回的数据来源，**provider:script**指**多轮对话**，**provider:faq**指**知识库**；不同数据来源也会提供相应信息。
@@ -320,7 +700,7 @@ _botName_: 机器人的名字
 | fallback     | 兜底回复             |         |
 | mute         | 该用户被该机器人屏蔽 |         |
 
-- 回复处理逻辑
+<h4><font color="purple">服务器端逻辑</font></h4>
 
 多轮对话获取回复的逻辑解释如下：
 
@@ -338,130 +718,188 @@ _botName_: 机器人的名字
 
 ## 意图识别
 
+TODO
+
 ## 用户管理
 
 ### 获得用户列表
 
 ```
-
-chatbot.users
-
+Chatbot#command("GET", "/users")
 ```
 
-<pre class="prettyprint">
-[
-  {
-    "userId": "nodesdk",
-    "lasttime": "2018-11-08T11:45:44.268Z",
-    "created": "2018-11-08T11:42:02.104Z"
-  },
-  {
-    "userId": "superadmin",
-    "lasttime": "2018-11-08T11:33:23.163Z",
-    "created": "2018-11-08T11:33:23.167Z"
-  },
-  {
-    "userId": "c100680c10dc534dac3e28a024e59207",
-    "lasttime": "2018-11-08T08:58:48.575Z",
-    "created": "2018-11-08T08:57:16.915Z"
-  }
-]
-</pre>
+<h4><font color="purple">path</font></h4>
+
+| key   | type | default | description        |
+| ----- | ---- | ------- | ------------------ |
+| limit | int  | 1       | 返回最多多少条数据 |
+| page  | int  | 20      | 返回第多少页       |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "total": 5,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "userId": "{{userId}}",
+            "lasttime": "2020-07-19T14:12:13.690Z",
+            "created": "2020-07-19T13:48:02.225Z"
+        }
+    ]
+}
+```
 
 _userId_: 和机器人对话的用户标识
+
 _lasttime_: 最后沟通时间
+
 _created_: 第一次沟通时间
 
 ### 屏蔽用户
 
 ```
-
-chatbot.mute
-
+Chatbot#command("POST", "/users/{{userId}}/mute")
 ```
 
-正常返回时，statusCode 200, body 为 `{}`。
+<h4><font color="purple">path</font></h4>
+
+| key    | type   | default      | description  |
+| ------ | ------ | ------------ | ------------ |
+| userId | string | 无默认, 必填 | 用户唯一标识 |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {}
+}
+```
 
 ### 取消屏蔽
 
 ```
-
-chatbot.unmute
-
+Chatbot#command("POST", "/users/{{userId}}/unmute")
 ```
 
-正常返回时，statusCode 200, body 为 `{}`。
+<h4><font color="purple">path</font></h4>
+
+| key    | type   | default      | description  |
+| ------ | ------ | ------------ | ------------ |
+| userId | string | 无默认, 必填 | 用户唯一标识 |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {}
+}
+```
 
 ### 是否被屏蔽
 
 ```
-
-chatbot.ismute
-
+Chatbot#command("POST", "/users/{{userId}}/ismute")
 ```
 
-返回 Boolean 类型值。
+<h4><font color="purple">result / JSON Object</font></h4>
 
-<pre class="prettyprint">
-true
-</pre>
+```
+{
+    "rc": 0,
+    "data": {
+        "mute": false
+    }
+}
+```
+
+`data.mute`返回 boolean 类型值。
+
+### 获得用户画像信息
+
+```
+Chatbot#command("GET", "/users/{{userId}}/profile")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key    | type   | default      | description  |
+| ------ | ------ | ------------ | ------------ |
+| userId | string | 无默认, 必填 | 用户唯一标识 |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "userId": "postman9",
+        "name": null,
+        "lasttime": "2020-07-19T14:12:13.690Z",
+        "created": "2020-07-19T13:48:02.225Z",
+        "profile": {},
+        "mute": false
+    }
+}
+```
 
 ### 获取聊天历史
 
 ```
-
-chatbot.chats
-
+Chatbot#command("GET", "/users/{{userId}}/chats?limit={{limit}}&page={{page}}")
 ```
 
-<pre class="prettyprint">
+<h4><font color="purple">path</font></h4>
+
+| key    | type   | default      | description        |
+| ------ | ------ | ------------ | ------------------ |
+| userId | string | 无默认, 必填 | 用户唯一标识       |
+| limit  | int    | 1            | 返回最多多少条数据 |
+| page   | int    | 20           | 返回第多少页       |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
 {
-  "total": 4,
-  "current_page": 1,
-  "total_page": 1,
-  "data": [
-    {
-      "userId": "nodesdk",
-      "textMessage": "xx",
-      "direction": "outbound",
-      "service": "faq",
-      "confidence": 1,
-      "created": "2018-11-08T11:45:44.448Z"
-    },
-    {
-      "userId": "nodesdk",
-      "textMessage": "xxx",
-      "direction": "inbound",
-      "service": "faq",
-      "created": "2018-11-08T11:45:44.276Z"
-    },
-    {
-      "userId": "nodesdk",
-      "textMessage": "xx",
-      "direction": "outbound",
-      "service": "conversation",
-      "confidence": 1,
-      "created": "2018-11-08T11:42:03.234Z"
-    },
-    {
-      "userId": "nodesdk",
-      "textMessage": "你好",
-      "direction": "inbound",
-      "service": "conversation",
-      "created": "2018-11-08T11:42:02.110Z"
-    }
-  ]
+    "rc": 0,
+    "total": 16,
+    "current_page": 1,
+    "total_page": 1,
+    "data": [
+        {
+            "userId": "postman9",
+            "textMessage": "方法",
+            "direction": "outbound",
+            "service": "faq",
+            "confidence": 0.3781,
+            "docId": "AXNCspoufXOJhfysI3-Z",
+            "created": "2020-07-19T14:12:13.802Z"
+        }
+    ]
 }
-</pre>
+```
 
 _total_: 该用户和机器人之间对话总数
+
 _current_page_： 当前页
+
 _total_page_: 总页数
+
 _userId_: 用户标识
+
 _textMessage_: 文本内容
+
 _direction_: 消息传递方向，【inbound】为消费者发送，【outbound】为机器人发送
+
 _service_: 提供回复的服务
+
 _confidence_: 置信度
+
 _created_: 消息创建时间
 
 ## 评论
