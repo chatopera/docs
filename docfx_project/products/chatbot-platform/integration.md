@@ -40,7 +40,7 @@ Chatopera 云服务提供集成聊天机器人的方案为 SDK，目前支持 Ja
 | Java    | https://github.com/chatopera/chatopera-sample-java |
 | Node.js | https://github.com/chatopera/chatopera-sample-node |
 
-## SDK 接口详情
+## SDK 接口介绍
 
 ### 获得机器人详情
 

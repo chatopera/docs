@@ -11,6 +11,6 @@ SITE=$baseDir/../dist
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 cd $baseDir/../docfx_project
-rm -rf $SITE/*
-rm -rf obj
+rm -rf $SITE/_site/*
+# rm -rf obj
 docfx build -o $SITE ./docfx.json 

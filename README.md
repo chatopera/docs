@@ -4,6 +4,33 @@
 
 Code as Docs.
 
+依赖 `docfx`，在没有安装`docfx`的操作系统上，提供 docker 镜像支持编写。
+
+## 进入 Docker
+
+仅用于操作系统中没有 docfx 并不打算安装的用户。
+
+```
+cd docs
+docker run -d --rm --name devdocs  -p 8080:8080 -v $PWD:/work chatopera/docfx:2.45 -c "tail -f /var/log/faillog"
+
+# 进入docker容器
+docker exec -it devdocs bash
+
+# 启动 nginx
+nginx
+
+# 编译站点源文件
+/work/admin/build.sh  && cd /work/dist/_site && tar cf - .|(cd /var/www/html;tar xf -)
+
+# 使用浏览器访问
+# http://YOUR_HOST_IP:8080
+
+# 编辑结束，退出
+docker stop devdocs
+docker rm devdocs
+```
+
 ## 编译
 
 ```
