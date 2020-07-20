@@ -58,7 +58,7 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 
 | name            | type   | required | description                                                                                                                      |
 | --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获得                                                          |
+| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
 | secret          | string | &#10004; | 获取办法同上                                                                                                                     |
 | serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
 
@@ -68,14 +68,14 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 
 ### 调用接口示例
 
-得到`Chatbot`实例后，怎么样请求接口服务呢？假设对该机器人的基本信息感兴趣，获得基本信息方式如下：
+得到`Chatbot`实例后，怎么样请求接口服务呢？假设对该机器人的基本信息感兴趣，获取基本信息方式如下：
 
 ```
 var response = await chatbot.command("GET", "/");
 console.log("机器人名称：", response.data.name)
 ```
 
-或者获得 `Promise` 返回
+或者获取 `Promise` 返回
 
 ```
 chatbot.command("GET", "/").then(
@@ -97,16 +97,14 @@ chatbot.command("GET", "/").then(
 <h4><font color="purple">构造函数</font></h4>
 
 ```
-
 Chatbot(clientId, secret [, serviceProvider])
-
 ```
 
 <h4><font color="purple">参数说明</font></h4>
 
 | name            | type   | required | description                                                                                                                      |
 | --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获得                                                          |
+| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
 | secret          | string | &#10004; | 获取办法同上                                                                                                                     |
 | serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
 
@@ -194,7 +192,7 @@ result = chatbot.command(method, path [, body])
 
 **下文表述时，统一使用`JSON`，`JSON Object`和`JSON Array`代表 JSON 数据结构和其不同语言下的等价数据结构。**
 
-> **提示：** 相对而言，JSON 等价的数据结构，在获得`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
+> **提示：** 相对而言，JSON 等价的数据结构，在获取`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
 
 **`body`是否必填以及是`JSON Object`还是`JSON Array`，取决于`method`和`path`的值，不同`method`和`path`的组合对应了不同的接口功能，满足不同需求，下文将介绍满足各种需求的`method`和`path`，并各个说明`body`参数。**
 
@@ -202,15 +200,18 @@ result = chatbot.command(method, path [, body])
 
 **返回值**即请求结果，针对接口定义，`Chatbot#command`的返回值`result`是 `JSON Object`，并有以下属性。
 
-| key      | type   | description                                                                                                           |
-| -------- | ------ | --------------------------------------------------------------------------------------------------------------------- |
-| `rc`     | int    | response code，返回码，大于等于 0 的正整型。`0`代表服务器端按照请求描述，正常返回结果；`rc` 不等于 0 是代表异常返回。 |
-| `data`   | JSON   | 数据资源。正常返回时，服务器端执行逻辑成功，比如查询时，`data`就是查询结果。                                          |
-| `msg`    | string | 消息，当服务器端执行请求成功，并且不需要返回数据资源时，通过 `msg`代表文本信息，比如提示信息                          |
-| `error`  | string | 异常消息，当服务器端返回异常时，具体出错信息包含在`error`中                                                           |
-| `status` | JSON   | 全局任务的状态信息                                                                                                    |
+| key            | type   | description                                                                                                           |
+| -------------- | ------ | --------------------------------------------------------------------------------------------------------------------- |
+| `rc`           | int    | response code，返回码，大于等于 0 的正整型。`0`代表服务器端按照请求描述，正常返回结果；`rc` 不等于 0 是代表异常返回。 |
+| `data`         | JSON   | 数据资源。正常返回时，服务器端执行逻辑成功，比如查询时，`data`就是查询结果。                                          |
+| `msg`          | string | 消息，当服务器端执行请求成功，并且不需要返回数据资源时，通过 `msg`代表文本信息，比如提示信息                          |
+| `error`        | string | 异常消息，当服务器端返回异常时，具体出错信息包含在`error`中                                                           |
+| `status`       | JSON   | 全局任务的状态信息                                                                                                    |
+| `total`        | int    | 分页，所有数据记录条数                                                                                                |
+| `current_page` | int    | 分页，当前页码，（分页从 1 开始）                                                                                     |
+| `total_page`   | int    | 分页，所有页数                                                                                                        |
 
-每次请求结果中，`rc`是必含有的属性，其它属性为可能含有。不同`rc`的正整形代表不同的异常，以及`data`和`status`的信息，则因`method`和`path`而异，以下进行详细介绍。
+每次请求结果中，`rc`是必含有的属性，其它属性为可能含有。不同`rc`的正整形代表不同的异常，以及`data`、`status`以及分页信息，则因`method`和`path`而异，以下进行详细介绍。
 
 > **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatbot#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
 
@@ -218,7 +219,7 @@ result = chatbot.command(method, path [, body])
 
 ## 机器人画像
 
-### 获得机器人画像
+### 获取机器人画像
 
 ```
 Chatbot#command("GET", "/")
@@ -230,7 +231,7 @@ Chatbot#command("GET", "/")
 {
     "rc": 0,
     "data": {
-        "name": "hain111",
+        "name": "小巴巴",
         "fallback": "请联系客服。",
         "description": "Performs Tasks or retrieves FAQ.",
         "welcome": "你好，我是机器人小巴巴",
@@ -274,14 +275,14 @@ Chatbot#command("PUT", "/", body)
 {
  "rc": 0,
  "data": {
-  "name": "hain111",
+  "name": "小巴巴",
   "fallback": "请联系客服。",
   "description": "Performs Tasks or retrieves FAQ.",
   "welcome": "你好，我是机器人小巴巴"
 }
 ```
 
-### 获得全局任务状态
+### 获取全局任务状态
 
 ```
 Chatbot#command("GET", "/status")
@@ -300,7 +301,267 @@ Chatbot#command("GET", "/status")
 }
 ```
 
+## 词典管理
+
+### 创建自定义词典
+
+```
+Chatbot#command("POST", "/clause/customdicts", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"name": "{{customDictName}}",
+	"type": "vocab"
+}
+```
+
+| key  | type   | required | description                                    |
+| ---- | ------ | -------- | ---------------------------------------------- |
+| name | string | &#10004; | 自定词典名称，使用`小写字母和数据`组成的字符串 |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "name": "{{customDictName}}",
+        "description": "",
+        "samples": null,
+        "createdate": "2019-08-07 19:59:14",
+        "updatedate": "2019-08-07 19:59:14"
+    }
+}
+```
+
+### 获取自定义词典列表
+
+```
+Chatbot#command("GET", "/clause/customdicts?limit={{limit}}&page={{page}}")
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "total": 3,
+    "current_page": 1,
+    "total_page": 3,
+    "data": [
+        {
+            "name": "{{customDictName}}",
+            "description": "",
+            "samples": null,
+            "createdate": "2019-08-07 19:58:08",
+            "updatedate": "2019-08-07 19:58:08"
+        }
+    ]
+}
+```
+
+### 更新自定义词典
+
+```
+Chatbot#command("PUT", "/clause/customdicts/{{customDictName}}", body)
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key            | type   | default      | description    |
+| -------------- | ------ | ------------ | -------------- |
+| customDictName | string | 无默认, 必填 | 自定义词典标识 |
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+    "description": "高级轿车品牌"
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "name": "pizza",
+        "description": "",
+        "samples": null,
+        "createdate": "2020-07-20 20:52:00",
+        "updatedate": "2020-07-20 20:51:59",
+        "type": "vocab",
+    }
+}
+```
+
+### 删除自定义词典
+
+```
+Chatbot#command("DELETE", "/clause/customdicts/{{customDictName}}")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key            | type   | default      | description    |
+| -------------- | ------ | ------------ | -------------- |
+| customDictName | string | 无默认, 必填 | 自定义词典标识 |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "msg": "success",
+    "error": null,
+    "data": {
+        "status": {
+            "needReindex": 2,
+            "needRetrain": 2
+        }
+    }
+}
+```
+
 ## 知识库
+
+### 创建知识库分类
+
+```
+Chatbot#command("POST", "/faq/categories", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"label": "{{categoryText}}"
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "value": "{{categoryId}}",
+        "categories": [
+            {
+                "value": "{{categoryId}}",
+                "label": "{{categoryText}}",
+                "children": [
+                    {
+                        "value": "I7vfx47i5I",
+                        "label": "二级分类名"
+                    }
+                ]
+            },
+            {
+                "value": "{{categoryId}}",
+                "label": "x2"
+            }
+        ]
+    }
+}
+```
+
+### 获取知识库分类信息
+
+```
+Chatbot#command("GET", "/faq/categories")
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": [
+        {
+            "value": "{{categoryId}}",
+            "label": "{{categoryText}}",
+            "children": [
+                {
+                    "value": "{{categoryId}}",
+                    "label": "{{categoryText}}"
+                }
+            ]
+        }
+    ]
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+
+```
+
+### 更新知识库分类
+
+```
+Chatbot#command("", "/faq/categories", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"value": "{{categoryId}}",
+	"label": "新的名字"
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": [
+        {
+            "value": "wwQyjS310",
+            "label": "一级分类名",
+            "children": [
+                {
+                    "value": "{{categoryId}}",
+                    "label": "新的名字"
+                }
+            ]
+        }
+    ]
+}
+```
+
+### 删除知识库分类
+
+```
+Chatbot#command("DELETE", "/faq/categories/{{categoryId}}")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key        | type   | default      | description  |
+| ---------- | ------ | ------------ | ------------ |
+| categoryId | string | 必填，无默认 | 分类唯一标识 |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": [
+        {
+            "value": "TSDD-W6T9",
+            "label": "x2"
+        }
+    ]
+}
+```
 
 ### 创建问答对
 
@@ -391,7 +652,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 }
 ```
 
-### 获得问答对列表
+### 获取问答对列表
 
 ```
 Chatbot#command("GET", "/faq/database?limit={{limit}}&page={{page}}&q={{q}}")
@@ -462,7 +723,7 @@ Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 }
 ```
 
-### 获得问答对相似问列表
+### 获取问答对相似问列表
 
 ```
 Chatbot#command("GET", "/faq/database/{{docId}}/extend")
@@ -574,7 +835,8 @@ Chatbot#command("POST", "/faq/query", body)
 {
 	"query": "查找相似的问题",
 	"fromUserId": "{{userId}}",
-	"faq_sugg_reply": 0.1
+	"faqBestReplyThreshold": 0.5,
+	"faqSuggReplyThreshold": 0.1
 }
 ```
 
@@ -617,6 +879,128 @@ Chatbot#command("POST", "/faq/query", body)
 }
 ```
 
+## 意图识别
+
+### 创建会话
+
+```
+Chatbot#command("POST", "/clause/prover/session", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"uid": "{{userId}}",
+	"channel": "{{channelId}}"
+}
+```
+
+| key | type   | required | description |
+| --- | ------ | -------- | ----------- |
+|     | string | &#10004; |             |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "intent_name": null,
+        "uid": "{{userId}}",
+        "channel": "{{channelId}}",
+        "resolved": null,
+        "id": "{{sessionId}}",
+        "entities": null,
+        "createdate": "2019-08-28 18:08:51",
+        "updatedate": "2019-08-28 18:08:51"
+    },
+    "error": null
+}
+```
+
+### 检索意图识别
+
+```
+Chatbot#command("POST", "/clause/prover/chat", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"fromUserId": "{{userId}}",
+	"session": {
+		"id": "{{sessionId}}"
+	},
+	"message": {
+		"textMessage": "我想购买明天火车票"
+	}
+}
+```
+
+| key         | type   | required | description                                                         |
+| ----------- | ------ | -------- | ------------------------------------------------------------------- |
+| userId      | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串 |
+| sessionId   | string | &#10004; | 使用创建会话接口创建                                                |
+| textMessage | string | &#10004; | 用户输入的对话文字                                                  |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "session": {
+            "intent_name": "{{intentName}}",
+            "uid": "{{userId}}",
+            "channel": "{{channelId}}",
+            "resolved": false,
+            "id": "{{sessionId}}",
+            "entities": [
+                {
+                    "name": "cityName",
+                    "val": "中国首都"
+                }
+            ],
+            "createdate": "2019-08-28 18:15:24",
+            "updatedate": "2019-08-28 18:15:24"
+        },
+        "message": {
+            "textMessage": "你想做什么工具",
+            "is_fallback": null,
+            "is_proactive": true
+        }
+    },
+    "error": null
+}
+```
+
+### 查看会话详情
+
+```
+Chatbot#command("GET", "/clause/prover/session/{{sessionId}}")
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "intent_name": "{{intentName}}",
+        "uid": "{{userId}}",
+        "channel": "{{channelId}}",
+        "resolved": false,
+        "id": "{{sessionId}}",
+        "entities": null,
+        "createdate": "2019-08-28 18:41:56",
+        "updatedate": "2019-08-28 18:41:56"
+    },
+    "error": null
+}
+```
+
 ## 多轮对话
 
 ### 检索多轮对话
@@ -631,8 +1015,8 @@ Chatbot#command("POST", "/conversation/query", body)
 {
     "fromUserId": "{{userId}}",
     "textMessage": "想要说些什么",
-    "faq_best_reply": 0.6,
-    "faq_sugg_reply": 0.35
+    "faqBestReplyThreshold": 0.6,
+    "faqSuggReplyThreshold": 0.35
 }
 ```
 
@@ -658,7 +1042,7 @@ Chatbot#command("POST", "/conversation/query", body)
             "score": 0.3781,
             "threshold": 0.37
         },
-        "botName": "hain111",
+        "botName": "小巴巴",
         "faq": [
             {
                 "id": "{{doctId}}",
@@ -716,13 +1100,9 @@ _botName_: 机器人的名字
 3. [多轮对话检索] 如果知识库没有检索出相似度大于 0.8 的问答对，检索多轮对话，如果命中了一个规则，直接返回答案。
 4. [兜底回复] 如果多轮对话也没有检索出答案，返回兜底回复。
 
-## 意图识别
-
-TODO
-
 ## 用户管理
 
-### 获得用户列表
+### 获取用户列表
 
 ```
 Chatbot#command("GET", "/users")
@@ -820,7 +1200,7 @@ Chatbot#command("POST", "/users/{{userId}}/ismute")
 
 `data.mute`返回 boolean 类型值。
 
-### 获得用户画像信息
+### 获取用户画像信息
 
 ```
 Chatbot#command("GET", "/users/{{userId}}/profile")
@@ -912,11 +1292,3 @@ _created_: 消息创建时间
         crossorigin="anonymous"
         async>
 </script>
-
-```
-
-```
-
-```
-
-```
