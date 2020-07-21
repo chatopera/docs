@@ -188,7 +188,7 @@ result = chatbot.command(method, path [, body])
 | Java       | [org.json.JSONObject](https://www.tutorialspoint.com/org_json/org_json_jsonobject.htm) | [org.json.JSONArray](https://www.tutorialspoint.com/org_json/org_json_jsonobject.htm) |
 | PHP        | 基本类型`array`                                                                        | 基本类型`array`                                                                       |
 | Python     | 基本类型`dict`                                                                         | 基本类型`list`                                                                        |
-| Go         | TBD                                                                                    | TBD                                                                                   |
+| Go         | `map[string]interface{}`                                                               | `[]map[string]interface{}`                                                            |
 
 **下文表述时，统一使用`JSON`，`JSON Object`和`JSON Array`代表 JSON 数据结构和其不同语言下的等价数据结构。**
 
@@ -428,6 +428,62 @@ Chatbot#command("DELETE", "/clause/customdicts/{{customDictName}}")
 ```
 
 ## 知识库
+
+### 检索知识库
+
+```
+Chatbot#command("POST", "/faq/query", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+	"query": "查找相似的问题",
+	"fromUserId": "{{userId}}",
+	"faqBestReplyThreshold": 0.5,
+	"faqSuggReplyThreshold": 0.1
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": [
+        {
+            "id": "{{docId}}",
+            "score": 0.48534,
+            "post": "查看相似问题不可能的",
+            "replies": [
+                {
+                    "rtype": "plain",
+                    "enabled": true,
+                    "content": "方法"
+                }
+            ]
+        },
+        {
+            "id": "{{docId}}",
+            "score": 0.32699,
+            "post": "聊天",
+            "replies": [
+                {
+                    "rtype": "plain",
+                    "content": "foo",
+                    "enabled": true
+                },
+                {
+                    "rtype": "plain",
+                    "content": "bar",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
+}
+```
 
 ### 创建知识库分类
 
@@ -823,62 +879,6 @@ Chatbot#command("DELETE", "/faq/database/{{docId}}")
 }
 ```
 
-### 检索知识库
-
-```
-Chatbot#command("POST", "/faq/query", body)
-```
-
-<h4><font color="purple">body / JSON Object</font></h4>
-
-```
-{
-	"query": "查找相似的问题",
-	"fromUserId": "{{userId}}",
-	"faqBestReplyThreshold": 0.5,
-	"faqSuggReplyThreshold": 0.1
-}
-```
-
-<h4><font color="purple">result/ JSON Object</font></h4>
-
-```
-{
-    "rc": 0,
-    "data": [
-        {
-            "id": "{{docId}}",
-            "score": 0.48534,
-            "post": "查看相似问题不可能的",
-            "replies": [
-                {
-                    "rtype": "plain",
-                    "enabled": true,
-                    "content": "方法"
-                }
-            ]
-        },
-        {
-            "id": "{{docId}}",
-            "score": 0.32699,
-            "post": "聊天",
-            "replies": [
-                {
-                    "rtype": "plain",
-                    "content": "foo",
-                    "enabled": true
-                },
-                {
-                    "rtype": "plain",
-                    "content": "bar",
-                    "enabled": true
-                }
-            ]
-        }
-    ]
-}
-```
-
 ## 意图识别
 
 ### 创建会话
@@ -1027,13 +1027,7 @@ Chatbot#command("POST", "/conversation/query", body)
     "rc": 0,
     "data": {
         "state": "default",
-        "string": [
-            {
-                "rtype": "plain",
-                "enabled": true,
-                "content": "方法"
-            }
-        ],
+        "string": "方法",
         "logic_is_unexpected": false,
         "logic_is_fallback": false,
         "service": {
