@@ -44,7 +44,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 ### 安装 SDK
 
 ```
-npm install -s @chatopera/sdk
+npm install @chatopera/sdk --save
 ```
 
 ### 实例化`Chatbot`类为对象
