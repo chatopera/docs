@@ -35,15 +35,13 @@ SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包�
 
 ## 快速开始
 
-不同语言的 SDK 都是调用**Chatopera 云服务**的[RestAPIs](https://baike.baidu.com/item/RESTful)，这些 RestAPIs 是标准一致的。每种语言的 SDK 使用流程按照顺序包括：下载 SDK，实例化`Chatbot`类为对象，请求接口和处理返回结果。
+SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk) 为例子演示使用流程，
 
-SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk) 为例子演示使用流程，不同语言的使用细节大同小异。
+> **提示：** [Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。不同语言的 SDK 使用细节大同小异， 因为它们都是调用**Chatopera 云服务**的[RestAPIs](https://baike.baidu.com/item/RESTful)，这些 RestAPIs 是标准一致的。每种语言的 SDK 使用流程按照顺序包括：下载 SDK，实例化`Chatbot`类为对象，请求接口和处理返回结果。
 
-> **提示：** [Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。
+### 注册账号
 
-### 创建机器人
-
-本节例子从创建机器人开始，首先注册[Chatopera 云服务](https://bot.chatopera.com)账号。
+首先注册[Chatopera 云服务](https://bot.chatopera.com)的账号，如果您已经注册，直接进入下一步：创建机器人。
 
 <table class="image">
     <caption align="bottom">登陆 https://bot.chatopera.com</caption>
@@ -52,7 +50,9 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
     </tr>
 </table>
 
-点击“[立即使用](https://bot.chatopera.com)”，第一登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
+点击“[立即使用](https://bot.chatopera.com)”，初次登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
+
+### 创建机器人
 
 登陆完成进入首页，点击“创建机器人”。
 
@@ -99,7 +99,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 <p align="center">
   <b>显示Secret</b><br>
   <a href="http://bot.chatopera.com/" target="_blank">
-      <img src="../../images/platform/13.jpg" width="800">
+      <img src="../../images/platform/13.png" width="800">
   </a>
 </p>
 
