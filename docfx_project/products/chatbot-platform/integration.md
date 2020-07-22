@@ -41,6 +41,68 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 > **提示：** [Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。
 
+### 创建机器人
+
+本节例子从创建机器人开始，首先注册[Chatopera 云服务](https://bot.chatopera.com)账号。
+
+<table class="image">
+    <caption align="bottom">登陆 https://bot.chatopera.com</caption>
+    <tr>
+        <td><img width="800" src="../../images/platform/11.jpg" alt="" /></td>
+    </tr>
+</table>
+
+点击“[立即使用](https://bot.chatopera.com)”，第一登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
+
+登陆完成进入首页，点击“创建机器人”。
+
+| 项目       | 值         | 描述                                                            |
+| ---------- | ---------- | --------------------------------------------------------------- |
+| 机器人名称 | 小松       | 机器人的名字                                                    |
+| 描述       | 机器人示例 | 机器人的描述                                                    |
+| 语言       | zh_CN      | 机器人的语言，目前支持中文(zh_CN)、繁体中文(zh_TW)和英文(en_US) |
+
+其它项如兜底回复，问候语可以在创建后，设置页面修改。
+
+### 导入知识库文件
+
+接着，导入一些示例数据到知识库，作为体验用途，下载知识库示例文件[chatopera_faq_samples.json](https://static-public.chatopera.com/bot/faq/chatopera_faq_samples.json)，保存文件名为*chatopera_faq_samples.json*。
+
+<p align="center">
+  <b>知识库文件格式</b><br>
+      <img src="../../images/platform/12.jpg" width="500">
+</p>
+
+在该示例文件中，用 JSON 数组的形式存储了 100 个问答对，字段含义如下：
+
+| key              | type     | required | description                                                                                                                    |
+| ---------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| categories       | [string] | false    | 分类名称，支持层级比如 `["一级", "二级"]`，服务器端自动创建对应分类                                                            |
+| enabled          | boolean  | true     | 是否启用，代表该问答对导入后是否支持来访者检索                                                                                 |
+| post             | string   | true     | 问答对的标准问                                                                                                                 |
+| replies          | [object] | true     | 问答对的回答，数组长度大于 0, `content`是文本内容，`rtype`为`plain`表示`content`为纯文本; `rtype`为`html`表示`content`为富文本 |
+| similarQuestions | [string] | false    | 问答对里的相似问                                                                                                               |
+
+<p align="center">
+  <b>上传知识库文件</b><br>
+  <a href="http://bot.chatopera.com/" target="_blank">
+      <img src="../../images/platform/14.jpg" width="500">
+  </a>
+</p>
+
+选择*chatopera_faq_samples.json*，这时，会显示问答对列表，点击“提交”，在进度条完成后，知识库导入成功。
+
+### 获取*ClientId*和*Secret*
+
+`SDK`中每个机器人实例需要通过*ClientId*和*Secret*初始化，这两个字段是认证和授权用途。打开机器人【设置】页面，拷贝*ClientId*和*Secret*。
+
+<p align="center">
+  <b>显示Secret</b><br>
+  <a href="http://bot.chatopera.com/" target="_blank">
+      <img src="../../images/platform/13.jpg" width="800">
+  </a>
+</p>
+
 ### 安装 SDK
 
 ```
@@ -71,8 +133,11 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 得到`Chatbot`实例后，怎么样请求接口服务呢？假设对该机器人的基本信息感兴趣，获取基本信息方式如下：
 
 ```
-var response = await chatbot.command("GET", "/");
-console.log("机器人名称：", response.data.name)
+var response = await chatbot.command("POST", "/faq/query", {
+  query: "不锈钢板现在是什么价格",
+  fromUserId: "sdktest1",
+});
+console.log("response: ", response)
 ```
 
 或者获取 `Promise` 返回
@@ -204,12 +269,12 @@ result = chatbot.command(method, path [, body])
 | -------------- | ------ | --------------------------------------------------------------------------------------------------------------------- |
 | `rc`           | int    | response code，返回码，大于等于 0 的正整型。`0`代表服务器端按照请求描述，正常返回结果；`rc` 不等于 0 是代表异常返回。 |
 | `data`         | JSON   | 数据资源。正常返回时，服务器端执行逻辑成功，比如查询时，`data`就是查询结果。                                          |
-| `msg`          | string | 消息，当服务器端执行请求成功，并且不需要返回数据资源时，通过 `msg`代表文本信息，比如提示信息。                      |
-| `error`        | string | 异常消息，当服务器端返回异常时，具体出错信息包含在`error`中。                                                           |
-| `status`       | JSON   | 全局任务的状态信息。                                                                                                    |
-| `total`        | int    | 分页，所有数据记录条数。                                                                                                |
-| `current_page` | int    | 分页，当前页码，（分页从 1 开始）。                                                                                     |
-| `total_page`   | int    | 分页，所有页数。                                                                                                        |
+| `msg`          | string | 消息，当服务器端执行请求成功，并且不需要返回数据资源时，通过 `msg`代表文本信息，比如提示信息。                        |
+| `error`        | string | 异常消息，当服务器端返回异常时，具体出错信息包含在`error`中。                                                         |
+| `status`       | JSON   | 全局任务的状态信息。                                                                                                  |
+| `total`        | int    | 分页，所有数据记录条数。                                                                                              |
+| `current_page` | int    | 分页，当前页码，（分页从 1 开始）。                                                                                   |
+| `total_page`   | int    | 分页，所有页数。                                                                                                      |
 
 每次请求结果中，`rc`是必含有的属性，其它属性为可能含有。不同`rc`的正整数形代表不同的异常，`data`、`status`以及分页信息，则因`method`和`path`而异，以下进行详细介绍。
 
@@ -244,10 +309,10 @@ Chatbot#command("GET", "/")
 }
 ```
 
-| key               | type        | description                                                                                            |
-| ----------------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| key               | type        | description                                                                                              |
+| ----------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
 | `name`            | string      | 机器人名字。                                                                                             |
-| `fallback`        | string      | 兜底回复，当请求机器人对话时，没有得到来自多轮对话、知识库或意图识别回复时，回复此内容。                   |
+| `fallback`        | string      | 兜底回复，当请求机器人对话时，没有得到来自多轮对话、知识库或意图识别回复时，回复此内容。                 |
 | `welcome`         | string      | 机器人问候语。                                                                                           |
 | `description`     | string      | 机器人描述。                                                                                             |
 | `primaryLanguage` | string      | 机器人语言。                                                                                             |
@@ -371,8 +436,8 @@ Chatbot#command("PUT", "/clause/customdicts/{{customDictName}}", body)
 
 <h4><font color="purple">path</font></h4>
 
-| key            | type   | default      | description    |
-| -------------- | ------ | ------------ | -------------- |
+| key            | type   | default        | description    |
+| -------------- | ------ | -------------- | -------------- |
 | customDictName | string | 无默认值, 必填 | 自定义词典标识 |
 
 <h4><font color="purple">body / JSON Object</font></h4>
@@ -407,8 +472,8 @@ Chatbot#command("DELETE", "/clause/customdicts/{{customDictName}}")
 
 <h4><font color="purple">path</font></h4>
 
-| key            | type   | default      | description    |
-| -------------- | ------ | ------------ | -------------- |
+| key            | type   | default        | description    |
+| -------------- | ------ | -------------- | -------------- |
 | customDictName | string | 无默认值, 必填 | 自定义词典标识 |
 
 <h4><font color="purple">result/ JSON Object</font></h4>
@@ -595,8 +660,8 @@ Chatbot#command("DELETE", "/faq/categories/{{categoryId}}")
 
 <h4><font color="purple">path</font></h4>
 
-| key        | type   | default      | description  |
-| ---------- | ------ | ------------ | ------------ |
+| key        | type   | default        | description  |
+| ---------- | ------ | -------------- | ------------ |
 | categoryId | string | 无默认值，必填 | 分类唯一标识 |
 
 <h4><font color="purple">result/ JSON Object</font></h4>
@@ -664,8 +729,8 @@ Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 
 <h4><font color="purple">path</font></h4>
 
-| key   | type   | default      | description |
-| ----- | ------ | ------------ | ----------- |
+| key   | type   | default        | description |
+| ----- | ------ | -------------- | ----------- |
 | docId | string | 无默认值, 必填 | 问答对标识  |
 
 <h4><font color="purple">body / JSON Object</font></h4>
@@ -750,8 +815,8 @@ Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 
 <h4><font color="purple">path</font></h4>
 
-| key   | type   | default      | description |
-| ----- | ------ | ------------ | ----------- |
+| key   | type   | default        | description |
+| ----- | ------ | -------------- | ----------- |
 | docId | string | 无默认值, 必填 | 问答对标识  |
 
 <h4><font color="purple">body / JSON Object</font></h4>
@@ -781,8 +846,8 @@ Chatbot#command("GET", "/faq/database/{{docId}}/extend")
 
 <h4><font color="purple">path</font></h4>
 
-| key   | type   | default      | description |
-| ----- | ------ | ------------ | ----------- |
+| key   | type   | default        | description |
+| ----- | ------ | -------------- | ----------- |
 | docId | string | 无默认值, 必填 | 问答对标识  |
 
 <h4><font color="purple">result / JSON Object</font></h4>
@@ -812,8 +877,8 @@ Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
 
 <h4><font color="purple">path</font></h4>
 
-| key      | type   | default      | description |
-| -------- | ------ | ------------ | ----------- |
+| key      | type   | default        | description |
+| -------- | ------ | -------------- | ----------- |
 | docId    | string | 无默认值, 必填 | 问答对标识  |
 | extendId | string | 无默认值, 必填 | 扩展问标识  |
 
@@ -844,8 +909,8 @@ Chatbot#command("DELETE", "/faq/database/{{docId}}/extend/{{extendId}}")
 
 <h4><font color="purple">path</font></h4>
 
-| key      | type   | default      | description |
-| -------- | ------ | ------------ | ----------- |
+| key      | type   | default        | description |
+| -------- | ------ | -------------- | ----------- |
 | docId    | string | 无默认值, 必填 | 问答对标识  |
 | extendId | string | 无默认值, 必填 | 扩展问标识  |
 
@@ -1135,8 +1200,8 @@ Chatbot#command("POST", "/users/{{userId}}/mute")
 
 <h4><font color="purple">path</font></h4>
 
-| key    | type   | default      | description  |
-| ------ | ------ | ------------ | ------------ |
+| key    | type   | default        | description  |
+| ------ | ------ | -------------- | ------------ |
 | userId | string | 无默认值, 必填 | 用户唯一标识 |
 
 <h4><font color="purple">result / JSON Object</font></h4>
@@ -1156,8 +1221,8 @@ Chatbot#command("POST", "/users/{{userId}}/unmute")
 
 <h4><font color="purple">path</font></h4>
 
-| key    | type   | default      | description  |
-| ------ | ------ | ------------ | ------------ |
+| key    | type   | default        | description  |
+| ------ | ------ | -------------- | ------------ |
 | userId | string | 无默认值, 必填 | 用户唯一标识 |
 
 <h4><font color="purple">result / JSON Object</font></h4>
@@ -1196,8 +1261,8 @@ Chatbot#command("GET", "/users/{{userId}}/profile")
 
 <h4><font color="purple">path</font></h4>
 
-| key    | type   | default      | description  |
-| ------ | ------ | ------------ | ------------ |
+| key    | type   | default        | description  |
+| ------ | ------ | -------------- | ------------ |
 | userId | string | 无默认值, 必填 | 用户唯一标识 |
 
 <h4><font color="purple">result/ JSON Object</font></h4>
@@ -1224,11 +1289,11 @@ Chatbot#command("GET", "/users/{{userId}}/chats?limit={{limit}}&page={{page}}")
 
 <h4><font color="purple">path</font></h4>
 
-| key    | type   | default      | description        |
-| ------ | ------ | ------------ | ------------------ |
+| key    | type   | default        | description        |
+| ------ | ------ | -------------- | ------------------ |
 | userId | string | 无默认值, 必填 | 用户唯一标识       |
-| limit  | int    | 1            | 返回最多多少条数据 |
-| page   | int    | 20           | 返回第多少页       |
+| limit  | int    | 1              | 返回最多多少条数据 |
+| page   | int    | 20             | 返回第多少页       |
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
