@@ -2,7 +2,7 @@
 
 ## 概述
 
-多轮对话是 Chatopera 云服务的特色功能，聊天机器人开发者可以使用"多轮对话设计器"实现满足企业业务需求的聊天机器人。多轮对话基于规则，使用*对话脚本*，并结合 JavaScript*函数*实现固定话术和固定流程的聊天服务。
+多轮对话基于规则，使用*对话脚本*，并结合 JavaScript*函数*实现固定话术和固定流程的聊天服务。聊天机器人开发者使用"多轮对话设计器"实现满足企业业务需求的聊天机器人。
 
 <table class="image">
     <caption align="bottom">多轮对话管理</caption>
@@ -10,6 +10,8 @@
         <td><img width="800" src="../../images/platform/1.png" alt="" /></td>
     </tr>
 </table>
+
+在一些场景中，如导购、销售、邀约和筛选潜在客户等带有话术流程的需求中，使用**多轮对话**模块实现很方便，并且结合[知识库](/products/chatbot-platform/faq.html)和[意图识别](/products/chatbot-platform/intent.html)，可实现强大的智能问答服务。
 
 ## 多轮对话设计器
 
