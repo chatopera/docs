@@ -578,6 +578,13 @@ Chatbot#command("POST", "/conversation/query", body)
 }
 ```
 
+| key                   | type   | required | description                                                                                       |
+| --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
+| userId                | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                               |
+| textMessage           | string | &#10004; | 用户输入的对话文字                                                                                |
+| faqBestReplyThreshold | number | &#10008; | 知识库最佳回复， 默认 0.8，知识库建议回复，知识库中置信度超过该值通过返回值`string`和`params`返回 |
+| faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
+
 <h4><font color="purple">result/ JSON Object</font></h4>
 
 ```
@@ -623,6 +630,8 @@ _logic_is_fallback_: 是否是兜底回复
 
 _botName_: 机器人的名字
 
+_faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
+
 `service`代表返回的数据来源，**provider:script**指**多轮对话**，**provider:faq**指**知识库**；不同数据来源也会提供相应信息。
 
 | provider     | key                  | 解释    |
@@ -648,8 +657,8 @@ _botName_: 机器人的名字
 </table>
 
 1. 用户输入，以文本的形式输入，语音输入也需要转化成文字。
-2. [知识库检索] 如果知识库检索出相似度大于 0.8 的问答对，直接返回得分最高的问题的答案。
-3. [多轮对话检索] 如果知识库没有检索出相似度大于 0.8 的问答对，检索多轮对话，如果命中了一个规则，直接返回答案。
+2. [知识库检索] 如果知识库检索出相似度大于 `faqBestReplyThreshold` 的问答对，直接返回得分最高的问题的答案。
+3. [多轮对话检索] 如果知识库没有检索出相似度大于 `faqBestReplyThreshold` 的问答对，检索多轮对话，如果命中了一个规则，直接返回答案。
 4. [兜底回复] 如果多轮对话也没有检索出答案，返回兜底回复。
 
 ## 词典管理
