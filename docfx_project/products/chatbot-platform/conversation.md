@@ -712,6 +712,16 @@ this.maestro.set(KEY, VALUE [, EXPIRES]) 返回值: Promise
 
 存储键值对，支持过期时间，过期时间以秒为单位。VALUE 可以是时间，字符串，数字。
 
+该命令也可以用于更新键值对，或者更新 EXPIRES 时间，让该信息不过期。
+
+- 获得键值对有效时间
+
+键值对是存储在 Redis 服务中，如果设定键值对时同时对`EXPIRES`赋值，那么到达过期时刻，该键值对将被删除。使用`ttl`接口获得一个键值对有效存在时间，返回值是有效的秒数，如果返回值为`-1`则代表该值不存在。
+
+```
+this.maestro.ttl(KEY) 返回值: Promise(number)
+```
+
 - 增加键的值
 
 ```
@@ -777,6 +787,25 @@ let mailSettings = {
 ```
 
 以上 SMTP 邮件服务的配置需要定义在环境变量中，支持的邮箱服务参考[nodemailer](https://nodemailer.com/smtp/well-known/)，可配置 QQ 企业邮箱、163 邮箱等。
+
+- 设置用户画像
+
+```
+await this.maestro.profile(userId, property, value) 返回值 Promise
+```
+
+_userId_: 用户唯一标识
+
+_property_: 用户的属性
+
+_value_: 属性值
+
+该接口用于持久化一个用户的信息，此处 userId 可以使用当前用户的信息`this.user.id`；`property`和`value`是根据业务灵活定义。
+
+该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
+
+用户画像可以通过[系统集成/用户管理/获取用户画像信息API](/products/chatbot-platform/integration.html#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E4%BF%A1%E6%81%AF)获得。
+
 
 ## 使用进阶
 
