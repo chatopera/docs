@@ -671,6 +671,10 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID" [,INHERIT_PARAMS]]
 ```
 
+_TOPIC_NAME_: [对话名称](/products/chatbot-platform/conversation.html#术语)
+
+_TOPIC_GAMBIT_ID_: [触发器名称](/products/chatbot-platform/conversation.html#术语)
+
 其中，_INHERIT_PARAMS_ 是可选参数，决定当前对话取得的 `params` 是否覆盖接下来对话的 `params`，值为`[true|false]`，默认为 `false`。
 
 另外，当 `TOPIC_GAMBIT_ID` 的值为 `$ctx.textMessage$` 时，则使用当前对话的用户输入，在 `TOPIC_NAME` 中进行检索。
@@ -680,6 +684,11 @@ routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID" [,INHERIT_PARAMS]]
 ```
 routeDirectReply#["class_001_pre", "__C1PRE_GAMBIT_003",true]
 ```
+
+<table class="image">
+<caption align="bottom">【知识库或函数】路由多轮对话</caption>
+<tr><td><img width="600" src="../../images/products/platform/set-faq-route-conversion-reply.jpg" alt="【知识库或函数】路由多轮对话"/></td></tr>
+</table>
 
 提示：**routeDirectReply**需要设定为知识库问答对里的第一个答案，答案类型为 纯文本`plain`。
 
