@@ -17,38 +17,28 @@
 
 在多轮对话实现的过程中，解决的是一个复杂问题：能够让机器能分析和执行的自然语言的聊天过程。为此，不得不定义了一些专用的术语和概念：
 
-| 概念         | 描述                                                                                 |
-| ------------ | ------------------------------------------------------------------------------------ |
-| **对话**     | 满足设定需求的多轮对话                                                               |
-| **输入**     | 用户向聊天机器人发送的消息的文字形式                                                 |
-| **触发器**   | 匹配用户输入文字的字符串，可以声明槽位，当用户的输入发生时，会按照算法顺序匹配触发器 |
-| **回复**     | 机器人回复用户输入的文字                                                             |
-| **多轮对话** | 根据上一次回复的状态，声明下轮对话的优先匹配规则                                     |
-| **函数**     | 可以从脚本中接受输入，并通过 JavaScript 执行任务返回结果的代码                       |
+| 概念               | 描述                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------------ |
+| **多轮对话设计器** | 根据需求撰写对话脚本，对话函数的软件工具                                             |
+| **对话**           | 满足设定需求的多轮对话                                                               |
+| **输入**           | 用户向聊天机器人发送的消息的文字形式                                                 |
+| **触发器**         | 匹配用户输入文字的字符串，可以声明槽位，当用户的输入发生时，会按照算法顺序匹配触发器 |
+| **回复**           | 机器人回复用户输入的文字                                                             |
+| **多轮对话**       | 根据上一次回复的状态，声明下轮对话的优先匹配规则                                     |
+| **函数**           | 可以从脚本中接受输入，并通过 JavaScript 执行任务返回结果的代码                       |
 
 <table class="image">
 <caption align="bottom">对话</caption>
 <tr><td><img width="800" src="../../images/products/cde/cde-15.png" alt="对话"/></td></tr>
 </table>
 
-**触发器**是对话的基础，当用户向聊天机器人发送一条消息时，机器人引擎会从所有定义的**触发器**中找到匹配的一个。在机器人引擎中，**触发器**用半角字符加号（ + ）表示。机器人的回答用半角字符减号（ - ）表示。
-
-例如，我们可以这样定义一个对话：
-
-<pre class="prettyprint">
-+ 晚饭吃什么
-- 北京烤鸭    
-</pre>
-
-**注意**：这里（ + ）和（ - ）和文字之间需要隔一个空格。
-
-## 多轮对话设计器
+### 多轮对话设计器
 
 **多轮对话设计器** (Conversation Designer）是以自然语言为输入，定义聊天机器人逻辑思维的工具。它可以很方便的通过 Chatopera 支持的脚本语法描述复杂的对话逻辑，并且通过函数的形式集成企业的其它服务。**企业的业务人员**可以很容易的学习脚本语法，制作满足企业业务需求的聊天机器人。
 
 **多轮对话设计器**是设计满足业务需求的对话机器人的 PC 端应用程序，现已支持 Windows 和 Mac OSX 平台。多轮对话能力是聊天机器人模仿人的对话能里的一大挑战，在复杂的上下文和需要很多背景知识的前提下，现有的人工智能技术是无能为力的，在 Chatopera，我们相信在企业服务中，当话术或流程固定的情况下，依赖 Chatopera 的产品可以输出用对话完成任务的服务，比如用对话完成点餐、报销、请假。这些对话可以在企业的聊天工具中，也可以通过智能音箱的等其他客户端。
 
-### 安装
+#### 安装
 
 支持 Mac OSX 或 Windows 操作系统。
 
@@ -63,7 +53,7 @@
 
 - Windows：`exe`为文件后缀可执行文件，双击打开，根据安装向导安装。
 
-### 启动应用
+#### 启动应用
 
 - 安装完打开应用程序，如下图：
 
@@ -99,13 +89,26 @@
 
 点击“打开”(“Open”)。
 
+### 触发器
+
+**触发器**是对话的基础，当用户向聊天机器人发送一条消息时，机器人引擎会从所有定义的**触发器**中找到匹配的一个。在机器人引擎中，**触发器**用半角字符加号（ + ）表示。机器人的回答用半角字符减号（ - ）表示。
+
+例如，我们可以这样定义一个对话：
+
+<pre class="prettyprint">
++ 晚饭吃什么
+- 北京烤鸭    
+</pre>
+
+**注意**：这里（ + ）和（ - ）和文字之间需要隔一个空格。
+
 ## 快速开始
 
 本节读者可在不熟悉任何概念，只需要按照操作一步一步执行，就可以获得一个聊天机器人并熟悉工具使用，全面了解多轮对话不同工具的功能。
 
 ### 安装和启动应用
 
-下载安装包后，双击打开，进入安装向导。
+[下载安装包](/products/chatbot-platform/conversation.html#多轮对话设计器)后，双击打开，进入安装向导。
 
 安装完打开应用图标后进入主面板，如下图：
 
@@ -255,7 +258,7 @@
 <tr><td><img width="800" src="../../images/products/cde/cde-14.png" alt="导出文件"/></td></tr>
 </table>
 
-以上并没有给出程序实现的过程，阅读[最佳实践](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)相关内容可了解示例程序的来龙去脉。
+以上并没有给出程序实现的过程，阅读[使用进阶](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)相关内容可了解示例程序的来龙去脉。
 
 ## 槽位
 
@@ -598,16 +601,181 @@ exports.nestedBFunction = function(cb) {
 }
 </pre>
 
-以上是多轮对话设计器 v1.x 版本中支持的脚本语法，这些语法能够保证业务人员实现满足需求的聊天机器人，除了函数部分的有一点门槛外，其它内容是非常容易掌握的。对于函数，只需要一点 JavaScript 基础知识，就可以掌握。
+### 函数工具
 
-## 最佳实践
+在开发中，进一步提供系统灵活性，在`函数`定义中，系统预置了以下几个工具对象，方便聊天机器人开发者实现各种功能的聊天机器人。以下内容假设读者已经掌握了`JavaScript`编程语言。
+
+#### 对话用户 ID
+
+来访者的唯一标识，在 [知识库检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%BA%93)、 [意图识别检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB) 和 [多轮对话检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D)传入的`userId`信息。
+
+在函数中，获取该唯一标识信息：
+
+```
+this.user.id
+```
+
+比如：
+
+```
+exports.myUserId = function(cb){
+    cb(null, {
+        text: "Your id is " + this.user.id
+    })
+}
+```
+
+#### config
+
+获取**环境变量**，环境变量在**多轮对话设计器**和**聊天机器人多轮对话控制台**都可以定义，目的是在设计阶段和运行阶段，多轮对话使用不同的配置。
+
+<table class="image">
+<caption align="bottom">配置环境变量</caption>
+<tr><td><img width="800" src="../../images/products/platform/bot-console-define-config.jpg" alt="配置环境变量"/></td></tr>
+</table>
+
+`config`作为函数中的全局常量，不需要用户定义，不支持改变该值，只能作为读取用途，并且`config`只是键值对，值只是`string`类型。
+
+```
+exports.print_key_value = function(key, cb){
+    // 通过槽位获得key, 查看其在环境变量中对应对值
+    cb(null, "Ok, value is " + config[key]);
+}
+```
+
+`环境变量`常用来配置一些生产环境对应的信息。
+
+#### http
+
+用于在函数内部，通过 HTTP 协议集成外部系统。
+
+`http`作为函数中的全局常量，不需要用户定义。
+
+```
+http.get(url[, config])
+http.delete(url[, config])
+http.head(url[, config])
+http.options(url[, config])
+http.post(url[, data[, config]])
+http.put(url[, data[, config]])
+http.patch(url[, data[, config]])
+```
+
+Chatopera 机器人平台中，函数内置`http`常量使用[axios](https://www.npmjs.com/package/axios)包实例化，`http`即`axios`，详细使用文档参考
+
+[https://github.com/axios/axios](https://github.com/axios/axios)
+
+#### debug
+
+打印调试日志。
+
+`debug`作为函数中的全局常量，不需要用户定义。
+
+```
+debug("hello")
+debug("hello %s", stringVar)
+debug("hello %s, %j", stringVar, jsonVar)
+debug("hello %s, %o", stringVar, objVar)
+```
+
+#### maestro
+
+maestro 是管理对话状态存储和自然语言处理的高级接口，在函数中，使用 this.maestro 来引用。
+
+**注意事项：**
+
+1. 对于返回值是 Promise 的接口，使用 try catch, await 进行调用可读性更好。
+
+2. 该对象不是全局函数，作用域在函数内部，使用时依赖于函数内`this`变量。
+
+- 存储键值对
+
+```
+this.maestro.set(KEY, VALUE [, EXPIRES]) 返回值: Promise
+```
+
+存储键值对，支持过期时间，过期时间以秒为单位。VALUE 可以是时间，字符串，数字。
+
+- 增加键的值
+
+```
+this.maestro.incrby(KEY, NUMBER) 返回值: Promise
+```
+
+对于 Number 类型的键，增加一定值。
+
+- 获得一个键的值
+
+```
+this.maestro.get(KEY) 返回值: Promise
+```
+
+获得一个键的值。
+
+- 删除一个键和其值
+
+```
+this.maestro.del(KEY) 返回值：Promise
+```
+
+删除一个键和其值。
+
+- 获得绝对时间
+
+获得绝对时间，比如 来访者提到 “明天”，“后天”，“下周一”等相对时间，会被计算出正确的绝对时间，时区为北京时间。
+
+```
+let time = await this.maestro.extractTime(cap1)
+this.maestro.formatTime(time[0].toString(), "YYYY年MM月DD日") # 从返回值中格式化日期，formatTime返回值 String
+```
+
+- 发送邮件
+
+通过邮件服务器发送邮件, 使用 [nodemailer](https://nodemailer.com/) 实现。
+
+```
+exports.sendMail = async function(argvs) {
+
+let mailSettings = {
+        service: config['MAIL_SERVICE'],
+        auth: {
+            user: config['MAIL_ACCOUNT'],
+            pass: config['MAIL_PASSWORD']
+        }
+    };
+    let transporter = this.maestro.nodemailer.createTransport(mailSettings);
+    // setup e-mail data with unicode symbols
+    let mailOptions = {
+        from: `HR<${config['MAIL_ACCOUNT']}>`, // sender address
+        to: config['MAIL_RECEP'], // list of receivers
+        subject: `【应聘】小主，新增候选人了，岗位${openning}`, // Subject line
+        text: '', // plaintext body
+        html: content, // html body
+    };
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info) {
+        if (error) {
+            debug(error);
+        }
+    });
+```
+
+以上 SMTP 邮件服务的配置需要定义在环境变量中，支持的邮箱服务参考[nodemailer](https://nodemailer.com/smtp/well-known/)，可配置 QQ 企业邮箱、163 邮箱等。
+
+## 使用进阶
+
+以上是多轮对话设计器 v1.x 版本中支持的脚本语法，这些语法能够保证业务人员实现满足需求的聊天机器人，除了函数部分的有一点门槛外，其它内容是非常容易掌握的。对于函数，只需要一点 `JavaScript` 基础知识，就可以掌握。
 
 本节介绍使用多轮对话设计器实现一个“聊天机器人”的具体过程。我们以实现天气问答机器人为例，我们选择这个场景并不是因为它简单，而是因为它容易理解，使用多轮对话设计器可以实现更复杂，更有价值的应用。我们先一睹为快，这个机器人是什么样子的。
 
-<table class="image">
-<caption align="bottom">视频：天气查询机器人Demo</caption>
-<tr><td><embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=a0717l5z53k&auto=0" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></td></tr>
-</table>
+<video controls="" style="width:480px;height:400px" poster="../../images/products/platform/weather-bot-demo-cover.jpg" >
+  <source
+    src="https://static-public.chatopera.com/bot/videos/weather-bot-demo.mp4"
+    type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
+  >
+</video>
+</br>
+</br>
 
 是不是很实用？如果你掌握了多轮对话设计器，就可以实现聊天机器人。
 
