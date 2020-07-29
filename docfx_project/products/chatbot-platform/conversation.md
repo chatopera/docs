@@ -621,9 +621,11 @@ exports.nestedBFunction = function(cb) {
 
 在开发中，进一步提供系统灵活性，在`函数`定义中，系统预置了以下几个工具对象，方便聊天机器人开发者实现各种功能的聊天机器人。以下内容假设读者已经掌握了`JavaScript`编程语言。
 
-#### 对话用户 ID
+> 提示：以下使用 `this` 前缀的变量代表该变量依赖于在函数内部的 `this` 对象。
 
-来访者的唯一标识，在 [知识库检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%BA%93)、 [意图识别检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB) 和 [多轮对话检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D)传入的`userId`信息。
+#### this.user.id
+
+当前对话用户标识，在 [知识库检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%BA%93)、 [意图识别检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB) 和 [多轮对话检索](https://docs.chatopera.com/products/chatbot-platform/integration.html#%E6%A3%80%E7%B4%A2%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D)传入的`userId`信息。
 
 在函数中，获取该唯一标识信息：
 
@@ -640,6 +642,46 @@ exports.myUserId = function(cb){
     })
 }
 ```
+
+#### this.user.history
+
+当前用户与机器人对话的历史
+
+```
+this.user.history 类型：数组
+```
+
+其中，每个元素内容如下：
+
+```
+{
+    "input" : {
+        "timestamp" : ISODate("2020-07-28T17:06:01.458Z"),
+        "original" : "hello"
+    },
+    "reply" : {
+        "createdAt" : 1595955961672.0,
+        "string" : "#in-params#",
+        "topicName" : "greetings",
+        "clearConversation" : false,
+        "props" : {
+            "params" : [
+                {
+                    "hyperlink" : "http://",
+                    "thumbnail" : "http://xx.png",
+                    "summary" : "描述",
+                    "title" : "标题",
+                    "type" : "card"
+                }
+            ]
+        },
+    }
+}
+```
+
+其中，*original*就是来访者的输入，*reply*是上一轮对话中机器人的回复。
+
+历史对话按照降序排列，即最近发生的对话在上面，最多存储 100 轮历史对话数据。
 
 #### config
 
@@ -694,7 +736,7 @@ debug("hello %s, %j", stringVar, jsonVar)
 debug("hello %s, %o", stringVar, objVar)
 ```
 
-#### maestro
+#### this.maestro
 
 maestro 是管理对话状态存储和自然语言处理的高级接口，在函数中，使用 this.maestro 来引用。
 
@@ -804,8 +846,7 @@ _value_: 属性值
 
 该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
 
-用户画像可以通过[系统集成/用户管理/获取用户画像信息API](/products/chatbot-platform/integration.html#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E4%BF%A1%E6%81%AF)获得。
-
+用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/integration.html#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E4%BF%A1%E6%81%AF)获得。
 
 ## 使用进阶
 
