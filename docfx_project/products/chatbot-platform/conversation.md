@@ -559,7 +559,7 @@
 
 ```
 + 我的用户名是 *(2-10)
-- ^getUserAccount(&#60;cap&#62;)
+- ^getUserAccount(<cap>)
 ```
 
 所以，调用函数的方式就是使用“^”。在函数的编辑窗口中，可以这样定义：
@@ -570,7 +570,7 @@ exports.getUserAccount = function(account, cb) {
 }
 ```
 
-函数的声明中，参数列表首先是通配符的值，可以传多个，然后最后一个参数始终是回调函数(cb)，cb 的参数列表为`(error, text)`，`。text` 作为文本添加到回复中，`error`是指处理中发生异常。
+函数的声明中，参数列表首先是通配符的值，可以传多个，然后最后一个参数始终是回调函数(cb)，cb 的参数列表为`(error, text)`，`text` 作为文本添加到回复中，`error`是指处理中发生异常。
 
 函数的定义也同样支持`async/await`语法，例子如下：
 
@@ -579,6 +579,8 @@ exports.getUserAccount = async function(account) {
     return "对不起，系统没有找到" + account;
 }
 ```
+
+使用`async/await`时，需要抛出异常时，通过 `throw new Error("ERROR MESSAGE")` 完成。
 
 在系统集成时，业务系统的需求千差万别，为了灵活的支持各种需求，在函数中也可以自定义返回值。
 
