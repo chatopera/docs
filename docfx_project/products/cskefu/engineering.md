@@ -52,7 +52,9 @@ git clone https://github.com/chatopera/cosin.git
 
 ## 数据库
 
-在源码中，有默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cosin/blob/develop/docker-compose.yml)，用于快速准备开发环境。
+在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cosin/blob/develop/docker-compose.yml)，用于快速准备开发环境。
+
+为了减少开发环境搭建可能遇到的问题，请使用 [docker-compose.yml](https://github.com/chatopera/cosin/blob/develop/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
 
 ### Elasticsearch
 
@@ -102,7 +104,7 @@ cd cosin
 docker-compose up -d mysql
 ```
 
-**在第一次执行这个命令时，mysql 容器会自动创建`contactcenter`数据库并导入相关的表，因为该容器初始化时加载了`contact-center/config/sql/cskefu-MySQL-slim.sql`文件。**
+**MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件(`contact-center/config/sql/cskefu-MySQL-slim.sql`)完成的。**
 
 连接 MySQL 服务
 

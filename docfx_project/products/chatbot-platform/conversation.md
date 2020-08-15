@@ -122,16 +122,16 @@
 
 ### 导入示例程序
 
-下载示例程序包文件：小叮当-1.0.0-conversations.c66
+下载示例程序包文件：小叮当.zh_CN.1.0.0.c66
 
-<a href="https://github.com/chatopera/conversation-sampleapp/raw/master/%E5%B0%8F%E5%8F%AE%E5%BD%93-1.0.0-conversations.c66" target="_blank"> https://github.com/chatopera/conversation-sampleapp</a>
+<a href="https://github.com/chatopera/chatbot-samples/raw/master/projects/%E5%B0%8F%E5%8F%AE%E5%BD%93/releases/%E5%B0%8F%E5%8F%AE%E5%BD%93.zh_CN.1.0.0.c66" target="_blank"> https://github.com/chatopera/chatbot-samples</a>
 
 <table class="image">
 <caption align="bottom">示例程序下载地址</caption>
 <tr><td><img width="800" src="../../images/products/cde/cde-2.png" alt="示例程序下载地址"/></td></tr>
 </table>
 
-在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*小叮当-1.0.0-conversations.c66*如图：
+在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*小叮当.zh_CN.1.0.0.c66*如图：
 
 <table class="image">
 <caption align="bottom">导入对话框</caption>
