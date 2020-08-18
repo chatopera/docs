@@ -128,7 +128,7 @@
 
 <table class="image">
 <caption align="bottom">示例程序下载地址</caption>
-<tr><td><img width="800" src="../../images/products/cde/cde-2.png" alt="示例程序下载地址"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-2.jpg" alt="示例程序下载地址"/></td></tr>
 </table>
 
 在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*SampleAppAskWeather.zh_CN.1.0.0.c66*如图：
