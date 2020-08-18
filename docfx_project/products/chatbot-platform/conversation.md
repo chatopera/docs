@@ -122,23 +122,23 @@
 
 ### 导入示例程序
 
-下载示例程序包文件：小叮当.zh_CN.1.0.0.c66
+下载示例程序包文件：SampleAppAskWeather.zh_CN.1.0.0.c66
 
-<a href="https://github.com/chatopera/chatbot-samples/raw/master/projects/%E5%B0%8F%E5%8F%AE%E5%BD%93/releases/%E5%B0%8F%E5%8F%AE%E5%BD%93.zh_CN.1.0.0.c66" target="_blank"> https://github.com/chatopera/chatbot-samples</a>
+<a href="https://github.com/chatopera/chatbot-samples/blob/master/projects/%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2/releases/SampleAppAskWeather.zh_CN.1.0.0.c66" target="_blank"> https://github.com/chatopera/chatbot-samples</a>
 
 <table class="image">
 <caption align="bottom">示例程序下载地址</caption>
 <tr><td><img width="800" src="../../images/products/cde/cde-2.png" alt="示例程序下载地址"/></td></tr>
 </table>
 
-在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*小叮当.zh_CN.1.0.0.c66*如图：
+在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*SampleAppAskWeather.zh_CN.1.0.0.c66*如图：
 
 <table class="image">
 <caption align="bottom">导入对话框</caption>
 <tr><td><img width="800" src="../../images/products/cde/cde-3.png" alt="导入对话框"/></td></tr>
 </table>
 
-导入成功，可以看到在聊天机器人界面有一条数据显示，“名字 小叮当”等；点击小叮当的“管理”按钮，可以看到它的多轮对话列表，包括：chatopera，profile，weather。如下图：
+导入成功，可以看到在聊天机器人界面有一条数据显示，“名字 SampleAppAskWeather”等；点击 SampleAppAskWeather 的“管理”按钮，可以看到它的多轮对话列表，包括：chatopera，profile，weather。如下图：
 
 <table class="image">
 <caption align="bottom">多轮对话列表</caption>
@@ -978,7 +978,7 @@ Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我�
 <tr><td><img width="800" src="../../images/products/cde/cde-21.png" alt="创建聊天机器人"/></td></tr>
 </table>
 
-填入“小叮当”，当前多轮对话设计器支持中文(zh_CN)和英文(en_US)，我们选择“zh_CN”，点击“确认”。然后我们就得到了一个聊天机器人。
+填入“SampleAppAskWeather”，当前多轮对话设计器支持中文(zh_CN)和英文(en_US)，我们选择“zh_CN”，点击“确认”。然后我们就得到了一个聊天机器人。
 
 <table class="image">
 <caption align="bottom">聊天机器人</caption>
@@ -1135,7 +1135,7 @@ exports.getDresscodeByCity = function(city, cb){
 
 在上面的函数中，我们有一个敏感的信息：和风天气的 API 密钥。在实际应用中，我们希望设**计阶段**和**部署阶段**，它的值是不同的。这时，就需要使用**环境变量**，环境变量正是为解决这个问题而设计的。
 
-回到主面板，在“小叮当”操作中，点击环境变量，创建如下键值对：
+回到主面板，在“SampleAppAskWeather”操作中，点击环境变量，创建如下键值对：
 
 <table class="image">
 <caption align="bottom">设置环境变量</caption>
