@@ -56,6 +56,8 @@
 
 - Windows：`exe`为文件后缀可执行文件，双击打开，根据安装向导安装。
 
+[查看多轮对话设计器历史版本](https://static-public.chatopera.com/bot/cde/?sort=time&order=desc)。
+
 #### 启动应用
 
 - 安装完打开应用程序，如下图：
