@@ -192,7 +192,7 @@ SPRING_PROFILES_ACTIVE=dev
 - 创建 application-dev.properties
 
 ```
-touch contact-center/app/src/main/resources/application.properties
+touch contact-center/app/src/main/resources/application-dev.properties
 ```
 
 内容如下：
@@ -202,19 +202,20 @@ touch contact-center/app/src/main/resources/application.properties
 spring.datasource.url=jdbc:mysql://192.168.2.217:7111/cosinee?useUnicode=true&characterEncoding=UTF-8
 spring.datasource.username=root
 spring.datasource.password=123456
-spring.redis.host=192.168.2.217
-
 
 # Redis服务器连接端口
-spring.redis.port=7114
+spring.redis.host=localhost
+spring.redis.port=6379
 # Redis服务器连接密码（默认为空）
-spring.redis.password=123456
-
+spring.redis.password=
 
 # ActiveMQ
 spring.activemq.broker-url=tcp://192.168.2.217:9007
 spring.activemq.user=admin
 spring.activemq.password=123456
+
+# Elasticsearch
+spring.data.elasticsearch.cluster-nodes=192.168.2.217:7201
 ```
 
 **此处可以覆盖 application.properties 中的任何值。**
