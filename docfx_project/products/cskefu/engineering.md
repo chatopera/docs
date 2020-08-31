@@ -40,21 +40,22 @@
     </repositories>
 ```
 
-配置文件的示例见 [pom.xml](https://github.com/chatopera/cosin/blob/develop/contact-center/app/pom.xml)。
+配置文件的示例见 [pom.xml](https://gitee.com/chatopera/cosin/blob/osc/contact-center/app/pom.xml)。
 
 如配置后不能下载，请参考[配置文件](https://github.com/chatopera/cosin/issues/137)。
 
 ## 下载代码
 
 ```
-git clone https://github.com/chatopera/cosin.git
+git clone https://gitee.com/chatopera/cosin.git
+# 默认为 osc 分支
 ```
 
 ## 数据库
 
-在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cosin/blob/develop/docker-compose.yml)，用于快速准备开发环境。
+在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://gitee.com/chatopera/cosin/blob/osc/docker-compose.yml)，用于快速准备开发环境。
 
-为了减少开发环境搭建可能遇到的问题，请使用 [docker-compose.yml](https://github.com/chatopera/cosin/blob/develop/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+为了减少开发环境搭建可能遇到的问题，请使用 [docker-compose.yml](https://gitee.com/chatopera/cosin/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
 
 ### Elasticsearch
 
