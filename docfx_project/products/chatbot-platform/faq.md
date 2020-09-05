@@ -267,7 +267,7 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 
 | 版本 | 操作系统             | 下载                                                                                                                                 |
 | ---- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| v1.1 | Windows 7 或更高版本 | <a href="https://static-public.chatopera.com/bot/xiaozhushou/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.1.msi" target="_blank">链接</a> |
+| v1.2 | Windows 7 或更高版本 | <a href="https://static-public.chatopera.com/bot/xiaozhushou/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.2.msi" target="_blank">链接</a> |
 
 在下载后，浏览器可能提示“这种类型的文件可能会损坏您的计算机”或者“Windows Defender SmartScreen 已组织启动一个未识别的应用。”，这时请点击“保留”及“更多信息”进行下一步。
 
@@ -275,6 +275,8 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 <caption align="bottom">点击“仍要运行”</caption>
 <tr><td><img width="800" src="../../images/products/assistant/2.png" alt="Windows提示"/></td></tr>
 </table>
+
+[查看 Chatopera 小助手历史版本](https://static-public.chatopera.com/bot/xiaozhushou/?sort=time&order=desc)。
 
 ### 配置
 
