@@ -49,8 +49,8 @@
 
 | 版本   | 操作系统 | 下载                                                                                                                                                     |
 | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| v2.1.0 | Mac OSX  | <a href="https://static-public.chatopera.com/bot/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.1.0.dmg" target="_blank">链接</a> |
-| v2.1.0 | Windows  | <a href="https://static-public.chatopera.com/bot/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.1.0.exe" target="_blank">链接</a> |
+| v2.2.0 | Mac OSX  | <a href="https://static-public.chatopera.com/bot/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.2.0.dmg" target="_blank">链接</a> |
+| v2.2.0 | Windows  | <a href="https://static-public.chatopera.com/bot/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.2.0.exe" target="_blank">链接</a> |
 
 - MacOS：`dmg`为文件后缀的安装文件，双击打开，根据安装向导安装。
 
