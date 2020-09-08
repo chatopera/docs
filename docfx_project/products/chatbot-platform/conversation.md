@@ -672,7 +672,7 @@ exports.get_greetings = async function() {
 
 其中，`label`是显示文字，`type`为固定值`qlist`，`text` 是点击该问题时发送给机器人的文本内容。
 
-### 按钮消息
+#### 按钮消息
 
 ```
 // 按钮选择消息
@@ -696,7 +696,7 @@ exports.get_products = async function() {
 
 类似图文消息，不同的是：1）`type`值为`button`；2）业务上一般会设定一组按钮消息只能有一个按钮被点击一次。
 
-### 图文消息
+#### 图文消息
 
 ```
 // 图文消息
@@ -721,6 +721,20 @@ exports.get_shangyi = async function() {
 ### 自定义业务字段
 
 从以上的**消息形式**的实现，就是借助函数返回值中 `params` 这个属性，在实现聊天机器人时，函数中可在 `params` 自定义的业务字段，都会被 SDK/API 返回。
+
+```
+// 自定义业务字段
+exports.get_shangyi = async function() {
+    return {
+        text: "以帮助您下单了。",
+        params: {
+            orderId: "BIL-001"
+        }
+    }
+}
+```
+
+通常是在业务系统内，使用业务字段完成更多工作。
 
 ### 函数工具
 
