@@ -255,6 +255,17 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 
 设计简洁，和桌面背景百搭。
 
+### 使用教程
+
+<video controls="" style="width:600px;" poster="../../images/products/faq/bot-edu-xiaozhshou-cover.png" >
+  <source
+    src="https://static-public.chatopera.com/assets/videos/bot-edu/200908_01-2.1.mp4"
+    type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
+  >
+</video>
+</br>
+</br>
+
 ### 下载和安装
 
 > 提示：
