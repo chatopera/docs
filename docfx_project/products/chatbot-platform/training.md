@@ -21,7 +21,7 @@
 
 该系列视频和产品迭代一起更新，部分内容大纲：
 
-### 1.1 自然语言交互的当下与未来 | Chatopera 机器人平台使用指南
+### 1.1 自然语言交互的当下与未来
 
 - 自动化、就业和生产力
 
@@ -82,6 +82,15 @@
 - 总结
 
 - 后续分享计划
+
+打开[课程](http://ke.chatopera.com/course/2994143)查看完整内容 ...
+
+## 学习交流/专家答疑
+
+<p align="center">
+  <b>Chatopera 机器人平台 QQ 交流群：809987971， <a href="https://jq.qq.com/?_wv=1027&k=5JpEvBZ" target="_blank">点击链接加入群聊</a></b><br>
+  <img src="https://static-public.chatopera.com/assets/images/64315364-6a095380-cfe4-11e9-8bf6-f15ce6e26e0a.png" width="200">
+</p>
 
 ## 评论
 
