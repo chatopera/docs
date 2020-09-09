@@ -4,7 +4,7 @@
 
 <table class="image">
     <tr>
-        <td><img width="800" src="../../images/products/cosin/g3.jpg" alt=" 讲师介绍" /></td>
+        <td><img width="800" src="https://static-public.chatopera.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
     </tr>
 </table>
 
@@ -14,8 +14,8 @@
 
 <table>
   <tr>
-    <th>章</th>
-    <th>小节</th>
+    <th>节</th>
+    <th>任务</th>
     <th>时长（时:分:秒）</th>
   </tr>
   <tr>

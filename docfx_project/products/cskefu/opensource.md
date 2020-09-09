@@ -4,7 +4,7 @@
 
 ## 项目地址
 
-**开源项目地址：** [https://github.com/chatopera/cosin](https://github.com/chatopera/cosin)
+**开源项目地址：** [https://github.com/chatopera/cosin](https://github.com/chatopera/cosin) 及 **[https://gitee.com/chatopera/cosin](https://gitee.com/chatopera/cosin)** (二者同步)
 
 在上面的地址，您可以
 
