@@ -4,7 +4,7 @@
 
 ## 概述
 
-[**Chatopera 云服务**](https://bot.chatopera.com/)是一站式实现智能对话机器人的云服务，按接口调用次数计费。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**实例，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。在 SaaS 概念基础上，Chatopera 云服务又属于“聊天机器人即服务”的细分，面向互联网用户开放，聊天机器人开发者借助 [Chatopera 云服务](https://bot.chatopera.com)快速实现企业级的聊天机器人服务。
+[**Chatopera 云服务**](https://bot.chatopera.com/)是一站式实现聊天机器人的云服务，按接口调用次数计费。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**实例，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。在 SaaS 概念基础上，Chatopera 云服务又属于“聊天机器人即服务”的细分，面向互联网用户开放，聊天机器人开发者借助 [Chatopera 云服务](https://bot.chatopera.com)快速实现企业级的聊天机器人服务。
 
 ## 对话解决方案
 
