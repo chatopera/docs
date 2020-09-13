@@ -4,7 +4,7 @@
 
 Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时我们面向心理咨询行业打造了应用人工智能技术的垂直行业解决方案。
 
-<video controls="" style="width:600px;" poster="images/products/introduction-video-cover.jpg" >
+<video controls="" poster="images/products/introduction-video-cover.jpg" >
   <source
     src="https://www.chatopera.com/files/introduction.mp4"
     type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
