@@ -8,7 +8,7 @@
   <meta name="title" content="{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}}">
   <meta name="generator" content="docfx {{_docfxVersion}}">
   {{#_description}}<meta name="description" content="{{_description}}">{{/_description}}
-  <meta name="keywords" content="聊天机器人,智能客服,chatbot,业务流程自动化,人机交互,自然语言交互,语音识别,知识图谱,自然语言处理,AI,对话机器人,平台,云服务,客服系统,开源" />
+  <meta name="keywords" content="聊天机器人,智能客服,chatbot,业务流程自动化,人机交互,自然语言交互,语音识别,知识图谱,自然语言处理,AI,对话机器人,平台,云服务,客服系统,开源,知识库" />
   <link rel="shortcut icon" href="{{_rel}}{{{_appFaviconPath}}}{{^_appFaviconPath}}favicon.ico{{/_appFaviconPath}}">
   <link rel="stylesheet" href="{{_rel}}styles/docfx.vendor.css">
   <link rel="stylesheet" href="{{_rel}}styles/docfx.css">
