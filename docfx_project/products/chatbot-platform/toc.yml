@@ -16,7 +16,7 @@
   href: debug.md
 - name: 系统集成
   href: integration.md
-- name: 统计
+- name: 使用统计
   href: audit.md
 - name: 历史记录
   href: history.md
