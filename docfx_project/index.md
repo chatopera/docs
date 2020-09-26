@@ -1,8 +1,12 @@
 # Chatopera 文档中心
 
-北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。`Chatopera` 是华夏春松的人工智能技术的品牌和产品线。
+`Chatopera` 是[华夏春松](https://www.chatopera.com)的人工智能品牌和产品线。
 
-Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时我们面向心理咨询行业打造了应用人工智能技术的垂直行业解决方案。
+<table class="image">
+<tr><td><img width="800" src="/images/products/trademark-chatopera.png" alt="Chatopera"/></td></tr>
+</table>
+
+Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时我们面向若干行业打造了应用人工智能技术的垂直行业解决方案。
 
 <video controls="" poster="images/products/introduction-video-cover.jpg" >
   <source
@@ -12,6 +16,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 </video>
 </br>
 </br>
+
 本文档包含对 Chatopera 产品的详细使用介绍：
 
 ## Chatopera 云服务
@@ -38,6 +43,10 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ## 关注我们
 
+北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。
+
+[官网](https://www.chatopera.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[Chatopera 团队博客](https://blog.chatopera.com)。
+
 Chatopera 微信公众号发布 Chatopera 动态、产品信息和新闻等信息。
 
 <p align="center">
@@ -45,11 +54,3 @@ Chatopera 微信公众号发布 Chatopera 动态、产品信息和新闻等信�
 </br>
 <b>Chatopera 微信公众号</b>
 </p>
-
-## 常用链接
-
-[官网](https://www.chatopera.com/)
-
-[博客](https://blog.chatopera.com/)
-
-[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)
