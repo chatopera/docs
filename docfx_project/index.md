@@ -2,11 +2,11 @@
 
 ## 综述
 
-`Chatopera` 是[华夏春松](https://www.chatopera.com)的人工智能品牌和产品线。
+Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时 Chatopera 面向若干行业打造了应用人工智能技术的垂直行业解决方案。
 
 ![](/images/products/trademark-chatopera.png)
 
-Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时我们面向若干行业打造了应用人工智能技术的垂直行业解决方案。
+`Chatopera` 是[华夏春松](https://www.chatopera.com)的人工智能品牌和产品线。
 
 <video controls="" poster="images/products/introduction-video-cover.jpg" >
   <source
