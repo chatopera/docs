@@ -41,11 +41,23 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 [Chatopera 心智能](/products/psych-assistant/index.html)，心理咨询 AI 助手，应用人工智能技术，提升心理咨询过程中，咨询者的用户体验和心理咨询师的工作效率。`心智能`是 Chatopera 结合 Chatopera 机器人平台和其它成熟的 AI 技术，打造的面向心理咨询行业的平台级服务的解决方案，提供心理健康、心理支持机器人，客服系统等全方位的软件系统和服务，包括不同组件，根据企业客户实际需求灵活配置。
 
+## 视频教程
+
+为了帮助产品用户使用产品，Chatopera 开通腾讯课堂，并采用直播、录播等形式，上架[视频教程](https://ke.chatopera.com/)，敬请关注！
+
+[Chatopera 机器人平台使用指南](https://ke.qq.com/course/2994143)
+
+[春松客服大讲堂](https://ke.qq.com/course/464050)
+
+[春松客服质量保证之系统测试](https://ke.qq.com/course/2261929)
+
+更多精彩内容，请查看 [Chatopera 视频教程](https://ke.chatopera.com)！
+
 ## 关于我们
 
 北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。
 
-[官网](https://www.chatopera.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[Chatopera 团队博客](https://blog.chatopera.com)。
+[官网](https://www.chatopera.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[客户案例](https://www.chatopera.com/customer.html)，[Chatopera 团队博客](https://blog.chatopera.com)。
 
 Chatopera 微信公众号发布 Chatopera 动态、产品信息和新闻等信息。
 
