@@ -249,7 +249,7 @@ Chatopera 小助手：快速从机器人知识库检索的输入法！
 
 <table class="image">
 <caption align="bottom">Chatopera 小助手：快速从知识库检索的输入法</caption>
-<tr><td><img width="600" src="../../images/products/assistant/7.png" alt="Chatopera 小助手：快速从知识库检索的输入法"/></td></tr>
+<tr><td><img width="600" src="../../images/products/assistant/10.png" alt="Chatopera 小助手：快速从知识库检索的输入法"/></td></tr>
 </table>
 
 Chatopera 知识库小助手（简称“小助手”）是面向企业的客户服务人员发布的一款从**知识库**检索建议回复的桌面软件。长期以来，客户服务占据着企业运营的重要位置，因为回复不及时、不标准和不准确都会给企业造成损失，对于常见问题集的管理，主要使用的工具是 Excel，客服人员想要快速回复客户消息非常困难，同时也有不容易维护的问题，小助手就是专门用于解决这个问题而开发的。

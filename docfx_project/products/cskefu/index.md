@@ -118,6 +118,10 @@
     </tr>
 </table>
 
+## 产品更新日志
+
+查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D)相关内容。
+
 ## 商业支持
 
 ### 售前洽谈

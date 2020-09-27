@@ -40,6 +40,10 @@
 
 Chatopera 云服务是企业级的服务，依托于 Chatopera 的 PaaS 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性，浏览[技术支持](/products/chatbot-platform/support.html)信息。
 
+## 产品更新日志
+
+查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0)相关内容。
+
 ## 私有部署
 
 对于企业客户，Chatopera 提供 **Chatopera 机器人平台**的私有部署支持，**Chatopera 机器人平台**除计费和支付模块、账号注册和管理模块与**Chatopera 云服务**不同外，核心的智能问答服务模块和操作均一致，在产品层面是同一套代码，集成 SDK，SDK 接口等均适用。
