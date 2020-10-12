@@ -44,6 +44,16 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
     <img width="800" src="../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
 
+## 寻找开发者
+
+寻找开发者合作智能客服项目，社区共建，携手共赢！
+
+- 组织或个人，在春松客服主页展示为认证开发者
+- 春松客服官方推荐项目机会
+- 专访并通过官方渠道曝光
+
+填写申请：[https://www.wjx.top/jq/93397428.aspx](https://www.wjx.top/jq/93397428.aspx)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"

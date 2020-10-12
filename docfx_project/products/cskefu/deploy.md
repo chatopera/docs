@@ -6,16 +6,16 @@
 
 ### 前提
 
-| 项目                | 说明                               |
-| ------------------- | ---------------------------------- |
-| 操作系统            | Linux (CentOS 7.x, Ubuntu 14.x 等) |
-| Docker 版本         | Docker version 1.13.x 及以上       |
-| Docker Compose 版本 | version 1.23.x 及以上              |
-| 防火墙端口          | 8035, 8036                         |
-| 其他软件            | git                                |
-| 内存                | >= 8GB                             |
-| CPU 颗数            | >= 2                               |
-| 硬盘                | >= 20GB                            |
+| 项目                | 说明                                                          |
+| ------------------- | ------------------------------------------------------------- |
+| 操作系统            | Linux (CentOS 7.x, Ubuntu 16.04+ 等)，**推荐使用 Ubuntu LTS** |
+| Docker 版本         | Docker version 1.13.x 及以上                                  |
+| Docker Compose 版本 | version 1.23.x 及以上                                         |
+| 防火墙端口          | 8035, 8036                                                    |
+| 其他软件            | git                                                           |
+| 内存                | >= 8GB                                                        |
+| CPU 颗数            | >= 2                                                          |
+| 硬盘                | >= 20GB                                                       |
 
 ### 安全组
 
@@ -91,6 +91,16 @@ docker-compose restart
 [私有部署配置 HTTPS](https://github.com/chatopera/cosin/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
 
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
+
+## 寻找开发者
+
+寻找开发者合作智能客服项目，社区共建，携手共赢！
+
+- 组织或个人，在春松客服主页展示为认证开发者
+- 春松客服官方推荐项目机会
+- 专访并通过官方渠道曝光
+
+填写申请：[https://www.wjx.top/jq/93397428.aspx](https://www.wjx.top/jq/93397428.aspx)
 
 ## 其它
 

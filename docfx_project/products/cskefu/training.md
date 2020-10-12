@@ -197,6 +197,16 @@ QQ: 1760028375
 手机号：(+86)136-9149-0568
 邮箱：info@chatopera.com
 
+## 寻找开发者
+
+寻找开发者合作智能客服项目，社区共建，携手共赢！
+
+- 组织或个人，在春松客服主页展示为认证开发者
+- 春松客服官方推荐项目机会
+- 专访并通过官方渠道曝光
+
+填写申请：[https://www.wjx.top/jq/93397428.aspx](https://www.wjx.top/jq/93397428.aspx)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
