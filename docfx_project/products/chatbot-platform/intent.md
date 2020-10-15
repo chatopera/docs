@@ -296,6 +296,12 @@
 <tr><td><img width="680" src="../../images/intent/intent-002.png" alt="对话历史记录"/></td></tr>
 </table>
 
+## 常见问题
+
+点击各问题链接获得解决方案：
+
+- [意图识别远程调用出现问题](https://github.com/chatopera/docs/issues/18)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
