@@ -29,6 +29,8 @@
 | **上下文钩子**     | Conversation Hooks    | 通过**上次回复**，链接匹配器，形成多轮对话                                                                                               |
 | **函数**           | Function              | 可以从脚本中接受输入，并通过 JavaScript 执行任务返回结果的代码                                                                           |
 | **对话状态**       | Conversation Status   | 多轮对话是按照状态机的模型设计的，**对话状态**就是当前对话处于状态机的什么状态                                                           |
+| **对话应用**       | Conversational App    | 对应应用，c66 文件，从多轮对话设计器导出的文件                                                                                           |
+| **对话模板**       | Chatbot Sample        | 聊天机器人示例程序，开源地址，https://github.com/chatopera/chatbot-samples                                                               |
 
 <table class="image">
 <caption align="bottom">对话</caption>
@@ -73,7 +75,7 @@
 
 <table class="image">
 <caption align="bottom">MacOS权限问题</caption>
-<tr><td><img width="800" src="../../images/products/cde/mac-install-0.png" alt="macos权限问题"/></td></tr>
+<tr><td><img width="600" src="../../images/products/cde/mac-install-0.png" alt="macos权限问题"/></td></tr>
 </table>
 
 **解决方案**
@@ -82,14 +84,14 @@
 
 <table class="image">
 <caption align="bottom">应用中心</caption>
-<tr><td><img width="800" src="../../images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
+<tr><td><img width="600" src="../../images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
 </table>
 
 选择“多轮对话设计器”并且右键：
 
 <table class="image">
 <caption align="bottom">右键打开</caption>
-<tr><td><img width="800" src="../../images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
+<tr><td><img width="600" src="../../images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
 </table>
 
 点击“打开”(“Open”)。
@@ -152,6 +154,8 @@
 | chatopera | 关于 Chatopera 的公司信息 |
 | profile   | 机器人的画像              |
 | weather   | 提供天气查询功能的对话    |
+
+更多示例程序，查看 [Chatopera 聊天机器人对话模板](https://github.com/chatopera/chatbot-samples)。
 
 ### 测试示例程序
 
@@ -254,7 +258,7 @@
 
 ### 导出特定版本
 
-多轮对话设计器属于设计阶段，在机器人满足需求后，可以导出为对话应用.c66 文件，方便分发和部署。在生产环境，导入到<a href="https://docs.chatopera.com/chatbot-engine.html" target="_blank">智能问答引擎</a>中，作为多轮对话应用的运行时。
+多轮对话设计器属于设计阶段，在机器人满足需求后，可以导出为对话应用 c66 文件，方便分发和部署。在生产环境，导入到<a href="https://docs.chatopera.com/products/chatbot-platform/index.html" target="_blank">Chatopera 机器人平台</a>中，作为多轮对话应用的运行时。
 
 在“版本管理”界面，选择刚才发布的“1.0.1”的“导出”，可以选择一个路径存储该导出的文件，如图：
 
