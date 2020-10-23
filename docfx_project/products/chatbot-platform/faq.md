@@ -358,7 +358,7 @@ Secret 对应"密钥"
 
 <table class="image">
 <caption align="bottom">检索关键词</caption>
-<tr><td><img width="300" src="../../images/products/assistant/11.jpg" alt="检索关键词"/></td></tr>
+<tr><td><img width="600" src="../../images/products/assistant/11.jpg" alt="检索关键词"/></td></tr>
 </table>
 
 点击取得的答案，答案内容被复制找系统粘贴板，然后可以再粘贴到其它地方，通过【Ctrl + V】完成。
