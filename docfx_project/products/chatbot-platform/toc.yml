@@ -14,6 +14,8 @@
   href: conversation.md
 - name: 测试对话
   href: debug.md
+- name: 聚类分析
+  href: lattice.md
 - name: 系统集成
   href: integration.md
 - name: 使用统计
