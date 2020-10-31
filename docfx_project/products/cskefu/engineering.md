@@ -40,29 +40,29 @@
     </repositories>
 ```
 
-配置文件的示例见 [pom.xml](https://gitee.com/chatopera/cosin/blob/osc/contact-center/app/pom.xml)。
+配置文件的示例见 [pom.xml](https://github.com/chatopera/cskefu/blob/osc/contact-center/app/pom.xml)。
 
-如配置后不能下载，请参考[配置文件](https://github.com/chatopera/cosin/issues/137)。
+如配置后不能下载，请参考[配置文件](https://github.com/chatopera/cskefu/issues/137)。
 
 ## 下载代码
 
 ```
-git clone https://gitee.com/chatopera/cosin.git
+git clone https://github.com/chatopera/cskefu.git cskefu
 # 默认为 osc 分支
 ```
 
 ## 数据库
 
-在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://gitee.com/chatopera/cosin/blob/osc/docker-compose.yml)，用于快速准备开发环境。
+在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml)，用于快速准备开发环境。
 
-为了减少开发环境搭建可能遇到的问题，请使用 [docker-compose.yml](https://gitee.com/chatopera/cosin/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+为了减少开发环境搭建可能遇到的问题，请使用 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
 
 ### Elasticsearch
 
 春松客服依赖 Elasticsearch 服务，如果没有 Elasticsearch 服务，可以用下面的方式创建。
 
 ```
-cd cosin
+cd cskefu
 docker-compose up -d elasticsearch
 ```
 
@@ -80,7 +80,7 @@ spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
 春松客服依赖 ActiveMQ 服务，如果没有 ActiveMQ 服务，可以用下面的方式创建。
 
 ```
-cd cosin
+cd cskefu
 docker-compose up -d activemq
 ```
 
@@ -101,7 +101,7 @@ spring.activemq.pool.max-connections=50
 春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
 
 ```
-cd cosin
+cd cskefu
 docker-compose up -d mysql
 ```
 
@@ -121,7 +121,7 @@ docker-compose up -d mysql
 
 #### MySQL 数据字典
 
-在线浏览[数据字典](https://chatopera.github.io/cosin/)
+在线浏览[数据字典](https://chatopera.github.io/cskefu/)
 
 <p align="center">
 <img width="600" src="../../images/products/cosin/g8.png" alt="" />
@@ -141,8 +141,8 @@ Redis 启动后就可以，不需要其他操作。
 
 春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如机器人客服插件就是免费开源的。
 
-插件的安装和源码参考：[https://github.com/chatopera/cosin/tree/osc/public/plugins
-](https://github.com/chatopera/cosin/tree/osc/public/plugins)
+插件的安装和源码参考：[https://github.com/chatopera/cskefu/tree/osc/public/plugins
+](https://github.com/chatopera/cskefu/tree/osc/public/plugins)
 
 ## 生成项目描述
 
@@ -166,7 +166,7 @@ Redis 启动后就可以，不需要其他操作。
 春松客服团队使用[IntelliJ IDEA](https://www.jetbrains.com/idea/)作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
 
 ```
-cd cosin
+cd cskefu
 ./admin/gen-idea.sh
 ```
 
@@ -175,7 +175,7 @@ cd cosin
 春松客服是基于 [Spring Boot Release 1.5.9](https://spring.io/blog/2017/11/28/spring-boot-1-5-9-available-now) 开发，配置文件是
 
 ```
-cosin/contact-center/app/src/main/resources/application.properties
+cskefu/contact-center/app/src/main/resources/application.properties
 ```
 
 数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：1）使用 application-dev.properties；2）使用环境变量。

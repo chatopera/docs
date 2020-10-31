@@ -24,8 +24,8 @@
 ## 克隆代码
 
 ```
-git clone https://github.com/chatopera/cosin.git
-cd cosin
+git clone https://github.com/chatopera/cskefu.git cskefu
+cd cskefu
 cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
 ```
 
@@ -54,7 +54,7 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 ### 启动服务
 
 ```
-cd cosin                             # 进入下载后的文件夹
+cd cskefu                             # 进入下载后的文件夹
 docker-compose pull                  # 拉取镜像
 docker-compose up -d contact-center  # 启动服务
 ```
@@ -88,7 +88,7 @@ docker-compose restart
 
 ## 配置 HTTPS
 
-[私有部署配置 HTTPS](https://github.com/chatopera/cosin/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
+[私有部署配置 HTTPS](https://github.com/chatopera/cskefu/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
 
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
 
@@ -104,7 +104,7 @@ docker-compose restart
 
 ## 其它
 
-- [服务器没有互联网访问条件情况下怎么部署？](https://github.com/chatopera/cosin/issues/264)
+- [服务器没有互联网访问条件情况下怎么部署？](https://github.com/chatopera/cskefu/issues/264)
 
 ## 评论
 

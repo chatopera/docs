@@ -4,9 +4,11 @@
 
 ## 项目地址
 
-**开源项目地址：** [https://github.com/chatopera/cosin](https://github.com/chatopera/cosin) 及 **[https://gitee.com/chatopera/cosin](https://gitee.com/chatopera/cosin)** (二者同步)
+**开源项目地址：**
 
-在上面的地址，您可以
+[Github](https://github.com/chatopera/cskefu) [Gitee](https://gitee.com/chatopera/cosin) [CodeChina](https://codechina.csdn.net/chatopera/cskefu)
+
+以上不同地址的代码同步，在上面的地址，您可以：
 
 - 下载项目开源码
 - 通过 README.md 了解更多项目信息
@@ -15,7 +17,7 @@
 - 通过 Pullrequest 贡献代码
 - 通过 Issue 了解开发状态
 
-在项目地址中，有详细的入门说明，如果使用遇到问题，第一时间[阅读文档](/products/cskefu/index.html)，第二时间搜索[历史 Issues](https://github.com/chatopera/cosin/issues)，如果无法解决，加入社区提问。
+在项目地址中，有详细的入门说明，如果使用遇到问题，第一时间[阅读文档](/products/cskefu/index.html)，第二时间搜索[历史 Issues](https://github.com/chatopera/cskefu/issues)，如果无法解决，加入社区提问。
 
 ## 加入社区
 

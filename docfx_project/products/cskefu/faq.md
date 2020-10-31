@@ -10,7 +10,7 @@
 
 **问：简单的介绍下这个开源项目吧?**
 
-春松客服是面向中小型企业的智能客服系统。现有提供的功能可以参考我们的 README.md 文件。https://github.com/chatopera/cosin/
+春松客服是面向中小型企业的智能客服系统。现有提供的功能可以参考我们的 README.md 文件。https://github.com/chatopera/cskefu/
 我们强调的智能客服主要是机器人客服以及辅助客服人员的一些功能。语音识别模块，以及我们已经发布的多轮对话设计器、智能问答引擎，很快会集成到春松客服中。
 适用场景包括售前、电话营销、呼叫中心。
 
@@ -55,7 +55,7 @@ https://docs.chatopera.com/ 在文档中心有这两个产品的介绍。
 
 **问：请问这款软件是收费的吗？**
 
-开源的部分不收费，https://github.com/chatopera/cosin， 定制化开发和服务收费。
+开源的部分不收费，https://github.com/chatopera/cskefu， 定制化开发和服务收费。
 
 **问：有没有 java 项目可以直接导入 idea？**
 
@@ -63,7 +63,7 @@ https://docs.chatopera.com/ 在文档中心有这两个产品的介绍。
 
 **问：为啥我这里客服没有管理员权限就看不到对话？**
 
-权限由“人员-角色-资源”确定。资源又通过部门隔离，参考[cc] resource 根据角色和部门进行权限检查 [#61](https://github.com/chatopera/cosin/issues/61)
+权限由“人员-角色-资源”确定。资源又通过部门隔离，参考[cc] resource 根据角色和部门进行权限检查 [#61](https://github.com/chatopera/cskefu/issues/61)
 然后，具体到坐席管理，需要新建一个角色。之后赋予坐席的权限。再加“人员”到这个角色。
 
 **问：我的服务器已经部署过 redis mysql 等服务，对这个项目部署有问题吗？**

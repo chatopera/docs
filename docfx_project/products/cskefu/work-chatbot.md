@@ -63,7 +63,7 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 如果使用春松客服官方的 docker 镜像部署，则无需此步。对于开源社区用户，在下载春松客服源码并启动后，不能立即得到机器人客服菜单，需要先安装插件。
 
-**安装插件文档 [https://github.com/chatopera/cosin/tree/osc/public/plugins](https://github.com/chatopera/cosin/tree/osc/public/plugins)**
+**安装插件文档 [https://github.com/chatopera/cskefu/tree/osc/public/plugins](https://github.com/chatopera/cskefu/tree/osc/public/plugins)**
 
 <p align="center">
   <b>安装好机器人插件</b><br>
@@ -96,7 +96,7 @@ BOT_THRESHOLD_FAQ_BEST_REPLY # 最佳回复阀值
 BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 ```
 
-如果部署是按照文档[春松客服私有部署](/products/cskefu/deploy.html)进行，可以在 _.env_ 中设置配置项，参考 [sample.env](https://github.com/chatopera/cosin/blob/osc/sample.env)。
+如果部署是按照文档[春松客服私有部署](/products/cskefu/deploy.html)进行，可以在 _.env_ 中设置配置项，参考 [sample.env](https://github.com/chatopera/cskefu/blob/osc/sample.env)。
 
 ## 创建网站渠道
 
