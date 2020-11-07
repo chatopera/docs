@@ -4,9 +4,38 @@
 
 [**Chatopera 云服务**](https://bot.chatopera.com/)提供一站式实现聊天机器人的按量付费的云服务，企业或开发者可以使用 SDK 集成 Chatopera 云服务。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**版本，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。
 
-SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包括 Node.js、Go、PHP、Python、Java 等，SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。
+## 示例程序
+
+通过系统集成的示例程序，快速掌握 SDK 使用，尤其是对话检索 API；系统集成示例程序也可以用来调试和检查机器人，在和业务系统集成前测试相关接口。与 Chatopera 机器人平台的测试页面不同，系统集成示例程序更侧重上线前，对 SDK 相关接口的测试。
+
+在系统集成示例程序中，使用 Chatopera 机器人平台地址，clientId 和 secret 立刻连接聊天机器人，开始对话。
+
+功能：
+
+- 提供对话页面，方便系统集成测试
+- 使用 Bot Provider 地址，clientId 和 secret 连接机器人
+- 实现 Dialogue Management: 融合意图识别检索、多轮对话检索和知识库检索
+- [app.js](https://github.com/chatopera/webchat/blob/master/app/app.js) 使用 [Chatopera Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk)，可作为系统集成参考
+
+### 直接使用
+
+[https://tc.chatopera.com/](https://tc.chatopera.com/)
+
+或使用 Docker 启动实例
+
+```
+docker run -it --rm -p 8668:8668 chatopera/webchat:develop
+```
+
+<img width="600" src="../../images/products/platform/webchat-1.jpeg" alt="" />
+
+### 示例程序代码库
+
+[https://github.com/chatopera/webchat](https://github.com/chatopera/webchat)
 
 ## 下载 SDK
+
+SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包括 Node.js、Go、PHP、Python、Java 等，SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。
 
 下载地址参考列表：
 
@@ -472,10 +501,21 @@ Chatbot#command("POST", "/clause/prover/session", body)
         "entities": null,
         "createdate": "2019-08-28 18:08:51",
         "updatedate": "2019-08-28 18:08:51"
+        "ttl": 3600
     },
     "error": null
 }
 ```
+
+_intent_name_: 意图名字
+
+_id_: 会话 ID
+
+_resolved_: 该会话是否完成收集参数
+
+_entities_: 参数列表，完成填槽或待填槽
+
+_ttl_: 该会话信息在多少秒后过期，每个会话默认是 1 小时的空闲周期，在该时间内没有跟进的对话，则会话过期
 
 #### 检索意图识别
 
@@ -522,7 +562,8 @@ Chatbot#command("POST", "/clause/prover/chat", body)
                 }
             ],
             "createdate": "2019-08-28 18:15:24",
-            "updatedate": "2019-08-28 18:15:24"
+            "updatedate": "2019-08-28 18:15:24",
+             "ttl": 3595
         },
         "message": {
             "textMessage": "你想做什么工具",
@@ -553,7 +594,8 @@ Chatbot#command("GET", "/clause/prover/session/{{sessionId}}")
         "id": "{{sessionId}}",
         "entities": null,
         "createdate": "2019-08-28 18:41:56",
-        "updatedate": "2019-08-28 18:41:56"
+        "updatedate": "2019-08-28 18:41:56",
+        "ttl": 3600
     },
     "error": null
 }
