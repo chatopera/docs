@@ -1,6 +1,6 @@
 # 机器人客服
 
-## 解决痛点
+## 痛点
 
 企业需要快速回复客服问题，当前市场上，存在很多厂商能提供全渠道智能客服系统，相对来说，渠道对接已经非常成熟，集成起来容易。在机器人客服上，用户体验参差不齐。在 Chatopera，我们主要关注智能机器人，追求最好的机器人客服体验：快速实现符合业务需求的聊天机器人，效果稳定。
 
@@ -58,7 +58,7 @@
 
 视频地址：[https://ke.qq.com/course/475430](https://ke.qq.com/course/475430)
 
-## 安装插件及配置
+## 安装及配置
 
 ### 安装插件
 
@@ -101,7 +101,7 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 
 如果部署是按照文档[春松客服私有部署](/products/cskefu/deploy.html)进行，可以在 _.env_ 中设置配置项，参考 [sample.env](https://github.com/chatopera/cskefu/blob/osc/sample.env)。
 
-## 创建网站渠道
+### 创建网站渠道
 
 以管理员身份*春松客服坐席工作台*，导航【系统-客服接入-网站列表-创建新网站】，按照如下内容设置网站渠道。
 
@@ -117,9 +117,9 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 
 点击【立即提交】保存。
 
-## 创建聊天机器人
+## 集成机器人客服
 
-登录[Chatopera 云服务](https://bot.chatopera.com/)，注册并在【控制台】中创建聊天机器人。
+首先，创建聊天机器人，登录[Chatopera 云服务](https://bot.chatopera.com/)，注册并在【控制台】中创建聊天机器人。
 
 <p align="center">
   <b>创建聊天机器人</b><br>
@@ -153,9 +153,7 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
   <img src="../../images/products/cc-bot-4.png" width="600">
 </p>
 
-## 集成机器人客服
-
-以管理员身份*春松客服坐席工作台*，导航【智能机器人-新建机器人】，按照如下内容填入创建表单。
+然后，以管理员身份*春松客服坐席工作台*，导航【智能机器人-新建机器人】，按照如下内容填入创建表单。
 
 | 项目     | 值             | 描述                                                    |
 | -------- | -------------- | ------------------------------------------------------- |
@@ -177,7 +175,7 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
   <img src="../../images/products/cosin/b2.jpg" width="800">
 </p>
 
-## 测试机器人客服
+最后，测试机器人客服。
 
 > 提示：春松客服访客测试端地址
 
@@ -197,6 +195,8 @@ http[s]://春松客服IP[:PORT]/testclient.html
 如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。
 
 ## 消息类型
+
+不同消息类型，增强了用户体验。
 
 ### 问候语
 
@@ -441,7 +441,7 @@ exports.get_shangyi = async function() {
 
 该对话可以导入到多轮对话设计器中，进行浏览脚本和函数；也可以直接导入到 Chatopera 云服务，然后在春松客服中进行体验。
 
-## Chatopera 小助手
+## 知识库工具条
 
 考虑到客服工作目前分布在不同渠道，而且每隔一段时间还会出现新的渠道，有没有一个好的知识库工具能适应不同渠道呢？
 
