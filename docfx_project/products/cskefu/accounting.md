@@ -25,6 +25,8 @@
 
 角色可以自定义，可包括对一系列资源的读写。然后将账号添加到角色中，账号也同时隶属于不同的组织机构，那么账号所具有的权限就是其所在组织机构以及附属组织机构的角色对应的资源的读写。
 
+**所以，春松客服刚搭建好后，合理的初始化顺序是：1）创建组织机构；2）创建角色；3）创建账号；4）账号添加到组织机构；5）账号添加到角色。** 在使用过程中，也可以灵活调整。
+
 根据角色和坐席所在组织机构进行权限检查：
 
 - 超级管理员可以管理系统所有资源
@@ -49,72 +51,7 @@
 - 李四看不到 B 部门的联系人，张三看不到 A 部门的联系人
 - 李四能看到刘一创建的联系人，刘一看不到李四创建的联系人
 
-## 创建账号
-
-### 创建用户账号：_系统_ -> _系统概况_ -> _用户和组_ -> _用户账号_ -> _创建新用户_
-
-> 提示:
-
-```
-电子邮件: 需要有效的格式
-密码: 字母数字最少8位，手动录入
-手机号: 全系统唯一
-```
-
-- 用户分为管理员和普通用户
-- 坐席分为一般坐席和 SIP 坐席，普通用户与管理用户都可以成为坐席，SIP 坐席是在多媒体坐席的基础上
-- **每个账号必须分配到一个部门下，以及关联到一个角色上，才可以查看或管理资源，请详细阅读【组织机构】和【角色】管理**
-
-* 创建普通用户
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture3.png" alt="" /></td>
-    </tr>
-</table>
-
-- 创建多媒体坐席
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture4.png" alt="" /></td>
-    </tr>
-</table>
-
-- 创建管理员
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture5.png" alt="" /></td>
-    </tr>
-</table>
-
-- 创建呼叫中心坐席
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture6.png" alt="" /></td>
-    </tr>
-</table>
-
-## 查看账号
-
-### 查看用户账号列表：_系统_ -> _系统概况_ -> _用户和组_ -> _用户账号_
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture7.png" alt="" /></td>
-    </tr>
-</table>
-
-点击操作一栏中的“编辑”“删除”，可以对当前用户列表中的所有用户的信息进行编辑或者删除
-
-## 创建部门
+## 组织机构管理
 
 ### 创建部门
 
@@ -155,23 +92,6 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_ -> _修改部门_
 ### 删除部门
 
 _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_ -> _删除部门_
-
-## 管理部门人员
-
-### 部门添加用户
-
-_系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个部门_ -> _添加用户到当前部门_
-
-- 可以把已经存在的 用户账号 添加到一个特定的部门中
-
-- 一个用户账号只能隶属于一个部门
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture14.png" alt="" /></td>
-    </tr>
-</table>
 
 ## 设置部门地区
 
@@ -229,7 +149,87 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _修改角色_
     </tr>
 </table>
 
-### 角色添加用户
+## 账号管理
+
+### 创建用户账号：_系统_ -> _系统概况_ -> _用户和组_ -> _用户账号_ -> _创建新用户_
+
+> 提示:
+
+```
+电子邮件: 需要有效的格式
+密码: 字母数字最少8位，手动录入
+手机号: 全系统唯一
+```
+
+- 用户分为管理员和普通用户
+- 坐席分为一般坐席和 SIP 坐席，普通用户与管理用户都可以成为坐席，SIP 坐席是在多媒体坐席的基础上
+- **每个账号必须分配到一个部门下，以及关联到一个角色上，才可以查看或管理资源，请详细阅读【组织机构】和【角色】管理**
+
+* 创建普通用户
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture3.png" alt="" /></td>
+    </tr>
+</table>
+
+- 创建多媒体坐席
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture4.png" alt="" /></td>
+    </tr>
+</table>
+
+- 创建管理员
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture5.png" alt="" /></td>
+    </tr>
+</table>
+
+- 创建呼叫中心坐席
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture6.png" alt="" /></td>
+    </tr>
+</table>
+
+### 查看账号信息
+
+_系统_ -> _系统概况_ -> _用户和组_ -> _用户账号_
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture7.png" alt="" /></td>
+    </tr>
+</table>
+
+点击操作一栏中的“编辑”“删除”，可以对当前用户列表中的所有用户的信息进行编辑或者删除
+
+### 添加账号到部门
+
+_系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个部门_ -> _添加用户到当前部门_
+
+- 可以把已经存在的 用户账号 添加到一个特定的部门中
+
+- 一个用户账号只能隶属于一个部门
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture14.png" alt="" /></td>
+    </tr>
+</table>
+
+### 添加账号到角色
 
 系统->系统概况->用户和组->系统角色>添加用户到角色
 
