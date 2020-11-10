@@ -67,8 +67,10 @@ Chatopera，我们主要关注智能机器人，追求最好的机器人客服�
 
 <p align="center">
   <b>安装好机器人插件</b><br>
-  <img src="../../images/products/cosin/g5.png" width="800">
+  <img src="../../images/products/cskefu/98638023-436f4700-2364-11eb-922d-801ade42d397.png" width="800">
 </p>
+
+只有**超级管理员**可以在【系统设置】中配置机器人客服，超级管理员权限介绍参考[账号与权限](/products/cskefu/accounting.html)。
 
 ### 配置环境变量
 
