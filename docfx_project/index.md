@@ -8,11 +8,11 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 `Chatopera` 是[华夏春松](https://www.chatopera.com)的人工智能品牌和产品线。
 
-<video ccontrols preload="none" autobuffer="false" poster="/images/video_cover_cs.png" >
+<video controls preload="none" autobuffer="false" poster="images/products/introduction-video-cover.jpg">
   <source
     src="https://www.chatopera.com/files/introduction.webm"
     type="video/webm"
-  >
+  />
 </video>
 </br>
 </br>
