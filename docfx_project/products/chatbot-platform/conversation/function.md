@@ -2,7 +2,7 @@
 
 函数是一个强大而有趣的设计。在回复中，可以使用函数来获取整条消息对象，用户对象或者其它资源，比如数据库。
 
-### 函数定义
+## 函数定义
 
 把通配符值当做变量传给函数，例如下面这个例子：
 
@@ -58,7 +58,7 @@ exports.getUserAccount = async function(account) {
 
 在[系统集成/多轮对话检索](/products/chatbot-platform/integration/api.html#检索多轮对话)时，返回值`data`内将增加`params`属性，与以上设定的值相同。
 
-### 复合函数
+## 复合函数
 
 在回复中，可以添加任意多的函数，比如
 
@@ -67,7 +67,7 @@ exports.getUserAccount = async function(account) {
 - 联合 ^callFunction1() 和 ^callFunction2(<cap1>)
 ```
 
-### 嵌套函数
+## 嵌套函数
 
 在函数的回调函数中，函数名会被解析成对应的函数，所以放心的在回复中添加任意合法的函数，比如在脚本中这样写：
 
@@ -87,11 +87,11 @@ exports.nestedBFunction = function(cb) {
 }
 ```
 
-### 消息形式
+## 消息形式
 
 在多轮对话中，回复除纯文本外，还可以支持多媒体消息，这样用户交互的体验更佳。不同消息的类型还需要渠道能够兼容，或在业务系统中进行适配，以下各消息类型在 **[春松客服](/products/cskefu/index.html)** 和 **多轮对话设计器** 中已经支持。
 
-#### 列表消息
+### 列表消息
 
 函数返回值中，`params`数组中每个元素约定如下：
 
@@ -119,7 +119,7 @@ exports.get_greetings = async function() {
 
 其中，`label`是显示文字，`type`为固定值`qlist`，`text` 是点击该问题时发送给机器人的文本内容。
 
-#### 按钮消息
+### 按钮消息
 
 ```
 // 按钮选择消息
@@ -143,7 +143,7 @@ exports.get_products = async function() {
 
 类似图文消息，不同的是：1）`type`值为`button`；2）业务上一般会设定一组按钮消息只能有一个按钮被点击一次。
 
-#### 图文消息
+### 图文消息
 
 ```
 // 图文消息
@@ -165,7 +165,7 @@ exports.get_shangyi = async function() {
 
 **提示：** `{CLEAR} ` 作为前缀代表机器人本轮清除多轮对话状态。
 
-### 自定义业务字段
+## 自定义业务字段
 
 从以上的**消息形式**的实现，就是借助函数返回值中 `params` 这个属性，在实现聊天机器人时，函数中可在 `params` 自定义的业务字段，都会被 SDK/API 返回。
 
@@ -183,13 +183,13 @@ exports.get_shangyi = async function() {
 
 通常是在业务系统内，使用业务字段完成更多工作。
 
-### 函数工具
+## 函数工具
 
 在开发中，进一步提供系统灵活性，在`函数`定义中，系统预置了以下几个工具对象，方便聊天机器人开发者实现各种功能的聊天机器人。以下内容假设读者已经掌握了`JavaScript`编程语言。
 
 > 提示：以下使用 `this` 前缀的变量代表该变量依赖于在函数内部的 `this` 对象。
 
-#### this.user.id
+### this.user.id
 
 当前对话用户标识，在 [知识库检索](/products/chatbot-platform/integration/api.html#检索知识库)、 [意图识别检索](/products/chatbot-platform/integration/api.html#检索意图识别) 和 [多轮对话检索](/products/chatbot-platform/integration/api.html#检索多轮对话)传入的`userId`信息。
 
@@ -209,7 +209,7 @@ exports.myUserId = function(cb){
 }
 ```
 
-#### this.user.history
+### this.user.history
 
 当前用户与机器人对话的历史
 
@@ -249,7 +249,7 @@ this.user.history 类型：数组
 
 历史对话按照降序排列，即最近发生的对话在上面，最多存储 100 轮历史对话数据。
 
-#### config
+### config
 
 获取**环境变量**，环境变量在**多轮对话设计器**和**聊天机器人多轮对话控制台**都可以定义，目的是在设计阶段和运行阶段，多轮对话使用不同的配置。
 
@@ -269,7 +269,7 @@ exports.print_key_value = function(key, cb){
 
 `环境变量`常用来配置一些生产环境对应的信息。
 
-#### http
+### http
 
 用于在函数内部，通过 HTTP 协议集成外部系统。
 
@@ -289,7 +289,7 @@ Chatopera 机器人平台中，函数内置`http`常量使用[axios](https://www
 
 [https://github.com/axios/axios](https://github.com/axios/axios)
 
-#### debug
+### debug
 
 打印调试日志。
 
@@ -302,7 +302,7 @@ debug("hello %s, %j", stringVar, jsonVar)
 debug("hello %s, %o", stringVar, objVar)
 ```
 
-#### this.maestro
+### this.maestro
 
 maestro 是管理对话状态存储和自然语言处理的高级接口，在函数中，使用 this.maestro 来引用。
 

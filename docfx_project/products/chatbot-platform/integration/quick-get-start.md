@@ -4,7 +4,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 > **提示：** [Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。不同语言的 SDK 使用细节大同小异， 因为它们都是调用**Chatopera 云服务**的[RestAPIs](https://baike.baidu.com/item/RESTful)，这些 RestAPIs 是标准一致的。每种语言的 SDK 使用流程按照顺序包括：下载 SDK，实例化`Chatbot`类为对象，请求接口和处理返回结果。
 
-### 注册账号
+## 注册账号
 
 首先注册[Chatopera 云服务](https://bot.chatopera.com)的账号，如果您已经注册，直接进入下一步：创建机器人。
 
@@ -17,7 +17,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 点击“[立即使用](https://bot.chatopera.com)”，初次登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
 
-### 创建机器人
+## 创建机器人
 
 登陆完成进入首页，点击“创建机器人”。
 
@@ -29,7 +29,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 其它项如兜底回复，问候语可以在创建后，设置页面修改。
 
-### 导入知识库文件
+## 导入知识库文件
 
 接着，导入一些示例数据到知识库，作为体验用途，下载知识库示例文件[chatopera_faq_samples.json](https://static-public.chatopera.com/bot/faq/chatopera_faq_samples.json)，保存文件名为*chatopera_faq_samples.json*。
 
@@ -57,7 +57,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 选择*chatopera_faq_samples.json*，这时，会显示问答对列表，点击“提交”，在进度条完成后，知识库导入成功。
 
-### 获取*ClientId*和*Secret*
+## 获取*ClientId*和*Secret*
 
 `SDK`中每个机器人实例需要通过*ClientId*和*Secret*初始化，这两个字段是认证和授权用途。打开机器人【设置】页面，拷贝*ClientId*和*Secret*。
 
@@ -68,13 +68,13 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
   </a>
 </p>
 
-### 安装 SDK
+## 安装 SDK
 
 ```
 npm install @chatopera/sdk --save
 ```
 
-### 实例化`Chatbot`类为对象
+## 实例化`Chatbot`类为对象
 
 ```
 var Chatbot = require("@chatopera/sdk").Chatbot;
@@ -93,7 +93,7 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 
 > **提示：** 参数列表中，写在 `[]` 内的部分是选填参数，如果不填写使用默认值，下同。
 
-### 调用接口示例
+## 调用接口示例
 
 得到`Chatbot`实例后，怎么样请求接口服务呢？假设对该机器人的基本信息感兴趣，获取基本信息方式如下：
 
