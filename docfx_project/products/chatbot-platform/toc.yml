@@ -5,17 +5,20 @@
 - name: 词典管理
   href: dicts.md
 - name: 知识库
-  href: faq.md
+  href: faq/toc.yml
+  topicHref: faq/index.md
 - name: 意图识别
   href: intent.md
 - name: 多轮对话
-  href: conversation.md
+  href: conversation/toc.yml
+  topicHref: conversation/index.md
 - name: 测试对话
   href: debug.md
 - name: 聚类分析
   href: lattice.md
 - name: 系统集成
-  href: integration.md
+  href: integration/toc.yml
+  topicHref: integration/index.md
 - name: 统计报表
   href: audit.md
 - name: 历史记录

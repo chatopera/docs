@@ -26,12 +26,6 @@
         "files": ["products/dscrm/**.yml", "products/dscrm/**.md"]
       },
       {
-        "files": [
-          "products/psych-assistant/**.yml",
-          "products/psych-assistant/**.md"
-        ]
-      },
-      {
         "files": ["toc.yml", "*.md"]
       }
     ],

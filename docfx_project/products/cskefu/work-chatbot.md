@@ -219,7 +219,7 @@ http[s]://春松客服IP[:PORT]/testclient.html
   <img src="../../images/products/cosin/cards/image-8.png" width="800">
 </p>
 
-在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要
+在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](/products/chatbot-platform/conversation/cde.html)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要
 30 分钟时间**。
 
 下面是支持在问候语中关联热门问题，进行导航的方法：
@@ -233,7 +233,7 @@ http[s]://春松客服IP[:PORT]/testclient.html
     </tr>
 </table>
 
-下载连接也可以通过[多轮对话设计器使用教程](https://docs.chatopera.com/products/chatbot-platform/conversation.html#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80)获得。
+下载连接也可以通过[多轮对话设计器使用教程](/products/chatbot-platform/conversation/cde.html)获得。
 
 - 新建聊天机器人
 
@@ -430,7 +430,7 @@ exports.get_shangyi = async function() {
 
 其中，`title`代表大标题，`thumbnail`是图片，`summary`是简介，`hyperlink`是点击图文消息后，跳转的链接，这几项是用户可以自定义的，其它项就使用默认值，比如`type`的值必须是`card`。
 
-文本消息、热门问题、按钮消息和图文消息是春松客服支持的在线机器人客服消息类型，更多知识进入 [Chatopera 机器人平台文档](/products/chatbot-platform/conversation.html#消息形式)查看。
+文本消息、热门问题、按钮消息和图文消息是春松客服支持的在线机器人客服消息类型，更多知识进入 [Chatopera 机器人平台文档](/products/chatbot-platform/conversation/function.html#消息形式)查看。
 
 在掌握了知识库、脚本语法和函数后，用户可以支持各种客服场景。
 
@@ -445,7 +445,7 @@ exports.get_shangyi = async function() {
 
 考虑到客服工作目前分布在不同渠道，而且每隔一段时间还会出现新的渠道，有没有一个好的知识库工具能适应不同渠道呢？
 
-Chatopera 开发 [Chatopera 小助手](/products/chatbot-platform/faq.html#知识库小助手) 来适应差异较大的不同渠道，将机器人知识库发挥更大作用。
+Chatopera 开发 [Chatopera 小助手](/products/chatbot-platform/faq/assistant.html) 来适应差异较大的不同渠道，将机器人知识库发挥更大作用。
 
 Chatopera 小助手将知识库的效益最大化，适合作为企业知识库管理、网络聊天快捷语等场景。
 

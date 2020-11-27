@@ -35,7 +35,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ## 小助手
 
-[Chatopera 小助手](/products/chatbot-platform/faq.html#知识库小助手)，简称“小助手”，是面向企业的客户服务人员发布的一款从知识库检索建议回复的桌面软件。
+[Chatopera 小助手](/products/chatbot-platform/faq/assistant.html)，简称“小助手”，是面向企业的客户服务人员发布的一款从知识库检索建议回复的桌面软件。
 
 ## 视频教程
 

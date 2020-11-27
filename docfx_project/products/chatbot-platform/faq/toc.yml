@@ -1,0 +1,10 @@
+- name: "问答对管理"
+  href: qna.md
+- name: "调试知识库"
+  href: tune.md
+- name: "自定义词典"
+  href: dicts.md
+- name: "导入和导出"
+  href: transfer.md
+- name: "知识库小助手"
+  href: assistant.md

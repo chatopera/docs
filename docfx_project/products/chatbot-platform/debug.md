@@ -13,7 +13,7 @@
 
 ## 系统集成
 
-在测试页面上调试得到满意的对话结果，问答服务终于准备妥当，可以为业务系统提供机器人问答服务了，下一步参考[系统集成](/products/chatbot-platform/integration.html)接入上线吧！
+在测试页面上调试得到满意的对话结果，问答服务终于准备妥当，可以为业务系统提供机器人问答服务了，下一步参考[系统集成](/products/chatbot-platform/integration/index.html)接入上线吧！
 
 ## 评论
 

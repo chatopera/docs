@@ -1,187 +1,3 @@
-# 系统集成
-
-## 概述
-
-[**Chatopera 云服务**](https://bot.chatopera.com/)提供一站式实现聊天机器人的按量付费的云服务，企业或开发者可以使用 SDK 集成 Chatopera 云服务。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**版本，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。
-
-## 示例程序
-
-通过系统集成的示例程序，快速掌握 SDK 使用，尤其是对话检索 API；系统集成示例程序也可以用来调试和检查机器人，在和业务系统集成前测试相关接口。与 Chatopera 机器人平台的测试页面不同，系统集成示例程序更侧重上线前，对 SDK 相关接口的测试。
-
-在系统集成示例程序中，使用 Chatopera 机器人平台地址，clientId 和 secret 立刻连接聊天机器人，开始对话。
-
-功能：
-
-- 提供对话页面，方便系统集成测试
-- 使用 Bot Provider 地址，clientId 和 secret 连接机器人
-- 实现 Dialogue Management: 融合意图识别检索、多轮对话检索和知识库检索
-- [app.js](https://github.com/chatopera/webchat/blob/master/app/app.js) 使用 [Chatopera Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk)，可作为系统集成参考
-
-### 直接使用
-
-[https://tc.chatopera.com/](https://tc.chatopera.com/)
-
-或使用 Docker 启动实例
-
-```
-docker run -it --rm -p 8668:8668 chatopera/webchat:develop
-```
-
-<img width="600" src="../../images/products/platform/webchat-1.jpeg" alt="" />
-
-### 示例程序代码库
-
-[https://github.com/chatopera/webchat](https://github.com/chatopera/webchat)
-
-## 下载 SDK
-
-SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包括 Node.js、Go、PHP、Python、Java 等，SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。
-
-下载地址参考列表：
-
-| 语言    | 下载地址                                                                      | 使用指南                                                                                                                                                                                                    |
-| ------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Python  | [chatopera-py-sdk](https://pypi.org/project/chatopera/)                       | [示例程序](https://github.com/chatopera/chatopera-py-sdk/blob/master/demo.py) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                           |
-| Java    | [chatopera-java-sdk](https://github.com/chatopera/chatopera-sample-java/wiki) | [示例程序](https://github.com/chatopera/chatopera-sample-java) / [技术支持](https://github.com/chatopera/status/issues/new/choose) / [JavaDocs](https://chatopera.github.io/chatopera-sample-java/apidocs/) |
-| Go      | [chatopera-go-sdk](https://github.com/chatopera/chatopera-go-sdk)             | [示例程序](https://github.com/chatopera/chatopera-go-sdk/blob/master/chatopera_test.go) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                 |
-| PHP     | [chatopera-php-sdk](https://packagist.org/packages/chatopera/sdk)             | [示例程序](https://github.com/chatopera/chatopera-php-sdk) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                                              |
-| Node.js | [chatopera-nodejs-sdk](https://www.npmjs.com/package/@chatopera/sdk)          | [示例程序](https://github.com/chatopera/chatopera-sample-node) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                                          |
-
-为了方便开发者调用 SDK，每个 SDK 内均有示例程序或测试程序作为参考。
-
-> **提示：** 以上 SDK 同时支持私有部署的 Chatopera 机器人平台。
-
-在聊天机器人的一级菜单，可以进入**集成页面**查看。
-
-<table class="image">
-    <caption align="bottom">集成</caption>
-    <tr>
-        <td><img width="800" src="../../images/platform/8.png" alt="" /></td>
-    </tr>
-</table>
-
-<font color="blue">如不能满足您使用环境或者语言的 SDK，请[创建工单](https://github.com/chatopera/docs/issues/new?template=1_help.md)进行描述，Chatopera 将尽快满足您的需求。</font>
-
-## 快速开始
-
-SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk) 为例子演示使用流程，
-
-> **提示：** [Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。不同语言的 SDK 使用细节大同小异， 因为它们都是调用**Chatopera 云服务**的[RestAPIs](https://baike.baidu.com/item/RESTful)，这些 RestAPIs 是标准一致的。每种语言的 SDK 使用流程按照顺序包括：下载 SDK，实例化`Chatbot`类为对象，请求接口和处理返回结果。
-
-### 注册账号
-
-首先注册[Chatopera 云服务](https://bot.chatopera.com)的账号，如果您已经注册，直接进入下一步：创建机器人。
-
-<table class="image">
-    <caption align="bottom">登陆 https://bot.chatopera.com</caption>
-    <tr>
-        <td><img width="800" src="../../images/platform/11.jpg" alt="" /></td>
-    </tr>
-</table>
-
-点击“[立即使用](https://bot.chatopera.com)”，初次登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
-
-### 创建机器人
-
-登陆完成进入首页，点击“创建机器人”。
-
-| 项目       | 值         | 描述                                                            |
-| ---------- | ---------- | --------------------------------------------------------------- |
-| 机器人名称 | 小松       | 机器人的名字                                                    |
-| 描述       | 机器人示例 | 机器人的描述                                                    |
-| 语言       | zh_CN      | 机器人的语言，目前支持中文(zh_CN)、繁体中文(zh_TW)和英文(en_US) |
-
-其它项如兜底回复，问候语可以在创建后，设置页面修改。
-
-### 导入知识库文件
-
-接着，导入一些示例数据到知识库，作为体验用途，下载知识库示例文件[chatopera_faq_samples.json](https://static-public.chatopera.com/bot/faq/chatopera_faq_samples.json)，保存文件名为*chatopera_faq_samples.json*。
-
-<p align="center">
-  <b>知识库文件格式</b><br>
-      <img src="../../images/platform/12.jpg" width="500">
-</p>
-
-在该示例文件中，用 JSON 数组的形式存储了 100 个问答对，字段含义如下：
-
-| key              | type     | required | description                                                                                                                    |
-| ---------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| categories       | [string] | false    | 分类名称，支持层级比如 `["一级", "二级"]`，服务器端自动创建对应分类                                                            |
-| enabled          | boolean  | true     | 是否启用，代表该问答对导入后是否支持来访者检索                                                                                 |
-| post             | string   | true     | 问答对的标准问                                                                                                                 |
-| replies          | [object] | true     | 问答对的回答，数组长度大于 0, `content`是文本内容，`rtype`为`plain`表示`content`为纯文本; `rtype`为`html`表示`content`为富文本 |
-| similarQuestions | [string] | false    | 问答对里的相似问                                                                                                               |
-
-<p align="center">
-  <b>上传知识库文件</b><br>
-  <a href="http://bot.chatopera.com/" target="_blank">
-      <img src="../../images/platform/14.jpg" width="500">
-  </a>
-</p>
-
-选择*chatopera_faq_samples.json*，这时，会显示问答对列表，点击“提交”，在进度条完成后，知识库导入成功。
-
-### 获取*ClientId*和*Secret*
-
-`SDK`中每个机器人实例需要通过*ClientId*和*Secret*初始化，这两个字段是认证和授权用途。打开机器人【设置】页面，拷贝*ClientId*和*Secret*。
-
-<p align="center">
-  <b>显示Secret</b><br>
-  <a href="http://bot.chatopera.com/" target="_blank">
-      <img src="../../images/platform/13.png" width="800">
-  </a>
-</p>
-
-### 安装 SDK
-
-```
-npm install @chatopera/sdk --save
-```
-
-### 实例化`Chatbot`类为对象
-
-```
-var Chatbot = require("@chatopera/sdk").Chatbot;
-var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
-```
-
-<h4><font color="purple">参数说明</font></h4>
-
-| name            | type   | required | description                                                                                                                      |
-| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
-| secret          | string | &#10004; | 获取办法同上                                                                                                                     |
-| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
-
-<!--  对号和差号， https://www.w3schools.com/charsets/ref_utf_dingbats.asp -->
-
-> **提示：** 参数列表中，写在 `[]` 内的部分是选填参数，如果不填写使用默认值，下同。
-
-### 调用接口示例
-
-得到`Chatbot`实例后，怎么样请求接口服务呢？假设对该机器人的基本信息感兴趣，获取基本信息方式如下：
-
-```
-var response = await chatbot.command("POST", "/faq/query", {
-  query: "不锈钢板现在是什么价格",
-  fromUserId: "sdktest1",
-});
-console.log("response: ", response)
-```
-
-或者获取 `Promise` 返回
-
-```
-chatbot.command("GET", "/").then(
-  (response) => {
-    console.log("机器人名称：", response.data.name);
-  },
-  (err) => {}
-);
-```
-
-此处，不深入探讨`await`和`Promise`的相关知识，它们是和 JavaScript 语言相关的内容。在这个例子中，我们请读者注意，给定一个机器人类的实例，再请求 API 服务是多么的简单，`Chatbot#command`接口提供了一系列的方法，也是下文给您详细介绍的重点。
-
 ## `Chatbot`类
 
 ### 实例化
@@ -253,7 +69,7 @@ var chatbot = chatopera.Chatbot(clientId, secret)
 result = chatbot.command(method, path [, body])
 ```
 
-> **提示：** result 返回在 Node.js 中使用`await`或`Promise`，参考[快速开始](/products/chatbot-platform/integration.html#调用接口示例)；其它语言直接用 `=` 便可获取。
+> **提示：** result 返回在 Node.js 中使用`await`或`Promise`，参考[快速开始](/products/chatbot-platform/integration/quick-get-start.html)；其它语言直接用 `=` 便可获取。
 
 <h4><font color="purple">参数说明</font></h4>
 
@@ -286,7 +102,7 @@ result = chatbot.command(method, path [, body])
 
 **下文表述时，统一使用`JSON`，`JSON Object`和`JSON Array`代表 JSON 数据结构和其不同语言下的等价数据结构。**
 
-> **提示：** 相对而言，JSON 等价的数据结构，在获取`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
+> **提示：** 相对而言，JSON 等价的数据结构，在获取`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration/index.html#下载-sdk)。
 
 **`body`是否必填以及是`JSON Object`还是`JSON Array`，取决于`method`和`path`的值，不同`method`和`path`的组合对应了不同的接口功能，满足不同需求，下文将介绍满足各种需求的`method`和`path`，并各个说明`body`参数。**
 
@@ -307,7 +123,7 @@ result = chatbot.command(method, path [, body])
 
 每次请求结果中，`rc`是必含有的属性，其它属性为可能含有。不同`rc`的正整数形代表不同的异常，`data`、`status`以及分页信息，则因`method`和`path`而异，以下进行详细介绍。
 
-> **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatbot#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration.html#下载-sdk)。
+> **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatbot#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration/index.html#下载-sdk)。
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
@@ -694,7 +510,7 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 <table class="image">
     <caption align="bottom">查询逻辑</caption>
     <tr>
-        <td><img width="800" src="../../images/products/chatbot-engine-1.png" alt="查询逻辑" /></td>
+        <td><img width="800" src="../../../images/products/chatbot-engine-1.png" alt="查询逻辑" /></td>
     </tr>
 </table>
 
@@ -705,7 +521,7 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 
 <h4><font color="purple">知识库路由</font></h4>
 
-在[知识库的答案](/products/chatbot-platform/faq.html#设定答案)或[多轮对话的函数](/products/chatbot-platform/conversation.html#函数)中设置回复时，可以用 **routeDirectReply** 来检索一个指定的[多轮对话名称](/products/chatbot-platform/conversation.html#术语)和[触发器](/products/chatbot-platform/conversation.html#触发器)。
+在[知识库的答案](/products/chatbot-platform/faq/qna.html#设定答案)或[多轮对话的函数](/products/chatbot-platform/conversation/function.html)中设置回复时，可以用 **routeDirectReply** 来检索一个指定的[话题](/products/chatbot-platform/conversation/index.html#术语)和[匹配器](/products/chatbot-platform/conversation/index.html#匹配器)。
 
 语法：
 
@@ -713,9 +529,9 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID" [,INHERIT_PARAMS]]
 ```
 
-_TOPIC_NAME_: [对话名称](/products/chatbot-platform/conversation.html#术语)
+_TOPIC_NAME_: [对话名称](/products/chatbot-platform/conversation/index.html#术语)
 
-_TOPIC_GAMBIT_ID_: [触发器名称](/products/chatbot-platform/conversation.html#术语)
+_TOPIC_GAMBIT_ID_: [触发器名称](/products/chatbot-platform/conversation/index.html#术语)
 
 其中，_INHERIT_PARAMS_ 是可选参数，决定当前对话取得的 `params` 是否覆盖接下来对话的 `params`，值为`[true|false]`，默认为 `false`。
 
@@ -729,7 +545,7 @@ routeDirectReply#["class_001_pre", "__C1PRE_GAMBIT_003",true]
 
 <table class="image">
 <caption align="bottom">【知识库或函数】路由多轮对话</caption>
-<tr><td><img width="600" src="../../images/products/platform/set-faq-route-conversion-reply.jpg" alt="【知识库或函数】路由多轮对话"/></td></tr>
+<tr><td><img width="600" src="../../../images/products/platform/set-faq-route-conversion-reply.jpg" alt="【知识库或函数】路由多轮对话"/></td></tr>
 </table>
 
 提示：**routeDirectReply**需要设定为知识库问答对里的第一个答案，答案类型为 纯文本`plain`。
@@ -1562,40 +1378,6 @@ _service_: 提供回复的服务
 _confidence_: 置信度
 
 _created_: 消息创建时间
-
-## 常见问题
-
-### SDK / 返回错误 invalid appId
-
-```
-{"rc":1,"error":"invalid appId."}
-```
-
-这是因为`clientId`和`secret`配置不正确。
-
-### SDK / 返回错误 invalid timestamp
-
-```
-{"rc":1,"error":"invalid timestamp."}
-```
-
-操作系统需要设置的时间同步为互联网时间，参考
-
-[https://www.sysgeek.cn/manage-time-server-windows-10/](https://www.sysgeek.cn/manage-time-server-windows-10/)
-
-也可以设置为阿里云时间同步器
-
-[https://blog.csdn.net/qq_35448976/article/details/78977164](https://blog.csdn.net/qq_35448976/article/details/78977164)
-
-### Java SDK / Maven 执行抛出异常
-
-`mvn install`抛出异常，SunCertPathBuilderException
-
-```
-sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-```
-
-[解决方案](https://github.com/chatopera/chatopera-sample-java/issues/1)
 
 ## 评论
 

@@ -53,7 +53,7 @@
 
 - 通过访客的 ID，session id， 文本消息和机器人进行聊天
 
-**会话**和**聊天**都是与上线集成相关，详细参考 [系统集成](/products/chatbot-platform/integration.html)。
+**会话**和**聊天**都是与上线集成相关，详细参考 [系统集成](/products/chatbot-platform/integration/index.html)。
 
 ## 快速开始
 
@@ -278,7 +278,7 @@
 
 ## 集成意图识别
 
-经过一系列的工作，发布生产版本后，意图识别问答终于准备妥当，可以为业务系统提供机器人问答服务了，下一步参考[系统集成](/products/chatbot-platform/integration.html)接入上线吧！
+经过一系列的工作，发布生产版本后，意图识别问答终于准备妥当，可以为业务系统提供机器人问答服务了，下一步参考[系统集成](/products/chatbot-platform/integration/index.html)接入上线吧！
 
 ## 查看使用情况
 
