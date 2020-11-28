@@ -100,7 +100,7 @@ socketio 是对 websocket 进行封装，是 websocket 协议的一种实现，�
 
 **问：机器人自动回复模块在哪？**
 
-机器人客服参考[文档](https://docs.chatopera.com/products/cskefu/work-chatbot.html)。
+机器人客服参考[文档](https://docs.chatopera.com/products/cskefu/work-chatbot/index.html)。
 
 **问：多轮对话,看上去就是在编辑脚本,有对分支逻辑的支持吗?**
 

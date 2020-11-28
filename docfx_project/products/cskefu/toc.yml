@@ -17,7 +17,8 @@
 - name: 坐席监控
   href: monitoring.md
 - name: 机器人客服
-  href: work-chatbot.md
+  href: work-chatbot/toc.yml
+  topicHref: work-chatbot/index.md
 - name: 呼叫中心
   href: callcenter.md
 - name: 页面统计
