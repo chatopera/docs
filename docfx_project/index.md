@@ -49,7 +49,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 更多精彩内容，请查看 [Chatopera 视频教程](https://ke.chatopera.com)！
 
-## Chatopera 客户群
+## 客户服务
 
 ![](/images/products/platform/Chatopera_企业微信_客户群_qr_explained.png)
 
