@@ -49,6 +49,12 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 更多精彩内容，请查看 [Chatopera 视频教程](https://ke.chatopera.com)！
 
+## Chatopera 客户群
+
+![](/images/products/platform/Chatopera_企业微信_客户群_qr_explained.png)
+
+在 Chatopera 客户群中也包括其他用户，请不要发送敏感信息，讨论与 Chatopera 产品和服务相关的事宜。
+
 ## 关于我们
 
 北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。
