@@ -150,7 +150,7 @@ _对于企业服务，可提供发票。_
 
 ![](/images/products/platform/Chatopera_企业微信_客户群_qr_explained.png)
 
-在 Chatopera 客户群中也包括其他用户，请不要发送敏感信息，讨论与 Chatopera 产品和服务相关的事宜。
+在 Chatopera 客户群中也包括其他用户，请不要发送敏感信息。讨论与 Chatopera 产品和服务相关的事宜。
 
 ## 服务水平协议
 

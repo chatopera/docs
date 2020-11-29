@@ -53,7 +53,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ![](/images/products/platform/Chatopera_企业微信_客户群_qr_explained.png)
 
-在 Chatopera 客户群中也包括其他用户，请不要发送敏感信息，讨论与 Chatopera 产品和服务相关的事宜。
+在 Chatopera 客户群中也包括其他用户，请不要发送敏感信息。讨论与 Chatopera 产品和服务相关的事宜。
 
 ## 关于我们
 
