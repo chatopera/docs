@@ -19,15 +19,6 @@
 
 在项目地址中，有详细的入门说明，如果使用遇到问题，第一时间[阅读文档](/products/cskefu/index.html)，第二时间搜索[历史 Issues](https://github.com/chatopera/cskefu/issues)，如果无法解决，加入社区提问。
 
-## 加入社区
-
-作为开发者、企业用户，如何有效的搭建、使用春松客服开源版？春松客服团队进行有限程度免费支持，加入 QQ 群即刻融入春松客服开源社区。
-
-<p align="center">
-  <b>春松客服QQ交流群：185659917， <a href="https://jq.qq.com/?_wv=1027&k=5I1cJLP" target="_blank">点击链接加入群聊</a></b><br>
-  <img src="../../images/products/cosin/g1.jpg" width="200">
-</p>
-
 ## 博客专栏
 
 Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)火热 🔥 更新中，订阅关注，及时获得最新的信息。
