@@ -120,7 +120,7 @@ exports.get_greetings = async function() {
 
 - 导出聊天机器人
 
-多轮对话设计器是企业聊天机器人的设计环境，[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)或[智能问答引擎](https://docs.chatopera.com/chatbot-engine.html)是机器人的运行时环境。
+多轮对话设计器是智能对话机器人的设计环境，[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)或[智能问答引擎](https://docs.chatopera.com/chatbot-engine.html)是机器人的运行时环境。
 
 <table class="image">
     <caption align="bottom">发布并导出对话应用</caption>
