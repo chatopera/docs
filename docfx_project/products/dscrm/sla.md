@@ -1,4 +1,4 @@
-本协议作用于*大盛 CRM 商业付费客户*[**私有部署/运维/定制化开发**](https://docs.chatopera.com/products/dscrm/index.html)。
+本协议作用于*大盛 CRM 商业付费客户*[**私有部署/运维/定制化开发**](https://docs.cskefu.com/products/dscrm/index.html)。
 
 # <大盛 CRM> 服务水平协议
 
@@ -14,7 +14,7 @@
 
 【QQ 交流群】185659917 [快速加入](https://jq.qq.com/?_wv=1027&k=5I1cJLP), 通过 QQ 群咨询售前/售后问题
 
-2020 年 05 月 [北京华夏春松科技有限公司](https://www.chatopera.com/)
+2020 年 05 月 [北京华夏春松科技有限公司](https://www.cskefu.com/)
 
 # <大盛 CRM> 服务条款
 
@@ -86,4 +86,4 @@
 
 - 3.8、用户接入第三方服务，比如百度统计等，并不是本公司负责安全保护，如果造成用户财产损失，与本公司无关，本公司不承担任何责任。
 
-2020 年 05 月 [北京华夏春松科技有限公司](https://www.chatopera.com/)
+2020 年 05 月 [北京华夏春松科技有限公司](https://www.cskefu.com/)

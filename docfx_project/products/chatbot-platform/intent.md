@@ -59,7 +59,7 @@
 
 ### 登录服务
 
-访问 <a href="https://bot.chatopera.com" target="_blank">https://bot.chatopera.com</a> 从浏览器打开后，点击“立即使用”，跳转到登陆/注册页面，输入邮箱和密码，使用“回车键”【Enter】提交，即完成。
+访问 <a href="https://bot.cskefu.com" target="_blank">https://bot.cskefu.com</a> 从浏览器打开后，点击“立即使用”，跳转到登陆/注册页面，输入邮箱和密码，使用“回车键”【Enter】提交，即完成。
 
 下文以“餐饮机器人”为例介绍意图识别聊天机器人的创建、配置和发布上线。
 

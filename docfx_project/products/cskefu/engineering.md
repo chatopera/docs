@@ -20,7 +20,7 @@
 
 ## 配置 Maven
 
-确保在 pom.xml 中存在如下的 maven 库，[Chatopera Nexus](https://nexus.chatopera.com/)是代理 Maven Central，Alibaba Maven Repo 等节点的混合 Maven Repository，使用 Chatopera Nexus 不会影响项目使用其它公共包（Artifacts）。
+确保在 pom.xml 中存在如下的 maven 库，[Chatopera Nexus](https://nexus.cskefu.com/)是代理 Maven Central，Alibaba Maven Repo 等节点的混合 Maven Repository，使用 Chatopera Nexus 不会影响项目使用其它公共包（Artifacts）。
 
 在`<repositories><repository>`内存在：
 
@@ -29,7 +29,7 @@
         <repository>
             <id>chatopera</id>
             <name>Chatopera Inc.</name>
-            <url>https://nexus.chatopera.com/repository/maven-public</url>
+            <url>https://nexus.cskefu.com/repository/maven-public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -351,7 +351,7 @@ HTML 示例：
     <!-- META -->
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script defer="true" src="http://cc.chatopera.com/im/104eac.html"></script>
+    <script defer="true" src="http://cc.cskefu.com/im/104eac.html"></script>
 </head>
 <body>
 春松客服演示客户端

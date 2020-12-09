@@ -26,7 +26,7 @@
     </tr>
 </table>
 
-具体地说，在排队阶段，引导消费者问问题，借助<a href="https://docs.chatopera.com/products/chatbot-platform/index.html" target="_blank">Chatopera 机器人平台</a>，进行意图识别，如果意图匹配到了智能问答引擎中的对话，就启动多轮对话，完成服务；未匹配到多轮对话则继续排队，在客服人员接入会话时，机器人客服针对消费者的问题，给客服人员建议回复。
+具体地说，在排队阶段，引导消费者问问题，借助<a href="https://docs.cskefu.com/products/chatbot-platform/index.html" target="_blank">Chatopera 机器人平台</a>，进行意图识别，如果意图匹配到了智能问答引擎中的对话，就启动多轮对话，完成服务；未匹配到多轮对话则继续排队，在客服人员接入会话时，机器人客服针对消费者的问题，给客服人员建议回复。
 
 **针对不同企业客户的需求，机器人客服的服务方式也可以调整，最主要的是，机器人客服可以利用多轮对话和知识库，提高用户满意度，提高效率，人工坐席专注于更加棘手的问题。**
 
@@ -59,7 +59,7 @@
 
 ## 计费和发票
 
-春松客服里机器人客服的收费标准，对于使用 [Chatopera 云服务](https://bot.chatopera.com/) 而言，参考 [《计费和发票》](https://docs.chatopera.com/products/chatbot-platform/billing.html)；同时，Chatopera 机器人平台可为企业客户私有部署，洽谈合作参考 [《联系我们》](https://www.chatopera.com/price.html)。
+春松客服里机器人客服的收费标准，对于使用 [Chatopera 云服务](https://bot.cskefu.com/) 而言，参考 [《计费和发票》](https://docs.cskefu.com/products/chatbot-platform/billing.html)；同时，Chatopera 机器人平台可为企业客户私有部署，洽谈合作参考 [《联系我们》](https://www.cskefu.com/price.html)。
 
 ## 知识库工具条
 

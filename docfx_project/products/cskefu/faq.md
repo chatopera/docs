@@ -24,7 +24,7 @@
 
 **问：多轮对话设计器和智能问答引擎发布至今，有相关的资料吗？**
 
-https://docs.chatopera.com/ 在文档中心有这两个产品的介绍。
+https://docs.cskefu.com/ 在文档中心有这两个产品的介绍。
 
 **问：如何部署？**
 
@@ -72,7 +72,7 @@ https://docs.chatopera.com/ 在文档中心有这两个产品的介绍。
 
 **问：这个智能机器人是免费的吗？我可以自己配置知识规则吗？**
 
-智能机器人收费，参考[文档](https://docs.chatopera.com/products/chatbot-platform/index.html)。
+智能机器人收费，参考[文档](https://docs.cskefu.com/products/chatbot-platform/index.html)。
 
 **问：VOIP 能关联吗？**
 
@@ -80,7 +80,7 @@ https://docs.chatopera.com/ 在文档中心有这两个产品的介绍。
 
 **问：有本地部署的教程文档吗？**
 
-[参考春松客服部署方案](https://docs.chatopera.com/products/cskefu/deploy.html)
+[参考春松客服部署方案](https://docs.cskefu.com/products/cskefu/deploy.html)
 
 **问：我想改成异步触发对话，后台重新输出了一下页面作用域里面的值，发现参数太多，web 通信时候调用得 socket.io.js 有没有相关的文档和参数解释？**
 
@@ -100,7 +100,7 @@ socketio 是对 websocket 进行封装，是 websocket 协议的一种实现，�
 
 **问：机器人自动回复模块在哪？**
 
-机器人客服参考[文档](https://docs.chatopera.com/products/cskefu/work-chatbot/index.html)。
+机器人客服参考[文档](https://docs.cskefu.com/products/cskefu/work-chatbot/index.html)。
 
 **问：多轮对话,看上去就是在编辑脚本,有对分支逻辑的支持吗?**
 
@@ -153,9 +153,9 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 
 **问：这个项目要怎么启动呢**
 
-- 服务器部署：https://docs.chatopera.com/products/cskefu/deploy.html
+- 服务器部署：https://docs.cskefu.com/products/cskefu/deploy.html
 
-- 开发环境搭建：https://docs.chatopera.com/products/cskefu/engineering.html
+- 开发环境搭建：https://docs.cskefu.com/products/cskefu/engineering.html
 
 ## 加入社区
 

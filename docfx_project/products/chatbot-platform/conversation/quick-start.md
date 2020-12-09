@@ -147,7 +147,7 @@
 
 ## 导出特定版本
 
-多轮对话设计器属于设计阶段，在机器人满足需求后，可以导出为对话应用 c66 文件，方便分发和部署。在生产环境，导入到<a href="https://docs.chatopera.com/products/chatbot-platform/index.html" target="_blank">Chatopera 机器人平台</a>中，作为多轮对话应用的运行时。
+多轮对话设计器属于设计阶段，在机器人满足需求后，可以导出为对话应用 c66 文件，方便分发和部署。在生产环境，导入到<a href="https://docs.cskefu.com/products/chatbot-platform/index.html" target="_blank">Chatopera 机器人平台</a>中，作为多轮对话应用的运行时。
 
 在“版本管理”界面，选择刚才发布的“1.0.1”的“导出”，可以选择一个路径存储该导出的文件，如图：
 

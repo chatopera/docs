@@ -1,10 +1,10 @@
 # Chatopera 云服务
 
-<a href="https://bot.chatopera.com" target="_blank">https://bot.chatopera.com</a>
+<a href="https://bot.cskefu.com" target="_blank">https://bot.cskefu.com</a>
 
 ## 概述
 
-[**Chatopera 云服务**](https://bot.chatopera.com/)是一站式实现聊天机器人的云服务，按接口调用次数计费。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**实例，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。在 SaaS 概念基础上，Chatopera 云服务又属于“聊天机器人即服务”的细分，面向互联网用户开放，聊天机器人开发者借助 [Chatopera 云服务](https://bot.chatopera.com)快速实现企业级的聊天机器人服务。
+[**Chatopera 云服务**](https://bot.cskefu.com/)是一站式实现聊天机器人的云服务，按接口调用次数计费。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**实例，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。在 SaaS 概念基础上，Chatopera 云服务又属于“聊天机器人即服务”的细分，面向互联网用户开放，聊天机器人开发者借助 [Chatopera 云服务](https://bot.cskefu.com)快速实现企业级的聊天机器人服务。
 
 ## 对话解决方案
 
@@ -42,7 +42,7 @@ Chatopera 云服务是企业级的服务，依托于 Chatopera 的 PaaS 服务�
 
 ## 产品更新日志
 
-查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0)相关内容。
+查看[Chatopera 产品更新日志](https://status.cskefu.com/tags?tag=%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0)相关内容。
 
 ## 私有部署
 
@@ -60,16 +60,16 @@ Chatopera 云服务是企业级的服务，依托于 Chatopera 的 PaaS 服务�
 
 <table class="image">
     <tr>
-        <td><img width="800" src="https://static-public.chatopera.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
+        <td><img width="800" src="https://static-public.cskefu.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
     </tr>
 </table>
 
-[【免费视频课程】《Chatopera 机器人平台使用指南》](http://ke.chatopera.com/course/2994143)
+[【免费视频课程】《Chatopera 机器人平台使用指南》](http://ke.cskefu.com/course/2994143)
 
 <p align="center">
-  <b><a href="http://ke.chatopera.com/course/2994143" target="_blank">上线聊天机器人！</a></b><br>
-  <a href="http://ke.chatopera.com/course/2994143" target="_blank">
-      <img src="https://static-public.chatopera.com/assets/images/202009-bot-ke-1.jpg" width="800">
+  <b><a href="http://ke.cskefu.com/course/2994143" target="_blank">上线聊天机器人！</a></b><br>
+  <a href="http://ke.cskefu.com/course/2994143" target="_blank">
+      <img src="https://static-public.cskefu.com/assets/images/202009-bot-ke-1.jpg" width="800">
   </a>
 </p>
 
@@ -137,7 +137,7 @@ Chatopera 云服务是企业级的服务，依托于 Chatopera 的 PaaS 服务�
 
 - 后续分享计划
 
-打开[课程](http://ke.chatopera.com/course/2994143)查看完整内容 ...
+打开[课程](http://ke.cskefu.com/course/2994143)查看完整内容 ...
 
 ## 评论
 

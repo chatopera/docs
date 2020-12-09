@@ -25,7 +25,7 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 
 <video controls="" poster="../../../images/products/faq/bot-edu-xiaozhshou-cover.png" >
   <source
-    src="https://static-public.chatopera.com/assets/videos/bot-edu/200908_01-2.1.mp4"
+    src="https://static-public.cskefu.com/assets/videos/bot-edu/200908_01-2.1.mp4"
     type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
   >
 </video>
@@ -44,7 +44,7 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 
 | 版本 | 操作系统             | 下载                                                                                                                                 |
 | ---- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| v1.4 | Windows 7 或更高版本 | <a href="https://static-public.chatopera.com/bot/xiaozhushou/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.4.msi" target="_blank">链接</a> |
+| v1.4 | Windows 7 或更高版本 | <a href="https://static-public.cskefu.com/bot/xiaozhushou/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.4.msi" target="_blank">链接</a> |
 
 在下载后，浏览器可能提示“这种类型的文件可能会损坏您的计算机”或者“Windows Defender SmartScreen 已组织启动一个未识别的应用。”，这时请点击“保留”及“更多信息”进行下一步。
 
@@ -53,7 +53,7 @@ Chatopera 知识库小助手（简称“小助手”）是面向企业的客户�
 <tr><td><img width="800" src="../../../images/products/assistant/2.png" alt="Windows提示"/></td></tr>
 </table>
 
-[查看 Chatopera 小助手历史版本](https://static-public.chatopera.com/bot/xiaozhushou/?sort=time&order=desc)。
+[查看 Chatopera 小助手历史版本](https://static-public.cskefu.com/bot/xiaozhushou/?sort=time&order=desc)。
 
 ### 配置
 
@@ -83,7 +83,7 @@ Secret 对应"密钥"
 
 安装完成后，可以在启动菜单和桌面看到“Chatopera 小助手”的快捷方式。
 
-已经具备了应用 ID 和密钥的用户跳过此步。作为团队组长/企业主管等角色使用或作为个人用途，可以通过注册<a href="https://bot.chatopera.com" target="_blank">Chatopera 云服务</a>，然后创建聊天机器人获得。
+已经具备了应用 ID 和密钥的用户跳过此步。作为团队组长/企业主管等角色使用或作为个人用途，可以通过注册<a href="https://bot.cskefu.com" target="_blank">Chatopera 云服务</a>，然后创建聊天机器人获得。
 
 <table class="image">
 <caption align="bottom">获得应用ID和密钥</caption>
