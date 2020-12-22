@@ -14,9 +14,9 @@ Chatbot(clientId, secret [, serviceProvider])
 
 | name            | type   | required | description                                                                                                                      |
 | --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.cskefu.com/dashboard)中获取                                                          |
+| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
 | secret          | string | &#10004; | 获取办法同上                                                                                                                     |
-| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.cskefu.com，也是默认值</font> |
+| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
 
 <h4><font color="purple">更多实例化例子</font></h4>
 
@@ -271,7 +271,7 @@ Chatbot#command("POST", "/faq/query", body)
 
 ### 检索意图识别
 
-意图识别是基于请求者的文本内容分析意图，然后基于意图追问意图槽位信息的对话，这部分的详细介绍参考[https://docs.cskefu.com/products/chatbot-platform/intent.html](/products/chatbot-platform/intent.html)，下面重点介绍在系统集成中，通过意图识别服务提供智能问答。
+意图识别是基于请求者的文本内容分析意图，然后基于意图追问意图槽位信息的对话，这部分的详细介绍参考[https://docs.chatopera.com/products/chatbot-platform/intent.html](/products/chatbot-platform/intent.html)，下面重点介绍在系统集成中，通过意图识别服务提供智能问答。
 
 #### 什么是“会话”
 

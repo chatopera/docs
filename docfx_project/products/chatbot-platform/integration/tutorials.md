@@ -13,7 +13,7 @@
 
 ## 直接使用
 
-[https://tc.cskefu.com/](https://tc.cskefu.com/)
+[https://tc.chatopera.com/](https://tc.chatopera.com/)
 
 或使用 Docker 启动实例
 

@@ -1,4 +1,4 @@
-本协议作用于*Chatopera 云服务付费用户*，即在 [Chatopera 云服务](https://bot.cskefu.com) 充值并发生扣款记录。
+本协议作用于*Chatopera 云服务付费用户*，即在 [Chatopera 云服务](https://bot.chatopera.com) 充值并发生扣款记录。
 
 # 服务水平协议
 
@@ -30,4 +30,4 @@
 
 ![](../../images/products/platform/complaint.jpg)
 
-2020 年 10 月 [北京华夏春松科技有限公司](https://www.cskefu.com/)
+2020 年 10 月 [北京华夏春松科技有限公司](https://www.chatopera.com/)

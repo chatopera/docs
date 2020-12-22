@@ -4,7 +4,7 @@
 
 <table class="image">
     <tr>
-        <td><img width="800" src="https://static-public.cskefu.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
+        <td><img width="800" src="https://static-public.chatopera.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
     </tr>
 </table>
 

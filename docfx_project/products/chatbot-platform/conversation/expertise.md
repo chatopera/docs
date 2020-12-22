@@ -6,7 +6,7 @@
 
 <video controls="" style="width:480px;height:400px" poster="../../images/products/platform/weather-bot-demo-cover.jpg" >
   <source
-    src="https://static-public.cskefu.com/bot/videos/weather-bot-demo.mp4"
+    src="https://static-public.chatopera.com/bot/videos/weather-bot-demo.mp4"
     type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
   >
 </video>
@@ -434,7 +434,7 @@ exports.getDresscodeByCity = function(city, cb){
 
 ## 导出机器人
 
-最终，我们需要得到一个“服务”，它能时刻被访问，以及和 AI 音箱集成。我们需要将天气机器人导出为对话应用，然后部署到<a href="https://docs.cskefu.com/chatbot-engine.html" target="_blank">智能问答引擎</a>。在主面板，点击**版本管理**，我们看到操作中有三项。
+最终，我们需要得到一个“服务”，它能时刻被访问，以及和 AI 音箱集成。我们需要将天气机器人导出为对话应用，然后部署到<a href="https://docs.chatopera.com/chatbot-engine.html" target="_blank">智能问答引擎</a>。在主面板，点击**版本管理**，我们看到操作中有三项。
 
 - 对比差异:在多个版本中比较差异，包括脚本和函数。
 

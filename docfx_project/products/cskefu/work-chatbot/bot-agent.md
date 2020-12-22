@@ -1,6 +1,6 @@
 ## 创建聊天机器人
 
-首先，创建聊天机器人，登录[Chatopera 云服务](https://bot.cskefu.com/)，注册并在【控制台】中创建聊天机器人。
+首先，创建聊天机器人，登录[Chatopera 云服务](https://bot.chatopera.com/)，注册并在【控制台】中创建聊天机器人。
 
 <p align="center">
   <b>创建聊天机器人</b><br>
@@ -41,8 +41,8 @@
 | 项目     | 值             | 描述                                                    |
 | -------- | -------------- | ------------------------------------------------------- |
 | 网站渠道 | localhost      | 根据网站地址选择网站渠道                                |
-| ClientId | xxx            | [Chatopera 云服务 ClientId](https://bot.cskefu.com/) |
-| Secret   | xxx            | [Chatopera 云服务 Secret](https://bot.cskefu.com/)   |
+| ClientId | xxx            | [Chatopera 云服务 ClientId](https://bot.chatopera.com/) |
+| Secret   | xxx            | [Chatopera 云服务 Secret](https://bot.chatopera.com/)   |
 | 工作模式 | 机器人客服优先 | 目前支持【机器人客服优先】或【人工客服优先】两种类型    |
 | 描述     | 机器人客服     | 对机器人的简要介绍                                      |
 
@@ -75,4 +75,4 @@ http[s]://春松客服IP[:PORT]/testclient.html
   <img src="../../../images/products/cc-bot-6.png" width="800">
 </p>
 
-如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.cskefu.com/chatbot-platform.html)的更多介绍。
+如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。

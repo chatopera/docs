@@ -32,7 +32,7 @@ hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 
 设置环境变量 `TONGJI_BAIDU_SITEKEY`，可以在 `.env` 文件或 `docker-compose.yml` 文件中添加，参考部署文档：
 
-https://docs.cskefu.com/products/cskefu/deploy.html
+https://docs.chatopera.com/products/cskefu/deploy.html
 
 ```
 TONGJI_BAIDU_SITEKEY=YOUR_SITE_KEY
@@ -71,7 +71,7 @@ docker-compose restart contact-center
 
 - 不设置环境变量不进行统计，该统计报告只开发者/企业在百度网站内能查看
 
-- 开发者/企业自行衡量和保护百度统计账号，因百度账号泄漏等原因造成企业/开发者财产损失，春松客服不承担任何责任，见[服务水平协议](https://docs.cskefu.com/products/cskefu/sla.html)。
+- 开发者/企业自行衡量和保护百度统计账号，因百度账号泄漏等原因造成企业/开发者财产损失，春松客服不承担任何责任，见[服务水平协议](https://docs.chatopera.com/products/cskefu/sla.html)。
 
 ## 评论
 

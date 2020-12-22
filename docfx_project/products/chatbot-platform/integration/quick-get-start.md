@@ -6,16 +6,16 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 ## 注册账号
 
-首先注册[Chatopera 云服务](https://bot.cskefu.com)的账号，如果您已经注册，直接进入下一步：创建机器人。
+首先注册[Chatopera 云服务](https://bot.chatopera.com)的账号，如果您已经注册，直接进入下一步：创建机器人。
 
 <table class="image">
-    <caption align="bottom">登陆 https://bot.cskefu.com</caption>
+    <caption align="bottom">登陆 https://bot.chatopera.com</caption>
     <tr>
         <td><img width="800" src="../../../images/platform/11.jpg" alt="" /></td>
     </tr>
 </table>
 
-点击“[立即使用](https://bot.cskefu.com)”，初次登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
+点击“[立即使用](https://bot.chatopera.com)”，初次登录输入“邮箱”和“密码”，点击“回车键”，完成账户创建。
 
 ## 创建机器人
 
@@ -31,7 +31,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 ## 导入知识库文件
 
-接着，导入一些示例数据到知识库，作为体验用途，下载知识库示例文件[chatopera_faq_samples.json](https://static-public.cskefu.com/bot/faq/chatopera_faq_samples.json)，保存文件名为*chatopera_faq_samples.json*。
+接着，导入一些示例数据到知识库，作为体验用途，下载知识库示例文件[chatopera_faq_samples.json](https://static-public.chatopera.com/bot/faq/chatopera_faq_samples.json)，保存文件名为*chatopera_faq_samples.json*。
 
 <p align="center">
   <b>知识库文件格式</b><br>
@@ -50,7 +50,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 <p align="center">
   <b>上传知识库文件</b><br>
-  <a href="http://bot.cskefu.com/" target="_blank">
+  <a href="http://bot.chatopera.com/" target="_blank">
       <img src="../../../images/platform/14.jpg" width="500">
   </a>
 </p>
@@ -63,7 +63,7 @@ SDK 的下载链接在上一节中介绍了，本节以[Node.js SDK](https://www
 
 <p align="center">
   <b>显示Secret</b><br>
-  <a href="http://bot.cskefu.com/" target="_blank">
+  <a href="http://bot.chatopera.com/" target="_blank">
       <img src="../../../images/platform/13.png" width="800">
   </a>
 </p>
@@ -85,9 +85,9 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 
 | name            | type   | required | description                                                                                                                      |
 | --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.cskefu.com/dashboard)中获取                                                          |
+| clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
 | secret          | string | &#10004; | 获取办法同上                                                                                                                     |
-| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.cskefu.com，也是默认值</font> |
+| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
 
 <!--  对号和差号， https://www.w3schools.com/charsets/ref_utf_dingbats.asp -->
 

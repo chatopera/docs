@@ -99,7 +99,7 @@ Chatopera 云服务支持微信支付和企业银行账号汇款，在控制台�
 
 ## 私有部署
 
-Chatopera 云服务是 Chatopera 机器人平台以“软件即服务(SaaS)”的方式提供给客户，同时企业可以获得 Chatopera 机器人平台以安装到企业的私有设备上，商定购买私有部署的版本，[联系我们](https://www.cskefu.com/mail.html)，私有部署版本只收取软件的商业授权证书费用，不按 API 请求量计费。
+Chatopera 云服务是 Chatopera 机器人平台以“软件即服务(SaaS)”的方式提供给客户，同时企业可以获得 Chatopera 机器人平台以安装到企业的私有设备上，商定购买私有部署的版本，[联系我们](https://www.chatopera.com/mail.html)，私有部署版本只收取软件的商业授权证书费用，不按 API 请求量计费。
 
 ## 评论
 
