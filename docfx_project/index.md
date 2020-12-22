@@ -59,7 +59,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。
 
-[官网](https://www.chatopera.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[客户案例](https://www.chatopera.com/customer.html)，[Chatopera 团队博客](https://blog.chatopera.com)，[产品更新日志](https://status.chatopera.com)。
+[官网](https://www.chatopera.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[客户案例](https://www.chatopera.com/customer.html)，[Chatopera 团队博客](https://chatopera.blog.csdn.net/)，[产品更新日志](https://status.chatopera.com)。
 
 Chatopera 微信公众号发布 Chatopera 动态、产品信息和新闻等信息。
 
