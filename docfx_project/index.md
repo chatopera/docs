@@ -6,11 +6,11 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ![](/images/products/trademark-chatopera.png)
 
-`Chatopera` 是[华夏春松](https://www.cskefu.com)的人工智能品牌和产品线。
+`Chatopera` 是[华夏春松](https://www.chatopera.com)的人工智能品牌和产品线。
 
 <video controls preload="none" autobuffer="false" poster="images/products/introduction-video-cover.jpg">
   <source
-    src="https://www.cskefu.com/files/introduction.webm"
+    src="https://www.chatopera.com/files/introduction.webm"
     type="video/webm"
   />
 </video>
@@ -39,7 +39,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ## 视频教程
 
-为了帮助产品用户使用产品，Chatopera 开通腾讯课堂，并采用直播、录播等形式，上架[视频教程](https://ke.cskefu.com/)，敬请关注！
+为了帮助产品用户使用产品，Chatopera 开通腾讯课堂，并采用直播、录播等形式，上架[视频教程](https://ke.chatopera.com/)，敬请关注！
 
 [Chatopera 机器人平台使用指南](https://ke.qq.com/course/2994143)
 
@@ -47,7 +47,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 [春松客服质量保证之系统测试](https://ke.qq.com/course/2261929)
 
-更多精彩内容，请查看 [Chatopera 视频教程](https://ke.cskefu.com)！
+更多精彩内容，请查看 [Chatopera 视频教程](https://ke.chatopera.com)！
 
 ## 客户服务
 
@@ -59,7 +59,7 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 北京华夏春松科技有限公司成立于 2018 年 6 月，本着诚信、创新和负责的价值观，为企业客户提供应用人工智能技术的解决方案。我们的愿景是让机器从事工作中重复、繁琐的部分，让机器更懂人，从而人可以去做更有价值的事情。
 
-[官网](https://www.cskefu.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[客户案例](https://www.cskefu.com/customer.html)，[Chatopera 团队博客](https://blog.cskefu.com)，[产品更新日志](https://status.cskefu.com)。
+[官网](https://www.chatopera.com/)，[价值观及愿景](https://pre-angel.com/chatopera-ceo-letter/)，[客户案例](https://www.chatopera.com/customer.html)，[Chatopera 团队博客](https://blog.chatopera.com)，[产品更新日志](https://status.chatopera.com)。
 
 Chatopera 微信公众号发布 Chatopera 动态、产品信息和新闻等信息。
 
