@@ -6,8 +6,10 @@
   href: initialization.md
 - name: 开源码社区
   href: opensource.md
-- name: 使用培训
+- name: 使用及定制
   href: training.md
+- name: 开发环境搭建
+  href: engineering.md
 - name: 账号和权限
   href: accounting.md
 - name: 客服工作台
@@ -29,8 +31,6 @@
   href: reports.md
 - name: REST APIs
   href: restapi.md
-- name: 开发环境搭建
-  href: engineering.md
 - name: 服务水平协议
   href: sla.md
 - name: FAQ
