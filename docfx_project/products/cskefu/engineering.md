@@ -281,6 +281,10 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 另外， **“调试”** 模式下，也支持断点调试。
 
+## 初始化系统
+
+启动调试服务，如果要定制化客服接待访客的代码，需要按照[系统初始化](/products/cskefu/initialization.html)文档做更多配置。
+
 ## 模拟访客端测试
 
 介绍如何测试网页端访客程序，假设服务是自动在本地 `http://localhost:8035` 端口。

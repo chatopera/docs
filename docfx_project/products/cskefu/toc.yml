@@ -2,6 +2,8 @@
   href: index.md
 - name: 应用部署
   href: deploy.md
+- name: 系统初始化
+  href: initialization.md
 - name: 开源码社区
   href: opensource.md
 - name: 使用培训

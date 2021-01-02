@@ -59,9 +59,6 @@ docker-compose pull                  # 拉取镜像
 docker-compose up -d contact-center  # 启动服务
 ```
 
-然后，从浏览器打开 http://YOUR_IP:CC_WEB_PORT/ 访问服务。
-默认管理员账号： admin 密码： admin1234
-
 ### 查看服务状态
 
 ```
@@ -73,6 +70,18 @@ docker-compose ps
 ```
 docker-compose logs -f contact-center
 ```
+
+### 登陆系统
+
+在日志中，查看到如下类似信息，代表服务已经启动。
+
+```
+INFO  c.c.socketio.SocketIOServer - SocketIO server started at port: 8036 [nioEventLoopGroup-2-1]
+INFO  com.chatopera.cc.Application - Started Application in 35.319 seconds (JVM running for 42.876) [main]
+```
+
+然后，从浏览器打开 http://YOUR_IP:CC_WEB_PORT/ 访问服务。
+默认管理员账号： admin 密码： admin1234
 
 ### 关闭服务
 
@@ -86,9 +95,11 @@ docker-compose down
 docker-compose restart
 ```
 
-## 配置 HTTPS
+## 下一步
 
-[私有部署配置 HTTPS](https://github.com/chatopera/cskefu/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
+- [系统初始化](/products/cskefu/initialization.html)
+
+- [私有部署配置 HTTPS](https://github.com/chatopera/cskefu/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
 
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
 
