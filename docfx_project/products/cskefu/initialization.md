@@ -26,6 +26,14 @@
 
 参考[账号管理](/products/cskefu/accounting.html#%E8%B4%A6%E5%8F%B7%E7%AE%A1%E7%90%86)，**创建账号后，将账号添加到组织机构和角色**。
 
+## 下一步
+
+[坐席工作台的使用注意事项](/products/cskefu/work.html)
+
+[创建网页聊天控件](https://docs.chatopera.com/products/cskefu/visitor-webim.html)
+
+[配置机器人客服](/products/cskefu/work-chatbot/index.html)
+
 ## 常见问题
 
 - [#378](https://github.com/chatopera/cskefu/issues/378) 访客打开网页聊天控件，提示等待
