@@ -4,7 +4,15 @@
 
 客服人员和消费者建立连接，并完成对话的聊天室，是客服系统的核心之一。参考以下内容，避免出现使用错误。
 
-客服人员状态设置的注意事项：
+<img width="800" src="../../images/products/cskefu/2-3.accout-n-permissions.jpg" alt="聊天室的状态" /></td>
+
+<td><img width="800" src="../../images/products/cskefu/2-3.accout-n-permissions-2.jpg" alt="聊天室的状态" />
+
+<img width="800" src="../../images/products/cskefu/2-3.accout-n-permissions-3.jpg" alt="聊天室的状态" />
+
+### 注意事项
+
+客服人员状态设置应注意以下事项：
 
 1. 登录后设定为“在线”，默认为“就绪置闲”。
 
