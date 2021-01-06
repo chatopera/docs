@@ -2,10 +2,9 @@
 
 简单定义：在一个相对集中的场所，由一批服务人员组成的服务机构．通常利用计算机通信技术，处理来自企业、顾客的电话垂询，尤其具备同时处理大量来话的能力，还具备主叫号码显示，可将来电自动分配给具备相应技能的人员处理，并能记录和储存所有来话信息。
 
-春松客服支持呼叫中心业务，但是需要企业额外采购语音网关和客服电话，其中，客服电话可以使用软电话，软电话有免费版本(比如
-YateClient，linephone，eyebeam)。
+## 语音网关
 
-- 语音网关
+春松客服支持呼叫中心业务，但是需要企业额外采购语音网关和客服电话。
 
 <table class="image">
     <caption align="bottom"></caption>
@@ -14,10 +13,10 @@ YateClient，linephone，eyebeam)。
     </tr>
 </table>
 
-- 软电话
+其中，客服电话可以使用网络电话软件，简称软电话，软电话有免费版本(比如 YateClient，linephone，eyebeam)。
 
 <table class="image">
-    <caption align="bottom"></caption>
+    <caption align="bottom">软电话示例</caption>
     <tr>
         <td><img width="300" src="../../images/products/cosin/Picture35.png" alt="" /></td>
     </tr>
@@ -155,6 +154,40 @@ YateClient，linephone，eyebeam)。
 (4) 呼叫中心坐席电话弹屏自动弹出，并且当前的客户信息已经自动填写在里面；
 
 (5) 挂断，更新数据，一键保存数据；
+
+## 报表数据
+
+报表数据展示呼叫中心任务和呼叫中心坐席的工作情况，汇总。
+
+### 任务列表
+
+_左侧菜单_ -> _外呼系统_ -> _任务列表_
+
+### 坐席报表
+
+_左侧菜单_ -> _外呼系统_ -> _坐席报表_
+
+### 外呼日报
+
+_左侧菜单_ -> _外呼系统_ -> _外呼日报_
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture72.png" alt="" /></td>
+    </tr>
+</table>
+
+### 通话记录
+
+_左侧菜单_ -> _外呼系统_ -> _通话记录_
+
+<table class="image">
+    <caption align="bottom"></caption>
+    <tr>
+        <td><img width="800" src="../../images/products/cosin/Picture73.png" alt="" /></td>
+    </tr>
+</table>
 
 ## 评论
 

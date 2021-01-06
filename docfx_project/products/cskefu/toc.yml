@@ -27,7 +27,7 @@
   href: callcenter.md
 - name: 页面统计
   href: usage.md
-- name: 数据报表
+- name: 会话历史
   href: reports.md
 - name: REST APIs
   href: restapi.md

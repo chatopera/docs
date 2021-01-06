@@ -1,34 +1,72 @@
-# 数据报表
+# 会话历史
 
-## 任务列表
+会话历史作为客服主管的运营工具，主要展示客服业务的数据和报表，同时也有一些数据是实时的，或通过时间选择器自定义时间段，形成数据分析和汇总。在[角色](https://docs.chatopera.com/products/cskefu/accounting.html)中，可以配置权限，指定登录用户的访问【会话历史】的权限。
 
-_左侧菜单_ -> _外呼系统_ -> _任务列表_
+## 历史会话
 
-## 坐席报表
+查看：左侧菜单 → 会话历史 → 历史会话
 
-_左侧菜单_ -> _外呼系统_ -> _坐席报表_
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-2-0.png" alt="" />
 
-## 外呼日报
+## 当前会话
 
-_左侧菜单_ -> _外呼系统_ -> _外呼日报_
+查看：左侧菜单 → 会话历史 → 当前会话
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture72.png" alt="" /></td>
-    </tr>
-</table>
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-7-59.png" alt="" />
 
-## 通话记录
+## 排队队列
 
-_左侧菜单_ -> _外呼系统_ -> _通话记录_
+查看：左侧菜单 → 会话历史 → 排队队列
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture73.png" alt="" /></td>
-    </tr>
-</table>
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-12-2.png" alt="" />
+
+## 访客留言
+
+查看：左侧菜单 → 会话历史 → 访客留言
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-17-16.png" alt="" />
+
+## 满意度统计
+
+查看：左侧菜单 → 统计功能 → 满意度统计
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-19-58.png" alt="" />
+
+## 客服坐席
+
+查看：左侧菜单 → 统计功能 → 客服坐席
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-23-2.png" alt="" />
+
+## 服务小结
+
+查看：左侧菜单 → 服务小结 → 多媒体客服
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-27-10.png" alt="" />
+
+## 已处理服务小结
+
+查看：左侧菜单 → 服务小结 → 已处理多媒体客服
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-29-59.png" alt="" />
+
+## 满意度评价
+
+查看：左侧菜单 → 满意度评价 → 在线客服
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-32-12.png" alt="" />
+
+## 在线坐席
+
+查看：左侧菜单 → 坐席信息 → 在线坐席
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-37-25.png" alt="" />
+
+## 全部坐席
+
+查看：左侧菜单 → 坐席信息 → 全部坐席
+
+<img width="800" src="../../images/products/cskefu/image2019-11-19_16-39-57.png" alt="" />
 
 ## 评论
 
