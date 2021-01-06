@@ -1,6 +1,6 @@
 # FAQ
 
-以下总结春松客服的大家关心的常问问题，是基于企业客户/开发者的咨询整理而来。
+以下总结[春松客服](/products/cskefu/index.html)的大家关心的常问问题，是基于企业客户/开发者的咨询整理而来。
 
 ## 问答列表
 
@@ -156,15 +156,6 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 - 服务器部署：https://docs.chatopera.com/products/cskefu/deploy.html
 
 - 开发环境搭建：https://docs.chatopera.com/products/cskefu/engineering.html
-
-## 加入社区
-
-作为开发者、企业用户，如何有效的搭建、使用春松客服开源版？春松客服团队进行有限程度免费支持，加入 QQ 群即刻融入春松客服开源社区。
-
-<p align="center">
-  <b>春松客服QQ交流群：185659917， <a href="https://jq.qq.com/?_wv=1027&k=5I1cJLP" target="_blank">点击链接加入群聊</a></b><br>
-  <img src="../../images/products/cosin/g1.jpg" width="200">
-</p>
 
 ## 评论
 

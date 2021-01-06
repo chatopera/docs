@@ -68,6 +68,14 @@
 
 <img width="800" src="../../images/products/cskefu/image2019-11-19_16-39-57.png" alt="" />
 
+## 常见问题
+
+### [GH-395](https://github.com/chatopera/cskefu/issues/395)
+
+**问题** 历史会话不显示数据
+
+**解决方案** 需要在网站渠道中启用技能组模式，并绑定单一技能组。
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
