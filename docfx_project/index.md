@@ -21,7 +21,9 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ## 云服务
 
-[Chatopera 机器人平台](/products/chatbot-platform/index.html)的云服务，定制聊天机器人，面向聊天机器人开发者、开发商。Chatopera 云服务对中小型企业非常友好，按需消费，一站式帮助企业上线智能对话机器人。Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
+开发者或企业使用 [Chatopera 云服务](https://bot.chatopera.com)定制聊天机器人，Chatopera 云服务是[Chatopera 机器人平台](/products/chatbot-platform/index.html)的公有云实例。Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
+
+Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
 
 语言方面，Chatopera 的产品支持**中文简体**，**中文繁体**，**英语**和**泰语**的智能对话机器人。
 
