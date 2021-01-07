@@ -4,11 +4,11 @@
 
 ## 概述
 
-[**Chatopera 云服务**](https://bot.chatopera.com/)是一站式实现聊天机器人的云服务，按接口调用次数计费。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**实例，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。在 SaaS 概念基础上，Chatopera 云服务又属于“聊天机器人即服务”的细分，面向互联网用户开放，聊天机器人开发者借助 [Chatopera 云服务](https://bot.chatopera.com)快速实现企业级的聊天机器人服务。
+[Chatopera 机器人平台](/products/chatbot-platform/index.html)的云服务，定制聊天机器人，面向聊天机器人开发者、开发商。Chatopera 云服务对中小型企业非常友好，按需消费，一站式帮助企业上线智能对话机器人。Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
 
 ## 对话解决方案
 
-目前实现聊天机器人的解决方案中，尤其是满足企业用户需求，有如下常见形式：
+Chatopera 融合了不同形式的实现聊天机器人的方法，从而满足企业各种需求，管理对话机器人对话内容。
 
 ### 基于脚本规则
 
@@ -34,11 +34,11 @@
 | [知识库](/products/chatbot-platform/faq/index.html)            | 知识库问答 | 内置的检索模型，基于大数据训练，完善的问答对管理和词典管理            |
 | [意图识别](/products/chatbot-platform/intent.html)             | 意图识别   | 高性能算法，在线标注和训练，小规模数据量训练                          |
 
-每个模块有其最适合的应用场景，用来满足不同需求，请查看对应文档。开发者可通过[系统集成](/products/chatbot-platform/integration/index.html)将不同模块组合使用，定制化开发智能问答服务。
+每个模块有其最适合的应用场景，用来满足不同需求，请查看对应文档。开发者可通过[系统集成](/products/chatbot-platform/integration/index.html)将不同模块组合使用，定制化开发智能对话机器人，可以说，Chatopera 机器人平台是强大的对话内容管理工具。
 
 ## 可靠性保证
 
-Chatopera 云服务是企业级的服务，依托于 Chatopera 的 PaaS 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性，浏览[技术支持](/products/chatbot-platform/support.html)信息。
+Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a Service 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性，浏览[技术支持](/products/chatbot-platform/support.html)信息。
 
 ## 产品更新日志
 
