@@ -137,7 +137,7 @@
     <td>00:45:51</td>
   </tr>
   <tr>
-    <td><a href="https://ke.qq.com/webcourse/index.html#cid=464050&term_id=100555327&taid=4785611475457202&type=1024&vid=5285890797257385985">春松机器人客服插件解读</a></td>
+    <td><a href="https://ke.qq.com/webcourse/index.html#cid=464050&term_id=100555327&taid=4785607180489906&type=1024&vid=5285890797257416124">春松机器人客服插件解读</a></td>
     <td>00:41:20</td>
   </tr>
   <tr>
