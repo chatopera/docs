@@ -13,7 +13,7 @@
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture34.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture34.png" alt="" /></td>
     </tr>
 </table>
 
@@ -22,7 +22,7 @@
 <table class="image">
     <caption align="bottom">软电话示例</caption>
     <tr>
-        <td><img width="300" src="../../images/products/cosin/Picture35.png" alt="" /></td>
+        <td><img width="300" src="../../../images/products/cosin/Picture35.png" alt="" /></td>
     </tr>
 </table>
 
@@ -41,7 +41,7 @@
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture43.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture43.png" alt="" /></td>
     </tr>
 </table>
 
@@ -90,7 +90,7 @@
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture44.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture44.png" alt="" /></td>
     </tr>
 </table>
 
@@ -117,7 +117,7 @@
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture51.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture51.png" alt="" /></td>
     </tr>
 </table>
 
@@ -126,7 +126,7 @@
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture48.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture48.png" alt="" /></td>
     </tr>
 </table>
 
@@ -145,7 +145,7 @@
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture55.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture55.png" alt="" /></td>
     </tr>
 </table>
 
@@ -178,7 +178,7 @@ _左侧菜单_ -> _外呼系统_ -> _外呼日报_
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture72.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture72.png" alt="" /></td>
     </tr>
 </table>
 
@@ -189,7 +189,7 @@ _左侧菜单_ -> _外呼系统_ -> _通话记录_
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture73.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/cosin/Picture73.png" alt="" /></td>
     </tr>
 </table>
 

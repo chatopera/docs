@@ -30,7 +30,7 @@
 
 [坐席工作台的使用注意事项](/products/cskefu/work.html)
 
-[创建网页聊天控件](https://docs.chatopera.com/products/cskefu/visitor-webim.html)
+[创建网页聊天控件](https://docs.chatopera.com/products/cskefu/channels/webim.html)
 
 [配置机器人客服](/products/cskefu/work-chatbot/index.html)
 

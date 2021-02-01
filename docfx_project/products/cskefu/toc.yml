@@ -16,8 +16,9 @@
   href: work.md
 - name: 客户关系管理
   href: crm.md
-- name: 网页聊天控件
-  href: visitor-webim.md
+- name: 渠道管理
+  href: channels/toc.yml
+  topicHref: channels/index.md
 - name: 坐席监控
   href: monitoring.md
 - name: 机器人客服
