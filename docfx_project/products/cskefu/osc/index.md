@@ -1,4 +1,4 @@
-# 开源码社区
+# 开发者社区
 
 [![Docker Layers](https://images.microbadger.com/badges/image/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own image badge on microbadger.com") [![Docker Version](https://images.microbadger.com/badges/version/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own version badge on microbadger.com") [![Docker Pulls](https://img.shields.io/docker/pulls/chatopera/contact-center.svg)](https://hub.docker.com/r/chatopera/contact-center/) [![Docker Stars](https://img.shields.io/docker/stars/chatopera/contact-center.svg)](https://hub.docker.com/r/chatopera/contact-center/) [![Docker Commit](https://images.microbadger.com/badges/commit/chatopera/contact-center:develop.svg)](https://microbadger.com/images/chatopera/contact-center:develop "Get your own commit badge on microbadger.com")
 
@@ -25,7 +25,7 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
 
 <p align="center">
     <b>Chatopera拥抱开源</b>
-    <img width="800" src="../../images/products/chatopera_love_os.png" alt="Chatopera拥抱开源" />
+    <img width="800" src="../../../images/products/chatopera_love_os.png" alt="Chatopera拥抱开源" />
 </p>
 
 ## 为我点赞
@@ -34,7 +34,7 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
 
 <p align="center">
     <b>点赞春松客服</b>
-    <img width="800" src="../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
+    <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
 
 ## 寻找开发者

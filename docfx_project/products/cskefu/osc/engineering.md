@@ -1,6 +1,6 @@
 # 开发环境搭建
 
-本文介绍如何完成春松客服开发环境的搭建，面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](/products/cskefu/training.html)。
+本文介绍如何完成春松客服开发环境的搭建，面向企业/开发者提供关于春松客服二次开发的相关知识，从入门到掌握全部开发技能请学习[《春松客服大讲堂》](/products/cskefu/osc/training.html)。
 
 ## 依赖
 
@@ -110,7 +110,7 @@ docker-compose up -d mysql
 连接 MySQL 服务
 
 <p align="center">
-<img width="500" src="../../images/products/cosin/g7.png" alt="" />
+<img width="500" src="../../../images/products/cosin/g7.png" alt="" />
 </p>
 
 使用`docker-compose`启动的服务
@@ -124,7 +124,7 @@ docker-compose up -d mysql
 在线浏览[数据字典](https://chatopera.github.io/cskefu/)
 
 <p align="center">
-<img width="600" src="../../images/products/cosin/g8.png" alt="" />
+<img width="600" src="../../../images/products/cosin/g8.png" alt="" />
 </p>
 
 ### Redis
@@ -149,7 +149,7 @@ Redis 启动后就可以，不需要其他操作。
 文件目录介绍
 
 <p align="center">
-<img width="200" src="../../images/products/cosin/g9.png" alt="" />
+<img width="200" src="../../../images/products/cosin/g9.png" alt="" />
 </p>
 
 | 目录     | 说明                         |
@@ -242,25 +242,25 @@ SPRING_DATASOURCE_PASSWORD=123456
 配置运行方式为 Spring，应用为 `com.chatopera.cc.app.Application`
 
 <p align="center">
-<img width="800" src="../../images/products/cosin/g10.png" alt="" />
+<img width="800" src="../../../images/products/cosin/g10.png" alt="" />
 </p>
 
 ### 配置环境变量
 
 <p align="center">
-<img width="400" src="../../images/products/cosin/g11.png" alt="" />
+<img width="400" src="../../../images/products/cosin/g11.png" alt="" />
 </p>
 
 ### 运行及调试
 
 <p align="center">
-<img width="500" src="../../images/products/cosin/g12.png" alt="" />
+<img width="500" src="../../../images/products/cosin/g12.png" alt="" />
 </p>
 
 点击"执行"或"调试"，服务启动，然后访问 http://localhost:8035 确定服务正常运行了。
 
 <p align="center">
-<img width="500" src="../../images/products/cosin/g13.png" alt="" />
+<img width="500" src="../../../images/products/cosin/g13.png" alt="" />
 </p>
 
 **用户名**：admin **密码**：admin1234
@@ -270,13 +270,13 @@ SPRING_DATASOURCE_PASSWORD=123456
 在开发过程中，修改了代码，更新正在以 **“调试”** 模式运行服务，点击"执行旁边的锤子"。
 
 <p align="center">
-<img width="500" src="../../images/products/cosin/g14.png" alt="" />
+<img width="500" src="../../../images/products/cosin/g14.png" alt="" />
 </p>
 
 更新成功后，提示
 
 <p align="center">
-<img width="300" src="../../images/products/cosin/g15.png" alt="" />
+<img width="300" src="../../../images/products/cosin/g15.png" alt="" />
 </p>
 
 另外， **“调试”** 模式下，也支持断点调试。
@@ -300,7 +300,7 @@ http://localhost:8035/
 保证有下面的一条网站渠道：
 
 <p align="center">
-<img width="800" src="../../images/products/cosin/g19.png" alt="" />
+<img width="800" src="../../../images/products/cosin/g19.png" alt="" />
 </p>
 
 **注意**：网站地址为 _localhost_
@@ -310,13 +310,13 @@ http://localhost:8035/
 在网站列表中，从右侧操作中点击“设计”。
 
 <p align="center">
-<img width="800" src="../../images/products/cosin/g20.png" alt="" />
+<img width="800" src="../../../images/products/cosin/g20.png" alt="" />
 </p>
 
 按照需求配置各种属性。
 
 <p align="center">
-<img width="800" src="../../images/products/cosin/g21.png" alt="" />
+<img width="800" src="../../../images/products/cosin/g21.png" alt="" />
 </p>
 
 ### 访问测试程序
@@ -328,7 +328,7 @@ http://localhost:8035/testclient.html
 ```
 
 <p align="center">
-<img width="800" src="../../images/products/cosin/g22.png" alt="" />
+<img width="800" src="../../../images/products/cosin/g22.png" alt="" />
 </p>
 
 ### 网站留言

@@ -42,7 +42,7 @@
 
 **问：有没有 java 项目可以直接导入 idea？**
 
-[开发环境搭建](/products/cskefu/engineering.html)
+[开发环境搭建](/products/cskefu/osc/engineering.html)
 
 **问：为啥我这里客服没有管理员权限就看不到对话？**
 
@@ -118,7 +118,7 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 
 - 服务器部署：https://docs.chatopera.com/products/cskefu/deploy.html
 
-- 开发环境搭建：https://docs.chatopera.com/products/cskefu/engineering.html
+- 开发环境搭建：https://docs.chatopera.com/products/cskefu/osc/engineering.html
 
 ## 评论
 
