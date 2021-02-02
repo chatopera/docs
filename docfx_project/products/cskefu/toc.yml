@@ -25,8 +25,6 @@
   href: reports.md
 - name: 访问统计
   href: usage.md
-- name: REST APIs
-  href: restapi.md
 - name: 服务水平协议
   href: sla.md
 - name: FAQ
