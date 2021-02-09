@@ -4,33 +4,27 @@
   href: deploy.md
 - name: 系统初始化
   href: initialization.md
-- name: 开源码社区
-  href: opensource.md
-- name: 春松客服大讲堂
-  href: training.md
-- name: 开发环境搭建
-  href: engineering.md
+- name: 开发者社区
+  href: osc/toc.yml
+  topicHref: osc/index.md
 - name: 账号和权限
   href: accounting.md
-- name: 客服工作台
+- name: 坐席工作台
   href: work.md
 - name: 客户关系管理
   href: crm.md
-- name: 网页聊天控件
-  href: visitor-webim.md
+- name: 渠道管理
+  href: channels/toc.yml
+  topicHref: channels/index.md
 - name: 坐席监控
   href: monitoring.md
 - name: 机器人客服
   href: work-chatbot/toc.yml
   topicHref: work-chatbot/index.md
-- name: 呼叫中心
-  href: callcenter.md
-- name: 页面统计
-  href: usage.md
-- name: 数据报表
+- name: 会话历史
   href: reports.md
-- name: REST APIs
-  href: restapi.md
+- name: 访问统计
+  href: usage.md
 - name: 服务水平协议
   href: sla.md
 - name: FAQ

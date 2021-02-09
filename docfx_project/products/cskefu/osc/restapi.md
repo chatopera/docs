@@ -19,7 +19,7 @@
 打开 Postman，执行导入
 
 <p align="center">
-<img width="600" src="../../images/products/cosin/g16.png" alt="" />
+<img width="600" src="../../../images/products/cosin/g16.png" alt="" />
 </p>
 
 每个 API 在 Postman 中都有`Path`，`Body`，`Headers`等的设置，可查看示例和发送请求，对于开发人员来说非常友好。
@@ -29,7 +29,7 @@
 导入 collection 文件后，从左侧找到 **Chatopera_cc_v1**
 
 <p align="center">
-<img width="600" src="../../images/products/cosin/g17.png" alt="" />
+<img width="600" src="../../../images/products/cosin/g17.png" alt="" />
 </p>
 
 认证接口：
@@ -53,7 +53,7 @@ POST http://IP:PORT/tokens?username=USERNAME&password=PASSWORD
 在请求其它 API 时，在 header 中设置`authorization`为 Auth token 就可以，如下：
 
 <p align="center">
-<img width="600" src="../../images/products/cosin/g18.png" alt="" />
+<img width="600" src="../../../images/products/cosin/g18.png" alt="" />
 </p>
 
 部分接口：
