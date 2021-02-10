@@ -30,7 +30,7 @@ Messenger 插件为付费插件，交付形式有两种，源码安装和使用 
 使用 Docker 镜像，由春松客服官方提供安装好 Messenger 插件的春松客服镜像。
 
 ### 购买指南
-春松客服企业服务业务洽谈：https://www.chatopera.com/price.html
+春松客服企业服务业务洽谈：[https://www.chatopera.com/price.html](https://www.chatopera.com/price.html)
 
 ## 了解 Messenger 的强大功能
 首先，出海企业要获客，或者通过互联网方式提供服务，那么 Facebook 上的广告和 Messenger 服务，是您无论如何都要使用的，因为你可以从这里找到您的目标客户、潜在客户。但是，如果 Facebook 平台的商业化程度过高，将影响社交网络内用户的体验，比如用户收到和自己不相关、不感兴趣的、大量的广告。为此 Facebook 在广告和 Messenger 上，有很多设计、一些限制，达到了商业化和人们社交需求的平衡，这是 Facebook 能成为今天世界上最大的社交网络的关键原因之一。
@@ -50,15 +50,16 @@ Messenger 插件为付费插件，交付形式有两种，源码安装和使用 
 
 | 准备工作 | 描述 | 网址 | 
 | --- | --- | --- |
-| 注册 Facebook 账号 | 创建 Messenger 应用，Facebook Page 页，测试 BOT 等需要准备 Facebook 账号 | 	https://facebook.com/ |
-| 注册 Chatopera 云服务账号 | 创建机器人客服需要使用 Chatopera 云服务 | https://bot.chatopera.com/ |
-| 部署春松客服实例 | 春松客服实例需要安装有 Messenger 插件 | https://docs.chatopera.com/products/cskefu/deploy.html |
-| 初始化春松客服 | 使用超级管理员创建组织机构，技能组，坐席角色和一个坐席账号，将账号绑定到坐席角色和技能组 | https://docs.chatopera.com/products/cskefu/initialization.html | 
+| 注册 Facebook 账号 | 创建 Messenger 应用，Facebook Page 页，测试 BOT 等需要准备 Facebook 账号 | 	[link](https://facebook.com/) |
+| 注册 Chatopera 云服务账号 | 创建机器人客服需要使用 Chatopera 云服务 | 	[link](https://bot.chatopera.com/)  |
+| 部署春松客服实例 | 春松客服实例需要安装有 Messenger 插件 | 	[link](https://docs.chatopera.com/products/cskefu/deploy.html)  |
+| 初始化春松客服 | 使用超级管理员创建组织机构，技能组，坐席角色和一个坐席账号，将账号绑定到坐席角色和技能组 | 	[link](https://docs.chatopera.com/products/cskefu/initialization.html)  | 
 		
 		
 在配置的过程中，还需要开通额外的账号或资源，是以以上为基础的。
 
 ## 集成 Messenger 渠道
+
 安装好春松客服 Messenger 插件后，系统管理员登录，只有系统管理员或超级系统管理员【admin】可以维护 Facebook Messenger 渠道。
 
 ### Messenger 渠道管理
