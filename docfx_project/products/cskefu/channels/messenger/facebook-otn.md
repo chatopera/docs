@@ -9,7 +9,7 @@ OTN 消息是 Facebook 渠道一次性通知（OTN，One-time Notification）消
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-6_0-12-8.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-6_0-12-8.png" alt="" /></td>
     </tr>
 </table>
 
@@ -25,7 +25,7 @@ OTN 消息是 Facebook 渠道一次性通知（OTN，One-time Notification）消
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-3-7.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-3-7.png" alt="" /></td>
     </tr>
 </table>
 
@@ -39,7 +39,7 @@ OTN 消息是 Facebook 渠道一次性通知（OTN，One-time Notification）消
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-4_14-30-15.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-4_14-30-15.png" alt="" /></td>
     </tr>
 </table>
 
@@ -48,7 +48,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-8-24.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-8-24.png" alt="" /></td>
     </tr>
 </table>
 
@@ -77,7 +77,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-4_23-59-8.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-4_23-59-8.png" alt="" /></td>
     </tr>
 </table>
 
@@ -92,7 +92,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021210-18470.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021210-18470.png" alt="" /></td>
     </tr>
 </table>
 
@@ -101,7 +101,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_0-0-35.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_0-0-35.png" alt="" /></td>
     </tr>
 </table>
 
@@ -111,7 +111,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_0-6-56.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_0-6-56.png" alt="" /></td>
     </tr>
 </table>
 
@@ -120,7 +120,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-23-19.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-23-19.png" alt="" /></td>
     </tr>
 </table>
 
@@ -130,7 +130,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-45-39.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-45-39.png" alt="" /></td>
     </tr>
 </table>
 
@@ -152,7 +152,7 @@ OTN 列表页“订阅”一列显示此 OTN 订阅人数，订阅的用户都�
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-35-16.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-35-16.png" alt="" /></td>
     </tr>
 </table>
 
@@ -162,7 +162,7 @@ OTN 列表页“订阅”一列显示此 OTN 订阅人数，订阅的用户都�
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-5_10-9-5.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_10-9-5.png" alt="" /></td>
     </tr>
 </table>
 
