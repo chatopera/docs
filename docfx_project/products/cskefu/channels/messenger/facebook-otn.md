@@ -2,9 +2,25 @@
 
 ## 什么是 OTN 消息
 
-OTN 消息是 Facebook 渠道一次性通知（OTN，One-time Notification）消息，当用户点击“通知我/Notify Me”后，您将获得用户明确的许可，在获得用户的许可后，您将可以在一年的许可有效期内任意时间向用户发送一条任意形式的消息（营销/非营销消息），将不受24小时规则的限制。
+OTN 消息是 Facebook 平台提供的 Facebook 主页可以向粉丝主动推送消息的工具。粉丝有权利订阅，订阅后 Facebook 主页管理员推送通知消息时，不受24小时规则限制，可以是营销或非营销消息。
 
-下图为 Facebook 官方给出的一个 OTN 使用案例：
+OTN 是 One-time Notification 的缩写。
+
+> TBD 使用流程图
+
+整个 OTN 使用流程可分为三步：
+
+1、管理员在春松客服“营销中心”创建 OTN 记录，生成**活动链接**；
+
+2、运营人员发布**活动链接**到 Facebook Page 页面或其它渠道；
+
+3、消费者或访客点击**活动链接**后订阅 OTN 通知，即**活动链接**页面的“通知我”按钮；
+
+4、管理员可以通过手动触发或自动发送的方式，向订阅的访客发送 OTN 通知，即创建 OTN 记录时表单的内容。
+
+使用 OTN 的关键在于掌握：**OTN 创建表单**，在推广活动时使用**活动链接**和**发送 OTN 通知**。
+
+下图为 Facebook 官方给出的一个 OTN 通知在访客端的样例：
 
 <table class="image">
     <caption align="bottom"></caption>
@@ -13,11 +29,6 @@ OTN 消息是 Facebook 渠道一次性通知（OTN，One-time Notification）消
     </tr>
 </table>
 
-整个 OTN 使用流程可分为三步：
-
-* 1）我们通过 Messenger 向用户发送 OTN 消息，OTN 消息可在春松客服“营销中心”进行配置；
-* 2）当用户点击 OTN 消息中的“通知我/Notify Me”后，即给予您明确的许可，允许您在未来某个时间向他发送一次通知，也等同于“订阅了 OTN 推送”。
-* 3）当您收到用户给予的许可后，您可以在一年的许可有效期内任意时间向用户发送一次性通知（OTN，One-time Notification）。
 
 ## 开通 Facebook Page 的 OTN 权限
 根据 Facebook 的规定，您首先需要为您的 Page 开通 OTN 权限。如下图所示，在 Page 中按照：设定→ 進階訊息→ 要求的功能→ 一次性通知 的路径为您的 Page 申请 OTN 权限。
