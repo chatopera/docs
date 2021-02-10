@@ -8,17 +8,17 @@ OTN 是 One-time Notification 的缩写。
 
 > TBD 使用流程图
 
-整个 OTN 使用流程可分为三步：
+整个 OTN 使用流程可分为四步：
 
-1、管理员在春松客服“营销中心”创建 OTN 记录，生成**活动链接**；
+1、管理员在春松客服“营销中心”创建 OTN 记录，生成**分享链接**；
 
-2、运营人员发布**活动链接**到 Facebook Page 页面或其它渠道；
+2、运营人员发布**分享链接**到 Facebook Page 页面或其它渠道；
 
-3、消费者或访客点击**活动链接**后订阅 OTN 通知，即**活动链接**页面的“通知我”按钮；
+3、消费者或访客点击**分享链接**后订阅 OTN 通知，即**分享链接**页面的“通知我”按钮；
 
 4、管理员可以通过手动触发或自动发送的方式，向订阅的访客发送 OTN 通知，即创建 OTN 记录时表单的内容。
 
-使用 OTN 的关键在于掌握：**OTN 创建表单**，在推广活动时使用**活动链接**和**发送 OTN 通知**。
+使用 OTN 的关键在于掌握：**OTN 创建表单**，在推广活动时使用**分享链接**和**发送 OTN 通知**。
 
 下图为 Facebook 官方给出的一个 OTN 通知在访客端的样例：
 
@@ -59,7 +59,7 @@ OTN 表单内容。
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-8-24.png" alt="" /></td>
+        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_19-31-55.png" alt="" /></td>
     </tr>
 </table>
 
@@ -73,7 +73,7 @@ OTN 表单内容。
 
 ### 获得分享链接
 
-创建 OTN 后，可以在 OTN 管理列表中，找到对应项的【活动链接】，点击【复制】。
+创建 OTN 后，可以在 OTN 管理列表中，找到对应项的【分享链接】，点击【复制】。
 
 **那么，接下来，您就可以发布推文（Post），并且在推文中增加该链接，Facebook 用户在浏览推文，如果感兴趣就点击该链接，完成订阅！**
 
@@ -116,8 +116,8 @@ OTN 表单内容。
     </tr>
 </table>
 
-## 营销人员发布活动链接到 Facebook 主页
-第一步：营销人员复制 Messenger OTN 列表中的活动链接
+## 营销人员发布分享链接到 Facebook 主页
+第一步：营销人员复制 Messenger OTN 列表中的分享链接
 
 <table class="image">
     <caption align="bottom"></caption>
@@ -126,7 +126,7 @@ OTN 表单内容。
     </tr>
 </table>
 
-第二步：进入 Facebook 主页页面，建立贴文；帖文中加上活动链接，然后发布
+第二步：进入 Facebook 主页页面，建立贴文；帖文中加上分享链接，然后发布
 
 <table class="image">
     <caption align="bottom"></caption>
@@ -136,7 +136,7 @@ OTN 表单内容。
 </table>
 
 ## Facebook 渠道用户订阅 OTN 消息
-用户在 Facebook page 页面，点击活动链接，进入对话窗口后点击：通知我/Notify Me
+用户在 Facebook page 页面，点击分享链接，进入对话窗口后点击：通知我/Notify Me
 
 <table class="image">
     <caption align="bottom"></caption>
