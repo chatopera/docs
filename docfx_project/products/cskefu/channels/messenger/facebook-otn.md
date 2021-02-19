@@ -6,12 +6,7 @@ OTN 消息是 Facebook 平台提供的 Facebook 主页可以向粉丝主动推�
 
 OTN 是 One-time Notification 的缩写。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image-2021-02-19-120353.png" alt="" /></td>
-    </tr>
-</table>
+![](../../../../images/products/cskefu/messenger/image-2021-02-19-120353.png)
 
 
 整个 OTN 使用流程可分为四步：
