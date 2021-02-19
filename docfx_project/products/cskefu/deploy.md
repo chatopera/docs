@@ -24,10 +24,12 @@
 ## 克隆代码
 
 ```
-git clone https://github.com/chatopera/cskefu.git cskefu
-cd cskefu
+git clone https://github.com/chatopera/cskefu.git cskefu.osc
+cd cskefu.osc
 cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
 ```
+
+> osc 为 OpenSource Community 缩写，代表春松客服开源版本分支。
 
 ## 配置项
 
@@ -54,7 +56,7 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 ### 启动服务
 
 ```
-cd cskefu                             # 进入下载后的文件夹
+cd cskefu.osc                        # 进入下载后的文件夹
 docker-compose pull                  # 拉取镜像
 docker-compose up -d contact-center  # 启动服务
 ```

@@ -47,7 +47,7 @@
 ## 下载代码
 
 ```
-git clone https://github.com/chatopera/cskefu.git cskefu
+git clone https://github.com/chatopera/cskefu.git cskefu.osc
 # 默认为 osc 分支
 ```
 
@@ -62,7 +62,7 @@ git clone https://github.com/chatopera/cskefu.git cskefu
 春松客服依赖 Elasticsearch 服务，如果没有 Elasticsearch 服务，可以用下面的方式创建。
 
 ```
-cd cskefu
+cd cskefu.osc
 docker-compose up -d elasticsearch
 ```
 
@@ -80,7 +80,7 @@ spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
 春松客服依赖 ActiveMQ 服务，如果没有 ActiveMQ 服务，可以用下面的方式创建。
 
 ```
-cd cskefu
+cd cskefu.osc
 docker-compose up -d activemq
 ```
 
@@ -101,7 +101,7 @@ spring.activemq.pool.max-connections=50
 春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
 
 ```
-cd cskefu
+cd cskefu.osc
 docker-compose up -d mysql
 ```
 
@@ -166,7 +166,7 @@ Redis 启动后就可以，不需要其他操作。
 春松客服团队使用[IntelliJ IDEA](https://www.jetbrains.com/idea/)作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
 
 ```
-cd cskefu
+cd cskefu.osc
 ./admin/gen-idea.sh
 ```
 
@@ -175,7 +175,7 @@ cd cskefu
 春松客服是基于 [Spring Boot Release 1.5.9](https://spring.io/blog/2017/11/28/spring-boot-1-5-9-available-now) 开发，配置文件是
 
 ```
-cskefu/contact-center/app/src/main/resources/application.properties
+cskefu.osc/contact-center/app/src/main/resources/application.properties
 ```
 
 数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：1）使用 application-dev.properties；2）使用环境变量。
