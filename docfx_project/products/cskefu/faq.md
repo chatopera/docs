@@ -30,7 +30,7 @@
 
 免费模块目前支持 PC，Mobile 浏览器，开源版本就可以。APP 需要对接 SDK，这个有额外的开发工作，我们可以定制开发。
 
-完成付费模块支持电话， Skype 和 Facebook Messenger。
+完成付费模块支持电话和 Facebook Messenger。
 
 **问：如果我们也需要给商家开坐席,也是能支持的吗？**
 
