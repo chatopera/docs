@@ -1,11 +1,6 @@
 # Messenger 渠道
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image-2021-02-23-104502.png" alt="" /></td>
-    </tr>
-</table>
+![](../../../../images/products/cskefu/messenger/image-2021-02-23-104502.png)
 
 ## 概述
 Messenger 是 Facebook 旗下的最主要的即时通信软件，支持多种平台，因其创新的理念、优秀的用户体验和全球最大的社交网络，而广泛应用。通过 Facebook Messenger 的官方链接，可以了解更多。

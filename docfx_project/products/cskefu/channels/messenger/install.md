@@ -1,4 +1,4 @@
-# Messenger 渠道集成和配置
+# Messenger 插件安装和配置
 
 ## 安装插件
 Messenger 插件为付费插件，交付形式有两种，源码安装和使用 Docker 镜像。
