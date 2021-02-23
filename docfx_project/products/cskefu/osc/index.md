@@ -6,7 +6,7 @@
 
 **开源项目地址：**
 
-[Github](https://github.com/chatopera/cskefu) [Gitee](https://gitee.com/chatopera/cosin) [CodeChina](https://codechina.csdn.net/chatopera/cskefu)
+[Github](https://github.com/chatopera/cskefu) | [Gitee](https://gitee.com/chatopera/cskefu) | [CodeChina](https://codechina.csdn.net/chatopera/cskefu)
 
 以上不同地址的代码同步，在上面的地址，您可以：
 
