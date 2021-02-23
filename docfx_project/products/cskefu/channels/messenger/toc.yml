@@ -1,3 +1,5 @@
+- name: "Messenger 渠道集成和配置"
+  href: install.md
 - name: "OTN 主动推送指南"
   href: facebook-otn.md
 - name: "配置机器人客服"
