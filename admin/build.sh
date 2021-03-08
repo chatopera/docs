@@ -14,3 +14,4 @@ cd $baseDir/../docfx_project
 rm -rf $SITE/_site/*
 # rm -rf obj
 docfx build -o $SITE ./docfx.json 
+docfx pdf -o $SITE

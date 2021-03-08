@@ -49,6 +49,11 @@
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": false,
+    "sitemap":{
+      "baseUrl": "https://docs.chatopera.com",
+      "priority": 1.0,
+      "changefreq": "weekly"
+    }
   }
 }
