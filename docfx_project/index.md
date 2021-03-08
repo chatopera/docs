@@ -2,7 +2,7 @@
 
 ## 综述
 
-Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能客服系统**解决方案，这些解决方案是不区分行业的，同时 Chatopera 面向若干行业打造了应用人工智能技术的垂直行业解决方案。
+Chatopera 为企业提供**智能对话机器人**和**智能客服系统**解决方案，这些解决方案面向多个行业，支持通用的业务场景，比如客户服务中的多渠道管理、坐席管理、企业知识库和机器人对话管理。同时，Chatopera 面向开发者提供开源软件、云服务、开发者社区和学习资料，帮助开发者掌握智能对话机器人和客服系统的定制化开发技能，进而为企业客户进一步优化软件服务。
 
 ![](/images/products/trademark-chatopera.png)
 
@@ -21,11 +21,11 @@ Chatopera 提供企业实现**聊天机器人**的解决方案、企业**智能�
 
 ## 云服务
 
-开发者或企业使用 [Chatopera 云服务](https://bot.chatopera.com)定制聊天机器人，Chatopera 云服务是[Chatopera 机器人平台](/products/chatbot-platform/index.html)的公有云实例。Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
+企业或开发者使用 [Chatopera 云服务](https://bot.chatopera.com)低代码、无代码方式定制智能对话机器人，Chatopera 云服务是[Chatopera 机器人平台](/products/chatbot-platform/index.html)的公有云实例。Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
 
 Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
 
-语言方面，Chatopera 的产品支持**中文简体**，**中文繁体**，**英语**和**泰语**的智能对话机器人。
+Chatopera 的产品支持**中文简体**，**中文繁体**，**英语**和**泰语**的智能对话机器人。
 
 ## 春松客服
 
