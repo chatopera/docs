@@ -23,7 +23,7 @@
 - [调试知识库](/products/chatbot-platform/faq/tune.html)
 - [自定义词典](/products/chatbot-platform/faq/dicts.html)
 - [导入和导出](/products/chatbot-platform/faq/transfer.html)
-- [知识库小助手](/products/chatbot-platform/faq/assistant.html)
+- [知识库话术助手](/products/chatbot-platform/faq/assistant.html)
 
 ## 集成知识库
 

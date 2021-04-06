@@ -61,13 +61,13 @@
 
 春松客服里机器人客服的收费标准，对于使用 [Chatopera 云服务](https://bot.chatopera.com/) 而言，参考 [《计费和发票》](https://docs.chatopera.com/products/chatbot-platform/billing.html)；同时，Chatopera 机器人平台可为企业客户私有部署，洽谈合作参考 [《联系我们》](https://www.chatopera.com/price.html)。
 
-## 知识库工具条
+## 话术助手
 
 考虑到客服工作目前分布在不同渠道，而且每隔一段时间还会出现新的渠道，有没有一个好的知识库工具能适应不同渠道呢？
 
-Chatopera 开发 [Chatopera 小助手](/products/chatbot-platform/faq/assistant.html) 来适应差异较大的不同渠道，将机器人知识库发挥更大作用。
+Chatopera 发布 [话术助手](/products/chatbot-platform/faq/assistant.html) 来适应差异较大的不同渠道，将机器人知识库发挥更大作用。
 
-Chatopera 小助手将知识库的效益最大化，适合作为企业知识库管理、网络聊天快捷语等场景。
+话术助手将知识库的效益最大化，适合作为企业知识库管理、网络聊天快捷语等场景。
 
 ## 评论
 
