@@ -40,7 +40,7 @@ Chatopera 云服务的计费 API 包括：1）对话检索 API；2）语音识�
 
 - 购买套餐后，Chatopera 运营人员将套餐类型转化为【按日结算】金额更新到账户余额中。
 
-购买 **包年套餐**，请联系 [info@chatopera.com](mailto:info@chatopera.com?subject=[Chatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%E8%AE%A1%E8%B4%B9%E5%8F%8A%E5%8F%91%E7%A5%A8]%20) 或使用微信、企业微信添加专属顾问完成下单、获取发票。
+购买 **包年套餐**，请联系 [info@chatopera.com](mailto:info@chatopera.com?subject=[Chatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%E8%AE%A1%E8%B4%B9%E5%8F%8A%E5%8F%91%E7%A5%A8]%20*%E6%AD%A4%E5%A4%84%E6%9B%BF%E6%8D%A2%E4%B8%BA%E7%AE%80%E8%A6%81%E6%8F%8F%E8%BF%B0%E4%BF%A1%E6%81%AF*) 或使用微信、企业微信添加专属顾问完成下单、获取发票。
 
 ![](../../images/products/platform/image-044.png)
 
@@ -72,7 +72,7 @@ Chatopera 云服务计费包括每日**免费额度**和**付费请求**，当�
 
 目前，**保证金** 金额是 _RMB 98 元_。
 
-Chatopera 云服务用户注销账号时，可申请退回保证金，申请退回保证金请联系 info@chatopera.com。
+Chatopera 云服务用户注销账号时，可申请退回保证金，申请退回保证金请联系 [info@chatopera.com](mailto:info@chatopera.com?subject=[Chatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%E8%AE%A1%E8%B4%B9%E5%8F%8A%E5%8F%91%E7%A5%A8]%20*%E6%AD%A4%E5%A4%84%E6%9B%BF%E6%8D%A2%E4%B8%BA%E7%AE%80%E8%A6%81%E6%8F%8F%E8%BF%B0%E4%BF%A1%E6%81%AF*)。
 
 > 提示：注销账号代表从 Chatopera 云服务删除账号信息及数据，该账号将无法使用 Chatopera 云服务或恢复账号，数据操作不可逆。
 
@@ -93,7 +93,7 @@ Chatopera 云服务支持微信支付和企业银行账号汇款，在控制台�
 
 ## 发票
 
-发票服务，在控制台右上角的导航栏进入“费用中心”进行申请，同时可发送邮件到 [info@chatopera.com](mailto:info@chatopera.com?subject=[Chatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%E8%AE%A1%E8%B4%B9%E5%8F%8A%E5%8F%91%E7%A5%A8]%20) 中跟进发票开具状态。
+发票服务，在控制台右上角的导航栏进入“费用中心”进行申请，同时可发送邮件到 [info@chatopera.com](mailto:info@chatopera.com?subject=[Chatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%E8%AE%A1%E8%B4%B9%E5%8F%8A%E5%8F%91%E7%A5%A8]%20*%E6%AD%A4%E5%A4%84%E6%9B%BF%E6%8D%A2%E4%B8%BA%E7%AE%80%E8%A6%81%E6%8F%8F%E8%BF%B0%E4%BF%A1%E6%81%AF*) 中跟进发票开具状态。
 
 ## 私有部署
 
