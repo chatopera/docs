@@ -1,98 +1,31 @@
-# Chatopera Docs
+# Welcome
 
-文档中心
+## Chatopera 文档中心 
 
-Code as Docs.
+[https://docs.chatopera.com/](https://docs.chatopera.com/)
 
-依赖 `docfx`，在没有安装`docfx`的操作系统上，提供 docker 镜像支持编写。
+## 反馈建议
 
-## 进入 Docker
+- 开发环境搭建、功能咨询和使用问题；
+- 提交软件缺陷；
+- 描述新需求、反馈建议；
+- 瓶颈分析、性能优化建议和安全漏洞等.
 
-仅用于操作系统中没有 docfx 并不打算安装的用户。
+打开链接 -
 
-```
-cd docs
-docker run -d --rm --name devdocs  -p 8080:8080 -v $PWD:/work chatopera/docfx:2.45 -c "tail -f /var/log/faillog"
+[https://github.com/chatopera/docs/issues/new/choose](https://github.com/chatopera/docs/issues/new/choose)
 
-# 进入docker容器
-docker exec -it devdocs bash
+**有机会获得 Chatopera 云服务代金券**
 
-# 启动 nginx
-nginx
+# Give credits to DocFX
 
-# 编译站点源文件
-/work/admin/build.sh  && cd /work/dist/_site && tar cf - .|(cd /var/www/html;tar xf -)
+https://dotnet.github.io/docfx/
 
-# 使用浏览器访问
-# http://YOUR_HOST_IP:8080
+[Installation Guide](./INSTALLATION.md).
 
-# 编辑结束，退出
-docker stop devdocs
-docker rm devdocs
-```
+## License
 
-## 编译
-
-```
-./admin/docker/build.sh
-```
-
-输出文件目录 `./dist/_site`.
-
-## 实时编译
-
-```
-./admin/docker/serve.sh
-```
-
-查看编译日志。
-
-```
-tail -f ./tmp/build.log
-```
-
-使用浏览器查看最新版本 `https://0.0.0.0:8027`.
-
-```
-open https://0.0.0.0:8027
-```
-
-## 项目基于
-
-https://github.com/chatopera/docfx-get-started
-
-## 发布
-
-构建文档中心镜像
-
-```
-./admin/docker/image.sh
-```
-
-运行镜像
-
-```
-docker run -it --rm -p 8000:80 chatopera/docs:latest
-```
-
-## 工具
-
-https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html
-
-## 撰写文档
-
-For Mac users.
-
-```
-brew install docfx
-npm i
-npm start
-# input `rs` for restart
-```
-
-## 许可协议
-
-Copyright (2019-2020) Chatopera Inc. <https://chatopera.com>. All rights reserved.
+Copyright (2019-2021) 北京华夏春松科技有限公司. <https://chatopera.com>. All rights reserved.
 This software and related documentation are provided under a license agreement containing restrictions on use and disclosure and are protected by intellectual property laws.
 Except as expressly permitted in your license agreement or allowed by law, you may not use, copy, reproduce, translate, broadcast, modify, license, transmit, distribute, exhibit, perform, publish, or display any part, in any form, or by any means. Reverse engineering, disassembly, or decompilation of this software, unless required by law for interoperability, is prohibited.
 
