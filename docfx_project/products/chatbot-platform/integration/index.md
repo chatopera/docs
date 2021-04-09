@@ -4,9 +4,20 @@
 
 [**Chatopera 云服务**](https://bot.chatopera.com/)提供一站式实现聊天机器人的按量付费的云服务，企业或开发者可以使用 SDK 集成 Chatopera 云服务。Chatopera 云服务是 **Chatopera 机器人平台**的**软件即服务**版本，软件即服务也被称为[**SaaS（Software as a Service）**](https://baike.baidu.com/item/saas/6703273?fromtitle=%E8%BD%AF%E4%BB%B6%E5%8D%B3%E6%9C%8D%E5%8A%A1)。
 
-## 下载 SDK
+## 企业应用
 
-SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包括 Node.js、Go、PHP、Python、Java 等，SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。
+已支持的企业应用，Chatopera 机器人平台对春松客服和 Facebook Messenger 已经支持，在系统集成中，提供了完善的资料进行介绍。它们都是基于 Chatopera SDK 访问 Chatopera 云服务的，用户可以不用再开发，但 Chatopera 提供了开源码，在必要的时候，用户可以修改它们。
+
+<table class="image">
+    <caption align="bottom">企业应用</caption>
+    <tr>
+        <td><img width="600" src="../../../images/platform/image-2021-04-09-121541.png" alt="" /></td>
+    </tr>
+</table>
+
+## SDK
+
+SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包括 Node.js、Go、PHP、Python、Java 等，SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。Chatopera 云服务用户可以在不同的软件系统、程序中接入 Chatopera 机器人。
 
 下载地址参考列表：
 
