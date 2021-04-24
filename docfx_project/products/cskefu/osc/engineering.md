@@ -105,7 +105,7 @@ cd cskefu.osc
 docker-compose up -d mysql
 ```
 
-**MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件(`contact-center/config/sql/cskefu-MySQL-slim.sql`)完成的。**
+MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件([`contact-center/config/sql/cosinee-MySQL-slim.sql`](https://github.com/chatopera/cskefu/blob/osc/contact-center/config/sql/cosinee-MySQL-slim.sql))完成的。
 
 连接 MySQL 服务
 
@@ -137,9 +137,9 @@ docker-compose up -d redis
 
 Redis 启动后就可以，不需要其他操作。
 
-## 安装插件
+## 安装春松客服插件
 
-春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如机器人客服插件就是免费开源的。
+春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如**机器人客服插件**就是免费开源的。
 
 插件的安装和源码参考：[https://github.com/chatopera/cskefu/tree/osc/public/plugins
 ](https://github.com/chatopera/cskefu/tree/osc/public/plugins)
@@ -163,7 +163,7 @@ Redis 启动后就可以，不需要其他操作。
 
 春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
 
-春松客服团队使用[IntelliJ IDEA](https://www.jetbrains.com/idea/)作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
+春松客服团队使用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) 作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
 
 ```
 cd cskefu.osc
@@ -172,13 +172,17 @@ cd cskefu.osc
 
 ## 配置文件
 
-春松客服是基于 [Spring Boot Release 1.5.9](https://spring.io/blog/2017/11/28/spring-boot-1-5-9-available-now) 开发，配置文件是
+春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
 
 ```
 cskefu.osc/contact-center/app/src/main/resources/application.properties
 ```
 
-数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：1）使用 application-dev.properties；2）使用环境变量。
+数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：
+
+1）使用 application-dev.properties；
+
+2）使用环境变量。
 
 ### 使用 Profile 文件覆盖默认配置
 
@@ -223,7 +227,7 @@ spring.data.elasticsearch.cluster-nodes=192.168.2.217:7201
 
 ### 环境变量
 
-`application.properties`中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为`propery`的键转为大写同时`.`和`-`转为`_`。部分环境变量：
+`application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
 
 ```
 SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
@@ -233,9 +237,11 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 并且，环境变量的值优先级高于 `properties` 文件。
 
+> 提示：在生产环境部署，建议使用环境变量方式配置。
+
 ## 配置开发环境
 
-按照`IDEA`提示，导入`contact-center/app`目录。对于`Eclipse`或其它 IDE 工具，春松客服团队不提供搭建文档。
+按照 `IDEA` 提示，导入 `contact-center/app` 目录。对于 `Eclipse` 或其它 IDE 工具，春松客服团队不提供搭建文档。
 
 ### 配置执行及调试
 
