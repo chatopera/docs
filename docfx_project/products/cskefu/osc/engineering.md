@@ -6,22 +6,14 @@
 
 开发环境依赖：
 
-    - [Apple iMac/Macbook](https://www.apple.com/mac/)
-
-    - [Git](https://git-scm.com/)
-
-    - [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-
-    - [Maven 3+](https://maven.apache.org/)
-
-    - [MySQL 管理客户端 Navicat for MySQL](https://www.navicat.com/en/products/navicat-for-mysql)
-
-    - [IntelliJ IDEA](https://www.jetbrains.com/idea/)或[Eclipse](https://www.eclipse.org/)
-
-    - [Docker 18+](https://www.docker.com/)
-
-    - [Docker compose 1.22+ ](https://docs.docker.com/compose/install/)
-
+- [Apple iMac/Macbook](https://www.apple.com/mac/)
+- [Git](https://git-scm.com/)
+- [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Maven 3+](https://maven.apache.org/)
+- [MySQL 管理客户端 Navicat for MySQL](https://www.navicat.com/en/products/navicat-for-mysql)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [Docker 18+](https://www.docker.com/)
+- [Docker compose 1.22+ ](https://docs.docker.com/compose/install/)
 
 提示：
 
