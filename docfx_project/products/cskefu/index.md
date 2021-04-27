@@ -130,7 +130,7 @@
 
 当前，Chatopera 提供春松客服的定制开发或私有部署服务，有合作意向的企业联系下面邮箱，进行洽谈：
 
-联系方式：邮箱 <a href="mailto:info@chatopera.com?Subject=[春松客服]商业合作洽谈" target="_top">info@chatopera.com</a>，电话 (+86)136-9149-0568。
+联系方式：QQ 551616617，电话 <a href="tel:15210018430"> (+86)152-1001-8430 </a>。
 
 洽谈内容包括：
 

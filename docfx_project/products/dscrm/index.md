@@ -73,11 +73,9 @@ CRM 客户关系管理系统能够协助您精简管理过程以节省人力，�
 
 当前，Chatopera 提供大盛 CRM 的定制开发或私有部署服务，有合作意向的企业联系下面邮箱，进行洽谈：
 
-联系人：张经理
+邮箱： <a href="mailto:info@chatopera.com?Subject=[大盛CRM]商业合作洽谈" target="_top">info@chatopera.com</a>，电话 (+86)152-1001-8430。
 
-邮箱： <a href="mailto:kai@chatopera.com?Subject=[大盛CRM]商业合作洽谈" target="_top">kai@chatopera.com</a>，电话 (+86)136-9149-0568。
-
-微信：13691490568
+QQ：551616617
 
 洽谈内容包括：
 
