@@ -101,8 +101,6 @@ docker-compose restart
 
 - [系统初始化](/products/cskefu/initialization.html)
 
-- [私有部署配置 HTTPS](https://github.com/chatopera/cskefu/wiki/%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2%E9%85%8D%E7%BD%AEHTTPS)
-
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
 
 ## 寻找开发者
