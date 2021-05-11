@@ -6,7 +6,7 @@
 
 开发环境依赖：
 
-- [Apple iMac/Macbook](https://www.apple.com/mac/)
+- 操作系统 Windows 或 Mac OS
 - [Git](https://git-scm.com/)
 - [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3+](https://maven.apache.org/)
@@ -17,9 +17,7 @@
 
 提示：
 
-1. 目前春松客服开发环境还不支持 Windows，相关工作正在进行，参考 [Issue #408](https://github.com/chatopera/cskefu/issues/408) 及时获得最新进展。
-
-2. Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开发阶段用来启动数据库、中间件。
+1. Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开发阶段用来启动数据库、中间件。
 
 ## 配置 Maven
 
@@ -391,7 +389,7 @@ HTML 示例：
 
 - [春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
 
-- [春松客服的压力测试| 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
+- [春松客服的压力测试 | 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
 
 ## 评论
 
