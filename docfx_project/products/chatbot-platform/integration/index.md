@@ -20,7 +20,7 @@
 Chatopera 云服务支持一键集成飞书，在飞书应用目录安装 Chatopera 应用后绑定 Chatopera 机器人到群聊或私聊。
 
 
-<iframe src="//player.bilibili.com/player.html?aid=332580547&bvid=BV15A411L7Cn&cid=323563068&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="600"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=332580547&bvid=BV15A411L7Cn&cid=323563068&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="600" height="400"> </iframe>
 
 
 详细使用说明：[https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
