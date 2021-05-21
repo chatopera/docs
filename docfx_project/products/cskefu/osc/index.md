@@ -45,7 +45,7 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
 - 春松客服官方推荐项目机会
 - 专访并通过官方渠道曝光
 
-填写申请：[https://www.wjx.top/jq/93397428.aspx](https://www.wjx.top/jq/93397428.aspx)
+填写申请：[http://chatopera.mikecrm.com/tMUtj1z](http://chatopera.mikecrm.com/tMUtj1z)
 
 ## 评论
 
