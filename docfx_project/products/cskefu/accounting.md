@@ -68,7 +68,7 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_ -> _创建部门_
 
 **上级机构** 选择上级部门
 
-**启用技能组** 这里启用与否，主要决定当前组织结构是否具有外呼的权限
+**启用技能组** 这里启用与否，技能是接待同一个渠道的坐席人员群组，春松客服支持配置自动分配策略，连接访客与坐席，简称 ACD 模块
 
 ### 更新、删除部门
 
@@ -185,15 +185,6 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _修改角色_
     <caption align="bottom"></caption>
     <tr>
         <td><img width="800" src="../../images/products/cosin/Picture5.png" alt="" /></td>
-    </tr>
-</table>
-
-- 创建呼叫中心坐席
-
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture6.png" alt="" /></td>
     </tr>
 </table>
 
