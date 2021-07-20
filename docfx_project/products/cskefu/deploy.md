@@ -101,6 +101,8 @@ docker-compose restart
 
 - [系统初始化](/products/cskefu/initialization.html)
 
+- [系统维护：备份、升级和恢复回退等](/products/cskefu/osc/maintainence.html)
+
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
 
 ## 寻找开发者

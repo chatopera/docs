@@ -14,7 +14,7 @@
 
 ## 关于春松客服版本号
 
-.env 文件作为配置春松客服版本和环境变量的文件，也记录着 Docker 启动春松客服的版本信息。
+_ROOT_PATH/cskefu.osc/.env_(以下简称 _.env_) 文件作为配置春松客服版本和环境变量的文件，也记录着 Docker 启动春松客服的版本信息，该文件在[部署阶段](/products/cskefu/deploy.html)创建。
 
 ```
 CC_IMAGE=chatopera/contact-center:develop
@@ -120,6 +120,13 @@ docker-compose logs -f contact-center # 查看日志
 ```
 
 在春松客服运行后，在浏览器内访问并验证服务正常。升级完毕。
+当系统可以稳定运行，比如 2 个月，再酌情删除 `cskefu.osc cskefu.osc.backup`。
+
+## 下一步
+
+- [观看春松客服大讲堂学习运营及定制客服系统](/products/cskefu/osc/training.html)
+
+- [搭建开发环境](/products/cskefu/osc/engineering.html)
 
 ## 评论
 
