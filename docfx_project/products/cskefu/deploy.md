@@ -2,6 +2,8 @@
 
 春松客服适应各种部署方式，本文使用 Docker 和 Docker compose 的方式，适合体验、开发、测试和上线春松客服，此种方式简单快捷。
 
+<font color="red">重要提示：部署应用后，必须按照</font>[《系统初始化》](https://docs.chatopera.com/products/cskefu/initialization.html)<font color="red">文档进行系统初始化，再使用，不做初始化，会造成坐席无法分配等问题。</font>
+
 ## 准备条件
 
 ### 前提
@@ -99,7 +101,7 @@ docker-compose restart
 
 ## 下一步
 
-- [系统初始化](/products/cskefu/initialization.html)
+- [系统初始化：建立组织机构、账号、坐席和角色等](/products/cskefu/initialization.html)
 
 - [系统维护：备份、升级和恢复回退等](/products/cskefu/osc/maintainence.html)
 
