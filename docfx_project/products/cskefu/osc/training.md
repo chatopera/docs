@@ -2,12 +2,6 @@
 
 春松客服大讲堂是面向企业 CTO、客服主管、客服及客服系统开发运维人员的在线课程，紧紧围绕春松客服开源代码，由浅入深的介绍春松客服**上线智能客服系统**、**运营客服工作**和**二次开发**的知识。
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="https://static-public.chatopera.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
-    </tr>
-</table>
-
 ## 课程介绍
 
 [《春松客服大讲堂》](https://ke.qq.com/course/464050)

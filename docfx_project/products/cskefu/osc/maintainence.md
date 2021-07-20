@@ -124,7 +124,7 @@ docker-compose logs -f contact-center # 查看日志
 
 ## 下一步
 
-- [观看春松客服大讲堂学习运营及定制客服系统](/products/cskefu/osc/training.html)
+- [搭建春松客服性能监控服务（付费视频）](https://ke.qq.com/webcourse/index.html#cid=464050&term_id=100555327&taid=4785516986176690&type=1024&vid=5285890796447482734)
 
 - [搭建开发环境](/products/cskefu/osc/engineering.html)
 
