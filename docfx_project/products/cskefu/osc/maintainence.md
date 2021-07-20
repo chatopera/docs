@@ -120,7 +120,7 @@ docker-compose logs -f contact-center # 查看日志
 ```
 
 在春松客服运行后，在浏览器内访问并验证服务正常。升级完毕。
-当系统可以稳定运行，比如 2 个月，再酌情删除 `cskefu.osc cskefu.osc.backup`。
+当系统可以稳定运行，比如 2 个月，再酌情删除 `cskefu.osc.backup`。
 
 ## 下一步
 
