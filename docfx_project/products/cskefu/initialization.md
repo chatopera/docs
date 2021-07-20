@@ -34,6 +34,8 @@
 
 [配置机器人客服](/products/cskefu/work-chatbot/index.html)
 
+[春松客服系统维护：升级、备份、回退等](/products/cskefu/osc/maintainence.html)
+
 ## 常见问题
 
 - [#378](https://github.com/chatopera/cskefu/issues/378) 访客打开网页聊天控件，提示等待
