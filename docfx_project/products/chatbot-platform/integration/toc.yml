@@ -2,7 +2,9 @@
   href: quick-get-start.md
 - name: "示例程序"
   href: tutorials.md
-- name: "API"
+- name: "Chatopera 类"
+  href: accesssettings.md
+- name: "Chatbot 类"
   href: api.md
 - name: "常见问题"
   href: faq.md

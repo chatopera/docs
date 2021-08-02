@@ -19,26 +19,37 @@
 
 Chatopera 云服务支持一键集成飞书，在飞书应用目录安装 Chatopera 应用后绑定 Chatopera 机器人到群聊或私聊。
 
-
 <iframe src="//player.bilibili.com/player.html?aid=332580547&bvid=BV15A411L7Cn&cid=323563068&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="600" height="400"> </iframe>
-
 
 详细使用说明：[https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
 
-
 ## SDK
 
-SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包括 Node.js、Go、PHP、Python、Java 等，SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。Chatopera 云服务用户可以在不同的软件系统、程序中接入 Chatopera 机器人。
+Chatopera 机器人平台用户可以在不同的软件系统、程序中接入 Chatopera 机器人。 SDK 是面向不同编程语言和 Chatopera 机器人平台集成的工具库，包括 Node.js、Go、PHP、Python、Java 等。
 
-下载地址参考列表：
+### 能力概述
 
-| 语言    | 下载地址                                                                      | 使用指南                                                                                                                                                                                                    |
-| ------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Python  | [chatopera-py-sdk](https://pypi.org/project/chatopera/)                       | [示例程序](https://github.com/chatopera/chatopera-py-sdk/blob/master/demo.py) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                           |
-| Java    | [chatopera-java-sdk](https://github.com/chatopera/chatopera-sample-java/wiki) | [示例程序](https://github.com/chatopera/chatopera-sample-java) / [技术支持](https://github.com/chatopera/status/issues/new/choose) / [JavaDocs](https://chatopera.github.io/chatopera-sample-java/apidocs/) |
-| Go      | [chatopera-go-sdk](https://github.com/chatopera/chatopera-go-sdk)             | [示例程序](https://github.com/chatopera/chatopera-go-sdk/blob/master/chatopera_test.go) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                 |
-| PHP     | [chatopera-php-sdk](https://packagist.org/packages/chatopera/sdk)             | [示例程序](https://github.com/chatopera/chatopera-php-sdk) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                                              |
-| Node.js | [chatopera-nodejs-sdk](https://www.npmjs.com/package/@chatopera/sdk)          | [示例程序](https://github.com/chatopera/chatopera-sample-node) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                                          |
+SDK 能力概述：使用 `Chatopera` 类创建机器人、获得机器人信息；使用 `Chatbot` 类管理某一机器人的资源； `Chatopera` 类是系统账户级别，`Chatbot` 是单个机器人级别。
+
+`Chatopera` 类使用控制台中【[访问设置](https://bot.chatopera.com/dashboard/accesssettings)】的 `Personal Access Token` 实例化，`Chatbot` 类使用每个机器人的 `clientId` 和 `secret` 初始化。
+
+<table class="image">
+    <tr>
+        <td><img width="800" src="../../../images/products/platform/screenshot-20210802-194710.png" alt="" /></td>
+    </tr>
+</table>
+
+### 下载安装
+
+SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装。SDK 下载地址参考列表：
+
+| 语言    | 下载地址                                                                      | 使用指南                                                                                                                                                                                            |
+| ------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Python  | [chatopera-py-sdk](https://pypi.org/project/chatopera/)                       | [示例程序](https://github.com/chatopera/chatopera-py-sdk/blob/master/demo.py) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                   |
+| Java    | [chatopera-java-sdk](https://github.com/chatopera/chatopera-sample-java/wiki) | [示例程序](https://github.com/chatopera/chatopera-sample-java) / [技术支持](https://github.com/chatopera/status/issues/new/choose) / [JavaDocs](https://chatopera.github.io/chatopera-sample-java/) |
+| Go      | [chatopera-go-sdk](https://github.com/chatopera/chatopera-go-sdk)             | [示例程序](https://github.com/chatopera/chatopera-go-sdk/blob/master/chatopera_test.go) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                         |
+| PHP     | [chatopera-php-sdk](https://packagist.org/packages/chatopera/sdk)             | [示例程序](https://github.com/chatopera/chatopera-php-sdk) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                                      |
+| Node.js | [chatopera-nodejs-sdk](https://www.npmjs.com/package/@chatopera/sdk)          | [示例程序](https://github.com/chatopera/chatopera-sample-node) / [技术支持](https://github.com/chatopera/status/issues/new/choose)                                                                  |
 
 为了方便开发者调用 SDK，每个 SDK 内均有示例程序或测试程序作为参考。
 
@@ -49,11 +60,17 @@ SDK 是面向不同编程语言和 Chatopera 云服务集成的工具库，包�
 <table class="image">
     <caption align="bottom">集成</caption>
     <tr>
-        <td><img width="800" src="../../../images/platform/8.png" alt="" /></td>
+        <td><img width="800" src="../../../images/products/platform/screenshot-20210802-193746.png" alt="" /></td>
     </tr>
 </table>
 
 <font color="blue">如不能满足您使用环境或者语言的 SDK，请[创建工单](https://github.com/chatopera/docs/issues/new?template=1_help.md)进行描述，Chatopera 将尽快满足您的需求。</font>
+
+### 下一步
+
+- [`Chatopera` 类详细说明](/products/chatbot-platform/integration/accesssettings.html)
+
+- [`Chatbot` 类详细说明](/products/chatbot-platform/integration/api.html)
 
 ## 评论
 

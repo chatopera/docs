@@ -1,4 +1,4 @@
-## `Chatbot`类
+## `Chatbot` 类
 
 ### 实例化
 
@@ -1378,6 +1378,23 @@ _service_: 提供回复的服务
 _confidence_: 置信度
 
 _created_: 消息创建时间
+
+### 删除聊天机器人
+
+删除聊天机器人，该接口销毁机器人资源，并且不可逆。**使用时需格外谨慎！**
+
+```
+Chatbot#command("DELETE", "/")
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "msg": done
+}
+```
 
 ## 评论
 
