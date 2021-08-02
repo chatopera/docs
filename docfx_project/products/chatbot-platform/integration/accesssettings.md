@@ -192,6 +192,13 @@ _secret_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.htm
 Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
 ```
 
+<h4><font color="purple">path</font></h4>
+
+| key   | type | default         | description      |
+| ----- | ---- | --------------- | ---------------- |
+| limit | int  | 默认值 20, 选填 | 返回数据条数     |
+| page  | int  | 默认值 1, 选填  | 返回数据页面索引 |
+
 <h4><font color="purple">result/ JSON Object</font></h4>
 
 ```
@@ -212,11 +219,15 @@ Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
     ]
 ```
 
+_total_: 所有数据条数
+
+_total_page_: 所有页面数
+
 ## 下一步
 
 - [SDK 安装](/products/chatbot-platform/integration/index.html#sdk)
 
-- [`Chatbot` 类详细说明](/products/chatbot-platform/integration/api.html)
+- [`Chatbot` 类详细说明：对话检索、机器人信息及更新，etc.](/products/chatbot-platform/integration/api.html)
 
 ## 评论
 

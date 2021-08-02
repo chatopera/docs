@@ -68,9 +68,9 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 ### 下一步
 
-- [`Chatopera` 类详细说明](/products/chatbot-platform/integration/accesssettings.html)
+- [`Chatopera` 类详细说明：创建聊天机器人、获得聊天机器人列表，etc.](/products/chatbot-platform/integration/accesssettings.html)
 
-- [`Chatbot` 类详细说明](/products/chatbot-platform/integration/api.html)
+- [`Chatbot` 类详细说明：对话检索、机器人信息及更新，etc.](/products/chatbot-platform/integration/api.html)
 
 ## 评论
 
