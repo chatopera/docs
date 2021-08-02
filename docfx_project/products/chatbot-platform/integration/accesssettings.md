@@ -27,9 +27,11 @@ Chatopera(accessToken [, serviceProvider])
 
 刚刚注册的账户需要点击`生成`进行初始化；点击`复制`将 Token 值复制到粘贴板。
 
+注意：**Personal Access Token(简称：Access Token) 是您访问 Chatopera 机器人平台的密钥，具有管理平台资源的权限，请您务必妥善保管！不要以任何方式公开 Access Token 到外部渠道（例如 Github），避免被他人利用造成安全威胁。**
+
 <h4><font color="purple">更多实例化例子</font></h4>
 
-不同语言下，`Chatopera`类的包名或引用方式不同，Node.js SDK 的实例化上文已经表述，以下再介绍其它语言。
+不同语言下，`Chatopera` 类的包名或引用方式不同，Node.js SDK 的实例化上文已经表述，以下再介绍其它语言。
 
 <h5><font color="purple">Java</font></h5>
 
@@ -154,14 +156,14 @@ Chatopera#command("POST", "/chatbot", body)
 }
 ```
 
-| key               | type   | description                                                                                                                                                                               |
-| ----------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`            | string | 机器人名字。                                                                                                                                                                              |
-| `primaryLanguage` | string | 聊天机器人语言，目前支持简体中文（zh_CN）、繁体中文(zh_TW)、英文（en_US）、日语（ja）、泰语（th）。 当使用 `zh_CN` 时可开启自动识别繁体并翻译(trans_zhCN_ZhTw2ZhCn: true)，默认为 false。 |
-| `fallback`        | string | 兜底回复，当请求机器人对话时，没有得到来自多轮对话、知识库或意图识别回复时，回复此内容。                                                                                                  |
-| `welcome`         | string | 机器人问候语。                                                                                                                                                                            |
-| `description`     | string | 机器人描述。                                                                                                                                                                              |
-| `primaryLanguage` | string | 机器人语言。                                                                                                                                                                              |
+| key               | type   | description                                                                                                                                                                                           |
+| ----------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`            | string | 机器人名字。                                                                                                                                                                                          |
+| `primaryLanguage` | string | 聊天机器人语言，目前支持简体中文（`zh_CN`）、繁体中文(`zh_TW`)、英文（`en_US`）、日语（`ja`）、泰语（`th`）。 当使用 `zh_CN` 时可开启自动识别繁体并翻译(`trans_zhCN_ZhTw2ZhCn`: true)，默认为 false。 |
+| `fallback`        | string | 兜底回复，当请求机器人对话时，没有得到来自多轮对话、知识库或意图识别回复时，回复此内容。                                                                                                              |
+| `welcome`         | string | 机器人问候语。                                                                                                                                                                                        |
+| `description`     | string | 机器人描述。                                                                                                                                                                                          |
+| `primaryLanguage` | string | 机器人语言。                                                                                                                                                                                          |
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
@@ -180,9 +182,34 @@ Chatopera#command("POST", "/chatbot", body)
 ```
 
 _clientId_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.html) 的信息
+
 _secret_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.html) 的信息
 
 ### 获得聊天机器人列表
+
+```
+Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "total": 3,
+    "total_page": 3,
+    "data": [
+      {
+        "clientId": "{{clientId}}",
+        "name": "TestBot1627889023922",
+        "description": "",
+        "primaryLanguage": "zh_CN",
+        "createdAt": "Mon Aug 02 2021 15:23:44 GMT+0800 (CST)",
+        "secret": "{{secret}}",
+      },
+      ...
+    ]
+```
 
 ## 评论
 
