@@ -137,6 +137,8 @@ result = chatopera.command(method, path [, body])
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
+## 机器人管理
+
 ### 创建聊天机器人
 
 ```
@@ -209,6 +211,12 @@ Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
       ...
     ]
 ```
+
+## 下一步
+
+- [SDK 安装](/products/chatbot-platform/integration/index.html#sdk)
+
+- [`Chatbot` 类详细说明](/products/chatbot-platform/integration/api.html)
 
 ## 评论
 

@@ -1396,6 +1396,12 @@ Chatbot#command("DELETE", "/")
 }
 ```
 
+## 下一步
+
+- [SDK 安装](/products/chatbot-platform/integration/index.html#sdk)
+
+- [`Chatopera` 类详细说明](/products/chatbot-platform/integration/accesssettings.html)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
