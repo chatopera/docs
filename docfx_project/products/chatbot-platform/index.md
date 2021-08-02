@@ -8,7 +8,7 @@
 
 Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
 
-Chatopera 机器人平台目前支持**中文简体（zh_CN）**、**中文繁体（zh_TW）**、**英语（en_US）**、 **日语（ja）**和**泰语（th）**的智能对话机器人。
+Chatopera 机器人平台目前支持 **中文简体（zh_CN）**、**中文繁体（zh_TW）**、**英语（en_US）**、 **日语（ja）** 和 **泰语（th）** 的智能对话机器人。
 
 ## 对话解决方案
 
