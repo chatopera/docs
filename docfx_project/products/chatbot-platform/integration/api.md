@@ -127,7 +127,7 @@ result = chatbot.command(method, path [, body])
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
-## 机器人画像
+## 机器人基本关
 
 ### 获取机器人画像
 
@@ -208,6 +208,23 @@ Chatbot#command("GET", "/status")
    "reindex": 0,
    "retrain": 0
   }
+}
+```
+
+### 删除聊天机器人
+
+删除聊天机器人，该接口销毁机器人资源，并且不可逆。**使用时需格外谨慎！**
+
+```
+Chatbot#command("DELETE", "/")
+```
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "msg": done
 }
 ```
 
@@ -1378,23 +1395,6 @@ _service_: 提供回复的服务
 _confidence_: 置信度
 
 _created_: 消息创建时间
-
-### 删除聊天机器人
-
-删除聊天机器人，该接口销毁机器人资源，并且不可逆。**使用时需格外谨慎！**
-
-```
-Chatbot#command("DELETE", "/")
-```
-
-<h4><font color="purple">result / JSON Object</font></h4>
-
-```
-{
-    "rc": 0,
-    "msg": done
-}
-```
 
 ## 下一步
 
