@@ -127,7 +127,7 @@ result = chatbot.command(method, path [, body])
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
-## 机器人基本关
+## 机器人基本管理
 
 ### 获取机器人画像
 
