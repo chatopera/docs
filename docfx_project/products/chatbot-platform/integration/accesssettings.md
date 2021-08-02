@@ -135,6 +135,55 @@ result = chatopera.command(method, path [, body])
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
+### 创建聊天机器人
+
+```
+Chatopera#command("POST", "/chatbot", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+ "name": "小巴",
+ "primaryLanguage": "zh_CN",
+ "fallback": "请联系客服。",
+ "description": "我的超级能力是对话",
+ "welcome": "你好，我是机器人小巴巴",
+ "trans_zhCN_ZhTw2ZhCn": false
+}
+```
+
+| key               | type   | description                                                                                                                                                                               |
+| ----------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`            | string | 机器人名字。                                                                                                                                                                              |
+| `primaryLanguage` | string | 聊天机器人语言，目前支持简体中文（zh_CN）、繁体中文(zh_TW)、英文（en_US）、日语（ja）、泰语（th）。 当使用 `zh_CN` 时可开启自动识别繁体并翻译(trans_zhCN_ZhTw2ZhCn: true)，默认为 false。 |
+| `fallback`        | string | 兜底回复，当请求机器人对话时，没有得到来自多轮对话、知识库或意图识别回复时，回复此内容。                                                                                                  |
+| `welcome`         | string | 机器人问候语。                                                                                                                                                                            |
+| `description`     | string | 机器人描述。                                                                                                                                                                              |
+| `primaryLanguage` | string | 机器人语言。                                                                                                                                                                              |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+ "rc": 0,
+ "data": {
+  "clientId": "{{clientId}}",
+  "secret": "{{secret}}",
+  "name": "小巴",
+  "description": "Test",
+  "primaryLanguage": "zh_CN",
+  "createdAt": "Mon Aug 02 2021 20:35:23 GMT+0800 (CST)"
+ }
+}
+```
+
+_clientId_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.html) 的信息
+_secret_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.html) 的信息
+
+### 获得聊天机器人列表
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
