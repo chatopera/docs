@@ -153,7 +153,7 @@ result = chatopera.command(method, path [, body])
 Chatopera#command("POST", "/chatbot", body)
 ```
 
-示例代码：[Node.js](https://github.com/chatopera/chatopera-nodejs-sdk/blob/master/test/chatopera.test.js) | [Java](https://github.com/chatopera/chatopera-java-sdk/blob/master/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java)
+示例代码：[Node.js](https://github.com/chatopera/chatopera-nodejs-sdk/blob/master/test/chatopera.test.js) | [Java](https://github.com/chatopera/chatopera-java-sdk/blob/master/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java) | [PHP](https://github.com/chatopera/chatopera-php-sdk/blob/master/test/ChatoperaTest.php)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
