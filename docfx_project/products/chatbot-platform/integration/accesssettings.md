@@ -7,15 +7,15 @@
 <h4><font color="purple">构造函数</font></h4>
 
 ```
-Chatopera(accessToken [, serviceProvider])
+Chatopera(accessToken [, botProvider])
 ```
 
 <h4><font color="purple">参数说明</font></h4>
 
-| name            | type   | required | description                                                                                                                      |
-| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| accessToken     | string | &#10004; | 在[机器人控制台/访问设置](https://bot.chatopera.com/dashboard/accesssettings)中获取，即 `Personal Access Token`                  |
-| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
+| name        | type   | required | description                                                                                                                      |
+| ----------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| accessToken | string | &#10004; | 在[机器人控制台/访问设置](https://bot.chatopera.com/dashboard/accesssettings)中获取，即 `Personal Access Token`                  |
+| botProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
 
 在机器人控制台，打开【访问设置】:
 
@@ -31,21 +31,29 @@ Chatopera(accessToken [, serviceProvider])
 
 <h4><font color="purple">更多实例化例子</font></h4>
 
-不同语言下，`Chatopera` 类的包名或引用方式不同，Node.js SDK 的实例化上文已经表述，以下再介绍其它语言。
+不同语言下，`Chatopera` 类的包名或引用方式不同。
+
+<h5><font color="purple">Node.js</font></h5>
+
+```
+const { Chatopera } = require('@chatopera/sdk');
+...
+const chatopera = new Chatopera(accessToken[, botProvider]);
+```
 
 <h5><font color="purple">Java</font></h5>
 
 ```
 import com.chatopera.bot.sdk.Chatopera;
 ...
-Chatopera chatopera = new Chatopera(accessToken);
+Chatopera chatopera = new Chatopera(accessToken[, botProvider]);
 ```
 
 <h5><font color="purple">Python</font></h5>
 
 ```
 from chatopera import Chatopera
-co = Chatopera(accessToken)
+co = Chatopera(accessToken[, botProvider])
 ```
 
 <h5><font color="purple">PHP</font></h5>
@@ -56,7 +64,7 @@ co = Chatopera(accessToken)
 <?php
 
 include_once **DIR** . "/vendor/autoload.php";
-$chatopera = new Chatopera\SDK\Chatopera($accessToken);
+$chatopera = new Chatopera\SDK\Chatopera($accessToken[, $botProvider]);
 
 ```
 
@@ -67,7 +75,7 @@ import (
 	"github.com/chatopera/chatopera-go-sdk"
 )
 ...
-var co = chatopera.Chatopera(accessToken)
+var co = chatopera.Chatopera(accessToken[, botProvider])
 ```
 
 ### 发送请求
@@ -145,6 +153,8 @@ result = chatopera.command(method, path [, body])
 Chatopera#command("POST", "/chatbot", body)
 ```
 
+示例代码：[Node.js](https://github.com/chatopera/chatopera-nodejs-sdk/blob/master/test/chatopera.test.js) | [Java](https://github.com/chatopera/chatopera-java-sdk/blob/master/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java)
+
 <h4><font color="purple">body / JSON Object</font></h4>
 
 ```
@@ -191,6 +201,8 @@ _secret_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.htm
 ```
 Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
 ```
+
+示例代码：[Node.js](https://github.com/chatopera/chatopera-nodejs-sdk/blob/master/test/chatopera.test.js) | [Java](https://github.com/chatopera/chatopera-java-sdk/blob/master/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java)
 
 <h4><font color="purple">path</font></h4>
 
