@@ -75,7 +75,7 @@ import (
 	"github.com/chatopera/chatopera-go-sdk"
 )
 ...
-var co = chatopera.Chatopera(accessToken[, botProvider])
+var admin = chatopera.NewChatopera(accessToken[, botProvider])
 ```
 
 ### 发送请求
@@ -153,7 +153,7 @@ result = chatopera.command(method, path [, body])
 Chatopera#command("POST", "/chatbot", body)
 ```
 
-示例代码：[Node.js](https://github.com/chatopera/chatopera-nodejs-sdk/blob/master/test/chatopera.test.js) | [Java](https://github.com/chatopera/chatopera-java-sdk/blob/master/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java) | [PHP](https://github.com/chatopera/chatopera-php-sdk/blob/master/test/ChatoperaTest.php)
+示例代码：[Node.js](https://github.com/chatopera/chatopera-nodejs-sdk/blob/master/test/chatopera.test.js) | [Java](https://github.com/chatopera/chatopera-java-sdk/blob/master/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java) | [PHP](https://github.com/chatopera/chatopera-php-sdk/blob/master/test/ChatoperaTest.php) | [Python](https://github.com/chatopera/chatopera-py-sdk/blob/master/demo.py) | [Go](https://github.com/chatopera/chatopera-go-sdk/blob/master/chatopera_test.go)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
