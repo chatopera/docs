@@ -4,6 +4,8 @@
   href: tune.md
 - name: "自定义词典"
   href: dicts.md
+- name: "热门问题"
+  href: "hotfaq.md"
 - name: "导入和导出"
   href: transfer.md
 - name: "话术助手"

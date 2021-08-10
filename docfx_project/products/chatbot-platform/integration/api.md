@@ -742,7 +742,7 @@ Chatbot#command("POST", "/faq/categories", body)
 Chatbot#command("GET", "/faq/categories")
 ```
 
-<h4><font color="purple">body / JSON Object</font></h4>
+<h4><font color="purple">result / JSON Object</font></h4>
 
 ```
 {
@@ -1080,6 +1080,46 @@ Chatbot#command("DELETE", "/faq/database/{{docId}}")
 {
     "rc": 0,
     "msg": "done"
+}
+```
+
+### 获取知识库热门问题
+
+```
+Chatbot#command("GET", "/faq/database/inquiryrank?topN={{topN}}")
+```
+
+<h4><font color="purple">path</font></h4>
+
+| key  | type | default | description                          |
+| ---- | ---- | ------- | ------------------------------------ |
+| topN | int  | 10      | 获得热门问题的条数，即导出数据的条数 |
+
+<h4><font color="purple">result / JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": [
+        {
+            "docId": "{{docId}}",
+            "inquiryscore": "13",
+            "post": "{{post}}",
+            "enabled": true,
+            "categories": [
+                "s1",
+                "s2"
+            ]
+        },
+        {
+            "docId": "{{docId}}",
+            "inquiryscore": "0",
+            "post": "{{post}}",
+            "enabled": true,
+            "categories": []
+        },
+        ...
+    ]
 }
 ```
 
