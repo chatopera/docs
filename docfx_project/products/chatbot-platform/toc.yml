@@ -3,12 +3,14 @@
 - name: 账号管理
   href: account.md
 - name: 词典管理
-  href: dicts.md
+  href: dicts/toc.yml
+  topicHref: dicts/index.md
 - name: 知识库
   href: faq/toc.yml
   topicHref: faq/index.md
 - name: 意图识别
-  href: intent.md
+  href: ./intent/toc.yml
+  topicHref: ./intent/index.md
 - name: 多轮对话
   href: conversation/toc.yml
   topicHref: conversation/index.md
