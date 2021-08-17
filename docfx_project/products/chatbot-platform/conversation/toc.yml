@@ -1,9 +1,16 @@
+- name: "术语"
+  href: glossary.md
 - name: "快速开始"
   href: quick-start.md
 - name: "多轮对话设计器"
   href: cde.md
-- name: "通配符"
-  href: star.md
+- name: "匹配器"
+  href: gambits/toc.yml
+  topicHref: gambits/index.md
+- name: "回复"
+  href: replies.md
+- name: "上下轮钩子"
+  href: hooks.md
 - name: "函数"
   href: function.md
 - name: "对话状态管理"

@@ -1,0 +1,16 @@
+- name: "构造函数"
+  href: index.md
+- name: "接口规范"
+  href: standard.md
+- name: "机器人基本管理"
+  href: basic.md
+- name: "对话检索"
+  href: chat.md
+- name: "词典管理"
+  href: chat.md
+- name: "知识库管理"
+  href: knowledge.md
+- name: "用户和对话历史"
+  href: users.md
+- name: "语音识别"
+  href: asr.md

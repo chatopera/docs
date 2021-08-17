@@ -15,4 +15,5 @@ if [ ! -d $SITE/_site ]; then
 fi
 nohup $baseDir/live.sh 2>&1 >>/dev/null &
 cd $baseDir/../docfx_project
-docfx serve --hostname 0.0.0.0 --port 8027 $SITE/_site
+set -x
+docfx serve --hostname ${HOST_IP:-localhost} --port 8027 $SITE/_site

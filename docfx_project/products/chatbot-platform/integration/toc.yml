@@ -3,8 +3,10 @@
 - name: "示例程序"
   href: tutorials.md
 - name: "Chatopera 类"
-  href: accesssettings.md
+  href: chatopera/toc.yml
+  topicHref: accesssettings.md
 - name: "Chatbot 类"
-  href: api.md
+  href: chatbot/toc.yml
+  topicHref: api.md
 - name: "常见问题"
   href: faq.md

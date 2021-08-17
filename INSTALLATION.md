@@ -1,8 +1,12 @@
 # Chatopera Docs
 
-文档中心
+文档中心 / Code as Docs.
 
-Code as Docs.
+## TL; DR
+
+```
+./admin/docker/serve.sh
+```
 
 依赖 `docfx`，在没有安装`docfx`的操作系统上，提供 docker 镜像支持编写。
 
