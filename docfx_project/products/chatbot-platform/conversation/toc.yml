@@ -12,7 +12,8 @@
 - name: "上下轮钩子"
   href: hooks.md
 - name: "函数"
-  href: function.md
+  href: functions/toc.yml
+  topicHref: function.md
 - name: "对话状态管理"
   href: state.md
 - name: "使用进阶"
