@@ -38,9 +38,9 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 
 设置知识库问答对，在答案中按照特定格式书写，直接路由到多轮对话的主题和匹配器。
 
-在 Chatopera 机器人平台中，多轮对话检索过程中，使用[洋葱模型](https://www.infoq.cn/article/2014/11/ddd-onion-architecture)。[多轮对话检索接口](/products/chatbot-platform/integration/api.html#检索多轮对话)时，会先检索知识库，参考知识库的检索结果执行回复逻辑。此处进一步参考：
+在 Chatopera 机器人平台中，多轮对话检索过程中，使用[洋葱模型](https://www.infoq.cn/article/2014/11/ddd-onion-architecture)。[多轮对话检索接口](/products/chatbot-platform/integration/api.html#检索多轮对话)时，会先检索知识库，参考知识库的检索结果执行回复逻辑。
 
-[多轮对话检索逻辑](/products/chatbot-platform/integration/api.html#服务器端逻辑)
+此处进一步参考：[知识库路由](/products/chatbot-platform/conversation/mechanism.html#知识库路由)。
 
 ## 评论
 
