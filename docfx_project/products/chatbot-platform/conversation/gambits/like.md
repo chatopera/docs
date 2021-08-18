@@ -78,7 +78,7 @@
 
 ## 使用调试
 
-对于一条模糊匹配器规则，究竟要适应多少种问法，容错是保守一点，还是要非常灵活。这需要在调试机器人时，Chatopera 机器人平台用户，自行判断。在多轮对话设计器内，可以增加模糊匹配器里的句子，或者适当的调节阀值 `threshold`。
+对于一条模糊匹配器规则，究竟要适应多少种问法？容错是保守一点，还是要非常灵活？这需要在调试机器人时，Chatopera 机器人平台用户，自行判断。在多轮对话设计器内，可以增加模糊匹配器里的句子，或者适当的调节阀值 `threshold`。
 
 ### 调试过程
 
@@ -111,7 +111,7 @@
 2021-08-18 13:52:52   DEBUG   conversation  [DoesMatch] like gambit(threshold 0.8): ${商场几点开门} -similarity-> 1. score(1) : 商场 几 点 开门
 ```
 
-其中，DoesMatch 是服务端计算该相似度的函数名，like gambit(threshold) 表示这个匹配器是模糊匹配，并输出本次的阀值，后面就是匹配器内容， -similarity-> 后的输出是每个句子和输入内容的相似度，score 括号内就是相似度，分数后面是句子的分词结果；多个句子时，使用 “｜” 分隔。
+其中，`DoesMatch` 是服务端计算该相似度的函数名，`like gambit(threshold)` 表示这个匹配器是模糊匹配，并输出本次的阀值，后面就是匹配器内容， `-similarity->` 后的输出是每个句子和输入内容的相似度，`score()`内就是相似度，分数后面是句子的分词结果；多个句子时，使用 “`｜`” 分隔。
 
 比如：
 
@@ -131,7 +131,7 @@
 
 如果匹配上模糊匹配器，回复的函数中，可以获得到哪些信息，进一步的让回复内容更加智能？
 
-模糊匹配器上，函数中利用输入的自然语言处理信息办法：使用 this.message 内包含的信息进行分析。
+模糊匹配器上，函数中利用输入的自然语言处理信息办法：使用 `this.message` 内包含的信息进行分析。
 
 假如有这样的脚本和函数：
 
@@ -166,15 +166,19 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 在 Chatopera 机器人平台，不同语言使用词性标识因为语言本身的原因，不是很一致。
 
-| 语言                       | 词性标注集                                                           |
-| -------------------------- | -------------------------------------------------------------------- |
-| 中文（简体中文，繁体中文） | [https://dwz.chatopera.com/X668W3](https://dwz.chatopera.com/X668W3) |
+| 语言                                       | 词性标注集                                                           |
+| ------------------------------------------ | -------------------------------------------------------------------- |
+| 中文（简体中文 `zh_CN`，繁体中文 `zh_TW`） | [https://dwz.chatopera.com/X668W3](https://dwz.chatopera.com/X668W3) |
+| 英文 / en_US / Enlgish                     | [https://dwz.chatopera.com/C8523m](https://dwz.chatopera.com/C8523m) |
+| 日语 / Japanese                            | [https://dwz.chatopera.com/3d05q5](https://dwz.chatopera.com/3d05q5) |
 
 得到匹配信息，再结合 Chatopera 机器人平台内其它的内置函数库，可以实现更为强大的对话能力！
 
 通过提供不同形式的匹配器，适合智能对话机器人开发者在不同场景下因地制宜的选择构建规则的方法。
 
 ## 下一步
+
+- [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/conversation/functions/builtin.html#thismessage)
 
 - [下载多轮对话设计器](/products/chatbot-platform/conversation/cde.html)
 

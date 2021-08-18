@@ -64,62 +64,25 @@ this.user.history 类型：数组
 
 历史对话按照降序排列，即最近发生的对话在上面，最多存储 100 轮历史对话数据。
 
-## config
+## this.message
 
-获取**环境变量**，环境变量在**多轮对话设计器**和**聊天机器人多轮对话控制台**都可以定义，目的是在设计阶段和运行阶段，多轮对话使用不同的配置。
-
-<table class="image">
-<caption align="bottom">配置环境变量</caption>
-<tr><td><img width="800" src="../../../../images/products/platform/bot-console-define-config.jpg" alt="配置环境变量"/></td></tr>
-</table>
-
-`config`作为函数中的全局常量，不需要用户定义，不支持改变该值，只能作为读取用途，并且`config`只是键值对，值只是`string`类型。
+`this.message` 是每次用户输入文本经过自然语言处理后的对象，它并不是全局对象，必须在 `exports` 的函数中，使用 `this.message` 来引用。
 
 ```
-exports.print_key_value = function(key, cb){
-    // 通过通配符获得key, 查看其在环境变量中对应对值
-    cb(null, "Ok, value is " + config[key]);
-}
+this.message.original | String, 输入文本的原始内容
+this.message.words | JSONArray, 分词结果
+this.message.tags | JSONArray, 对应位置分词的词性
+this.message.clean | String, 输入文本的改写，经过词根转化的输入字符串
+this.message.entities | JSONArray, 输入文本包含的命名实体
+this.message.names | JSONArray, 输入文本包含的人名
+this.message.nouns | JSONArray, 输入文本包含的名词
+this.message.adverbs· | JSONArray, 输入文本包含的副词
+this.message.verbs | JSONArray, 输入文本包含的动词
+this.message.adjectives | JSONArray, 输入文本包含的形容词
+this.message.pronouns | JSONArray, 输入文本包含的指示代词
 ```
 
-- config 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=config](https://github.com/chatopera/chatbot-samples/search?q=config)
-
-`环境变量`常用来配置一些生产环境对应的信息。
-
-## http
-
-用于在函数内部，通过 HTTP 协议集成外部系统。
-
-`http`作为函数中的全局常量，不需要用户定义。
-
-```
-http.get(url[, config])
-http.delete(url[, config])
-http.head(url[, config])
-http.options(url[, config])
-http.post(url[, data[, config]])
-http.put(url[, data[, config]])
-http.patch(url[, data[, config]])
-```
-
-Chatopera 机器人平台中，函数内置`http`常量使用[axios](https://www.npmjs.com/package/axios)包实例化，`http`即`axios`。
-
-- http 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=http](https://github.com/chatopera/chatbot-samples/search?q=http)
-
-- axios 详细使用文档： [https://github.com/axios/axios](https://github.com/axios/axios)
-
-## debug
-
-打印调试日志。
-
-`debug`作为函数中的全局常量，不需要用户定义。
-
-```
-debug("hello")
-debug("hello %s", stringVar)
-debug("hello %s, %j", stringVar, jsonVar)
-debug("hello %s, %o", stringVar, objVar)
-```
+关于 `this.message.tags` 包含了所有的分词对应的词性，可以用来做更多的判断，不同语言的词性集是不同的，参考 [Chatopera 多轮对话 Message 语言词性标注](https://github.com/chatopera/docs/wiki/Chatopera-%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D-Message-%E8%AF%AD%E8%A8%80%E8%AF%8D%E6%80%A7%E6%A0%87%E6%B3%A8)。
 
 ## this.maestro
 
@@ -232,6 +195,65 @@ _value_: 属性值
 该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
 
 用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/integration/api.html#获取用户画像信息)获得。
+
+## config
+
+获取**环境变量**，环境变量在**多轮对话设计器**和**聊天机器人多轮对话控制台**都可以定义，目的是在设计阶段和运行阶段，多轮对话使用不同的配置。
+
+<table class="image">
+<caption align="bottom">配置环境变量</caption>
+<tr><td><img width="800" src="../../../../images/products/platform/bot-console-define-config.jpg" alt="配置环境变量"/></td></tr>
+</table>
+
+`config`作为函数中的全局常量，不需要用户定义，不支持改变该值，只能作为读取用途，并且`config`只是键值对，值只是`string`类型。
+
+```
+exports.print_key_value = function(key, cb){
+    // 通过通配符获得key, 查看其在环境变量中对应对值
+    cb(null, "Ok, value is " + config[key]);
+}
+```
+
+- config 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=config](https://github.com/chatopera/chatbot-samples/search?q=config)
+
+`环境变量`常用来配置一些生产环境对应的信息。
+
+## http
+
+用于在函数内部，通过 HTTP 协议集成外部系统。
+
+`http`作为函数中的全局常量，不需要用户定义。
+
+```
+http.get(url[, config])
+http.delete(url[, config])
+http.head(url[, config])
+http.options(url[, config])
+http.post(url[, data[, config]])
+http.put(url[, data[, config]])
+http.patch(url[, data[, config]])
+```
+
+Chatopera 机器人平台中，函数内置`http`常量使用[axios](https://www.npmjs.com/package/axios)包实例化，`http`即`axios`。
+
+- http 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=http](https://github.com/chatopera/chatbot-samples/search?q=http)
+
+- axios 详细使用文档： [https://github.com/axios/axios](https://github.com/axios/axios)
+
+## debug
+
+打印调试日志。
+
+`debug`作为函数中的全局常量，不需要用户定义。
+
+```
+debug("hello")
+debug("hello %s", stringVar)
+debug("hello %s, %j", stringVar, jsonVar)
+debug("hello %s, %o", stringVar, objVar)
+```
+
+- debug 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=debug](https://github.com/chatopera/chatbot-samples/search?q=debug)
 
 ## 评论
 
