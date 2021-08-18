@@ -7,7 +7,7 @@
 - name: "对话检索"
   href: chat.md
 - name: "词典管理"
-  href: chat.md
+  href: dicts.md
 - name: "知识库管理"
   href: knowledge.md
 - name: "用户和对话历史"
