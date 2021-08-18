@@ -16,15 +16,15 @@
   topicHref: conversation/index.md
 - name: 测试对话
   href: debug.md
-- name: 聚类分析
-  href: lattice.md
 - name: 系统集成
   href: integration/toc.yml
   topicHref: integration/index.md
-- name: 统计报表
-  href: audit.md
 - name: 历史记录
   href: history.md
+- name: 聚类分析
+  href: lattice.md
+- name: 统计报表
+  href: audit.md
 - name: 计费及发票
   href: billing.md
 - name: 技术支持
