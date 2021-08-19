@@ -11,11 +11,12 @@
     </tr>
 </table>
 
-在一些场景中，如导购、销售、邀约和筛选潜在客户等带有话术流程的需求中，使用**多轮对话**模块实现很方便，并且结合[知识库](/products/chatbot-platform/faq/index.html)和[意图识别](/products/chatbot-platform/intent.html)，可实现强大的智能问答服务。
+在一些场景中，如导购、销售、邀约和筛选潜在客户等带有话术流程的需求中，使用**多轮对话**模块实现很方便，并且结合[知识库](/products/chatbot-platform/faq/index.html)和[意图识别](/products/chatbot-platform/intent/index.html)，可实现强大的智能问答服务，理解 [Chatopera 多轮对话工作机制](/products/chatbot-platform/conversation/mechanism.html)，可以快速掌握本模块使用。
 
 ## 接下来
 
 - [术语 / Glossary](/products/chatbot-platform/conversation/glossary.html)
+- [工作机制 / Conversation Mechanism](/products/chatbot-platform/conversation/mechanism.html)
 - [快速开始](/products/chatbot-platform/conversation/quick-start.html)
 - [多轮对话设计器 / CDE](/products/chatbot-platform/conversation/cde.html)
 - [匹配器 / Gambit](/products/chatbot-platform/conversation/gambits/index.html)
