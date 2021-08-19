@@ -1,4 +1,4 @@
-## 对话状态管理
+# 对话状态管理
 
 在多轮对话中，来访者和机器人对话的过程可以想像成来访者使用地图游览，每个时刻，来访者的位置都可以映射到地图上。地图有一定的行走路径，来访者下一步所能选择的方向是由当前状态提供的。
 
@@ -36,11 +36,34 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 
 ## 知识库路由
 
-设置知识库问答对，在答案中按照特定格式书写，直接路由到多轮对话的主题和匹配器。
+在[知识库的答案](/products/chatbot-platform/faq/qna.html#设定答案)或[多轮对话的函数](/products/chatbot-platform/conversation/function.html)中设置回复时，可以用 **routeDirectReply** 来检索一个指定的[话题](/products/chatbot-platform/conversation/index.html#术语)和[匹配器](/products/chatbot-platform/conversation/index.html#匹配器)，直接路由到多轮对话的主题和匹配器。
 
-在 Chatopera 机器人平台中，多轮对话检索过程中，使用[洋葱模型](https://www.infoq.cn/article/2014/11/ddd-onion-architecture)。[多轮对话检索接口](/products/chatbot-platform/integration/api.html#检索多轮对话)时，会先检索知识库，参考知识库的检索结果执行回复逻辑。
+语法：
 
-此处进一步参考：[知识库路由](/products/chatbot-platform/conversation/mechanism.html#知识库路由)。
+```
+routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID" [,INHERIT_PARAMS]]
+```
+
+_TOPIC_NAME_: [对话名称](/products/chatbot-platform/conversation/index.html#术语)
+
+_TOPIC_GAMBIT_ID_: [触发器名称](/products/chatbot-platform/conversation/index.html#术语)
+
+其中，_INHERIT_PARAMS_ 是可选参数，决定当前对话取得的 `params` 是否覆盖接下来对话的 `params`，值为`[true|false]`，默认为 `false`。
+
+另外，当 `TOPIC_GAMBIT_ID` 的值为 `$ctx.textMessage$` 时，则使用当前对话的用户输入，在 `TOPIC_NAME` 中进行检索。
+
+比如
+
+```
+routeDirectReply#["class_001_pre", "__C1PRE_GAMBIT_003",true]
+```
+
+<table class="image">
+<caption align="bottom">【知识库或函数】路由多轮对话</caption>
+<tr><td><img width="600" src="../../../images/products/platform/set-faq-route-conversion-reply.jpg" alt="【知识库或函数】路由多轮对话"/></td></tr>
+</table>
+
+提示：**routeDirectReply**需要设定为知识库问答对里的第一个答案，答案类型为 纯文本`plain`。
 
 ## 评论
 
