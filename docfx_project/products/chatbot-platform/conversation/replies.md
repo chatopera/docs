@@ -142,9 +142,30 @@
 
 此处，上下轮钩子，即`%`开头的句子，代表匹配器“你猜我叫什么？”只服务于“你好，&#60;cap1&#62;”作为回复时，它会被优先匹配。上一轮对话的回复通过(%)的方式指定了接下来的逻辑，形成多轮对话。
 
+关于上下文钩子的[详细介绍文档](/products/chatbot-platform/conversation/hooks.html)。
+
 **提示：**
 **1) +/%/- 前的空格不是必须的，在多轮对话中，空格可以增强脚本的可读性，比如使用上下轮钩子中的段首缩进。**
 **2) 通配符取值适用于通配符匹配器，其它形式的匹配器，有不同的值传递方式，参考它们的详细说明。**
+
+## 函数
+
+函数就是通过写 JavaScript 脚本，处理回复，在脚本中，可以实现各种逻辑，做外部系统集成等。
+
+```
++ 我叫 *~3
+- ^getGreetings(<cap1>)
+```
+
+那么，在多轮对话设计器内，通过 `exports.getGreetings = async function(){ // do your magic}` 来定制化回复内容。
+
+函数的详细使用[参考文档](/products/chatbot-platform/conversation/function.html)。
+
+## 下一步
+
+- [上下轮钩子](/products/chatbot-platform/conversation/hooks.html)
+
+- [函数](/products/chatbot-platform/conversation/function.html)
 
 ## 评论
 
