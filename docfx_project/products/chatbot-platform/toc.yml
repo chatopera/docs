@@ -27,9 +27,9 @@
   href: audit.md
 - name: 计费及发票
   href: billing.md
-- name: 技术支持
-  href: support.md
-- name: 服务水平协议
-  href: sla.md
-- name: 服务条款
-  href: terms.md
+- name: 服务支持
+  href: contract/toc.yml
+  topicHref: contract/index.md
+- name: 附录
+  href: appendix/toc.yml
+  topicHref: appendix/index.md

@@ -18,13 +18,9 @@
 
 ![](../../images/products/platform/image-044.png)
 
-## 用户交流群
-
-【QQ 交流群】809987971 [快速加入](https://jq.qq.com/?_wv=1027&k=5JpEvBZ), 通过 QQ 群咨询售前/售后问题常见问题，对产品升级、维护等会通过邮件、群公告告知。
-
-**用户向 Chatopera 提供的邮箱、手机号无效、非持有者，因此无法收到通知、造成数据丢失等损失，并不由 Chatopera 承担责任。**
-
 ## 投诉
+
+联系方式：见 [https://www.chatopera.com/mail.html](https://www.chatopera.com/mail.html)
 
 微信或企业微信扫一扫，告知工作人员、服务等问题。
 

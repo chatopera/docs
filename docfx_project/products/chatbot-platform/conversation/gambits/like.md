@@ -166,11 +166,11 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 在 Chatopera 机器人平台，不同语言使用词性标识因为语言本身的原因，不是很一致。
 
-| 语言                                       | 词性标注集                                                           |
-| ------------------------------------------ | -------------------------------------------------------------------- |
-| 中文（简体中文 `zh_CN`，繁体中文 `zh_TW`） | [https://dwz.chatopera.com/X668W3](https://dwz.chatopera.com/X668W3) |
-| 英文 / en_US / Enlgish                     | [https://dwz.chatopera.com/C8523m](https://dwz.chatopera.com/C8523m) |
-| 日语 / Japanese                            | [https://dwz.chatopera.com/3d05q5](https://dwz.chatopera.com/3d05q5) |
+| 语言                                       | 词性标注集                                                               |
+| ------------------------------------------ | ------------------------------------------------------------------------ |
+| 中文（简体中文 `zh_CN`，繁体中文 `zh_TW`） | [文档](/products/chatbot-platform/appendix/nlp-tags.html#中文)           |
+| 英文 / en_US / Enlgish                     | [文档](/products/chatbot-platform/appendix/nlp-tags.html#english--英语)  |
+| 日语 / Japanese                            | [文档](/products/chatbot-platform/appendix/nlp-tags.html#日语--japanese) |
 
 得到匹配信息，再结合 Chatopera 机器人平台内其它的内置函数库，可以实现更为强大的对话能力！
 

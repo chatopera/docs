@@ -35,7 +35,7 @@
 
 ### 联系我们
 
-如无法在常见问题中得到相关信息，请查看 [Chatopera 技术支持联系信息](/products/chatbot-platform/support.html)。
+如无法在常见问题中得到相关信息，请查看 [Chatopera 技术支持联系信息](/products/chatbot-platform/contract/support.html)。
 
 ## 评论
 

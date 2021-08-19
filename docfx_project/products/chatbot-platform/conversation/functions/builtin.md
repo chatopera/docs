@@ -82,7 +82,7 @@ this.message.adjectives | JSONArray, 输入文本包含的形容词
 this.message.pronouns | JSONArray, 输入文本包含的指示代词
 ```
 
-关于 `this.message.tags` 包含了所有的分词对应的词性，可以用来做更多的判断，不同语言的词性集是不同的，参考 [Chatopera 多轮对话 Message 语言词性标注](https://github.com/chatopera/docs/wiki/Chatopera-%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D-Message-%E8%AF%AD%E8%A8%80%E8%AF%8D%E6%80%A7%E6%A0%87%E6%B3%A8)。
+关于 `this.message.tags` 包含了所有的分词对应的词性，可以用来做更多的判断，不同语言的词性集是不同的，参考 [Chatopera 多轮对话 Message 语言词性标注](/products/chatbot-platform/appendix/nlp-tags.html)。
 
 ## this.maestro
 

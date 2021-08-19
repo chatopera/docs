@@ -42,7 +42,7 @@ Chatopera 融合了不同形式的实现聊天机器人的方法，从而满足�
 
 ## 可靠性保证
 
-Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a Service 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性，浏览[技术支持](/products/chatbot-platform/support.html)信息。
+Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a Service 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性，浏览[技术支持](/products/chatbot-platform/contract/support.html)信息。
 
 ## 产品更新日志
 
