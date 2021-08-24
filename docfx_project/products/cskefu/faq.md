@@ -26,7 +26,7 @@
 
 免费模块目前支持 PC，Mobile 浏览器，开源版本就可以。APP 需要对接 SDK，这个有额外的开发工作，我们可以定制开发。
 
-完成付费模块支持电话和 Facebook Messenger。
+付费模块支持安装 [Facebook Messenger](/products/cskefu/channels/messenger/index.html) 渠道插件。
 
 **问：如果我们也需要给商家开坐席,也是能支持的吗？**
 
@@ -57,10 +57,6 @@
 
 [cc] 提供启动客服会话的 RestAPI [#97](https://github.com/chatopera/cosin/issues/97)
 
-**问：这个后台的电话功能是需要配置完才会有吗？工单系统怎么用？**
-
-呼叫时要配合一个硬件设备，才能适应起来。工单目前不支持，除非你们愿意采购我们定制化开发服务，可以很快支持。
-
 **问：由于使用了 netty-socketio，所以 Web 端、android、ios 端都需要使用 socketio 的客户端吧，比如不能说 Android 直接写原生 netty 客户端 或者 web 直接写 websocket 客户端去连服务器，对吧？**
 
 socketio 是对 websocket 进行封装，是 websocket 协议的一种实现，在客户端通过 websocket 连接应该是没问题的。这块我还没有试过，不过肯定能 google 到。
@@ -88,10 +84,6 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 ** 问：春松的访客，有匿名用户和注册用户的概念吗 **
 
 没有，访客并不注册账号，客服端可以关联联系人。
-
-**问：好像没有多租户的功能？**
-
-春松客服商业版支持多租户。
 
 **问：没有多租户也就是你们没有考虑搞 saas 云喽?要用只能做独立部署?**
 
