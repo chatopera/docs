@@ -1,6 +1,6 @@
 ## 安装插件
 
-如果使用春松客服官方的 docker 镜像部署，则无需此步。对于开源社区用户，在下载春松客服源码并启动后，不能立即得到机器人客服菜单，需要先安装插件。
+**如果使用春松客服官方的 docker 镜像部署，则无需此步。** 对于开源社区用户，在下载春松客服源码后，需要先安装本插件，然后编译代码，再启动应用，才可以在【系统】中，看到【智能机器人】管理菜单。
 
 **安装插件文档 [https://github.com/chatopera/cskefu/tree/osc/public/plugins](https://github.com/chatopera/cskefu/tree/osc/public/plugins)**
 

@@ -65,6 +65,14 @@
 
 视频地址：[https://ke.qq.com/course/475430](https://ke.qq.com/course/475430)
 
+## 下一步
+
+- [安装及配置：在开源代码基础上，安装插件；配置环境变量](/products/cskefu/work-chatbot/install.html)
+
+- [配置机器人客服：创建机器人，创建渠道，绑定机器人](/products/cskefu/work-chatbot/bot-agent.html)
+
+- [消息类型：支持热门问题列表，增强机器人交互体验，发送图文、按钮消息](/products/cskefu/work-chatbot/message-types.html)
+
 ## 计费和发票
 
 春松客服里机器人客服的收费标准，对于使用 [Chatopera 云服务](https://bot.chatopera.com/) 而言，参考 [《计费和发票》](https://docs.chatopera.com/products/chatbot-platform/billing.html)；同时，Chatopera 机器人平台可为企业客户私有部署，洽谈合作参考 [《联系我们》](https://www.chatopera.com/price.html)。
