@@ -2,26 +2,21 @@
 
 ## 综述
 
-Chatopera 为企业提供**智能对话机器人**和**智能客服系统**解决方案，这些解决方案面向多个行业，支持通用的业务场景，比如客户服务中的多渠道管理、坐席管理、企业知识库和机器人对话管理。同时，Chatopera 面向开发者提供开源软件、云服务、开发者社区和学习资料，帮助开发者掌握智能对话机器人和客服系统的定制化开发技能，进而为企业客户进一步优化软件服务。
-
 ![](/images/products/trademark-chatopera.png)
 
-`Chatopera` 是[华夏春松](https://www.chatopera.com)的面向企业服务的人工智能品牌和产品线。
+Chatopera 为企业、开发者和 IT 集成商提供**智能对话机器人**和**智能客服系统**解决方案，面向不同行业，支持场景包括**客户服务**、**营销获客**和**企业自动化流程**。在智能对话机器人方面，Chatopera 产品标准化了智能对话机器人开发工具，适应不同行业定制聊天机器人。对于智能客服系统，Chatopera 推出开源项目，赋能开发者、合伙伙伴和开源社区。因此，Chatopera 面向开发者提供开源软件、云服务、开发者社区和学习资料，帮助开发者掌握智能对话机器人和客服系统的定制化开发技能，进而为企业客户可以获得稳定可靠的服务保障和技术支持。
 
-<video controls preload="none" autobuffer="false" poster="images/products/introduction-video-cover.jpg">
-  <source
-    src="https://www.chatopera.com/files/introduction.webm"
-    type="video/webm"
-  />
-</video>
-</br>
-</br>
+Chatopera 相信：**聊天即服务**。这是一个新的契机，Chatopera 所有产品都是围绕这个理念和价值主义展开，和用户、社区携手进入人工智能时代！
+
+![](/images/products/usercase-1.png)
 
 本文档包含对 Chatopera 产品的详细使用介绍：
 
 ## 云服务
 
-企业或开发者使用 [Chatopera 云服务](https://bot.chatopera.com)低代码、无代码方式定制智能对话机器人，Chatopera 云服务是[Chatopera 机器人平台](/products/chatbot-platform/index.html)的公有云实例。Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
+**用聊天机器人做市场营销、客户服务和自动化流程？如何实现多轮对话？Chatopera 机器人平台帮助企业或开发者使用低代码、无代码方式定制智能对话机器人。**
+
+[Chatopera 云服务](https://bot.chatopera.com)是[Chatopera 机器人平台](/products/chatbot-platform/index.html)的公有云实例。Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
 
 Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
 

@@ -13,6 +13,14 @@
 
 ## 解决方案
 
+<video controls preload="none" autobuffer="false" poster="/images/products/introduction-video-cover.jpg">
+  <source
+    src="https://www.chatopera.com/files/introduction.webm"
+    type="video/webm"
+  />
+</video>
+</br>
+
 ### 场景描述
 
 在 Chatopera，机器人客服将加入到聊天室中，它有两种参与客户服务的方式：
