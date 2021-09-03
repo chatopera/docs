@@ -156,7 +156,7 @@ let dates = await this.maestro.extractTime(cap1[, format, timezone]);
 
 ```
 let dates = await this.maestro.extractTime("明天和后天是几月几号？", "YYYY年MM月DD日", "Asia/Shanghai");
-// dates #TODO
+// dates  [ '2021年09月02日', '2021年09月03日' ]
 ```
 
 ### 发送邮件
