@@ -60,7 +60,7 @@ Chatopera 多轮对话解决方案的一个主要目标是以无代码、低代�
 
 <img width="600" src="../../../images/products/platform/mechanism/conversations.jpg"/>
 
-(详细说明图（查看大图）)[/images/products/platform/mechanism/conversations.jpg]虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](/products/chatbot-platform/integration/chatbot/chat.html#检索多轮对话)。
+[详细说明图（查看大图）](/images/products/platform/mechanism/conversations.jpg) 虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](/products/chatbot-platform/integration/chatbot/chat.html#检索多轮对话)。
 
 关于知识库、脚本对话和意图识别的相互之间的调用关系，后文会有更多介绍。
 
