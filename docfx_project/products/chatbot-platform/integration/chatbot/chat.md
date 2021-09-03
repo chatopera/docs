@@ -289,7 +289,7 @@ _botName_: 机器人的名字
 
 _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
 
-`service`代表返回的数据来源，**provider:script**指**多轮对话**，**provider:faq**指**知识库**；不同数据来源也会提供相应信息。
+`service`代表返回的数据来源，**provider:conversation**指**多轮对话**，**provider:faq**指**知识库**，**provider:intent**指**意图识别**；不同数据来源也会提供相应信息。
 
 | provider     | key                  | 解释    |
 | ------------ | -------------------- | ------- |
@@ -298,6 +298,10 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 |              | post                 | 标准问  |
 |              | score                | 分数    |
 |              | threshold            | 阀值    |
+| intent | 意图识别             |     更多描述参考[意图识别匹配器](/products/chatbot-platform/conversation/gambits/intent.html)    |
+|              | intent.name                 | 意图名称  |
+|              | intent.state                 | 意图会话状态  |
+|              | intent.entities                 | 意图中的命名实体  |
 | conversation | 多轮对话             |         |
 | fallback     | 兜底回复             |         |
 | mute         | 该用户被该机器人屏蔽 |         |

@@ -141,8 +141,22 @@ this.maestro.del(KEY) 返回值：Promise
 获得绝对时间，比如 来访者提到 “明天”，“后天”，“下周一”等相对时间，会被计算出正确的绝对时间，时区为北京时间。
 
 ```
-let time = await this.maestro.extractTime(cap1)
-this.maestro.formatTime(time[0].toString(), "YYYY年MM月DD日") # 从返回值中格式化日期，formatTime返回值 String
+let dates = await this.maestro.extractTime(cap1[, format, timezone]);
+```
+
+其中，`format` 格式参考[momentjs#format](https://momentjs.com/docs/#/displaying/format/)，如果设定 `format` 的值为 `long`，返回值数组中数据格式为数字，类似于使用 JavaScript `(new Date()).getTime()` 获得的数据。
+
+`timezone` 值设定参考[momentjs#timezone](https://momentjs.com/timezone/)。
+
+`format` 默认值为 `YYYY/MM/DD HH:mm`，`timezone` 默认值为 `Asia/Shanghai`。
+
+返回值: `dates` 是处理后的时间数组，识别的文本中，可以包含多个时间；可以具体到分钟，格式化时，未得到的时间被设置为 `0` 。
+
+比如
+
+```
+let dates = await this.maestro.extractTime("明天和后天是几月几号？", "YYYY年MM月DD日", "Asia/Shanghai");
+// dates #TODO
 ```
 
 ### 发送邮件

@@ -16,6 +16,8 @@
 - name: "函数"
   href: functions/toc.yml
   topicHref: function.md
+- name: "环境变量"
+  href: "environment.md"
 - name: "对话状态管理"
   href: state.md
 - name: "使用进阶"
