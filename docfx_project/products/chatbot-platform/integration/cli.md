@@ -1,6 +1,6 @@
 # 命令行界面（CLI）
 
-Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工具，包括一些常用的命令，辅助开发者实现和管理对话机器人。尤其是在有自动化或批量管理的需要时。CLI 完全基于 [Chatopera Node.js SDK](Chatopera Node.js SDK)，开发者也可以参考 SDK 源码，进一步掌握对 SDK 的使用。
+Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工具，包括一些常用的命令，辅助开发者实现和管理对话机器人。尤其是在有自动化或批量管理的需要时。CLI 完全基于 [Chatopera Node.js SDK](https://github.com/chatopera/chatopera-nodejs-sdk)，开发者也可以参考 SDK 源码，进一步掌握对 SDK 的使用。
 
 [https://github.com/chatopera/chatopera-nodejs-sdk](https://github.com/chatopera/chatopera-nodejs-sdk)
 
