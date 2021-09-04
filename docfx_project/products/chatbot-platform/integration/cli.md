@@ -32,7 +32,7 @@ added 147 packages from 104 contributors in 36.389s
 
 ```
 $ bot --version
-2.7.1  # 得到类似输出，代表安装正确，2.7.1 为当时最新的 Chatopera CLI 版本
+2.x  # 得到类似输出，代表安装正确，2.x 为当时最新的 Chatopera CLI 版本
 ```
 
 如果上述命令 `bot --version` 执行提示错误，检查环境变量 `PATH` 路径，比如 `C:\Users\Administrator\AppData\Roaming\npm` 是否在 `PATH` 内。
@@ -91,6 +91,18 @@ Options:
                               0.6
   -h, --help                  display help for command
 ```
+
+CLI 支持的功能就是对不同模块的数据导入和导出，外加一些其他命令，辅助自动化管理机器人。
+
+### 导入和导出
+
+简单的说，导入和导出针对于不同模块，CLI 命令是遵循同一个规范的。
+
+```
+bot [conversation|intent|faq] --action [import|export] --filepath {{FILE_PATH}}
+```
+
+如果是导出（`export`），没有加入`--filepath`部分，则会默认保存文件到当前工作目录（`cwd` 目录）。
 
 ## 配置参数
 
@@ -169,43 +181,7 @@ bot conversation --action export --filepath /tmp/bot.conversations.c66
 bot conversation --action import --filepath /tmp/bot.conversations.c66
 ```
 
-其中 `filepath` 为 `xx.c66` 文件或**机器人的话题文件目录**，支持相对路径和绝对路径。
-
-#### 机器人的话题文件目录
-
-将 `xx.c66` 文件后缀调整为 `.zip` 并解压后的目录结构。
-
-```
-botarchive
-├── index.json
-├── plugin.js
-└── zh_CN.greeting.ms
-```
-
-其中，`index.json`描述机器人多轮对话属性：
-
-```
-{
-    "name": "大白",
-    "primaryLanguage": "zh_CN",
-    "version": "0.5.0",
-    "conversations": [
-        {
-            "name": "greeting",
-            "enabled": true
-        }
-    ],
-    "config": // 环境变量Key-Value
-    {
-    }
-}
-```
-
-`plugin.js` 是`函数`，参考[说明文档](https://docs.chatopera.com/products/chatbot-platform/conversation/function.html)。
-
-快速开始参考[示例程序](https://github.com/chatopera/chatbot-samples)：[活动通知](https://github.com/chatopera/chatbot-samples/tree/master/projects/%E6%B4%BB%E5%8A%A8%E9%80%9A%E7%9F%A5)。
-
-Chatopera CLI 支持直接使用 `-b` 参数指定`机器人的话题文件目录`的方式上传多轮对话。
+其中 `filepath` 为 `xx.c66` 文件，支持相对路径和绝对路径。
 
 ### trace
 
