@@ -4,7 +4,6 @@ Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工�
 
 [https://github.com/chatopera/chatopera-nodejs-sdk](https://github.com/chatopera/chatopera-nodejs-sdk)
 
-
 ## 安装
 
 Chatopera CLI 依赖于 [Node.js v10+](https://nodejs.org/zh-cn/) 环境，使用 `npm` 进行安装（`npm` 是 `Nodejs` 安装完成后得到的 CLI 工具）。
@@ -25,7 +24,7 @@ npm install -g @chatopera/sdk
  npm install -g @chatopera/sdk
 C:\Users\Administrator\AppData\Roaming\npm\bot -> C:\Users\Administrator\AppData
 \Roaming\npm\node_modules\@chatopera\sdk\bin\bot.js
-+ @chatopera/sdk@2.6.1
++ @chatopera/sdk@2.7.1
 added 147 packages from 104 contributors in 36.389s
 ```
 
@@ -33,7 +32,7 @@ added 147 packages from 104 contributors in 36.389s
 
 ```
 $ bot --version
-2.6.1  # 得到类似输出，代表安装正确，2.6.1 为当时最新的 Chatopera CLI 版本
+2.7.1  # 得到类似输出，代表安装正确，2.7.1 为当时最新的 Chatopera CLI 版本
 ```
 
 如果上述命令 `bot --version` 执行提示错误，检查环境变量 `PATH` 路径，比如 `C:\Users\Administrator\AppData\Roaming\npm` 是否在 `PATH` 内。
@@ -52,21 +51,28 @@ bot --help
 Usage: bot [options] [command]
 
 Options:
-  -V, --version      output the version number
-  -h, --help         display help for command
+  -V, --version           output the version number
+  -h, --help              display help for command
 
 Commands:
-  connect [options]
-  deploy [options]
-  trace [options]
-  asr [options]
-  help [command]     display help for command
+  details [options]       get a bot's detail info, such as name, primaryLanguage
+  connect [options]       chat with bot via bot#conversation interface, https://dwz.chatopera.com/SHl7N5
+  conversation [options]  import or export a bot's conversations data
+  trace [options]         tail a bot's conversations logging info
+  asr [options]           request Chatopera ASR API,
+                          https://docs.chatopera.com/products/chatbot-platform/integration/chatbot/asr.html
+  faq [options]           import or export a bot's faqs data
+  dicts [options]         import or export a bot's dicts data
+  intents [options]       import or export a bot's intents data
+  help [command]          display help for command
 ```
 
 也可以针对一个命令，获得更多帮助提示，比如：
 
 ```
 bot connect --help
+bot trace --help
+bot conversation --action export --help
 ```
 
 获得类似输出：
@@ -86,9 +92,7 @@ Options:
   -h, --help                  display help for command
 ```
 
-
 ## 配置参数
-
 
 Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`, `clientid` 等常用的变量。
 
@@ -120,30 +124,22 @@ BOT_ACCESS_TOKEN=xxx
 /Users/.env
 /.env
 ```
+
+<font color="blue">为简化说明，以下各示例配置使用了 .env 文件，因为略去了从命令行传入的一些参数。</font>
+
 ## 多轮对话
+
 ### connect
 
 连接聊天机器人，在命令行终端连接 BOT 并进行对话。
-
-```
-Usage: connect [options]
-
-Options:
-  -c, --clientid [value]      ClientId of the bot
-  -s, --clientsecret [value]  Client Secret of the bot, optional, default null
-  -u, --username [value]      Username to chat with bot, default: commandline
-  -p, --provider [value]      Chatopera Bot Service URL, optional, default https://bot.chatopera.com
-  -fb, --faq-best [value]     FAQ best reply threshold, optional, default 0.8
-  -fs, --faq-sugg [value]     FAQ suggest reply threshold, optional, default 0.6
-```
-
-其中，`clientid`和`clientsecret`从每个机器人的设置页面获取，`username`代表用户名，是一个不含空格或特殊符号的字符串，每个用户的唯一标识，`provider`是[Chatopera 机器人平台](https://docs.chatopera.com/products/chatbot-platform/index.html)地址，默认为 [Chatopera 云服务](https://bot.chatopera.com/)。
 
 示例：
 
 ```
 bot connect -c xxx -s xxx -u zhangsan
 ```
+
+其中，`clientid`和`clientsecret`从每个机器人的设置页面获取，`username`代表用户名，是一个不含空格或特殊符号的字符串，每个用户的唯一标识，`provider`是[Chatopera 机器人平台](https://docs.chatopera.com/products/chatbot-platform/index.html)地址，默认为 [Chatopera 云服务](https://bot.chatopera.com/)。
 
 在对话中，可以使用快捷方式，快速输入。
 
@@ -153,23 +149,27 @@ bot connect -c xxx -s xxx -u zhangsan
 | 打印历史                                 | Shift + → 右箭头                               |
 | 使用索引输入历史，索引根据*打印历史*获得 | 输入索引，然后 Ctrl + Shift + Shift + → 右箭头 |
 
-### deploy
+### export
 
-上传多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](https://docs.chatopera.com/products/chatbot-platform/conversation/index.html)中。
+导出多轮对话为 c66 文件。
+
+示例：
 
 ```
-Usage: deploy [options]
-
-Options:
-  -c, --clientid [value]      ClientId of the bot
-  -s, --clientsecret [value]  Client Secret of the bot, optional, default null.
-  -p, --provider [value]      Chatopera Bot Service URL, optional, default https://bot.chatopera.com
-  -b, --botarchive <value>    Conversation Bundle, *required.
-  -h, --help                  display help for command
+bot conversation --action export --filepath /tmp/bot.conversations.c66
 ```
 
-其中 `botarchive` 为 `xx.c66` 文件或**机器人的话题文件目录**，支持相对路径和绝对路径。
+### import
 
+导入多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](https://docs.chatopera.com/products/chatbot-platform/conversation/index.html)中。
+
+示例：
+
+```
+bot conversation --action import --filepath /tmp/bot.conversations.c66
+```
+
+其中 `filepath` 为 `xx.c66` 文件或**机器人的话题文件目录**，支持相对路径和绝对路径。
 
 #### 机器人的话题文件目录
 
@@ -207,20 +207,76 @@ botarchive
 
 Chatopera CLI 支持直接使用 `-b` 参数指定`机器人的话题文件目录`的方式上传多轮对话。
 
-
 ### trace
 
 打印聊天机器人日志：方便调试多轮对话脚本，实时跟踪服务器端日志，排查问题。
 
-```
-Usage: bot trace [options]
+示例：
 
-Options:
-  -c, --clientid [value]      ClientId of the bot
-  -s, --clientsecret [value]  Client Secret of the bot, optional, default null
-  -p, --provider [value]      Chatopera Bot Service URL, optional, default https://bot.chatopera.com
-  -l, --log-level [value]     Log level to follow, optional, [DEBUG|INFO|WARN|ERROR], default DEBUG
-  -h, --help                  display help for command
+```
+bot trace --log-level DEBUG
+```
+
+Log level 可以是 `[DEBUG|INFO|WARN|ERROR]`。
+
+## 词典
+
+### export
+
+导出引用的系统词典、所有自定义词典（词汇表词典和正则表达式词典）。
+
+举例：
+
+```
+bot dicts --action export --filepath /tmp/bot.dicts.json
+```
+
+### import
+
+导入引用的系统词典、所有自定义词典（词汇表词典和正则表达式词典）。
+
+举例：
+
+```
+bot dicts --action import --filepath /tmp/bot.dicts.json
+```
+
+### sync
+
+触发同步命令，知识库、意图识别和多轮对话同步最新的近义词词典；此步骤将引起数据改写，生产环境宜业务低峰时间段进行。
+
+```
+bot dicts --action sync
+```
+
+## 意图识别
+
+### export
+
+导出意图识别说法、槽位等信息。
+
+```
+bot intents --action export --filepath /tmp/bot.intents.json
+```
+
+### import
+
+导入意图识别说法、槽位等信息。
+
+```
+bot intents --action import --filepath /tmp/bot.intents.json
+```
+
+导入命令也会自动执行训练意图调试分支，训练完成后，命令退出。
+
+<font color="blue">意图识别的导入和导出不会处理生产版本上线信息和操作，需要 Chatopera 机器人平台用户自行维护意图识别模块的生产分支。</font>
+
+### train
+
+训练意图识别的调试分支。
+
+```
+bot intents --action train
 ```
 
 ## 语音识别
@@ -268,6 +324,11 @@ bot asr -c xxx \
 }
 ```
 
+## 开源项目
+
+Chatopera CLI 工具是[开源的](https://github.com/chatopera/chatopera-nodejs-sdk)，更多使用示例参考：
+
+[https://github.com/chatopera/chatopera-nodejs-sdk/tree/master/scripts](https://github.com/chatopera/chatopera-nodejs-sdk/tree/master/scripts)
 
 ## 评论
 
