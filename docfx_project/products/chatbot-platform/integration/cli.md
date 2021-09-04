@@ -62,8 +62,8 @@ Commands:
   asr [options]           request Chatopera ASR API,
                           https://docs.chatopera.com/products/chatbot-platform/integration/chatbot/asr.html
   faq [options]           import or export a bot's faqs data
-  dicts [options]         import or export a bot's dicts data
-  intents [options]       import or export a bot's intents data
+  dicts [options]         sync, import or export a bot's dicts data
+  intents [options]       train, import or export a bot's intents data
   help [command]          display help for command
 ```
 
@@ -247,6 +247,28 @@ bot dicts --action import --filepath /tmp/bot.dicts.json
 
 ```
 bot dicts --action sync
+```
+
+## 知识库
+
+### export
+
+导出知识库问答对、扩展问和分类信息等，目前 CLI 导入和导出只支持 JSON 格式，欲使用 Excel 从机器人平台浏览器管理界面完成。
+
+举例：
+
+```
+bot faq --action export --filepath /tmp/bot.faqs.json
+```
+
+### import
+
+导入知识库问答对、扩展问和分类信息等。
+
+举例：
+
+```
+bot faq --action import --filepath /tmp/bot.faqs.json
 ```
 
 ## 意图识别
