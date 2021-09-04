@@ -5,7 +5,7 @@ Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工�
 [https://github.com/chatopera/chatopera-nodejs-sdk](https://github.com/chatopera/chatopera-nodejs-sdk)
 
 
-## 安装 CLI
+## 安装
 
 Chatopera CLI 依赖于 [Node.js v10+](https://nodejs.org/zh-cn/) 环境，使用 `npm` 进行安装（`npm` 是 `Nodejs` 安装完成后得到的 CLI 工具）。
 
@@ -38,7 +38,7 @@ $ bot --version
 
 如果上述命令 `bot --version` 执行提示错误，检查环境变量 `PATH` 路径，比如 `C:\Users\Administrator\AppData\Roaming\npm` 是否在 `PATH` 内。
 
-## 获得帮助
+## 命令帮助
 
 打印 CLI 可用命令。
 
@@ -87,7 +87,7 @@ Options:
 ```
 
 
-## 配置
+## 配置参数
 
 
 Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`, `clientid` 等常用的变量。
@@ -120,10 +120,10 @@ BOT_ACCESS_TOKEN=xxx
 /Users/.env
 /.env
 ```
+## 多轮对话
+### connect
 
-## 连接聊天机器人
-
-在命令行终端连接 BOT 并进行对话。
+连接聊天机器人，在命令行终端连接 BOT 并进行对话。
 
 ```
 Usage: connect [options]
@@ -153,9 +153,9 @@ bot connect -c xxx -s xxx -u zhangsan
 | 打印历史                                 | Shift + → 右箭头                               |
 | 使用索引输入历史，索引根据*打印历史*获得 | 输入索引，然后 Ctrl + Shift + Shift + → 右箭头 |
 
-## 上传多轮对话脚本
+### deploy
 
-在命令行终端发布脚本文件到[多轮对话](https://docs.chatopera.com/products/chatbot-platform/conversation/index.html)中。
+上传多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](https://docs.chatopera.com/products/chatbot-platform/conversation/index.html)中。
 
 ```
 Usage: deploy [options]
@@ -171,7 +171,7 @@ Options:
 其中 `botarchive` 为 `xx.c66` 文件或**机器人的话题文件目录**，支持相对路径和绝对路径。
 
 
-### 机器人的话题文件目录
+#### 机器人的话题文件目录
 
 将 `xx.c66` 文件后缀调整为 `.zip` 并解压后的目录结构。
 
@@ -208,9 +208,9 @@ botarchive
 Chatopera CLI 支持直接使用 `-b` 参数指定`机器人的话题文件目录`的方式上传多轮对话。
 
 
-## 打印聊天机器人日志
+### trace
 
-方便调试多轮对话脚本，实时跟踪服务器端日志，排查问题。
+打印聊天机器人日志：方便调试多轮对话脚本，实时跟踪服务器端日志，排查问题。
 
 ```
 Usage: bot trace [options]
@@ -224,6 +224,8 @@ Options:
 ```
 
 ## 语音识别
+
+### asr
 
 ```
 Usage: bot asr [options]
