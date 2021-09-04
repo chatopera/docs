@@ -269,6 +269,39 @@ debug("hello %s, %o", stringVar, objVar)
 
 - debug 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=debug](https://github.com/chatopera/chatbot-samples/search?q=debug)
 
+
+## lodash(_)
+
+[lodash](https://lodash.com/docs/4.17.15) 是一个一致性、模块化、高性能的 JavaScript 实用工具库。Lodash 通过降低 array、number、objects、string 等等的使用难度从而让 JavaScript 变得更简单。 Lodash 的模块化方法 非常适用于：
+
+* 遍历 array、object 和 string
+* 对值进行操作和检测
+* 创建符合功能的函数
+
+鉴于这些特点，Chatopera 内置函数库增加了全局变量 `_` 来使用 lodash v4.17.15 的接口。
+
+
+比如，可以在函数中这样写将 JSON Array 转化为 JSON Object。
+
+```
+var array = [
+  { 'dir': 'left', 'code': 97 },
+  { 'dir': 'right', 'code': 100 }
+];
+ 
+_.keyBy(array, function(o) {
+  return String.fromCharCode(o.code);
+});
+// => { 'a': { 'dir': 'left', 'code': 97 }, 'd': { 'dir': 'right', 'code': 100 } }
+ 
+_.keyBy(array, 'dir');
+// => { 'left': { 'dir': 'left', 'code': 97 }, 'right': { 'dir': 'right', 'code': 100 } }
+```
+
+更多 lodash 方法，参考 [https://lodash.com/docs/4.17.15](https://lodash.com/docs/4.17.15)。
+
+
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"

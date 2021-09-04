@@ -2,6 +2,8 @@
   href: quick-get-start.md
 - name: "示例程序"
   href: tutorials.md
+- name: "命令行界面（CLI）"
+  href: cli.md
 - name: "Chatopera 类"
   href: chatopera/toc.yml
   topicHref: accesssettings.md
