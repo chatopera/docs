@@ -139,6 +139,66 @@ BOT_ACCESS_TOKEN=xxx
 
 <font color="blue">为简化说明，以下各示例配置使用了 .env 文件，因为略去了从命令行传入的一些参数。</font>
 
+## 备份或拷贝对话内容
+
+在详细介绍各个命令之前，先给出两个典型的需求如何依赖 CLI 命令解决。
+
+### 备份机器人对话内容
+
+```
+# 删除文件
+rm -rf bot.dicts.json bot.faqs.json bot.intents.json bot.conversations.c66
+# 执行导出，以下命令并无顺序依赖关系
+bot dicts -a export -f bot.dicts.json
+bot faq -a export -f bot.faqs.json
+bot intents -a export -f bot.intents.json
+bot conversation -a export bot.conversations.c66
+```
+
+### 将对话内容上传
+
+将到处的对话内容上传给指定的机器人（比如通过 `.env` 设置）。
+
+```
+# 以下命令有顺序依赖关系
+bot dicts -a import -f bot.dicts.json
+bot faq -a import -f bot.faq.json
+bot intents -a import -f bot.intents.json
+bot conversation -a import -f bot.conversation.c66
+```
+
+## 词典
+
+<font color="blue">词典在知识库、多轮对话、意图识别中都有使用和依赖，在导入知识库文件、多轮对话文件或意图识别文件之前，最好是先导入词典文件，以免为使用带来影响。</font>
+
+### export
+
+导出引用的系统词典、所有自定义词典（词汇表词典和正则表达式词典）。
+
+举例：
+
+```
+bot dicts --action export --filepath /tmp/bot.dicts.json
+```
+
+### import
+
+导入引用的系统词典、所有自定义词典（词汇表词典和正则表达式词典）。
+
+举例：
+
+```
+bot dicts --action import --filepath /tmp/bot.dicts.json
+```
+
+### sync
+
+触发同步命令，知识库、意图识别和多轮对话同步最新的近义词词典；此步骤将引起数据改写，生产环境宜业务低峰时间段进行。
+
+```
+bot dicts --action sync
+```
+
 ## 多轮对话
 
 ### connect
@@ -183,6 +243,8 @@ bot conversation --action import --filepath /tmp/bot.conversations.c66
 
 其中 `filepath` 为 `xx.c66` 文件，支持相对路径和绝对路径。
 
+因为多轮对话可能使用了词典，所以宜先导入词典，再导入多轮对话。
+
 ### trace
 
 打印聊天机器人日志：方便调试多轮对话脚本，实时跟踪服务器端日志，排查问题。
@@ -194,36 +256,6 @@ bot trace --log-level DEBUG
 ```
 
 Log level 可以是 `[DEBUG|INFO|WARN|ERROR]`。
-
-## 词典
-
-### export
-
-导出引用的系统词典、所有自定义词典（词汇表词典和正则表达式词典）。
-
-举例：
-
-```
-bot dicts --action export --filepath /tmp/bot.dicts.json
-```
-
-### import
-
-导入引用的系统词典、所有自定义词典（词汇表词典和正则表达式词典）。
-
-举例：
-
-```
-bot dicts --action import --filepath /tmp/bot.dicts.json
-```
-
-### sync
-
-触发同步命令，知识库、意图识别和多轮对话同步最新的近义词词典；此步骤将引起数据改写，生产环境宜业务低峰时间段进行。
-
-```
-bot dicts --action sync
-```
 
 ## 知识库
 
@@ -247,6 +279,8 @@ bot faq --action export --filepath /tmp/bot.faqs.json
 bot faq --action import --filepath /tmp/bot.faqs.json
 ```
 
+因为知识库可能使用了词典，所以宜先导入词典，再导入知识库。
+
 ## 意图识别
 
 ### export
@@ -264,6 +298,8 @@ bot intents --action export --filepath /tmp/bot.intents.json
 ```
 bot intents --action import --filepath /tmp/bot.intents.json
 ```
+
+因为意图识别可能使用了词典，所以宜先导入词典，再导入意图识别。
 
 导入命令也会自动执行训练意图调试分支，训练完成后，命令退出。
 
