@@ -1,6 +1,6 @@
 # 语音识别
 
-Chatopera 机器人平台支持语音识别服务，将语言转化为文本内容。
+Chatopera 机器人平台支持语音识别服务，将语音转化为文本内容，即 ASR（Automatic Speech Recognition）。
 
 ## 支持语言
 
