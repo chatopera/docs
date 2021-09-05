@@ -22,6 +22,8 @@ Chatopera CLI 依赖于 [Node.js v10+](https://nodejs.org/zh-cn/) 环境，使�
 
 - Linux 上安装 Node.js [参考文档](https://segmentfault.com/a/1190000040178369)
 
+### Chatopera CLI
+
 有了 Node.js 环境，在命令行终端，执行如下命令：
 
 ```
