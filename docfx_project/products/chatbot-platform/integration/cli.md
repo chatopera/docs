@@ -6,6 +6,16 @@ Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工�
 
 ## 安装
 
+### Bash
+
+因为使用过程中，依赖于命令终端交界面，在 Linux 或 Mac 上，有 Bash（或兼容）环境。
+
+对于 Windows 用户，请安装 [Git Bash for Windows](https://gitforwindows.org/)，安装完成后，在桌面右键，就可以点击 【Git Bash】进入命令终端交界面。
+
+本文以下内容，涉及 Shell 命令，都假设命令终端交界面是 Bash Shell 环境。
+
+### Node.js
+
 Chatopera CLI 依赖于 [Node.js v10+](https://nodejs.org/zh-cn/) 环境，使用 `npm` 进行安装（`npm` 是 `Nodejs` 安装完成后得到的 CLI 工具）。
 
 - Windows 上安装 Node.js 及配置环境变量[参考文档](https://www.cnblogs.com/zjfjava/p/9677444.html)
@@ -94,7 +104,7 @@ Options:
 
 CLI 支持的功能就是对不同模块的数据导入和导出，外加一些其他命令，辅助自动化管理机器人。
 
-### 导入和导出
+### 命令规范
 
 简单的说，导入和导出针对于不同模块，CLI 命令是遵循同一个规范的。
 
@@ -139,11 +149,13 @@ BOT_ACCESS_TOKEN=xxx
 
 <font color="blue">为简化说明，以下各示例配置使用了 .env 文件，因为略去了从命令行传入的一些参数。</font>
 
-## 备份或拷贝对话内容
+## 备份或上传对话内容
 
 在详细介绍各个命令之前，先给出两个典型的需求如何依赖 CLI 命令解决。
 
-### 备份机器人对话内容
+### 备份对话内容
+
+对话内容指词典、知识库、意图识别和多轮对话的内容，它们包括了机器人的所有对话技能。
 
 ```
 # 删除文件
@@ -152,7 +164,7 @@ rm -rf bot.dicts.json bot.faqs.json bot.intents.json bot.conversations.c66
 bot dicts -a export -f bot.dicts.json
 bot faq -a export -f bot.faqs.json
 bot intents -a export -f bot.intents.json
-bot conversation -a export bot.conversations.c66
+bot conversation -a export -f bot.conversations.c66
 ```
 
 ### 将对话内容上传
@@ -166,6 +178,8 @@ bot faq -a import -f bot.faq.json
 bot intents -a import -f bot.intents.json
 bot conversation -a import -f bot.conversation.c66
 ```
+
+这样，目标机器人就具备从之前导出的机器人的技能。
 
 ## 词典
 
