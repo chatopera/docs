@@ -2,6 +2,10 @@
 
 本节读者可在不熟悉任何概念，只需要按照操作一步一步执行，就可以获得一个聊天机器人并熟悉工具使用，全面了解多轮对话不同工具的功能。
 
+## 登录并创建机器人
+
+登录 [Chatopera 机器人平台](https://bot.chatopera.com)，并创建一个机器人，语言设置为`zh_CN`。
+
 ## 安装和启动应用
 
 [下载安装包](/products/chatbot-platform/conversation/cde.html)后，双击打开，进入安装向导。
@@ -13,25 +17,45 @@
 <tr><td><img width="800" src="../../../images/products/cde/cde-1.png" alt="应用主面板"/></td></tr>
 </table>
 
+## 添加机器人
+
+在多轮对话设计器内，点击【添加】，填入刚刚创建的机器人的密钥信息。
+
+<table class="image">
+    <caption align="bottom">在多轮对话设计器添加机器人</caption>
+    <tr>
+        <td><img width="600" src="../../../images/products/platform/screenshot-20210905-085034.png" alt="在多轮对话设计器添加机器人" /></td>
+    </tr>
+</table>
+
+密钥信息来自于 [Chatopera 机器人平台](https://bot.chatopera.com)的机器人的设置页面。
+
+<table class="image">
+    <caption align="bottom">获得机器人密钥</caption>
+    <tr>
+        <td><img width="600" src="../../../images/products/platform/screenshot-20210905-085247.png" alt="获得机器人密钥" /></td>
+    </tr>
+</table>
+
 ## 导入示例程序
 
-下载示例程序包文件：SampleAppAskWeather.zh_CN.1.0.0.c66
+下载示例程序包文件：bot.conversations.c66
 
-<a href="https://github.com/chatopera/chatbot-samples/blob/master/projects/%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2/releases/SampleAppAskWeather.zh_CN.1.0.0.c66" target="_blank"> https://github.com/chatopera/chatbot-samples</a>
+<a href="https://github.com/chatopera/chatbot-samples/tree/master/projects/%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2" target="_blank"> https://github.com/chatopera/chatbot-samples/tree/master/projects/天气查询</a>
 
 <table class="image">
 <caption align="bottom">示例程序下载地址</caption>
 <tr><td><img width="800" src="../../../images/products/cde/cde-2.jpg" alt="示例程序下载地址"/></td></tr>
 </table>
 
-在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*SampleAppAskWeather.zh_CN.1.0.0.c66*如图：
+在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*bot.conversations.c66*如图：
 
 <table class="image">
 <caption align="bottom">导入对话框</caption>
 <tr><td><img width="800" src="../../../images/products/cde/cde-3.png" alt="导入对话框"/></td></tr>
 </table>
 
-导入成功，可以看到在聊天机器人界面有一条数据显示，“名字 SampleAppAskWeather”等；点击 SampleAppAskWeather 的“管理”按钮，可以看到它的多轮对话列表，包括：chatopera，profile，weather。如下图：
+导入成功，可以看到机器人的多轮对话列表，包括：chatopera，profile，weather。如下图：
 
 <table class="image">
 <caption align="bottom">多轮对话列表</caption>

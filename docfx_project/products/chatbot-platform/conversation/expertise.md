@@ -6,7 +6,7 @@
 
 <video controls="" style="width:480px;height:400px" poster="../../images/products/platform/weather-bot-demo-cover.jpg" >
   <source
-    src="https://static-public.chatopera.com/bot/videos/weather-bot-demo.mp4"
+    src="https://gitee.com/chatopera/cskefu/attach_files/821755/download/weather-bot-demo.mp4"
     type="video/mp4;codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
   >
 </video>
@@ -40,12 +40,7 @@
 
 ## AI 音箱
 
-Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我们的对话系统产品与任你说音箱可以直接集成。
-
-<table class="image">
-<caption align="bottom">任你说官网</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-19.png" alt="任你说官网"/></td></tr>
-</table>
+目前，智能音箱及技能商店较多，本次以一个智能音箱产品为例。
 
 ## 第一条规则
 
@@ -63,7 +58,7 @@ Chatopera 与杭州任你说科技达成战略合作伙伴关系，所以，我�
 <tr><td><img width="800" src="../../../images/products/cde/cde-21.png" alt="创建聊天机器人"/></td></tr>
 </table>
 
-填入“SampleAppAskWeather”，当前多轮对话设计器支持中文(zh_CN)和英文(en_US)，我们选择“zh_CN”，点击“确认”。然后我们就得到了一个聊天机器人。
+填入“SampleAppAskWeather”，语言选择“zh_CN”（简体中文），点击“确认”。然后我们就得到了一个聊天机器人。
 
 <table class="image">
 <caption align="bottom">聊天机器人</caption>
