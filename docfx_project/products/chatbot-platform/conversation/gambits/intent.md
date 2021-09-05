@@ -17,7 +17,6 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
     </tr>
 </table>
 
-
 **意图识别模块，简单说就是识别并分析意图信息，根据意图需要的关键信息进行追问，直到获取到所有必须的关键信息或超过追问限制次数。**
 
 以前，在 Chatopera 机器人平台内，意图识别模块和多轮对话模块，是两个独立模块，Chatopera 提供了[开源项目](https://github.com/chatopera/webchat)的形式提供最佳实践：在业务端，BOT 开发者用 SDK 灵活的使用不同模块。这样的形式，学习成本加大，怎么样通过无代码或低代码的方式上线有意图识别能力的机器人呢？现在，这个答案就是意图识别匹配器。在多轮对话脚本中，借助意图识别匹配器很好的融合了脚本、函数和意图识别。Chatopera 机器人平台用户，可以用更为简单和快捷的方式，上线更为强大的智能对话机器人。
@@ -28,7 +27,6 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
         <td><img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-1_18-58-18.png" alt="意图识别模块和多轮对话模块的关系" /></td>
     </tr>
 </table>
-
 
 脚本对话和意图识别二者的结合，至少获得了如下几点好处：
 
@@ -42,11 +40,9 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
 
 5）利用多轮对话函数中，[http](/products/chatbot-platform/conversation/functions/builtin.html#http) 工具类，和业务系统、互联网服务等集成。
 
-
 **以上的这些好处，让 Chatopera 机器人平台可以诞生更多的创新的对话机器人，帮助 BOT 开发者尽情的释放创造力！**
 
 欲了解更多 Chatopera 多轮对话工作机制，查看[详情链接](/products/chatbot-platform/conversation/mechanism.html)，您也可以阅读完本篇后再阅读多轮对话工作机制。
-
 
 ## 意图识别匹配器的功能
 
@@ -61,7 +57,6 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
     </tr>
 </table>
 
-
 这些对话内容的管理，就在意图识别模块中：**开发者或业务人员，提供说法；在说法中可以写槽位；槽位对应的是不同类型的词典。**
 
 那么对话用户的哪些说法对应了意图呢？哪些词对应了槽位呢？在 Chatopera 意图识别模块中，提供维护意图、说法、槽位和词典的页面。
@@ -72,7 +67,6 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
         <td><img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-1_17-11-54.png" alt="标注意图" /></td>
     </tr>
 </table>
-
 
 词典建设，是意图识别中很重要的方面，在 Chatopera 机器人平台上，词典管理非常完善。词典包括系统词典，自定义词典。系统词典是 Chatopera 机器人平台上开箱即用的词典，包括人名、组织机构名、时间和地点的。自定义词典有词汇表词典和正则表达式词典，是 Chatopera 机器人平台用户自行维护的。
 
@@ -129,7 +123,6 @@ intent book_cab
 
 以上就是意图识别匹配器的脚本语法，接下来介绍函数中，使用意图识别信息、配置意图识别分支等更高级功能点。
 
-
 ## 使用调试
 
 意图识别可以在多轮对话设计器 v2.2.0+ 中使用，但是基于对多轮对话设计器用户体验的升级，建议使用 v2.3.0+ 版本的多轮对话设计器，最新版本[下载地址链接](/products/chatbot-platform/conversation/cde.html)。
@@ -144,7 +137,6 @@ intent book_cab
 </table>
 
 在脚本和函数编辑区域，使用语法匹配意图识别和处理意图识别信息；对话窗口进行测试，在日志中查看日志和 `debug` 信息；在 SDK 中查看返回值 JSON 数据。
-
 
 ## 意图会话生命周期
 
@@ -206,7 +198,6 @@ _INTENT_BRANCH_：集成意图识别的版本的分支，默认为 `dev`，如�
 
 `STATE`：状态，包括 `resovled`, `proactive`, `losed` 三个状态，分别代表意图全部必填参数识别完成，正在追问参数信息和追问超过最大次数
 
-
 除了增加了 `this.intent`，其它成功函数的使用和多轮对话函数是一致的。比如，设定回复：
 
 ```
@@ -217,10 +208,10 @@ exports.orderCab = async function() {
     // ...
     this.intent.drop = true; // 成功下单，设置当前意图会话过期
     return "下单成功，订单编号：SE111."; // 设定回复
- 
+
 }
- 
- 
+
+
 // 回复包含自定义业务字段
 exports.orderCabExt = async function() {
     debug("[orderCab] intent %s", JSON.stringify(this.intent));
@@ -229,7 +220,7 @@ exports.orderCabExt = async function() {
     this.intent.drop = true; // 成功下单，设置当前意图会话过期
     return {text:"下单成功，订单编号：SE111."; // 设定回复,
             params: { YOUR_KEY: YOUR_VALUE}}   // 自定义业务字段
- 
+
 }
 ```
 
@@ -269,9 +260,7 @@ exports.orderCabExt = async function() {
 
 失败函数中，`this.intent` 的信息和使用，和成功函数是一致的，这是调用的实际不一致，同时它是可选的。
 
-
 ## 更多使用要点
-
 
 在使用意图识别匹配器时，还有一些重要的知识点。它们属于使用的细节，以及需要特殊说明。
 
@@ -290,8 +279,8 @@ exports.orderCabExt = async function() {
     </tr>
 </table>
 
-
 ### 意图会话的过期
+
 即【`会话回溯最大时长`】，当对话用户，超过一段时间不和机器人交互，那么会话状态被清空，包括意图会话。同样，进入 BOT 管理控制台的设置页面调整该值，默认为半个小时。
 
 ### 设置集成意图识别分支
@@ -302,9 +291,7 @@ exports.orderCabExt = async function() {
 
 该设置为，在多轮对话设计器或 BOT 管理控制台的多轮对话页面，设置【`环境变量`】来调整，默认为调试分支，设置参数为：`@SYS_INTENT_BRANCH`，使用 `dev` 代表集成调试分支，使用 `pro` 代表集成生产分支；默认为调试分支。
 
-
 ### SDK 返回意图识别信息
-
 
 当对话用户，有匹配到意图，正在进行意图识别的对话时，使用多轮对话检索 API，返回值中，`service.provider` 的值是 `intent`，并且 `service.intent` 是当前意图信息。示例数据如下：
 
@@ -352,7 +339,6 @@ exports.orderCabExt = async function() {
 
 可见，`service.intent` 的数据与函数中的 `this.intent` 是一致的。
 
-
 ### 快速读取 intent.entities
 
 默认情况下，`intent.entities` 是一个数组，如果需要用槽位的名称去取值，要便利，不方便，使用以下方法快速使用 `intent.entities` 生成一个 JSON Object，然后使用槽位名称取值。
@@ -375,12 +361,52 @@ let dateRawString = entities["date"]["val"];
 let extractedDates = await this.maestro.extractTime(dateRawString);
 debug("extracted date", extractedDates);
 if(extractedDates.length > 0){
-    // 目标时间就是：extractedDates[0]  '2021/09/03 17:00' 
+    // 目标时间就是：extractedDates[0]  '2021/09/03 17:00'
     debug("Target date", extractedDates[0]);
 }
 ```
 
 更多关于 `extractTime` 的介绍[参考链接](/products/chatbot-platform/conversation/functions/builtin.html#获得绝对时间)。
+
+### 保存变量信息到意图会话
+
+函数执行的时候，如果有意图会话存在，就会被加载到函数的 `this.intent` 中。在两个或多个连续的多轮对话中，可以通过 `this.intent.extras` (JSON Object) 来保存变量。该信息会和该意图会话周期一致。比如：
+
+```
+/**
+ * 提取时间实体
+ */
+async function extractTimeEntity(maestro, entities, property) {
+    let dates = await maestro.extractTime(entities[property]["val"], "YYYY年MM月DD日 HH:mm");
+    return dates.length > 0 ? dates[0] : "";
+}
+
+exports.handleAirplaneTicketOrder = async function() {
+
+    debug("[handleAirplaneTicketOrder] this.intent", JSON.stringify(this.intent))
+
+    let entities = _.keyBy(this.intent.entities, 'name');
+    // 获得信息
+    let date = await extractTimeEntity(this.maestro, entities, "date");
+    // 保存到 this.intent.extras
+    this.intent.extras = {
+        date: date
+    }
+
+  ...
+}
+
+```
+
+`handleAirplaneTicketOrder` 函数保存了一个变量到 `this.intent.extras` 中，稍后另外一次对话时，调用了另外一个函数 `placeAirplaneTicketOrder`，就可以直接用这个变量。
+
+```
+exports.placeAirplaneTicketOrder = async function() {
+    // 直接取值
+    // this.intent.extras.date
+
+    ...
+```
 
 ### 升级生产环境的多轮对话脚本
 
@@ -393,7 +419,6 @@ if(extractedDates.length > 0){
 - [了解多轮对话工作机制](/products/chatbot-platform/conversation/mechanism.html)
 
 - [查看示例程序：预约机票](https://github.com/chatopera/chatbot-samples/blob/master/projects/%E9%A2%84%E5%AE%9A%E6%9C%BA%E7%A5%A8)
-
 
 ## 评论
 
