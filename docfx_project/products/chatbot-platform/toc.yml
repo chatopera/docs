@@ -23,6 +23,8 @@
   href: history.md
 - name: 聚类分析
   href: lattice.md
+- name: 语音识别
+  href: asr.md
 - name: 统计报表
   href: audit.md
 - name: 计费及发票

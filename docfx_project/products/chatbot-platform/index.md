@@ -59,6 +59,8 @@ Chatopera 融合了不同形式的实现聊天机器人的方法，支持定制�
 
 每个模块有其最适合的应用场景，用来满足不同需求，请查看对应文档。开发者可通过[系统集成](/products/chatbot-platform/integration/index.html)将不同模块组合使用，定制化开发智能对话机器人，可以说，Chatopera 机器人平台是强大的对话内容管理工具。
 
+此外，Chatopera 机器人平台还有[聊天历史管理](/products/chatbot-platform/history.html)、[聚类分析](/products/chatbot-platform/lattice.html)和[语音识别](/products/chatbot-platform/asr.html)等模块。
+
 ## 可靠性保证
 
 Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a Service 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性，浏览[技术支持](/products/chatbot-platform/contract/support.html)信息。
@@ -83,7 +85,7 @@ Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a
 
 <table class="image">
     <tr>
-        <td><img width="800" src="https://static-public.chatopera.com/assets/images/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
+        <td><img width="800" src="../../images/products/platform/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
     </tr>
 </table>
 
@@ -92,7 +94,7 @@ Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a
 <p align="center">
   <b><a href="http://ke.chatopera.com/course/2994143" target="_blank">上线聊天机器人！</a></b><br>
   <a href="http://ke.chatopera.com/course/2994143" target="_blank">
-      <img src="https://static-public.chatopera.com/assets/images/202009-bot-ke-1.jpg" width="800">
+      <img src="../../images/products/platform/202009-bot-ke-1.jpg" width="800">
   </a>
 </p>
 
