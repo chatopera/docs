@@ -106,15 +106,19 @@ Options:
 
 CLI 支持的功能就是对不同模块的数据导入和导出，外加一些其他命令，辅助自动化管理机器人。
 
-### 命令规范
+### 导入和导出命令规范
 
-简单的说，导入和导出针对于不同模块，CLI 命令是遵循同一个规范的。
+针对于不同模块的导入和导出命令，CLI 命令是遵循同一个规范的。
 
 ```
-bot [conversation|intent|faq] --action [import|export] --filepath {{FILE_PATH}}
+bot [dicts|faq|intents|conversation] --action [import|export] --filepath {{FILE_PATH}}
 ```
+
+<img width="800" src="../../../images/products/platform/screenshot-20210906-081057.png" alt="" />
 
 如果是导出（`export`），没有加入`--filepath`部分，则会默认保存文件到当前工作目录（`cwd` 目录）。
+
+关于更多使用细节，下面有详细介绍。
 
 ## 配置参数
 
