@@ -408,6 +408,37 @@ exports.placeAirplaneTicketOrder = async function() {
     ...
 ```
 
+### 在回复中跳转到指定意图
+
+**假设在多轮对话脚本中，已经设定了一个意图的意图识别匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](/products/chatbot-platform/conversation/state.html#切换话题) 切换话题。
+
+#### 文本回复
+
+```
++ ${0.5}{自定义的文本}
+- ^topicRedirect("intents", "book_airplane_ticket", true)
+```
+
+注意：此处 `topicRedirect` 的第三个参数设置为 `true`，代表目标匹配器是一个[意图识别匹配器](/products/chatbot-platform/conversation/gambits/intent.html)。
+
+#### 函数回复
+
+文本中，定义了函数
+
+```
++ ${0.5}{自定义的文本}
+- ^handleXXFn()
+```
+
+函数 `handleXXFn`:
+
+```
+exports.handleXXFn = async function() {
+    // do your magic
+    return "^topicRedirect(\"intents\", \"book_airplane_ticket\", true)"
+}
+```
+
 ### 升级生产环境的多轮对话脚本
 
 <font color="blue">通过多轮对话设计器，或 Chatopera 机器人平台的机器人多轮对话管理页面，上传多轮对话脚本，因为刷新的缘故，正在进行中的意图会话失效，这会给对话用户造成体验上的困扰，所以，对于生产环境的更新，建议在业务低分时间进行！</font>
