@@ -298,7 +298,7 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 |              | post                 | 标准问  |
 |              | score                | 分数    |
 |              | threshold            | 阀值    |
-| intent | 意图识别             |     更多描述参考[意图识别匹配器](/products/chatbot-platform/conversation/gambits/intent.html)    |
+| intent | 意图识别             |     更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html)    |
 |              | intent.name                 | 意图名称  |
 |              | intent.state                 | 意图会话状态  |
 |              | intent.entities                 | 意图中的命名实体  |

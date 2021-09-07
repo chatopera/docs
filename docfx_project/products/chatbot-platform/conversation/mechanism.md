@@ -139,7 +139,7 @@ topicRedirect 函数的更多介绍，[参考文档](/products/chatbot-platform/
 
 - [多轮对话设计器：下载和安装](https://docs.chatopera.com/products/chatbot-platform/conversation/cde.html)
 
-- [多轮对话匹配器：意图识别匹配器、模糊匹配器和通配符匹配器等](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/index.html)
+- [多轮对话匹配器：意图匹配器、模糊匹配器和通配符匹配器等](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/index.html)
 
 - [示例程序：Chatopera 机器人对话模板](https://github.com/chatopera/chatbot-samples)
 

@@ -17,7 +17,7 @@
 
 - [模糊匹配器](/products/chatbot-platform/conversation/gambits/like.html)
 
-- [意图识别匹配器](/products/chatbot-platform/conversation/gambits/intent.html)
+- [意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html)
 
 
 ## 评论

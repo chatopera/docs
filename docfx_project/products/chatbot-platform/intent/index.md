@@ -11,7 +11,7 @@
 <tr><td><img width="800" src="../../../images/intent/intent-001.png" alt="意图识别模块工作机制"/></td></tr>
 </table>
 
-在 Chatopera 机器人平台，意图识别模块也是集成进入了多轮对话模块，参考使用[意图识别匹配器](/products/chatbot-platform/conversation/gambits/intent.html。
+在 Chatopera 机器人平台，意图识别模块也是集成进入了多轮对话模块，参考使用[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html。
 
 ## 下一步
 
@@ -23,7 +23,7 @@
 
 - [版本管理：发布生产版本和调试版本](/products/chatbot-platform/intent/releases.html)
 
-- [多轮对话：使用意图识别匹配器，完成更智能对话](/products/chatbot-platform/conversation/gambits/intent.html)
+- [多轮对话：使用意图匹配器，完成更智能对话](/products/chatbot-platform/conversation/gambits/intent.html)
 
 - [系统集成：集成到业务系统，上线智能对话机器人](/products/chatbot-platform/integration/chatbot/chat.html#检索意图识别)
 
