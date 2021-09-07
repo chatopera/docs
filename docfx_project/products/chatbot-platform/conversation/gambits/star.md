@@ -205,6 +205,8 @@ exports.echoYummy = async function(cap1) {
 
 - [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/conversation/gambits/like.html)
 
+- [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/conversation/gambits/intent.html)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"

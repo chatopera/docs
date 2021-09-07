@@ -186,6 +186,10 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 - [检索多轮对话：使用多轮对话接口进行系统集成](/products/chatbot-platform/integration/chatbot/chat.html#检索多轮对话)
 
+- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/conversation/gambits/star.html)
+
+- [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/conversation/gambits/intent.html)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"

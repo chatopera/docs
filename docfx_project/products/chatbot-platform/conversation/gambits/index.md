@@ -13,12 +13,11 @@
 
 匹配器有多种，分别通过不同形式建立匹配规则，以适应不同场景的灵活使用。
 
-- [通配符匹配器](/products/chatbot-platform/conversation/gambits/star.html)
+- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/conversation/gambits/star.html)
 
-- [模糊匹配器](/products/chatbot-platform/conversation/gambits/like.html)
+- [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/conversation/gambits/like.html)
 
-- [意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html)
-
+- [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/conversation/gambits/intent.html)
 
 ## 评论
 

@@ -474,6 +474,10 @@ exports.handleXXFn = async function() {
 
 - [查看示例程序：预约机票](https://github.com/chatopera/chatbot-samples/blob/master/projects/%E9%A2%84%E5%AE%9A%E6%9C%BA%E7%A5%A8)
 
+- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/conversation/gambits/star.html)
+
+- [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/conversation/gambits/like.html)
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
