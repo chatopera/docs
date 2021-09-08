@@ -1,5 +1,7 @@
 - name: 产品概述
   href: index.md
+- name: 快速开始
+  href: quick-start.md
 - name: 账号管理
   href: account.md
 - name: 词典管理
@@ -19,10 +21,9 @@
 - name: 系统集成
   href: integration/toc.yml
   topicHref: integration/index.md
-- name: 历史记录
-  href: history.md
-- name: 聚类分析
-  href: lattice.md
+- name: 对话数据
+  href: chats/toc.yml
+  topicHref: chats/index.md
 - name: 语音识别
   href: asr.md
 - name: 统计报表

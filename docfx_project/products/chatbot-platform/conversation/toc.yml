@@ -2,8 +2,6 @@
   href: glossary.md
 - name: "工作机制"
   href: mechanism.md
-- name: "快速开始"
-  href: quick-start.md
 - name: "多轮对话设计器"
   href: cde.md
 - name: "匹配器"

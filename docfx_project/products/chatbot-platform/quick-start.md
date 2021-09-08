@@ -1,6 +1,14 @@
 ## 快速开始
 
-本节读者可在不熟悉任何概念，只需要按照操作一步一步执行，就可以获得一个聊天机器人并熟悉工具使用，全面了解多轮对话不同工具的功能。
+本节读者可在不熟悉任何概念，只需要按照操作一步一步执行，就可以获得一个聊天机器人并熟悉工具使用，了解 Chatopera 机器人平台不同模块的功能。
+
+在阅读本文之前或之后，希望您继续通过以下文档进一步掌握 Chatopera 机器人平台的使用。
+
+- [Chatopera 多轮对话的工作机制](/products/chatbot-platform/conversation/mechanism.html)
+
+- [Chatopera 系统集成：发布机器人上线](/products/chatbot-platform/intent/index.html)
+
+- [Chatopera 官方博客：订阅跟踪更新信息](https://chatopera.blog.csdn.net/)
 
 ## 登录并创建机器人
 
@@ -14,7 +22,7 @@
 
 <table class="image">
 <caption align="bottom">应用主面板</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-1.png" alt="应用主面板"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-1.png" alt="应用主面板"/></td></tr>
 </table>
 
 ## 添加机器人
@@ -24,7 +32,7 @@
 <table class="image">
     <caption align="bottom">在多轮对话设计器添加机器人</caption>
     <tr>
-        <td><img width="600" src="../../../images/products/platform/screenshot-20210905-085034.png" alt="在多轮对话设计器添加机器人" /></td>
+        <td><img width="600" src="../../images/products/platform/screenshot-20210905-085034.png" alt="在多轮对话设计器添加机器人" /></td>
     </tr>
 </table>
 
@@ -33,7 +41,7 @@
 <table class="image">
     <caption align="bottom">获得机器人密钥</caption>
     <tr>
-        <td><img width="600" src="../../../images/products/platform/screenshot-20210905-085247.png" alt="获得机器人密钥" /></td>
+        <td><img width="600" src="../../images/products/platform/screenshot-20210905-085247.png" alt="获得机器人密钥" /></td>
     </tr>
 </table>
 
@@ -45,21 +53,21 @@
 
 <table class="image">
 <caption align="bottom">示例程序下载地址</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-2.jpg" alt="示例程序下载地址"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-2.jpg" alt="示例程序下载地址"/></td></tr>
 </table>
 
 在主面板点击界面的右上方的“导入”按钮，选择刚才下载的示例程序*bot.conversations.c66*如图：
 
 <table class="image">
 <caption align="bottom">导入对话框</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-3.png" alt="导入对话框"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-3.png" alt="导入对话框"/></td></tr>
 </table>
 
 导入成功，可以看到机器人的多轮对话列表，包括：chatopera，profile，weather。如下图：
 
 <table class="image">
 <caption align="bottom">多轮对话列表</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-5.png" alt="多轮对话列表"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-5.png" alt="多轮对话列表"/></td></tr>
 </table>
 
 | 对话      | 功能                      |
@@ -88,21 +96,21 @@
 
 <table class="image">
 <caption align="bottom">多轮对话编辑窗口</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-6.png" alt="多轮对话编辑窗口"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-6.png" alt="多轮对话编辑窗口"/></td></tr>
 </table>
 
 点击“发送”按钮，可以看到对话区域有了问答的信息流，并且“逻辑”区域也有了对话状态，对话路径显示“绿色”高亮。
 
 <table class="image">
 <caption align="bottom">测试对话</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-7.png" alt="测试对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-7.png" alt="测试对话"/></td></tr>
 </table>
 
 在此界面可以进行多轮对话测试，如下截图：
 
 <table class="image">
 <caption align="bottom">多轮对话</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-8.png" alt="多轮对话"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-8.png" alt="多轮对话"/></td></tr>
 </table>
 
 ## 增加新的对话
@@ -129,14 +137,14 @@
 
 <table class="image">
 <caption align="bottom">查看快照</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-11.png" alt="查看快照"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-11.png" alt="查看快照"/></td></tr>
 </table>
 
 回到聊天机器人列表页面，可以点击“发布”按钮，可以将当前聊天机器人生成新版本，相关的信息如图：
 
 <table class="image">
 <caption align="bottom">发布新版本</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-12.png" alt="发布新版本"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-12.png" alt="发布新版本"/></td></tr>
 </table>
 
 点击上图的“确认”按钮，发布新版本成功，点击“版本管理”，看到刚才发布的 1.0.1 版本的信息。
@@ -164,7 +172,7 @@
 
 <table class="image">
 <caption align="bottom">版本之间比较差异</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-13.png" alt="版本之间比较差异"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-13.png" alt="版本之间比较差异"/></td></tr>
 </table>
 
 对比的差异部分为绿色，表示新增。
@@ -177,7 +185,7 @@
 
 <table class="image">
 <caption align="bottom">导出文件</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-14.png" alt="导出文件"/></td></tr>
+<tr><td><img width="800" src="../../images/products/cde/cde-14.png" alt="导出文件"/></td></tr>
 </table>
 
 以上并没有给出程序实现的过程，阅读[使用进阶](/products/chatbot-platform/conversation/expertise.html)相关内容可了解示例程序的来龙去脉。

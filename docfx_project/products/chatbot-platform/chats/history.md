@@ -5,7 +5,7 @@
 <table class="image">
     <caption align="bottom">对话历史</caption>
     <tr>
-        <td><img width="800" src="../../images/platform/7.png" alt="" /></td>
+        <td><img width="800" src="../../../images/platform/7.png" alt="" /></td>
     </tr>
 </table>
 
