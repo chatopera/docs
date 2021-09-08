@@ -6,7 +6,7 @@
 
 <table class="image">
 <caption align="bottom">图：测试对话页面</caption>
-<tr><td><img width="800" src="../../images/platform/10.png" alt="测试对话页面"/></td></tr>
+<tr><td><img width="800" src="../../../images/platform/10.png" alt="测试对话页面"/></td></tr>
 </table>
 
 在该页面下，也需要选择对话实现方式，根据对话方式不同，对话过程中，右侧的信息展示形式也是不同的，使用测试对话页面，也提升用户实现机器人的开发效率。

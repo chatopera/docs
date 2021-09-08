@@ -16,12 +16,10 @@
 - name: 多轮对话
   href: conversation/toc.yml
   topicHref: conversation/index.md
-- name: 测试对话
-  href: debug.md
 - name: 系统集成
   href: integration/toc.yml
   topicHref: integration/index.md
-- name: 对话数据
+- name: 对话
   href: chats/toc.yml
   topicHref: chats/index.md
 - name: 语音识别

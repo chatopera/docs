@@ -1,4 +1,6 @@
-# 对话数据
+# 对话
+
+- [调试对话：发布前检测和评价对话效果，支持对不同模块单独测试](/products/chatbot-platform/chats/debug.html)
 
 - [历史记录：浏览和处理沉寂问题、错误回答、快速设置知识库等](/products/chatbot-platform/chats/history.html)
 

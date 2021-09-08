@@ -1,3 +1,5 @@
+- name: 测试对话
+  href: debug.md
 - name: 历史记录
   href: history.md
 - name: 聚类分析
