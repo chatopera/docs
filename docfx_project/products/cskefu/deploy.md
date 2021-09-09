@@ -35,6 +35,8 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 
 ## 配置项
 
+以下为部署相关的环境变量，可以在 `.env` 中覆盖默认值。
+
 | KEY                  | 默认值             | 说明                                           |
 | -------------------- | ------------------ | ---------------------------------------------- |
 | COMPOSE_FILE         | docker-compose.yml | 服务编排描述文件，保持默认值                   |
@@ -52,6 +54,14 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | LOG_LEVEL            | INFO               | 日志级别，可使用 WARN, ERROR, INFO, DEBUG      |
 
 以上配置中，**端口的各默认值需要保证在宿主机器上还没有被占用；数据库的密码尽量复杂；CC_WEB_PORT 和 CC_SOCKET_PORT 这两个值尽量不要变更；生产环境下 LOG_LEVEL 使用至少 WARN 的级别**。
+
+以下为一些业务功能相关配置的环境变量：
+
+| KEY                  | 默认值      | 说明                                                                                                   |
+| -------------------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录          |
+| EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                              |
+| EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 https://oh-my.cskefu.com/im/xxx.html，默认(off)不展示 |
 
 ## 管理命令
 
