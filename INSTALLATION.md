@@ -10,6 +10,8 @@
 
 依赖 `docfx`，在没有安装`docfx`的操作系统上，提供 docker 镜像支持编写。
 
+当前基于版本：[https://github.com/dotnet/docfx/releases/tag/v2.56.7](https://github.com/dotnet/docfx/releases/tag/v2.56.7)
+
 ## 进入 Docker
 
 仅用于操作系统中没有 docfx 并不打算安装的用户。
