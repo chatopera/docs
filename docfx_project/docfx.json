@@ -48,7 +48,7 @@
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
-    "cleanupCacheHistory": false,
+    "cleanupCacheHistory": true,
     "disableGitFeatures": false,
     "sitemap":{
       "baseUrl": "https://docs.chatopera.com",
