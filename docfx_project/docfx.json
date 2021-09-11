@@ -23,9 +23,6 @@
         "files": ["products/cskefu/**.yml", "products/cskefu/**.md"]
       },
       {
-        "files": ["products/dscrm/**.yml", "products/dscrm/**.md"]
-      },
-      {
         "files": ["toc.yml", "*.md"]
       }
     ],
