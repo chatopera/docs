@@ -233,20 +233,20 @@ video {
 .buttons-unit .button:active {
     background: #A27865;
 }
-.toc .nav > li.active > a, .affix ul > li.active > a, .affix ul > li.active > a:before {
+/* .toc .nav > li.active > a, .affix ul > li.active > a, .affix ul > li.active > a:before {
   color: #6E8B60
-}
+} */
 .btn-primary {
     background: #385361;
     color: #8BFEB4;
 }
 
 a.version-link,a.github-link {
-  color: #DDDDDD;
+  color: #ffffff;
 }
 
 a.version-link:hover,a.github-link:hover,a.version-link:focus,a.github-link:focus {
-  color: #ffffff;
+  color: greenyellow;
 }
 
 /* .btn-primary:hover, .btn-primary:focus, button:hover, button:focus, a:hover, a:focus, .toc .nav > li.active > a:hover, .toc .nav > li.active > a:focus, .toc .nav > li > a:hover, .toc .nav > li > a:focus {
