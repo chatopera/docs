@@ -18,7 +18,7 @@
 - name: 参考手册
   href: references/toc.yml
   topicHref: references/index.md
-- name: 服务支持
+- name: 计费及保障
   href: contract/toc.yml
   topicHref: contract/index.md
 - name: 附录

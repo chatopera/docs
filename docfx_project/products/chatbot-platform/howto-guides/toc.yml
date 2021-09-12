@@ -1,24 +1,65 @@
-- name: 词典管理
-  href: dicts/toc.yml
-  topicHref: dicts/index.md
-- name: 知识库
-  href: faq/toc.yml
-  topicHref: faq/index.md
-- name: 意图识别
-  href: ./intent/toc.yml
-  topicHref: ./intent/index.md
-- name: 多轮对话
-  href: conversation/toc.yml
-  topicHref: conversation/index.md
-- name: 系统集成
-  href: integration/toc.yml
-  topicHref: integration/index.md
-- name: 对话
-  href: chats/toc.yml
-  topicHref: chats/index.md
-- name: 语音识别
-  href: asr.md
-- name: 统计报表
-  href: audit.md
-- name: 计费及发票
-  href: billing.md
+# cli
+- name: 使用 CLI 导入和导出对话语料
+  href: cli-export-import.md
+
+# 词典
+- name: 管理系统词典
+  href: dicts-sysdicts.md
+- name: 管理词汇表词典
+  href: dicts-vocab.md
+- name: 管理正则表达式词典
+  href: dicts-regex.md
+
+# 知识库
+- name: 维护知识库问答对
+  href: faq-qna.md
+- name: 测试知识库问答及调优
+  href: faq-chat-fix.md
+- name: 使用自定义词典增强知识库
+  href: faq-dicts.md
+- name: 查看和导出知识库热门问题
+  href: faq-hot.md
+- name: 导入和导出知识库问答对
+  href: faq-transfer.md
+- name: 使用话术助手快速检索话术
+  href: faq-assistant.md
+
+# 意图识别
+- name: 创建和训练意图识别模型
+  href: intent-maintain.md
+- name: 发布上线意图识别生产版本
+  href: intent-releases.md
+
+# 多轮对话
+- name: 在多轮对话中使用匹配器
+  href: conv-gambits/toc.yml
+  topicHref: conv-gambits/index.md
+- name: 在多轮对话中设置回复
+  href: conv-replies.md
+- name: 在多轮对话中使用上下轮钩子
+  href: conv-hooks.md
+- name: 在多轮对话中使用 JavaScript 函数
+  href: conv-functions/toc.yml
+  topicHref: conv-functions/index.md
+- name: 在多轮对话中配置环境变量
+  href: conv-environment.md
+- name: 在多轮对话中管理对话状态
+  href: conv-state.md
+
+# 对话
+- name: 使用机器学习分析对话历史
+  href: lattice.md
+- name: 在管理控制台测试对话
+  href: chat-test.md
+
+# ASR  
+- name: 调用语音识别服务
+  href: asr-request.md
+
+# 系统集成
+- name: 在飞书中使用 Chatopera BOT
+  href: https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd
+- name: 在春松客服集成 Chatopera BOT
+  href: /products/cskefu/work-chatbot/bot-agent.html
+- name: 使用 SDK 集成 Chatopera BOT
+  href: integration-sdk.md

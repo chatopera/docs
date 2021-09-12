@@ -104,22 +104,6 @@ Options:
   -h, --help                  display help for command
 ```
 
-CLI 支持的功能就是对不同模块的数据导入和导出，外加一些其他命令，辅助自动化管理机器人。
-
-### 导入和导出命令规范
-
-针对于不同模块的导入和导出命令，CLI 命令是遵循同一个规范的。
-
-```
-bot [dicts|faq|intents|conversation] --action [import|export] --filepath {{FILE_PATH}}
-```
-
-<img width="800" src="../../../images/products/platform/screenshot-20210906-081057.png" alt="" />
-
-如果是导出（`export`），没有加入`--filepath`部分，则会默认保存文件到当前工作目录（`cwd` 目录）。
-
-关于更多使用细节，下面有详细介绍。
-
 ## 配置参数
 
 Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`, `clientid` 等常用的变量。
@@ -153,39 +137,6 @@ BOT_ACCESS_TOKEN=xxx
 /.env
 ```
 
-<font color="blue">为简化说明，以下各示例配置使用了 .env 文件，因为略去了从命令行传入的一些参数。</font>
-
-## 备份或上传对话内容
-
-在详细介绍各个命令之前，先给出两个典型的需求如何依赖 CLI 命令解决。
-
-### 备份对话内容
-
-对话内容指词典、知识库、意图识别和多轮对话的内容，它们包括了机器人的所有对话技能。
-
-```
-# 删除文件
-rm -rf bot.dicts.json bot.faqs.json bot.intents.json bot.conversations.c66
-# 执行导出，以下命令并无顺序依赖关系
-bot dicts -a export -f bot.dicts.json
-bot faq -a export -f bot.faqs.json
-bot intents -a export -f bot.intents.json
-bot conversation -a export -f bot.conversations.c66
-```
-
-### 将对话内容上传
-
-将到处的对话内容上传给指定的机器人（比如通过 `.env` 设置）。
-
-```
-# 以下命令有顺序依赖关系
-bot dicts -a import -f bot.dicts.json
-bot faq -a import -f bot.faq.json
-bot intents -a import -f bot.intents.json
-bot conversation -a import -f bot.conversation.c66
-```
-
-这样，目标机器人就具备从之前导出的机器人的技能。
 
 ## 词典
 

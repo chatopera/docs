@@ -1,4 +1,10 @@
-- name: 多轮对话工作机制
-  href: conversation-mechanism.md
-- name: 意图识别工作机制
-  href: intent-mechanism.md
+- name: 词典
+  href: dicts.md
+- name: 知识库
+  href: faq.md
+- name: 多轮对话
+  href: conversation.md
+- name: 意图识别
+  href: intent.md
+- name: 在线视频
+  href: webinars.md

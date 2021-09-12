@@ -1,3 +1,7 @@
+- name: 计费及发票
+  href: billing.md
+- name: 私有部署
+  href: on-premise.md
 - name: 服务水平协议
   href: sla.md
 - name: 服务条款

@@ -1,3 +1,5 @@
+- name: "术语"
+  href: glossary.md
 - name: "命令行界面（CLI）"
   href: cli.md
 - name: "SDK"

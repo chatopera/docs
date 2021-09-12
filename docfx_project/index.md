@@ -20,8 +20,8 @@ footer{
       <a class="version-link" href="https://bot.chatopera.com">云服务</a><span>|</span><a class="github-link" href= https://status.chatopera.com">更新日志</a>
     </div>
     <div class="buttons-unit">
-      <a href="/products/chatbot-platform/quick-start.html" class="button"><i class="glyphicon glyphicon-send"></i>快速开始</a>
-      <a href="/products/chatbot-platform/conversation/cde.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
+      <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>快速开始</a>
+      <a href="/products/chatbot-platform/first-steps/cde.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
     </div>
   </div>
 </div>
