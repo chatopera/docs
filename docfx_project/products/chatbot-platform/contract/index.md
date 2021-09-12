@@ -1,5 +1,7 @@
 # 计费及保障
 
+Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a Service 服务上，使用监控、负载均衡、集群等功能保证服务的高可靠性。
+
 - [Chatopera 云服务计费及发票](./billing.md)
 
 - [私有部署：Chatopera 机器人平台](./on-premise.md)

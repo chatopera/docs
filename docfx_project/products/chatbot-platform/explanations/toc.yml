@@ -2,9 +2,9 @@
   href: dicts.md
 - name: 知识库
   href: faq.md
-- name: 多轮对话
-  href: conversation.md
 - name: 意图识别
   href: intent.md
-- name: 在线视频
+- name: 多轮对话
+  href: conversation.md
+- name: 视频教程
   href: webinars.md
