@@ -1,0 +1,15 @@
+{
+    "verbose": true,
+    "ignore": ["*.test.js", "obj/*"],
+    "delay": 5000,
+    "watch": [
+        "material/",
+        "products/",
+        "images/",
+        "global.json",
+        "docfx.json",
+        "file1.json",
+        "toc.yml",
+        "index.md"
+      ]
+  }

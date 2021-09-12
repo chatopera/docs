@@ -12,7 +12,26 @@
 
 当前基于版本：[https://github.com/dotnet/docfx/releases/tag/v2.56.7](https://github.com/dotnet/docfx/releases/tag/v2.56.7)
 
-## 进入 Docker
+
+## 安装 Docfx
+
+
+如果已经安装 docfx 二进制，再安装一下 Node.js。
+
+### HTTP Server
+
+```
+./admin/serve.sh
+```
+
+### 编译
+
+
+然后，自动 live load，使用 `./admin/live.sh`。
+
+原理：基于 Nodemon 自动检测变动，然后构建。
+
+## 使用 Docker
 
 仅用于操作系统中没有 docfx 并不打算安装的用户。
 
@@ -37,7 +56,7 @@ docker stop devdocs
 docker rm devdocs
 ```
 
-## 编译
+### 编译
 
 ```
 ./admin/docker/build.sh
@@ -45,7 +64,7 @@ docker rm devdocs
 
 输出文件目录 `./dist/_site`.
 
-## 实时编译
+### 实时编译
 
 ```
 ./admin/docker/serve.sh

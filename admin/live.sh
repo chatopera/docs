@@ -10,18 +10,9 @@ SRC_PATH=$baseDir/../docfx_project
 
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
-cd $baseDir/../docfx_project
-inotifywait -mrq -e modify --exclude "(obj|images)" $SRC_PATH | while read file; do
-    # log deleted file
-    echo ">>" `date` "$file is modified"
-    $baseDir/build.sh
-    if [ $? == 0 ]; then
-       echo "`date` build is done."
-       # if run inside docker, auto copy dist files into nginx
-       if [ -d /work/dist/_site ]; then
-            echo "Copied files for docker ..."
-            cd /work/dist/_site && tar cf - .|(cd /var/www/html;tar xf -)
-            echo "Done."
-       fi
-    fi
-done
+cd $SRC_PATH
+if [ ! -d node_modules ]; then
+    npm i
+fi
+# https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md
+./node_modules/nodemon/bin/nodemon.js --config nodemon.json -e md,png,jpg,json,yml --exec sh $baseDir/build.sh

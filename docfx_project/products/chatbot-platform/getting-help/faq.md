@@ -1,6 +1,8 @@
-## 常见问题
+# 常见问题
 
-### SDK / 返回错误 invalid appId
+## SDK
+
+### 返回错误 invalid appId
 
 ```
 {"rc":1,"error":"invalid appId."}
@@ -8,7 +10,7 @@
 
 这是因为`clientId`和`secret`配置不正确。
 
-### SDK / 返回错误 invalid timestamp
+### 返回错误 invalid timestamp
 
 ```
 {"rc":1,"error":"invalid timestamp."}
