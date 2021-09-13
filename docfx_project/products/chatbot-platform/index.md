@@ -8,8 +8,7 @@
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
 * 准备工作：[了解服务概述](overview.md) | [注册账户](first-steps/account.md) | [安装多轮对话设计器](first-steps/cde.md)
-* 入门教程：#TODO ./tutorials/quick start ...
-* 高级教程#TODO ./tutorials/expertise.md ...
+* 入门教程：[一步步实现智能对话机器人](tutorials/index.md)
 
 
 ## 帮助

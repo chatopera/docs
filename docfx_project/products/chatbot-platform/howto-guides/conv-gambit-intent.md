@@ -89,9 +89,7 @@ intent book_cab
 
 采用这个设计的原因是，**意图会话**的信息处理，这项权利尽量的保留给 BOT 开发者，在函数中实现，可以满足更多业务需求，让 BOT 更智能。
 
-## 调试和设置
-
-### 使用调试
+## 使用函数完成对话
 
 意图识别可以在多轮对话设计器 v2.2.0+ 中使用，但是基于对多轮对话设计器用户体验的升级，建议使用 v2.3.0+ 版本的多轮对话设计器，最新版本[下载地址链接](/products/chatbot-platform/first-steps/cde.html)。
 
@@ -118,7 +116,7 @@ intent book_cab
 
 当对话用户的发送文本匹配上了“book_cab”中的说法，比如“我想打车“。多轮对话即启用【book_cab】内的对话流程，意图识别对话在成功获得该意图的必须的槽位信息，或超过了设置的最大追问次数，则会进入多轮对话函数，前者会调用【成功函数】，后者会调用【失败函数】。前文，做过相关描述。那么，成功函数和失败函数的内，如何获得意图识别对话的信息呢？
 
-#### 成功函数
+### 成功函数
 
 成功函数，比如上文例子中的 `orderCab` 不需要在对话脚本中设定任何参数，函数执行的时候，会将意图识别信息，加入该函数的 `this` 命名空间下，使用 `this.intent` 读取。
 
@@ -210,84 +208,11 @@ exports.orderCabExt = async function() {
 }
 ```
 
-#### 失败函数
+### 失败函数
 
 失败函数中，`this.intent` 的信息和使用，和成功函数是一致的，这是调用的实际不一致，同时它是可选的。
 
-### 设置最大追问次数
 
-匹配意图识别对话之后，机器人会根据槽位信息情况，必填的槽位是否都获取到，进行追问，这个追问可以设定一个最大次数，当达到最多的追问时，机器人就放弃检索意图识别，而是继续从知识库和对话脚本中查询回复。
-
-对于每个机器人，BOT 开发者可以自定义设置，进入 BOT 设置页面，找到【`多轮对话意图对话最多追问次数`】，默认为 2。
-
-<table class="image">
-    <caption align="bottom">多轮对话意图对话最多追问次数</caption>
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-3_11-49-51.png" alt="多轮对话意图对话最多追问次数" /></td>
-    </tr>
-</table>
-
-### 设置集成意图识别分支
-
-在意图识别模块，包括两个分支：调试分支；生产分支。生产分支，就是指发布到生产环境，实际上线的 BOT 服务。
-
-设计两个分支，主要是考虑到，一个机器人的意图识别数据可以不断的优化，那么每个阶段优化好以后再选择上线到生产分支，这样在调试和优化的时候不影响生产分支的对话。
-
-该设置为，在多轮对话设计器或 BOT 管理控制台的多轮对话页面，设置【`环境变量`】来调整，默认为调试分支，设置参数为：`@SYS_INTENT_BRANCH`，使用 `dev` 代表集成调试分支，使用 `pro` 代表集成生产分支；默认为调试分支。
-
-## 进阶用法
-
-在使用意图匹配器时，还有一些重要的知识点。它们属于使用的细节，以及需要特殊说明。
-
-在通过前文了解了意图匹配器的使用场景和语法后，下面的知识可以帮助您在生产环境更好的发布智能对话机器人。
-
-### SDK 返回意图识别信息
-
-当对话用户，有匹配到意图，正在进行意图识别的对话时，使用多轮对话检索 API，返回值中，`service.provider` 的值是 `intent`，并且 `service.intent` 是当前意图信息。示例数据如下：
-
-```
-{
-  "string": "您想从哪里出发？",
-  "topicName": "greetings",
-  "subReplies": [],
-  "service": {
-    "provider": "intent",
-    "intent": {
-      "name": "book_cab",
-      "threshold": 0.9,
-      "branch": "dev",
-      "state": "proactive",
-      "entities": [
-        {
-          "name": "originLoc",
-          "val": "",
-          "requires": true,
-          "dictname": "@LOC"
-        },
-        {
-          "name": "date",
-          "val": "",
-          "requires": true,
-          "dictname": "@TIME"
-        },
-        {
-          "name": "destLoc",
-          "val": "",
-          "requires": true,
-          "dictname": "@LOC"
-        }
-      ]
-    }
-  },
-  "logic_is_unexpected": false,
-  "logic_is_fallback": false,
-  "botName": "dev1078",
-  "faq": [],
-  "profile": {}
-}
-```
-
-可见，`service.intent` 的数据与函数中的 `this.intent` 是一致的。
 
 ### 快速读取 intent.entities
 
@@ -358,6 +283,82 @@ exports.placeAirplaneTicketOrder = async function() {
     ...
 ```
 
+## 设置最大追问次数
+
+匹配意图识别对话之后，机器人会根据槽位信息情况，必填的槽位是否都获取到，进行追问，这个追问可以设定一个最大次数，当达到最多的追问时，机器人就放弃检索意图识别，而是继续从知识库和对话脚本中查询回复。
+
+对于每个机器人，BOT 开发者可以自定义设置，进入 BOT 设置页面，找到【`多轮对话意图对话最多追问次数`】，默认为 2。
+
+<table class="image">
+    <caption align="bottom">多轮对话意图对话最多追问次数</caption>
+    <tr>
+        <td><img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-3_11-49-51.png" alt="多轮对话意图对话最多追问次数" /></td>
+    </tr>
+</table>
+
+## 设置集成意图识别分支
+
+在意图识别模块，包括两个分支：调试分支；生产分支。生产分支，就是指发布到生产环境，实际上线的 BOT 服务。
+
+设计两个分支，主要是考虑到，一个机器人的意图识别数据可以不断的优化，那么每个阶段优化好以后再选择上线到生产分支，这样在调试和优化的时候不影响生产分支的对话。
+
+该设置为，在多轮对话设计器或 BOT 管理控制台的多轮对话页面，设置【`环境变量`】来调整，默认为调试分支，设置参数为：`@SYS_INTENT_BRANCH`，使用 `dev` 代表集成调试分支，使用 `pro` 代表集成生产分支；默认为调试分支。
+
+## 升级生产环境的多轮对话脚本
+
+<font color="blue">通过多轮对话设计器，或 Chatopera 机器人平台的机器人多轮对话管理页面，上传多轮对话脚本，因为刷新的缘故，正在进行中的意图会话失效，这会给对话用户造成体验上的困扰，所以，对于生产环境的更新，建议在业务低分时间进行！</font>
+
+## 其它使用说明
+
+### SDK 返回意图识别信息
+
+当对话用户，有匹配到意图，正在进行意图识别的对话时，使用多轮对话检索 API，返回值中，`service.provider` 的值是 `intent`，并且 `service.intent` 是当前意图信息。示例数据如下：
+
+```
+{
+  "string": "您想从哪里出发？",
+  "topicName": "greetings",
+  "subReplies": [],
+  "service": {
+    "provider": "intent",
+    "intent": {
+      "name": "book_cab",
+      "threshold": 0.9,
+      "branch": "dev",
+      "state": "proactive",
+      "entities": [
+        {
+          "name": "originLoc",
+          "val": "",
+          "requires": true,
+          "dictname": "@LOC"
+        },
+        {
+          "name": "date",
+          "val": "",
+          "requires": true,
+          "dictname": "@TIME"
+        },
+        {
+          "name": "destLoc",
+          "val": "",
+          "requires": true,
+          "dictname": "@LOC"
+        }
+      ]
+    }
+  },
+  "logic_is_unexpected": false,
+  "logic_is_fallback": false,
+  "botName": "dev1078",
+  "faq": [],
+  "profile": {}
+}
+```
+
+可见，`service.intent` 的数据与函数中的 `this.intent` 是一致的。
+
+
 ### 在回复中跳转到指定意图
 
 **假设在多轮对话脚本中，已经设定了一个意图的意图匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](/products/chatbot-platform/howto-guides/conv-state.html#切换话题) 切换话题。
@@ -388,10 +389,6 @@ exports.handleXXFn = async function() {
     return "^topicRedirect(\"intents\", \"book_airplane_ticket\", true)"
 }
 ```
-
-### 升级生产环境的多轮对话脚本
-
-<font color="blue">通过多轮对话设计器，或 Chatopera 机器人平台的机器人多轮对话管理页面，上传多轮对话脚本，因为刷新的缘故，正在进行中的意图会话失效，这会给对话用户造成体验上的困扰，所以，对于生产环境的更新，建议在业务低分时间进行！</font>
 
 ## 下一步
 

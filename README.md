@@ -6,7 +6,7 @@
 
 # Chatopera 文档中心 
 
-[![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/)
+[![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/) [![Docker Tags](https://raw.githubusercontent.com/hailiang-wang/Rishit-dagli/master/badges/docker.svg)](https://hub.docker.com/repository/docker/chatopera/docs/tags?page=1&ordering=last_updated "Get Latest Docker Images") 
 
 Chatopera: Chat as a Service. We believe Chatbot is the next application platform to deliver services.
 

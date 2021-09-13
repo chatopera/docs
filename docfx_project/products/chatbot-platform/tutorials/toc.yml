@@ -1,10 +1,12 @@
-- name: 快速开始
-  href: quick-start.md
-- name: 意图识别快速开始
-  href: intent-get-start.md
-- name: 使用进阶
-  href: expertise.md
-- name: 查看对话历史记录
-  href: chat-history.md
-- name: 查看使用情况
-  href: audit.md
+- name: <1/5> 创建机器人并添加到多轮对话设计器
+  href: 1-create-bot.md
+- name: <2/5> 使用知识库回答“海口有几个机场”
+  href: 2-answer-faq.md
+- name: <3/5> 使用意图识别完成“预定机票”
+  href: 3-book-ticket-task.md
+- name: <4/5> 使用内置函数 http 集成天气查询 API 服务
+  href: 4-request-weather-info.md
+- name: <5/5> 查看对话统计和历史
+  href: 5-stats-history.md
+- name: 总结
+  href: summary.md
