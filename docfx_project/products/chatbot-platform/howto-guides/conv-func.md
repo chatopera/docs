@@ -89,9 +89,9 @@ exports.nestedBFunction = function(cb) {
 
 ## 下一步
 
-- [内置函数库](builtin.md)
+- [内置函数库](/products/chatbot-platform/references/func-builtin.html)
 
-- [函数返回值](return.md)
+- [函数返回值](/products/chatbot-platform/references/func-return.html)
 
 
 ## 评论

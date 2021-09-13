@@ -132,7 +132,7 @@ chatbot.command("GET", "/").then(
 - 实现 Dialogue Management: 融合意图识别检索、多轮对话检索和知识库检索
 - [app.js](https://github.com/chatopera/webchat/blob/master/app/app.js) 使用 [Chatopera Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk)，可作为系统集成参考
 
-## 启动应用
+### 启动应用
 
 本示例程序提供 Docker 容器镜像，使用 Docker 启动服务进行体验
 
@@ -142,9 +142,10 @@ docker run -it --rm -p 8668:8668 chatopera/webchat:develop
 
 <img width="600" src="../../../images/products/platform/webchat-1.jpeg" alt="" />
 
-## 示例程序代码库
+### 示例程序代码库
 
 [https://github.com/chatopera/webchat](https://github.com/chatopera/webchat)
+
 
 ## 评论
 

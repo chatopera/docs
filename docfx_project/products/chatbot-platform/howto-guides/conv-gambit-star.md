@@ -1,11 +1,7 @@
-# 参考手册
+# 在多轮对话中使用通配符匹配器
 
-* [术语](glossary.md)
-* [通配符匹配器](gambit-star.md)
-* [内置函数库](func-builtin.md)
-* [函数返回值](func-return.md)
-* [命令行工具（CLI）](cli.md)
-* [SDK](sdk/index.md)
+<img width="800" src="../../../../images/products/platform/screenshot-20210913-130806.png" alt="通配符匹配器" />
+
 
 ## 评论
 

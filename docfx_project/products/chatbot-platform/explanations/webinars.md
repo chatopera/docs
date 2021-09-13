@@ -2,12 +2,6 @@
 
 本系列视频帮助企业在 Chatopera 机器人平台上开发聊天机器人，通过自然语言交互的形式，定制开发聊天机器人，提升业务流程自动化。Chatopera 机器人平台包括知识库、多轮对话、意图识别和语音识别等组件，标准化聊天机器人开发，支持企业 OA 智能问答、HR 智能问答、智能客服和网络营销等场景。
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/djt-teacher-hain.jpg" alt=" 讲师介绍" /></td>
-    </tr>
-</table>
-
 [【免费视频课程】《Chatopera 机器人平台使用指南》](http://ke.chatopera.com/course/2994143)
 
 <p align="center">

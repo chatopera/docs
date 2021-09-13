@@ -1,6 +1,6 @@
 # 使用 CLI 导入和导出对话语料
 
-[Chatopera CLI](/products/chatbot-platform/references/cli.html) 支持的功能就是对不同[对话语料](/products/chatbot-platform/references/glossary.html#对话语料)的数据导入和导出；外加一些其他命令，辅助自动化管理机器人。
+[Chatopera CLI](cli-install-config.md) 支持的功能就是对不同[对话语料](/products/chatbot-platform/references/glossary.html#对话语料)的数据导入和导出；外加一些其他命令，辅助自动化管理机器人。
 
 ## 准备工作
 

@@ -1,4 +1,6 @@
 # cli
+- name: 安装和配置 CLI
+  href: cli-install-config.md
 - name: 使用 CLI 导入和导出对话语料
   href: cli-export-import.md
 
@@ -31,16 +33,18 @@
   href: intent-releases.md
 
 # 多轮对话
-- name: 在多轮对话中使用匹配器
-  href: conv-gambits/toc.yml
-  topicHref: conv-gambits/index.md
+- name: 在多轮对话中使用通配符匹配器
+  href: conv-gambit-star.md
+- name: 在多轮对话中使用模糊匹配器
+  href: conv-gambit-like.md
+- name: 在多轮对话中使用意图匹配器
+  href: conv-gambit-intent.md
 - name: 在多轮对话中设置回复
   href: conv-replies.md
 - name: 在多轮对话中使用上下轮钩子
   href: conv-hooks.md
-- name: 在多轮对话中使用 JavaScript 函数
-  href: conv-functions/toc.yml
-  topicHref: conv-functions/index.md
+- name: 在多轮对话中使用函数
+  href: conv-func.md
 - name: 在多轮对话中配置环境变量
   href: conv-environment.md
 - name: 在多轮对话中管理对话状态

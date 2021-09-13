@@ -32,11 +32,9 @@ Chatopera 云服务文档中心包括很多文档，了解这些文档是如何�
 
 * [使用指南](howto-guides/index.md)是回答你在使用过程中，可能遇到的问题，往往包含一些 Chatopera 机器人平台的使用详情。因为这部分内容假设你已经具备了基础知识，对一些概念已经了解，假设你已经完成了[入门教程](tutorials/index.md)。
 
-* [参考手册](references/index.md)描述了 [Chatopera 云服务](https://bot.chatopera.com)提供的 CLI / APIs 接口使用，或者其它工具说明，用于系统集成和自动化工作。这部分内容假设你已经具备了基础知识，对一些概念已经了解。
-
 * [背景知识](explanations/index.md)介绍说明工作机制、主题讨论或核心概念的阐述，这些内容涉及了 [Chatopera 云服务](https://bot.chatopera.com)的工作原理，了解这部分内容对你使用 Chatopera 云服务会有很大的帮助。
 
-
+* [参考手册](references/index.md)描述了 [Chatopera 云服务](https://bot.chatopera.com)提供的 CLI / APIs 接口使用，或者其它工具说明，用于系统集成和自动化工作。这部分内容假设你已经具备了基础知识，对一些概念已经了解。
 
 ## 产品更新
 

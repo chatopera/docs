@@ -2,6 +2,7 @@
 
 ## CLI
 
+* [安装和配置 CLI](cli-install-config.md)
 * [使用 CLI 导入和导出对话语料](cli-export-import.md)
 
 ## 词典管理
@@ -27,10 +28,12 @@
 
 ## 多轮对话
 
-* [在多轮对话中使用匹配器](conv-gambits/index.md)
+* [在多轮对话中使用通配符匹配器](conv-gambit-star.md)
+* [在多轮对话中使用模糊匹配器](conv-gambit-like.md)
+* [在多轮对话中使用意图匹配器](conv-gambit-intent.md)
 * [在多轮对话中设置回复](conv-replies.md)
 * [在多轮对话中使用上下轮钩子](conv-hooks.md)
-* [在多轮对话中使用 JavaScript 函数](conv-functions/index.md)
+* [在多轮对话中使用函数](conv-func.md)
 * [在多轮对话中配置环境变量](conv-environment.md)
 * [在多轮对话中管理对话状态](conv-state.md)
 
@@ -44,7 +47,7 @@
 
 * [调用语音识别服务](asr-request.md)
 
-## 系统集成
+## 发布机器人
 
 * [在飞书中使用 Chatopera BOT](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
 * [在春松客服集成 Chatopera BOT](/products/cskefu/work-chatbot/bot-agent.html)

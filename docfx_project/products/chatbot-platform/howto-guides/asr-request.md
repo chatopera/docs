@@ -12,7 +12,7 @@ Chatopera 机器人平台支持语音识别服务，将语音转化为文本内�
 
 <table class="image">
 <caption align="bottom">图：语音识别列表</caption>
-<tr><td><img width="800" src="../../images/products/platform/screenshot-20210905-102649.png" alt="语音识别列表"/></td></tr>
+<tr><td><img width="800" src="../../../images/products/platform/screenshot-20210905-102649.png" alt="语音识别列表"/></td></tr>
 </table>
 
 ## 系统集成
