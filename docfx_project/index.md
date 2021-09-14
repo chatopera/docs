@@ -2,6 +2,7 @@
 title: 首页
 documentType: index
 ---
+
 <style type="text/css">
 footer{
   position: relative;
@@ -21,7 +22,7 @@ footer{
     </div>
     <div class="buttons-unit">
       <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>快速开始</a>
-      <a href="/products/chatbot-platform/first-steps/cde.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
+      <a href="/products/chatbot-platform/howto-guides/cde-install.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
     </div>
   </div>
 </div>
