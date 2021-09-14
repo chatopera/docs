@@ -23,11 +23,10 @@ Options:
 
 Commands:
   details [options]       get a bot's detail info, such as name, primaryLanguage
-  connect [options]       chat with bot via bot#conversation interface, https://dwz.chatopera.com/SHl7N5
+  connect [options]       chat with bot via bot#conversation interface
   conversation [options]  import or export a bot's conversations data
   trace [options]         tail a bot's conversations logging info
-  asr [options]           request Chatopera ASR API,
-                          https://docs.chatopera.com/products/chatbot-platform/integration/chatbot/asr.html
+  asr [options]           request Chatopera ASR API
   faq [options]           import or export a bot's faqs data
   dicts [options]         sync, import or export a bot's dicts data
   intents [options]       train, import or export a bot's intents data
