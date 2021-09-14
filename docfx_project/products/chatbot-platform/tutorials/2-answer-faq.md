@@ -56,6 +56,7 @@
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-202526.png"/>
 
+脚本是建立对话机器人思维体系的描述形式，现在，你可以简单的认为：`+` 后就是机器人可以处理的问题的规则；`-`后是该规则发生时，机器人的处理行为。通过描述规则和反应行为，机器人建立了一个“大脑”，Chatopera 多轮对话以此为出发点，建立了一套简单可行的标准，实现智能对话机器人。
 
 ### 添加函数
 
@@ -76,9 +77,13 @@ exports.get_greetings = async function() {
 }
 ```
 
+这段代码就是 JavaScript，一个动态的非常容易掌握的编程语言。在 Chatopera 云服务中，使用 Node.js 运行时执行这些代码。
+
 添加后，函数编辑区域看起来是这样。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-202923.png"/>
+
+其中，`exports.` 后面就是函数的名字，可以在机器人的 `-` 后面使用，处理逻辑。
 
 点击【保存】，此时，得到提示信息:
 

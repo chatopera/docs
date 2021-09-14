@@ -57,6 +57,8 @@ intent ask_weather
 - {x} ^handleLoseAskWeather()
 ```
 
+有了上节的经验，现在看起来，这个意图会话的脚本是不是很熟悉了？
+
 ### 添加函数
 
 ```

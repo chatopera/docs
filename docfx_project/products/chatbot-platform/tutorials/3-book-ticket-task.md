@@ -5,9 +5,25 @@
 
 通过本节内容，春松机器人将能够为对话用户提供预约机票的服务。当然，不是真的出票，我们只是通过自然语言交互的形式获取到了要购买机票相关的信息，假设已经集成了一个接口，可以借助这些信息出票。
 
+## 引用系统词典
+
+在预约飞机票的应用场景下，春松机器人需要识别对话用户的输入文本中包含的地名、时间信息，比如最简单的几个信息：出发城市、到达城市和航班时间。
+
+再次回到春松机器人管理控制台，在机器人菜单上点击【词典】。
+
+
+<img width="800" src="../../../images/products/platform/screenshot-20210914-014615.png"/>
+
+在词典管理页面，点击【引用系统词典】。
+
+<img width="800" src="../../../images/products/platform/screenshot-20210914-014900.png"/>
+
+跳转到新的页面后，找到 `@TIME` 和 `@LOC`，点击【引用】，如上图所示。这样，稍后我们就可以让机器人在意图识别中能“学习”到这些“概念”。
+
+
 ## 创建意图
 
-再次回到春松机器人管理控制台，在机器人菜单上点击【意图识别】。
+在机器人菜单上点击【意图识别】。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-013637.png"/>
 
@@ -29,24 +45,22 @@
 
 点击【保存】。现在，就有了一个意图，但是还没有数据和训练。
 
-## 引用系统词典
+## 添加意图说法
 
-在预约飞机票的应用场景下，春松机器人需要识别对话用户的输入文本中包含的地名、时间信息，比如最简单的几个信息：出发城市、到达城市和航班时间。
+在 `book_airplane_ticket` 的操作中，点击【编辑】。
+接下来添加说法，说法就是对话用户的代表要发起这个任务的表达文本。我们为预约机票添加一些说法。
 
-在春松机器人管理控制台，在机器人菜单上点击【词典】。
-
-<img width="800" src="../../../images/products/platform/screenshot-20210914-014615.png"/>
-
-在词典管理页面，点击【引用系统词典】。
-
-<img width="800" src="../../../images/products/platform/screenshot-20210914-014900.png"/>
-
-跳转到新的页面后，找到 `@TIME` 和 `@LOC`，点击【引用】，如上图所示。这样，稍后我们就可以让机器人在意图识别中能“学习”到这些“概念”。
+```
+预约机票
+预定飞机票
+我想预约机票
+我想预定机票
+我想订机票
+```
 
 ## 添加意图槽位
 
-回到春松机器人意图识别管理页面，在 `book_airplane_ticket` 的操作中，点击【编辑】。接下来，我们开始添加槽位信息，槽位就是在预约机票任务中，需要的关键信息：出发城市、到达城市和航班时间。
-
+接下来，我们开始添加槽位信息，槽位就是在预约机票任务中，需要的关键信息：出发城市、到达城市和航班时间。
 槽位编辑面板在页面中间，按照如下信息设置：
 
 | 槽位名称 | 词典 | 必填 | 追问 | 
@@ -59,22 +73,15 @@
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-015710.png"/>
 
+## 使用带有槽位的说法
 
-## 添加意图说法
-
-接下来添加说法，说法就是对话用户的代表要发起这个任务的表达文本。我们为预约机票添加一些说法。
+在说法中，支持添加槽位，需要用`{槽位名称}`的形式。这样，对话用户可以同时表明意图和关键信息。
+在添加好说法后，看起来是这样：
 
 ```
-预约机票
-预定飞机票
-我想预约机票
-我想预定机票
 我要预约从{fromPlace}出发的机票
 帮我预约{date}的机票
-我想订机票
 ```
-
-可以看到，在说法中，支持添加槽位，需要用`{槽位名称}`的形式。在添加好说法后，看起来是这样：
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-020307.png"/>
 
@@ -134,6 +141,7 @@ intent book_airplane_ticket
     - ^rebookAirplaneTicket()
 ```
 
+此时，我们看到脚本编辑窗口的内容，比上一节要复杂一些，实际上这些脚本有很好的语义的效果，可以同时对普通人和机器友好，在完成新手任务后，你可以继续学习它们：匹配器、回复和上下轮钩子。学习它们也很容易！
 
 然后，点击【函数】，进入函数编辑窗口，添加如下内容：
 
@@ -149,7 +157,6 @@ async function extractTimeEntity(maestro, entities, property) {
 exports.handleAirplaneTicketOrder = async function() {
 
     debug("[handleAirplaneTicketOrder] this.intent", JSON.stringify(this.intent))
-
     let entities = _.keyBy(this.intent.entities, 'name');
     let date = await extractTimeEntity(this.maestro, entities, "date");
 
@@ -181,7 +188,6 @@ exports.handleAirplaneTicketOrder = async function() {
 // 下单
 exports.placeAirplaneTicketOrder = async function() {
     this.intent.drop = true;
-
     let entities = _.keyBy(this.intent.entities, 'name');
 
     return {
