@@ -5,5 +5,4 @@
   href: products/cskefu/
   topicHref: products/cskefu/index.md
 - name: 话术助手
-  href: products/chatbot-platform/faq/
-  topicHref: products/chatbot-platform/faq/assistant.md
+  href: /products/chatbot-platform/howto-guides/faq-assistant.html
