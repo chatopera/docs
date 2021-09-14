@@ -7,8 +7,8 @@
 
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
-* 准备工作：[了解服务概述](overview.md) | [注册账户](first-steps/account.md) | [安装多轮对话设计器](first-steps/cde.md)
-* 入门教程：[一步步实现智能对话机器人](tutorials/index.md)
+* 浏览 [Chatopera 云服务概述](overview.md)
+* 完成 [新手任务：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)
 
 
 ## 帮助
@@ -16,9 +16,9 @@
 
 遇到使用困难？在这里获得帮助！
 
-* 浏览[常见问题/ FAQ ](getting-help/faq.md) 文档中获得常见问题的答案
+* 浏览 [FAQ 常见问题](references/faq.md) 文档中获得常见问题的答案
 * 搜索 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助
-* 加入 [Chatopera 用户群](getting-help/user-group.md)，从社区获得支持
+* 加入 [Chatopera 用户群](contract/tech-support.md)，从社区获得支持
 * 提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
 
 

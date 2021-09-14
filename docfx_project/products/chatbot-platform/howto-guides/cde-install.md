@@ -31,7 +31,7 @@
 
 <table class="image">
 <caption align="bottom">多轮对话设计器打开后页面</caption>
-<tr><td><img width="800" src="../../../images/products/cde/mac-homepage.png" alt="多轮对话设计器打开后页面"/></td></tr>
+<tr><td><img width="800" src="../../../../images/products/cde/mac-homepage.png" alt="多轮对话设计器打开后页面"/></td></tr>
 </table>
 
 ## 可能遇到的问题
@@ -40,7 +40,7 @@
 
 <table class="image">
 <caption align="bottom">MacOS权限问题</caption>
-<tr><td><img width="600" src="../../../images/products/cde/mac-install-0.png" alt="macos权限问题"/></td></tr>
+<tr><td><img width="600" src="../../../../images/products/cde/mac-install-0.png" alt="macos权限问题"/></td></tr>
 </table>
 
 **解决方案**
@@ -49,14 +49,14 @@
 
 <table class="image">
 <caption align="bottom">应用中心</caption>
-<tr><td><img width="600" src="../../../images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
+<tr><td><img width="600" src="../../../../images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
 </table>
 
 选择“多轮对话设计器”并且右键：
 
 <table class="image">
 <caption align="bottom">右键打开</caption>
-<tr><td><img width="600" src="../../../images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
+<tr><td><img width="600" src="../../../../images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
 </table>
 
 点击“打开”(“Open”)。

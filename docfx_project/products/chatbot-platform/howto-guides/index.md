@@ -1,5 +1,9 @@
 # 使用指南
 
+## 准备工作
+* [注册使用 Chatopera 云服务](account-mgr.md)
+* [安装多轮对话设计器](cde-install.md)
+
 ## CLI
 
 * [安装和配置 CLI](cli-install-config.md)

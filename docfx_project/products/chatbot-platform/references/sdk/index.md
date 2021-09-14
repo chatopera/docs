@@ -61,4 +61,15 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 - [`Chatbot` 类详细说明：对话检索、机器人信息及更新，etc.](./chatbot/index.md)
 
-- [遇到问题？常看“获得帮助”](/products/chatbot-platform/getting-help/index.html)
+- [遇到问题？常看“获得帮助”](/products/chatbot-platform/index.html#帮助)
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -1,14 +1,8 @@
 - name: 服务概述
   href: overview.md
-- name: 准备工作
-  href: first-steps/toc.yml
-  topicHref: first-steps/index.md
 - name: 入门教程
   href: tutorials/toc.yml
   topicHref: tutorials/index.md
-- name: 帮助
-  href: getting-help/toc.yml
-  topicHref: getting-help/index.md
 - name: 使用指南
   href: howto-guides/toc.yml
   topicHref: howto-guides/index.md

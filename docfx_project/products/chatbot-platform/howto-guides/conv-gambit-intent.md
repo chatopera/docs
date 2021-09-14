@@ -91,7 +91,7 @@ intent book_cab
 
 ## 使用函数完成对话
 
-意图识别可以在多轮对话设计器 v2.2.0+ 中使用，但是基于对多轮对话设计器用户体验的升级，建议使用 v2.3.0+ 版本的多轮对话设计器，最新版本[下载地址链接](/products/chatbot-platform/first-steps/cde.html)。
+意图识别可以在多轮对话设计器 v2.2.0+ 中使用，但是基于对多轮对话设计器用户体验的升级，建议使用 v2.3.0+ 版本的多轮对话设计器，最新版本[下载地址链接](/products/chatbot-platform/howto-guides/cde-install.html)。
 
 编辑意图识别对话窗口如下：
 

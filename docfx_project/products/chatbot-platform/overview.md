@@ -2,11 +2,13 @@
 
 ## Chatopera 机器人平台
 
-**用聊天机器人做市场营销、客户服务和自动化流程？如何实现多轮对话？Chatopera 机器人平台帮助企业或开发者使用低代码方式定制智能对话机器人。**
+用聊天机器人做市场营销、客户服务和自动化流程？如何实现多轮对话？
 
-[Chatopera 云服务](https://bot.chatopera.com)是[Chatopera 机器人平台](/products/chatbot-platform/index.html)的公有云实例。Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
+**Chatopera 机器人平台帮助企业和开发者使用低代码方式定制智能对话机器人。**
 
-Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/index.html#私有部署)。
+[Chatopera 云服务](https://bot.chatopera.com)是[Chatopera 机器人平台](/index.html)的公有云实例，Chatopera 云服务尤其对中小型企业非常友好，按需消费，一站式上线智能对话机器人。
+
+Chatopera 云服务使用按量计费，提供多语言 SDK 集成；同时 Chatopera 可为企业[私有部署 Chatopera 机器人平台](/products/chatbot-platform/contract/on-premise.html)。
 
 Chatopera 机器人平台目前支持语言：
 
@@ -27,8 +29,7 @@ Chatopera 融合了不同形式的实现聊天机器人的方法，支持定制�
 
 ## 下一步
 
-- [准备工作：注册账户和安装多轮对话设计器](/products/chatbot-platform/first-steps/index.html)
-- [入门教程：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)
+- [新手任务：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)
 
 
 ## 评论

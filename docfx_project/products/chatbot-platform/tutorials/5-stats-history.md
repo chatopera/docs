@@ -15,7 +15,7 @@
 
 <img width="800" src="../../../images/products/platform/love-20210914-114743.png"/>
 
-<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](4-request-weather-info.md) | >> 下一步：[使用指南](/products/chatbot-platform/howto-guides/index.html)
+<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](4-request-weather-info.md)
 
 ## 接下来
 

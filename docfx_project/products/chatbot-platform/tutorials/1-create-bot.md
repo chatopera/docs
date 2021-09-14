@@ -31,7 +31,7 @@
 
 ## 添加机器人到多轮对话设计器
 
-在电脑应用启动中心，打开【多轮对话设计器】。
+在电脑应用启动中心，打开【多轮对话设计器】，**如果你还没有安装，使用[链接](/products/chatbot-platform/howto-guides/cde-install.html)进行安装**。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-192350.png"/>
 

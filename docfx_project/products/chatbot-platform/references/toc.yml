@@ -1,4 +1,4 @@
-- name: "术语"
+- name: 术语
   href: glossary.md
 - name: 通配符匹配器
   href: gambit-star.md
@@ -11,3 +11,5 @@
 - name: "SDK"
   href: sdk/toc.yml
   topicHref: sdk/index.md
+- name: 常见问题
+  href: faq.md
