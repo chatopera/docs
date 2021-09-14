@@ -4,7 +4,7 @@
 
 也称为 Like Gambit，使用容错能力更强的语法定义规则。
 
-* [模糊匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/scripts/gambit-like.html)
+* [模糊匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/gambit-like.html)
 
 ## 模糊匹配器的功能
 
@@ -159,17 +159,17 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 ## 下一步
 
-- [有关更多关于 `this.message` 的使用介绍](../conv-functions/builtin.md#thismessage)
+- [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/references/func-builtin.html#thismessage)
 
 - [下载多轮对话设计器](/products/chatbot-platform/first-steps/cde.html)
 
-- [理解多轮对话工作机制](/products/chatbot-platform/explanations/conversation.html)
+- [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
 
 - [检索多轮对话：使用多轮对话接口进行系统集成](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)
 
-- [通配符匹配器：使用语法建立规则](star.md)
+- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
 
-- [意图匹配器：借助意图识别模块，轻松实现任务型对话](intent.md)
+- [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
 
 ## 评论
 

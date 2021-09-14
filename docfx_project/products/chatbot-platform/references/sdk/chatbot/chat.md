@@ -3,14 +3,103 @@
 
 对话检索接口，就是将对话用户的请求发送给机器人，获得机器人的回复。
 
+* [检索多轮对话](#检索多轮对话)：从多轮对话获得回复
 * [检索知识库](#检索知识库)：从知识库获得回复
-
 * [检索意图识别](#检索意图识别)：从意图识别模块获得回复
 
-* [检索多轮对话](#检索多轮对话)：从多轮对话获得回复
+检索多轮对话，也**同时会从知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式**，使用检索多轮对话接口，可以定制出更为智能的对话机器人。 了解详情，请阅读[《多轮对话的工作机制》](/products/chatbot-platform/explanations/query.html)。
 
 
-**检索多轮对话，也同时会从知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式，使用检索多轮对话接口，可以定制出更为智能的对话机器人。** 了解详情，请阅读[《多轮对话的工作机制》](/products/chatbot-platform/conversation/mechanism.html)。
+## 检索多轮对话
+
+多轮对话是通过脚本规则、函数编程实现问答服务，在*检索多轮对话*接口中，同时融合了知识库参与回复决策，返回结果，尤其是通过知识库答案路由到指定话题的指定触发器，非常实用。为了方便使用，宜先理解[多轮对话的工作机制和工作原理](/products/chatbot-platform/explanations/query.html)，熟悉多轮对话机制可以真正将 Chatopera 机器人平台的能量发挥到最大。
+
+```
+Chatbot#command("POST", "/conversation/query", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```
+{
+    "fromUserId": "{{userId}}",
+    "textMessage": "想要说些什么",
+    "faqBestReplyThreshold": 0.6,
+    "faqSuggReplyThreshold": 0.35
+}
+```
+
+| key                   | type   | required | description                                                                                       |
+| --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
+| userId                | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                               |
+| textMessage           | string | &#10004; | 用户输入的对话文字                                                                                |
+| faqBestReplyThreshold | number | &#10008; | 知识库最佳回复， 默认 0.8，知识库建议回复，知识库中置信度超过该值通过返回值`string`和`params`返回 |
+| faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```
+{
+    "rc": 0,
+    "data": {
+        "state": "default",
+        "string": "方法",
+        "logic_is_unexpected": false,
+        "logic_is_fallback": false,
+        "service": {
+            "provider": "faq",
+            "docId": "{{doctId}}",
+            "score": 0.3781,
+            "threshold": 0.37
+        },
+        "botName": "小巴巴",
+        "faq": [
+            {
+                "id": "{{doctId}}",
+                "score": 0.3781,
+                "post": "查看相似问题不可能的",
+                "replies": [
+                    {
+                        "rtype": "plain",
+                        "enabled": true,
+                        "content": "方法"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
+_state_: 业务字段，可以在多轮对话脚本中设置
+
+_string_: 机器人回复的文本内容
+
+_topicName_: 机器人会话主题
+
+_logic_is_fallback_: 是否是兜底回复
+
+_botName_: 机器人的名字
+
+_faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
+
+`service`代表返回的数据来源，**provider:conversation**指**多轮对话**，**provider:faq**指**知识库**，**provider:intent**指**意图识别**；不同数据来源也会提供相应信息。
+
+| provider     | key                  | 解释    |
+| ------------ | -------------------- | ------- |
+| faq          |                      |         |
+|              | docId                | 文档 ID |
+|              | post                 | 标准问  |
+|              | score                | 分数    |
+|              | threshold            | 阀值    |
+| intent | 意图识别             |     更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html)    |
+|              | intent.name                 | 意图名称  |
+|              | intent.state                 | 意图会话状态  |
+|              | intent.entities                 | 意图中的命名实体  |
+| conversation | 多轮对话             |         |
+| fallback     | 兜底回复             |         |
+| mute         | 该用户被该机器人屏蔽 |         |
+
 
 ## 检索知识库
 
@@ -215,96 +304,6 @@ Chatbot#command("GET", "/clause/prover/session/{{sessionId}}")
     "error": null
 }
 ```
-
-## 检索多轮对话
-
-多轮对话是通过脚本规则、函数编程实现问答服务，在*检索多轮对话*接口中，同时融合了知识库参与回复决策，返回结果，尤其是通过知识库答案路由到指定话题的指定触发器，非常实用。为了方便使用，宜先理解[多轮对话的工作机制和工作原理](/products/chatbot-platform/conversation/mechanism.html)，熟悉多轮对话机制可以真正将 Chatopera 机器人平台的能量发挥到最大。
-
-```
-Chatbot#command("POST", "/conversation/query", body)
-```
-
-<h4><font color="purple">body / JSON Object</font></h4>
-
-```
-{
-    "fromUserId": "{{userId}}",
-    "textMessage": "想要说些什么",
-    "faqBestReplyThreshold": 0.6,
-    "faqSuggReplyThreshold": 0.35
-}
-```
-
-| key                   | type   | required | description                                                                                       |
-| --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
-| userId                | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                               |
-| textMessage           | string | &#10004; | 用户输入的对话文字                                                                                |
-| faqBestReplyThreshold | number | &#10008; | 知识库最佳回复， 默认 0.8，知识库建议回复，知识库中置信度超过该值通过返回值`string`和`params`返回 |
-| faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
-
-<h4><font color="purple">result/ JSON Object</font></h4>
-
-```
-{
-    "rc": 0,
-    "data": {
-        "state": "default",
-        "string": "方法",
-        "logic_is_unexpected": false,
-        "logic_is_fallback": false,
-        "service": {
-            "provider": "faq",
-            "docId": "{{doctId}}",
-            "score": 0.3781,
-            "threshold": 0.37
-        },
-        "botName": "小巴巴",
-        "faq": [
-            {
-                "id": "{{doctId}}",
-                "score": 0.3781,
-                "post": "查看相似问题不可能的",
-                "replies": [
-                    {
-                        "rtype": "plain",
-                        "enabled": true,
-                        "content": "方法"
-                    }
-                ]
-            }
-        ]
-    }
-}
-```
-
-_state_: 业务字段，可以在多轮对话脚本中设置
-
-_string_: 机器人回复的文本内容
-
-_topicName_: 机器人会话主题
-
-_logic_is_fallback_: 是否是兜底回复
-
-_botName_: 机器人的名字
-
-_faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
-
-`service`代表返回的数据来源，**provider:conversation**指**多轮对话**，**provider:faq**指**知识库**，**provider:intent**指**意图识别**；不同数据来源也会提供相应信息。
-
-| provider     | key                  | 解释    |
-| ------------ | -------------------- | ------- |
-| faq          |                      |         |
-|              | docId                | 文档 ID |
-|              | post                 | 标准问  |
-|              | score                | 分数    |
-|              | threshold            | 阀值    |
-| intent | 意图识别             |     更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html)    |
-|              | intent.name                 | 意图名称  |
-|              | intent.state                 | 意图会话状态  |
-|              | intent.entities                 | 意图中的命名实体  |
-| conversation | 多轮对话             |         |
-| fallback     | 兜底回复             |         |
-| mute         | 该用户被该机器人屏蔽 |         |
 
 ## 评论
 

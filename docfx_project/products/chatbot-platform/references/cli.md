@@ -126,7 +126,7 @@ bot conversation --action export --filepath /tmp/bot.conversations.c66
 
 ### import
 
-导入多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](https://docs.chatopera.com/products/chatbot-platform/conversation/index.html)中。
+导入多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](/products/chatbot-platform/explanations/index.html)中。
 
 示例：
 

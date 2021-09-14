@@ -56,7 +56,7 @@ exports.getUserAccount = async function(account) {
 }
 ```
 
-在[系统集成/多轮对话检索](/products/chatbot-platform/integration/api.html#检索多轮对话)时，返回值`data`内将增加`params`属性，与以上设定的值相同。
+在[系统集成/多轮对话检索](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)时，返回值`data`内将增加`params`属性，与以上设定的值相同。
 
 ## 复合函数
 

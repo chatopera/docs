@@ -103,7 +103,7 @@ _.keyBy(array, 'dir');
 
 ## this.user.id
 
-当前对话用户标识，在 [知识库检索](/products/chatbot-platform/integration/api.html#检索知识库)、 [意图识别检索](/products/chatbot-platform/integration/api.html#检索意图识别) 和 [多轮对话检索](/products/chatbot-platform/integration/api.html#检索多轮对话)传入的`userId`信息。
+当前对话用户标识，在 [多轮对话检索](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)传入的`userId`信息。
 
 在函数中，获取该唯一标识信息：
 
@@ -312,7 +312,7 @@ _value_: 属性值
 
 该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
 
-用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/integration/api.html#获取用户画像信息)获得。
+用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/references/sdk/chatbot/users.html#获取用户画像信息)获得。
 
 ## Comments
 

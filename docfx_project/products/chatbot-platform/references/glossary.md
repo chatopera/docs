@@ -21,11 +21,9 @@ Input，用户向聊天机器人发送的消息的文字形式。
 ### 匹配器
 Gambit，匹配用户输入文字的规则，包括以下三种：
 
-* [通配符匹配器 / Star Gambit](/products/chatbot-platform/conversation/gambits/star.html)，写法规则，约束字符串集合。
-
-* [模糊匹配器 / Like Gambit](/products/chatbot-platform/conversation/gambits/like.html)，使用机器学习匹配用户输入和匹配器包括的成员之间的相似度，如果相似度大于阀值则认为匹配，在机器人控制台或语法规则内设置阀值。
-
-* [意图匹配器]()
+* 通配符匹配器 / Star Gambit，写法规则，约束字符串集合
+* 模糊匹配器 / Like Gambit，使用机器学习匹配用户输入和匹配器包括的成员之间的相似度，如果相似度大于阀值则认为匹配，在机器人控制台或语法规则内设置阀值
+* 意图匹配器] / Intent Gambit，调用意图识别，在成功获得槽位信息或超过最大追问次数后，调用回复
 
 ### 回复
 Reply，机器人回复用户输入的文字。
@@ -100,7 +98,7 @@ Chatbot Sample， 聊天机器人示例程序，开源地址，[https://github.c
 
 - 通过访客的 ID，session id， 文本消息和机器人进行聊天
 
-**会话** 和 **聊天** 都是与上线集成相关，详细参考 [系统集成](/products/chatbot-platform/integration/chatbot/chat.html)。
+**会话** 和 **聊天** 都是与上线集成相关，详细参考 [系统集成](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索意图识别)。
 
 
 ## 其它术语

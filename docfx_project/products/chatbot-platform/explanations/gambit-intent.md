@@ -32,13 +32,13 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
 
 3）意图识别得到的意图信息，在多轮对话脚本的函数可以读取，可处理意图识别成功或者意图识别槽位追问次数超过设定最大值，两种情况的信息；
 
-4）利用多轮对话函数中，内置的高级 NLP 函数，继续分析意图信息，比如使用 [extractTime](/products/chatbot-platform/howto-guides/conv-functions/builtin.html#extracttime) 将相对时间转化为绝对时间，也就是“今天”识别为具体的日期 2021-08-31；
+4）利用多轮对话函数中，内置的高级 NLP 函数，继续分析意图信息，比如使用 [extractTime](/products/chatbot-platform/references/func-builtin.html#extracttime) 将相对时间转化为绝对时间，也就是“今天”识别为具体的日期 2021-08-31；
 
-5）利用多轮对话函数中，[http](/products/chatbot-platform/howto-guides/conv-functions/builtin.html#http) 工具类，和业务系统、互联网服务等集成。
+5）利用多轮对话函数中，[http](/products/chatbot-platform/references/func-builtin.html#http) 工具类，和业务系统、互联网服务等集成。
 
 **以上的这些好处，让 Chatopera 机器人平台可以诞生更多的创新的对话机器人，帮助 BOT 开发者尽情的释放创造力！**
 
-欲了解更多 Chatopera 多轮对话工作机制，查看[详情链接](/products/chatbot-platform/explanations/conversation.html)，您也可以阅读完本篇后再阅读多轮对话工作机制。
+欲了解更多 Chatopera 多轮对话工作机制，查看[详情链接](/products/chatbot-platform/explanations/query.html)，您也可以阅读完本篇后再阅读多轮对话工作机制。
 
 ## 意图匹配器的功能
 

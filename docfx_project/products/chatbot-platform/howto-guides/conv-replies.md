@@ -71,7 +71,7 @@
 
 引用的方式就是 `{@匹配器}`，匹配器中的下划线不是必须的，上面例子中的匹配器`__greeting__`的命名是为了增强脚本的可读性。
 
-将一些常用的回复以约定的匹配器命名方式命名，不但方便复用回复，使脚本可读性好，方便维护，而且更方便使用[**上下轮钩子**](/products/chatbot-platform/conversation/hooks.html)实现多轮对话。
+将一些常用的回复以约定的匹配器命名方式命名，不但方便复用回复，使脚本可读性好，方便维护，而且更方便使用[**上下轮钩子**](/products/chatbot-platform/howto-guides/conv-hooks.html)实现多轮对话。
 
 ```
 + 在吗
@@ -97,7 +97,7 @@
 
 ## 通配符取值
 
-通配符取值是针对[通配符匹配器](/products/chatbot-platform/conversation/gambits/star.html)的，匹配成功后，可以读取匹配到的词汇。在回答中需要使用输入中的通配符值，这时可以使用&#60;cap&#62;达到目的。
+通配符取值是针对[通配符匹配器](/products/chatbot-platform/references/gambit-star.html)的，匹配成功后，可以读取匹配到的词汇。在回答中需要使用输入中的通配符值，这时可以使用&#60;cap&#62;达到目的。
 
 ```
 + 我是 *~3
@@ -131,7 +131,7 @@
 
 此处，上下轮钩子，即`%`开头的句子，代表匹配器“你猜我叫什么？”只服务于“你好，&#60;cap1&#62;”作为回复时，它会被优先匹配。上一轮对话的回复通过(%)的方式指定了接下来的逻辑，形成多轮对话。
 
-关于上下文钩子的[详细介绍文档](/products/chatbot-platform/conversation/hooks.html)。
+关于上下文钩子的[详细介绍文档](/products/chatbot-platform/howto-guides/conv-hooks.html)。
 
 **提示：**
 **1) +/%/- 前的空格不是必须的，在多轮对话中，空格可以增强脚本的可读性，比如使用上下轮钩子中的段首缩进。**
@@ -148,13 +148,13 @@
 
 那么，在多轮对话设计器内，通过 `exports.getGreetings = async function(){ // do your magic}` 来定制化回复内容。
 
-函数的详细使用[参考文档](/products/chatbot-platform/conversation/function.html)。
+函数的详细使用[参考文档](/products/chatbot-platform/howto-guides/conv-func.html)。
 
 ## 下一步
 
-- [上下轮钩子](/products/chatbot-platform/conversation/hooks.html)
+- [上下轮钩子](/products/chatbot-platform/howto-guides/conv-hooks.html)
 
-- [函数](/products/chatbot-platform/conversation/function.html)
+- [函数](/products/chatbot-platform/howto-guides/conv-func.html)
 
 ## 评论
 

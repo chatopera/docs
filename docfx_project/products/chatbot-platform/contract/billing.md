@@ -4,7 +4,7 @@ Chatopera 云服务的计费 API 包括：1）对话检索 API；2）语音识�
 
 ## 对话检索
 
-对话检索 API 包括内容参考[系统集成文档](/products/chatbot-platform/integration/api.html#对话检索)。
+对话检索 API 包括内容参考[系统集成文档](/products/chatbot-platform/references/sdk/chatbot/chat.html)。
 
 当前 Chatopera 云服务对话检索 API 有 **普通充值** 和 **包年套餐** 两种购买形式。
 
@@ -50,7 +50,7 @@ Chatopera 云服务的计费 API 包括：1）对话检索 API；2）语音识�
 
 目前，语音识别 API 仅支持普通充值。
 
-参考[语音识别 API 使用文档](/products/chatbot-platform/integration/api.html#语音识别)。
+参考[语音识别 API 使用文档](/products/chatbot-platform/references/sdk/chatbot/asr.html)。
 
 ### 按日结算
 

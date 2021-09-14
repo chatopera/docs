@@ -2,7 +2,7 @@
 
 热门问题评分是知识库中的问答对的相对热门程度。问题的热门度是一个分数，分数值代表某一个问答对作为回复结果出现在客户端的次数，可能是作为最佳答案，也可能是作为建议答案。
 
-具体来说，就是在系统集成时，使用[知识库检索接口](/products/chatbot-platform/integration/api.html#检索知识库)或[多轮对话检索接口](/products/chatbot-platform/integration/api.html#检索多轮对话)时，该问答对出现在结果中的次数。
+具体来说，就是在系统集成时，使用[知识库检索接口或多轮对话检索接口](/products/chatbot-platform/references/sdk/chatbot/chat.html)时，该问答对出现在结果中的次数。
 
 ### 查看问答对热门度
 

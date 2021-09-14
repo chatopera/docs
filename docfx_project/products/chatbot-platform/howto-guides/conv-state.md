@@ -38,11 +38,11 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 
 ### 跳转到意图匹配器
 
-在函数中，跳转到指定的意图匹配器有一点特殊，参考[使用说明](/products/chatbot-platform/conversation/gambits/intent.html#在回复中跳转到指定意图)。
+在函数中，跳转到指定的意图匹配器有一点特殊，参考[使用说明](/products/chatbot-platform/howto-guides/conv-gambit-intent.html#在回复中跳转到指定意图)。
 
 ## 知识库路由
 
-在[知识库的答案](/products/chatbot-platform/faq/qna.html#设定答案)或[多轮对话的函数](/products/chatbot-platform/conversation/function.html)中设置回复时，可以用 **routeDirectReply** 来检索一个指定的[话题](/products/chatbot-platform/conversation/index.html#术语)和[匹配器](/products/chatbot-platform/conversation/index.html#匹配器)，直接路由到多轮对话的主题和匹配器。
+在知识库的答案或多轮对话的函数中设置回复时，可以用 **routeDirectReply** 来检索一个指定的话题和匹配器，直接路由到多轮对话的主题和匹配器。
 
 语法：
 
@@ -50,9 +50,9 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID" [,INHERIT_PARAMS]]
 ```
 
-_TOPIC_NAME_: [对话名称](/products/chatbot-platform/conversation/index.html#术语)
+_TOPIC_NAME_: 话题名称
 
-_TOPIC_GAMBIT_ID_: [触发器名称](/products/chatbot-platform/conversation/index.html#术语)
+_TOPIC_GAMBIT_ID_: 匹配器
 
 其中，_INHERIT_PARAMS_ 是可选参数，决定当前对话取得的 `params` 是否覆盖接下来对话的 `params`，值为`[true|false]`，默认为 `false`。
 

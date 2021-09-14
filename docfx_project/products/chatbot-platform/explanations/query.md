@@ -13,7 +13,7 @@
 
 <img width="600" src="../../../images/products/platform/mechanism/conversations.jpg"/>
 
-[详细说明图（查看大图）](/images/products/platform/mechanism/conversations.jpg) 虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](/products/chatbot-platform/integration/chatbot/chat.html#检索多轮对话)。
+[详细说明图（查看大图）](/images/products/platform/mechanism/conversations.jpg) 虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
 
 关于知识库、对话脚本和意图识别的相互之间的调用关系，后文会有更多介绍。
 
@@ -66,13 +66,13 @@
 
 ## 擦除状态
 
-开发者在多轮对话脚本的函数中，也可以擦除这个状态，这样到下次对话用户再请求时，话题检索的栈回到初始状态，状态机回到原始，这个擦除的方法是在回复或函数中添加 `{CLEAR} ` 前缀，关于这个知识点的使用说明见[文档](/products/chatbot-platform/conversation/state.html#清除状态)。
+开发者在多轮对话脚本的函数中，也可以擦除这个状态，这样到下次对话用户再请求时，话题检索的栈回到初始状态，状态机回到原始，这个擦除的方法是在回复或函数中添加 `{CLEAR} ` 前缀，关于这个知识点的使用说明见[文档](/products/chatbot-platform/howto-guides/conv-state.html#清除状态)。
 
 ## 使用函数切换状态
 
 如果想从一个话题，切换到另外一个话题获得回复。那么可以在函数中使用 `"topicRedirect(TOPIC_NAME, TOPIC_GAMBIT_ID)"`。将 `TOPIC_NAME` 替换为话题名字，`TOPIC_GAMBIT_ID` 替换为匹配器。就可以切换到该规则下获得回复。
 
-topicRedirect 函数的更多介绍，[参考文档](/products/chatbot-platform/conversation/state.html#切换话题)。
+topicRedirect 函数的更多介绍，[参考文档](/products/chatbot-platform/howto-guides/conv-state.html#切换话题)。
 
 ## 知识库路由
 
@@ -82,7 +82,7 @@ topicRedirect 函数的更多介绍，[参考文档](/products/chatbot-platform/
 
 设定知识库的问答对中的答案，内容使用上述格式，将 `TOPIC_NAME` 替换为话题名字，`TOPIC_GAMBIT_ID` 替换为匹配器。就可以切换到该规则下获得回复。
 
-关于知识库路由的更多介绍，[参考文档](/products/chatbot-platform/conversation/state.html#知识库路由)。
+关于知识库路由的更多介绍，[参考文档](/products/chatbot-platform/howto-guides/conv-state.html#知识库路由)。
 
 ## 评论
 

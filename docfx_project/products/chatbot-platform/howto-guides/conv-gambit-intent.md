@@ -4,7 +4,7 @@
 
 也称为 Intent Gambit，在多轮对话脚本中使用[意图识别模块](/products/chatbot-platform/explanations/intent.html)实现任务型对话。
 
-* [意图匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/scripts/gambit-intent.html)
+* [意图匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/gambit-intent.html)
 
 
 ## 意图匹配器语法
@@ -241,7 +241,7 @@ if(extractedDates.length > 0){
 }
 ```
 
-更多关于 `extractTime` 的介绍[参考链接](/products/chatbot-platform/howto-guides/conv-functions/builtin.html#extracttime)。
+更多关于 `extractTime` 的介绍[参考链接](/products/chatbot-platform/references/func-builtin.html#extracttime)。
 
 ### 保存变量信息到意图会话
 
@@ -370,7 +370,7 @@ exports.placeAirplaneTicketOrder = async function() {
 - ^topicRedirect("intents", "book_airplane_ticket", true)
 ```
 
-注意：此处 `topicRedirect` 的第三个参数设置为 `true`，代表目标匹配器是一个[意图匹配器](intent.md)。
+注意：此处 `topicRedirect` 的第三个参数设置为 `true`，代表目标匹配器是一个意图匹配器。
 
 #### 函数回复
 
@@ -392,15 +392,15 @@ exports.handleXXFn = async function() {
 
 ## 下一步
 
-- [函数：使用 http 模块请求外部系统 API 服务](../conv-functions/builtin.md#http)
+- [函数：使用 http 模块请求外部系统 API 服务](/products/chatbot-platform/references/func-builtin.html#http)
 
-- [理解多轮对话工作机制](/products/chatbot-platform/explanations/conversation.html)
+- [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
 
 - [查看示例程序：预约机票](https://github.com/chatopera/chatbot-samples/blob/master/projects/%E9%A2%84%E5%AE%9A%E6%9C%BA%E7%A5%A8)
 
-- [通配符匹配器：使用语法建立规则](star.md)
+- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
 
-- [模糊匹配器：容错能力更强和智能的匹配器](like.md)
+- [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/howto-guides/conv-gambit-like.html)
 
 ## 评论
 
