@@ -1,7 +1,6 @@
 # <1/5> 创建机器人并添加到多轮对话设计器
 
-<< 上一步：[入门教程首页](index.md)
-
+<< 上一步：[入门教程首页](index.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
 
 ## 登录并创建机器人
 

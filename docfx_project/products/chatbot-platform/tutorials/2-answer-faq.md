@@ -1,8 +1,9 @@
 # <2/5> 使用知识库回答“海口有几个机场” 
 
-<< 上一步：[<1/5> 创建机器人并添加到多轮对话设计器](1-create-bot.md)
+<< 上一步：[<1/5> 创建机器人并添加到多轮对话设计器](1-create-bot.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
 
-现在，春松机器人中，还不能回答一些实际的问题。我们先从知识库开始，设定问答对，让机器人可以回答常见问题。
+
+现在，春松机器人中，还不能回答一些实际的问题。我们先从知识库开始，设定问答对，让机器人可以回答知识库里的问题。
 
 ## 进入知识库管理页面
 
@@ -79,7 +80,7 @@ exports.get_greetings = async function() {
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-202923.png"/>
 
-点击【保存】或 `Ctrl + s`（Windows）/ `Command + s`(Mac)，此时，得到提示信息:
+点击【保存】，此时，得到提示信息:
 
 ```
 上传数据成功
@@ -105,42 +106,6 @@ exports.get_greetings = async function() {
 <img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
 
 << 上一步：[<1/5> 创建机器人并添加到多轮对话设计器](1-create-bot.md) | >> 下一步：[<3/5> 使用意图识别完成“预定机票”](3-book-ticket-task.md)
-
-## 本节对话脚本
-
-为方便理解，将多轮对话设计器里的完整内容，附在下面。
-
-### 脚本
-
-```
-+ 你好
-- {@_greetings_}
-
-+ _greetings_
-- {keep} 你好！
-- 欢迎惠顾！
-
-+ __faq_hot_list
-- ^get_greetings()
-
-```
-
-### 函数
-
-```
-// 问候语中关联常见问题
-exports.get_greetings = async function() {
-    return {
-        text: "机器人可以解答或提供的服务",
-        params: [{
-            label: "1. 海口有几个机场",
-            type: "qlist",
-            text: "海口有几个机场"
-        }]
-    };
-}
-```
-
 
 ## 评论
 

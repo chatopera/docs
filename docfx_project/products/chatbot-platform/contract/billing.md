@@ -44,7 +44,7 @@ Chatopera 云服务的计费 API 包括：1）对话检索 API；2）语音识�
 
 购买 **包年套餐**，请联系 [info@chatopera.com](mailto:info@chatopera.com?subject=[Chatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%E8%AE%A1%E8%B4%B9%E5%8F%8A%E5%8F%91%E7%A5%A8]%20*%E6%AD%A4%E5%A4%84%E6%9B%BF%E6%8D%A2%E4%B8%BA%E7%AE%80%E8%A6%81%E6%8F%8F%E8%BF%B0%E4%BF%A1%E6%81%AF*) 或使用微信、企业微信添加专属顾问完成下单、获取发票。
 
-![](../../images/products/platform/image-044.png)
+![](../../../images/products/platform/image-044.png)
 
 ## 语音识别
 
@@ -62,7 +62,7 @@ Chatopera 云服务计费包括每日**免费额度**和**付费请求**，当�
 
 为了保证 Chatopera 云服务为客户提供稳定连续的服务，尤其是付费用户的权益，Chatopera 云服务使用保证金机制：**Chatopera 云服务用户的对话检索或语音识别服务超过当日免费额度情况下，只有用户余额大于等于保证金的前提下，Chatopera 云服务才正常处理用户的请求；对于不满足这个条件的云服务用户，当日请求大于免费额度的部分将返回异常提醒。**
 
-![](../../images/products/platform/image-043.png)
+![](../../../images/products/platform/image-043.png)
 
 实行保证金机制的必要性：
 
@@ -84,14 +84,14 @@ Chatopera 云服务用户注销账号时，可申请退回保证金，申请退�
 
 <table class="image">
 <caption align="bottom">图：费用中心</caption>
-<tr><td><img width="800" src="../../images/products/platform/billing-1.png" alt="费用中心"/></td></tr>
+<tr><td><img width="800" src="../../../images/products/platform/billing-1.png" alt="费用中心"/></td></tr>
 </table>
 
 ## 充值
 
 Chatopera 云服务支持微信支付和企业银行账号汇款，在控制台右上角的导航栏进入“费用中心”进行相关操作。
 
-![](../../images/products/platform/image-047.png)
+![](../../../images/products/platform/image-047.png)
 
 ## 发票
 

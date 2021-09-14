@@ -28,7 +28,7 @@
 
 ## 多轮对话
 
-* [在多轮对话中使用通配符匹配器](conv-gambit-star.md)
+* [在多轮对话中使用通配符匹配器](../references/gambit-star.md)
 * [在多轮对话中使用模糊匹配器](conv-gambit-like.md)
 * [在多轮对话中使用意图匹配器](conv-gambit-intent.md)
 * [在多轮对话中设置回复](conv-replies.md)
