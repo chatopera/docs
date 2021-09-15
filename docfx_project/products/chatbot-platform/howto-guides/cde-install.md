@@ -13,9 +13,10 @@
 | v2.3.0 | Mac OSX  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/819693/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.dmg)</a> |
 | v2.3.0 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/819682/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.exe)|
 
-- MacOS：`dmg`为文件后缀的安装文件，双击打开，根据安装向导安装。
+* 点击【地址1】未能开始下载时，在【地址1】上右键，选择【复制链接地址】，然后在浏览器中打开新的 Tab 页，粘贴地址，输入回车
+* 打开【地址1】的链接后，浏览器提示错误时，请使用【地址2】进行下载
+* 下载后，得到应用安装包，双击后根据提示进行安装
 
-- Windows：`exe`为文件后缀可执行文件，双击打开，根据安装向导安装。
 
 ## 工具介绍
 
