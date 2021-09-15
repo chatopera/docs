@@ -26,11 +26,22 @@
 
 以下每行是一个说法，逐一进行添加：
 
-```
+```说法
 查询天气
+```
+
+```说法
 我想查询{loc}的天气
+```
+
+```说法
 {loc}的天气怎么样
+
+```说法
 {loc}的天气情况
+```
+
+```说法
 {loc}的天气
 ```
 
@@ -40,7 +51,7 @@
 
 进入春松机器人管理控制台，测试对话页面。选择【意图识别】，发送：
 
-```
+```文本
 北京的天气
 ```
 
@@ -56,7 +67,7 @@
 
 在脚本中追加下面的内容：
 
-```
+```脚本
 // 查询天气
 intent ask_weather
 - ^handleSuccAskWeather()
@@ -69,7 +80,7 @@ intent ask_weather
 
 在函数中追加下面的内容：
 
-```
+```函数
 /**
  * 第三方服务类
  */
@@ -143,7 +154,7 @@ exports.handleLoseAskWeather = async function() {
 
 在多轮对话设计器内的聊天窗口，发送文本：
 
-```
+```文本
 北京的天气
 ```
 
@@ -159,7 +170,7 @@ exports.handleLoseAskWeather = async function() {
 在体验程序中，机器人打招呼时，发送了技能的介绍，包含三项：
 
 
-```
+```文本
 机器人可以解答或提供的服务
 1. 海口有几个机场
 2. 我想查询天气
@@ -168,7 +179,7 @@ exports.handleLoseAskWeather = async function() {
 
 现在，你的春松机器人也可以回答这三个问题了，所以，进入多轮对话设计器的春松机器人函数编辑窗口，找到 `exports.get_greetings` 并将其实现替换为下面内容：
 
-```
+```函数
 // 问候语中关联常见问题
 exports.get_greetings = async function() {
     return {
@@ -199,7 +210,7 @@ exports.get_greetings = async function() {
 
 在多轮对话设计器的聊天窗口，发送文本：
 
-```
+```文本
 __faq_hot_list
 ```
 

@@ -14,13 +14,13 @@
 
 多轮对话是通过脚本规则、函数编程实现问答服务，在*检索多轮对话*接口中，同时融合了知识库参与回复决策，返回结果，尤其是通过知识库答案路由到指定话题的指定触发器，非常实用。为了方便使用，宜先理解[多轮对话的工作机制和工作原理](/products/chatbot-platform/explanations/query.html)，熟悉多轮对话机制可以真正将 Chatopera 机器人平台的能量发挥到最大。
 
-```
+```API
 Chatbot#command("POST", "/conversation/query", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
     "fromUserId": "{{userId}}",
     "textMessage": "想要说些什么",
@@ -38,7 +38,7 @@ Chatbot#command("POST", "/conversation/query", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -103,13 +103,13 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 
 ## 检索知识库
 
-```
+```API
 Chatbot#command("POST", "/faq/query", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"query": "查找相似的问题",
 	"fromUserId": "{{userId}}",
@@ -120,7 +120,7 @@ Chatbot#command("POST", "/faq/query", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": [
@@ -173,13 +173,13 @@ Chatbot#command("POST", "/faq/query", body)
 
 ### 创建会话
 
-```
+```API
 Chatbot#command("POST", "/clause/prover/session", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"uid": "{{userId}}",
 	"channel": "{{channelId}}"
@@ -193,7 +193,7 @@ Chatbot#command("POST", "/clause/prover/session", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -223,13 +223,13 @@ _ttl_: 该会话信息在多少秒后过期，每个会话默认是 1 小时的�
 
 ### 检索意图识别
 
-```
+```API
 Chatbot#command("POST", "/clause/prover/chat", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"fromUserId": "{{userId}}",
 	"session": {
@@ -249,7 +249,7 @@ Chatbot#command("POST", "/clause/prover/chat", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -281,13 +281,13 @@ Chatbot#command("POST", "/clause/prover/chat", body)
 
 ### 查看会话详情
 
-```
+```API
 Chatbot#command("GET", "/clause/prover/session/{{sessionId}}")
 ```
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {

@@ -18,7 +18,7 @@
 
 比如：
 
-```
+```函数
 exports.someFunction = async function(){
     return config["SOME_KEY"];
 }

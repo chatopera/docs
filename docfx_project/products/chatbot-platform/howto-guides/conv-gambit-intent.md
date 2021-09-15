@@ -11,7 +11,7 @@
 
 语法<font color="blue">（注意语法中存在的空格）</font>：
 
-```
+```脚本
 intent INTENT_NAME
 - ^succHandlerFn()
 - {x} ^loseHandlerFn()
@@ -35,7 +35,7 @@ intent INTENT_NAME
 
 举例
 
-```
+```脚本
 intent book_cab
 - ^orderCab()
 - {x} ^loseOrderCab()
@@ -75,7 +75,7 @@ intent book_cab
 
 修改`@SYS_INTENT_BRANCH` 的值为`pro`。
 
-```
+```环境变量
 @SYS_INTENT_BRANCH=pro
 ```
 
@@ -108,7 +108,7 @@ intent book_cab
 
 如上文，有一个例子：
 
-```
+```脚本
 intent book_cab
 - ^orderCab()
 - {x} ^loseOrderCab()
@@ -122,8 +122,7 @@ intent book_cab
 
 `this.intent` 是一个 JSON 数据，数据格式如下：
 
-```
-
+```JSON
 {
   "name": "{{INTENT_NAME}}",
   "topicName": "{{TOPIC_NAME}}",
@@ -152,7 +151,7 @@ _INTENT_BRANCH_：集成意图识别的版本的分支，默认为 `dev`，如�
 
 除了增加了 `this.intent`，其它成功函数的使用和多轮对话函数是一致的。比如，设定回复：
 
-```
+```函数
 // 回复只有文本
 exports.orderCab = async function() {
     debug("[orderCab] intent %s", JSON.stringify(this.intent));
@@ -178,8 +177,7 @@ exports.orderCabExt = async function() {
 
 `this.intent` 的一个实际数据示例：
 
-```
-
+```JSON
 {
   "name": "book_cab",
   "topicName": "greetings",
@@ -212,19 +210,17 @@ exports.orderCabExt = async function() {
 
 失败函数中，`this.intent` 的信息和使用，和成功函数是一致的，这是调用的实际不一致，同时它是可选的。
 
-
-
 ### 快速读取 intent.entities
 
 默认情况下，`intent.entities` 是一个数组，如果需要用槽位的名称去取值，要便利，不方便，使用以下方法快速使用 `intent.entities` 生成一个 JSON Object，然后使用槽位名称取值。
 
-```
+```函数
 let entities = _.keyBy(this.intent.entities, 'name');
 ```
 
 比如，有一个槽位名字为 `date`，则接下来获得这个槽位的值：
 
-```
+```函数
 let dateRawString = entities["date"]["val"];
 ```
 
@@ -232,7 +228,7 @@ let dateRawString = entities["date"]["val"];
 
 加入一个日期槽位 `dateRawString` 值为“明天下午 5 点”，那么如何从这个字符串提取出时间“2021-09-03 17:00”呢？
 
-```
+```函数
 let extractedDates = await this.maestro.extractTime(dateRawString);
 debug("extracted date", extractedDates);
 if(extractedDates.length > 0){
@@ -247,7 +243,7 @@ if(extractedDates.length > 0){
 
 函数执行的时候，如果有意图会话存在，就会被加载到函数的 `this.intent` 中。在两个或多个连续的多轮对话中，可以通过 `this.intent.extras` (JSON Object) 来保存变量。该信息会和该意图会话周期一致。比如：
 
-```
+```函数
 /**
  * 提取时间实体
  */
@@ -275,7 +271,7 @@ exports.handleAirplaneTicketOrder = async function() {
 
 `handleAirplaneTicketOrder` 函数保存了一个变量到 `this.intent.extras` 中，稍后另外一次对话时，调用了另外一个函数 `placeAirplaneTicketOrder`，就可以直接用这个变量。
 
-```
+```函数
 exports.placeAirplaneTicketOrder = async function() {
     // 直接取值
     // this.intent.extras.date
@@ -314,7 +310,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 当对话用户，有匹配到意图，正在进行意图识别的对话时，使用多轮对话检索 API，返回值中，`service.provider` 的值是 `intent`，并且 `service.intent` 是当前意图信息。示例数据如下：
 
-```
+```JSON
 {
   "string": "您想从哪里出发？",
   "topicName": "greetings",
@@ -365,7 +361,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 #### 文本回复
 
-```
+```脚本
 + ${0.5}{自定义的文本}
 - ^topicRedirect("intents", "book_airplane_ticket", true)
 ```
@@ -376,14 +372,14 @@ exports.placeAirplaneTicketOrder = async function() {
 
 文本中，定义了函数
 
-```
+```脚本
 + ${0.5}{自定义的文本}
 - ^handleXXFn()
 ```
 
 函数 `handleXXFn`:
 
-```
+```函数
 exports.handleXXFn = async function() {
     // do your magic
     return "^topicRedirect(\"intents\", \"book_airplane_ticket\", true)"

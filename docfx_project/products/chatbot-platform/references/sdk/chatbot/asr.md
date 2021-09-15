@@ -4,7 +4,7 @@
 
 语音文件格式：16k 采样率，单通道，PCM。
 
-```
+```说明
 Channels       : 1
 Sample Rate    : 16000
 Precision      : 16-bit
@@ -17,13 +17,13 @@ Sample Encoding: 16-bit Signed Integer PCM
 
 ## 提交文件路径识别
 
-```
+```API
 Chatbot#command("POST", "/asr/recognize", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"filepath": "{{WAV_FILE_ABS_PATH}}",
 	"nbest": 5,
@@ -39,7 +39,7 @@ Chatbot#command("POST", "/asr/recognize", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -71,13 +71,13 @@ Chatbot#command("POST", "/asr/recognize", body)
 
 ## 提交 base64 字符串识别
 
-```
+```API
 Chatbot#command("POST", "/asr/recognize", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"type": "base64",
 	"data": "data:audio/wav;base64,{{BASE64_STRING}}",
@@ -99,7 +99,7 @@ Chatbot#command("POST", "/asr/recognize", body)
 
 返回值与 **提交文件路径识别** API 一致。
 
-```
+```JSON
 {
     "rc": 0,
     "data": {

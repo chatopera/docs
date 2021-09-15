@@ -40,7 +40,7 @@
     "dest": "_site",
     "globalMetadataFiles": ["global.json"],
     "fileMetadataFiles": ["file1.json"],
-    "template": ["default", "material/material"],
+    "template": ["default", "templates/material"],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,

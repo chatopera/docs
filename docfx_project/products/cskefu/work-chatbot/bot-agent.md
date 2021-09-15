@@ -62,7 +62,7 @@
 
 > 提示：春松客服访客测试端地址
 
-```
+```URL
 http[s]://春松客服IP[:PORT]/testclient.html
 ```
 
@@ -76,3 +76,14 @@ http[s]://春松客服IP[:PORT]/testclient.html
 </p>
 
 如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

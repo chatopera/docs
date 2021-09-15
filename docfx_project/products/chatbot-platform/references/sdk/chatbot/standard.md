@@ -6,7 +6,7 @@
 
 <h4><font color="purple">接口规范</font></h4>
 
-```
+```API
 result = chatbot.command(method, path [, body])
 ```
 

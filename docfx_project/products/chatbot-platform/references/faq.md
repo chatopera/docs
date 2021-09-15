@@ -15,7 +15,7 @@ Chatopera 作为云服务提供商，应数据监管要求，进行实名制登�
 
 ### 返回错误 invalid appId
 
-```
+```JSON
 {"rc":1,"error":"invalid appId."}
 ```
 
@@ -23,7 +23,7 @@ Chatopera 作为云服务提供商，应数据监管要求，进行实名制登�
 
 ### 返回错误 invalid timestamp
 
-```
+```JSON
 {"rc":1,"error":"invalid timestamp."}
 ```
 
@@ -39,7 +39,7 @@ Chatopera 作为云服务提供商，应数据监管要求，进行实名制登�
 
 `mvn install`抛出异常，SunCertPathBuilderException
 
-```
+```日志
 sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 ```
 

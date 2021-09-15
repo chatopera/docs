@@ -2,13 +2,13 @@
 
 ### 创建知识库分类
 
-```
+```API
 Chatbot#command("POST", "/faq/categories", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"label": "{{categoryText}}"
 }
@@ -16,7 +16,7 @@ Chatbot#command("POST", "/faq/categories", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -43,13 +43,13 @@ Chatbot#command("POST", "/faq/categories", body)
 
 ### 获取知识库分类信息
 
-```
+```API
 Chatbot#command("GET", "/faq/categories")
 ```
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": [
@@ -69,13 +69,13 @@ Chatbot#command("GET", "/faq/categories")
 
 ### 更新知识库分类
 
-```
+```API
 Chatbot#command("", "/faq/categories", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"value": "{{categoryId}}",
 	"label": "新的名字"
@@ -84,7 +84,7 @@ Chatbot#command("", "/faq/categories", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": [
@@ -104,7 +104,7 @@ Chatbot#command("", "/faq/categories", body)
 
 ### 删除知识库分类
 
-```
+```API
 Chatbot#command("DELETE", "/faq/categories/{{categoryId}}")
 ```
 
@@ -116,7 +116,7 @@ Chatbot#command("DELETE", "/faq/categories/{{categoryId}}")
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": [
@@ -130,13 +130,13 @@ Chatbot#command("DELETE", "/faq/categories/{{categoryId}}")
 
 ### 创建问答对
 
-```
+```API
 Chatbot#command("post", "/faq/database", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
  "post": "如何查看快递单号",
  "replies": [
@@ -161,7 +161,7 @@ Chatbot#command("post", "/faq/database", body)
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
  "rc": 0,
  "data": {
@@ -173,7 +173,7 @@ Chatbot#command("post", "/faq/database", body)
 
 ### 更新知识库问答对
 
-```
+```API
 Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 ```
 
@@ -185,7 +185,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"post": "怎么开通微信支付?",
 	"replyLastUpdate": "{{replyLastUpdate}}",
@@ -207,7 +207,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -219,7 +219,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 
 ### 获取问答对列表
 
-```
+```API
 Chatbot#command("GET", "/faq/database?limit={{limit}}&page={{page}}&q={{q}}")
 ```
 
@@ -233,7 +233,7 @@ Chatbot#command("GET", "/faq/database?limit={{limit}}&page={{page}}&q={{q}}")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "total": 3,
     "current_page": 1,
@@ -259,7 +259,7 @@ Chatbot#command("GET", "/faq/database?limit={{limit}}&page={{page}}&q={{q}}")
 
 ### 创建问答对相似问
 
-```
+```API
 Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 ```
 
@@ -271,7 +271,7 @@ Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"post": "怎样支持微信支付?"
 }
@@ -279,7 +279,7 @@ Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -290,7 +290,7 @@ Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 
 ### 获取问答对相似问列表
 
-```
+```API
 Chatbot#command("GET", "/faq/database/{{docId}}/extend")
 ```
 
@@ -302,7 +302,7 @@ Chatbot#command("GET", "/faq/database/{{docId}}/extend")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "total": 1,
     "current_page": 1,
@@ -321,7 +321,7 @@ Chatbot#command("GET", "/faq/database/{{docId}}/extend")
 
 ### 更新问答对相似问
 
-```
+```API
 Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
 ```
 
@@ -334,7 +334,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"post": "怎样支持微信支付?"
 }
@@ -342,7 +342,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -353,7 +353,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
 
 ### 删除问答对相似问
 
-```
+```API
 Chatbot#command("DELETE", "/faq/database/{{docId}}/extend/{{extendId}}")
 ```
 
@@ -366,7 +366,7 @@ Chatbot#command("DELETE", "/faq/database/{{docId}}/extend/{{extendId}}")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "msg": "done"
@@ -375,13 +375,13 @@ Chatbot#command("DELETE", "/faq/database/{{docId}}/extend/{{extendId}}")
 
 ### 删除问答对
 
-```
+```API
 Chatbot#command("DELETE", "/faq/database/{{docId}}")
 ```
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "msg": "done"
@@ -390,7 +390,7 @@ Chatbot#command("DELETE", "/faq/database/{{docId}}")
 
 ### 获取知识库热门问题
 
-```
+```API
 Chatbot#command("GET", "/faq/database/inquiryrank?topN={{topN}}")
 ```
 
@@ -402,7 +402,7 @@ Chatbot#command("GET", "/faq/database/inquiryrank?topN={{topN}}")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": [

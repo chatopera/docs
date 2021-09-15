@@ -4,7 +4,7 @@
 
 <h4><font color="purple">构造函数</font></h4>
 
-```
+```API
 Chatbot(clientId, secret [, botProvider])
 ```
 
@@ -22,7 +22,7 @@ Chatbot(clientId, secret [, botProvider])
 
 <h5><font color="purple">Java</font></h5>
 
-```
+```Java
 import com.chatopera.bot.sdk.Chatbot;
 ...
 Chatbot chatbot = new Chatbot(clientId, secret);
@@ -30,7 +30,7 @@ Chatbot chatbot = new Chatbot(clientId, secret);
 
 <h5><font color="purple">Python</font></h5>
 
-```
+```Python
 from chatopera import Chatbot
 bot = Chatbot(clientId, secret)
 ```
@@ -39,7 +39,7 @@ bot = Chatbot(clientId, secret)
 
 假设使用[composer](https://getcomposer.org/)作为包管理工具，其它安装方式参考[chatopera-php-sdk](https://github.com/chatopera/chatopera-php-sdk)。
 
-```
+```PHP
 <?php
 
 include_once **DIR** . "/vendor/autoload.php";
@@ -49,7 +49,7 @@ $chatbot = new Chatopera\SDK\Chatbot($appId, \$secret);
 
 <h5><font color="purple">Go</font></h5>
 
-```
+```Go
 import (
 	"github.com/chatopera/chatopera-go-sdk"
 )

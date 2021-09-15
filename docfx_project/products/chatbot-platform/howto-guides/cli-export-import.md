@@ -14,7 +14,7 @@
 
 针对于不同模块的导入和导出命令，CLI 命令是遵循同一个规范的。
 
-```
+```Bash
 bot [dicts|faq|intents|conversation] --action [import|export] --filepath {{FILE_PATH}}
 ```
 
@@ -26,13 +26,16 @@ bot [dicts|faq|intents|conversation] --action [import|export] --filepath {{FILE_
 
 对话语料指词典、知识库、意图识别和多轮对话的内容，它们包括了机器人的所有对话技能。
 
-```
-# 删除文件
+删除文件
+```Bash
 rm -rf bot.dicts.json bot.faqs.json bot.intents.json bot.conversations.c66
-# 执行导出，以下命令并无顺序依赖关系
-bot dicts -a export -f bot.dicts.json
-bot faq -a export -f bot.faqs.json
-bot intents -a export -f bot.intents.json
+
+
+执行导出，以下命令并无顺序依赖关系
+```Bash
+bot dicts -a export -f bot.dicts.json && \
+bot faq -a export -f bot.faqs.json && \
+bot intents -a export -f bot.intents.json && \
 bot conversation -a export -f bot.conversations.c66
 ```
 
@@ -40,11 +43,12 @@ bot conversation -a export -f bot.conversations.c66
 
 将到处的对话语料上传给指定的机器人（比如通过 `.env` 设置）。
 
-```
-# 以下命令有顺序依赖关系
-bot dicts -a import -f bot.dicts.json
-bot faq -a import -f bot.faq.json
-bot intents -a import -f bot.intents.json
+以下命令有顺序依赖关系
+
+```Bash
+bot dicts -a import -f bot.dicts.json && \
+bot faq -a import -f bot.faq.json && \
+bot intents -a import -f bot.intents.json && \
 bot conversation -a import -f bot.conversation.c66
 ```
 

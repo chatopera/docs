@@ -2,7 +2,7 @@
 
 ### 获取用户列表
 
-```
+```API
 Chatbot#command("GET", "/users")
 ```
 
@@ -15,7 +15,7 @@ Chatbot#command("GET", "/users")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "total": 5,
@@ -39,7 +39,7 @@ _created_: 第一次沟通时间
 
 ### 屏蔽用户
 
-```
+```API
 Chatbot#command("POST", "/users/{{userId}}/mute")
 ```
 
@@ -51,7 +51,7 @@ Chatbot#command("POST", "/users/{{userId}}/mute")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {}
@@ -60,7 +60,7 @@ Chatbot#command("POST", "/users/{{userId}}/mute")
 
 ### 取消屏蔽
 
-```
+```API
 Chatbot#command("POST", "/users/{{userId}}/unmute")
 ```
 
@@ -72,7 +72,7 @@ Chatbot#command("POST", "/users/{{userId}}/unmute")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {}
@@ -81,13 +81,13 @@ Chatbot#command("POST", "/users/{{userId}}/unmute")
 
 ### 是否被屏蔽
 
-```
+```API
 Chatbot#command("POST", "/users/{{userId}}/ismute")
 ```
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -100,7 +100,7 @@ Chatbot#command("POST", "/users/{{userId}}/ismute")
 
 ### 获取用户画像信息
 
-```
+```API
 Chatbot#command("GET", "/users/{{userId}}/profile")
 ```
 
@@ -112,7 +112,7 @@ Chatbot#command("GET", "/users/{{userId}}/profile")
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -128,7 +128,7 @@ Chatbot#command("GET", "/users/{{userId}}/profile")
 
 ### 获取聊天历史
 
-```
+```API
 Chatbot#command("GET", "/users/{{userId}}/chats?limit={{limit}}&page={{page}}")
 ```
 
@@ -142,7 +142,7 @@ Chatbot#command("GET", "/users/{{userId}}/chats?limit={{limit}}&page={{page}}")
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "total": 16,
@@ -179,3 +179,14 @@ _service_: 提供回复的服务
 _confidence_: 置信度
 
 _created_: 消息创建时间
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

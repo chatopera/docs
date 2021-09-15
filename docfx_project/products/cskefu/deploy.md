@@ -25,7 +25,7 @@
 
 ## 克隆代码
 
-```
+```Bash
 git clone https://github.com/chatopera/cskefu.git cskefu.osc
 cd cskefu.osc
 cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
@@ -67,7 +67,7 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 
 ### 启动服务
 
-```
+```Bash
 cd cskefu.osc                        # 进入下载后的文件夹
 docker-compose pull                  # 拉取镜像
 docker-compose up -d contact-center  # 启动服务
@@ -75,13 +75,13 @@ docker-compose up -d contact-center  # 启动服务
 
 ### 查看服务状态
 
-```
+```Bash
 docker-compose ps
 ```
 
 ### 查看服务日志
 
-```
+```Bash
 docker-compose logs -f contact-center
 ```
 
@@ -89,7 +89,7 @@ docker-compose logs -f contact-center
 
 在日志中，查看到如下类似信息，代表服务已经启动。
 
-```
+```日志
 INFO  c.c.socketio.SocketIOServer - SocketIO server started at port: 8036 [nioEventLoopGroup-2-1]
 INFO  com.chatopera.cc.Application - Started Application in 35.319 seconds (JVM running for 42.876) [main]
 ```
@@ -99,13 +99,13 @@ INFO  com.chatopera.cc.Application - Started Application in 35.319 seconds (JVM 
 
 ### 关闭服务
 
-```
+```Bash
 docker-compose down
 ```
 
 ### 重启服务
 
-```
+```Bash
 docker-compose restart
 ```
 

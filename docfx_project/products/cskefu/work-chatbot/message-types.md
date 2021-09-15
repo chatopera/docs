@@ -65,11 +65,11 @@
 
 在该机器人的技能列表中，点击刚刚创建的技能的“编辑”按钮，并在新打开的编辑窗口中，选择“脚本”，将下面的几行内容粘贴到编辑窗口中。
 
-<pre class="prettyprint">
+```脚本
 // FAQ Hotlist
 + __faq_hot_list
 - ^get_greetings()
-</pre>
+```
 
 点击【保存】，在编辑窗口中，如图。
 
@@ -87,7 +87,7 @@
 
 - 粘贴技能函数
 
-<pre class="prettyprint">
+```函数
 // 问候语中关联常见问题
 exports.get_greetings = async function() {
     return {
@@ -107,7 +107,7 @@ exports.get_greetings = async function() {
         }]
     };
 }  
-</pre>
+```
 
 点击【保存】，在编辑窗口中，如图。
 
@@ -165,16 +165,16 @@ exports.get_greetings = async function() {
 
 可以在上面步骤中建立的技能中，添加新的规则：
 
-<pre class="prettyprint">
+```脚本
 + (*) 产品列表 (*)
 - ^get_products()
-</pre>
+```
 
 该规则将保证在访客的问题中有 `产品列表`时，发送函数`get_products`返回的内容。
 
 - 粘贴技能函数
 
-<pre class="prettyprint">
+```函数
 // 按钮选择消息
 exports.get_products = async function() {
     return {
@@ -192,7 +192,7 @@ exports.get_products = async function() {
         ]
     }
 }
-</pre>
+```
 
 在脚本中，只需要设定`params`中的内容作为选型，其他保持默认。
 
@@ -211,16 +211,16 @@ exports.get_products = async function() {
 
 可以在上面步骤中建立的技能中，添加新的规则：
 
-<pre class="prettyprint">
+```脚本
 + 介绍一下上衣
 - ^get_shangyi()
-</pre>
+```
 
 该规则将保证在访客的问题中有 `介绍一下上衣`时，发送函数`get_shangyi`返回的内容。
 
 - 粘贴技能函数
 
-<pre class="prettyprint">
+```函数
 // 图文消息
 exports.get_shangyi = async function() {
     return {
@@ -234,7 +234,7 @@ exports.get_shangyi = async function() {
         }]
     }
 }
-</pre>
+```
 
 其中，`title`代表大标题，`thumbnail`是图片，`summary`是简介，`hyperlink`是点击图文消息后，跳转的链接，这几项是用户可以自定义的，其它项就使用默认值，比如`type`的值必须是`card`。
 
@@ -248,3 +248,14 @@ exports.get_shangyi = async function() {
 提供了在问候语中关联热门问题的多轮对话应用示例文件(`小松.1.0.7.c66`)，您可以点击[下载链接](https://github.com/chatopera/chatopera.samples/raw/master/%E5%8D%A1%E7%89%87%E6%B6%88%E6%81%AF/%E5%B0%8F%E6%9D%BE.1.0.7.c66)获得这个应用。
 
 该对话可以导入到多轮对话设计器中，进行浏览脚本和函数；也可以直接导入到 Chatopera 云服务，然后在春松客服中进行体验。
+
+## 评论
+
+<script src="https://utteranc.es/client.js"
+        repo="chatopera/docs"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

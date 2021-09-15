@@ -4,7 +4,7 @@
 
 > 提示：以下使用 `this` 前缀的变量代表该变量依赖于在函数内部的 `this` 对象。比如：
 
-```
+```函数
 exports.customFn = async function(){
     debug(this.user.id); // this.user is available here inside an exports function
 }
@@ -21,7 +21,7 @@ exports.customFn = async function(){
 
 `config`作为函数中的全局常量，不需要用户定义，不支持改变该值，只能作为读取用途，并且`config`只是键值对，值只是`string`类型。
 
-```
+```函数
 exports.print_key_value = function(key, cb){
     // 通过通配符获得key, 查看其在环境变量中对应对值
     cb(null, "Ok, value is " + config[key]);
@@ -39,7 +39,7 @@ exports.print_key_value = function(key, cb){
 
 `http`作为函数中的全局常量，不需要用户定义。
 
-```
+```函数
 http.get(url[, config])
 http.delete(url[, config])
 http.head(url[, config])
@@ -61,7 +61,7 @@ Chatopera 机器人平台中，函数内置`http`常量使用[axios](https://www
 
 `debug`作为函数中的全局常量，不需要用户定义。
 
-```
+```函数
 debug("hello")
 debug("hello %s", stringVar)
 debug("hello %s, %j", stringVar, jsonVar)
@@ -84,7 +84,7 @@ debug("hello %s, %o", stringVar, objVar)
 
 比如，可以在函数中这样写将 JSON Array 转化为 JSON Object。
 
-```
+```函数
 var array = [
   { 'dir': 'left', 'code': 97 },
   { 'dir': 'right', 'code': 100 }
@@ -107,13 +107,13 @@ _.keyBy(array, 'dir');
 
 在函数中，获取该唯一标识信息：
 
-```
+```函数
 this.user.id
 ```
 
 比如：
 
-```
+```函数
 exports.myUserId = function(cb){
     cb(null, {
         text: "Your id is " + this.user.id
@@ -125,13 +125,13 @@ exports.myUserId = function(cb){
 
 当前用户与机器人对话的历史
 
-```
-this.user.history 类型：数组
+```函数
+this.user.history // 类型：数组
 ```
 
 其中，每个元素内容如下：
 
-```
+```JSON
 {
     "input" : {
         "timestamp" : ISODate("2020-07-28T17:06:01.458Z"),
@@ -165,18 +165,18 @@ this.user.history 类型：数组
 
 `this.message` 是每次用户输入文本经过自然语言处理后的对象，它并不是全局对象，必须在 `exports` 的函数中，使用 `this.message` 来引用。
 
-```
-this.message.original | String, 输入文本的原始内容
-this.message.words | JSONArray, 分词结果
-this.message.tags | JSONArray, 对应位置分词的词性
-this.message.clean | String, 输入文本的改写，经过词根转化的输入字符串
-this.message.entities | JSONArray, 输入文本包含的命名实体
-this.message.names | JSONArray, 输入文本包含的人名
-this.message.nouns | JSONArray, 输入文本包含的名词
-this.message.adverbs· | JSONArray, 输入文本包含的副词
-this.message.verbs | JSONArray, 输入文本包含的动词
-this.message.adjectives | JSONArray, 输入文本包含的形容词
-this.message.pronouns | JSONArray, 输入文本包含的指示代词
+```函数
+this.message.original // String, 输入文本的原始内容
+this.message.words // JSONArray, 分词结果
+this.message.tags // JSONArray, 对应位置分词的词性
+this.message.clean // String, 输入文本的改写，经过词根转化的输入字符串
+this.message.entities // JSONArray, 输入文本包含的命名实体
+this.message.names // JSONArray, 输入文本包含的人名
+this.message.nouns // JSONArray, 输入文本包含的名词
+this.message.adverbs· // JSONArray, 输入文本包含的副词
+this.message.verbs // JSONArray, 输入文本包含的动词
+this.message.adjectives // JSONArray, 输入文本包含的形容词
+this.message.pronouns // JSONArray, 输入文本包含的指示代词
 ```
 
 关于 `this.message.tags` 包含了所有的分词对应的词性，可以用来做更多的判断，不同语言的词性集是不同的，参考 [Chatopera 多轮对话 Message 语言词性标注](/products/chatbot-platform/appendix/nlp-tags.html)。
@@ -197,17 +197,15 @@ this.message.pronouns | JSONArray, 输入文本包含的指示代词
 
 该命令也可以用于更新键值对，或者更新 EXPIRES 时间，让该信息不过期。
 
-```
+```函数
 this.maestro.set(KEY, VALUE [, EXPIRES]) 返回值: Promise
 ```
-
-
 
 ### ttl
 
 获得键值对有效时间，键值对是存储在 Redis 服务中，如果设定键值对时同时对`EXPIRES`赋值，那么到达过期时刻，该键值对将被删除。使用`ttl`接口获得一个键值对有效存在时间，返回值是有效的秒数，如果返回值为`-1`则代表该值不存在。
 
-```
+```函数
 this.maestro.ttl(KEY) 返回值: Promise(number)
 ```
 
@@ -215,17 +213,15 @@ this.maestro.ttl(KEY) 返回值: Promise(number)
 
 增加键的值，对于 Number 类型的键，增加一定值
 
-```
+```函数
 this.maestro.incrby(KEY, NUMBER) 返回值: Promise
 ```
-
-
 
 ### get
 
 获得一个键的值
 
-```
+```函数
 this.maestro.get(KEY) 返回值: Promise
 ```
 
@@ -234,7 +230,7 @@ this.maestro.get(KEY) 返回值: Promise
 
 删除一个键和其值
 
-```
+```函数
 this.maestro.del(KEY) 返回值：Promise
 ```
 
@@ -242,7 +238,7 @@ this.maestro.del(KEY) 返回值：Promise
 
 获得绝对时间，比如 来访者提到 “明天”，“后天”，“下周一”等相对时间，会被计算出正确的绝对时间，时区为北京时间。
 
-```
+```函数
 let dates = await this.maestro.extractTime(cap1[, format, timezone]);
 ```
 
@@ -256,7 +252,7 @@ let dates = await this.maestro.extractTime(cap1[, format, timezone]);
 
 比如
 
-```
+```函数
 let dates = await this.maestro.extractTime("明天和后天是几月几号？", "YYYY年MM月DD日", "Asia/Shanghai");
 // dates  [ '2021年09月02日', '2021年09月03日' ]
 ```
@@ -265,7 +261,7 @@ let dates = await this.maestro.extractTime("明天和后天是几月几号？", 
 
 通过邮件服务器发送邮件, 使用 [nodemailer](https://nodemailer.com/) 实现。
 
-```
+```函数
 exports.sendMail = async function(argvs) {
 
 let mailSettings = {
@@ -298,7 +294,7 @@ let mailSettings = {
 
 设置用户画像
 
-```
+```函数
 await this.maestro.profile(userId, property, value) 返回值 Promise
 ```
 

@@ -6,14 +6,14 @@
 
 把通配符值当做变量传给函数，例如下面这个例子：
 
-```
+```函数
 + 我的用户名是 *(2-10)
 - ^getUserAccount(<cap>)
 ```
 
 所以，调用函数的方式就是使用“^”。在函数的编辑窗口中，可以这样定义：
 
-```
+```函数
 exports.getUserAccount = function(account, cb) {
   cb(null, "对不起，系统没有找到" + account);
 }
@@ -23,7 +23,7 @@ exports.getUserAccount = function(account, cb) {
 
 函数的定义也同样支持`async/await`语法，例子如下：
 
-```
+```函数
 exports.getUserAccount = async function(account) {
     return "对不起，系统没有找到" + account;
 }
@@ -33,7 +33,7 @@ exports.getUserAccount = async function(account) {
 
 在系统集成时，业务系统的需求千差万别，为了灵活的支持各种需求，在函数中也可以自定义返回值。
 
-```
+```函数
 exports.getUserAccount = function(account, cb) {
   cb(null, {
       text: "对不起，系统没有找到" + account,
@@ -46,7 +46,7 @@ exports.getUserAccount = function(account, cb) {
 
 其中，`params`可定义为`[]`或`{}`对象，该用法同样适用于`async/await`函数。
 
-```
+```函数
 exports.getUserAccount = async function(account) {
     return {
       text: "对不起，系统没有找到" + account,
@@ -62,7 +62,7 @@ exports.getUserAccount = async function(account) {
 
 在回复中，可以添加任意多的函数，比如
 
-```
+```函数
 + ...
 - 联合 ^callFunction1() 和 ^callFunction2(<cap1>)
 ```
@@ -71,14 +71,14 @@ exports.getUserAccount = async function(account) {
 
 在函数的回调函数中，函数名会被解析成对应的函数，所以放心的在回复中添加任意合法的函数，比如在脚本中这样写：
 
-```
+```函数
 + ...
 - ^nestedAFunction()
 ```
 
 然后，在函数中，定义如下：
 
-```
+```函数
 exports.nestedAFunction = function(cb) {
   cb(null, "张三 ^nestedBFunction()");
 }

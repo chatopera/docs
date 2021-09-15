@@ -2,7 +2,7 @@
 
 ## 创建聊天机器人
 
-```
+```API
 Chatopera#command("POST", "/chatbot", body)
 ```
 
@@ -10,7 +10,7 @@ Chatopera#command("POST", "/chatbot", body)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
  "name": "小巴",
  "primaryLanguage": "zh_CN",
@@ -31,7 +31,7 @@ Chatopera#command("POST", "/chatbot", body)
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
  "rc": 0,
  "data": {
@@ -51,7 +51,7 @@ _secret_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.htm
 
 ## 获得聊天机器人列表
 
-```
+```API
 Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
 ```
 
@@ -66,7 +66,7 @@ Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "total": 3,

@@ -6,7 +6,7 @@
 
 函数返回值中，`params`数组中每个元素约定如下：
 
-```
+```函数
 // 问候语中关联常见问题
 exports.get_greetings = async function() {
     return {
@@ -32,7 +32,7 @@ exports.get_greetings = async function() {
 
 ## 按钮消息
 
-```
+```函数
 // 按钮选择消息
 exports.get_products = async function() {
     return {
@@ -56,7 +56,7 @@ exports.get_products = async function() {
 
 ## 图文消息
 
-```
+```函数
 // 图文消息
 exports.get_shangyi = async function() {
     return {
@@ -80,7 +80,7 @@ exports.get_shangyi = async function() {
 
 从以上的**消息形式**的实现，就是借助函数返回值中 `params` 这个属性，在实现聊天机器人时，函数中可在 `params` 自定义的业务字段，都会被 SDK/API 返回。
 
-```
+```函数
 // 自定义业务字段
 exports.get_shangyi = async function() {
     return {

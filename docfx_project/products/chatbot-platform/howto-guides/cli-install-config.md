@@ -24,14 +24,13 @@ Chatopera CLI 依赖于 [Node.js v10+](https://nodejs.org/zh-cn/) 环境，使�
 
 有了 Node.js 环境，在命令行终端，执行如下命令：
 
-```
+```Bash
 npm install -g @chatopera/sdk
 ```
 
 在 Windows 上，安装过程输出类似的日志：
 
-```
- npm install -g @chatopera/sdk
+```日志
 C:\Users\Administrator\AppData\Roaming\npm\bot -> C:\Users\Administrator\AppData
 \Roaming\npm\node_modules\@chatopera\sdk\bin\bot.js
 + @chatopera/sdk@2.7.1
@@ -40,7 +39,7 @@ added 147 packages from 104 contributors in 36.389s
 
 检查安装是否正确，执行：
 
-```
+```Bash
 $ bot --version
 2.x  # 得到类似输出，代表安装正确，2.x 为当时最新的 Chatopera CLI 版本
 ```
@@ -63,7 +62,7 @@ Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`,
 
 其中， `.env` 文件例子如：
 
-```
+```文本
 BOT_CLIENT_ID=xxx
 BOT_CLIENT_SECRET=xxx
 BOT_PROVIDER=https://bot.chatopera.com
@@ -74,7 +73,7 @@ BOT_ACCESS_TOKEN=xxx
 
 比如，在 `/Users/chatopera/chatopera-nodejs-sdk`下执行 `bot` 命令，那么，`.env`文件按照以下顺序进行查找，一旦查找到就加载为配置，并退出查找。
 
-```
+```Bash
 /Users/chatopera/chatopera-nodejs-sdk/.env
 /Users/chatopera/.env
 /Users/.env

@@ -16,7 +16,7 @@
 
 _ROOT_PATH/cskefu.osc/.env_(以下简称 _.env_) 文件作为配置春松客服版本和环境变量的文件，也记录着 Docker 启动春松客服的版本信息，该文件在[部署阶段](/products/cskefu/deploy.html)创建。
 
-```
+```文本
 CC_IMAGE=chatopera/contact-center:develop
 ```
 
@@ -46,14 +46,14 @@ https://github.com/chatopera/cskefu/commits/osc
 
 设置春松客服容器版本到 .env。
 
-```
+```Bash
 cd ROOT_PATH/cskefu.osc
 vi .env         # 使用文本编辑器编辑
 ```
 
 找到修改或添加
 
-```
+```文本
 CC_IMAGE=chatopera/contact-center:YOUR_VERSION
 ```
 
@@ -63,7 +63,7 @@ CC_IMAGE=chatopera/contact-center:YOUR_VERSION
 
 作为备份的文件，是和春松客服 Docker 容器版本绑定的，在完成了以上步骤后，执行下面的脚本。
 
-```
+```Bash
 TIMESTAMP=$(date +%Y%m%d_%H%M)
 cd ROOT_PATH/cskefu.osc
 docker-compose down # 停止服务
@@ -85,7 +85,7 @@ tar czfp cskefu.osc.$TIMESTAMP.tgz cskefu.osc # 打包备份
 
 参考前文【关于春松客服版本号】获得春松客服最新的版本信息，然后执行以下操作。
 
-```
+```Bash
 cd ROOT_PATH/cskefu.osc
 docker-compose down       # 停止服务
 vi .env      # 打开配置文件
@@ -93,13 +93,13 @@ vi .env      # 打开配置文件
 
 找到修改或添加
 
-```
+```文本
 CC_IMAGE=chatopera/contact-center:YOUR_VERSION
 ```
 
 将 `YOUR_VERSION` 替换为春松客服新的版本号。
 
-```
+```Bash
 cd ROOT_PATH/cskefu.osc
 docker-compose up -d     # 重启服务，此时，docker 会自动拉取新版本的镜像
 ```
@@ -108,7 +108,7 @@ docker-compose up -d     # 重启服务，此时，docker 会自动拉取新版�
 
 假设备份文件压缩包的位置是：`/root/cskefu.osc.202107001.tgz`。
 
-```
+```Bash
 cd ROOT_PATH/cskefu.osc
 docker-compose down
 cd ..

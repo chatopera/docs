@@ -8,13 +8,13 @@ Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工�
 
 打印 CLI 可用命令。
 
-```
+```Bash
 bot --help
 ```
 
 得到类似输出:
 
-```
+```说明
 Usage: bot [options] [command]
 
 Options:
@@ -35,7 +35,7 @@ Commands:
 
 也可以针对一个命令，获得更多帮助提示，比如：
 
-```
+```Bash
 bot connect --help
 bot trace --help
 bot conversation --action export --help
@@ -43,7 +43,7 @@ bot conversation --action export --help
 
 获得类似输出：
 
-```
+```说明
 Usage: bot connect [options]
 
 Options:
@@ -69,7 +69,7 @@ Options:
 
 举例：
 
-```
+```Bash
 bot dicts --action export --filepath /tmp/bot.dicts.json
 ```
 
@@ -79,7 +79,7 @@ bot dicts --action export --filepath /tmp/bot.dicts.json
 
 举例：
 
-```
+```Bash
 bot dicts --action import --filepath /tmp/bot.dicts.json
 ```
 
@@ -87,7 +87,7 @@ bot dicts --action import --filepath /tmp/bot.dicts.json
 
 触发同步命令，知识库、意图识别和多轮对话同步最新的近义词词典；此步骤将引起数据改写，生产环境宜业务低峰时间段进行。
 
-```
+```Bash
 bot dicts --action sync
 ```
 
@@ -99,7 +99,7 @@ bot dicts --action sync
 
 示例：
 
-```
+```Bash
 bot connect -c xxx -s xxx -u zhangsan
 ```
 
@@ -119,7 +119,7 @@ bot connect -c xxx -s xxx -u zhangsan
 
 示例：
 
-```
+```Bash
 bot conversation --action export --filepath /tmp/bot.conversations.c66
 ```
 
@@ -129,7 +129,7 @@ bot conversation --action export --filepath /tmp/bot.conversations.c66
 
 示例：
 
-```
+```Bash
 bot conversation --action import --filepath /tmp/bot.conversations.c66
 ```
 
@@ -143,7 +143,7 @@ bot conversation --action import --filepath /tmp/bot.conversations.c66
 
 示例：
 
-```
+```Bash
 bot trace --log-level DEBUG
 ```
 
@@ -157,7 +157,7 @@ Log level 可以是 `[DEBUG|INFO|WARN|ERROR]`。
 
 举例：
 
-```
+```Bash
 bot faq --action export --filepath /tmp/bot.faqs.json
 ```
 
@@ -167,7 +167,7 @@ bot faq --action export --filepath /tmp/bot.faqs.json
 
 举例：
 
-```
+```Bash
 bot faq --action import --filepath /tmp/bot.faqs.json
 ```
 
@@ -179,7 +179,7 @@ bot faq --action import --filepath /tmp/bot.faqs.json
 
 导出意图识别说法、槽位等信息。
 
-```
+```Bash
 bot intents --action export --filepath /tmp/bot.intents.json
 ```
 
@@ -187,7 +187,7 @@ bot intents --action export --filepath /tmp/bot.intents.json
 
 导入意图识别说法、槽位等信息。
 
-```
+```Bash
 bot intents --action import --filepath /tmp/bot.intents.json
 ```
 
@@ -201,7 +201,7 @@ bot intents --action import --filepath /tmp/bot.intents.json
 
 训练意图识别的调试分支。
 
-```
+```Bash
 bot intents --action train
 ```
 
@@ -209,7 +209,11 @@ bot intents --action train
 
 ### asr
 
+```Bash
+bot asr -f 001.wav
 ```
+
+```说明
 Usage: bot asr [options]
 
 Options:
@@ -223,11 +227,16 @@ Options:
 
 示例：
 
-```
+```Bash
 bot asr -c xxx \
      -s xxxx \
      -u nodetest \
      -f ./test/fixtures/001.wav
+```
+
+返回结果
+
+```JSON
 {
  "rc": 0,
  "data": {

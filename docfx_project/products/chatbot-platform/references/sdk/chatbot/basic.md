@@ -2,13 +2,13 @@
 
 ## 获取机器人画像
 
-```
+```API
 Chatbot#command("GET", "/")
 ```
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -36,13 +36,13 @@ Chatbot#command("GET", "/")
 
 ## 更新机器人画像
 
-```
+```API
 Chatbot#command("PUT", "/", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
  "fallback": "请联系客服。",
  "description": "我的超级能力是对话",
@@ -52,7 +52,7 @@ Chatbot#command("PUT", "/", body)
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
  "rc": 0,
  "data": {
@@ -65,13 +65,13 @@ Chatbot#command("PUT", "/", body)
 
 ## 获取全局任务状态
 
-```
+```API
 Chatbot#command("GET", "/status")
 ```
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
  "rc": 0,
  "data": {
@@ -86,13 +86,13 @@ Chatbot#command("GET", "/status")
 
 删除聊天机器人，该接口销毁机器人资源，并且不可逆。**使用时需格外谨慎！**
 
-```
+```API
 Chatbot#command("DELETE", "/")
 ```
 
 <h4><font color="purple">result / JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "msg": done

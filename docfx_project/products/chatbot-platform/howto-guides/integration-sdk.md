@@ -19,13 +19,13 @@
 
 ## 安装 SDK
 
-```
+```Bash
 npm install @chatopera/sdk --save
 ```
 
 ## 实例化`Chatbot`类为对象
 
-```
+```JavaScript
 var Chatbot = require("@chatopera/sdk").Chatbot;
 var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 ```
@@ -46,7 +46,7 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 
 得到`Chatbot`实例后，怎么样请求接口服务呢？假设对该机器人的基本信息感兴趣，获取基本信息方式如下：
 
-```
+```JavaScript
 var response = await chatbot.command("POST", "/faq/query", {
   query: "不锈钢板现在是什么价格",
   fromUserId: "sdktest1",
@@ -56,7 +56,7 @@ console.log("response: ", response)
 
 或者获取 `Promise` 返回
 
-```
+```JavaScript
 chatbot.command("GET", "/").then(
   (response) => {
     console.log("机器人名称：", response.data.name);
@@ -87,7 +87,7 @@ chatbot.command("GET", "/").then(
 
 本示例程序提供 Docker 容器镜像，使用 Docker 启动服务进行体验
 
-```
+```Bash
 docker run -it --rm -p 8668:8668 chatopera/webchat:develop
 ```
 

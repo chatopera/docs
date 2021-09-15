@@ -14,7 +14,7 @@
 
 解决办法：设置回复的文本以 `{CLEAR}` 开头。比如：
 
-```
+```脚本
 + 再见
 - {CLEAR} 感谢您选择我们，期待再次光临！
 ```
@@ -29,7 +29,7 @@
 
 ### 跳转到通配符匹配器或模糊匹配器
 
-```
+```脚本
 + 你好
 - ^topicRedirect("greetings","你好")
 ```
@@ -44,9 +44,8 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 
 在知识库的答案或多轮对话的函数中设置回复时，可以用 **routeDirectReply** 来检索一个指定的话题和匹配器，直接路由到多轮对话的主题和匹配器。
 
-语法：
 
-```
+```语法
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID" [,INHERIT_PARAMS]]
 ```
 
@@ -60,7 +59,7 @@ _TOPIC_GAMBIT_ID_: 匹配器
 
 比如
 
-```
+```文本
 routeDirectReply#["class_001_pre", "__C1PRE_GAMBIT_003",true]
 ```
 

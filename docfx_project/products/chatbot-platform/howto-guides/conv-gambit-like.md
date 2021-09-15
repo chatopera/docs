@@ -20,7 +20,7 @@
 
 ### 形式 1
 
-```
+```语法
 + ${threshold}{句子1|句子2|...|句子N}
 - 回复
 ```
@@ -29,21 +29,21 @@
 
 比如：
 
-```
+```脚本
 + ${0.7}{商场几点开门|商场营业时间}
 - 营业时间：早上八点半至晚上十一点
 ```
 
 ### 形式 2
 
-```
+```语法
 + ${句子1|句子2|...|句子N}
 - 回复
 ```
 
 比如：
 
-```
+```脚本
 + ${商场几点开门|商场营业时间}
 - 营业时间：早上八点半至晚上十一点
 ```
@@ -88,7 +88,7 @@
 
 每个模糊匹配器，都会和输入进行比较，计算相似度，打印的日志类似：
 
-```
+```日志
 2021-08-18 13:52:52   DEBUG   conversation  [DoesMatch] like gambit(threshold 0.8): ${商场几点开门} -similarity-> 1. score(1) : 商场 几 点 开门
 ```
 
@@ -96,7 +96,7 @@
 
 比如：
 
-```
+```日志
 2021-08-18 13:57:18   DEBUG   conversation  [DoesMatch] like gambit(threshold 0.8): ${商场几点开门|商场开门时间} -similarity-> 1. score(1) : 商场 几 点 开门 | 2. score(0.71029) : 商场 开门 时间
 ```
 
@@ -104,7 +104,7 @@
 
 如果模糊匹配器的一个句子与输入之间相似度大于阀值，那么就判定为匹配，输出日志类似如下：
 
-```
+```日志
 2021-08-18 13:57:18   DEBUG   conversation  [DoesMatch] like gambit(threshold 0.8): ${商场几点开门|商场开门时间} -matched-> 商场几点开门
 ```
 
@@ -116,17 +116,16 @@
 
 假如有这样的脚本和函数：
 
-```
-// 脚本
+```脚本
 /**
  * 模糊匹配器示例脚本
  */
 
 + ${商场几点开门|商场开门时间}
 - ^getOpenTime()
+```
 
-
-// 函数
+```函数
 exports.getOpenTime = async function() {
     debug("getOpenTime words %j", this.message.words) // this.message.words 是 JSONArray
     debug("getOpenTime tags %j", this.message.tags) // this.message.tags 是 JSONArray
@@ -138,7 +137,7 @@ exports.getOpenTime = async function() {
 
 比如，如果输入是 “商场的开门时间”，那么相应的 words 和 tags 如下：
 
-```
+```日志
 getOpenTime words: ["商场","的","开门","时间"]
 getOpenTime tags: ["nis","ude1","vi","n"]
 ```

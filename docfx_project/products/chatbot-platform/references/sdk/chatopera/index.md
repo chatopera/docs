@@ -4,7 +4,7 @@
 
 <h4><font color="purple">构造函数</font></h4>
 
-```
+```API
 Chatopera(accessToken [, botProvider])
 ```
 
@@ -33,7 +33,7 @@ Chatopera(accessToken [, botProvider])
 
 <h5><font color="purple">Node.js</font></h5>
 
-```
+```Node.js
 const { Chatopera } = require('@chatopera/sdk');
 ...
 const chatopera = new Chatopera(accessToken[, botProvider]);
@@ -41,7 +41,7 @@ const chatopera = new Chatopera(accessToken[, botProvider]);
 
 <h5><font color="purple">Java</font></h5>
 
-```
+```Java
 import com.chatopera.bot.sdk.Chatopera;
 ...
 Chatopera chatopera = new Chatopera(accessToken[, botProvider]);
@@ -49,7 +49,7 @@ Chatopera chatopera = new Chatopera(accessToken[, botProvider]);
 
 <h5><font color="purple">Python</font></h5>
 
-```
+```Python
 from chatopera import Chatopera
 co = Chatopera(accessToken[, botProvider])
 ```
@@ -58,7 +58,7 @@ co = Chatopera(accessToken[, botProvider])
 
 假设使用[composer](https://getcomposer.org/)作为包管理工具，其它安装方式参考[chatopera-php-sdk](https://github.com/chatopera/chatopera-php-sdk)。
 
-```
+```PHP
 <?php
 
 include_once **DIR** . "/vendor/autoload.php";
@@ -68,7 +68,7 @@ $chatopera = new Chatopera\SDK\Chatopera($accessToken[, $botProvider]);
 
 <h5><font color="purple">Go</font></h5>
 
-```
+```Go
 import (
 	"github.com/chatopera/chatopera-go-sdk"
 )

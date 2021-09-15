@@ -17,7 +17,7 @@
 
 拷贝 `YOUR_SITE_KEY`: **登录 -> 管理 -> 新增网站 -> 代码获取 -> 拷贝 SiteKey**。
 
-```
+```说明
 hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 ```
 
@@ -34,19 +34,19 @@ hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 
 https://docs.chatopera.com/products/cskefu/deploy.html
 
-```
+```环境变量
 TONGJI_BAIDU_SITEKEY=YOUR_SITE_KEY
 ```
 
 示例
 
-```
+```环境变量
 TONGJI_BAIDU_SITEKEY=585cbac007x12es81b517031e9ec29c56e
 ```
 
 重启服务
 
-```
+```Bash
 docker-compose restart contact-center
 ```
 

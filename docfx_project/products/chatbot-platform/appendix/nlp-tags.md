@@ -12,7 +12,7 @@
 
 比如输入：商场的开门时间。那么，则有
 
-```
+```函数
 this.message.words = ["商场","的","开门","时间"];
 this.message.tags = ["nis","ude1","vi","n"]
 ```

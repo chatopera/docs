@@ -2,13 +2,13 @@
 
 ## 创建自定义词典
 
-```
+```API
 Chatbot#command("POST", "/clause/customdicts", body)
 ```
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
 	"name": "{{customDictName}}",
 	"type": "vocab"
@@ -21,7 +21,7 @@ Chatbot#command("POST", "/clause/customdicts", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -36,13 +36,13 @@ Chatbot#command("POST", "/clause/customdicts", body)
 
 ## 获取自定义词典列表
 
-```
+```API
 Chatbot#command("GET", "/clause/customdicts?limit={{limit}}&page={{page}}")
 ```
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "total": 3,
@@ -62,7 +62,7 @@ Chatbot#command("GET", "/clause/customdicts?limit={{limit}}&page={{page}}")
 
 ## 更新自定义词典
 
-```
+```API
 Chatbot#command("PUT", "/clause/customdicts/{{customDictName}}", body)
 ```
 
@@ -74,7 +74,7 @@ Chatbot#command("PUT", "/clause/customdicts/{{customDictName}}", body)
 
 <h4><font color="purple">body / JSON Object</font></h4>
 
-```
+```JSON
 {
     "description": "高级轿车品牌"
 }
@@ -82,7 +82,7 @@ Chatbot#command("PUT", "/clause/customdicts/{{customDictName}}", body)
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "data": {
@@ -98,7 +98,7 @@ Chatbot#command("PUT", "/clause/customdicts/{{customDictName}}", body)
 
 ## 删除自定义词典
 
-```
+```API
 Chatbot#command("DELETE", "/clause/customdicts/{{customDictName}}")
 ```
 
@@ -110,7 +110,7 @@ Chatbot#command("DELETE", "/clause/customdicts/{{customDictName}}")
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
-```
+```JSON
 {
     "rc": 0,
     "msg": "success",

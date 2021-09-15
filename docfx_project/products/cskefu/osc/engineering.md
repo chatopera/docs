@@ -25,7 +25,7 @@
 
 在`<repositories><repository>`内存在：
 
-```
+```XML
     <repositories>
         <repository>
             <id>chatopera</id>
@@ -47,7 +47,7 @@
 
 ## 下载代码
 
-```
+```Bash
 git clone https://github.com/chatopera/cskefu.git cskefu.osc
 # 默认为 osc 分支
 ```
@@ -62,14 +62,14 @@ git clone https://github.com/chatopera/cskefu.git cskefu.osc
 
 春松客服依赖 Elasticsearch 服务，如果没有 Elasticsearch 服务，可以用下面的方式创建。
 
-```
+```Bash
 cd cskefu.osc
 docker-compose up -d elasticsearch
 ```
 
 Elasticsearch 的配置项在 application.properties 是
 
-```
+```文本
 spring.data.elasticsearch.cluster-name=elasticsearch
 spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
 ```
@@ -80,14 +80,14 @@ spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
 
 春松客服依赖 ActiveMQ 服务，如果没有 ActiveMQ 服务，可以用下面的方式创建。
 
-```
+```Bash
 cd cskefu.osc
 docker-compose up -d activemq
 ```
 
 ActiveMQ 的配置项在 application.properties 是
 
-```
+```文本
 spring.activemq.broker-url=tcp://localhost:61616
 spring.activemq.user=admin
 spring.activemq.password=admin
@@ -101,7 +101,7 @@ spring.activemq.pool.max-connections=50
 
 春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
 
-```
+```Bash
 cd cskefu.osc
 docker-compose up -d mysql
 ```
@@ -132,7 +132,7 @@ MySQL 容器启动后，还需要创建春松客服数据库，该过程是在�
 
 春松客服依赖 Redis 服务，如果没有 Redis 服务，可以用下面的方式创建。
 
-```
+```Bash
 docker-compose up -d redis
 ```
 
@@ -166,7 +166,7 @@ Redis 启动后就可以，不需要其他操作。
 
 春松客服团队使用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) 作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
 
-```
+```Bash
 cd cskefu.osc
 ./admin/gen-idea.sh
 ```
@@ -175,7 +175,7 @@ cd cskefu.osc
 
 春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
 
-```
+```路径
 cskefu.osc/contact-center/app/src/main/resources/application.properties
 ```
 
@@ -191,19 +191,19 @@ cskefu.osc/contact-center/app/src/main/resources/application.properties
 
 - 设置环境变量
 
-```
+```环境变量
 SPRING_PROFILES_ACTIVE=dev
 ```
 
 - 创建 application-dev.properties
 
-```
+```Bash
 touch contact-center/app/src/main/resources/application-dev.properties
 ```
 
 内容如下：
 
-```
+```文本
 # MySQL
 spring.datasource.url=jdbc:mysql://192.168.2.217:7111/cosinee?useUnicode=true&characterEncoding=UTF-8
 spring.datasource.username=root
@@ -230,7 +230,7 @@ spring.data.elasticsearch.cluster-nodes=192.168.2.217:7201
 
 `application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
 
-```
+```环境变量
 SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
 SPRING_DATASOURCE_USERNAME=root
 SPRING_DATASOURCE_PASSWORD=123456
@@ -298,7 +298,7 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 ### 创建网站渠道
 
-```
+```文本
 http://localhost:8035/
 用户名：admin
 密码：admin1234
@@ -330,7 +330,7 @@ http://localhost:8035/
 
 浏览器打开
 
-```
+```URL
 http://localhost:8035/testclient.html
 ```
 
@@ -346,7 +346,7 @@ http://localhost:8035/testclient.html
 
 在目标接入访客聊天控件的网站中，网页 HTML 的 header 中加入一行代码，就可以访问了，代码：
 
-```
+```HTML
 <script defer="true" src="http://春松客服地址[:端口]/im/网站渠道标识.html"></script>
 ```
 
@@ -354,7 +354,7 @@ http://localhost:8035/testclient.html
 
 HTML 示例：
 
-```
+```HTML
 <!DOCTYPE html>
 <html lang="zh">
 
