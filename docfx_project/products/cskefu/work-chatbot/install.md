@@ -33,6 +33,7 @@
 - 环境变量
 
 ```环境变量
+BOT_PROVIDER                 # Chatopera 机器人平台地址，支持私有部署，默认为 Chatopera 云服务 https://bot.chatopera.com
 BOT_THRESHOLD_FAQ_BEST_REPLY # 最佳回复阀值
 BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 ```
