@@ -10,9 +10,17 @@
 
 ### 创建意图
 
-创建意图名称：`ask_weather`
+创建意图名称：
 
-更改中文名：`查天气`
+```意图标识名
+ask_weather
+```
+
+更改中文名：
+
+```意图中文名
+查天气
+```
 
 <img width="800" src="../../../images/products/platform/screenshot-20210915-140141.png"/>
 
@@ -66,7 +74,7 @@
 
 ### 添加脚本
 
-在脚本中追加下面的内容：
+在脚本中**追加**下面的内容：
 
 ```脚本
 // 查询天气
@@ -77,9 +85,14 @@ intent ask_weather
 
 有了上节的经验，现在看起来，这个意图会话的脚本是不是很熟悉了？
 
+
+现在，脚本编辑区域看起来如下。
+
+<img width="800" src="../../../images/products/platform/screenshot-20210916-143238.png"/>
+
 ### 添加函数
 
-在函数中追加下面的内容：
+在函数中**追加**下面的内容：
 
 ```函数
 /**
@@ -144,7 +157,7 @@ exports.handleLoseAskWeather = async function() {
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-075200.png"/>
 
-| 环境变量 | 值 |
+| 变量名 | 变量值 |
 | --- | --- |
 | HEWEATHER_URL | https://free-api.heweather.com/v5 |
 | HEWEATHER_KEY | 182f1b6826d94c6285a489d2414f3ad0 |
@@ -178,7 +191,7 @@ exports.handleLoseAskWeather = async function() {
 3. 我想预定机票
 ```
 
-现在，你的春松机器人也可以回答这三个问题了，所以，进入多轮对话设计器的春松机器人函数编辑窗口，找到 `exports.get_greetings` 并将其实现替换为下面内容：
+现在，你的春松机器人也可以回答这三个问题了，所以，进入多轮对话设计器的春松机器人函数编辑窗口，找到 `exports.get_greetings` ，也就是在第一节中我们增加的函数内容，将其实现替换为下面内容：
 
 ```函数
 // 问候语中关联常见问题
