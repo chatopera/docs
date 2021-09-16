@@ -4,21 +4,16 @@
 
 ## 安装
 
-支持 macOS 或 Windows 操作系统。
+* 点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，会启动下载
+* 打开【地址1】的链接后，浏览器提示错误时，请使用【地址2】进行下载
+* 下载后，得到应用安装包，双击后根据提示进行安装
 
-下载地址：
-
-| 版本   | 操作系统 | 下载                                                                                                                                                                         |
+| 版本   | 操作系统 | 下载地址                                                                                                                                                                         |
 | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | v2.3.0 | macOS  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/819693/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.dmg)</a> |
 | v2.3.0 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/819682/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.3.0.exe)|
 
 <img width="800" src="../../../../images/products/platform/chatopera-cde-download.gif" alt="下载多轮对话设计器"/>
-
-* 点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，会启动下载
-* 打开【地址1】的链接后，浏览器提示错误时，请使用【地址2】进行下载
-* 下载后，得到应用安装包，双击后根据提示进行安装
-
 
 ## 工具介绍
 
