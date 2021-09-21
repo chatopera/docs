@@ -51,7 +51,7 @@ bot conversation -a export -f bot.conversations.c66
 bot dicts -a import -f bot.dicts.json && \
 bot faq -a import -f bot.faqs.json && \
 bot intents -a import -f bot.intents.json && \
-bot conversation -a import -f bot.conversation.c66
+bot conversation -a import -f bot.conversations.c66
 ```
 
 这样，目标机器人就具备从之前导出的机器人的技能。
