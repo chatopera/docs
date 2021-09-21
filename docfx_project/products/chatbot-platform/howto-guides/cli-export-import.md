@@ -4,9 +4,9 @@
 
 ## 准备工作
 
-* 安装 Chatopera CLI，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html);
+- 安装 Chatopera CLI，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html);
 
-* 配置 Chatopera CLI，使用 `.env` 文件，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
+- 配置 Chatopera CLI，使用 `.env` 文件，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
 
 <font color="blue">为简化说明，以下各示例配置使用了 `.env` 文件，因为略去了从命令行传入的一些参数。</font>
 
@@ -27,11 +27,13 @@ bot [dicts|faq|intents|conversation] --action [import|export] --filepath {{FILE_
 对话语料指词典、知识库、意图识别和多轮对话的内容，它们包括了机器人的所有对话技能。
 
 删除文件
+
 ```Bash
 rm -rf bot.dicts.json bot.faqs.json bot.intents.json bot.conversations.c66
-
+```
 
 执行导出，以下命令并无顺序依赖关系
+
 ```Bash
 bot dicts -a export -f bot.dicts.json && \
 bot faq -a export -f bot.faqs.json && \
@@ -52,8 +54,11 @@ bot intents -a import -f bot.intents.json && \
 bot conversation -a import -f bot.conversation.c66
 ```
 
-这样，目标机器人就具备从之前导出的机器人的技能，更多命令介绍，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
+这样，目标机器人就具备从之前导出的机器人的技能。
 
+## CLI 命令详细介绍
+
+更多命令介绍，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
 
 ## 评论
 
