@@ -49,7 +49,7 @@ bot conversation -a export -f bot.conversations.c66
 
 ```Bash
 bot dicts -a import -f bot.dicts.json && \
-bot faq -a import -f bot.faq.json && \
+bot faq -a import -f bot.faqs.json && \
 bot intents -a import -f bot.intents.json && \
 bot conversation -a import -f bot.conversation.c66
 ```
