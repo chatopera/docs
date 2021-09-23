@@ -1,14 +1,12 @@
 # 对话检索
 
-
 对话检索接口，就是将对话用户的请求发送给机器人，获得机器人的回复。
 
-* [检索多轮对话](#检索多轮对话)：从多轮对话获得回复
-* [检索知识库](#检索知识库)：从知识库获得回复
-* [检索意图识别](#检索意图识别)：从意图识别模块获得回复
+- [检索多轮对话](#检索多轮对话)：从多轮对话获得回复
+- [检索知识库](#检索知识库)：从知识库获得回复
+- [检索意图识别](#检索意图识别)：从意图识别模块获得回复
 
 检索多轮对话，也**同时会从知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式**，使用检索多轮对话接口，可以定制出更为智能的对话机器人。 了解详情，请阅读[《多轮对话的工作机制》](/products/chatbot-platform/explanations/query.html)。
-
 
 ## 检索多轮对话
 
@@ -31,7 +29,7 @@ Chatbot#command("POST", "/conversation/query", body)
 
 | key                   | type   | required | description                                                                                       |
 | --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
-| userId                | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                               |
+| fromUserId            | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                               |
 | textMessage           | string | &#10004; | 用户输入的对话文字                                                                                |
 | faqBestReplyThreshold | number | &#10008; | 知识库最佳回复， 默认 0.8，知识库建议回复，知识库中置信度超过该值通过返回值`string`和`params`返回 |
 | faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
@@ -85,21 +83,20 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 
 `service`代表返回的数据来源，**provider:conversation**指**多轮对话**，**provider:faq**指**知识库**，**provider:intent**指**意图识别**；不同数据来源也会提供相应信息。
 
-| provider     | key                  | 解释    |
-| ------------ | -------------------- | ------- |
-| faq          |                      |         |
-|              | docId                | 文档 ID |
-|              | post                 | 标准问  |
-|              | score                | 分数    |
-|              | threshold            | 阀值    |
-| intent | 意图识别             |     更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html)    |
-|              | intent.name                 | 意图名称  |
-|              | intent.state                 | 意图会话状态  |
-|              | intent.entities                 | 意图中的命名实体  |
-| conversation | 多轮对话             |         |
-| fallback     | 兜底回复             |         |
-| mute         | 该用户被该机器人屏蔽 |         |
-
+| provider     | key                  | 解释                                                                                  |
+| ------------ | -------------------- | ------------------------------------------------------------------------------------- |
+| faq          |                      |                                                                                       |
+|              | docId                | 文档 ID                                                                               |
+|              | post                 | 标准问                                                                                |
+|              | score                | 分数                                                                                  |
+|              | threshold            | 阀值                                                                                  |
+| intent       | 意图识别             | 更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html) |
+|              | intent.name          | 意图名称                                                                              |
+|              | intent.state         | 意图会话状态                                                                          |
+|              | intent.entities      | 意图中的命名实体                                                                      |
+| conversation | 多轮对话             |                                                                                       |
+| fallback     | 兜底回复             |                                                                                       |
+| mute         | 该用户被该机器人屏蔽 |                                                                                       |
 
 ## 检索知识库
 
