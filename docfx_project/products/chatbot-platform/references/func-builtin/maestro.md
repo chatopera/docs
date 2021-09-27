@@ -29,7 +29,7 @@ _value_: 属性值
 
 用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/references/sdk/chatbot/users.html#获取用户画像信息)获得。
 
-## 键值对管理
+## KeyValue Pairs
 
 用于管理持久化的信息，通过键值对存取。
 
@@ -173,7 +173,7 @@ let mailSettings = {
 以上 SMTP 邮件服务的配置需要定义在环境变量中，支持的邮箱服务参考[nodemailer](https://nodemailer.com/smtp/well-known/)，可配置 QQ 企业邮箱、163 邮箱等。
 
 
-## 评论
+## Comments
 
 <script src="https://utteranc.es/client.js"
         repo="chatopera/docs"
