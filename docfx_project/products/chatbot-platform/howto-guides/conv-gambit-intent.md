@@ -237,7 +237,7 @@ if(extractedDates.length > 0){
 }
 ```
 
-更多关于 `extractTime` 的介绍[参考链接](/products/chatbot-platform/references/func-builtin.html#extracttime)。
+更多关于 `extractTime` 的介绍[参考链接](/products/chatbot-platform/references/func-builtin/maestro.html#extracttime)。
 
 ### 保存变量信息到意图会话
 
@@ -388,7 +388,7 @@ exports.handleXXFn = async function() {
 
 ## 下一步
 
-- [函数：使用 http 模块请求外部系统 API 服务](/products/chatbot-platform/references/func-builtin.html#http)
+- [函数：使用 http 模块请求外部系统 API 服务](/products/chatbot-platform/references/func-builtin/basics.html#http)
 
 - [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
 

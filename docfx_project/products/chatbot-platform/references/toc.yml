@@ -3,7 +3,8 @@
 - name: 通配符匹配器
   href: gambit-star.md
 - name: 内置函数库
-  href: func-builtin.md
+  href: func-builtin/toc.yml
+  topicHref: func-builtin/index.md
 - name: 函数返回值
   href: func-return.md
 - name: "命令行界面（CLI）"

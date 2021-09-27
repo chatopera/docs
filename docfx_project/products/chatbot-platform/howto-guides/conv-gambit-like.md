@@ -158,7 +158,7 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 ## 下一步
 
-- [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/references/func-builtin.html#thismessage)
+- [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/references/func-builtin/message.html)
 
 - [下载多轮对话设计器](/products/chatbot-platform/howto-guides/cde-install.html)
 
