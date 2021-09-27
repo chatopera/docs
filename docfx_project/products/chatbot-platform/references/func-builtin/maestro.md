@@ -9,6 +9,26 @@
 **2. 该对象不是全局函数，作用域在函数内部，使用时依赖于函数内`this`变量。**
 
 
+## profile
+
+设置用户画像
+
+```函数
+await this.maestro.profile(userId, property, value) 返回值 Promise
+```
+
+_userId_: 用户唯一标识
+
+_property_: 用户的属性
+
+_value_: 属性值
+
+该接口用于持久化一个用户的信息，此处 userId 可以使用当前用户的信息`this.user.id`；`property`和`value`是根据业务灵活定义。
+
+该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
+
+用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/references/sdk/chatbot/users.html#获取用户画像信息)获得。
+
 ## 键值对管理
 
 用于管理持久化的信息，通过键值对存取。
@@ -96,6 +116,29 @@ let dates = await this.maestro.extractTime("明天和后天是几月几号？", 
 // dates  [ '2021年09月02日', '2021年09月03日' ]
 ```
 
+## digest
+
+自动生成文本的摘要，假设文本有“.。,!?”等分隔句子的符号。那么 `digest` 将会获得其中最关键的句子作为摘要。
+
+
+```函数
+let texts = await this.maestro.digest("冬天来了。春天还会远吗?", 5);
+```
+
+第一个参数文本内容，第二个参数是返回摘要文本的字数长度。
+
+返回值 `texts` 是一个数组，是输入文本中的若干句子，按照重要程度排序。
+
+## keywords
+提取文本关键词。
+
+```函数
+let words = await this.maestro.keywords("冬天来了。春天还会远吗?", 5);
+```
+
+第一个参数文本内容，第二个参数是返回关键词语的数量。
+返回值 `words` 是一个数组，是输入文本中的若干词语，按照重要程度排序。
+
 ## sendMail
 
 通过邮件服务器发送邮件, 使用 [nodemailer](https://nodemailer.com/) 实现。
@@ -129,25 +172,6 @@ let mailSettings = {
 
 以上 SMTP 邮件服务的配置需要定义在环境变量中，支持的邮箱服务参考[nodemailer](https://nodemailer.com/smtp/well-known/)，可配置 QQ 企业邮箱、163 邮箱等。
 
-## profile
-
-设置用户画像
-
-```函数
-await this.maestro.profile(userId, property, value) 返回值 Promise
-```
-
-_userId_: 用户唯一标识
-
-_property_: 用户的属性
-
-_value_: 属性值
-
-该接口用于持久化一个用户的信息，此处 userId 可以使用当前用户的信息`this.user.id`；`property`和`value`是根据业务灵活定义。
-
-该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
-
-用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/references/sdk/chatbot/users.html#获取用户画像信息)获得。
 
 ## 评论
 
