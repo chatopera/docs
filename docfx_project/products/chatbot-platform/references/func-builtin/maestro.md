@@ -8,7 +8,12 @@
 
 **2. 该对象不是全局函数，作用域在函数内部，使用时依赖于函数内`this`变量。**
 
-## set
+
+## 键值对管理
+
+用于管理持久化的信息，通过键值对存取。
+
+### set
 
 存储键值对，支持过期时间，过期时间以秒为单位。VALUE 可以是时间，字符串，数字。
 
@@ -18,7 +23,7 @@
 this.maestro.set(KEY, VALUE [, EXPIRES]) 返回值: Promise
 ```
 
-## ttl
+### ttl
 
 获得键值对有效时间，键值对是存储在 Redis 服务中，如果设定键值对时同时对`EXPIRES`赋值，那么到达过期时刻，该键值对将被删除。使用`ttl`接口获得一个键值对有效存在时间，返回值是有效的秒数，如果返回值为`-1`则代表该值不存在。
 
@@ -26,7 +31,7 @@ this.maestro.set(KEY, VALUE [, EXPIRES]) 返回值: Promise
 this.maestro.ttl(KEY) 返回值: Promise(number)
 ```
 
-## incrby
+### incrby
 
 增加键的值，对于 Number 类型的键，增加一定值
 
@@ -34,7 +39,7 @@ this.maestro.ttl(KEY) 返回值: Promise(number)
 this.maestro.incrby(KEY, NUMBER) 返回值: Promise
 ```
 
-## get
+### get
 
 获得一个键的值
 
@@ -43,12 +48,29 @@ this.maestro.get(KEY) 返回值: Promise
 ```
 
 
-## del
+### del
 
 删除一个键和其值
 
 ```函数
 this.maestro.del(KEY) 返回值：Promise
+```
+
+
+## extractNumber
+
+获得一句文本中的阿拉伯数字，比如 来访者提到 “一二三”，“123”等数字，会被提取为一个转化为阿拉伯数字的数组。
+
+```函数
+let numbers = await this.maestro.extractNumber(cap1);
+```
+
+返回值: `numbers` 是处理后的数字数组，识别的文本中，可以包含多个数字；未获得数字时，数组长度为 0。
+比如
+
+```函数
+let numbers = await this.maestro.extractNumber("一二三和123？");
+// numbers  [ '123', '123' ]
 ```
 
 ## extractTime
