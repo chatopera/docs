@@ -1,6 +1,6 @@
-## 用户和对话历史
+# 用户和对话历史
 
-### 获取用户列表
+## 获取用户列表
 
 ```API
 Chatbot#command("GET", "/users")
@@ -37,7 +37,7 @@ _lasttime_: 最后沟通时间
 
 _created_: 第一次沟通时间
 
-### 屏蔽用户
+## 屏蔽用户
 
 ```API
 Chatbot#command("POST", "/users/{{userId}}/mute")
@@ -58,7 +58,7 @@ Chatbot#command("POST", "/users/{{userId}}/mute")
 }
 ```
 
-### 取消屏蔽
+## 取消屏蔽
 
 ```API
 Chatbot#command("POST", "/users/{{userId}}/unmute")
@@ -79,7 +79,7 @@ Chatbot#command("POST", "/users/{{userId}}/unmute")
 }
 ```
 
-### 是否被屏蔽
+## 是否被屏蔽
 
 ```API
 Chatbot#command("POST", "/users/{{userId}}/ismute")
@@ -98,7 +98,7 @@ Chatbot#command("POST", "/users/{{userId}}/ismute")
 
 `data.mute`返回 boolean 类型值。
 
-### 获取用户画像信息
+## 获取用户画像信息
 
 ```API
 Chatbot#command("GET", "/users/{{userId}}/profile")
@@ -126,7 +126,7 @@ Chatbot#command("GET", "/users/{{userId}}/profile")
 }
 ```
 
-### 获取聊天历史
+## 获取聊天历史
 
 ```API
 Chatbot#command("GET", "/users/{{userId}}/chats?limit={{limit}}&page={{page}}")
