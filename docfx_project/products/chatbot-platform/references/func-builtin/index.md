@@ -16,6 +16,7 @@ exports.customFn = async function(){
 - [message](message.md)
 - [user](user.md)
 - [maestro](maestro.md)
+- [3rd-party](3rd-party.md)
 
 ## 评论
 
