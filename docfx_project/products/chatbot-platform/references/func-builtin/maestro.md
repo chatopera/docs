@@ -8,8 +8,11 @@
 
 **2. 该对象不是全局函数，作用域在函数内部，使用时依赖于函数内`this`变量。**
 
+## User
 
-## profile
+对话用户信息相关，此部分为 `maestro` 内实现的，和对话用户相关的还有 [user](user.md) 库。
+
+### profile
 
 设置用户画像
 
@@ -67,7 +70,6 @@ this.maestro.incrby(KEY, NUMBER) 返回值: Promise
 this.maestro.get(KEY) 返回值: Promise
 ```
 
-
 ### del
 
 删除一个键和其值
@@ -76,8 +78,11 @@ this.maestro.get(KEY) 返回值: Promise
 this.maestro.del(KEY) 返回值：Promise
 ```
 
+## Extract information
 
-## extractNumber
+信息提取
+
+### extractNumber
 
 获得一句文本中的阿拉伯数字，比如 来访者提到 “一二三”，“123”等数字，会被提取为一个转化为阿拉伯数字的数组。
 
@@ -93,7 +98,7 @@ let numbers = await this.maestro.extractNumber("一二三和123？");
 // numbers  [ '123', '123' ]
 ```
 
-## extractTime
+### extractTime
 
 获得绝对时间，比如 来访者提到 “明天”，“后天”，“下周一”等相对时间，会被计算出正确的绝对时间，时区为北京时间。
 
@@ -105,7 +110,7 @@ let dates = await this.maestro.extractTime(cap1[, format, timezone]);
 
 `timezone` 值设定参考[momentjs#timezone](https://momentjs.com/timezone/)。
 
-`format` 默认值为 `YYYY/MM/DD HH:mm`，`timezone` 默认值为 `Asia/Shanghai`。
+`format` 默认值为 `YYYY/MM/DD HH:mm`，`timezone` 默认值为 `Asia/Shanghai`。
 
 返回值: `dates` 是处理后的时间数组，识别的文本中，可以包含多个时间；可以具体到分钟，格式化时，未得到的时间被设置为 `0` 。
 
@@ -116,10 +121,9 @@ let dates = await this.maestro.extractTime("明天和后天是几月几号？", 
 // dates  [ '2021年09月02日', '2021年09月03日' ]
 ```
 
-## digest
+### digest
 
 自动生成文本的摘要，假设文本有“.。,!?”等分隔句子的符号。那么 `digest` 将会获得其中最关键的句子作为摘要。
-
 
 ```函数
 let texts = await this.maestro.digest("冬天来了。春天还会远吗?", 5);
@@ -129,7 +133,8 @@ let texts = await this.maestro.digest("冬天来了。春天还会远吗?", 5);
 
 返回值 `texts` 是一个数组，是输入文本中的若干句子，按照重要程度排序。
 
-## keywords
+### keywords
+
 提取文本关键词。
 
 ```函数
@@ -139,7 +144,11 @@ let words = await this.maestro.keywords("冬天来了。春天还会远吗?", 5)
 第一个参数文本内容，第二个参数是返回关键词语的数量。
 返回值 `words` 是一个数组，是输入文本中的若干词语，按照重要程度排序。
 
-## sendMail
+## Notifications
+
+通知服务。
+
+### sendMail
 
 通过邮件服务器发送邮件, 使用 [nodemailer](https://nodemailer.com/) 实现。
 
@@ -171,7 +180,6 @@ let mailSettings = {
 ```
 
 以上 SMTP 邮件服务的配置需要定义在环境变量中，支持的邮箱服务参考[nodemailer](https://nodemailer.com/smtp/well-known/)，可配置 QQ 企业邮箱、163 邮箱等。
-
 
 ## Comments
 
