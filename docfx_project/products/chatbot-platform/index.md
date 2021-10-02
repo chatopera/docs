@@ -1,6 +1,6 @@
 # Chatopera 云服务
 
-使用 [Chatopera 云服务](https://bot.chatopera.com/)上线智能对话机器人时，你需要了解的一切。
+使用 [Chatopera 云服务（https://bot.chatopera.com/）](https://bot.chatopera.com/)上线智能对话机器人时，你需要了解的一切。
 
 ## 入门
 <!-- First Steps -->
