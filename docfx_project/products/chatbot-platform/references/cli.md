@@ -58,6 +58,25 @@ Options:
   -h, --help                  display help for command
 ```
 
+## 配置文件
+
+### env
+
+生成配置文件，对生成的配置文件，需要修改，设置键值对。
+
+```Bash
+bot env [-fp FOLDER]
+```
+
+默认为当前命令执行所在目录。
+
+比如：
+
+```Bash
+bot env -fp /c
+```
+
+将生成配置文件 `/c/.env`。
 
 ## 词典
 
