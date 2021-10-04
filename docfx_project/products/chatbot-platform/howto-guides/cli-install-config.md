@@ -63,10 +63,11 @@ Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`,
 其中， `.env` 文件例子如：
 
 ```文本
-BOT_CLIENT_ID=xxx
-BOT_CLIENT_SECRET=xxx
+# Chatopera Cloud Service
 BOT_PROVIDER=https://bot.chatopera.com
-BOT_ACCESS_TOKEN=xxx
+BOT_CLIENT_ID=
+BOT_CLIENT_SECRET=
+BOT_ACCESS_TOKEN=
 ```
 
 `.env` 文件存储的也是环境变量值。`bot` 命令会沿当前执行命令的路径(`pwd`)，寻找 `.env` 文件。
