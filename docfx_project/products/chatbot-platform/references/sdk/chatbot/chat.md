@@ -23,7 +23,8 @@ Chatbot#command("POST", "/conversation/query", body)
     "fromUserId": "{{userId}}",
     "textMessage": "想要说些什么",
     "faqBestReplyThreshold": 0.6,
-    "faqSuggReplyThreshold": 0.35
+    "faqSuggReplyThreshold": 0.35,
+    "extras": {}
 }
 ```
 
@@ -33,6 +34,9 @@ Chatbot#command("POST", "/conversation/query", body)
 | textMessage           | string | &#10004; | 用户输入的对话文字                                                                                |
 | faqBestReplyThreshold | number | &#10008; | 知识库最佳回复， 默认 0.8，知识库建议回复，知识库中置信度超过该值通过返回值`string`和`params`返回 |
 | faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
+| extras | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory)  中使用                 |
+
+其中，`extras` 用以支持更灵活，自定义的场景。
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
@@ -108,10 +112,10 @@ Chatbot#command("POST", "/faq/query", body)
 
 ```JSON
 {
-	"query": "查找相似的问题",
-	"fromUserId": "{{userId}}",
-	"faqBestReplyThreshold": 0.5,
-	"faqSuggReplyThreshold": 0.1
+ "query": "查找相似的问题",
+ "fromUserId": "{{userId}}",
+ "faqBestReplyThreshold": 0.5,
+ "faqSuggReplyThreshold": 0.1
 }
 ```
 
@@ -178,8 +182,8 @@ Chatbot#command("POST", "/clause/prover/session", body)
 
 ```JSON
 {
-	"uid": "{{userId}}",
-	"channel": "{{channelId}}"
+ "uid": "{{userId}}",
+ "channel": "{{channelId}}"
 }
 ```
 
@@ -228,13 +232,13 @@ Chatbot#command("POST", "/clause/prover/chat", body)
 
 ```JSON
 {
-	"fromUserId": "{{userId}}",
-	"session": {
-		"id": "{{sessionId}}"
-	},
-	"message": {
-		"textMessage": "我想购买明天火车票"
-	}
+ "fromUserId": "{{userId}}",
+ "session": {
+  "id": "{{sessionId}}"
+ },
+ "message": {
+  "textMessage": "我想购买明天火车票"
+ }
 }
 ```
 
