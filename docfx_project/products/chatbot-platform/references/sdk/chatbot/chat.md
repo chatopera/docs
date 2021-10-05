@@ -36,7 +36,7 @@ Chatbot#command("POST", "/conversation/query", body)
 | faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
 | extras | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory)  中使用                 |
 
-其中，`extras` 用以支持更灵活，自定义的场景。
+其中，`extras` 用以支持更灵活，自定义的场景，使用[参考](https://github.com/chatopera/chatbot-samples/blob/f93e6dca8e06be8d1da84b42a3b5b16e735e11b1/projects/OSSChatBot/conversations/plugin.js#L104)。
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
