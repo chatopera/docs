@@ -15,7 +15,7 @@ footer{
       <strong>Chatopera</strong>
     </div>
     <div class="minitext">
-    使用聊天机器人传递服务 / Deliver Services with Chatbot
+     Deliver Services with Chatbot
     </div>
     <div class="buttons-unit-small">
       <a class="version-link" href="https://bot.chatopera.com">云服务</a><span>|</span><a class="github-link" href= https://status.chatopera.com">更新日志</a>
@@ -33,7 +33,7 @@ footer{
         <i class="glyphicon glyphicon-magnet"></i>
         <section>
           <h2>低代码上线智能对话机器人</h2>
-          <p class="lead">添加问答对语料、标注意图识别数据、编写对话脚本，实现对话逻辑；支持多轮对话，可配置机器人对话模型参数，基于语法、在线标注工具和机器学习识别上下文；BOT 开发者更专注于创作对话技能：发挥想象力和无限创造力！</p>
+          <p class="lead">添加问答对语料、标注意图识别数据、编写对话脚本，实现对话逻辑；支持多轮对话，可配置机器人对话模型参数，基于语法、在线标注工具和机器学习识别上下文；Serverless，BOT 开发者更专注于创作对话技能：发挥想象力和无限创造力！</p>
         </section>
       </div>
     </div>
@@ -58,8 +58,8 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-flash"></i>
         <section>
-          <h2>支持多渠道发布，立即上线</h2>
-          <p class="lead">在营销获客、售后服务和企业协作等方面，应用智能对话机器人，现已支持将机器人立即发布到网页（适配桌面和移动应用）、春松客服、飞书、Facebook ... </p>
+          <h2>使用聊天机器人传递服务</h2>
+          <p class="lead">聊天机器人无处不在，在营销获客、售后服务和企业协作方面，应用智能对话机器人，现已支持多渠道，网页、微信小程序、春松客服、飞书、APP、Facebook ... </p>
         </section>
       </div>
     </div>
