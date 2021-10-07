@@ -15,7 +15,7 @@ footer{
       <strong>Chatopera</strong>
     </div>
     <div class="minitext">
-    聊天即服务 / CHAT AS A SERVICE
+    使用聊天机器人传递服务 / Deliver Services with Chatbot
     </div>
     <div class="buttons-unit-small">
       <a class="version-link" href="https://bot.chatopera.com">云服务</a><span>|</span><a class="github-link" href= https://status.chatopera.com">更新日志</a>
