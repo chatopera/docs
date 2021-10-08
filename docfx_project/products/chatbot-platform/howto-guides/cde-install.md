@@ -10,8 +10,8 @@
 
 | 版本   | 操作系统 | 下载地址                                                                                                                                                                         |
 | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| v2.5.2 | macOS  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.2.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/845362/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.2.dmg) |
-| v2.5.2 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.2.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/845361/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.2.exe)|
+| v2.5.3 | macOS  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.3.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/847097/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.3.dmg) |
+| v2.5.3 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.3.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/847076/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.3.exe))|
 
 <img width="800" src="../../../../images/products/platform/chatopera-cde-download.gif" alt="下载多轮对话设计器"/>
 
@@ -25,7 +25,7 @@
 
 ## 启动应用
 
-- 安装完打开应用程序，如下图：
+* 安装完打开应用程序，如下图：
 
 <table class="image">
 <caption align="bottom">多轮对话设计器打开后页面</caption>
