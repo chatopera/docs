@@ -21,7 +21,7 @@ footer{
       <a class="version-link" href="https://bot.chatopera.com">云服务</a><span>|</span><a class="github-link" href= https://status.chatopera.com">更新日志</a>
     </div>
     <div class="buttons-unit">
-      <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>快速开始</a>
+      <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
       <a href="/products/chatbot-platform/howto-guides/cde-install.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
     </div>
   </div>
@@ -32,8 +32,8 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-magnet"></i>
         <section>
-          <h2>低代码上线智能对话机器人</h2>
-          <p class="lead">添加问答对语料、标注意图识别数据、编写对话脚本，实现对话逻辑；支持多轮对话，可配置机器人对话模型参数，基于语法、在线标注工具和机器学习识别上下文；Serverless，BOT 开发者更专注于创作对话技能：发挥想象力和无限创造力！</p>
+          <h2>快速上线聊天机器人</h2>
+          <p class="lead">低代码、Serverless 上线聊天机器人；支持多轮对话，可配置机器人对话模型参数：开发者更专注于创作对话技能，发挥想象力和无限创造力！</p>
         </section>
       </div>
     </div>
@@ -45,8 +45,8 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-leaf"></i>
         <section>
-          <h2>简单快捷，学习成本低</h2>
-          <p class="lead">在多轮对话设计器中编写 JavaScript 函数，利用内置帮助函数提取自然语言处理信息、发送邮件通知和 HTTP API 调用等；不需要熟悉自然语言处理，不需要后端服务器；更快更低成本上线智能对话机器人服务！</p>
+          <h2>不需要自然语言处理技能</h2>
+          <p class="lead">在多轮对话设计器中编写 JavaScript 函数，利用内置函数库完成自然语言处理任务、发送邮件通知和 HTTP API 集成等。</p>
         </section>
       </div>
     </div>
@@ -58,7 +58,7 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-flash"></i>
         <section>
-          <h2>使用聊天机器人传递服务</h2>
+          <h2>多渠道发布聊天机器人</h2>
           <p class="lead">聊天机器人无处不在，在营销获客、售后服务和企业协作方面，应用智能对话机器人，现已支持多渠道，网页、微信小程序、春松客服、飞书、APP、Facebook ... </p>
         </section>
       </div>
