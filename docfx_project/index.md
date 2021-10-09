@@ -33,7 +33,7 @@ footer{
         <i class="glyphicon glyphicon-magnet"></i>
         <section>
           <h2>快速上线聊天机器人</h2>
-          <p class="lead">低代码、Serverless 上线聊天机器人；支持多轮对话，可配置机器人对话模型参数：开发者更专注于创作对话技能，发挥想象力和无限创造力！</p>
+          <p class="lead">低代码上线聊天机器人；支持配置多轮对话参数：为开发者节省时间，更专注于创作对话技能，发挥想象力和无限创造力！</p>
         </section>
       </div>
     </div>
@@ -45,8 +45,8 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-leaf"></i>
         <section>
-          <h2>不需要自然语言处理技能</h2>
-          <p class="lead">在多轮对话设计器中编写 JavaScript 函数，利用内置函数库完成自然语言处理任务、发送邮件通知和 HTTP API 集成等。</p>
+          <h2>费力小而收效大</h2>
+          <p class="lead">省力！不需要再花时间学习自然语言处理、机器学习技术；利用内置函数库完成自然语言处理任务、发送邮件通知和 HTTP API 集成等；一键更新机器人对话，Serverless 真省心。</p>
         </section>
       </div>
     </div>
@@ -58,7 +58,7 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-flash"></i>
         <section>
-          <h2>多渠道发布聊天机器人</h2>
+          <h2>见效快，多渠道发布</h2>
           <p class="lead">聊天机器人无处不在，在营销获客、售后服务和企业协作方面，应用智能对话机器人，现已支持多渠道，网页、微信小程序、春松客服、飞书、APP、Facebook ... </p>
         </section>
       </div>
