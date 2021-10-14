@@ -10,7 +10,7 @@ Chatbot#command("POST", "/faq/categories", body)
 
 ```JSON
 {
-	"label": "{{categoryText}}"
+ "label": "{{categoryText}}"
 }
 ```
 
@@ -77,8 +77,8 @@ Chatbot#command("", "/faq/categories", body)
 
 ```JSON
 {
-	"value": "{{categoryId}}",
-	"label": "新的名字"
+ "value": "{{categoryId}}",
+ "label": "新的名字"
 }
 ```
 
@@ -187,21 +187,21 @@ Chatbot#command("PUT", "/faq/database/{{docId}}", body)
 
 ```JSON
 {
-	"post": "怎么开通微信支付?",
-	"replyLastUpdate": "{{replyLastUpdate}}",
-	"replies": [
-		{
-			"rtype": "plain",
-			"content": "foo2",
-			"enabled": true
-		},
-		{
-			"rtype": "plain",
-			"content": "bar2",
-			"enabled": true
-		}
-	],
-	"enabled": true
+ "post": "怎么开通微信支付?",
+ "replyLastUpdate": "{{replyLastUpdate}}",
+ "replies": [
+  {
+   "rtype": "plain",
+   "content": "foo2",
+   "enabled": true
+  },
+  {
+   "rtype": "plain",
+   "content": "bar2",
+   "enabled": true
+  }
+ ],
+ "enabled": true
 }
 ```
 
@@ -227,8 +227,8 @@ Chatbot#command("GET", "/faq/database?limit={{limit}}&page={{page}}&q={{q}}")
 
 | key   | type   | default | description                      |
 | ----- | ------ | ------- | -------------------------------- |
-| limit | int    | 1       | 返回最多多少条数据               |
-| page  | int    | 20      | 返回第多少页                     |
+| limit | int    | 20       | 返回最多多少条数据               |
+| page  | int    | 1      | 返回第多少页                     |
 | q     | string | 空      | 问答对匹配时，问题应包含的关键字 |
 
 <h4><font color="purple">result / JSON Object</font></h4>
@@ -273,7 +273,7 @@ Chatbot#command("POST", "/faq/database/{{docId}}/extend", body)
 
 ```JSON
 {
-	"post": "怎样支持微信支付?"
+ "post": "怎样支持微信支付?"
 }
 ```
 
@@ -336,7 +336,7 @@ Chatbot#command("PUT", "/faq/database/{{docId}}/extend/{{extendId}}", body)
 
 ```JSON
 {
-	"post": "怎样支持微信支付?"
+ "post": "怎样支持微信支付?"
 }
 ```
 
