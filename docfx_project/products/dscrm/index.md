@@ -1,6 +1,6 @@
 # 大盛 CRM
 
-<a href="https://crm.chatopera.com" target="_blank">https://crm.chatopera.com</a>
+<a href="<<<<<https://crm.chatopera.com>>>>>" target="_blank">https://crm.chatopera.com</a>
 
 ## 什么是 CRM
 
@@ -59,7 +59,7 @@ CRM 客户关系管理系统能够协助您精简管理过程以节省人力，�
 
 | 网站                       | 用户名 | 密码      |
 | -------------------------- | ------ | --------- |
-| https://crm.chatopera.com/ | admin  | admin1234 |
+| <https://crm.chatopera.com/> | admin  | admin1234 |
 
 提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请联系我们，申请试用安装包。
 
@@ -71,11 +71,7 @@ CRM 客户关系管理系统能够协助您精简管理过程以节省人力，�
 
 ### 售前洽谈
 
-当前，Chatopera 提供大盛 CRM 的定制开发或私有部署服务，有合作意向的企业联系下面邮箱，进行洽谈：
-
-邮箱： <a href="mailto:info@chatopera.com?Subject=[大盛CRM]商业合作洽谈" target="_top">info@chatopera.com</a>，电话 (+86)152-1001-8430。
-
-QQ：551616617
+当前，Chatopera 提供大盛 CRM 的定制开发或私有部署服务，有合作意向的企业[联系我们](https://www.chatopera.com/mail.html)，进行洽谈：
 
 洽谈内容包括：
 
@@ -89,7 +85,9 @@ _对于企业服务，可提供发票。_
 
 ### 售后服务
 
-技术支持和售后服务等，联系邮箱 info@chatopera.com，电话 (+86)158-0121-3126。
+技术支持和售后服务等，[联系我们](https://www.chatopera.com/mail.html)。
+
+[https://www.chatopera.com/mail.html](https://www.chatopera.com/mail.html)
 
 ## 服务水平协议
 
