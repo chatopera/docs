@@ -28,13 +28,13 @@ Chatbot#command("POST", "/conversation/query", body)
 }
 ```
 
-| key                   | type   | required | description                                                                                       |
-| --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
-| fromUserId            | string | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                               |
-| textMessage           | string | &#10004; | 用户输入的对话文字                                                                                |
-| faqBestReplyThreshold | number | &#10008; | 知识库最佳回复， 默认 0.8，知识库建议回复，知识库中置信度超过该值通过返回值`string`和`params`返回 |
-| faqSuggReplyThreshold | number | &#10008; | 知识库建议回复，默认 0.6，知识库中置信度超过该值的问答对通过返回值`faq`属性返回                   |
-| extras | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory)  中使用                 |
+| key                   | type                    | required | description                                                                                                                                                                                                                                                 |
+| --------------------- | ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| fromUserId            | string                  | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                                                                                                                                                                                         |
+| textMessage           | string                  | &#10004; | 用户输入的对话文字                                                                                                                                                                                                                                          |
+| faqBestReplyThreshold | number                  | &#10008; | 知识库最佳回复阈值，知识库中置信度超过该值通过返回值`string`和`params`返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                     |
+| faqSuggReplyThreshold | number                  | &#10008; | 知识库建议回复阈值，知识库中置信度超过该值的问答对通过返回值`faq`属性返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                      |
+| extras                | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory) 中使用 |
 
 其中，`extras` 用以支持更灵活，自定义的场景，使用[参考](https://github.com/chatopera/chatbot-samples/blob/f93e6dca8e06be8d1da84b42a3b5b16e735e11b1/projects/OSSChatBot/conversations/plugin.js#L104)。
 
@@ -52,7 +52,8 @@ Chatbot#command("POST", "/conversation/query", body)
             "provider": "faq",
             "docId": "{{doctId}}",
             "score": 0.3781,
-            "threshold": 0.37
+            "faqBestReplyThreshold": 0.37,
+            "faqSuggReplyThreshold": 0.1
         },
         "botName": "小巴巴",
         "faq": [
@@ -93,7 +94,6 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 |              | docId                | 文档 ID                                                                               |
 |              | post                 | 标准问                                                                                |
 |              | score                | 分数                                                                                  |
-|              | threshold            | 阀值                                                                                  |
 | intent       | 意图识别             | 更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html) |
 |              | intent.name          | 意图名称                                                                              |
 |              | intent.state         | 意图会话状态                                                                          |
