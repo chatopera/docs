@@ -4,9 +4,50 @@
 
 默认的账号 `admin` 是超级管理员，该账号做了特殊处理：可以使用坐席工作台，但是不具备接待访客会话的能力。
 
-只有对系统进行初始化，才能开始处理客户咨询，所以初始化主要是针对坐席管理的，也请先详细阅读 [权限设计](/products/cskefu/accounting.html#%E6%9D%83%E9%99%90%E8%AE%BE%E8%AE%A1) 后继续阅读以下内容。
+只有对系统进行初始化，才能开始处理客户咨询，所以初始化主要是针对坐席管理的，也请先详细阅读 [权限设计](/products/cskefu/accounting.html#%E6%9D%83%E9%99%90%E8%AE%BE%E8%AE%A1)。
+
+在您了解了`组织机构`、`角色`、`账号`和[网页渠道](/products/cskefu/channels/webim.html)的概念后，继续阅读一下内容。
 
 **春松客服刚搭建好后，合理的初始化顺序是：1）创建组织机构；2）创建角色；3）创建账号；4）账号添加到组织机构；5）账号添加到角色。** 在使用过程中，也可以灵活调整。
+
+## 默认的账号信息
+
+在系统部署后，得到默认的：
+
+* 系统超级管理员【admin】, 密码：`admin1234`
+
+* 组织机构【售前坐席A组】, 及其从属
+  * 角色【初级坐席】, 密码：`agent1234`
+  * 坐席账号【张三】，属于角色【初级坐席】
+  * 网站渠道【localhost】, 该聊天控件可以在 *http(s)://CSKEFU_IP:CSKEFU_PORT/testclient.html* 体验
+
+需要强调的是，为了系统安全起见，您可以按照一下顺序删除`网站渠道【localhost】`、`【张三】`、`【初级坐席】` 和 `【售前坐席A组】`。
+
+## 修改默认账号密码
+
+**为了安全起见，在系统部署后，完成密码修改并妥善保管密码。**
+
+### 修改【admin】账号
+
+使用系统超级管理员 admin，点击右上角【个人资料】。
+
+<p align="center">
+<img width="300" src="../../images/products/cskefu/account/screenshot-20211129-161436.png" alt="" />
+</p>
+
+设置新密码并保存。
+
+<p align="center">
+<img width="500" src="../../images/products/cskefu/account/screenshot-20211129-161422.png" alt="" />
+</p>
+
+### 修改【张三】账号
+
+使用系统超级管理员 admin 进入【售前坐席 A 组】，再进入系统管理，账号管理，找到张三，点击`编辑`进行修改。
+
+<p align="center">
+<img width="500" src="../../images/products/cskefu/account/screenshot-20211129-161512.png" alt="" />
+</p>
 
 ## 创建组织机构
 
@@ -42,7 +83,7 @@
 
 ### #463
 
-https://github.com/chatopera/cskefu/issues/463
+<https://github.com/chatopera/cskefu/issues/463>
 
 问题：客户端点开客服每次都进入的排队 ，发现只有刷新后台的页面才会正常接入客服
 <br/>
@@ -51,7 +92,7 @@ https://github.com/chatopera/cskefu/issues/463
 
 ### #378
 
-https://github.com/chatopera/cskefu/issues/378
+<https://github.com/chatopera/cskefu/issues/378>
 
 问题：访客打开网页聊天控件，提示等待
 <br/>
