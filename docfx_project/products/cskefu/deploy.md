@@ -61,7 +61,7 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | -------------------- | ----------- | ------------------------------------------------------------------------------------------------------ |
 | TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录          |
 | EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                              |
-| EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 https://oh-my.cskefu.com/im/xxx.html，默认(off)不展示 |
+| EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 <https://oh-my.cskefu.com/im/xxx.html，默认(off>)不展示 |
 
 ## 管理命令
 
@@ -94,7 +94,7 @@ INFO  c.c.socketio.SocketIOServer - SocketIO server started at port: 8036 [nioEv
 INFO  com.chatopera.cc.Application - Started Application in 35.319 seconds (JVM running for 42.876) [main]
 ```
 
-然后，从浏览器打开 http://YOUR_IP:CC_WEB_PORT/ 访问服务。
+然后，从浏览器打开 <http://YOUR_IP:CC_WEB_PORT/> 访问服务。
 默认管理员账号： admin 密码： admin1234
 
 ### 关闭服务
@@ -108,6 +108,14 @@ docker-compose down
 ```Bash
 docker-compose restart
 ```
+
+## 容器云部署
+
+除了私有部署外，春松客服已经在以下容器云应用商店上架：
+
+[Rainbond 云原生应用管理平台](https://www.rainbond.com/docs/opensource-app/chatopera/?channel=chatopera)：专注于以应用为中心的理念，赋能企业搭建云原生开发云、云原生交付云。
+
+容器云部署是云原生应用交付的最佳实践，简单易用。
 
 ## 下一步
 
