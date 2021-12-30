@@ -70,7 +70,7 @@
 
 检查一台机器的CPU是否支持 AVX 指令集，执行命令：
 
-```
+```bash
 grep flags /proc/cpuinfo |grep avx
 ```
 
@@ -79,11 +79,11 @@ grep flags /proc/cpuinfo |grep avx
 
 ## 质保和升级服务说明
 
-* 每次 Chatopera 机器人平台有新功能，推送更新内容，由企业客户自行决定是否升级，升级操作为 Chatopera 团队远程执行；
+* 每次 Chatopera 机器人平台有新功能，推送更新内容，由企业客户自行决定是否升级，升级操作为 Chatopera 团队远程执行
 
-* 运行过程出现网络延迟大等情况， Chatopera 团队远程联机解决；
+* 运行过程出现网络延迟大等情况， Chatopera 团队远程联机解决
 
-* 备份和恢复等咨询.
+* 备份和恢复等咨询
 
 ## 服务附加条款
 
