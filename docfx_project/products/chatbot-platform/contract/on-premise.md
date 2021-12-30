@@ -86,12 +86,6 @@ grep flags /proc/cpuinfo |grep avx
 
 * 备份和恢复等咨询
 
-## 服务附加条款
-
-Chatopera 机器人平台的私有部署版本，不允许将 Chatopera 上线为 SaaS 服务，即将 Chatopera 机器人管理控制台 Dashboard 发布到互联网，供互联网用户注册使用和计费。
-
-> 在 Chatopera 机器人平台私有部署服务上，机器人平台账户管理使用配置用户名和密码的方式，不支持使用邮箱注册。
-
 ## 采购下单
 
 采购下单、商务合作和售后技术支持等，查看[联系方式（https://www.chatopera.com/mail.html）](https://www.chatopera.com/mail.html)。
@@ -114,6 +108,20 @@ Chatopera 对公银行账户信息：
 * [服务条款](/products/chatbot-platform/contract/terms.html)
 
 * [服务水平协议](/products/chatbot-platform/contract/sla.html)
+
+### 服务附加条款
+
+* 不允许将 Chatopera 私有部署上线为 SaaS 服务
+
+Chatopera 机器人平台的私有部署版本，不允许将 Chatopera 上线为 SaaS 服务，即将 Chatopera 机器人管理控制台 Dashboard 发布到互联网，供互联网用户注册使用和计费。
+
+> 在 Chatopera 机器人平台私有部署服务上，机器人平台账户管理使用配置用户名和密码的方式，不支持使用邮箱注册。
+
+* 私有部署不包括源码
+
+企业客户因为安全、合规审计等要查看源码，Chatopera 提供浏览和查看代码的支持，在 Chatopera 的电脑上，仅供查看，不支持拷贝、录像等形式；查看代码需要额外支付费用，具体办法另行协商。
+
+企业客户在私有部署后，对 Chatopera 服务的源码进行拟协议、反编译，甚至修改源码等，是不被允许的，Chatopera 有权利在此种情况下停止服务并不予退款，如果给 Chatopera 造成经济和商业损失，Chatopera 有权利进行法律维权。
 
 ### 免责声明
 
