@@ -24,8 +24,6 @@
 
 补充说明：
 
-* 交付准备：付款后，由甲方准备好机器，支持连接互联网。Chatopera 团队远程连接，执行部署，部署过程小于 1 天；如果需要现场执行，差旅费用由甲方额外支付；部署环境不支持互联网情况下，每套部署额外支付 RMB 6,000
-
 * 春松客服兼容 Chatopera 机器人平台私有部署实例，使用方法参考[文档](https://docs.chatopera.com/products/cskefu/work-chatbot/install.html)
 
 * 因为没有意图识别模块，专业版中，不支持[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
@@ -106,6 +104,10 @@ Chatopera 对公银行账户信息：
 | Name 账户名 | 北京华夏春松科技有限公司 |
 | Acct. 账户 | 110934004410902 |
 | Tax ID 税号 | 91110108MA01CN41XA |
+
+### 交付准备
+
+付款后，由甲方准备好机器，支持连接互联网。Chatopera 团队远程连接，执行部署，部署过程小于 1 天；如果需要现场执行，差旅费用由甲方额外支付；部署环境不支持互联网情况下，每套部署额外支付 RMB 6,000
 
 ## 法律条款
 
