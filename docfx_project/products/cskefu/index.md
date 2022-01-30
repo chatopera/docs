@@ -133,39 +133,12 @@
 
 查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D)相关内容。
 
-## 商业支持
-
-### 售前洽谈
-
-当前，Chatopera 提供春松客服的定制开发或私有部署服务，有合作意向的企业[联系我们](https://www.chatopera.com/mail.html)。
-
-[https://www.chatopera.com/mail.html](https://www.chatopera.com/mail.html)
-
-洽谈内容包括：
-
-- 开源社区合作
-
-- 概念验证
-
-- 试用申请
-
-- 其他商业合作
-
-_对于企业服务，可提供发票。_
-
-### 售后服务
-
-售后技术支持等，查看[联系方式（https://www.chatopera.com/mail.html）](https://www.chatopera.com/mail.html)。
-
 加入 Chatopera 客户群：
 
 ![](/images/products/platform/Chatopera_企业微信_客户群_qr_explained.png)
 
 在 Chatopera 客户群中也包括其他用户，请不要发送敏感信息。讨论与 Chatopera 产品和服务相关的事宜。
 
-## 服务水平协议
-
-跳转至 <a href="/products/cskefu/sla.html">《春松客服：服务水平协议》& 《春松客服：服务条款》</a> 阅读。
 
 ## 评论
 

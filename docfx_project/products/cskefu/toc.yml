@@ -7,6 +7,8 @@
 - name: 开发者社区
   href: osc/toc.yml
   topicHref: osc/index.md
+- name: 付费服务
+  href: premium.md
 - name: 账号和权限
   href: accounting.md
 - name: 坐席工作台
