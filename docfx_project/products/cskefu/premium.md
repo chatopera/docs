@@ -1,6 +1,6 @@
 # 付费服务
 
-### 售前洽谈
+### 商务合作
 
 当前，Chatopera 提供春松客服的定制开发或私有部署服务，详情查看[Chatopera 产品和服务价格一览表](https://www.chatopera.com/price.html)。
 
