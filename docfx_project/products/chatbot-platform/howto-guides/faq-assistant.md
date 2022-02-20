@@ -34,7 +34,7 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 | 版本 | 操作系统             | 下载                                                                                                                                 |
 | ---- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| v1.4 | Windows 7 或更高版本 | <a href="https://gitee.com/chatopera/cskefu/attach_files/828312/download/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.4.msi" target="_blank">链接</a> |
+| v1.5 | Windows 7 或更高版本 | <a href="https://gitee.com/chatopera/cskefu/attach_files/972109/download/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.5.msi" target="_blank">链接</a> |
 
 在下载后，浏览器可能提示“这种类型的文件可能会损坏您的计算机”或者“Windows Defender SmartScreen 已组织启动一个未识别的应用。”，这时请点击“保留”及“更多信息”进行下一步。
 
