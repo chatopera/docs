@@ -20,6 +20,7 @@
 * 搜索 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助
 * 加入 [Chatopera 用户群](contract/tech-support.md)，从社区获得支持
 * 提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
+* 产品[更新日志](https://status.chatopera.com)
 
 
 ## 文档体系
