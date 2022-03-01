@@ -18,7 +18,7 @@ footer{
      Deliver contact center for enterprises
     </div>
     <div class="buttons-unit-small">
-      <a class="version-link" href="https://bot.chatopera.com">Chatopera 云服务</a><span>|</span><a class="github-link" href="https://status.chatopera.com">Chatopera 云服务更新日志</a>
+      <a class="version-link" href="https://bot.chatopera.com">使用 Chatopera 云服务上线智能对话机器人</a>
     </div>
     <div class="buttons-unit">
       <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
