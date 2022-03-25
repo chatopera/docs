@@ -1,5 +1,7 @@
 # IDE 使用之 Eclipse IDE
 
+<< 回到[上一步](./engineering.md#初始化系统)
+
 按照 `Eclipse` 提示，导入 `contact-center/app` 目录。
 
 ## 生成项目描述文件

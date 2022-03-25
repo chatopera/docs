@@ -1,5 +1,8 @@
 # IDE 使用之 IntelliJ IDEA
 
+<< 回到[上一步](./engineering.md#初始化系统)
+
+春松客服团队使用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) 作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
 
 ## 生成项目描述文件
 

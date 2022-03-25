@@ -67,7 +67,7 @@
 
 克隆后，新的项目地址类似如下：
 
-```
+```Bash
 https://github.com/${YOUR_SPACE}/cskefu  # ${YOUR_SPACE} 代表您的空间名称
 ```
 
@@ -85,7 +85,7 @@ git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu.osc
 
 Upstream 指春松客服 OSC 分支，就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
 
-```
+```Bash
 cd cskefu.osc
 git remote add upstream git@github.com:chatopera/cskefu.git
 ```
@@ -97,7 +97,94 @@ git remote add upstream git@github.com:chatopera/cskefu.git
     <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
 
-## 数据库
+
+## 文件目录介绍
+
+<p align="center">
+<img width="200" src="../../../images/products/cosin/g9.png" alt="" />
+</p>
+
+| 目录     | 说明                         |
+| -------- | ---------------------------- |
+| `_m2`    | 用于 Dockerfile 中，构建镜像 |
+| `admin`  | 各种脚本                     |
+| `app`    | 源代码                       |
+| `config` | 数据库文件                   |
+| `data`   | 数据库数据                   |
+| `logs`   | 日志                         |
+
+春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
+
+## 配置文件
+
+春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
+
+```路径
+cskefu.osc/contact-center/app/src/main/resources/application.properties
+```
+
+数据库（后文介绍搭建数据库）连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：
+
+1）使用 application-dev.properties；
+
+2）使用环境变量。
+
+### 使用 Profile 文件覆盖默认配置
+
+使用 application-dev.properties 覆盖默认配置，有两种方式修改默认的配置：一种是用环境变量+properties 文件；另外一种是直接使用环境变量。
+
+- 设置环境变量
+
+```环境变量
+SPRING_PROFILES_ACTIVE=dev
+```
+
+- 创建 application-dev.properties
+
+```Bash
+touch contact-center/app/src/main/resources/application-dev.properties
+```
+
+内容如下：
+
+```文本
+# MySQL
+spring.datasource.url=jdbc:mysql://192.168.2.217:7111/cosinee?useUnicode=true&characterEncoding=UTF-8
+spring.datasource.username=root
+spring.datasource.password=123456
+
+# Redis服务器连接端口
+spring.redis.host=localhost
+spring.redis.port=6379
+# Redis服务器连接密码（默认为空）
+spring.redis.password=
+
+# ActiveMQ
+spring.activemq.broker-url=tcp://192.168.2.217:9007
+spring.activemq.user=admin
+spring.activemq.password=123456
+
+# Elasticsearch
+spring.data.elasticsearch.cluster-nodes=192.168.2.217:7201
+```
+
+**此处可以覆盖 application.properties 中的任何值。**
+
+### 环境变量
+
+`application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
+
+```环境变量
+SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=123456
+```
+
+并且，环境变量的值优先级高于 `properties` 文件。
+
+> 提示：在生产环境部署，建议使用环境变量方式配置。
+
+## 数据库搭建
 
 在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml)，用于快速准备开发环境。
 
@@ -108,7 +195,7 @@ git remote add upstream git@github.com:chatopera/cskefu.git
 
 ### Elasticsearch
 
-春松客服依赖 Elasticsearch 服务，如果没有 Elasticsearch 服务，可以用下面的方式创建。
+春松客服依赖 Elasticsearch 服务，用下面的方式创建。
 
 ```Bash
 cd cskefu.osc
@@ -193,102 +280,7 @@ Redis 启动后就可以，不需要其他操作。
 插件的安装和源码参考：[https://github.com/chatopera/cskefu/tree/osc/public/plugins
 ](https://github.com/chatopera/cskefu/tree/osc/public/plugins)
 
-## 生成项目描述
-
-文件目录介绍
-
-<p align="center">
-<img width="200" src="../../../images/products/cosin/g9.png" alt="" />
-</p>
-
-| 目录     | 说明                         |
-| -------- | ---------------------------- |
-| `_m2`    | 用于 Dockerfile 中，构建镜像 |
-| `admin`  | 各种脚本                     |
-| `app`    | 源代码                       |
-| `config` | 数据库文件                   |
-| `data`   | 数据库数据                   |
-| `logs`   | 日志                         |
-
-春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
-
-春松客服团队使用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) 作为集成开发环境，它因为更加智能而大幅提升了开发者的工作效率，我们也强烈推荐 Java 开发者使用这个工具。本文使用`IntelliJ IDEA`介绍搭建过程。
-
-```Bash
-cd cskefu.osc
-./admin/gen-idea.sh
-```
-
-## 配置文件
-
-春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
-
-```路径
-cskefu.osc/contact-center/app/src/main/resources/application.properties
-```
-
-数据库连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：
-
-1）使用 application-dev.properties；
-
-2）使用环境变量。
-
-### 使用 Profile 文件覆盖默认配置
-
-使用 application-dev.properties 覆盖默认配置，有两种方式修改默认的配置：一种是用环境变量+properties 文件；另外一种是直接使用环境变量。
-
-- 设置环境变量
-
-```环境变量
-SPRING_PROFILES_ACTIVE=dev
-```
-
-- 创建 application-dev.properties
-
-```Bash
-touch contact-center/app/src/main/resources/application-dev.properties
-```
-
-内容如下：
-
-```文本
-# MySQL
-spring.datasource.url=jdbc:mysql://192.168.2.217:7111/cosinee?useUnicode=true&characterEncoding=UTF-8
-spring.datasource.username=root
-spring.datasource.password=123456
-
-# Redis服务器连接端口
-spring.redis.host=localhost
-spring.redis.port=6379
-# Redis服务器连接密码（默认为空）
-spring.redis.password=
-
-# ActiveMQ
-spring.activemq.broker-url=tcp://192.168.2.217:9007
-spring.activemq.user=admin
-spring.activemq.password=123456
-
-# Elasticsearch
-spring.data.elasticsearch.cluster-nodes=192.168.2.217:7201
-```
-
-**此处可以覆盖 application.properties 中的任何值。**
-
-### 环境变量
-
-`application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
-
-```环境变量
-SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
-SPRING_DATASOURCE_USERNAME=root
-SPRING_DATASOURCE_PASSWORD=123456
-```
-
-并且，环境变量的值优先级高于 `properties` 文件。
-
-> 提示：在生产环境部署，建议使用环境变量方式配置。
-
-## 配置开发环境
+## 配置 IDE
 
 春松客服开发支持的 IDE，包括所有的支持 Spring Boot 的 IDE，以下仅提供部分工具的文档。
 
