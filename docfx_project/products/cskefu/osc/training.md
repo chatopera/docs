@@ -178,16 +178,6 @@
   </tr>
 </table>
 
-## 寻找开发者
-
-寻找开发者合作智能客服项目，社区共建，携手共赢！
-
-* 组织或个人，在春松客服主页展示为认证开发者
-* 春松客服官方推荐项目机会
-* 专访并通过官方渠道曝光
-
-填写申请：[http://chatopera.mikecrm.com/tMUtj1z](http://chatopera.mikecrm.com/tMUtj1z)
-
 ## 评论
 
 <script src="https://utteranc.es/client.js"

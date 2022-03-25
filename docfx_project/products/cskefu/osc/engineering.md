@@ -45,18 +45,66 @@
 
 如配置后不能下载，请参考[配置文件](https://github.com/chatopera/cskefu/issues/137)。
 
-## 下载代码
+## 克隆项目
+
+### 准备 GitHub 账号
+
+注册[地址](https://github.com/signup?user_email=&source=form-home-signup)，该注册依赖于邮箱。注册完成后，进行登录。
+
+添加 SSH Key:
+
+* 在 Terminal 命令行终端（Git Bash, Windows）执行命令 `ssh-keygen`，得到文件 `~/.ssh/id_rsa.pub` 并复制其文本内容到粘贴板。
+
+* 打开 [SSH Keys 管理地址](https://github.com/settings/keys)，点击【New SSH Key】，使用粘贴板内容创建一个 SSH KEY。
+
+### Fork 源码
+
+在浏览器中，打开[春松客服项目地址](https://github.com/chatopera/cskefu)，在右上角，找到【Fork】按钮，点击【Fork】，根据提示选择空间，该项目源码将被复制到该空间。
+
+<p align="center">
+    <img width="500" src="../../../images/products/cskefu/screenshot-20220325-142302.png" alt="" />
+</p>
+
+克隆后，新的项目地址类似如下：
+
+```
+https://github.com/${YOUR_SPACE}/cskefu  # ${YOUR_SPACE} 代表您的空间名称
+```
+
+### 下载源码
+
+克隆项目，就是将上面新建的项目的源码，下载到计算机，使用命令行终端执行：
 
 ```Bash
-git clone https://github.com/chatopera/cskefu.git cskefu.osc
-# 默认为 osc 分支
+git clone https://github.com/${YOUR_SPACE}/cskefu.git cskefu.osc
+# 默认为 osc 分支，OSC 代表 OpenSource Community
+# 以下，使用 cskefu.osc 代表源码所在路径
 ```
+
+### 添加 Upstream
+
+Upstream 指春松客服 OSC 分支，就是春松客服的项目库核心分支。添加 Upstream 的目的，是之后从春松客服项目拉取更新代码。
+
+```
+cd cskefu.osc
+git remote add upstream git@github.com:chatopera/cskefu.git
+```
+
+完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。
+
+<p align="center">
+    <b>点赞春松客服</b>
+    <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
+</p>
 
 ## 数据库
 
 在源码中，默认使用 docker-compose 启动服务的描述文件 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml)，用于快速准备开发环境。
 
-为了减少开发环境搭建可能遇到的问题，请使用 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
+
+
+另外，以下几个数据库服务可以运行在不同的计算机，以节省开发机器的资源；如果使用了不同的计算机运行，以下也给出了如何修改配置文件。
 
 ### Elasticsearch
 
@@ -242,51 +290,12 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 ## 配置开发环境
 
-按照 `IDEA` 提示，导入 `contact-center/app` 目录。对于 `Eclipse` 或其它 IDE 工具，春松客服团队不提供搭建文档。
+春松客服开发支持的 IDE，包括所有的支持 Spring Boot 的 IDE，以下仅提供部分工具的文档。
 
-### 配置执行及调试
+* [Intelij IDEA](./ide_intelij_idea.md)
+* [Eclipse IDE](./ide_eclipse.md)
 
-配置运行方式为 Spring，应用为 `com.chatopera.cc.app.Application`
-
-<p align="center">
-<img width="800" src="../../../images/products/cosin/g10.png" alt="" />
-</p>
-
-### 配置环境变量
-
-<p align="center">
-<img width="400" src="../../../images/products/cosin/g11.png" alt="" />
-</p>
-
-### 运行及调试
-
-<p align="center">
-<img width="500" src="../../../images/products/cosin/g12.png" alt="" />
-</p>
-
-点击"执行"或"调试"，服务启动，然后访问 http://localhost:8035 确定服务正常运行了。
-
-<p align="center">
-<img width="500" src="../../../images/products/cosin/g13.png" alt="" />
-</p>
-
-**用户名**：admin **密码**：admin1234
-
-### 热更新
-
-在开发过程中，修改了代码，更新正在以 **“调试”** 模式运行服务，点击"执行旁边的锤子"。
-
-<p align="center">
-<img width="500" src="../../../images/products/cosin/g14.png" alt="" />
-</p>
-
-更新成功后，提示
-
-<p align="center">
-<img width="300" src="../../../images/products/cosin/g15.png" alt="" />
-</p>
-
-另外， **“调试”** 模式下，也支持断点调试。
+配置完成后，需要继续完成以下内容。
 
 ## 初始化系统
 
@@ -371,15 +380,6 @@ HTML 示例：
 </html>
 ```
 
-## 寻找开发者
-
-寻找开发者合作智能客服项目，社区共建，携手共赢！
-
-- 组织或个人，在春松客服主页展示为认证开发者
-- 春松客服官方推荐项目机会
-- 专访并通过官方渠道曝光
-
-填写申请：[http://chatopera.mikecrm.com/tMUtj1z](http://chatopera.mikecrm.com/tMUtj1z)
 
 ## 接下来
 
