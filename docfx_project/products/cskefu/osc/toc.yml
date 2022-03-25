@@ -2,6 +2,8 @@
   href: training.md
 - name: "开发环境搭建"
   href: engineering.md
+- name: "提交代码"
+  href: contribution.md
 - name: "系统维护"
   href: maintainence.md
 - name: "REST APIs"

@@ -62,7 +62,7 @@ cd contact-center
 
 ## 下一步
 
-回到[开发环境搭建](./engineering.md)完成后续步骤。
+回到[开发环境搭建](./engineering.md#初始化系统)完成后续步骤。
 
 
 ## 评论
