@@ -40,7 +40,7 @@
 Git 用于版本管理，使用 Git 时，一个文件有三个可能存在的地方：indexed（索引区），staged（暂存区） 和 workarea（工作区）。indexed 文件就是被索引了（提交了）；staged 就是被临时的保存了（暂未提交，保护一下）；workarea，在编辑器中打开的这份。
 
 <p align="center">
-    <img width="700" src="../../../images/products/cskefu/git-scm-intro.png" alt="" />
+    <img width="450" src="../../../images/products/cskefu/git-scm-intro.png" alt="" />
 </p>
 
 上图中 master 所在区就是 indexed。
