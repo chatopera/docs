@@ -4,16 +4,17 @@
 
 ## 依赖
 
-开发环境依赖：
+开发环境依赖，提前准备好：
 
 - 操作系统 Windows 或 Mac OS
 - [Git](https://git-scm.com/)
 - [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3+](https://maven.apache.org/)
-- [MySQL 管理客户端 Navicat for MySQL](https://www.navicat.com/en/products/navicat-for-mysql)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [Docker 18+](https://www.docker.com/)
 - [Docker compose 1.22+ ](https://docs.docker.com/compose/install/)
+
+以上安装，也涉及环境变量 PATH 配置，比如 `java`, `mvn` 和 `git` 等在命令行终端中可以使用，在不同的依赖安装文档中也有。
+在 Windows 上，命令行终端使用 Git Bash，安装 Git 时会默认包括。
 
 提示：
 
@@ -411,9 +412,7 @@ HTML 示例：
 
 ## 接下来
 
-[《春松客服博客专栏》](https://blog.csdn.net/watson243671/category_9915986.html)提供更多开发技能介绍，敬请关注，🔥 火热更新中 ...
-
-- [春松客服里的机器人客服 | 春松客服](https://blog.csdn.net/samurais/article/details/103681908)
+- [如何为开源客服系统春松客服贡献代码 | 春松客服](./contribution.md)
 
 - [春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
 

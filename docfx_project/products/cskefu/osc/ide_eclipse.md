@@ -16,6 +16,7 @@ cd contact-center
 
 按照 `Eclipse` 提示，导入 `contact-center/app` 目录。
 
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 ## 下一步
 
