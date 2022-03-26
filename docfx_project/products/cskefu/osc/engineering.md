@@ -115,7 +115,7 @@ git remote add upstream git@github.com:chatopera/cskefu.git
 
 春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
 
-## 配置文件
+## 配置启动参数
 
 春松客服是基于 [Spring Boot Release 1.5.22.RELEASE](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot/1.5.22.RELEASE) 开发，配置文件是
 
@@ -123,15 +123,15 @@ git remote add upstream git@github.com:chatopera/cskefu.git
 cskefu.osc/contact-center/app/src/main/resources/application.properties
 ```
 
-数据库（后文介绍搭建数据库）连接等其他信息，参考该文件，如果需要覆盖这些值，在开发过程中，很常见，可以有以下两个方式：
+数据库（后文介绍搭建数据库）连接等其他信息，参考该文件。使用自定义值覆盖默认值，有以下两个方式：
 
 1）使用 application-dev.properties；
 
 2）使用环境变量。
 
-### 使用 Profile 文件覆盖默认配置
+### 使用 Profile 文件
 
-使用 application-dev.properties 覆盖默认配置，有两种方式修改默认的配置：一种是用环境变量+properties 文件；另外一种是直接使用环境变量。
+使用 application-dev.properties 覆盖默认配置。
 
 - 设置环境变量
 
@@ -172,7 +172,7 @@ spring.data.elasticsearch.cluster-nodes=192.168.2.217:7201
 
 ### 环境变量
 
-`application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 application.properties 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
+`application.properties` 中的每一项都可以用环境变量配置，通过环境变量方式映射配置信息，实现覆盖 `application.properties` 中等配置，其映射方式为 `propery` 的键转为大写同时`.`和`-`转为`_`。部分环境变量：
 
 ```环境变量
 SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/contactcenter?useUnicode=true&characterEncoding=UTF-8
@@ -180,9 +180,11 @@ SPRING_DATASOURCE_USERNAME=root
 SPRING_DATASOURCE_PASSWORD=123456
 ```
 
-并且，环境变量的值优先级高于 `properties` 文件。
+比如，`SPRING_DATASOURCE_URL` 就是对应了 `properties` 文件中的 `spring.datasource.url`。同时，环境变量的值优先级高于 `properties` 文件。
 
 > 提示：在生产环境部署，建议使用环境变量方式配置。
+
+春松客服 Docker 容器的配置，使用了环境变量的方式，参考文件[docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml)。
 
 ## 数据库搭建
 
@@ -190,8 +192,14 @@ SPRING_DATASOURCE_PASSWORD=123456
 
 为了减少开发环境搭建可能遇到的问题，使用 [docker-compose.yml](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) 中的 docker 镜像启动以下服务，尤其是春松客服对于一些软件的版本有要求，我们强烈建议开发者在入门春松客服开发的阶段，安装 docker 和 docker-compose，并按照下面的步骤配置开发环境。
 
+这几个数据库，可以用一行命令启动：
 
-另外，以下几个数据库服务可以运行在不同的计算机，以节省开发机器的资源；如果使用了不同的计算机运行，以下也给出了如何修改配置文件。
+```bash
+cd cskefu.osc
+docker-compose up -d mysql elasticsearch activemq redis
+```
+
+另外，以下几个数据库服务可以运行在不同的计算机，以节省开发机器的资源；如果使用了不同的计算机运行。以下也给出如何逐个启动，如何修改配置文件。
 
 ### Elasticsearch
 
@@ -209,7 +217,9 @@ spring.data.elasticsearch.cluster-name=elasticsearch
 spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
 ```
 
-将 cluster-nodes 配置为开发服务地址，默认为"YOUR_IP:9300"
+将 cluster-nodes 配置为开发服务地址，默认为"YOUR_IP:9300"。
+
+Elasticsearch 的数据浏览和管理，使用 [elasticsearch-head](https://github.com/mobz/elasticsearch-head)。
 
 ### ActiveMQ
 
@@ -232,6 +242,14 @@ spring.activemq.pool.max-connections=50
 
 将以上值修改为 ActiveMQ 的实际地址和密码。
 
+ActiveMQ 管理工具，使用浏览器打开，http://YOUR_ACTIVEMQ_IP:PORT。PORT 默认是 `8051`，即[环境变量](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
+
+<p align="center">
+    <img width="500" src="../../../images/products/cskefu/screenshot-20220326-105115.png" alt="" />
+</p>
+
+点击【Manage ActiveMQ broker】,用户名 admin, 密码 admin。
+
 ### MySQL
 
 春松客服依赖 MySQL 服务，如果没有 MySQL 服务，可以用下面的方式创建。
@@ -243,17 +261,29 @@ docker-compose up -d mysql
 
 MySQL 容器启动后，还需要创建春松客服数据库，该过程是在数据库上执行 SQL 文件([`contact-center/config/sql/cosinee-MySQL-slim.sql`](https://github.com/chatopera/cskefu/blob/osc/contact-center/config/sql/cosinee-MySQL-slim.sql))完成的。
 
-连接 MySQL 服务
+#### 连接 MySQL 服务
+
+
+安装 DBMS 管理工具 MySQL Workbench，下载地址：
+
+https://dev.mysql.com/downloads/workbench/
 
 <p align="center">
-<img width="500" src="../../../images/products/cosin/g7.png" alt="" />
+    <img width="500" src="../../../images/products/cskefu/screenshot-20220326-103030.png" alt="" />
 </p>
 
-使用`docker-compose`启动的服务
+在 Windows 上，MySQL Workbench 依赖 [Visual C++ Redistributable](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)，需要提前安装。
+
+
+使用`docker-compose`启动的 MySQL 服务，其连接认证信息如下：
 
 | IP        | 用户名 | 密码   | 端口 |
 | --------- | ------ | ------ | ---- |
 | localhost | root   | 123456 | 8037 |
+
+<p align="center">
+    <img width="500" src="../../../images/products/cskefu/screenshot-20220326-103030.png" alt="" />
+</p>
 
 #### MySQL 数据字典
 
@@ -262,6 +292,10 @@ MySQL 容器启动后，还需要创建春松客服数据库，该过程是在�
 <p align="center">
 <img width="600" src="../../../images/products/cosin/g8.png" alt="" />
 </p>
+
+#### SQL 快速入门
+
+参考《春松客服大讲堂》之[春松客服开发基础知识 SQL 快速入门](https://www.bilibili.com/video/BV1ah411s7ak?p=1)。
 
 ### Redis
 
@@ -272,6 +306,8 @@ docker-compose up -d redis
 ```
 
 Redis 启动后就可以，不需要其他操作。
+
+Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://github.com/qishibo/AnotherRedisDesktopManager/releases), [medis for macOS](https://github.com/luin/medis/releases)。
 
 ## 安装春松客服插件
 

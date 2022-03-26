@@ -28,24 +28,14 @@ Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watso
     <img width="800" src="../../../images/products/chatopera_love_os.png" alt="Chatopera拥抱开源" />
 </p>
 
-## 为我点赞
+## 为春松客服点赞
 
-您的关注、鼓励是我们工作动力之一，请大家给春松客服点赞 👍！
+您的关注、鼓励是开源项目的工作动力之一，请给春松客服点赞 👍！
 
 <p align="center">
     <b>点赞春松客服</b>
     <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
-
-## 寻找开发者
-
-寻找开发者合作智能客服项目，社区共建，携手共赢！
-
-- 组织或个人，在春松客服主页展示为认证开发者
-- 春松客服官方推荐项目机会
-- 专访并通过官方渠道曝光
-
-填写申请：[http://chatopera.mikecrm.com/tMUtj1z](http://chatopera.mikecrm.com/tMUtj1z)
 
 ## 评论
 
