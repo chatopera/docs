@@ -1,6 +1,6 @@
 # IDE 使用之 Eclipse IDE
 
-<< 回到[上一步](./engineering.md#初始化系统)
+<< 回到[上一步：开发环境搭建](./engineering.md#初始化系统)
 
 ## 安装和下载 Eclipse
 
@@ -20,7 +20,7 @@
 双击安装包，按照提示进行安装。
 
 <p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_15-53-32.png" alt="" />
+        <img width="500" src="../../../images/products/cskefu/image2022-3-26_15-53-32.png" alt="" />
 </p>
 
 ### 安装 STS
@@ -108,7 +108,7 @@ cd cskefu.osc/contact-center
 然后，添加 JDK 8 路径。
 
 <p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-10-31.png" alt="" />
+        <img width="500" src="../../../images/products/cskefu/image2022-3-26_16-10-31.png" alt="" />
 </p>
 
 点击 【Finish】。确认依赖 JDK。
@@ -154,20 +154,22 @@ cd cskefu.osc/contact-center
         <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-28-16.png" alt="" />
 </p>
 
-
 ### 调试项目
 
 在项目提示： c.c.socketio.SocketIOServer - SocketIO server started at port，代表项目启动成功。
 
 #### 断点调试的基本知识
 
-第一步： 设置断点：在该行最前面边框双击  或快捷键：Ctrl+Shift+B  
+第一步： 设置断点：在该行最前面边框双击  或快捷键：Ctrl + Shift + B  
 
 第二步： Debug 运行启动  
 
-第三部： 运行到断点后： 使用快捷键F5,F6，F7单步执行。 F5：Step into/跳入方法/进入该行的函数内部 F6：Step over/向下逐行调试/一行一行执行 F7：Step return/跳出方法/退出当前的函数
+第三部： 运行到断点后，使用快捷键F5，F6，F7单步执行。
 
-F8：直接跳转到下一个断点
+* F5 - Step into/跳入方法/进入该行的函数内部； 
+* F6 - Step over/向下逐行调试/一行一行执行； 
+* F7 - Step return/跳出方法/退出当前的函数；
+* F8 - 直接跳转到下一个断点。
 
 #### 更多相关内容参考网络文章
 
@@ -183,9 +185,7 @@ F8：直接跳转到下一个断点
 
 解决办法：
 
-* 修改 Compiler 验证提示
-
-https://blog.csdn.net/tower888/article/details/106220494
+* 修改 Compiler 验证提示，[详细介绍](https://blog.csdn.net/tower888/article/details/106220494)
 
 <p align="center">
         <img width="800" src="../../../images/products/cskefu/image2021-12-4_16-21-52.png" alt="" />
@@ -195,15 +195,15 @@ https://blog.csdn.net/tower888/article/details/106220494
 
 ### 修正中文显示
 
-解决办法：https://blog.csdn.net/timo1160139211/article/details/74908266
+解决办法[详细介绍](https://blog.csdn.net/timo1160139211/article/details/74908266)。
 
 <p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2021-12-4_16-36-7.png" alt="" />
+        <img width="400" src="../../../images/products/cskefu/image2021-12-4_16-36-7.png" alt="" />
 </p>
 
 ## 下一步
 
-回到[开发环境搭建](./engineering.md#初始化系统)完成后续步骤。
+回到[上一步：开发环境搭建](./engineering.md#初始化系统)完成后续步骤。
 
 ## 评论
 
