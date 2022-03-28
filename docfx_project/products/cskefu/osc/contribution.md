@@ -187,6 +187,8 @@ git branch -d issue7
 
 春松客服是最流行的开源客服系统，现在已经在企业部署超过 17,000 次，为数百政府机构、事业单位和企业上线智能客服系统，现在您是春松客服的开发者一员了！
 
+春松客服会尽快的将您添加到[贡献者列表](https://github.com/chatopera/cskefu#%E8%B4%A1%E7%8C%AE%E8%80%85%E5%88%97%E8%A1%A8-)!
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
