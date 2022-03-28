@@ -155,6 +155,38 @@ https://github.com/hailiang-wang/cskefu/pull/new/issue7
 
 发布代码到春松客服是值得骄傲的事情，您的变更在合并的路上！
 
+## PR 被 Merge 后
+
+PR 被合并后，是指代码进入到了春松客服的[OSC 分支](https://github.com/chatopera/cskefu/tree/osc)，一个被 Merge 的 PR 状态显示为【Merged】，比如 [PR 666](https://github.com/chatopera/cskefu/pull/666)。
+
+
+<p align="center">
+    <img width="700" src="../../../images/products/cskefu/screenshot-20220328-095049.png" alt="" />
+</p>
+
+现在，Upstream 已经有了最新的代码，但是您的远程仓库还没有最新的代码，也就是您的 OSC 分支还没有更新，此时需要做下面的操作。
+
+### 在本地 Git 库同步 Upstream
+
+```bash
+cd cskefu.osc
+git checkout osc   # 如果此时在 local 有变更，不是 clean 的状态，使用 git stash 缓存，或使用 git clean -f . 放弃
+git pull upstream osc
+git push origin osc # 推送到您的远程 Git 仓库
+```
+
+### 在本地删除临时的 Branch
+
+假如现在工单的工作已经完成，那么可以删除本地的临时的分支。
+
+```bash
+git branch -d issue7
+```
+
+## 自豪的
+
+春松客服是最流行的开源客服系统，现在已经在企业部署超过 17,000 次，为数百政府机构、事业单位和企业上线智能客服系统，现在您是春松客服的开发者一员了！
+
 ## 评论
 
 <script src="https://utteranc.es/client.js"
