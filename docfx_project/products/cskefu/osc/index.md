@@ -19,6 +19,12 @@
 
 在项目地址中，有详细的入门说明，如果使用遇到问题，第一时间[阅读文档](/products/cskefu/index.html)，第二时间搜索[历史 Issues](https://github.com/chatopera/cskefu/issues)，如果无法解决，加入社区提问。
 
+## 邮件列表
+
+春松客服邮件列表通过邮件服务沟通，跟踪最新的开发动态：
+
+[https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev](https://lists.cskefu.com/cgi-bin/mailman/listinfo/dev)
+
 ## 博客专栏
 
 Chatopera 博客频道[**《春松客服专栏》**](https://blog.csdn.net/watson243671/category_9915986.html)火热 🔥 更新中，订阅关注，及时获得最新的信息。
