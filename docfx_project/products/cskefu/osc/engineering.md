@@ -330,6 +330,12 @@ Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://git
 
 启动调试服务，如果要定制化客服接待访客的代码，需要按照[系统初始化](/products/cskefu/initialization.html)文档做更多配置。
 
+## 春松客服代码规范
+
+为提升合作和可维护性，共同做好开源客服系统，修改春松客服代码，需要符合一定规范，这是对春松客服开源社区开发者的一致要求。
+
+配置好开发环境后，阅读[《春松客服代码规范》](https://github.com/chatopera/cskefu/blob/osc/CODE_OF_CONDUCT.md)。
+
 ## 模拟访客端测试
 
 介绍如何测试网页端访客程序，假设服务是自动在本地 `http://localhost:8035` 端口。
