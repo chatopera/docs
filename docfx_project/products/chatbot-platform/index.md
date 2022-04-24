@@ -10,7 +10,6 @@
 * 浏览 [Chatopera 云服务概述](overview.md)
 * 完成 [新手任务：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)
 
-
 ## 帮助
 <!-- Getting Help -->
 
@@ -18,10 +17,9 @@
 
 * 浏览 [FAQ 常见问题](references/faq.md) 文档中获得常见问题的答案
 * 搜索 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助
-* 加入 [Chatopera 用户群](contract/tech-support.md)，从社区获得支持
+* 联系 [Chatopera 技术支持](https://www.chatopera.com/mail.html)，从官方获得服务
 * 提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
 * 产品[更新日志](https://status.chatopera.com)
-
 
 ## 文档体系
 <!-- How the documentation is organized  -->

@@ -1,5 +1,3 @@
-- name: 技术支持
-  href: tech-support.md
 - name: 计费及发票
   href: billing.md
 - name: 私有部署

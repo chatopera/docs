@@ -4,10 +4,10 @@
   href: deploy.md
 - name: 系统初始化
   href: initialization.md
-- name: 开发者社区
+- name: 开源社区
   href: osc/toc.yml
   topicHref: osc/index.md
-- name: 付费服务
+- name: 商业服务
   href: https://www.chatopera.com/price.html
 - name: 账号和权限
   href: accounting.md

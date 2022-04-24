@@ -35,10 +35,6 @@
 <img width="800" src="../../images/products/user-service-prod.png" alt="多渠道智能客服" />
 </p>
 
-### 开放源码
-
-免费模块使用 Apache2.0 授权证书发布，商业友好。
-
 ### 部署方便
 
 以容器化基础，安装使用 Docker 编排，卸载等非常简单。
@@ -50,6 +46,10 @@
 <p align="center">
 <img width="800" src="../../images/products/solution-1.png" alt="全解决方案" />
 </p>
+
+### 开放源码
+
+基础模块使用 Apache2.0 授权证书开源，商业友好。
 
 ## 产品演示
 
@@ -132,13 +132,6 @@
 ## 更新日志
 
 查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D)相关内容。
-
-加入春松客服开源社区群：
-
-![](/images/products/platform/cskefu_opensource_community_wx_qr.png)
-
-请不要发送敏感信息；讨论与春松客服和 Chatopera 产品和服务相关的事宜。
-
 
 ## 评论
 
