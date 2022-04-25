@@ -10,26 +10,33 @@
 
 依赖 `docfx`，在没有安装`docfx`的操作系统上，提供 docker 镜像支持编写。
 
-当前基于版本：[https://github.com/dotnet/docfx/releases/tag/v2.56.7](https://github.com/dotnet/docfx/releases/tag/v2.56.7)
-
+当前基于版本：[https://github.com/dotnet/docfx/releases/tag/v2.59.2](https://github.com/dotnet/docfx/releases/tag/v2.59.2)
 
 ## 安装 Docfx
 
-
 如果已经安装 docfx 二进制，再安装一下 Node.js。
 
-### HTTP Server
+### Dev
+
+Liveload serving.
 
 ```
-./admin/serve.sh
+./admin/dev.sh
 ```
 
-### 编译
-
+### Build
 
 然后，自动 live load，使用 `./admin/live.sh`。
 
 原理：基于 Nodemon 自动检测变动，然后构建。
+
+### Serve
+
+仅仅是 Serve.
+
+```
+./admin/serve.sh
+```
 
 ## 使用 Docker
 
@@ -84,7 +91,7 @@ open https://0.0.0.0:8027
 
 ## 项目基于
 
-https://github.com/chatopera/docfx-get-started
+<https://github.com/chatopera/docfx-get-started>
 
 ## 发布
 
@@ -102,7 +109,7 @@ docker run -it --rm -p 8000:80 chatopera/docs:latest
 
 ## 工具
 
-https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html
+<https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html>
 
 ## 撰写文档
 

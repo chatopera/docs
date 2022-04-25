@@ -19,4 +19,7 @@ HOST_IP=${HOST_IP:-localhost}
 
 set -x
 pwd
-docker run -it --rm --network="host" -e HOST_IP=$HOST_IP -p 8027:8027 -v $PWD:/work chatopera/docfx:2.45 "/work/admin/serve.sh"
+docker run -it --rm --network="host" -e HOST_IP=$HOST_IP -p 8027:8027 \
+    --user root \
+    --entrypoint /bin/bash \
+    -v $PWD:/work chatopera/docfx:2.59 "/work/admin/serve.sh"

@@ -4,7 +4,7 @@
 
 <p align="center">
 <b></b></br>
-<img width="800" src="" alt="春松客服" />
+<img width="800" src="../../images/products/cosin/g2.jpg" alt="春松客服" />
 </p>
 
 春松客服是拥有坐席管理、渠道管理、机器人客服、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。
@@ -76,9 +76,7 @@
 | <https://cc.chatopera.com/> | admin  | admin1234 |
 <!-- markup:table-caption 演示环境信息 -->
 
-提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请按照部署文档操作[^deploy]获得新的服务实例。
-
-[^deploy]: 部署文档地址 <https://docs.chatopera.com/products/cskefu/deploy.html>
+提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请按照[部署文档操作](https://docs.chatopera.com/products/cskefu/deploy.html)[^deploy] 获得新的服务实例。
 
 ## 使用场景角色
 
