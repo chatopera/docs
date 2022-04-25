@@ -13,3 +13,4 @@ cd $baseDir/..
 git add --all
 git commit -m "Update content"
 git push origin master
+git push github master
