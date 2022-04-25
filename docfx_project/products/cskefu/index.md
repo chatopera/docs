@@ -76,9 +76,9 @@
 | <https://cc.chatopera.com/> | admin  | admin1234 |
 <!-- markup:table-caption 演示环境信息 -->
 
-提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请按照部署文档操作[^deploy] 获得新的服务实例。
+提示：【演示环境】定时刷新且任何人都可以登录，不要更改密码和创建敏感数据，因该网站会**频繁重置数据和升级**，**该网站不能作为生产系统评估**，仅作为应用可行性参考；评估系统，比如压力测试和性能测试，请按照部署文档[^deploy]操作获得新的服务实例。
 
-[^deploy]: https://docs.chatopera.com/products/cskefu/deploy.html
+[^deploy]: 部署文档 <https://docs.chatopera.com/products/cskefu/deploy.html>
 
 ## 使用场景角色
 
@@ -131,3 +131,5 @@
 ## 更新日志
 
 查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D)相关内容。
+
+## 链接
