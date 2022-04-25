@@ -43,6 +43,9 @@
     "template": ["default", "templates/material"],
     "postProcessors": [],
     "markdownEngineName": "markdig",
+    "markdownEngineProperties": {
+      "markdigExtensions": ["footnotes", "definitionlists", "abbreviations", "tasklists"]
+    },
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": true,
