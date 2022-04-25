@@ -8,12 +8,7 @@
 
 安装启动系统，进入春松客服后台界面，输入初始化的超级管理员账号密码(用户名: `admin`, 密码: `admin1234`)，点击立即登录。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture1.png" alt="" /></td>
-    </tr>
-</table>
+![登录界面](../../images/products/cosin/Picture1.png)
 
 **超级管理员同时维护者春松客服的组织机构的高层级，组织机构是树形结构，默认情况下没有组织机构信息，春松客服搭建完成后，由超级管理员设定根节点，比如总公司、总公司下属子公司，维护这样的一个层级结构，再创建其他管理员账号，普通管理员账号可以创建多个，不同管理员隶属于不同组织机构，该管理员只有管理其所在组织机构及该组织机构附属组织机构的权限。**
 
@@ -44,12 +39,7 @@
 
 假设组织机构如下：
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture23.png" alt="" /></td>
-    </tr>
-</table>
+![组织机构示意图](../../images/products/cosin/Picture23.png)
 
 - 李四所能看到的联系人全集是 A 部门及其附属部门所创建的全部联系人
 - 李四看不到 B 部门的联系人，张三看不到 A 部门的联系人
@@ -240,6 +230,8 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个�
         <td><img width="800" src="../../images/products/cosin/Picture21.png" alt="" /></td>
     </tr>
 </table>
+
+<!-- markup:markdown-end -->
 
 ## 评论
 

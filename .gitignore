@@ -14,9 +14,9 @@ sftp-config.json
 *.ipr
 *.iws
 *.idea
-~/Users/hain/chatopera/infocenter.next/.gitignore.xls*
-~/Users/hain/chatopera/infocenter.next/.gitignore.ppt*
-~/Users/hain/chatopera/infocenter.next/.gitignore.doc*
+~*.xls*
+~*.ppt*
+~*.doc*
 nohup.out
 
 # Compiled Object files
@@ -74,3 +74,4 @@ dist/_site/
 docfx_project/obj/
 package-lock.json
 .env
+private/
