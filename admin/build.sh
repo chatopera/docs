@@ -10,6 +10,11 @@ SITE=$baseDir/../dist
 
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
+
+if [ -f /opt/docfx/docfx.exe ]; then
+    alias docfx="mono /opt/docfx/docfx.exe"
+fi
+
 cd $baseDir/../docfx_project
 # echo "Kill serving ..."
 # for x in `ps -ef|grep docfx|awk '{ print $2 }'`; do
@@ -35,7 +40,7 @@ docfx build -o $SITE ./docfx.json | tee $baseDir/../tmp/log
 # https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#24-generate-pdf-documentation-command-docfx-pdf
 # docfx pdf -o $SITE
 
-if [ $? -eq 0 ]; then
-    start http://localhost:8027/products/chatbot-platform/index.html
-    echo "Open browser ..."
-fi
+# if [ $? -eq 0 ]; then
+#     start http://localhost:8027/products/chatbot-platform/index.html
+#     echo "Open browser ..."
+# fi
