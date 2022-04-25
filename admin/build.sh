@@ -10,12 +10,14 @@ SITE=$baseDir/../dist
 
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
+CMD_PATH=docfx
+
 if [ -f /opt/docfx/docfx.exe ]; then
     echo "Use docfx with mono"
-    alias docfx="mono /opt/docfx/docfx.exe"
+    CMD_PATH="mono /opt/docfx/docfx.exe"
 fi
 
-docfx --version
+$CMD_PATH --version
 
 cd $baseDir/../docfx_project
 # echo "Kill serving ..."
@@ -36,7 +38,7 @@ fi
 
 rm -rf $SITE/_site
 # rm -rf obj
-docfx build -o $SITE ./docfx.json | tee $baseDir/../tmp/log
+$CMD_PATH build -o $SITE ./docfx.json | tee $baseDir/../tmp/log
 
 # config to generate pdfs
 # https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#24-generate-pdf-documentation-command-docfx-pdf
