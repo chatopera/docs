@@ -11,6 +11,7 @@ SITE=$baseDir/../dist
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 if [ -f /opt/docfx/docfx.exe ]; then
+    echo "Use docfx with mono"
     alias docfx="mono /opt/docfx/docfx.exe"
 fi
 
