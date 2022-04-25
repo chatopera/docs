@@ -10,13 +10,13 @@ SITE=$baseDir/../dist
 
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
-CMD_PATH=docfx
 
+## Resolve docfx cmd
+CMD_PATH=docfx
 if [ -f /opt/docfx/docfx.exe ]; then
     echo "Use docfx with mono"
     CMD_PATH="mono /opt/docfx/docfx.exe"
 fi
-
 $CMD_PATH --version
 
 cd $baseDir/../docfx_project
