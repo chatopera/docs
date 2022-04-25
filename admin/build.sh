@@ -10,10 +10,11 @@ SITE=$baseDir/../dist
 
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
-
 if [ -f /opt/docfx/docfx.exe ]; then
     alias docfx="mono /opt/docfx/docfx.exe"
 fi
+
+docfx --version
 
 cd $baseDir/../docfx_project
 # echo "Kill serving ..."
