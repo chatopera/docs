@@ -51,12 +51,7 @@
 
 _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_ -> _创建部门_，并且可以启用或关闭技能组
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture10.png" alt="" /></td>
-    </tr>
-</table>
+![创建部门](../../images/products/cosin/Picture10.png)
 
 - 名词解释：
 
@@ -76,12 +71,7 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_
 
 _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_ -> _修改部门_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture12.png" alt="" /></td>
-    </tr>
-</table>
+![修改部门](../../images/products/cosin/Picture12.png)
 
 ### 删除部门
 
@@ -91,12 +81,7 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织机构_ -> _删除部门_
 
 _系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个部门_ -> _地区设置_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture15.png" alt="" /></td>
-    </tr>
-</table>
+![设置部门地区](../../images/products/cosin/Picture15.png)
 
 ## 角色管理
 
@@ -106,12 +91,7 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _新建角色_
 
 只有【系统超级管理员】可以创建角色。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture17.png" alt="" /></td>
-    </tr>
-</table>
+![创建角色](../../images/products/cosin/Picture17.png)
 
 名词解释：
 
@@ -127,27 +107,17 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _新建角色_
 
 _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _修改角色_
 
-只有【系统超级管理员】可以创建角色。
+只有【系统超级管理员】可以编辑角色。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture22.png" alt="" /></td>
-    </tr>
-</table>
+![修改角色](../../images/products/cosin/Picture22.png)
 
 ### 删除角色
 
 系统->系统概况->用户和组->系统角色>删除角色
 
-只有【系统超级管理员】可以创建角色。
+只有【系统超级管理员】可以删除角色。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture20.png" alt="" /></td>
-    </tr>
-</table>
+![删除角色](../../images/products/cosin/Picture20.png)
 
 ## 账号管理
 
@@ -167,41 +137,21 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _系统角色_ -> _修改角色_
 
 - 创建普通用户
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture3.png" alt="" /></td>
-    </tr>
-</table>
+![创建普通用户](../../images/products/cosin/Picture3.png)
 
 - 创建多媒体坐席
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture4.png" alt="" /></td>
-    </tr>
-</table>
+![创建多媒体坐席](../../images/products/cosin/Picture4.png)
 
 - 创建管理员
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture5.png" alt="" /></td>
-    </tr>
-</table>
+![创建管理员](../../images/products/cosin/Picture5.png)
 
 ### 查看账号信息
 
 _系统_ -> _系统概况_ -> _用户和组_ -> _用户账号_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture7.png" alt="" /></td>
-    </tr>
-</table>
+![查看账户信息](../../images/products/cosin/Picture7.png)
 
 点击操作一栏中的“编辑”“删除”，可以对当前用户列表中的所有用户的信息进行编辑或者删除
 
@@ -213,23 +163,13 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个�
 
 - 一个用户账号只能隶属于一个部门
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture14.png" alt="" /></td>
-    </tr>
-</table>
+![部门中添加账号](../../images/products/cosin/Picture14.png)
 
 ### 添加账号到角色
 
 系统->系统概况->用户和组->系统角色>添加用户到角色
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture21.png" alt="" /></td>
-    </tr>
-</table>
+![角色中添加账号](../../images/products/cosin/Picture21.png)
 
 <!-- markup:markdown-end -->
 
