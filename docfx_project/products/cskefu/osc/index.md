@@ -35,6 +35,8 @@
 
 ![春松客服拥抱开源](../../../images/products/chatopera_love_os.png)
 
+<!-- markup:markdown-end -->
+
 ## 为春松客服点赞
 
 您的关注、鼓励是开源项目的工作动力之一，请给春松客服点赞 👍！

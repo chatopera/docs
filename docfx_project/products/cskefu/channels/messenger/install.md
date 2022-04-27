@@ -22,7 +22,8 @@ Messenger 插件为付费插件，交付形式有两种，源码安装和使用 
 | 注册 Chatopera 云服务账号 | 创建机器人客服需要使用 Chatopera 云服务 |  [link](https://bot.chatopera.com/)  |
 | 部署春松客服实例 | 春松客服实例需要安装有 Messenger 插件 |  [link](https://docs.chatopera.com/products/cskefu/deploy.html)  |
 | 初始化春松客服 | 使用超级管理员创建组织机构，技能组，坐席角色和一个坐席账号，将账号绑定到坐席角色和技能组 |  [link](https://docs.chatopera.com/products/cskefu/initialization.html)  |
-  
+<!-- markup:table-caption 准备工作 -->
+
 在配置的过程中，还需要开通额外的账号或资源，是以以上为基础的。
 
 ## 集成 Messenger 渠道

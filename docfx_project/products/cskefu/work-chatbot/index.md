@@ -4,12 +4,7 @@
 
 企业需要快速回复客服问题，当前市场上，存在很多厂商能提供全渠道智能客服系统，相对来说，渠道对接已经非常成熟，集成起来容易。在机器人客服上，用户体验参差不齐。在 Chatopera，我们主要关注智能机器人，追求最好的机器人客服体验：快速实现符合业务需求的聊天机器人，效果稳定。
 
-<table class="image">
-    <caption align="bottom">用户服务环节</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/user-cycle-service.png" alt="用户服务环节" /></td>
-    </tr>
-</table>
+![用户服务环节](../../../images/products/user-cycle-service.png)
 
 ## 解决方案
 
@@ -27,12 +22,7 @@
 
 - 管聊天室，直接和消费者沟通
 
-<table class="image">
-    <caption align="bottom">机器人客服</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/user-service-flow-2.png" alt="机器人客服" /></td>
-    </tr>
-</table>
+![机器人客服](../../../images/products/user-service-flow-2.png)
 
 具体地说，在排队阶段，引导消费者问问题，借助<a href="https://docs.chatopera.com/products/chatbot-platform/index.html" target="_blank">Chatopera 机器人平台</a>，进行意图识别，如果意图匹配到了智能问答引擎中的对话，就启动多轮对话，完成服务；未匹配到多轮对话则继续排队，在客服人员接入会话时，机器人客服针对消费者的问题，给客服人员建议回复。
 
@@ -40,12 +30,7 @@
 
 - 辅助客服人员
 
-<table class="image">
-    <caption align="bottom">机器人辅助坐席</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/faq-work-ass.png" alt="机器人辅助坐席" /></td>
-    </tr>
-</table>
+![机器人辅助坐席](../../../images/products/cosin/faq-work-ass.png)
 
 ### 功能设计
 
@@ -64,6 +49,8 @@
 建议先看[视频教程](https://ke.qq.com/course/475430)，再看本文剩余内容。
 
 视频地址：[https://ke.qq.com/course/475430](https://ke.qq.com/course/475430)
+
+<!-- markup:markdown-end -->
 
 ## 下一步
 

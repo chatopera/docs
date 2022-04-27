@@ -6,58 +6,32 @@
 
 在默认情况下，机器人的问候语是在 Chatopera 云服务的机器人属性页面进行设置，该设置只支持简单的文本。
 
-<p align="center">
-  <b>设置机器人问候语</b><br>
-  <img src="../../../images/products/cosin/cards/image-11.png" width="800">
-</p>
+![设置机器人问候语](../../../images/products/cosin/cards/image-11.png)
 
-<p align="center">
-  <b>春松客服访客端</b><br>
-  <img src="../../../images/products/cosin/cards/image-1.png" width="800">
-</p>
+![春松客服访客端](../../../images/products/cosin/cards/image-1.png)
 
 ## 热门问题问候语
 
 访客登录进入客服聊天窗口往往是有一些问题要咨询的，所以更为合理的用户体验是将一些常见问题作为导航用途显示在问候语下面，比如这样：
 
-<p align="center">
-  <b>常见问题列表</b><br>
-  <img src="../../../images/products/cosin/cards/image-8.png" width="800">
-</p>
-
-在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](/products/chatbot-platform/conversation/cde.html)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要
-30 分钟时间**。
+![常见问题列表](../../../images/products/cosin/cards/image-8.png)
+在春松客服里，为了支持各种丰富的对话场景，这些功能都是使用多轮对话配置。接下来的介绍假设您已经学习了[多轮对话设计器](/products/chatbot-platform/conversation/cde.html)的内容，**如果您还没有学习这部分内容，建议先完成，大约需要 30 分钟时间**。
 
 下面是支持在问候语中展示热门问题，进行导航的方法，这种形式比只有一段文本的【普通问候语】更加友好。
 
 - 下载安装多轮对话设计器
 
-<table class="image">
-    <caption align="bottom">下载多轮对话设计器</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-2.png" alt="" /></td>
-    </tr>
-</table>
+![下载多轮对话设计器](../../../images/products/cosin/cards/image-2.png)
 
 下载连接也可以通过[多轮对话设计器使用教程](/products/chatbot-platform/conversation/cde.html)获得。
 
 - 新建聊天机器人
 
-<table class="image">
-    <caption align="bottom">新建聊天机器人</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-3.png" alt="" /></td>
-    </tr>
-</table>
+![新建聊天机器人](../../../images/products/cosin/cards/image-3.png)
 
 - 新建对话技能
 
-<table class="image">
-    <caption align="bottom">新建对话技能</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-4.png" alt="" /></td>
-    </tr>
-</table>
+![新建对话技能](../../../images/products/cosin/cards/image-4.png)
 
 此处，对话名称可以使用字母、数字和下划线组成的字符串填写。
 
@@ -73,12 +47,7 @@
 
 点击【保存】，在编辑窗口中，如图。
 
-<table class="image">
-    <caption align="bottom">粘贴技能脚本</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-12.png" alt="" /></td>
-    </tr>
-</table>
+![粘贴技能脚本](../../../images/products/cosin/cards/image-12.png)
 
 该规则`__faq_hot_list`将保证在访客和机器人连接成功后，
 机器人发送函数`get_greetings`返回的内容。此处`__faq_hot_list`是固定的，`get_greetings`函数名和下面的技能函数名保持一致便可。
@@ -111,12 +80,7 @@ exports.get_greetings = async function() {
 
 点击【保存】，在编辑窗口中，如图。
 
-<table class="image">
-    <caption align="bottom">粘贴技能函数</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-13.png" alt="" /></td>
-    </tr>
-</table>
+![粘贴技能函数](../../../images/products/cosin/cards/image-13.png)
 
 在函数中，可以自定义热门问题的文字，顺序。文字即访客看到的文本内容，通过`label`设定，当访客点击一个问题时，聊天机器人将收到 `text`设定的文本。您可以在知识库或多轮对话中，设置该文本的回复内容。
 
@@ -126,12 +90,7 @@ exports.get_greetings = async function() {
 
 多轮对话设计器是智能对话机器人的设计环境，[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)或[智能问答引擎](https://docs.chatopera.com/chatbot-engine.html)是机器人的运行时环境。
 
-<table class="image">
-    <caption align="bottom">发布并导出对话应用</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-6.png" alt="" /></td>
-    </tr>
-</table>
+![发布并导出对话应用](../../../images/products/cosin/cards/image-6.png)
 
 导出后，多轮对话设计将该机器人多轮对话保存为一个`.c66` 后缀的文件。
 
@@ -139,12 +98,7 @@ exports.get_greetings = async function() {
 
 登录 Chatopera 云服务，在目标机器人的多轮对话管理面板中，导入对话应用(`.c66`)文件。
 
-<table class="image">
-    <caption align="bottom">导入Chatopera云服务</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-7.png" alt="" /></td>
-    </tr>
-</table>
+![导入Chatopera云服务](../../../images/products/cosin/cards/image-7.png)
 
 - 上线后使用
 
@@ -154,12 +108,7 @@ exports.get_greetings = async function() {
 
 另外一种情况是机器人客服回答一个选择列表，访客点选按钮进行选择。
 
-<table class="image">
-    <caption align="bottom">按钮消息</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-9.png" alt="" /></td>
-    </tr>
-</table>
+![按钮消息](../../../images/products/cosin/cards/image-9.png)
 
 - 粘贴技能脚本
 
@@ -200,12 +149,7 @@ exports.get_products = async function() {
 
 春松客服还支持的一类消息是图文消息，通过是分享一个链接，展示链接的图片和简介。
 
-<table class="image">
-    <caption align="bottom">按钮消息</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/cards/image-10.png" alt="" /></td>
-    </tr>
-</table>
+![按钮消息](../../../images/products/cosin/cards/image-10.png)
 
 - 粘贴技能脚本
 

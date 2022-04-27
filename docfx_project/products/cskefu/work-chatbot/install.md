@@ -4,10 +4,7 @@
 
 **安装插件文档 [https://github.com/chatopera/cskefu/tree/osc/public/plugins](https://github.com/chatopera/cskefu/tree/osc/public/plugins)**
 
-<p align="center">
-  <b>安装好机器人插件</b><br>
-  <img src="../../../images/products/cskefu/98638023-436f4700-2364-11eb-922d-801ade42d397.png" width="800">
-</p>
+![安装好机器人插件](../../../images/products/cskefu/98638023-436f4700-2364-11eb-922d-801ade42d397.png)
 
 只有**超级管理员**可以在【系统设置】中配置机器人客服，超级管理员权限介绍参考[账号与权限](/products/cskefu/accounting.html)。
 
@@ -21,10 +18,7 @@
 
 3、 如何 （_2_）中没有得到答案，那么则将相似度大于或等于 **建议回复阀值** 的记录，作为一个列表发送给访客。
 
-<p align="center">
-  <b>建议回复列表</b><br>
-  <img src="../../../images/products/cosin/g6.png" width="800">
-</p>
+![建议回复列表](../../../images/products/cosin/g6.png)
 
 4、（_2_） 和 （_3_）都没有答案，则回复兜底回复。
 
@@ -42,16 +36,14 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 
 ## 创建网站渠道
 
-以管理员身份_春松客服坐席工作台_，导航【系统-客服接入-网站列表-创建新网站】，按照如下内容设置网站渠道。
+以管理员身份登录春松客服坐席工作台，导航【系统-客服接入-网站列表-创建新网站】，按照如下内容设置网站渠道。
 
 | 项目     | 值        | 描述            |
 | -------- | --------- | --------------- |
 | 网站名称 | localhost | 任意字符串      |
 | 网站地址 | localhost | 网站的域名或 IP |
+<!-- markup:table-caption 创建网站渠道表单内容 -->
 
-<p align="center">
-  <b>创建网站渠道</b><br>
-  <img src="../../../images/products/cosin/47127371-6fbc5480-d2bf-11e8-9983-b6f79e97cbf1.png" width="600">
-</p>
+![创建网站渠道](../../../images/products/cosin/47127371-6fbc5480-d2bf-11e8-9983-b6f79e97cbf1.png)
 
 点击【立即提交】保存。
