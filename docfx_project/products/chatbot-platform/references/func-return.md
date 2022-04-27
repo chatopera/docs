@@ -94,13 +94,3 @@ exports.get_shangyi = async function() {
 
 通常是在业务系统内，使用业务字段完成更多工作。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

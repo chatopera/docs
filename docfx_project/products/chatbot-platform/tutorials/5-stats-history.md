@@ -19,15 +19,3 @@
 ## 接下来
 
 本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式开始使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！发布机器人到不同渠道、Chatopera 的背景知识、查阅更多信息和获得帮助等，回到 [Chatopera 云服务文档中心首页](/products/chatbot-platform/index.html)。
-
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

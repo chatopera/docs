@@ -6,7 +6,7 @@
 
 **问：简单的介绍下这个开源项目吧?**
 
-春松客服是面向中小型企业的智能客服系统。现有提供的功能可以参考我们的 README.md 文件。https://github.com/chatopera/cskefu/
+春松客服是面向中小型企业的智能客服系统。现有提供的功能可以参考我们的 README.md 文件。<https://github.com/chatopera/cskefu/>
 我们强调的智能客服主要是机器人客服以及辅助客服人员的一些功能。语音识别模块，以及我们已经发布的多轮对话设计器、智能问答引擎，很快会集成到春松客服中。
 适用场景包括售前、对话营销。
 
@@ -71,7 +71,7 @@ socketio 是对 websocket 进行封装，是 websocket 协议的一种实现，�
 
 **问：多轮对话,看上去就是在编辑脚本,有对分支逻辑的支持吗?**
 
-支持分支编辑，参考 https://github.com/chatopera/chatbot-samples
+支持分支编辑，参考 <https://github.com/chatopera/chatbot-samples>
 
 **问：多轮语言的编辑的 开源的也有么**
 
@@ -81,7 +81,7 @@ socketio 是对 websocket 进行封装，是 websocket 协议的一种实现，�
 
 Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github.com/chatopera)。
 
-** 问：春松的访客，有匿名用户和注册用户的概念吗 **
+**问：春松的访客，有匿名用户和注册用户的概念吗**
 
 没有，访客并不注册账号，客服端可以关联联系人。
 
@@ -100,17 +100,6 @@ Chatopera 全部开源项目查看 [https://github.com/chatopera](https://github
 
 **问：这个项目要怎么启动呢**
 
-- 服务器部署：https://docs.chatopera.com/products/cskefu/deploy.html
+- 服务器部署：<https://docs.chatopera.com/products/cskefu/deploy.html>
 
-- 开发环境搭建：https://docs.chatopera.com/products/cskefu/osc/engineering.html
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+- 开发环境搭建：<https://docs.chatopera.com/products/cskefu/osc/engineering.html>

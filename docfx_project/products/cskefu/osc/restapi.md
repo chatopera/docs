@@ -70,14 +70,3 @@ POST http://IP:PORT/tokens?username=USERNAME&password=PASSWORD
 
 - 每个 token 有效期为 24 小时，认证失败会有相应提醒
 - 登录用户的权限有限制，API 访问受此约束
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

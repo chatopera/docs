@@ -179,14 +179,3 @@ _service_: 提供回复的服务
 _confidence_: 置信度
 
 _created_: 消息创建时间
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

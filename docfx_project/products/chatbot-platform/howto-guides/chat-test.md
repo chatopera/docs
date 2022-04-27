@@ -11,13 +11,3 @@
 
 在该页面下，也需要选择对话实现方式，根据对话方式不同，对话过程中，右侧的信息展示形式也是不同的，使用测试对话页面，也提升用户实现机器人的开发效率。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

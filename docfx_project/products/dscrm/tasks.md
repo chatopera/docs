@@ -72,13 +72,3 @@
 
 可以看出他们对同一组下面的任务都有相同的权限。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

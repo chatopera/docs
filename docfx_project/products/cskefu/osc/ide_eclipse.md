@@ -6,7 +6,7 @@
 
 ### 下载安装包
 
-安装 Eclipse：https://www.eclipse.org/downloads/
+安装 Eclipse：<https://www.eclipse.org/downloads/>
 本文下载时，版本为：Eclipse IDE 2021‑09
 
 <p align="center">
@@ -51,7 +51,9 @@ STS 最简单的安装方式，就是启动 Eclipse 后，在 Eclipse Marketplac
 STS 安装完成，下一步导入项目。
 
 ## 导入项目
+
 ### 初始化 Contact Center 项目描述文件
+
 春松客服提供初始化脚本，在命令行执行：
 
 ```bash
@@ -145,7 +147,6 @@ cd cskefu.osc/contact-center
         <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-23-28.png" alt="" />
 </p>
 
-
 点击【Apply】。然后点击【Debug】。
 
 此时，滚动出大量的日志。
@@ -166,8 +167,8 @@ cd cskefu.osc/contact-center
 
 第三部： 运行到断点后，使用快捷键F5，F6，F7单步执行。
 
-* F5 - Step into/跳入方法/进入该行的函数内部； 
-* F6 - Step over/向下逐行调试/一行一行执行； 
+* F5 - Step into/跳入方法/进入该行的函数内部；
+* F6 - Step over/向下逐行调试/一行一行执行；
 * F7 - Step return/跳出方法/退出当前的函数；
 * F8 - 直接跳转到下一个断点。
 
@@ -177,6 +178,7 @@ cd cskefu.osc/contact-center
 * [Eclipse 的 Debug 调试技巧大全](https://blog.csdn.net/u011781521/article/details/55000066)
 
 ## Trouble Shooting
+
 ### 报错：com.sun.net.ssl.internal.ssl.Provider
 
 <p align="center">
@@ -204,14 +206,3 @@ cd cskefu.osc/contact-center
 ## 下一步
 
 回到[上一步：开发环境搭建](./engineering.md#初始化系统)完成后续步骤。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

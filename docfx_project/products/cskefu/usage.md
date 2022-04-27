@@ -4,7 +4,7 @@
 
 ## 获得百度统计 Key
 
-登录，新增网站，https://tongji.baidu.com/
+登录，新增网站，<https://tongji.baidu.com/>
 
 <p align="center">
     <b>新增网站</b>
@@ -13,7 +13,7 @@
 
 - 网站域名：春松客服系统域名，必须是你安装的实际地址（假设你安装在 cc.example.com，则填写 cc.example.com）
 
-- 网站首页：春松客服首页 (https://cc.example.com)
+- 网站首页：春松客服首页 (<https://cc.example.com>)
 
 拷贝 `YOUR_SITE_KEY`: **登录 -> 管理 -> 新增网站 -> 代码获取 -> 拷贝 SiteKey**。
 
@@ -32,7 +32,7 @@ hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 
 设置环境变量 `TONGJI_BAIDU_SITEKEY`，可以在 `.env` 文件或 `docker-compose.yml` 文件中添加，参考部署文档：
 
-https://docs.chatopera.com/products/cskefu/deploy.html
+<https://docs.chatopera.com/products/cskefu/deploy.html>
 
 ```环境变量
 TONGJI_BAIDU_SITEKEY=YOUR_SITE_KEY
@@ -72,14 +72,3 @@ docker-compose restart contact-center
 - 不设置环境变量不进行统计，该统计报告只开发者/企业在百度网站内能查看
 
 - 开发者/企业自行衡量和保护百度统计账号，因百度账号泄漏等原因造成企业/开发者财产损失，春松客服不承担任何责任，见[服务水平协议](https://docs.chatopera.com/products/cskefu/sla.html)。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -40,13 +40,3 @@
 
 增强知识库的智能水平，知识库的优化，知识库的优化也是长期的过程，也是企业重要的很有价值的资产。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

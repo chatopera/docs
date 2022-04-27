@@ -93,13 +93,3 @@ docker run -it --rm -p 8668:8668 chatopera/webchat:develop
 
 <img width="600" src="../../../images/products/platform/webchat-1.jpeg" alt="" />
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

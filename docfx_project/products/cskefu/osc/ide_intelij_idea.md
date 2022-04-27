@@ -36,7 +36,7 @@ cd contact-center
 <img width="500" src="../../../images/products/cosin/g12.png" alt="" />
 </p>
 
-点击"执行"或"调试"，服务启动，然后访问 http://localhost:8035 确定服务正常运行了。
+点击"执行"或"调试"，服务启动，然后访问 <http://localhost:8035> 确定服务正常运行了。
 
 <p align="center">
 <img width="500" src="../../../images/products/cosin/g13.png" alt="" />
@@ -60,20 +60,6 @@ cd contact-center
 
 另外， **“调试”** 模式下，也支持断点调试。
 
-
 ## 下一步
 
 回到[开发环境搭建](./engineering.md#初始化系统)完成后续步骤。
-
-
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

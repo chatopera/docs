@@ -26,13 +26,3 @@
 
 如果有大量而频繁的评价知识库准确率的需求，可以使用 [系统集成/SDK](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索知识库) 实现。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

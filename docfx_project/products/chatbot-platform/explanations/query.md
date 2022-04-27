@@ -84,13 +84,3 @@ topicRedirect 函数的更多介绍，[参考文档](/products/chatbot-platform/
 
 关于知识库路由的更多介绍，[参考文档](/products/chatbot-platform/howto-guides/conv-state.html#知识库路由)。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

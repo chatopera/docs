@@ -60,13 +60,3 @@ bot conversation -a import -f bot.conversations.c66
 
 更多命令介绍，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

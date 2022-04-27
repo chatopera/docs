@@ -16,7 +16,6 @@
 
 提交代码的过程，可以简述为：1）确定工作内容；2）搭建开发环境；3）完成开发和测试；4）推送代码；5）提交 PR 到春松客服。在合并到春松客服 OSC 分支前，可能还会根据 Code Review 进行沟通和优化。
 
-
 ## 确定工作的内容
 
 工作的内容记录在春松客服的[工单(Issue)](https://github.com/chatopera/cskefu/issues)中，可以创建根据您自己的需要创建工单，或者选择一个已有的工单。
@@ -81,7 +80,6 @@ git checkout -b ${名称}
 
 这方面有很多好的读物，比如[《程序员修炼之道：从小工到专家》](https://item.jd.com/10393278.html)、[《冥想》](https://item.jd.com/12058554.html)和[《程序员的自我修养——链接、装载与库》](https://item.jd.com/10024708744202.html)。这几本书，值得常看，常看可以常新。尤其是《冥想》，每天早晚各十分钟冥想，坚持 90 天，保证你成为程序员中的大师！
 
-
 #### 关于技能
 
 春松客服社区发布了[《春松客服大讲堂》](https://docs.chatopera.com/products/cskefu/osc/training.html)，快速的入门以及熟悉开发技能。
@@ -109,7 +107,6 @@ git push origin ${YOUR_BRANCH_NAME} # ${YOUR_BRANCH_NAME} 就是分支名称
     <img width="700" src="../../../images/products/cskefu/screenshot-20220325-160845.png" alt="" />
 </p>
 
-
 在 git push 命令，执行后，也可以看到，git 提示您，可以提交一个 PR（Pull Request）:
 
 ```bash
@@ -126,17 +123,15 @@ To github.com:hailiang-wang/cskefu.git
 
 [https://github.com/hailiang-wang/cskefu](https://github.com/hailiang-wang/cskefu)
 
-
 ## 提交 PR 到春松客服
 
-上一步，已经提示，推送代码到 remote，可以打开提示 URL 地址，比如 
+上一步，已经提示，推送代码到 remote，可以打开提示 URL 地址，比如
 
-https://github.com/hailiang-wang/cskefu/pull/new/issue7
-
+<https://github.com/hailiang-wang/cskefu/pull/new/issue7>
 
 进行 PR 提交，PR 提交是指将您的变更通知春松客服开源仓库，仓库的维护人员，可以查看、评价和合并您的变更。
 
-在浏览器中，打开 https://github.com/hailiang-wang/cskefu/pull/new/issue7 ，得到如下页面：
+在浏览器中，打开 <https://github.com/hailiang-wang/cskefu/pull/new/issue7> ，得到如下页面：
 
 <p align="center">
     <img width="700" src="../../../images/products/cskefu/screenshot-20220325-161804.png" alt="" />
@@ -150,7 +145,6 @@ https://github.com/hailiang-wang/cskefu/pull/new/issue7
 
 本步骤完成，提交 PR 的工作就完成了，春松客服开源社区的其它贡献者会尽快的处理，完成交流和合并工作。
 
-
 ## 恭喜您
 
 发布代码到春松客服是值得骄傲的事情，您的变更在合并的路上！
@@ -158,7 +152,6 @@ https://github.com/hailiang-wang/cskefu/pull/new/issue7
 ## PR 被 Merge 后
 
 PR 被合并后，是指代码进入到了春松客服的[OSC 分支](https://github.com/chatopera/cskefu/tree/osc)，一个被 Merge 的 PR 状态显示为【Merged】，比如 [PR 666](https://github.com/chatopera/cskefu/pull/666)。
-
 
 <p align="center">
     <img width="700" src="../../../images/products/cskefu/screenshot-20220328-095049.png" alt="" />
@@ -188,14 +181,3 @@ git branch -d issue7
 春松客服是最流行的开源客服系统，现在已经在企业部署超过 17,000 次，为数百政府机构、事业单位和企业上线智能客服系统，现在您是春松客服的开发者一员了！
 
 春松客服会尽快的将您添加到[贡献者列表](https://github.com/chatopera/cskefu#%E8%B4%A1%E7%8C%AE%E8%80%85%E5%88%97%E8%A1%A8-)!
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

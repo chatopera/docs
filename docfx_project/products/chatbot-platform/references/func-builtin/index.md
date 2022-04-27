@@ -26,13 +26,3 @@ exports.customFn = async function(){
 - [maestro](maestro.md)
 - [3rd-party](3rd-party.md)
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -37,13 +37,3 @@ this.message.extras
 
 传入方法参考，[多轮对话检索接口](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

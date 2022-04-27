@@ -68,7 +68,7 @@ http[s]://春松客服IP[:PORT]/testclient.html
 
 使用浏览器打开*春松客服访客测试端*，并点击【在线客服】。在知识库设置好后，当访客在客户端问问题，匹配了知识库的问题后，机器人就自动回复。
 
-比如输入：_缴费年期变更后，佣金如何计算？_，能得到在知识库中设置的答案。
+比如输入：*缴费年期变更后，佣金如何计算？*，能得到在知识库中设置的答案。
 
 <p align="center">
   <b>访客端和机器人对话</b><br>
@@ -76,14 +76,3 @@ http[s]://春松客服IP[:PORT]/testclient.html
 </p>
 
 如果想使机器人变得更加智能，需要参考关于[Chatopera 云服务](https://docs.chatopera.com/chatbot-platform.html)的更多介绍。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

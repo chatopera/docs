@@ -120,13 +120,3 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 <tr><td><img width="300" src="../../../images/products/assistant/9.png" alt="退出话术助手"/></td></tr>
 </table>
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -177,14 +177,3 @@
     <td><a href="https://github.com/chatopera/cskefu.djt/raw/main/%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D%E5%A4%A7%E8%AE%B2%E5%A0%82_2019/8-1.course-summary.pptx">PPT</a></td>
   </tr>
 </table>
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

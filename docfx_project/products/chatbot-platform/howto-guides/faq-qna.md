@@ -85,13 +85,3 @@
 
 在熟悉了置信度的概念以后，就可以开始调试知识库了。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

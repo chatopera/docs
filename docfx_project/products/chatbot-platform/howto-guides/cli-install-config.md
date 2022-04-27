@@ -87,13 +87,3 @@ BOT_ACCESS_TOKEN=
 
 * [使用 CLI 导入和导出对话语料](cli-export-import.md)
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

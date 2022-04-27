@@ -77,13 +77,3 @@
 
 打开[课程](http://ke.chatopera.com/course/2994143)查看完整内容 ...
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -19,13 +19,3 @@
 
 3. 最后，如果用户输入 3 到 5 个字符，系统匹配匹配器“+ \*(3-5)”, 并且回复“我也是&#60;cap&#62;”。“&#60;cap&#62;”代表的就是用户输入的内容。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

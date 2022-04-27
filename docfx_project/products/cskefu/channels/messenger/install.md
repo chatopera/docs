@@ -1,26 +1,28 @@
 # Messenger 插件安装和配置
 
 ## 安装插件
+
 Messenger 插件为付费插件，交付形式有两种，源码安装和使用 Docker 镜像。
 
 ### 源码安装
+
 安装到客户现有春松客服实例。使用源码形式安装插件，付费后随源码一并提供详细说明文档，由客户的工程师打包到春松客服的源码中。
 
 ### Docker 镜像
+
 使用 Docker 镜像，由春松客服官方提供安装好 Messenger 插件的春松客服镜像。
 
-
 ## 前提准备
+
 在使用春松客服集成 Messenger 前，您需要做如下准备工作。
 
-| 准备工作 | 描述 | 网址 | 
+| 准备工作 | 描述 | 网址 |
 | --- | --- | --- |
-| 注册 Facebook 账号 | 创建 Messenger 应用，Facebook Page 页，测试 BOT 等需要准备 Facebook 账号 | 	[link](https://facebook.com/) |
-| 注册 Chatopera 云服务账号 | 创建机器人客服需要使用 Chatopera 云服务 | 	[link](https://bot.chatopera.com/)  |
-| 部署春松客服实例 | 春松客服实例需要安装有 Messenger 插件 | 	[link](https://docs.chatopera.com/products/cskefu/deploy.html)  |
-| 初始化春松客服 | 使用超级管理员创建组织机构，技能组，坐席角色和一个坐席账号，将账号绑定到坐席角色和技能组 | 	[link](https://docs.chatopera.com/products/cskefu/initialization.html)  | 
-		
-		
+| 注册 Facebook 账号 | 创建 Messenger 应用，Facebook Page 页，测试 BOT 等需要准备 Facebook 账号 |  [link](https://facebook.com/) |
+| 注册 Chatopera 云服务账号 | 创建机器人客服需要使用 Chatopera 云服务 |  [link](https://bot.chatopera.com/)  |
+| 部署春松客服实例 | 春松客服实例需要安装有 Messenger 插件 |  [link](https://docs.chatopera.com/products/cskefu/deploy.html)  |
+| 初始化春松客服 | 使用超级管理员创建组织机构，技能组，坐席角色和一个坐席账号，将账号绑定到坐席角色和技能组 |  [link](https://docs.chatopera.com/products/cskefu/initialization.html)  |
+  
 在配置的过程中，还需要开通额外的账号或资源，是以以上为基础的。
 
 ## 集成 Messenger 渠道
@@ -28,6 +30,7 @@ Messenger 插件为付费插件，交付形式有两种，源码安装和使用 
 安装好春松客服 Messenger 插件后，系统管理员登录，只有系统管理员或超级系统管理员【admin】可以维护 Facebook Messenger 渠道。
 
 ### Messenger 渠道管理
+
 在右上角组织机构，选择一个技能组，然后进入【系统管理】，打开 【Messenger】页面。
 
 <table class="image">
@@ -36,7 +39,6 @@ Messenger 插件为付费插件，交付形式有两种，源码安装和使用 
         <td><img width="800" src="../../../../images/products/cskefu/messenger/image2021-2-1_20-14-52.png" alt="" /></td>
     </tr>
 </table>
-
 
 注意：此处要先切换到技能组，因为创建 Messenger 渠道必须绑定一个技能组。
 
@@ -52,6 +54,7 @@ Messenger 插件为付费插件，交付形式有两种，源码安装和使用 
 如图，创建 Messenger 表单有几个信息，接下来，我们将介绍如何获得这些信息。
 
 ### 创建 Facebook Page
+
 Facebook Page，也称为 Facebook 粉丝页、Facebook 页面、Facebook 主页，是 Facebook 为机构、企业、非营利性组织等各种类型的组织提供的站点，在该站点组织发布消息，和 Facebook 平台的用户互动。在粉丝页，Facebook 提供了广告、推文、点评、小组、数据分析等工具，帮助企业充分的利用社交网络实现营销、品牌建设。
 
 <table class="image">
@@ -65,7 +68,7 @@ Facebook Page，也称为 Facebook 粉丝页、Facebook 页面、Facebook 主页
 
 在熟悉了 Facebook Page 的定位以后，当您有了 Facebook 账号，您可以通过下面链接快速的创建一个 Facebook Page。
 
-https://www.facebook.com/pages/creation/?ref_type=comet_home
+<https://www.facebook.com/pages/creation/?ref_type=comet_home>
 
 <table class="image">
     <caption align="bottom"></caption>
@@ -77,8 +80,6 @@ https://www.facebook.com/pages/creation/?ref_type=comet_home
 在此，我们创建一个示例页面，在演示如何在春松客服集成 Messenger 时使用，注意：企业创建 Messenger 应用以后，可以将 Messenger 应用集成到 Facebook Page 上，Facebook Page 是企业的一个对外的主页，而并不是唯一的，Messenger 应用同时支持多种渠道，比如网页聊天、Whatsapp等。Messenger 应用的介绍是在下一环节。
 
 假设我们创建的 Facebook Page 名称：春松客服 DEMO。创建完成后，进入 春松客服 DEMO 地址，这时，我们是管理员视图，点击“访客视图”，就是普通访客看到的页面。
-
-
 
 <table class="image">
     <caption align="bottom"></caption>
@@ -97,6 +98,7 @@ https://www.facebook.com/pages/creation/?ref_type=comet_home
 </table>
 
 ### 添加联系我按钮
+
 此时，我们有了一个 Facebook Page，默认情况下，没有联系我按钮，我们需要手动的添加。
 
 在 Facebook Page 页面，以管理员视图查看，找到“添加按钮”，点击这个按钮。
@@ -140,6 +142,7 @@ https://www.facebook.com/pages/creation/?ref_type=comet_home
 有两个方案：
 
 #### 普通模式
+
 在默认情况下，用户浏览会以通知的形式发送给您登录的浏览器，您可以进行回复。并进入设置→消息，进行一些个性化的设置。
 
 <table class="image">
@@ -151,27 +154,23 @@ https://www.facebook.com/pages/creation/?ref_type=comet_home
 
 此种方式下，访客的信息并没有和您的 CRM 系统联通，信息分散了；此外，您的访客可能来自不同渠道，Facebook Messenger 只是其中之一，渠道不能统一到一个系统，您的组织的客户服务工作效率降低，客户体验差。还有很多问题，这就是为什么 Facebook 提供了第二种模式 - 高级模式。
 
-
 #### 高级模式
+
 在高级模式下，Facebook 将访客在您的 Facebook Page 上唤起的 Messenger 对话控件的消息，转发给了兼容 Facebook Messenger 平台的软件服务，比如一个春松客服实例，春松客服和 Facebook Messenger 平台之间进行通信，并且以约定的形式，企业可以主动发起会话、发布营销通知、回复访客会话等，Facebook 平台同时有丰富的接口，春松客服可以获得访客的 ID、语言、所在地区、邮箱、电话号码等信息，从而满足客户关系管理、营销和客服等诉求。下文，我们就详细介绍如何使用春松客服 Messenger 插件，通过高级模式，支持 Messenger 的对话。
 
 创建 Messenger 应用
 在高级模式下，企业可以选择：
 
-* 1）企业自行开通 Facebook 开发者平台账号，创建 Messenger 应用，并绑定 Facebook Page; 
+* 1）企业自行开通 Facebook 开发者平台账号，创建 Messenger 应用，并绑定 Facebook Page;
 * 2）和支持 Facebook Messenger 平台的服务商合作，获得技术支持，比如[春松客服官方团队](https://www.chatopera.com/price.html)，该技术支持是付费服务项。
 
 我们推荐企业使用第一种方式，即自行开通，该过程会多花一点时间，但是相对也简单，这种方式，完全由企业在 Facebook 平台上操作，不涉及任何春松客服官方的接口、云服务。
 
 在以上两种方式中，您的春松客服实例都需要配置 HTTPs 协议，这部分后续会详细介绍。接下来，我们就以自行开通 Facebook 开发者平台进行讲解。
 
-
-
 打开 Facebook Developer Portal, 使用 Facebook 账号开通
 
-https://developers.facebook.com/apps 
-
-
+<https://developers.facebook.com/apps>
 
 开通后登入，点击创建应用，一个应用可以关联多种 Facebook 产品，Messenger 是产品之一，因为本文我们将用该应用关联 Messenger 产品，因此，我们简称此种应用为 Messenger 应用。
 
@@ -202,9 +201,7 @@ https://developers.facebook.com/apps
 
 这里，我们假设名字填写了【春松001】，作为示例程序名字。如果您有开通 Facebook 商务账号，也可以在这里关联，该项为非必填。
 
-Facebook 商户账号（ https://business.facebook.com/ ）是管理企业的组织人员、广告等资产的平台。
-
-
+Facebook 商户账号（ <https://business.facebook.com/> ）是管理企业的组织人员、广告等资产的平台。
 
 当应用创建成功，自动跳转到应用详情页面，如下。
 
@@ -236,7 +233,6 @@ Facebook 商户账号（ https://business.facebook.com/ ）是管理企业的组
     </tr>
 </table>
 
-
 如果该绑定失败，可能会提示原因，并且提示您进行变更，如下所示，点击【完成】。
 
 <table class="image">
@@ -249,7 +245,6 @@ Facebook 商户账号（ https://business.facebook.com/ ）是管理企业的组
 
 此时，代表着【春松客服001】Messenger 应用正式接管了 Facebook Page 【春松客服 DEMO】的消息管理。回到应用详情页面，此时 Messenger 设置中，就出现了【春松客服 DEMO】。
 
-
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
@@ -259,16 +254,16 @@ Facebook 商户账号（ https://business.facebook.com/ ）是管理企业的组
 </table>
 
 ### 获得 Messenger 配置信息
+
 还记得之前在春松客服内，创建 Messenger 渠道的表单吗？现在，对于表单里的内容，就可以获得了。
 
-
-| 配置项 | 描述 | 示例 | 
+| 配置项 | 描述 | 示例 |
 | --- | --- | --- |
 | 名称 | 渠道名称，可使用 Facebook Page 名字 | 春松客服 DEMO  |
-| Page ID | Facebook Page 的唯一标识。在 Messenger 应用的设置的访问口令列表中，Page ID 就是主页名称下的数字字符串	 | 159955055741 |
-| Access Token | 访问 Facebook Page 的口令，每个 Facebook Page 使用不同口令。在 Messenger 应用的设置的访问口令列表中，点击【生成口令】	| xxxx |
-| Verify Token |	该值为随机字符串，由企业用户自定义 |	foobar20 |
-		
+| Page ID | Facebook Page 的唯一标识。在 Messenger 应用的设置的访问口令列表中，Page ID 就是主页名称下的数字字符串  | 159955055741 |
+| Access Token | 访问 Facebook Page 的口令，每个 Facebook Page 使用不同口令。在 Messenger 应用的设置的访问口令列表中，点击【生成口令】 | xxxx |
+| Verify Token | 该值为随机字符串，由企业用户自定义 | foobar20 |
+  
 <table class="image">
     <caption align="bottom"></caption>
     <tr>
@@ -277,6 +272,7 @@ Facebook 商户账号（ https://business.facebook.com/ ）是管理企业的组
 </table>
 
 ### 创建 Messenger 渠道
+
 回到春松客服 Messenger 渠道创建表单，填写对应值，点击【提交】。
 
 <table class="image">
@@ -289,6 +285,7 @@ Facebook 商户账号（ https://business.facebook.com/ ）是管理企业的组
 此时，渠道创建成功。但是，还需要一些配置，使得春松客服实例与 Facebook Messenger 平台服务连接起来。
 
 ### 配置 HTTPS
+
 处于安全的考虑，Facebook 要求 Messenger 应用对接的软件服务使用 HTTPS 加密协议，春松客服企业用户有多种方案完成这一目的，针对生产环境，推荐您使用文档[《春松客服配置 CDN和HTTPS》](https://chatopera.blog.csdn.net/article/details/105820829)进行配置。出于本文是演示使用的目的，我们使用更为简单的方案，但是企业客户不要在生产环境用这种方式，避免因连接不稳定给您带来的损失。
 
 在下文，我们使用 ngrok 为春松客服实例实现 HTTPS 协议的访问地址，ngrok 是可以免费使用的，但是需要您先注册，注册好了使用 ngrok 的命令行客户端绑定 localhost 的春松客服端口，ngrok 就提供一个 https 地址作为代理。
@@ -313,6 +310,7 @@ ngrok http 8035
 此时，我们就得到了春松客服的HTTPS服务的地址 `https://efdbe3894f65.ngrok.io`
 
 ### 激活渠道连接
+
 进入 Messenger 应用设置页面，滑动至【Webhook】区域，点击【添加回调网址】。
 
 <table class="image">
@@ -348,9 +346,8 @@ ngrok http 8035
 
 至此，配置 Webhook 成功。
 
-
-
 ### Webhook 添加订阅
+
 完成添加 Webhook 信息，还需要在 Webhook 栏内选择【添加订阅】。
 
 <table class="image">
@@ -381,6 +378,7 @@ Facebook 将该主页发生的【发消息】相关的事件分为很多种类�
 此时，渠道就连接上了，春松客服经由 Facebook 开发者平台对接上了 Facebook Page 上的 Messenger 对话控件。
 
 ### 做一个测试
+
 在集成 messenger 渠道的准备工作里，提到前提条件包括创建技能组、创建坐席人员的角色和创建至少一个账号关联角色和技能组。假设这个坐席人员名字是张三，现在，我们作为技能组的张三登录系统。同时，进入春松客服 DEMO 的 Facebook 主页，点击【发消息】，开始对话。
 
 <table class="image">
@@ -402,6 +400,7 @@ Facebook 将该主页发生的【发消息】相关的事件分为很多种类�
 此外，春松客服的基本功能如报表和坐席监控等，请参考春松客服文档中心的其它部分。
 
 ### 正式上线
+
 之前，在 Facebook 主页内的操作，我们都是使用管理员账号，此时，Facebook 普通用户作为访客登录，发起 Messenger 对话，是不会被 Facebook 转发到春松客服的，为了达成这个目标，我们需要提交上线，此过程需要在 Facebook 开发者平台，应用详情页面，编辑申请权限。
 
 <table class="image">
@@ -470,14 +469,3 @@ Facebook 将该主页发生的【发消息】相关的事件分为很多种类�
 * [Messenger 渠道配置机器人客服](/products/cskefu/channels/messenger/messenger-chatbot.html)
 * [Messenger 管理机器人客服对话](/products/cskefu/channels/messenger/message-types.html)
 * [如何经营好 Facebook 主页，吸引粉丝和维护客户关系](https://chatopera.blog.csdn.net/article/details/113973481)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

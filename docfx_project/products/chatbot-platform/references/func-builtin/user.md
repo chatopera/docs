@@ -64,13 +64,3 @@ this.user.history // 类型：数组
 
 历史对话按照降序排列，即最近发生的对话在上面，最多存储 100 轮历史对话数据。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

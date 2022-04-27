@@ -113,13 +113,3 @@ Chatopera 云服务支持微信支付和企业银行账号汇款，在控制台�
 根据反馈的内容的严重程度，合理程度等，给予 **500 RMB ~ 10,000 RMB 不等的 Chatopera 云服务代金券**。该代金券仅限于在 Chatopera 云服务使用，使用所有 APIs，同时不开具发票。
 
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

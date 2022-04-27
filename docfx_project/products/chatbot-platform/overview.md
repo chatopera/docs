@@ -32,13 +32,3 @@ Chatopera 融合了不同形式的实现聊天机器人的方法，支持定制�
 - [新手任务：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)
 
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

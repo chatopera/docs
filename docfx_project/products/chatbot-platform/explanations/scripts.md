@@ -47,13 +47,3 @@
 
 <img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_15-8-13.png"/>
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

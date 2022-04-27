@@ -42,7 +42,7 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 
 ## 创建网站渠道
 
-以管理员身份*春松客服坐席工作台*，导航【系统-客服接入-网站列表-创建新网站】，按照如下内容设置网站渠道。
+以管理员身份_春松客服坐席工作台_，导航【系统-客服接入-网站列表-创建新网站】，按照如下内容设置网站渠道。
 
 | 项目     | 值        | 描述            |
 | -------- | --------- | --------------- |
@@ -55,14 +55,3 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 </p>
 
 点击【立即提交】保存。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

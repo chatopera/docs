@@ -290,13 +290,3 @@ Chatopera CLI 工具是[开源的](https://github.com/chatopera/chatopera-nodejs
 * [使用 CLI 导入和导出对话语料](/products/chatbot-platform/howto-guides/cli-export-import.html)
 
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

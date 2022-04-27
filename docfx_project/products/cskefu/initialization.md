@@ -108,14 +108,3 @@
 <br/>
 解决：没有坐席在线，需要按照上述建立有效的坐席人员，并有坐席人员登陆。春松客服部署好以后，默认只有`超级管理员`，这时直接建立网页渠道访问，超级管理员在线，就会出现提示等待。
 <br/>
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

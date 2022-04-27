@@ -1,7 +1,6 @@
-# <2/5> 使用知识库回答“海口有几个机场” 
+# <2/5> 使用知识库回答“海口有几个机场”
 
 << 上一步：[<1/5> 创建机器人并添加到多轮对话设计器](1-create-bot.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
-
 
 现在，春松机器人还不能回答一些实际的问题。我们先从知识库开始，设定问答对，让机器人可以回答知识库里的问题。
 
@@ -48,7 +47,6 @@
 <img width="800" src="../../../images/products/platform/screenshot-20210913-202002.png"/>
 
 此时，我们就完成了知识库的第一个问答对的添加和测试，这部分工作是不是很简单？
-
 
 ## 添加问候语
 
@@ -106,7 +104,6 @@ exports.get_greetings = async function() {
 __faq_hot_list
 ```
 
-
 得到机器人回复：
 
 ```文本
@@ -123,14 +120,3 @@ __faq_hot_list
 可以说，`__faq_hot_list` 是我们约定的一个暗号，当对话用户进入对话场景，我们就主动向机器人发送暗号，获得预定义的回复，让机器人主动的开始对话。
 
 << 上一步：[<1/5> 创建机器人并添加到多轮对话设计器](1-create-bot.md) | >> 下一步：[<3/5> 使用意图识别完成“预定机票”](3-book-ticket-task.md)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

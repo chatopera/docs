@@ -13,7 +13,7 @@ Chatopera(accessToken [, botProvider])
 | name        | type   | required | description                                                                                                                      |
 | ----------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | accessToken | string | &#10004; | 在[机器人控制台/访问设置](https://bot.chatopera.com/dashboard/accesssettings)中获取，即 `Personal Access Token`                  |
-| botProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
+| botProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 <https://bot.chatopera.com>，也是默认值</font> |
 
 在机器人控制台，打开【访问设置】:
 
@@ -70,19 +70,8 @@ $chatopera = new Chatopera\SDK\Chatopera($accessToken[, $botProvider]);
 
 ```Go
 import (
-	"github.com/chatopera/chatopera-go-sdk"
+ "github.com/chatopera/chatopera-go-sdk"
 )
 ...
 var admin = chatopera.NewChatopera(accessToken[, botProvider])
 ```
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

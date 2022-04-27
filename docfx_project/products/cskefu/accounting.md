@@ -172,14 +172,3 @@ _系统_ -> _系统概况_ -> _用户和组_ -> _组织结构_ -> _选中一个�
 ![角色中添加账号](../../images/products/cosin/Picture21.png)
 
 <!-- markup:markdown-end -->
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

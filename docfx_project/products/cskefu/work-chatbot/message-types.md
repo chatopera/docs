@@ -248,14 +248,3 @@ exports.get_shangyi = async function() {
 提供了在问候语中关联热门问题的多轮对话应用示例文件(`小松.1.0.7.c66`)，您可以点击[下载链接](https://github.com/chatopera/chatopera.samples/raw/master/%E5%8D%A1%E7%89%87%E6%B6%88%E6%81%AF/%E5%B0%8F%E6%9D%BE.1.0.7.c66)获得这个应用。
 
 该对话可以导入到多轮对话设计器中，进行浏览脚本和函数；也可以直接导入到 Chatopera 云服务，然后在春松客服中进行体验。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

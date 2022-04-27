@@ -209,13 +209,3 @@ exports.echoYummy = async function(cap1) {
 
 - [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

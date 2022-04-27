@@ -138,14 +138,3 @@ docker-compose restart
 ## 其它
 
 - [服务器没有互联网访问条件情况下怎么部署？](https://github.com/chatopera/cskefu/issues/264)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

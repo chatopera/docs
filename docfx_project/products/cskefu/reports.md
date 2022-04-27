@@ -75,14 +75,3 @@
 **问题** 历史会话不显示数据
 
 **解决方案** 需要在网站渠道中启用技能组模式，并绑定单一技能组。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -133,13 +133,3 @@ Chatopera 机器人平台的私有部署版本，不允许将 Chatopera 上线�
 
 本法律声明的制定、执行和解释及争议的解决均应适用中华人民共和国法律。双方因使用本公司所产生的争议，协商不成的，任何一方可以向本公司所在地人民法院提起诉讼。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

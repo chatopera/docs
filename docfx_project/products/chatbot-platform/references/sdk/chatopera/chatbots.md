@@ -87,14 +87,3 @@ Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
 _total_: 所有数据条数
 
 _total_page_: 所有页面数
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

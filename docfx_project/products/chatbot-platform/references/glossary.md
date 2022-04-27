@@ -107,13 +107,3 @@ Chatbot Sample， 聊天机器人示例程序，开源地址，[https://github.c
 
 指机器人的词典内容、意图识别内容、知识库问答对和多轮对话脚本、函数和环境变量，以上内容的集合。对话语料就是机器人的对话能力依赖的所有原料。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

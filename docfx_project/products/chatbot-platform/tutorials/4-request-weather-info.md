@@ -26,7 +26,7 @@ ask_weather
 
 ### 添加槽位
 
-| 槽位名称 | 词典 | 必填 | 追问 | 
+| 槽位名称 | 词典 | 必填 | 追问 |
 | --- | --- | --- | --- |
 | `loc` | `@LOC` | 是 | 您要问哪里的天气信息？ |
 
@@ -84,7 +84,6 @@ intent ask_weather
 ```
 
 有了上节的经验，现在看起来，这个意图会话的脚本是不是很熟悉了？
-
 
 现在，脚本编辑区域看起来如下。
 
@@ -159,7 +158,7 @@ exports.handleLoseAskWeather = async function() {
 
 | 变量名 | 变量值 |
 | --- | --- |
-| HEWEATHER_URL | https://free-api.heweather.com/v5 |
+| HEWEATHER_URL | <https://free-api.heweather.com/v5> |
 | HEWEATHER_KEY | 182f1b6826d94c6285a489d2414f3ad0 |
 
 点击【确认】，再点击【保存】。
@@ -178,11 +177,9 @@ exports.handleLoseAskWeather = async function() {
 
 当看到类似上面的内容，恭喜你，这个查询天气的对话技能就实现了！
 
-
 ## 更新欢迎语
 
 在体验程序中，机器人打招呼时，发送了技能的介绍，包含三项：
-
 
 ```文本
 机器人可以解答或提供的服务
@@ -243,15 +240,3 @@ __faq_hot_list
 注册和风天气开发者：[https://dev.qweather.com/](https://dev.qweather.com/)
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-075951.png"/>
-
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

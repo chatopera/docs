@@ -129,13 +129,3 @@ Chatbot#command("POST", "/asr/recognize", body)
 | `text`       | string    | 识别得到的文本                                                 |
 | `confidence` | double    | 置信度，[0-1]，值越大越有可能，`predicts` 按 `confidence` 降序 |
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

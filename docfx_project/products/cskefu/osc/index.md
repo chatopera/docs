@@ -46,14 +46,3 @@
     <b>点赞春松客服</b>
     <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

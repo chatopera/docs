@@ -1,4 +1,5 @@
 # SDK
+
 Chatopera 机器人平台用户可以在不同的软件系统、程序中接入 Chatopera 机器人。 SDK 是面向不同编程语言和 Chatopera 机器人平台集成的工具库，包括 Node.js、Go、PHP、Python、Java 等。
 
 ## 能力概述
@@ -59,14 +60,3 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 - [`Chatbot` 类详细说明：对话检索、机器人信息及更新，etc.](./chatbot/index.md)
 
 - [遇到问题？常看“获得帮助”](/products/chatbot-platform/index.html#帮助)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -11,7 +11,7 @@
 - [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3+](https://maven.apache.org/)
 - [Docker 18+](https://www.docker.com/)
-- [Docker compose 1.22+ ](https://docs.docker.com/compose/install/)
+- [Docker compose 1.22+](https://docs.docker.com/compose/install/)
 
 以上安装，也涉及环境变量 PATH 配置，比如 `java`, `mvn` 和 `git` 等在命令行终端中可以使用，在不同的依赖安装文档中也有。
 在 Windows 上，命令行终端使用 Git Bash，安装 Git 时会默认包括。
@@ -54,9 +54,9 @@
 
 添加 SSH Key:
 
-* 在 Terminal 命令行终端（Git Bash, Windows）执行命令 `ssh-keygen`，得到文件 `~/.ssh/id_rsa.pub` 并复制其文本内容到粘贴板。
+- 在 Terminal 命令行终端（Git Bash, Windows）执行命令 `ssh-keygen`，得到文件 `~/.ssh/id_rsa.pub` 并复制其文本内容到粘贴板。
 
-* 打开 [SSH Keys 管理地址](https://github.com/settings/keys)，点击【New SSH Key】，使用粘贴板内容创建一个 SSH KEY。
+- 打开 [SSH Keys 管理地址](https://github.com/settings/keys)，点击【New SSH Key】，使用粘贴板内容创建一个 SSH KEY。
 
 ### Fork 源码
 
@@ -97,7 +97,6 @@ git remote add upstream git@github.com:chatopera/cskefu.git
     <b>点赞春松客服</b>
     <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 </p>
-
 
 ## 文件目录介绍
 
@@ -243,7 +242,7 @@ spring.activemq.pool.max-connections=50
 
 将以上值修改为 ActiveMQ 的实际地址和密码。
 
-ActiveMQ 管理工具，使用浏览器打开，http://YOUR_ACTIVEMQ_IP:PORT。PORT 默认是 `8051`，即[环境变量](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
+ActiveMQ 管理工具，使用浏览器打开，<http://YOUR_ACTIVEMQ_IP:PORT。PORT> 默认是 `8051`，即[环境变量](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
 
 <p align="center">
     <img width="500" src="../../../images/products/cskefu/screenshot-20220326-105115.png" alt="" />
@@ -264,17 +263,15 @@ MySQL 容器启动后，还需要创建春松客服数据库，该过程是在�
 
 #### 连接 MySQL 服务
 
-
 安装 DBMS 管理工具 MySQL Workbench，下载地址：
 
-https://dev.mysql.com/downloads/workbench/
+<https://dev.mysql.com/downloads/workbench/>
 
 <p align="center">
     <img width="500" src="../../../images/products/cskefu/screenshot-20220326-103030.png" alt="" />
 </p>
 
 在 Windows 上，MySQL Workbench 依赖 [Visual C++ Redistributable](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)，需要提前安装。
-
 
 使用`docker-compose`启动的 MySQL 服务，其连接认证信息如下：
 
@@ -321,8 +318,8 @@ Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://git
 
 春松客服开发支持的 IDE，包括所有的支持 Spring Boot 的 IDE，以下仅提供部分工具的文档。
 
-* [Intelij IDEA](./ide_intelij_idea.md)
-* [Eclipse IDE](./ide_eclipse.md)
+- [Intelij IDEA](./ide_intelij_idea.md)
+- [Eclipse IDE](./ide_eclipse.md)
 
 配置完成后，需要继续完成以下内容。
 
@@ -415,7 +412,6 @@ HTML 示例：
 </html>
 ```
 
-
 ## 接下来
 
 - [如何为开源客服系统春松客服贡献代码 | 春松客服](./contribution.md)
@@ -423,14 +419,3 @@ HTML 示例：
 - [春松客服数据库表及管理 | 春松客服](https://blog.csdn.net/samurais/article/details/105807088)
 
 - [春松客服的压力测试 | 春松客服](https://blog.csdn.net/samurais/article/details/105725876)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

@@ -45,13 +45,3 @@ sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid
 
 [解决方案](https://github.com/chatopera/chatopera-sample-java/issues/1)
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

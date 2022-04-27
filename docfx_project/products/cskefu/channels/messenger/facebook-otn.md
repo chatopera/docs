@@ -8,7 +8,6 @@ OTN 是 One-time Notification 的缩写。
 
 ![](../../../../images/products/cskefu/messenger/image-2021-02-19-120353.png)
 
-
 整个 OTN 使用流程可分为四步：
 
 1、管理员在春松客服“营销中心”创建 OTN 记录，生成**分享链接**；
@@ -30,8 +29,8 @@ OTN 是 One-time Notification 的缩写。
     </tr>
 </table>
 
-
 ## 开通 Facebook Page 的 OTN 权限
+
 根据 Facebook 的规定，您首先需要为您的 Page 开通 OTN 权限。如下图所示，在 Page 中按照：设定→ 進階訊息→ 要求的功能→ 一次性通知 的路径为您的 Page 申请 OTN 权限。
 
 <table class="image">
@@ -41,11 +40,12 @@ OTN 是 One-time Notification 的缩写。
     </tr>
 </table>
 
-
 ## OTN 管理
+
 营销人员可以在营销中心对 OTN 进行管理。在营销中心可以看到 OTN 的详细信息以及订阅人数和状态等。
 
 ### 创建 OTN
+
 步骤：营销中心 → 创建 OTN
 
 <table class="image">
@@ -79,11 +79,12 @@ OTN 表单内容。
 **那么，接下来，您就可以发布推文（Post），并且在推文中增加该链接，Facebook 用户在浏览推文，如果感兴趣就点击该链接，完成订阅！**
 
 ### 编辑 OTN
+
 步骤：Messenger OTN 列表页→ 操作栏→ 编辑
 在推送内容前，管理员可以继续编辑 OTN 表单内容。
 
-
 ### 删除 OTN
+
 步骤：Messenger OTN列表页→ 操作栏→ 删除
 
 <table class="image">
@@ -118,6 +119,7 @@ OTN 表单内容。
 </table>
 
 ## 营销人员发布分享链接到 Facebook 主页
+
 第一步：营销人员复制 Messenger OTN 列表中的分享链接
 
 <table class="image">
@@ -137,6 +139,7 @@ OTN 表单内容。
 </table>
 
 ## Facebook 渠道用户订阅 OTN 消息
+
 用户在 Facebook page 页面，点击分享链接，进入对话窗口后点击：通知我/Notify Me
 
 <table class="image">
@@ -147,6 +150,7 @@ OTN 表单内容。
 </table>
 
 ## Facebook 渠道用户接收 OTN 消息
+
 用户订阅 OTN 消息后，营销人员在营销中心发送 OTN，用户就可以收到消息了
 
 <table class="image">
@@ -155,7 +159,6 @@ OTN 表单内容。
         <td><img width="300" src="../../../../images/products/cskefu/messenger/image2021-2-5_23-48-11.png" alt="" /></td>
     </tr>
 </table>
-
 
 ## 查看 OTN 发送效果
 
@@ -168,7 +171,6 @@ OTN 列表页“订阅”一列显示此 OTN 订阅人数，订阅的用户都�
     </tr>
 </table>
 
-
 在 Facebook 主页上，作为管理员，从右侧管理面板进入公共主页成效分析，包含最近丰富的粉丝增长数据，页面访问情况数据，指导企业计算 RoI 等指标。
 
 <table class="image">
@@ -178,18 +180,6 @@ OTN 列表页“订阅”一列显示此 OTN 订阅人数，订阅的用户都�
     </tr>
 </table>
 
-
 ## OTN 注意事项
+
 根据 Facebook 官方对于 OTN 的限制说明，需要注意：不能在短时间内多次向用户发送获得 OTN 许可的请求，即不能短时间内重复多次发送 OTN、请求用户点击“通知我/Notify Me”。这样的行为会被 Facebook 监控，如果 Facebook 算法检测到短时间内发送的 OTN 请求数量异常，您将面临失去访问 OTN 功能的风险。
-
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

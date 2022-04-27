@@ -2,7 +2,6 @@
 
 << 上一步：[<2/5> 使用知识库回答“海口有几个机场”](2-answer-faq.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins
 
-
 完成本节内容，春松机器人能够为对话用户提供预约机票的服务。当然，不是真的出票，我们只是通过自然语言交互的形式获取到了要购买机票相关的信息，假设已经有了一个接口，通过这个接口可以出票。
 
 ## 引用系统词典
@@ -11,7 +10,6 @@
 
 再次回到春松机器人管理控制台，在机器人菜单上点击【词典】。
 
-
 <img width="800" src="../../../images/products/platform/screenshot-20210914-014615.png"/>
 
 在词典管理页面，点击【引用系统词典】。
@@ -19,7 +17,6 @@
 <img width="800" src="../../../images/products/platform/screenshot-20210915-134251.png"/>
 
 跳转到新的页面后，找到 `@TIME` 和 `@LOC`，点击【引用】，如上图所示。稍后我们就可以让机器人在意图识别中能“学习”到这些“概念”。
-
 
 ## 创建意图
 
@@ -32,7 +29,6 @@
 <img width="500" src="../../../images/products/platform/screenshot-20210914-013838.png"/>
 
 在弹出的表单中填写：
-
 
 ```意图标识名
 book_airplane_ticket
@@ -81,7 +77,7 @@ book_airplane_ticket
 接下来，我们开始添加槽位信息，槽位就是在预约机票任务中，需要的关键信息：出发城市、到达城市和航班时间。
 槽位编辑面板在【用户说法】的下面，按照如下信息逐个【添加】：
 
-| 槽位名称 | 词典 | 必填 | 追问 | 
+| 槽位名称 | 词典 | 必填 | 追问 |
 | --- | --- | --- | --- |
 | `fromPlace` | `@LOC` | 是 | 您从哪个城市或机场出发？ |
 | `date` | `@TIME` | 是 | 您的计划出发日期是什么时候? |
@@ -132,7 +128,6 @@ book_airplane_ticket
 
 所以，我们可以得到结论：现在机器人可以识别意图了，能提取到关键的信息了。
 
-
 ## 完成意图会话
 
 最终，我们希望意图识别的对话，能集成到出票的服务上。要想低代码的实现，就需要借助多轮对话，在多轮对话中，意图匹配器能帮助我们达到这个目标！
@@ -140,7 +135,6 @@ book_airplane_ticket
 回到多轮对话设计器，假设还在刚刚的 `greetings` 编辑窗口。点击【新建话题】，话题名称填写`intents`。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-022010.png"/>
-
 
 这时候，进入了一个新的脚本编辑窗口，在脚本编辑区域，添加如下内容：
 
@@ -242,7 +236,6 @@ exports.rebookAirplaneTicket = async function() {
 
 完成添加脚本和函数后，点击【保存】。这时候，多轮对话设计器里的更新就上传到 Chatopera 云服务了。
 
-
 ## 测试意图会话
 
 在多轮对话设计器内的聊天窗口，发送文本：
@@ -270,14 +263,3 @@ exports.rebookAirplaneTicket = async function() {
 <img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
 
 << 上一步：[<2/5> 使用知识库回答“海口有几个机场”](2-answer-faq.md) | >> 下一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](4-request-weather-info.md)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

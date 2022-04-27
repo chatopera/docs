@@ -66,13 +66,3 @@
 
 **近义词**，**新词**，**专有名词**都可以通过自定义词典进行维护，维护好自定义词典对机器人智能化水平有着至关重要的作用。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

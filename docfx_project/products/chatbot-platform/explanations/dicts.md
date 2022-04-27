@@ -16,13 +16,3 @@ Chatopera 机器人平台提供多种形式的词典。
 自定义词典，是用户创建和维护的词典，包括 **词汇表词典** 和 **正则表达式词典** 两种类型。
 
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

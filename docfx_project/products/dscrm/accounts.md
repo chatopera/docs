@@ -355,13 +355,3 @@
     <img width="800" src="../../images/products/dscrm/139.png" alt="" />
 </p>
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

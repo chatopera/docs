@@ -57,13 +57,3 @@
 * [在春松客服集成 Chatopera BOT](/products/cskefu/work-chatbot/bot-agent.html)
 * [使用 SDK 集成 Chatopera BOT](integration-sdk.md)
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

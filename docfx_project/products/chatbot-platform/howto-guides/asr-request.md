@@ -21,13 +21,3 @@ Chatopera 机器人平台支持语音识别服务，将语音转化为文本内�
 
 语音识别模块的服务费用参考[计费及发票](/products/chatbot-platform/contract/billing.html#语音识别)。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

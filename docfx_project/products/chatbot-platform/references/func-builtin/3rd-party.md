@@ -28,14 +28,3 @@ exports.handleOpenGithubIssue = async function() {
 更多关于 `Octokit` 以及 `Octokit#request` 的介绍，[参考链接](https://github.com/octokit/octokit.js/)，更多 `GitHub RestAPIs` 的介绍，[参考链接](https://docs.github.com/en/rest/reference)。
 
 - 在函数中使用 Octokit 更多使用示例代码：[https://github.com/chatopera/chatbot-samples/search?q=Octokit](https://github.com/chatopera/chatbot-samples/search?q=Octokit)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

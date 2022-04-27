@@ -8,7 +8,6 @@
 
 [https://bot.chatopera.com/dashboard](https://bot.chatopera.com/dashboard)
 
-
 在工具条菜单中，点击【创建机器人】。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-185844.png"/>
@@ -65,26 +64,15 @@
 
 <img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
 
-
 << 上一步：[入门教程首页](index.md) | >> 下一步：[<2/5> 使用知识库回答“海口有几个机场”](2-answer-faq.md)
 
 ## 可能遇到的问题
 
 ### 信息不匹配，请确认机器人信息
+
 提示如下：
 <img width="800" src="../../../images/products/platform/screenshot-20210913-193815.png"/>
 
 如果经过验证，你填写的信息没有错误，那么可能是电脑的时间日期与互联网标准时间之间有很大误差，需要先在操作系统上同步互联网时间，以下是 Windows 上同步互联网时间的方法，你也可以手动设置，其它操作系统，都有类似的操作。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-193617.png"/>
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

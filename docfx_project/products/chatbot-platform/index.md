@@ -38,13 +38,3 @@ Chatopera 云服务文档中心包括很多文档，了解这些文档是如何�
 
 你想了解 [Chatopera 云服务](https://bot.chatopera.com) 相关的新功能、新动态？关注 [Chatopera 官方博客](https://status.chatopera.com/)。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

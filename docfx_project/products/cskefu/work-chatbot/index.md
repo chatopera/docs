@@ -84,14 +84,3 @@
 Chatopera 发布 [话术助手](/products/chatbot-platform/faq/assistant.html) 来适应差异较大的不同渠道，将机器人知识库发挥更大作用。
 
 话术助手将知识库的效益最大化，适合作为企业知识库管理、网络聊天快捷语等场景。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

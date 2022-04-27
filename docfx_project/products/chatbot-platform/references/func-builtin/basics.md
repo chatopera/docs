@@ -89,14 +89,3 @@ _.keyBy(array, 'dir');
 ```
 
 更多 lodash 方法，参考 [https://lodash.com/docs/4.17.15](https://lodash.com/docs/4.17.15)。
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

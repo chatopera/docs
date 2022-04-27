@@ -250,13 +250,3 @@ this.message.tags = ["nis","ude1","vi","n"]
 | INT                  | 感動詞 # Interjection                  |
 | KYTEA_JA_DEFAULT_TAG | 新規未知語 # Unclassified unknown word |
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

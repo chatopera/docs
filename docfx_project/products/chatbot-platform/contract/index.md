@@ -10,13 +10,3 @@ Chatopera 云服务是企业级的服务，依托于 Chatopera 的 Platform as a
 
 - [服务水平协议：Chatopera 承诺的可靠性保证等](./sla.md)
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

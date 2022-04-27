@@ -68,13 +68,3 @@ result = chatbot.command(method, path [, body])
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

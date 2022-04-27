@@ -26,7 +26,7 @@ CC_IMAGE=chatopera/contact-center:develop
 <img width="600" src="../../../images/products/cskefu/screenshot-20210720-135039.png" alt="" />
 </p>
 
-https://github.com/chatopera/cskefu/commits/osc
+<https://github.com/chatopera/cskefu/commits/osc>
 
 为了方便管理，春松客服 Git Commit Short ID 也是春松客服 Docker 镜像的 Tag，也常用 Docker 镜像版本号来指代。**在 GitHub** Commit 历史中，有对号的版本就是完成了对应的 Docker 镜像发布的版本，`develop` 标签就是已经发布的最近的版本。
 
@@ -127,14 +127,3 @@ docker-compose logs -f contact-center # 查看日志
 - [搭建春松客服性能监控服务（付费视频）](https://ke.qq.com/webcourse/index.html#cid=464050&term_id=100555327&taid=4785516986176690&type=1024&vid=5285890796447482734)
 
 - [搭建开发环境](/products/cskefu/osc/engineering.html)
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

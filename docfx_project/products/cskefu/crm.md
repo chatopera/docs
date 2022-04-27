@@ -23,7 +23,7 @@ _左侧菜单_ -> _全部客户_ -> _客户列表_ -> _选中一个客户_ -> _�
 
 ## 联系人笔记
 
-进入联系人列表，选择一个联系人，点击*联系人*姓名，进入详情页面。
+进入联系人列表，选择一个联系人，点击_联系人_姓名，进入详情页面。
 在详情页面，编辑联系人笔记，记录来往历史。
 
 <table class="image">
@@ -36,14 +36,3 @@ _左侧菜单_ -> _全部客户_ -> _客户列表_ -> _选中一个客户_ -> _�
 ## 删除客
 
 _左侧菜单_ -> _全部客户_ -> _客户列表_ -> _选中一个客户_ -> _点击“删除”按钮_
-
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

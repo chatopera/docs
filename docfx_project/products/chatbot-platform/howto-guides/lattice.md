@@ -74,13 +74,3 @@ Chatopera 机器人平台提供聚类输出包括：
 聚类通常针对的是大规模数据，成千上万、乃至数十万数百万的对话历史记录。
 
 
-## 评论
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
