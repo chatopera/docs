@@ -62,9 +62,7 @@
 
 在浏览器中，打开[春松客服项目地址](https://github.com/chatopera/cskefu)，在右上角，找到【Fork】按钮，点击【Fork】，根据提示选择空间，该项目源码将被复制到该空间。
 
-<p align="center">
-    <img width="500" src="../../../images/products/cskefu/screenshot-20220325-142302.png" alt="" />
-</p>
+![Fork 源码](../../../images/products/cskefu/screenshot-20220325-142302.png)
 
 克隆后，新的项目地址类似如下：
 
@@ -93,16 +91,11 @@ git remote add upstream git@github.com:chatopera/cskefu.git
 
 完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。
 
-<p align="center">
-    <b>点赞春松客服</b>
-    <img width="800" src="../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
-</p>
+![给春松客服点赞](../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
 
 ## 文件目录介绍
 
-<p align="center">
-<img width="200" src="../../../images/products/cosin/g9.png" alt="" />
-</p>
+![文件目录介绍](../../../images/products/cosin/g9.png)
 
 | 目录     | 说明                         |
 | -------- | ---------------------------- |
@@ -112,6 +105,7 @@ git remote add upstream git@github.com:chatopera/cskefu.git
 | `config` | 数据库文件                   |
 | `data`   | 数据库数据                   |
 | `logs`   | 日志                         |
+<!-- markup:table-caption 文件目录说明 -->
 
 春松客服是基于 Java 开发到，使用 Maven 维护项目声明周期。使用 Maven 命令，生成项目，方便导入到 IDE 中。
 
@@ -244,9 +238,7 @@ spring.activemq.pool.max-connections=50
 
 ActiveMQ 管理工具，使用浏览器打开，<http://YOUR_ACTIVEMQ_IP:PORT。PORT> 默认是 `8051`，即[环境变量](https://github.com/chatopera/cskefu/blob/osc/docker-compose.yml) `ACTIVEMQ_PORT1`。
 
-<p align="center">
-    <img width="500" src="../../../images/products/cskefu/screenshot-20220326-105115.png" alt="" />
-</p>
+![ActiveMQ 管理工具](../../../images/products/cskefu/screenshot-20220326-105115.png)
 
 点击【Manage ActiveMQ broker】,用户名 admin, 密码 admin。
 
@@ -267,9 +259,7 @@ MySQL 容器启动后，还需要创建春松客服数据库，该过程是在�
 
 <https://dev.mysql.com/downloads/workbench/>
 
-<p align="center">
-    <img width="500" src="../../../images/products/cskefu/screenshot-20220326-103030.png" alt="" />
-</p>
+![MySQL Workbench 下载](../../../images/products/cskefu/screenshot-20220326-103030.png)
 
 在 Windows 上，MySQL Workbench 依赖 [Visual C++ Redistributable](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)，需要提前安装。
 
@@ -278,18 +268,15 @@ MySQL 容器启动后，还需要创建春松客服数据库，该过程是在�
 | IP        | 用户名 | 密码   | 端口 |
 | --------- | ------ | ------ | ---- |
 | localhost | root   | 123456 | 8037 |
+<!-- markup:table-caption MySQL Workbench 配置 -->
 
-<p align="center">
-    <img width="500" src="../../../images/products/cskefu/screenshot-20220326-103030.png" alt="" />
-</p>
+![MySQL Workbench 安装](../../../images/products/cskefu/screenshot-20220326-103030.png)
 
 #### MySQL 数据字典
 
 在线浏览[数据字典](https://chatopera.github.io/cskefu/)
 
-<p align="center">
-<img width="600" src="../../../images/products/cosin/g8.png" alt="" />
-</p>
+![春松客服数据字典](../../../images/products/cosin/g8.png)
 
 #### SQL 快速入门
 
@@ -347,9 +334,7 @@ http://localhost:8035/
 
 保证有下面的一条网站渠道：
 
-<p align="center">
-<img width="800" src="../../../images/products/cosin/g19.png" alt="" />
-</p>
+![网站渠道](../../../images/products/cosin/g19.png)
 
 **注意**：网站地址为 _localhost_
 
@@ -357,15 +342,11 @@ http://localhost:8035/
 
 在网站列表中，从右侧操作中点击“设计”。
 
-<p align="center">
-<img width="800" src="../../../images/products/cosin/g20.png" alt="" />
-</p>
+![设计网页](../../../images/products/cosin/g20.png)
 
 按照需求配置各种属性。
 
-<p align="center">
-<img width="800" src="../../../images/products/cosin/g21.png" alt="" />
-</p>
+![配置](../../../images/products/cosin/g21.png)
 
 ### 访问测试程序
 
@@ -375,9 +356,7 @@ http://localhost:8035/
 http://localhost:8035/testclient.html
 ```
 
-<p align="center">
-<img width="800" src="../../../images/products/cosin/g22.png" alt="" />
-</p>
+![测试](../../../images/products/cosin/g22.png)
 
 ### 网站留言
 
@@ -411,6 +390,8 @@ HTML 示例：
 </body>
 </html>
 ```
+
+<!-- markup:markdown-end -->
 
 ## 接下来
 

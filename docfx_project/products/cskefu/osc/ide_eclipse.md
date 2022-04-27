@@ -9,9 +9,7 @@
 安装 Eclipse：<https://www.eclipse.org/downloads/>
 本文下载时，版本为：Eclipse IDE 2021‑09
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2021-12-4_14-59-23.png" alt="" />
-</p>
+![下载 Eclipse](../../../images/products/cskefu/image2021-12-4_14-59-23.png)
 
 下载过程大约需要 10 mins。
 
@@ -19,9 +17,7 @@
 
 双击安装包，按照提示进行安装。
 
-<p align="center">
-        <img width="500" src="../../../images/products/cskefu/image2022-3-26_15-53-32.png" alt="" />
-</p>
+![安装 Eclipse](../../../images/products/cskefu/image2022-3-26_15-53-32.png)
 
 ### 安装 STS
 
@@ -29,21 +25,15 @@ STS 最简单的安装方式，就是启动 Eclipse 后，在 Eclipse Marketplac
 
 打开 Marketplace。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_15-54-15.png" alt="" />
-</p>
+![Marketplace。](../../../images/products/cskefu/image2022-3-26_15-54-15.png)
 
 搜索，Spring Tool Suite。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_15-55-16.png" alt="" />
-</p>
+![Spring Tool Suite](../../../images/products/cskefu/image2022-3-26_15-55-16.png)
 
 点击【Install】。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_15-56-34.png" alt="" />
-</p>
+![Install](../../../images/products/cskefu/image2022-3-26_15-56-34.png)
 
 至少选择以上几项，在授权声明页面，选择 【I accept】，点击【Finish】。
 安装过程可能会持续半个小时，视网络情况。
@@ -63,9 +53,7 @@ cd cskefu.osc/contact-center
 
 完成后有如下提示：
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2021-12-4_16-6-25.png" alt="" />
-</p>
+![导入项目](../../../images/products/cskefu/image2021-12-4_16-6-25.png)
 
 该命令生成了被 Eclipse 识别的项目导入文件。
 
@@ -73,21 +61,15 @@ cd cskefu.osc/contact-center
 
 打开 Eclipse，选择 File - Import, 导航到 cskefu.osc/contact-center/app，点击 【Select Folder】。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-0-40.png" alt="" />
-</p>
+![导入到 Eclipse](../../../images/products/cskefu/image2022-3-26_16-0-40.png)
 
 在提示界面，选择 Projects: contact-center.
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-7-20.png" alt="" />
-</p>
+![选择项目](../../../images/products/cskefu/image2022-3-26_16-7-20.png)
 
 导入完成。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-6-21.png" alt="" />
-</p>
+![导入完成](../../../images/products/cskefu/image2022-3-26_16-6-21.png)
 
 ## 启动和调试
 
@@ -97,29 +79,21 @@ cd cskefu.osc/contact-center
 
 首先，在左侧 contact-center 右键，选择 Build path, configure Build Path ...
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-14-16.png" alt="" />
-</p>
+![设置 Build path](../../../images/products/cskefu/image2022-3-26_16-14-16.png)
 
 然后，选择 Add Library, JRE System Library。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-12-56.png" alt="" />
-</p>
+![Add Library](../../../images/products/cskefu/image2022-3-26_16-12-56.png)
 
 然后，添加 JDK 8 路径。
 
-<p align="center">
-        <img width="500" src="../../../images/products/cskefu/image2022-3-26_16-10-31.png" alt="" />
-</p>
+![设置路径](../../../images/products/cskefu/image2022-3-26_16-10-31.png)
 
 点击 【Finish】。确认依赖 JDK。
 
 添加完成，回到 Java Build Path 配置页面，确认 Libraries 中，依赖了 Corretto JDK。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-16-43.png" alt="" />
-</p>
+![确认 SDK](../../../images/products/cskefu/image2022-3-26_16-16-43.png)
 
 ### 修改配置文件
 
@@ -129,31 +103,25 @@ cd cskefu.osc/contact-center
 
 根据数据库信息，或其它信息进行必要的更改。
 
-参考上一篇[《开发环境搭建》](./engineering.md)里的内容。
+<!-- markup:skip-line --> 参考上一篇[《开发环境搭建》](./engineering.md)里的内容。
 
 ### 创建项目 debug 调试
 
 点击 Debug 启动按钮下拉中的 Debug Configurations, 在左侧找到 Spring Boot App，右键，选择新建配置。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-25-4.png" alt="" />
-</p>
+![](../../../images/products/cskefu/image2022-3-26_16-25-4.png)
 
 在配置页面，填写应用名称：contact-center - Application，project 选择 contact-center, Main Type 选择 com.chatopera.cc.Application。
 
 然后点击 Environment，点击 Add 添加：Name - SPRING_PROFILES_ACTIVE， Value - dev，字符串无空格。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-23-28.png" alt="" />
-</p>
+![](../../../images/products/cskefu/image2022-3-26_16-23-28.png)
 
 点击【Apply】。然后点击【Debug】。
 
 此时，滚动出大量的日志。
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2022-3-26_16-28-16.png" alt="" />
-</p>
+![](../../../images/products/cskefu/image2022-3-26_16-28-16.png)
 
 ### 调试项目
 
@@ -181,17 +149,13 @@ cd cskefu.osc/contact-center
 
 ### 报错：com.sun.net.ssl.internal.ssl.Provider
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2021-12-4_16-20-49.png" alt="" />
-</p>
+![](../../../images/products/cskefu/image2021-12-4_16-20-49.png)
 
 解决办法：
 
 * 修改 Compiler 验证提示，[详细介绍](https://blog.csdn.net/tower888/article/details/106220494)
 
-<p align="center">
-        <img width="800" src="../../../images/products/cskefu/image2021-12-4_16-21-52.png" alt="" />
-</p>
+![](../../../images/products/cskefu/image2021-12-4_16-21-52.png)
 
 * 修改 Project JRE 为前面安装的 Java8 JRE
 
@@ -199,9 +163,7 @@ cd cskefu.osc/contact-center
 
 解决办法[详细介绍](https://blog.csdn.net/timo1160139211/article/details/74908266)。
 
-<p align="center">
-        <img width="400" src="../../../images/products/cskefu/image2021-12-4_16-36-7.png" alt="" />
-</p>
+![](../../../images/products/cskefu/image2021-12-4_16-36-7.png)
 
 ## 下一步
 

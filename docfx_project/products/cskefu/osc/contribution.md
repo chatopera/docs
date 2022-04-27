@@ -38,9 +38,7 @@
 
 Git 用于版本管理，使用 Git 时，一个文件有三个可能存在的地方：indexed（索引区），staged（暂存区） 和 workarea（工作区）。indexed 文件就是被索引了（提交了）；staged 就是被临时的保存了（暂未提交，保护一下）；workarea，在编辑器中打开的这份。
 
-<p align="center">
-    <img width="450" src="../../../images/products/cskefu/git-scm-intro.png" alt="" />
-</p>
+![Git 使用概述](../../../images/products/cskefu/git-scm-intro.png)
 
 上图中 master 所在区就是 indexed。
 
@@ -103,9 +101,7 @@ git push origin ${YOUR_BRANCH_NAME} # ${YOUR_BRANCH_NAME} 就是分支名称
 
 执行过程中，交互类似：
 
-<p align="center">
-    <img width="700" src="../../../images/products/cskefu/screenshot-20220325-160845.png" alt="" />
-</p>
+![推送代码](../../../images/products/cskefu/screenshot-20220325-160845.png)
 
 在 git push 命令，执行后，也可以看到，git 提示您，可以提交一个 PR（Pull Request）:
 
@@ -133,9 +129,7 @@ To github.com:hailiang-wang/cskefu.git
 
 在浏览器中，打开 <https://github.com/hailiang-wang/cskefu/pull/new/issue7> ，得到如下页面：
 
-<p align="center">
-    <img width="700" src="../../../images/products/cskefu/screenshot-20220325-161804.png" alt="" />
-</p>
+![创建 PR](../../../images/products/cskefu/screenshot-20220325-161804.png)
 
 在该页面，确认希望提交的代码分支是正确的，合并的方向是从【源库:branch】到【目标库:branch】。然后，对变更添加标题和描述正文。
 
@@ -153,9 +147,7 @@ To github.com:hailiang-wang/cskefu.git
 
 PR 被合并后，是指代码进入到了春松客服的[OSC 分支](https://github.com/chatopera/cskefu/tree/osc)，一个被 Merge 的 PR 状态显示为【Merged】，比如 [PR 666](https://github.com/chatopera/cskefu/pull/666)。
 
-<p align="center">
-    <img width="700" src="../../../images/products/cskefu/screenshot-20220328-095049.png" alt="" />
-</p>
+![同步代码](../../../images/products/cskefu/screenshot-20220328-095049.png)
 
 现在，Upstream 已经有了最新的代码，但是您的远程仓库还没有最新的代码，也就是您的 OSC 分支还没有更新，此时需要做下面的操作。
 
@@ -175,6 +167,8 @@ git push origin osc # 推送到您的远程 Git 仓库
 ```bash
 git branch -d issue7
 ```
+
+<!-- markup:markdown-end -->
 
 ## 自豪的
 
