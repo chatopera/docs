@@ -1,6 +1,6 @@
 # IDE 使用之 Eclipse IDE
 
-<!-- markup:skip-line --> << 回到[上一步：开发环境搭建](./engineering.md#初始化系统)
+<< 回到[上一步：开发环境搭建](./engineering.md#初始化系统) <!-- markup:skip-line -->
 
 ## 安装和下载 Eclipse
 
@@ -103,7 +103,7 @@ cd cskefu.osc/contact-center
 
 根据数据库信息，或其它信息进行必要的更改。
 
-<!-- markup:skip-line --> 参考上一篇[《开发环境搭建》](./engineering.md)里的内容。
+参考上一篇[《开发环境搭建》](./engineering.md)里的内容。<!-- markup:skip-line -->
 
 ### 创建项目 debug 调试
 

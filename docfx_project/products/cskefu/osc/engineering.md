@@ -89,9 +89,9 @@ cd cskefu.osc
 git remote add upstream git@github.com:chatopera/cskefu.git
 ```
 
-<!-- markup:skip-line --> 完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。
+完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。<!-- markup:skip-line -->
 
-<!-- markup:skip-line --> ![给春松客服点赞](../../../images/products/cosin/g4.jpg]
+![给春松客服点赞](../../../images/products/cosin/g4.jpg] <!-- markup:skip-line -->
 
 ## 文件目录介绍
 
