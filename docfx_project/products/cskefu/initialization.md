@@ -18,6 +18,7 @@
 | ------------ | --------- | --------- |
 | admin        | admin1234 | 系统超级管理员 |
 | zhangsan        | agent1234 | 客服坐席人员 |
+<!-- markup:table-caption 部署后默认账号 -->
 
 * 系统超级管理员【admin】, 密码：`admin1234`
 
@@ -41,23 +42,17 @@
 
 使用系统超级管理员 admin，点击右上角【个人资料】。
 
-<p align="center">
-<img width="300" src="../../images/products/cskefu/account/screenshot-20211129-161436.png" alt="" />
-</p>
+![个人资料](../../images/products/cskefu/account/screenshot-20211129-161436.png)
 
 设置新密码并保存。
 
-<p align="center">
-<img width="500" src="../../images/products/cskefu/account/screenshot-20211129-161422.png" alt="" />
-</p>
+![设置](../../images/products/cskefu/account/screenshot-20211129-161422.png)
 
 ### 修改【zhangsan】账号
 
 使用系统超级管理员 admin 进入【售前坐席 A 组】，再进入系统管理，账号管理，找到zhangsan，点击`编辑`进行修改。
 
-<p align="center">
-<img width="500" src="../../images/products/cskefu/account/screenshot-20211129-161512.png" alt="" />
-</p>
+![修改账号](../../images/products/cskefu/account/screenshot-20211129-161512.png)
 
 ## 创建组织机构
 
@@ -67,13 +62,13 @@
 
 参考[角色管理](/products/cskefu/accounting.html#%E8%A7%92%E8%89%B2%E7%AE%A1%E7%90%86)，创建角色并授予相应的权限，客服人员主要需要的资源就是**坐席对话**，**全部客户** 和 **全部联系人**，此处**全部客户**和**全部联系人**是限定在该坐席所在的组织机构和下属组织机构而言的。
 
-<p align="center">
-<img width="500" src="../../images/products/cskefu/init-1.jpg" alt="" />
-</p>
+![创建角色](../../images/products/cskefu/init-1.jpg)
 
 若果该角色需要能干预其他坐席人员的会话，则可授予**会话监控**，此处也是监控该坐席所在的组织机构和下属组织机构的。
 
 一个春松客服登陆用户，具体有什么资源的访问，看到哪些数据，是通过其所在的组织机构及其下属组织机构，和该登陆用户的角色授予情况来判断的，因为一个资源，即有资源名称，又属于一个组织机构。
+
+<!-- markup:markdown-end -->
 
 ## 创建账号
 

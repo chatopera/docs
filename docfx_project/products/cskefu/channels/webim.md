@@ -8,42 +8,22 @@
 
 获取网页脚本，_系统_ -> _系统管理_ -> _客服接入_ -> _网站列表_ -> _点击“Chatopera 官网”_ -> _基本设置_ -> _接入；_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/Picture30.png" alt="" /></td>
-    </tr>
-</table>
+![接入网站](../../../images/products/cosin/Picture30.png)
 
 将图中的代码复制到一个 Web 项目的页面中，例如下图的。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/cosin/Picture31.png" alt="" /></td>
-    </tr>
-</table>
+![粘贴聊天控件代码](../../../images/products/cosin/Picture31.png)
 
 ## 使用
 
 使用浏览器打开该 Web 页面。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="400" src="../../../images/products/cosin/Picture32.png" alt="" /></td>
-    </tr>
-</table>
+![聊天控件](../../../images/products/cosin/Picture32.png)
 
 【提示】该网页需要使用 http(s)打开，不支持使用浏览器打开本地 HTML 页面。
 
 点击该网页中出现的“在线客服”按钮，出现聊天窗口，可以作为访客，与客服聊天了。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="400" src="../../../images/products/cosin/Picture33.png" alt="" /></td>
-    </tr>
-</table>
+![与在线客服对话](../../../images/products/cosin/Picture33.png)
 
 【提示】春松客服提供一个测试网页客户端的例子，可以使用 _<http://{{春松春松客服IP:[PORT>]}}/testclient.html_ 进行访问。

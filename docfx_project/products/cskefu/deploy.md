@@ -2,7 +2,9 @@
 
 春松客服适应各种部署方式，本文使用 Docker 和 Docker compose 的方式，适合体验、开发、测试和上线春松客服，此种方式简单快捷。
 
-<font color="red">重要提示：部署应用后，必须按照</font>[《系统初始化》](https://docs.chatopera.com/products/cskefu/initialization.html)<font color="red">文档进行系统初始化，再使用，不做初始化，会造成坐席无法分配等问题。</font>
+重要提示：部署应用后，必须按照《系统初始化》[^initdoc]文档进行系统初始化，再使用，不做初始化，会造成坐席无法分配等问题。
+
+[^initdoc]: 系统初始化文档，https://docs.chatopera.com/products/cskefu/initialization.html
 
 ## 准备条件
 
@@ -18,6 +20,7 @@
 | 内存                | 开发测试 >= 8GB \| 生产环境 >= 16GB                           |
 | CPU 颗数            | 开发测试 >= 2 \| 生产环境 >= 4                                |
 | 硬盘                | >= 20GB                                                       |
+<!-- markup:table-caption 部署依赖资源的最低配置 -->
 
 ### 安全组
 
@@ -26,8 +29,8 @@
 ## 克隆代码
 
 ```Bash
-git clone https://github.com/chatopera/cskefu.git cskefu.osc
-cd cskefu.osc
+git clone https://github.com/chatopera/cskefu.git cskefu
+cd cskefu
 cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求需改配置
 ```
 
@@ -52,6 +55,7 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | ACTIVEMQ_PORT2       | 8053               | ActiveMQ 端口                                  |
 | DB_PASSWD            | 123456             | 数据库密码，设置到 MySQL, Redis, ActiveMQ      |
 | LOG_LEVEL            | INFO               | 日志级别，可使用 WARN, ERROR, INFO, DEBUG      |
+<!-- markup:table-caption 配置环境变量项目 -->
 
 以上配置中，**端口的各默认值需要保证在宿主机器上还没有被占用；数据库的密码尽量复杂；CC_WEB_PORT 和 CC_SOCKET_PORT 这两个值尽量不要变更；生产环境下 LOG_LEVEL 使用至少 WARN 的级别**。
 
@@ -62,13 +66,14 @@ cp sample.env .env # 使用文本编辑器打开 .env 文件，并按照需求�
 | TONGJI_BAIDU_SITEKEY | placeholder | 使用[百度统计](https://tongji.baidu.com/web/welcome/login) 记录和查看页面访问情况，默认不记录          |
 | EXTRAS_LOGIN_BANNER  | off         | 登录页上方展示通知的内容，默认(off)不展示                                                              |
 | EXTRAS_LOGIN_CHATBOX | off         | 登录页支持加入一个春松客服网页渠道聊天按钮，比如 <https://oh-my.cskefu.com/im/xxx.html，默认(off>)不展示 |
+<!-- markup:table-caption 业务相关环境变量 -->
 
 ## 管理命令
 
 ### 启动服务
 
 ```Bash
-cd cskefu.osc                        # 进入下载后的文件夹
+cd cskefu                        # 进入下载后的文件夹
 docker-compose pull                  # 拉取镜像
 docker-compose up -d contact-center  # 启动服务
 ```
@@ -109,13 +114,58 @@ docker-compose down
 docker-compose restart
 ```
 
-## 容器云部署
+## 无网络访问条件下部署
 
-除了私有部署外，春松客服已经在以下容器云应用商店上架：
+### 利用其他机器
 
-[Rainbond 云原生应用管理平台](https://www.rainbond.com/docs/opensource-app/chatopera/?channel=chatopera)：专注于以应用为中心的理念，赋能企业搭建云原生开发云、云原生交付云。
+首先，找一个网络条件好的电脑或服务器，安装 docker。
 
-容器云部署是云原生应用交付的最佳实践，简单易用。
+### 下载镜像
+
+然后，在新的电脑下载镜像。
+
+方法，执行命令：
+
+```
+docker pull IMAGE_NAME
+```
+
+IMAGE_NAME 参考 docker-compose.yml 中各服务的image，
+比如：
+`docker pull chatopera/contact-center:develop`
+
+春松客服包含多个image。
+
+### 导出镜像
+
+下载好image后，导出image，将所有image使用下面命令导出为 tgz 文件
+
+```
+docker save chatopera/contact-center:develop > cc.docker.tgz
+```
+
+### 上传镜像
+
+将所有导出的image tgz文件上传到目标部署的服务器
+即网络条件不好的机器，比如用 FTP工具或SCP命令。
+
+### 安装镜像
+
+ 上传到目标机器后，安装镜像
+`docker load < cc.docker.tgz`
+
+安装成功后，会提示。
+
+### 启动服务
+
+启动春松客服，参考本章以上内容。
+
+```
+cd cskefu # 源文件下载地址
+docker-compose up -d contact-center
+```
+
+<!-- markup:markdown-end -->
 
 ## 下一步
 
@@ -124,17 +174,3 @@ docker-compose restart
 - [系统维护：备份、升级和恢复回退等](/products/cskefu/osc/maintainence.html)
 
 - [春松客服配置 CDN 和 HTTPS | 春松客服](https://chatopera.blog.csdn.net/article/details/105820829)
-
-## 寻找开发者
-
-寻找开发者合作智能客服项目，社区共建，携手共赢！
-
-- 组织或个人，在春松客服主页展示为认证开发者
-- 春松客服官方推荐项目机会
-- 专访并通过官方渠道曝光
-
-填写申请：[http://chatopera.mikecrm.com/tMUtj1z](http://chatopera.mikecrm.com/tMUtj1z)
-
-## 其它
-
-- [服务器没有互联网访问条件情况下怎么部署？](https://github.com/chatopera/cskefu/issues/264)

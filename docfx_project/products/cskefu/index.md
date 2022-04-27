@@ -2,26 +2,17 @@
 
 [https://www.cskefu.com](https://www.cskefu.com)
 
-<p align="center">
-<b></b></br>
-<img width="800" src="../../images/products/cosin/g2.jpg" alt="春松客服" />
-</p>
+![春松客服](../../images/products/cosin/g2.jpg)
 
 春松客服是拥有坐席管理、渠道管理、机器人客服、数据分析、CRM 等功能于一身的新一代客服系统。将智能机器人与人工客服完美融合，同时整合了多种渠道，结合 CRM 系统，为客户打标签，建立客户的人群画像等，帮助企业向客户提供更加专业客服服务。
 
-<p align="center">
-<b></b></br>
-<img width="800" src="../../images/products/cskefu/customers-2021.jpg" alt="春松客服" />
-</p>
+![用户案例](../../images/products/cskefu/customers-2021.jpg)
 
 ## 产品定义
 
 客服系统是企业的重要工具，尤其是移动互联网时代，微信公众号、移动电话或是 Facebook Messenger 等渠道分散了企业的服务渠道，企业需要响应来自任何地点任何时间的客户。同时，企业的口碑至关重要，企业服务需要在客户获得、客户激活、客户留存等阶段无懈可击。
 
-<p align="center">
-<b>用户生命周期</b></br>
-<img width="800" src="../../images/products/user-cycle-growth.png" alt="用户生命周期" />
-</p>
+![客服的重要性](../../images/products/user-cycle-growth.png)
 
 **春松客服**有下面的亮点：
 
@@ -29,9 +20,7 @@
 
 将功能以插件形式模块化，适合企业长期使用，尤其是中小型企业，灵活购买高级插件。
 
-<p align="center">
-<img width="800" src="../../images/products/user-service-prod.png" alt="多渠道智能客服" />
-</p>
+![插件机制](../../images/products/user-service-prod.png)
 
 ### 部署方便
 
@@ -41,9 +30,7 @@
 
 强大的机器人客服解决方案，与 Chatopera 机器人平台等产品集成。
 
-<p align="center">
-<img width="800" src="../../images/products/solution-1.png" alt="全解决方案" />
-</p>
+![全周期解决方案](../../images/products/solution-1.png)
 
 ### 开箱即用
 
@@ -102,23 +89,23 @@
 
 指代熟悉客户业务的人员，业务专家可以提供产品设计的意见，可以参与智能问答的质量评定，也可以作为管理员登录智能客服系统，配置系统，管理智能对话和训练。
 
-<!-- markup:markdown-end -->
-
-## 定制化开发培训课程
-
-开发者通过学习[《春松客服大讲堂》](/products/cskefu/osc/training.html)来掌握基于春松客服定制开发客服系统，在春松客服基础上添加企业特别需求的功能。
-
 ## 质量管理
 
 解读 Chatopera 质量管理体系，上线定制化的客服系统。如何合理的规划测试工作？怎样搭建质量管理的支撑系统？Chatopera 反思、精进产品开发和服务支持体系，认真负责的帮助客户落地客服系统。本视频系 Chatopera 质量保证人员根据实际工作内容总结整理。
 
-在线观看[《解读 Chatopera 质量管理体系》](https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg)，同时，该视频相关的[文章](https://mp.weixin.qq.com/s/sah0e0q3HH2Ex4wZyfJXIg)中也有详细介绍。
+在线观看《解读 Chatopera 质量管理体系》[^cskefuquality2019]，同时，该视频相关的[文章](https://mp.weixin.qq.com/s/sah0e0q3HH2Ex4wZyfJXIg)中也有详细介绍。
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../images/products/cc-qa-sys.jpg" alt="春松客服质量管理" /></td>
-    </tr>
-</table>
+[^cskefuquality2019]: 《解读 Chatopera 质量管理体系》，<https://mp.weixin.qq.com/s/AUWbqCYIcvzTZBJVgJzKsg>
+
+![春松客服质量管理](../../images/products/cc-qa-sys.jpg)
+
+<!-- markup:markdown-end -->
+
+## 定制化开发培训课程
+
+开发者通过学习《春松客服大讲堂》[^cskefudjt2019]来掌握基于春松客服定制开发客服系统，在春松客服基础上添加企业特别需求的功能。
+
+[^cskefudjt2019]: 地址，https://docs.chatopera.com/products/cskefu/osc/training.html
 
 ## 付费模块
 

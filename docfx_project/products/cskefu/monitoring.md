@@ -4,12 +4,7 @@
 
 _左侧菜单_ -> _会话历史_ -> _历史会话_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture59.png" alt="" /></td>
-    </tr>
-</table>
+![查看历史会话](../../images/products/cosin/Picture59.png)
 
 ## 查看当前会话
 
@@ -27,12 +22,7 @@ _左侧菜单_ -> _会话历史_ -> _访客留言_
 
 _左侧菜单_ -> _统计功能_ -> _满意度统计_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture64.png" alt="" /></td>
-    </tr>
-</table>
+![查看满意度](../../images/products/cosin/Picture64.png)
 
 ## 查看全部坐席
 
@@ -42,9 +32,4 @@ _左侧菜单_ -> _会话历史_ -> _坐席信息_ -> _全部坐席_
 
 _左侧菜单_ -> _坐席监控_
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture68.png" alt="" /></td>
-    </tr>
-</table>
+![查看坐席监控](../../images/products/cosin/Picture68.png)

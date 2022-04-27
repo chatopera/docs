@@ -6,10 +6,7 @@
 
 登录，新增网站，<https://tongji.baidu.com/>
 
-<p align="center">
-    <b>新增网站</b>
-    <img width="800" src="../../images/products/cosin/g23.jpg" alt="新增网站" />
-</p>
+![新增网站](../../images/products/cosin/g23.jpg)
 
 - 网站域名：春松客服系统域名，必须是你安装的实际地址（假设你安装在 cc.example.com，则填写 cc.example.com）
 
@@ -21,10 +18,7 @@
 hm.src = "https://hm.baidu.com/hm.js?YOUR_SITE_KEY";
 ```
 
-<p align="center">
-    <b>统计代码获取</b>
-    <img width="800" src="../../images/products/cosin/g25.jpg" alt="统计代码获取" />
-</p>
+![统计代码获取](../../images/products/cosin/g25.jpg)
 
 得到`YOUR_SITE_KEY`后继续`设置环境变量`。
 
@@ -58,10 +52,7 @@ docker-compose restart contact-center
 
 示例：
 
-<p align="center">
-    <b>示例数据</b>
-    <img width="800" src="../../images/products/cosin/g24.jpg" alt="示例数据" />
-</p>
+![示例代码](../../images/products/cosin/g24.jpg)
 
 ## 注意事项
 
