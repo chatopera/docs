@@ -6,18 +6,13 @@
 
 阅读本文前需了解：
 
-* Chatopera 机器人平台的[多轮对话设计器](/products/chatbot-platform/conversation/cde.html)
+* Chatopera 机器人平台的[多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/conversation/cde.html)
 
-* [Messenger 渠道插件使用文档](/products/cskefu/channels/messenger/index.html)
+* [Messenger 渠道插件使用文档](https://docs.chatopera.com/products/cskefu/channels/messenger/index.html)
 
-* [配置机器人客服接待访客 Messenger 渠道](/products/cskefu/channels/messenger/messenger-chatbot.html)
+* [配置机器人客服接待访客 Messenger 渠道](https://docs.chatopera.com/products/cskefu/channels/messenger/messenger-chatbot.html)
 
-<table class="image">
-    <caption align="bottom">关系图</caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_17-41-6.png" alt="" /></td>
-    </tr>
-</table>
+![关系图](../../../../images/products/cskefu/messenger/image2021-2-10_17-41-6.png)
 
 ## 开始按钮
 
@@ -25,12 +20,7 @@
 
 点击按钮后，机器人发送自定义欢迎信息。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_2-59-11.png" alt="" /></td>
-    </tr>
-</table>
+![欢迎语](../../../../images/products/cskefu/messenger/image2021-2-10_2-59-11.png)
 
 实现原理：
 
@@ -42,12 +32,7 @@
 
 在多轮对话设计器中，处理`__get_start`事件，定制机器人回复：
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_17-44-38.png" alt="" /></td>
-    </tr>
-</table>
+![欢迎事件](../../../../images/products/cskefu/messenger/image2021-2-10_17-44-38.png)
 
 比如下面技能代码，实现响应 `__get_start` 事件，推送欢迎语和导航菜单。
 
@@ -57,7 +42,6 @@
 // Get Started
 + __get_start
 - ^get_start()
-
 ```
 
 技能函数:
@@ -103,12 +87,7 @@ exports.get_start = async () => {
 
 菜单按钮直接触发云平台对应机器人技能。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="300" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-2-0.png" alt="" /></td>
-    </tr>
-</table>
+![导航菜单](../../../../images/products/cskefu/messenger/image2021-2-10_3-2-0.png)
 
 导航菜单使用 Buttons 实现，按钮类型同 [Messenger Buttons](https://developers.facebook.com/docs/messenger-platform/reference/buttons)。
 
@@ -118,12 +97,7 @@ exports.get_start = async () => {
 
 现在用户想查看城市体感信息，我们通过快捷回复，给用户几个热门城市选择，点击直接回复机器人。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-9-54.png" alt="" /></td>
-    </tr>
-</table>
+![快捷回复](../../../../images/products/cskefu/messenger/image2021-2-10_3-9-54.png)
 
 用户选择 “查看城市体感” ， `__body_feeling` 技能被处理，返回推荐选项给用户选择。
 
@@ -147,7 +121,7 @@ exports.queryFeeling = async () => {
         text: '#in params',
         params: {
             text: '请选择需要查询体感的城市',
-   // 快捷回复选项
+            // 快捷回复选项
             quick_replies: [{
                     content_type: 'text',
                     title: '北京',
@@ -173,74 +147,43 @@ exports.getWeatherByCity = function(city, cb) {
 
     cb(null, city + '体感' + data[city]);
 }
-
 ```
 
 ## 知识库查询
 
 在输入框直接回复完整问题查询知识库，回答已有的知识点。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-16-21.png" alt="" /></td>
-    </tr>
-</table>
+![知识库](../../../../images/products/cskefu/messenger/image2021-2-10_3-16-21.png)
 
 在 Chatopera 云平台，设置常见问答对。用户问答和知识库数据匹配度超过指定阈值时，直接回复该条目答案。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_16-13-27.png" alt="" /></td>
-    </tr>
-</table>
+![知识库回复](../../../../images/products/cskefu/messenger/image2021-2-10_16-13-27.png)
 
 ## 知识库反馈
 
 针对知识库的问答对，可以请用户进行反馈，提高知识库准确定。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-19-29.png" alt="" /></td>
-    </tr>
-</table>
+![知识库反馈](../../../../images/products/cskefu/messenger/image2021-2-10_3-19-29.png)
 
 数据统计展示在云平台ROI数据中。使用 Chatopera 云服务 聚类分析 ，选择性优化知识库，提升机器人服务效果。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="600" src="../../../../images/products/cskefu/messenger/image2021-2-10_16-21-20.png" alt="" /></td>
-    </tr>
-</table>
+![知识库聚类](../../../../images/products/cskefu/messenger/image2021-2-10_16-21-20.png)
 
 ## 知识库推荐
 
 当问题没有匹配，有相关问题时，系统会推荐给用户，供用户快速选择。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="300" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-23-24.png" alt="" /></td>
-    </tr>
-</table>
+![知识库推荐](../../../../images/products/cskefu/messenger/image2021-2-10_3-23-24.png)
 
 ## 人工服务
 
 用户问题机器人无法解决时，可在适当时机转人工处理。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="300" src="../../../../images/products/cskefu/messenger/image2021-2-10_3-28-5.png" alt="" /></td>
-    </tr>
-</table>
+![转人工](../../../../images/products/cskefu/messenger/image2021-2-10_3-28-5.png)
 
 系统会根据ACD策略接入合适的客服，进行处理。客服可以看到用户的历史对话，并使用 知识库快捷，知识库联想、转接其他专业客服等功能更好的服务访客。
 
-## 总结
+## 小结
 
 基于以上介绍，企业用户在春松客服和 Chatopera 机器人平台基础上，可以无代码的方式提供基于知识库的 FAQ Bot 和 低代码的方式实现多轮对话 Bot。
 
