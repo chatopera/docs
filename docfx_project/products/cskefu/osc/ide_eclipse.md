@@ -1,6 +1,6 @@
 # IDE 使用之 Eclipse IDE
 
-<< 回到[上一步：开发环境搭建](./engineering.md#初始化系统)
+<!-- markup:skip-line --> << 回到[上一步：开发环境搭建](./engineering.md#初始化系统)
 
 ## 安装和下载 Eclipse
 
@@ -109,19 +109,19 @@ cd cskefu.osc/contact-center
 
 点击 Debug 启动按钮下拉中的 Debug Configurations, 在左侧找到 Spring Boot App，右键，选择新建配置。
 
-![](../../../images/products/cskefu/image2022-3-26_16-25-4.png)
+![启动 Debug](../../../images/products/cskefu/image2022-3-26_16-25-4.png)
 
 在配置页面，填写应用名称：contact-center - Application，project 选择 contact-center, Main Type 选择 com.chatopera.cc.Application。
 
 然后点击 Environment，点击 Add 添加：Name - SPRING_PROFILES_ACTIVE， Value - dev，字符串无空格。
 
-![](../../../images/products/cskefu/image2022-3-26_16-23-28.png)
+![设置环境变量](../../../images/products/cskefu/image2022-3-26_16-23-28.png)
 
 点击【Apply】。然后点击【Debug】。
 
 此时，滚动出大量的日志。
 
-![](../../../images/products/cskefu/image2022-3-26_16-28-16.png)
+![查看日志](../../../images/products/cskefu/image2022-3-26_16-28-16.png)
 
 ### 调试项目
 
@@ -149,13 +149,13 @@ cd cskefu.osc/contact-center
 
 ### 报错：com.sun.net.ssl.internal.ssl.Provider
 
-![](../../../images/products/cskefu/image2021-12-4_16-20-49.png)
+![日志](../../../images/products/cskefu/image2021-12-4_16-20-49.png)
 
 解决办法：
 
 * 修改 Compiler 验证提示，[详细介绍](https://blog.csdn.net/tower888/article/details/106220494)
 
-![](../../../images/products/cskefu/image2021-12-4_16-21-52.png)
+![日志](../../../images/products/cskefu/image2021-12-4_16-21-52.png)
 
 * 修改 Project JRE 为前面安装的 Java8 JRE
 
@@ -163,7 +163,9 @@ cd cskefu.osc/contact-center
 
 解决办法[详细介绍](https://blog.csdn.net/timo1160139211/article/details/74908266)。
 
-![](../../../images/products/cskefu/image2021-12-4_16-36-7.png)
+![显示中文](../../../images/products/cskefu/image2021-12-4_16-36-7.png)
+
+<!-- markup:markdown-end -->
 
 ## 下一步
 

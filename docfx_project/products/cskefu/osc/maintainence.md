@@ -22,9 +22,7 @@ CC_IMAGE=chatopera/contact-center:develop
 
 在开源版本中，镜像的名字是 `chatopera/contact-center`，默认的版本是 `develop`，所有可选的版本在 [GitHub](https://github.com/chatopera/cskefu/commits/osc) 中可以浏览到：
 
-<p align="center">
-<img width="600" src="../../../images/products/cskefu/screenshot-20210720-135039.png" alt="" />
-</p>
+![版本管理](../../../images/products/cskefu/screenshot-20210720-135039.png)
 
 <https://github.com/chatopera/cskefu/commits/osc>
 
@@ -34,9 +32,7 @@ CC_IMAGE=chatopera/contact-center:develop
 
 在春松客服实例中，也可以得到版本信息。作为春松客服系统用户登录，并在右上角用户名下拉菜单中，打开【关于产品】。
 
-<p align="center">
-<img width="600" src="../../../images/products/cskefu/screenshot-20210720-135924.png" alt="" />
-</p>
+![查看版本信息](../../../images/products/cskefu/screenshot-20210720-135924.png)
 
 在 `build` 的最后几位字符串就是版本号。
 
@@ -121,6 +117,8 @@ docker-compose logs -f contact-center # 查看日志
 
 在春松客服运行后，在浏览器内访问并验证服务正常。升级完毕。
 当系统可以稳定运行，比如 2 个月，再酌情删除 `cskefu.osc.backup`。
+
+<!-- markup:markdown-end -->
 
 ## 下一步
 

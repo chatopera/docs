@@ -89,9 +89,9 @@ cd cskefu.osc
 git remote add upstream git@github.com:chatopera/cskefu.git
 ```
 
-完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。
+<!-- markup:skip-line --> 完成以上步骤，克隆项目完毕。也请给春松客服点赞，使用【Fork】旁边的【Star】按钮。
 
-![给春松客服点赞](../../../images/products/cosin/g4.jpg" alt="点赞春松客服" />
+<!-- markup:skip-line --> ![给春松客服点赞](../../../images/products/cosin/g4.jpg]
 
 ## 文件目录介绍
 
@@ -298,8 +298,7 @@ Redis 管理工具，推荐 [AnotherRedisDesktopManager for Windows](https://git
 
 春松客服的一些定制化需求是通过插件的形式发布的，插件让非通用需求和定制化开发的功能的源码与基础代码分离。一些插件是付费的，一些插件是免费的，比如**机器人客服插件**就是免费开源的。
 
-插件的安装和源码参考：[https://github.com/chatopera/cskefu/tree/osc/public/plugins
-](https://github.com/chatopera/cskefu/tree/osc/public/plugins)
+插件的安装和源码参考：[https://github.com/chatopera/cskefu/tree/osc/public/plugins](https://github.com/chatopera/cskefu/tree/osc/public/plugins)
 
 ## 配置 IDE
 
