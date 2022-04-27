@@ -18,7 +18,7 @@ git push github master
 if [ $? -eq 0 ]; then
     if [ -d private ]; then
         cd private
-        `pwd`
+        echo `pwd`
          set -x
         ./scripts/update.sh
     fi
