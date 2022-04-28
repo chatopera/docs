@@ -4,7 +4,7 @@
   "_appLogoPath": "images/logo2.png",
   "_appFaviconPath": "images/favicon.ico",
   "_description": "聊天机器人、智能客服、智能问答、对话内容管理、对话机器人、聊天机器人平台。 Chatopera 让聊天机器人上线！",
-  "_enableSearch": true,
+  "_enableSearch": false,
   "_enableNewTab": true,
   "_disableNavbar": false,
   "_disableBreadcrumb": false,
