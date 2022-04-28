@@ -4,16 +4,15 @@
 
 </div>
 
-# Chatopera 文档中心 
+# Chatopera 文档中心
 
-[![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/) [![Docker Tags](https://raw.githubusercontent.com/hailiang-wang/Rishit-dagli/master/badges/docker.svg)](https://hub.docker.com/repository/docker/chatopera/docs/tags?page=1&ordering=last_updated "Get Latest Docker Images") 
+[![DIVIO documentation system](https://img.shields.io/badge/DIVIO-Documentation%20System-blue)](https://documentation.divio.com/) [![Docker Tags](https://raw.githubusercontent.com/hailiang-wang/Rishit-dagli/master/badges/docker.svg)](https://hub.docker.com/repository/docker/chatopera/docs/tags?page=1&ordering=last_updated "Get Latest Docker Images")
 
 Chatopera: Chat as a Service. We believe Chatbot is the next application platform to deliver services.
 
 Chatopera 为开发者提供上线智能对话机器人的工具，帮助企业提升智能化和业务流程自动化，在市场营销、售后服务和企业协作中，应用聊天机器人，在 Chatopera 我们相信，聊天即服务，聊天机器人是下一代服务发布方式。
 
 ![](docfx_project/images/products/trademark-chatopera.png)
-
 
 ## 反馈建议
 
@@ -28,12 +27,17 @@ Chatopera 为开发者提供上线智能对话机器人的工具，帮助企业�
 
 [https://github.com/chatopera/docs/issues/new/choose](https://github.com/chatopera/docs/issues/new/choose)
 
+## 文档中心助手机器人
+
+Build with
+
+<https://github.com/chatopera/docs.bot>
 
 # Give credits to
 
 ## DocFX
 
-An extensible and scalable static documentation generator, [ https://dotnet.github.io/docfx/]( https://dotnet.github.io/docfx/).
+An extensible and scalable static documentation generator, [https://dotnet.github.io/docfx/]( https://dotnet.github.io/docfx/).
 
 [Installation Guide](./INSTALLATION.md).
 
