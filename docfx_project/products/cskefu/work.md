@@ -6,11 +6,11 @@
 
 客服人员和消费者建立连接，并完成对话的聊天室，是客服系统的核心之一。参考以下内容，避免出现使用错误。
 
-<img width="800" src="../../images/products/cskefu/2-3.accout-n-permissions.jpg" alt="聊天室的状态" /></td>
+![聊天室的状态](../../images/products/cskefu/2-3.accout-n-permissions.jpg)
 
-<td><img width="800" src="../../images/products/cskefu/2-3.accout-n-permissions-2.jpg" alt="聊天室的状态" />
+![聊天室的状态](../../images/products/cskefu/2-3.accout-n-permissions-2.jpg)
 
-<img width="800" src="../../images/products/cskefu/2-3.accout-n-permissions-3.jpg" alt="聊天室的状态" />
+![聊天室的状态](../../images/products/cskefu/2-3.accout-n-permissions-3.jpg)
 
 ### 注意事项
 
@@ -38,12 +38,7 @@
 
 在访客与人工坐席的会话中，状态流转如下：
 
-<table class="image">
-    <caption align="bottom">聊天室的状态</caption>
-    <tr>
-        <td><img width="800" src="../../images/products/user-service-flow-1.png" alt="聊天室的状态" /></td>
-    </tr>
-</table>
+ ![聊天室的状态](../../images/products/user-service-flow-1.png)
 
 `排队`：人工坐席繁忙，消费者接入聊天室时没有空闲的客服人员接起会话，这时，消费者往往会等待，在等待的过程中输入问题。此时消费者不能断开，断开后重连有可能重新排队。
 
@@ -61,27 +56,12 @@
 
 - 确保需要作为坐席的用户具有“多媒体坐席”的权限；系统->系统管理->用户和组->用户账号->选中该用户->编辑，就可以设置“多媒体坐席
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture27.png" alt="" /></td>
-    </tr>
-</table>
+![聊天室的状态](../../images/products/cosin/Picture27.png)
 
 - 需要把 “坐席工作台” 授权给此用户；
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture28.png" alt="" /></td>
-    </tr>
-</table>
+![聊天室的状态](../../images/products/cosin/Picture28.png)
 
 - 保证该坐席用户已经登录系统，并且将自己的坐席状态设置为”就绪”。
 
-<table class="image">
-    <caption align="bottom"></caption>
-    <tr>
-        <td><img width="800" src="../../images/products/cosin/Picture29.png" alt="" /></td>
-    </tr>
-</table>
+![聊天室的状态](../../images/products/cosin/Picture29.png)
