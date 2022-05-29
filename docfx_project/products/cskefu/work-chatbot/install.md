@@ -1,12 +1,8 @@
-## 安装插件
-
-**如果使用春松客服官方的 docker 镜像部署，则无需此步。** 对于开源社区用户，在下载春松客服源码后，需要先安装本插件，然后编译代码，再启动应用，才可以在【系统】中，看到【智能机器人】管理菜单。
-
-**安装插件文档 [https://github.com/chatopera/cskefu/tree/osc/public/plugins](https://github.com/chatopera/cskefu/tree/osc/public/plugins)**
-
-![安装好机器人插件](../../../images/products/cskefu/98638023-436f4700-2364-11eb-922d-801ade42d397.png)
+## 机器人客服
 
 只有**超级管理员**可以在【系统设置】中配置机器人客服，超级管理员权限介绍参考[账号与权限](/products/cskefu/accounting.html)。
+
+![安装好机器人插件](../../../images/products/cskefu/98638023-436f4700-2364-11eb-922d-801ade42d397.png)
 
 ## 配置环境变量
 
@@ -42,6 +38,7 @@ BOT_THRESHOLD_FAQ_SUGG_REPLY # 建议回复阀值
 | -------- | --------- | --------------- |
 | 网站名称 | localhost | 任意字符串      |
 | 网站地址 | localhost | 网站的域名或 IP |
+
 <!-- markup:table-caption 创建网站渠道表单内容 -->
 
 ![创建网站渠道](../../../images/products/cosin/47127371-6fbc5480-d2bf-11e8-9983-b6f79e97cbf1.png)

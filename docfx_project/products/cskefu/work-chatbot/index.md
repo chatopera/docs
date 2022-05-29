@@ -54,7 +54,7 @@
 
 ## 下一步
 
-- [安装及配置：在开源代码基础上，安装插件；配置环境变量](/products/cskefu/work-chatbot/install.html)
+- [配置环境变量](/products/cskefu/work-chatbot/install.html)
 
 - [配置机器人客服：创建机器人，创建渠道，绑定机器人](/products/cskefu/work-chatbot/bot-agent.html)
 
