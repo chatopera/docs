@@ -1,6 +1,7 @@
 # 使用指南
 
 ## 准备工作
+
 * [注册使用 Chatopera 云服务](account-mgr.md)
 * [安装多轮对话设计器](cde-install.md)
 
@@ -15,13 +16,13 @@
 * [管理词汇表词典](dicts-vocab.md)
 * [管理正则表达式词典](dicts-regex.md)
 
-
 ## 知识库
 
 * [维护知识库问答对](faq-qna.md)
 * [测试知识库问答及调优](faq-chat-fix.md)
 * [使用自定义词典增强知识库](faq-dicts.md)
 * [查看和导出知识库热门问题](faq-hot.md)
+* [使用函数获得动态答案](faq-dynamic-function-reply.md)
 * [导入和导出知识库问答对](faq-transfer.md)
 * [使用话术助手快速检索话术](faq-assistant.md)
 
@@ -46,7 +47,6 @@
 * [使用机器学习分析对话历史](lattice.md)
 * [在管理控制台测试对话](chat-test.md)
 
-
 ## 语音识别
 
 * [调用语音识别服务](asr-request.md)
@@ -56,4 +56,3 @@
 * [在飞书中使用 Chatopera BOT](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
 * [在春松客服集成 Chatopera BOT](/products/cskefu/work-chatbot/bot-agent.html)
 * [使用 SDK 集成 Chatopera BOT](integration-sdk.md)
-

@@ -27,6 +27,8 @@
   href: faq-dicts.md
 - name: 查看和导出知识库热门问题
   href: faq-hot.md
+- name: 使用函数获得动态答案
+  href: faq-dynamic-function-reply.md
 - name: 导入和导出知识库问答对
   href: faq-transfer.md
 - name: 使用话术助手快速检索话术
