@@ -6,7 +6,7 @@
 
 ### 问题描述
 
-==在智能对话机器人中，知识库管理可能涉及到从业务系统获得答案，实时的同步答案一个是造成延迟，一个是成本高：在多个地方维护。== 比如，在业务场景中，有三个子业务系统，分别是【采购系统】/【库存管理系统】/【供应商管理】。每个系统都有一些常见问题，比如**采购部门的负责人及联系方式，库存管理系统的负责人及联系方式，这些信息在不同子系统的某个网页上，或者通过 API 调用可以查询到。**
+在智能对话机器人中，知识库管理可能涉及到从业务系统获得答案，实时的同步答案一个是造成延迟，一个是成本高：在多个地方维护。 比如，在业务场景中，有三个子业务系统，分别是【采购系统】/【库存管理系统】/【供应商管理】。每个系统都有一些常见问题，比如**采购部门的负责人及联系方式，库存管理系统的负责人及联系方式，这些信息在不同子系统的某个网页上，或者通过 API 调用可以查询到。**
 
 在传统方案中，知识库的答案通过手动复制同步，而且这个过程几乎都需要人工完成。
 
@@ -20,7 +20,7 @@
 
 ### 解决方案
 
-在 [Chatopera 机器人平台](https://bot.chatopera.com/)管理控制台上 BOT 开发者可以维护知识库的不同类型的答案，除了录入固定的答案，Chatopera 机器人平台知识库也支持通过调用[多轮对话的话题](https://docs.chatopera.com/products/chatbot-platform/integration/api.html#%E7%9F%A5%E8%AF%86%E5%BA%93%E8%B7%AF%E7%94%B1)来从多轮对话获得答案。在多轮对话中，支持自定义 JavaScript 函数，就使得知识库设置动态抓取的答案可行，我们称之为：[知识库路由](https://docs.chatopera.com/products/chatbot-platform/integration/api.html#%E7%9F%A5%E8%AF%86%E5%BA%93%E8%B7%AF%E7%94%B1)。
+在 [Chatopera 机器人平台](https://bot.chatopera.com/)管理控制台上 BOT 开发者可以维护知识库的不同类型的答案，除了录入固定的答案，Chatopera 机器人平台知识库也支持通过调用[多轮对话的话题](/products/chatbot-platform/explanations/query.html)来从多轮对话获得答案。在多轮对话中，支持自定义 JavaScript 函数，就使得知识库设置动态抓取的答案可行，称之为：知识库路由。
 
 ![image](../../../images/products/platform/QQ截图20220616155220.png)
 
@@ -32,26 +32,27 @@
 
 ==将知识库答案按照如下语法设置==：
 
-```
+```语法
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID"]
 ```
 
-_TOPIC_NAME_: [对话名称](https://docs.chatopera.com//products/chatbot-platform/conversation/index.html#术语)
+_TOPIC_NAME_: [对话话题](/products/chatbot-platform/references/glossary.html#对话话题)
 
-_TOPIC_GAMBIT_ID_: [触发器名称](https://docs.chatopera.com/products/chatbot-platform/conversation/index.html#术语)
+_TOPIC_GAMBIT_ID_: [匹配器](/products/chatbot-platform/references/glossary.html#匹配器)
 
-### 示例
+### 使用示例
 
 下面我们用一个示例介绍这个功能的使用。
+
 1）知识库问题 -
 
-```
+```语法
 采购部门的负责人联系方式是什么？
 ```
 
 2）知识库答案 -
 
-```
+```语法
 routeDirectReply#["__depart_purch_incharge", "__contact_info"]
 ```
 
@@ -69,7 +70,7 @@ routeDirectReply#["__depart_purch_incharge", "__contact_info"]
 创建新的技能：`__depart_purch_incharge`
 在新的技能中，添加用户说法：
 
-```
+```语法
 + __contact_info
 - ^get_purch_incharge_contact()
 ```
@@ -104,9 +105,9 @@ exports.get_purch_incharge_contact = async function() {
 
 #### 使用用户输入作为触发器
 
-在一些情况下，按照用户的输入进入多轮对话匹配触发器更方便，那么在设置路由答案时，使用如下方法。
+在一些情况下，按照用户的输入进入多轮对话匹配器更方便，那么在设置路由答案时，使用如下方法。
 
-==当 `TOPIC_GAMBIT_ID` 的值为 `$ctx.textMessage$` 时，则使用当前对话的用户输入，在 `TOPIC_NAME` 中进行检索。==
+当 `TOPIC_GAMBIT_ID` 的值为 `$ctx.textMessage$` 时，则使用当前对话的用户输入，在 `TOPIC_NAME` 中进行检索。
 
 **举例**
 
@@ -118,7 +119,7 @@ exports.get_purch_incharge_contact = async function() {
 
 2）知识库答案 -
 
-```
+```语法
 routeDirectReply#["__depart_purch_incharge", "$ctx.textMessage$"]
 ```
 
@@ -129,15 +130,3 @@ routeDirectReply#["__depart_purch_incharge", "$ctx.textMessage$"]
 那么，在多轮对话设计器中，这个规则可以更新为：
 
 ![image](../../../images/products/platform/QQ截图20220616155505.png)
-
-### 工作原理
-
-将知识库答案路由到多轮对话的话题，然后从多轮对话获得答案。
-
-![image](../../../images/products/platform/QQ截图20220616155233.png)
-
-目前，==知识库路由（routeDirectReply答案）只在[多轮对话检索 API](https://docs.chatopera.com/products/chatbot-platform/integration/api.html#%E6%A3%80%E7%B4%A2%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D) 上支持，多轮对话检索中，自动优先检索知识库。==
-
-**Chatopera 多轮对话检索过程，优先级：知识库 > 脚本 > 兜底回复。**
-
-![image](../../../images/products/platform/QQ截图20220616155253.png)

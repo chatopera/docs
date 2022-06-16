@@ -17,6 +17,17 @@
 
 <img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_15-5-27.png"/>
 
+### 动态答案
+
+将知识库答案路由到多轮对话的话题，然后从多轮对话获得答案。
+
+![image](../../../images/products/platform/QQ截图20220616155233.png)
+
+目前，知识库路由（routeDirectReply答案）只在[多轮对话检索](/products/chatbot-platform/explanations/query.html) 上支持，多轮对话检索中，自动优先检索知识库。
+
+**Chatopera 多轮对话检索过程，优先级：知识库 > 脚本 > 兜底回复。**
+
+![image](../../../images/products/platform/QQ截图20220616155253.png)
 
 ## 应用场景
 
@@ -39,4 +50,3 @@
 4）使用**聚类分析**服务，进行大规模的对话历史的自动机器人学习分析。
 
 增强知识库的智能水平，知识库的优化，知识库的优化也是长期的过程，也是企业重要的很有价值的资产。
-
