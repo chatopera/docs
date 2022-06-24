@@ -1,7 +1,3 @@
-- name: "开源许可协议"
-  href: opensource-license.md
-- name: "春松客服大讲堂"
-  href: training.md
 - name: "开发环境搭建"
   href: engineering.md
 - name: "提交代码"
