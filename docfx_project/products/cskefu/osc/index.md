@@ -6,7 +6,7 @@
 
 春松客服采用 Apache 2.0 开源许可协议，详细了解该协议内容：
 
-[开源许可协议](/products/cskefu/osc/license.html)
+[开源许可协议](/products/cskefu/osc/opensource-license.html)
 
 ## 加入春松客服开源社区
 
