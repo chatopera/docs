@@ -1,3 +1,5 @@
+- name: "开源许可协议"
+  href: license.md
 - name: "春松客服大讲堂"
   href: training.md
 - name: "开发环境搭建"
