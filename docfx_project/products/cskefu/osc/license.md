@@ -143,6 +143,8 @@
 
 8. [开源许可违反：案例说明（Apache License 2.0）](https://blog.csdn.net/liumiaocn/article/details/107368370)
 
+9. [Open Source Licenses 101: Apache License 2.0](https://fossa.com/blog/open-source-licenses-101-apache-license-2-0/)
+
 ## 附件
 
 ### Apache 2.0 中文协议（法律声明）
