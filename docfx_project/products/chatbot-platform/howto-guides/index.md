@@ -41,6 +41,7 @@
 * [在多轮对话中使用函数](conv-func.md)
 * [在多轮对话中配置环境变量](conv-environment.md)
 * [在多轮对话中管理对话状态](conv-state.md)
+* [在多轮对话中设置定时任务](conv-settimeout.md)
 
 ## 对话历史
 

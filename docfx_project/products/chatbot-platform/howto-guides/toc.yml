@@ -57,6 +57,8 @@
   href: conv-environment.md
 - name: 在多轮对话中管理对话状态
   href: conv-state.md
+- name: 在多轮对话中设置定时任务
+  href: conv-settimeout.md
 
 # 对话
 - name: 使用机器学习分析对话历史
