@@ -47,9 +47,9 @@ async () => {
 
 2022-07-09 11:05:51   DEBUG   conversation  call fnA:
 
-2022-07-09 11:05:55   DEBUG   conversation  Exec B
-
 2022-07-09 11:05:55   DEBUG   conversation  Run fnB
+
+2022-07-09 11:05:55   DEBUG   conversation  Exec B
 ```
 
 关于 `setTimeout` 函数的进一步介绍，参考[文档](https://www.runoob.com/w3cnote/javascript-settimeout-usage.html)。
