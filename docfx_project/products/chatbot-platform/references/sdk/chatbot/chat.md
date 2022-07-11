@@ -74,17 +74,17 @@ Chatbot#command("POST", "/conversation/query", body)
 }
 ```
 
-_state_: 业务字段，可以在多轮对话脚本中设置
+*state*: 业务字段，可以在多轮对话脚本中设置
 
-_string_: 机器人回复的文本内容
+*string*: 机器人回复的文本内容
 
-_topicName_: 机器人会话主题
+*topicName*: 机器人会话主题
 
-_logic_is_fallback_: 是否是兜底回复
+*logic_is_fallback*: 是否是兜底回复
 
-_botName_: 机器人的名字
+*botName*: 机器人的名字
 
-_faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
+*faq*: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
 
 `service`代表返回的数据来源，**provider:conversation**指**多轮对话**，**provider:faq**指**知识库**，**provider:intent**指**意图识别**；不同数据来源也会提供相应信息。
 
@@ -118,6 +118,8 @@ Chatbot#command("POST", "/faq/query", body)
  "faqSuggReplyThreshold": 0.1
 }
 ```
+
+查询匹配是根据阈值设置的，也就是`faqBestReplyThreshold`和`faqSuggReplyThreshold`，前者是最佳回复阈值，后者是建议回复阈值，前者高于后者，都在 [0-1]区间，是问题相似度，值越大，越从知识库查询相似度高的记录，1 代表问题和查询完全一样。
 
 <h4><font color="purple">result/ JSON Object</font></h4>
 
@@ -212,15 +214,15 @@ Chatbot#command("POST", "/clause/prover/session", body)
 }
 ```
 
-_intent_name_: 意图名字
+*intent_name*: 意图名字
 
-_id_: 会话 ID
+*id*: 会话 ID
 
-_resolved_: 该会话是否完成收集参数
+*resolved*: 该会话是否完成收集参数
 
-_entities_: 参数列表，完成填槽或待填槽
+*entities*: 参数列表，完成填槽或待填槽
 
-_ttl_: 该会话信息在多少秒后过期，每个会话默认是 1 小时的空闲周期，在该时间内没有跟进的对话，则会话过期
+*ttl*: 该会话信息在多少秒后过期，每个会话默认是 1 小时的空闲周期，在该时间内没有跟进的对话，则会话过期
 
 ### 检索意图识别
 
@@ -305,4 +307,3 @@ Chatbot#command("GET", "/clause/prover/session/{{sessionId}}")
     "error": null
 }
 ```
-
