@@ -8,7 +8,7 @@
 
 - 操作系统 Windows 或 Mac OS
 - [Git](https://git-scm.com/)
-- [Java 8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Java 11+](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)
 - [Maven 3+](https://maven.apache.org/)
 - [Docker 18+](https://www.docker.com/)
 - [Docker compose 1.22+](https://docs.docker.com/compose/install/)
@@ -19,6 +19,16 @@
 提示：
 
 1. Docker 或 Docker compose 可以安装到 Linux/Windows/Mac 上，Docker 在开发阶段用来启动数据库、中间件。
+
+## 安装 Java SDK
+
+春松客服使用[Amazon Corretto SDK 11](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.html)，原因：
+
+- 兼容 OpenJDK 标准
+- 良好的开源社区，可长期商业友好的使用，Amazon 发布，James Gosling 领导
+- 适应不同操作系统
+
+春松客服不使用其它版本的 JDK，如有其它 JDK 诉求自行测试：理论上，所有 OpenJDK 11 的 JVM 都是可以运行春松客服的。
 
 ## 配置 Maven
 
