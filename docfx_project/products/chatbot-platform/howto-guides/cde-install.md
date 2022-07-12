@@ -9,8 +9,8 @@
 
 | 版本   | 操作系统 | 下载地址                                                                                                                                                                         |
 | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| v2.5.6 | macOS  | [地址1（快）](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.6.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1103005/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.6.dmg) |
-| v2.5.6 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation/cde/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.6.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1103044/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.6.exe)|
+| v2.5.7 | macOS  | [地址1（快）](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1124929/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) |
+| v2.5.7 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1124853/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe)|
 
 **点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，会启动下载(操作见下)**
 
