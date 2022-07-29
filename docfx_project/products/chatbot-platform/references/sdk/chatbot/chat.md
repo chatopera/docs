@@ -24,7 +24,8 @@ Chatbot#command("POST", "/conversation/query", body)
     "textMessage": "想要说些什么",
     "faqBestReplyThreshold": 0.6,
     "faqSuggReplyThreshold": 0.35,
-    "extras": {}
+    "extras": {},
+    "isDebug": false
 }
 ```
 
@@ -34,6 +35,7 @@ Chatbot#command("POST", "/conversation/query", body)
 | textMessage           | string                  | &#10004; | 用户输入的对话文字                                                                                                                                                                                                                                          |
 | faqBestReplyThreshold | number                  | &#10008; | 知识库最佳回复阈值，知识库中置信度超过该值通过返回值`string`和`params`返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                     |
 | faqSuggReplyThreshold | number                  | &#10008; | 知识库建议回复阈值，知识库中置信度超过该值的问答对通过返回值`faq`属性返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                      |
+| isDebug | boolean | &#10008; | 是否返回调试信息，调试信息包括匹配信息等 |
 | extras                | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory) 中使用 |
 
 其中，`extras` 用以支持更灵活，自定义的场景，使用[参考](https://github.com/chatopera/chatbot-samples/blob/f93e6dca8e06be8d1da84b42a3b5b16e735e11b1/projects/OSSChatBot/conversations/plugin.js#L104)。
