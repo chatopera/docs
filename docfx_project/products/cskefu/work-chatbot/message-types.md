@@ -42,7 +42,7 @@
 ```脚本
 // FAQ Hotlist
 + __faq_hot_list
-- ^get_greetings()
+- {keep} ^get_greetings()
 ```
 
 点击【保存】，在编辑窗口中，如图。
@@ -53,6 +53,8 @@
 机器人发送函数`get_greetings`返回的内容。此处`__faq_hot_list`是固定的，`get_greetings`函数名和下面的技能函数名保持一致便可。
 
 `__faq_hot_list` 是春松客服与 [Chatopera 机器人平台](https://bot.chatopera.com/)之间约定的一个钩子。
+
+`{keep}` 的作用是机器人记忆中，可重复的使用一个回复，参考[文档](/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
 
 - 粘贴技能函数
 

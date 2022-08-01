@@ -57,6 +57,17 @@
     </tr>
 </table>
 
+## 重复使用回复
+
+模糊匹配器受机器人记忆模型限制，如果需要在一个记忆周期内一直生效，可以使用 `{keep}` 标记，比如：
+
+```脚本
++ ${商场几点开门|商场营业时间}
+- {keep} 营业时间：早上八点半至晚上十一点
+```
+
+详细介绍，参考[文档](/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
+
 ## 使用调试
 
 对于一条模糊匹配器规则，究竟要适应多少种问法？容错是保守一点，还是要非常灵活？这需要在调试机器人时，Chatopera 机器人平台用户，自行判断。在多轮对话设计器内，可以增加模糊匹配器里的句子，或者适当的调节阀值 `threshold`。
@@ -158,15 +169,14 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 ## 下一步
 
-- [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/references/func-builtin/message.html)
+* [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/references/func-builtin/message.html)
 
-- [下载多轮对话设计器](/products/chatbot-platform/howto-guides/cde-install.html)
+* [下载多轮对话设计器](/products/chatbot-platform/howto-guides/cde-install.html)
 
-- [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
+* [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
 
-- [检索多轮对话：使用多轮对话接口进行系统集成](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)
+* [检索多轮对话：使用多轮对话接口进行系统集成](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)
 
-- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
+* [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
 
-- [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
-
+* [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/howto-guides/conv-gambit-intent.html)

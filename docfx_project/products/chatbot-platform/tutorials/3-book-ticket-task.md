@@ -2,7 +2,7 @@
 
 << 上一步：[<2/5> 使用知识库回答“海口有几个机场”](2-answer-faq.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins
 
-完成本节内容，春松机器人能够为对话用户提供预约机票的服务。当然，不是真的出票，我们只是通过自然语言交互的形式获取到了要购买机票相关的信息，假设已经有了一个接口，通过这个接口可以出票。
+完成本节内容，春松机器人能够为对话用户提供预约机票的服务：通过自然语言交互的形式获取到了要购买机票相关的信息，假设集成了一个出票接口，完成出票。
 
 ## 引用系统词典
 
@@ -126,11 +126,11 @@ book_airplane_ticket
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-021512.png"/>
 
-所以，我们可以得到结论：现在机器人可以识别意图了，能提取到关键的信息了。
+现在机器人可以识别意图了，能提取到关键的信息了。
 
 ## 完成意图会话
 
-最终，我们希望意图识别的对话，能集成到出票的服务上。要想低代码的实现，就需要借助多轮对话，在多轮对话中，意图匹配器能帮助我们达到这个目标！
+接着，我们希望意图识别的对话，能集成到出票的服务上。借助多轮对话设计器，这个任务很简单，在多轮对话中，意图匹配器能帮助我们达到这个目标！
 
 回到多轮对话设计器，假设还在刚刚的 `greetings` 编辑窗口。点击【新建话题】，话题名称填写`intents`。
 
@@ -212,7 +212,7 @@ exports.placeAirplaneTicketOrder = async function() {
         params: [{
             type: 'card',
             title: "查看详情",
-            thumbnail: "https://img2.baidu.com/it/u=1105387277,858129327&fm=15&fmt=auto&gp=0.jpg",
+            thumbnail: "https://gitee.com/chatopera/cskefu/attach_files/1143210/download/AIRPLANE_20220801113300.jpg",
             summary: `${this.intent.extras.date}，国泰航空 CA001，国泰机场, ${entities["fromPlace"]["val"]} - ${entities["destPlace"]["val"]} `,
             hyperlink: "https://www.chatopera.com/"
         }]

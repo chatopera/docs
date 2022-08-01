@@ -8,9 +8,9 @@
 
 <img width="800" src="../../../images/products/platform/screenshot-20210914-080228.png"/>
 
-## 感谢你
+## 太棒了
 
-真诚的感谢你，创作出了一个智能对话机器人，让机器可以更懂人！
+你创造出了一个智能对话机器人！
 
 <img width="800" src="../../../images/products/platform/love-20210914-114743.png"/>
 

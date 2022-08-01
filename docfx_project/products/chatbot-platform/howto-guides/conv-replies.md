@@ -22,14 +22,14 @@
 
 所谓丢掉这个答案，是指机器人针对同一个用户，在【会话回溯最大时长】内再次匹配上该**匹配器**时，选择回复时，不考虑使用过的回复。
 
-如果不想让系统丢掉使用过的回复，可以在回复前添加{keep}。
-
 ```脚本
 + 在吗
 - {keep} 亲，在的
 - 亲，有什么需要帮助
 - 你好，请问遇到什么问题了吗？
 ```
+
+模糊匹配器受机器人记忆模型限制，如果需要在一个记忆周期内一直生效，可以使用 `{keep}` 标记，详细介绍，参考[文档](/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
 
 也可以在匹配器前添加*{keep}*，就不用在每个回答中都添加了
 
@@ -155,4 +155,3 @@
 - [上下轮钩子](/products/chatbot-platform/howto-guides/conv-hooks.html)
 
 - [函数](/products/chatbot-platform/howto-guides/conv-func.html)
-
