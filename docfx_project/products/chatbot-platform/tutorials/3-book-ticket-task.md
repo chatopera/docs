@@ -130,7 +130,7 @@ book_airplane_ticket
 
 这时候，进入了一个新的脚本编辑窗口，在脚本编辑区域，添加如下内容：
 
-```函数
+```脚本
 // 预约机票 
 intent {keep} book_airplane_ticket
 - ^handleAirplaneTicketOrder()
