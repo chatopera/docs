@@ -131,21 +131,21 @@ book_airplane_ticket
 这时候，进入了一个新的脚本编辑窗口，在脚本编辑区域，添加如下内容：
 
 ```函数
-// 预定机票 
-intent book_airplane_ticket
+// 预约机票 
+intent {keep} book_airplane_ticket
 - ^handleAirplaneTicketOrder()
 
     + ${0.6}{没错，出票吧｜出票}
     % ^handleAirplaneTicketOrder()
-    - ^placeAirplaneTicketOrder()
+    - {keep} ^placeAirplaneTicketOrder()
     
     + ${0.6}{不预约了}
     % ^handleAirplaneTicketOrder()
-    - ^cancelAirplanTicketReservation()
+    - {keep} ^cancelAirplanTicketReservation()
     
     + ${0.6}{信息有误，重新预约}
     % ^handleAirplaneTicketOrder()
-    - ^rebookAirplaneTicket()
+    - {keep} ^rebookAirplaneTicket()
 ```
 
 <img width="800" src="../../../images/products/platform/screenshot-20210915-135243.png"/>
@@ -222,6 +222,7 @@ exports.cancelAirplanTicketReservation = async function() {
 // 重新预约机票
 exports.rebookAirplaneTicket = async function() {
     debug("rebookAirplaneTicket this.intent", this.intent);
+    this.intent.drop = true;
     return "^topicRedirect(\"intents\", \"book_airplane_ticket\", true)"
 }
 ```
