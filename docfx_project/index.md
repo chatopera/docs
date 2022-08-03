@@ -15,10 +15,10 @@ footer{
       <strong>Chatopera</strong>
     </div>
     <div class="minitext">
-     Deliver contact center for enterprises
+     重新定义聊天机器人
     </div>
     <div class="buttons-unit-small">
-      <a class="version-link" href="https://bot.chatopera.com">使用 Chatopera 云服务上线机器人客服</a>
+      <a class="version-link" href="https://bot.chatopera.com">使用 Chatopera 云服务，应用机器人到客服、营销、办公自动化等场景</a>
     </div>
     <div class="buttons-unit">
       <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
