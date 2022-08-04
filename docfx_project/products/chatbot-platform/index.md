@@ -8,7 +8,7 @@
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
 * 浏览 [Chatopera 云服务概述](overview.md)
-* 完成 [新手任务：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)
+* 完成 [新手任务：使用入门教程一步步实现智能对话机器人](/products/chatbot-platform/tutorials/index.html)，完成入门教程共需要四十分钟，包含 5 个小节。
 
 ## 帮助
 <!-- Getting Help -->
@@ -37,4 +37,3 @@ Chatopera 云服务文档中心包括很多文档，了解这些文档是如何�
 ## 产品更新
 
 你想了解 [Chatopera 云服务](https://bot.chatopera.com) 相关的新功能、新动态？关注 [Chatopera 官方博客](https://status.chatopera.com/)。
-
