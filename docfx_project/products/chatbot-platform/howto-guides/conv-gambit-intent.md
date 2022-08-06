@@ -6,7 +6,6 @@
 
 * [意图匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/gambit-intent.html)
 
-
 ## 意图匹配器语法
 
 语法<font color="blue">（注意语法中存在的空格）</font>：
@@ -47,7 +46,7 @@ intent book_cab
 
 ## 意图会话生命周期
 
-当一个意图被识别到，对话进入意图识别对话，就会创建一个**意图会话**。意图会话，在下面四种情况下会失效：
+当一个意图被识别到，对话进入意图识别对话，就会创建一个**意图会话**。意图会话，在下面五种情况下会失效：
 
 ### 空闲时间太久而过期
 
@@ -81,7 +80,15 @@ intent book_cab
 
 这时，因为使用了意图识别生产版本，不会因为调试分支的变动而影响意图会话。
 
-### 函数内处置意图会话
+### 追问次数达到设定值
+
+多轮对话识别了意图后，针对意图中尚未得到的参数进行追问。在进行追问时，支持重复的追问。
+
+重复的追问：对一个参数，对话用户的输入未提供，则再次追问。
+
+这个追问的次数可以设定，参考[设置最大追问次数](#设置最大追问次数)，达到追问次数的设定值，则会删除正在进行的意图对话，然后到知识库和脚本对话中寻找回复。
+
+### 函数内丢弃意图会话
 
 在多轮对话函数中，包括**成功函数、失败函数或其它的匹配到的脚本函数**，使用 **`this.intent.drop = true`** 设置后。
 
@@ -354,7 +361,6 @@ exports.placeAirplaneTicketOrder = async function() {
 
 可见，`service.intent` 的数据与函数中的 `this.intent` 是一致的。
 
-
 ### 在回复中跳转到指定意图
 
 **假设在多轮对话脚本中，已经设定了一个意图的意图匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](/products/chatbot-platform/howto-guides/conv-state.html#切换话题) 切换话题。
@@ -388,13 +394,12 @@ exports.handleXXFn = async function() {
 
 ## 下一步
 
-- [函数：使用 http 模块请求外部系统 API 服务](/products/chatbot-platform/references/func-builtin/basics.html#http)
+* [函数：使用 http 模块请求外部系统 API 服务](/products/chatbot-platform/references/func-builtin/basics.html#http)
 
-- [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
+* [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
 
-- [查看示例程序：预约机票](https://github.com/chatopera/chatbot-samples/blob/master/projects/%E9%A2%84%E5%AE%9A%E6%9C%BA%E7%A5%A8)
+* [查看示例程序：预约机票](https://github.com/chatopera/chatbot-samples/blob/master/projects/%E9%A2%84%E5%AE%9A%E6%9C%BA%E7%A5%A8)
 
-- [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
+* [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
 
-- [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/howto-guides/conv-gambit-like.html)
-
+* [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/howto-guides/conv-gambit-like.html)
