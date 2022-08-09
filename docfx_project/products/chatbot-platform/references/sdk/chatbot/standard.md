@@ -2,7 +2,7 @@
 
 ### 发送请求
 
-`Chatbot`实例的核心接口是`command`，以下也使用`Chatbot#command`来指这个接口，该接口是对 RestAPI Request 的高级封装，内部完成**签名认证**，**RequestHeaders**和**RequestBody**等处理。
+`Chatbot`实例的核心接口是`command`，以下也使用`Chatbot#command`来指这个接口，该接口是对 RestAPIs 的高级封装，内部完成**签名认证**，**RequestHeaders**和**RequestBody**等处理。
 
 <h4><font color="purple">接口规范</font></h4>
 
@@ -67,3 +67,13 @@ result = chatbot.command(method, path [, body])
 > **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatbot#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](https://docs.chatopera.com/products/chatbot-platform/integration/index.html#下载-sdk)。
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。
+
+### 常用 APIs 介绍
+
+在[Chatopera 云服务文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html)，仅介绍了关键、常用的 APIs 作为示范，这些 APIs 可以在左侧的子级菜单中获得详细介绍。
+
+### 全部 APIs 文档
+
+对于高级用户，Chatopera 提供了一个浏览全部 RestAPIs 的站点，这些 APIs 一样可以通过 `Chatbot#command` 接口调用，因为 `Chatbot#command` 就是封装了的 RestAPIs。
+
+[https://api-docs.chatopera.com/](https://api-docs.chatopera.com/)
