@@ -1,6 +1,6 @@
 # 在多轮对话中使用意图匹配器
 
-<img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-1_16-47-24.png" alt="意图匹配器" />
+![意图匹配器](../../../../images/products/platform/conversations/intents/image2021-9-1_16-47-24.png)
 
 也称为 Intent Gambit，在多轮对话脚本中使用[意图识别模块](https://docs.chatopera.com/products/chatbot-platform/explanations/intent.html)实现任务型对话。
 
@@ -20,7 +20,7 @@ intent INTENT_NAME
 
 `intent INTENT_NAME` 就是意图匹配器，`INTENT_NAME` 是意图识别模块中，意图的名字，大小写不敏感，这意味着 `book_cab` 和 `BOOK_CAB` 是一样的。
 
-<img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-1_19-29-33.png" alt="意图列表" />
+![意图列表](../../../../images/products/platform/conversations/intents/image2021-9-1_19-29-33.png)
 
 然后，在下一行，使用 "`-`" 开始设定回复，因为需要处理意图识别信息，而该信息是传递给函数的，所以，回复设置为自定义的函数。在本文后面的部分，会详细说明在函数中取值。
 
@@ -70,7 +70,7 @@ intent book_cab
 
 1）发布训练好的意图识别调试版本为生产版本，进入机器人意图管理页面，点击【版本管理】，点击【发布上线】。
 
-<img width="800" src="../../../../images/products/platform/screenshot-20210907-194649.png" alt="发布上线" />
+![发布上线](../../../../images/products/platform/screenshot-20210907-194649.png)
 
 2）在多轮对话设计器或 Chatopera 机器人平台管理控制台，进入环境变量设置。
 
@@ -96,12 +96,7 @@ intent book_cab
 
 编辑意图识别对话窗口如下：
 
-<table class="image">
-    <caption align="bottom">多轮对话设计器</caption>
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-1_19-43-43.png" alt="多轮对话设计器" /></td>
-    </tr>
-</table>
+![多轮对话设计器](../../../../images/products/platform/conversations/intents/image2021-9-1_19-43-43.png)
 
 在脚本和函数编辑区域，使用语法匹配意图识别和处理意图识别信息；对话窗口进行测试，在日志中查看日志和 `debug` 信息；在 SDK 中查看返回值 JSON 数据。
 
@@ -288,12 +283,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 在后续的多轮对话中，如果意图对话还没有过期，则依旧会从意图对话中检索。如果追问的信息被匹配到，则做意图对话；否则将不会追问，而是以(知识库->对话脚本->失败函数)这个顺序检索回复。
 
-<table class="image">
-    <caption align="bottom">多轮对话意图对话最多追问次数</caption>
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-3_11-49-51.png" alt="多轮对话意图对话最多追问次数" /></td>
-    </tr>
-</table>
+![多轮对话意图对话最多追问次数](../../../../images/products/platform/conversations/intents/image2021-9-3_11-49-51.png)
 
 ## 设置集成意图识别分支
 

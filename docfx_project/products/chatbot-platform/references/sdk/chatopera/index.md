@@ -17,11 +17,7 @@ Chatopera(accessToken [, botProvider])
 
 在机器人控制台，打开【访问设置】:
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/screenshot-20210802-202119.png" alt="" /></td>
-    </tr>
-</table>
+![访问设置](../../../images/products/platform/screenshot-20210802-202119.png)
 
 刚刚注册的账户需要点击`生成`进行初始化；点击`复制`将 Token 值复制到粘贴板。
 

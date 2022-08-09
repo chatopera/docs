@@ -8,12 +8,7 @@
 
 在知识库页面点击「+」
 
-<table class="image">
-    <caption align="bottom">创建问答对</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_17-37-50.png" alt="" /></td>
-    </tr>
-</table>
+![创建问答对](../../../images/products/faq/image2020-7-16_17-37-50.png)
 
 在机器人管理面板中，还有其它地方可以创建问答对，比如历史记录页面点击「+」创建问答对。这些创建或修改问答对的快捷方式提升了维护知识库的便捷性。
 
@@ -42,12 +37,7 @@
 
 步骤：新建问题页面点击「增加」下拉框，选择「HTML」
 
-<table class="image">
-    <caption align="bottom">富文本类型</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_17-40-38.png" alt="" /></td>
-    </tr>
-</table>
+![富文本类型](../../../images/products/faq/image2020-7-16_17-40-38.png)
 
 ### 图文消息
 
@@ -55,12 +45,7 @@
 
 步骤：新建问题页面点击「增加」下拉框，选择「图文」
 
-<table class="image">
-    <caption align="bottom">图文消息类型</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_17-41-57.png" alt="" /></td>
-    </tr>
-</table>
+![图文消息类型](../../../images/products/faq/image2020-7-16_17-41-57.png)
 
 ## 机器人置信度
 
@@ -74,14 +59,8 @@
 
 当置信度高于某数值时，机器人就认为置信度最高的答案匹配上了来访者的问题，可以将该问答对的答案回复给来访者，该数值称为**最佳回复阀值**；当没有问答对的相似度高于最佳回复阀值，但是有一些问答对可以作为建议回复发送给来访者，展示为“您是想咨询一下问题吗”，然后列一个列表，请来访者选择，那么可以进入这个列表的问答对，需要高于某数值，该数值称为**建议回复阀值**。
 
-<table class="image">
-    <caption align="bottom">调试命中率</caption>
-    <tr>
-        <td><img width="500" src="../../../images/platform/4.png" alt="" /></td>
-    </tr>
-</table>
+![调试命中率](../../../images/platform/4.png)
 
 对知识库的评测，常常用一系列测试问题查询返回结果，进而计算机器人回答的准确率评价检索系统。调试结果可以指导合理设置**最佳回复阀值**和**建议回复阀值**，这两个值对于业务系统集成知识库具有很重要的意义。
 
 在熟悉了置信度的概念以后，就可以开始调试知识库了。
-

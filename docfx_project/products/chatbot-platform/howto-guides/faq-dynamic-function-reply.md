@@ -10,11 +10,11 @@
 
 在传统方案中，知识库的答案通过手动复制同步，而且这个过程几乎都需要人工完成。
 
-![image](../../../images/products/platform/QQ截图20220616155155.png)
+![问答对](../../../images/products/platform/QQ截图20220616155155.png)
 
 但是，因为有 HTTP API 存在，这个过程可以更简单。一个可行的方案如下：
 
-![image](../../../images/products/platform/QQ截图20220616155207.png)
+![使用 API 请求答案](../../../images/products/platform/QQ截图20220616155207.png)
 
 目前，Chatopera 机器人平台支持这样的使用场景，接下来具体说明。
 
@@ -22,7 +22,7 @@
 
 在 [Chatopera 机器人平台](https://bot.chatopera.com/)管理控制台上 BOT 开发者可以维护知识库的不同类型的答案，除了录入固定的答案，Chatopera 机器人平台知识库也支持通过调用[多轮对话的话题](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)来从多轮对话获得答案。在多轮对话中，支持自定义 JavaScript 函数，就使得知识库设置动态抓取的答案可行，称之为：知识库路由。
 
-![image](../../../images/products/platform/QQ截图20220616155220.png)
+![多轮对话函数](../../../images/products/platform/QQ截图20220616155220.png)
 
 #### 知识库路由
 
@@ -58,13 +58,13 @@ routeDirectReply#["__depart_purch_incharge", "__contact_info"]
 
 在控制台设置如下 -
 
-![image](../../../images/products/platform/QQ截图20220616155315.png)
+![设置答案](../../../images/products/platform/QQ截图20220616155315.png)
 
 3）在多轮对话设计器中，设置机器人的回复内容
 
 在机器人管理控制台，打开【多轮对话】版块，点击【下载多轮对话设计器】。
 
-![image](../../../images/products/platform/QQ截图20220616155328.png)
+![下载多轮对话设计器](../../../images/products/platform/QQ截图20220616155328.png)
 
 安装后，启动应用并通过机器人设置页面的 clientId 和 secret 导入机器人。
 创建新的技能：`__depart_purch_incharge`
@@ -75,7 +75,7 @@ routeDirectReply#["__depart_purch_incharge", "__contact_info"]
 - ^get_purch_incharge_contact()
 ```
 
-![image](../../../images/products/platform/QQ截图20220616155346.png)
+![编写函数](../../../images/products/platform/QQ截图20220616155346.png)
 
 在函数中，添加新的函数。
 
@@ -93,11 +93,11 @@ exports.get_purch_incharge_contact = async function() {
 
 在多轮对话设计器中进行测试：
 
-![image](../../../images/products/platform/QQ截图20220616155420.png)
+![多轮对话设计器测试](../../../images/products/platform/QQ截图20220616155420.png)
 
 4）在机器人控制台进行测试
 
-![image](../../../images/products/platform/QQ截图20220616155438.png)
+![机器人控制台进行测试](../../../images/products/platform/QQ截图20220616155438.png)
 
 下一步，就可以接入到业务系统，比如春松客服。在返回结果中，除了使用文本的形式，还可以支持自定义的数据结构，在春松客服中，返回结果支持展示为卡片、图文、按钮、列表的形式，详细参考（[https://docs.chatopera.com/products/cskefu/work-chatbot/message-types.html](https://docs.chatopera.com/products/cskefu/work-chatbot/message-types.html)）。
 
@@ -125,8 +125,8 @@ routeDirectReply#["__depart_purch_incharge", "$ctx.textMessage$"]
 
 在控制台设置如下 -
 
-![image](../../../images/products/platform/QQ截图20220616155455.png)
+![进阶回复](../../../images/products/platform/QQ截图20220616155455.png)
 
 那么，在多轮对话设计器中，这个规则可以更新为：
 
-![image](../../../images/products/platform/QQ截图20220616155505.png)
+![规则更新](../../../images/products/platform/QQ截图20220616155505.png)

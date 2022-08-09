@@ -1,6 +1,6 @@
 # 在多轮对话中使用模糊匹配器
 
-<img width="800" src="../../../../images/products/platform/image2021-8-18_10-15-50.png" alt="模糊匹配器" />
+![模糊匹配器](../../../../images/products/platform/image2021-8-18_10-15-50.png)
 
 也称为 Like Gambit，使用容错能力更强的语法定义规则。
 
@@ -50,14 +50,9 @@
 
 在这种形式下，省略了`形式 1` 里的阀值 `threshold`，那么在计算输入和`句子1`，...，`句子N` 的是否匹配时，使用的阀值是机器人控制台【设置页面】设定的值【多轮对话模糊匹配阀值】，默认为 0.8。
 
-<table class="image">
-    <caption align="bottom">多轮对话模糊匹配阀值</caption>
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/image2021-8-17_19-49-27.png" alt="多轮对话模糊匹配阀值" /></td>
-    </tr>
-</table>
+![多轮对话模糊匹配阀值](../../../../images/products/platform/image2021-8-17_19-49-27.png)
 
-## 重复使用回复
+## 匹配器及回复复用
 
 模糊匹配器受机器人记忆模型限制，如果需要在一个记忆周期内一直生效，可以使用 `{keep}` 标记，比如：
 
@@ -66,7 +61,7 @@
 - {keep} 营业时间：早上八点半至晚上十一点
 ```
 
-详细介绍，参考[文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
+详细介绍，参考[文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html#匹配器及回复复用)。
 
 ## 使用调试
 
@@ -86,12 +81,7 @@
 
 如下图：
 
-<table class="image">
-    <caption align="bottom">在多轮对话设计器中使用调试</caption>
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/image2021-8-17_19-46-32.png" alt="在多轮对话设计器中使用调试" /></td>
-    </tr>
-</table>
+![在多轮对话设计器中使用调试](../../../../images/products/platform/image2021-8-17_19-46-32.png)
 
 ### 调试信息
 

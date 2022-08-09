@@ -10,12 +10,7 @@
 
 `SDK`中每个机器人实例需要通过*ClientId*和*Secret*初始化，这两个字段是认证和授权用途。打开机器人【设置】页面，拷贝*ClientId*和*Secret*。
 
-<p align="center">
-  <b>显示Secret</b><br>
-  <a href="http://bot.chatopera.com/" target="_blank">
-      <img src="../../../images/products/platform/screenshot-20210914-144603.png" width="800">
-  </a>
-</p>
+![显示Secret](../../../images/products/platform/screenshot-20210914-144603.png)
 
 ## 安装 SDK
 
@@ -90,4 +85,4 @@ chatbot.command("GET", "/").then(
 docker run -it --rm -p 8668:8668 chatopera/webchat:develop
 ```
 
-<img width="600" src="../../../images/products/platform/webchat-1.jpeg" alt="" />
+![Chatopera Test Client](../../../images/products/platform/webchat-1.jpeg)

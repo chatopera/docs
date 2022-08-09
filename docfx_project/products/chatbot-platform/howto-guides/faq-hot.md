@@ -8,22 +8,12 @@
 
 在 Chatopera 机器人管理控制台上，每个机器人的知识库管理页面，每个问答对增加【热门度】一列。
 
-<table class="image">
-    <caption align="bottom">热门度</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2021-8-10_01.jpg" alt="" /></td>
-    </tr>
-</table>
+![热门度](../../../images/products/faq/image2021-8-10_01.jpg)
 
 ### 下载热门问题
 
 如何获得所有知识库问答对的按热门度排名信息？在知识库管理页面，【下载】下拉菜单中，增加【热门问题】。
 
-<table class="image">
-    <caption align="bottom">下载热门问题排行</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2021-8-10_02.jpg" alt="" /></td>
-    </tr>
-</table>
+![下载热门问题排行](../../../images/products/faq/image2021-8-10_02.jpg)
 
 点击后将下载到按热门度降序排名的 Excel 汇总信息。

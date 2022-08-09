@@ -20,26 +20,17 @@
 
 添加槽位：添加槽位时可以选择应用系统词典或自定义词典，可以设置是否必填和追问，必填的话必须设置追问。
 
-<table class="image">
-<caption align="bottom">图：添加槽位</caption>
-<tr><td><img width="680" src="../../../images/intent/intent1.png" alt="添加槽位"/></td></tr>
-</table>
+![添加槽位](../../../images/intent/intent1.png)
 
 删除槽位：对于不需要的槽位可以进行删除，点击删除按钮即可。
 
 修改槽位：对于需要修改的槽位，直接进行编辑和修改即可。
 
-<table class="image">
-<caption align="bottom">图：修改槽位</caption>
-<tr><td><img width="680" src="../../../images/intent/intent2.png" alt="修改槽位"/></td></tr>
-</table>
+![修改槽位](../../../images/intent/intent2.png)
 
 添加说法：对于用户的说法，可以添加没有槽位的说法，也可以用{}关联槽位，把槽名称放到{}里面即可，一个说法可以绑定多个槽位。
 
-<table class="image">
-<caption align="bottom">图：添加说法</caption>
-<tr><td><img width="680" src="../../../images/intent/intent3.png" alt="添加说法"/></td></tr>
-</table>
+![添加说法](../../../images/intent/intent3.png)
 
 删除说法：点击删除按钮即可。
 
@@ -49,10 +40,7 @@
 
 在编辑完所有说法和槽位之后，需要进行保存。保存并且训练成功有提示。成功就可以到测试对话页面进行测试。
 
-<table class="image">
-<caption align="bottom">图：保存</caption>
-<tr><td><img width="680" src="../../../images/intent/intent4.png" alt="保存"/></td></tr>
-</table>
+![保存意图](../../../images/intent/intent4.png)
 
 ## 测试和发布机器人
 

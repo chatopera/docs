@@ -4,10 +4,7 @@
 
 关键词：快捷语、网络聊天快捷语、网络销售快捷语、知识库快捷、企业输入法、定制知识库、聊天助手、营销话术快捷语、营销话术助手、客服话术助手
 
-<table class="image">
-<caption align="bottom">话术助手：快速从知识库检索的输入法</caption>
-<tr><td><img width="600" src="../../../images/products/assistant/10.png" alt="话术助手：快速从知识库检索的输入法"/></td></tr>
-</table>
+![话术助手：快速从知识库检索的输入法](../../../images/products/assistant/10.png)
 
 Chatopera 知识库话术助手（简称“话术助手”）是面向企业的客户服务人员发布的一款从**知识库**检索建议回复的**桌面软件**。长期以来，客户服务占据着企业运营的重要位置，因为回复不及时、不标准和不准确都会给企业造成损失，对于常见问题集的管理，主要使用的工具是 Excel，客服人员想要快速回复客户消息非常困难，同时也有不容易维护的问题，话术助手就是专门用于解决这个问题而开发的。
 
@@ -38,24 +35,15 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 在下载后，浏览器可能提示“这种类型的文件可能会损坏您的计算机”或者“Windows Defender SmartScreen 已组织启动一个未识别的应用。”，这时请点击“保留”及“更多信息”进行下一步。
 
-<table class="image">
-<caption align="bottom">点击“仍要运行”</caption>
-<tr><td><img width="800" src="../../../images/products/assistant/2.png" alt="Windows提示"/></td></tr>
-</table>
+![Windows 提示:点击“仍要运行”](../../../images/products/assistant/2.png)
 
 ### 配置
 
-<table class="image">
-<caption align="bottom">话术助手</caption>
-<tr><td><img width="100" src="../../../images/products/assistant/3.png" alt="话术助手"/></td></tr>
-</table>
+![话术助手](../../../images/products/assistant/3.png)
 
 双击图标，启动话术助手，看到如下配置界面。
 
-<table class="image">
-<caption align="bottom">配置话术助手</caption>
-<tr><td><img width="300" src="../../../images/products/assistant/4.png" alt="配置话术助手"/></td></tr>
-</table>
+![配置话术助手](../../../images/products/assistant/4.png)
 
 “邮箱”一栏填写有效的电子邮箱地址，该邮箱属于从该 PC 客户端使用 话术助手的人员，比如客服坐席。客服主管可以从 Chatopera 机器人平台的对话历史中看到该邮箱访问机器人知识库的使用情况。
 
@@ -67,10 +55,7 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 已经具备了应用 ID 和密钥的用户跳过此步。作为团队组长/企业主管等角色使用或作为个人用途，可以通过注册<a href="https://bot.chatopera.com" target="_blank">Chatopera 云服务</a>，然后创建聊天机器人获得。
 
-<table class="image">
-<caption align="bottom">获得应用ID和密钥</caption>
-<tr><td><img width="600" src="../../../images/products/assistant/5.png" alt="获得应用ID和密钥"/></td></tr>
-</table>
+![获得应用ID和密钥](../../../images/products/assistant/5.png)
 
 这三项都属于必填项，填写好后点击“保存”。
 
@@ -80,10 +65,7 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 保存设置后，话术助手是置顶在桌面的，在话术助手的最右侧是切换*启用*和*停用*状态的按钮。
 
-<table class="image">
-<caption align="bottom">悬浮状态下的话术助手</caption>
-<tr><td><img width="300" src="../../../images/products/assistant/6.png" alt="悬浮状态下的话术助手"/></td></tr>
-</table>
+![悬浮状态下的话术助手](../../../images/products/assistant/6.png)
 
 工作时，您可能处于不同的聊天软件中，甚至是文档中，都可以通过复制文本获得建议回复。比如，下面是在 QQ 群中，快速回复一个问题，就把这个问题复制到粘贴板，通常是通过【Ctrl + C】完成。
 
@@ -95,10 +77,7 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 保存设置后，话术助手工具条内显示“请输入搜索关键字”，在此录入文本后，通过回车键或右侧放大镜都可以提交搜索。获得建议回复。
 
-<table class="image">
-<caption align="bottom">检索关键词</caption>
-<tr><td><img width="600" src="../../../images/products/assistant/11.jpg" alt="检索关键词"/></td></tr>
-</table>
+![检索关键词](../../../images/products/assistant/11.jpg)
 
 点击取得的答案，答案内容被复制找系统粘贴板，然后可以再粘贴到其它地方，通过【Ctrl + V】完成。
 
@@ -106,17 +85,10 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 话术助手处于*启用*状态时，每次执行文本复制操作都会做智能建议回复的查询，被复制内容会被发送到远程服务，为了保护用户隐私，您可以临时停用话术助手，这时并不执行智能建议回复，您的隐私数据也就得到保护。**在任何状态，任何理由下，Chatopera 不会在未取得用户允许的情况下，获取或利用用户的隐私数据。**
 
-<table class="image">
-<caption align="bottom">停用状态下的话术助手</caption>
-<tr><td><img width="300" src="../../../images/products/assistant/8.png" alt="停用状态下的话术助手"/></td></tr>
-</table>
+![停用状态下的话术助手](../../../images/products/assistant/8.png)
 
 ### 退出
 
 彻底关闭话术助手，在话术助手的悬浮区域右键，在弹出的菜单中点击“退出”。
 
-<table class="image">
-<caption align="bottom">退出话术助手</caption>
-<tr><td><img width="300" src="../../../images/products/assistant/9.png" alt="退出话术助手"/></td></tr>
-</table>
-
+![退出话术助手](../../../images/products/assistant/9.png)

@@ -10,7 +10,7 @@
 
 在工具条菜单中，点击【创建机器人】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-185844.png"/>
+![创建机器人](../../../images/products/platform/screenshot-20210913-185844.png)
 
 填入表单：
 
@@ -22,7 +22,7 @@
 其它信息默认，点击【确认】。
 创建成功后，会自动跳转到`春松机器人`的详情页。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210916-103336.png"/>
+![机器人详情页](../../../images/products/platform/screenshot-20210916-103336.png)
 
 默认的详情页显示对话语料与访问统计信息，可以通过机器人的菜单，导航至机器人的其它页面，比如【机器人设置页面】。在后文，使用`春松机器人管理控制台`来指代示例程序的详情页。
 
@@ -32,27 +32,27 @@
 
 在电脑应用启动中心，打开【多轮对话设计器】，**如果你还没有安装，使用[链接](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)进行安装**。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-192350.png"/>
+![安装和启动多轮对话设计器](../../../images/products/platform/screenshot-20210913-192350.png)
 
 在多轮对话设计器一级菜单中，点击【添加】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-192631.png"/>
+![添加机器人](../../../images/products/platform/screenshot-20210913-192631.png)
 
 打开春松机器人管理控制台，进入【设置】页面。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-192956.png"/>
+![设置机器人](../../../images/products/platform/screenshot-20210913-192956.png)
 
 拷贝 `Client Id` 和 `Secret` 到多轮对话设计器【添加表单】，点击【确认】。这里你也可能遇到问题，比如提示[【信息不匹配，请确认机器人信息】](#信息不匹配请确认机器人信息)，参考本文后面的[《可能遇到的问题》](#可能遇到的问题)获得解决方案。
 
 然后，多轮对话设计器会跳转到聊天机器人列表，在列表中，找到`春松机器人`，在对应的操作中点击【打开】，进入春松机器人的话题列表页面。这时，只能看到一个话题：`greetings`。这个话题是创建机器人时默认初始化生成的。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-194520.png"/>
+![话题](../../../images/products/platform/screenshot-20210913-194520.png)
 
 ## 和机器人进行第一次对话
 
 在话题列表中，点击 `greetings` 话题的【编辑】按钮，这时进入脚本编辑面板。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-195806.png"/>
+![脚本编辑](../../../images/products/platform/screenshot-20210913-195806.png)
 
 在脚本编辑面板中间，有一个聊天对话框，在文本发送区域，输入`你好`，然后点击【发送】。
 
@@ -62,7 +62,7 @@
 
 恭喜你完成本节任务！
 
-<img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
 
 << 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 使用知识库回答“海口有几个机场”](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html)
 
@@ -71,8 +71,8 @@
 ### 信息不匹配，请确认机器人信息
 
 提示如下：
-<img width="800" src="../../../images/products/platform/screenshot-20210913-193815.png"/>
+![错误提示](../../../images/products/platform/screenshot-20210913-193815.png)
 
 如果经过验证，你填写的信息没有错误，那么可能是电脑的时间日期与互联网标准时间之间有很大误差，需要先在操作系统上同步互联网时间，以下是 Windows 上同步互联网时间的方法，你也可以手动设置，其它操作系统，都有类似的操作。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-193617.png"/>
+![解决方法](../../../images/products/platform/screenshot-20210913-193617.png)

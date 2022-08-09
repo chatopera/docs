@@ -13,12 +13,7 @@
 
 步骤：知识库页面点击「导出」
 
-<table class="image">
-    <caption align="bottom">导出知识库</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_15-51-3.png" alt="" /></td>
-    </tr>
-</table>
+![导出知识库](../../../images/products/faq/image2020-7-16_15-51-3.png)
 
 文件导出格式为 json 格式，json 是一种节省空间、灵活的、方便用文本编辑器处理和代码处理的流行格式。
 
@@ -30,9 +25,4 @@
 - 点击「下载示例数据」之后，可以对示例数据进行编辑保存，再导入到知识库
 - 导入时可设置问题的状态，问题状态为「禁用」在测试知识库时检索不到
 
-<table class="image">
-    <caption align="bottom">导入知识库</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_16-55-26.png" alt="" /></td>
-    </tr>
-</table>
+![导入知识库](../../../images/products/faq/image2020-7-16_16-55-26.png)

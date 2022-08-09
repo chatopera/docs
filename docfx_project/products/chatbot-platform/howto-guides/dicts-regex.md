@@ -12,22 +12,13 @@
 
 在词典管理页面点击新建自定义词典，在弹出的对话框里输入正确的自定义词典名称，词典类型选择"正则表达式"，点击确定
 
-<table class="image">
-<caption align="bottom">图：新建正则表达式词典</caption>
-<tr><td><img width="680" src="../../../images/intent/dict1.png" alt="新建词汇表词典"/></td></tr>
-</table>
+![新建词汇表词典](../../../images/intent/dict1.png)
 
-<table class="image">
-<caption align="bottom">图：新建正则表达式词典</caption>
-<tr><td><img width="680" src="../../../images/intent/intent-003.png" alt="新建词汇表词典"/></td></tr>
-</table>
+![新建词汇表词典](../../../images/intent/intent-003.png)
 
 如果创建的自定义词典名称不符合要求，会有相应的提示
 
-<table class="image">
-<caption align="bottom">图：不符合要求</caption>
-<tr><td><img width="680" src="../../../images/intent/dict3.png" alt="不符合要求"/></td></tr>
-</table>
+![不符合要求](../../../images/intent/dict3.png)
 
 ## 编辑
 
@@ -35,10 +26,7 @@ Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[
 
 添加正则表达式定义，进入【词典管理>>自定义词典】列表，选择正则表达式词典，点击"编辑"。
 
-<table class="image">
-<caption align="bottom">图：添加正则表达式定义</caption>
-<tr><td><img width="680" src="../../../images/intent/intent-004.png" alt="添加正则表达式定义"/></td></tr>
-</table>
+![添加正则表达式定义](../../../images/intent/intent-004.png)
 
 在"添加表达式"项目下，写入表达式，点击"添加"，然后点击"保存"。保存成功后会重新训练机器人，如果遇到错误会弹出提示消息，对于没有意图或意图中没有说法的情况，训练机器人会失败，这时候保存正则表达式词典是成功的，该错误可忽略，后续在添加了意图和说法后，就正常了。
 
@@ -46,10 +34,7 @@ Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[
 
 保存成功后，还需要确认表达式是能按照预期工作，这个验证的过程通过【验证表达式】完成，该项目在表达式列表的下面。
 
-<table class="image">
-<caption align="bottom">图：验证表达式</caption>
-<tr><td><img width="680" src="../../../images/intent/intent-005.png" alt="验证表达式"/></td></tr>
-</table>
+![验证表达式](../../../images/intent/intent-005.png)
 
 验证表达式过程就是输入一段测试文本，点击"验证"，验证结果将显示在下面。
 

@@ -6,10 +6,7 @@
 
 获取**环境变量**，环境变量在**多轮对话设计器**和**聊天机器人多轮对话控制台**都可以定义，目的是在设计阶段和运行阶段，多轮对话使用不同的配置。
 
-<table class="image">
-<caption align="bottom">配置环境变量</caption>
-<tr><td><img width="800" src="../../../../images/products/platform/bot-console-define-config.jpg" alt="配置环境变量"/></td></tr>
-</table>
+![配置环境变量](../../../../images/products/platform/bot-console-define-config.jpg)
 
 `config`作为函数中的全局常量，不需要用户定义，不支持改变该值，只能作为读取用途，并且`config`只是键值对，值只是`string`类型。
 

@@ -8,7 +8,7 @@
 
 来到春松机器人管理控制台，在机器人菜单上点击【知识库】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-200902.png"/>
+![知识库管理](../../../images/products/platform/screenshot-20210913-200902.png)
 
 此时进入了知识库管理页面。
 
@@ -16,7 +16,7 @@
 
 点击知识库管理页面的加号【➕】，在知识库菜单的左侧，这时弹出创建问答对的表单。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-201656.png"/>
+![添加问答对](../../../images/products/platform/screenshot-20210913-201656.png)
 
 设置问答对内容：
 
@@ -44,7 +44,7 @@
 海口有海口美兰国际机场，位于海口市美兰区，航线飞往国内大中城市 ...
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-202002.png"/>
+![测试对话](../../../images/products/platform/screenshot-20210913-202002.png)
 
 此时，我们就完成了知识库的第一个问答对的添加和测试，这部分工作是不是很简单 :-)
 
@@ -63,7 +63,7 @@
 
 添加后，脚本编辑区域看起来是这样。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-202526.png"/>
+![脚本编辑区域](../../../images/products/platform/screenshot-20210913-202526.png)
 
 ### 添加函数
 
@@ -88,13 +88,13 @@ exports.get_greetings = async function() {
 
 添加后，函数编辑区域看起来是这样。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-202923.png"/>
+![函数编辑区域](../../../images/products/platform/screenshot-20210913-202923.png)
 
 其中，`exports.` 后面就是函数的名字，可以在机器人的 `-` 后面使用，处理逻辑。
 
 点击【保存】，此时，得到提示信息: `上传数据成功`。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-203144.png"/>
+![上传数据](../../../images/products/platform/screenshot-20210913-203144.png)
 
 ### 测试对话
 
@@ -111,11 +111,11 @@ __faq_hot_list
 1. 海口有几个机场
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-203616.png"/>
+![测试对话](../../../images/products/platform/screenshot-20210913-203616.png)
 
 当你看到了这样的回答，那么本步骤就完成了！恭喜你完成本节任务！
 
-<img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
 
 可以说，`__faq_hot_list` 是我们约定的一个暗号，当对话用户进入对话场景，我们就主动向机器人发送暗号，获得预定义的回复，让机器人主动的开始对话。
 

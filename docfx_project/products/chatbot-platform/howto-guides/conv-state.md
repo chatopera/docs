@@ -124,9 +124,6 @@ _TOPIC_GAMBIT_ID_: 匹配器
 routeDirectReply#["class_001_pre", "__C1PRE_GAMBIT_003",true]
 ```
 
-<table class="image">
-<caption align="bottom">【知识库或函数】路由多轮对话</caption>
-<tr><td><img width="600" src="../../../images/products/platform/set-faq-route-conversion-reply.jpg" alt="【知识库或函数】路由多轮对话"/></td></tr>
-</table>
+![【知识库或函数】路由多轮对话](../../../images/products/platform/set-faq-route-conversion-reply.jpg)
 
 提示：**routeDirectReply**需要设定为知识库问答对里的第一个答案，答案类型为 纯文本`plain`。

@@ -8,11 +8,7 @@ SDK 能力概述：使用 `Chatopera` 类创建机器人、获得机器人信息
 
 `Chatopera` 类使用控制台中【[访问设置](https://bot.chatopera.com/dashboard/accesssettings)】的 `Personal Access Token` 实例化，`Chatbot` 类使用每个机器人的 `clientId` 和 `secret` 初始化。
 
-<table class="image">
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/screenshot-20210802-194710.png" alt="" /></td>
-    </tr>
-</table>
+![SDK 类关系](../../../../images/products/platform/screenshot-20210802-194710.png)
 
 ## 下载安装
 
@@ -32,12 +28,7 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 在聊天机器人的一级菜单，可以进入**集成页面**查看。
 
-<table class="image">
-    <caption align="bottom">集成</caption>
-    <tr>
-        <td><img width="800" src="../../../../images/products/platform/screenshot-20210802-193746.png" alt="" /></td>
-    </tr>
-</table>
+![集成](../../../../images/products/platform/screenshot-20210802-193746.png)
 
 <font color="blue">如不能满足您使用环境或者语言的 SDK，请[创建工单](https://github.com/chatopera/docs/issues/new?template=1_help.md)进行描述，Chatopera 将尽快满足您的需求。</font>
 

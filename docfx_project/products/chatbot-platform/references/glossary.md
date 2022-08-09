@@ -54,10 +54,7 @@ Conversational App，c66 文件，从多轮对话设计器导出的文件。
 
 Chatbot Sample， 聊天机器人示例程序，开源地址，[https://github.com/chatopera/chatbot-samples](https://github.com/chatopera/chatbot-samples)。
 
-<table class="image">
-<caption align="bottom">对话</caption>
-<tr><td><img width="800" src="../../../images/products/cde/cde-15.png" alt="对话"/></td></tr>
-</table>
+![话题列表](../../../images/products/cde/cde-15.png)
 
 ## 意图识别
 

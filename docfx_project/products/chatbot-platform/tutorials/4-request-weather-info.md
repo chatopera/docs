@@ -22,7 +22,7 @@ ask_weather
 查天气
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210915-140141.png"/>
+![创建意图](../../../images/products/platform/screenshot-20210915-140141.png)
 
 ### 添加槽位
 
@@ -52,7 +52,7 @@ ask_weather
 北京的天气
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-074406.png"/>
+![测试对话](../../../images/products/platform/screenshot-20210914-074406.png)
 
 在右侧面板，机器人显示，已经识别了意图和城市。
 
@@ -75,7 +75,7 @@ intent ask_weather
 
 现在，脚本编辑区域看起来如下。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210916-143238.png"/>
+![添加脚本](../../../images/products/platform/screenshot-20210916-143238.png)
 
 ### 添加函数
 
@@ -142,7 +142,7 @@ exports.handleLoseAskWeather = async function() {
 
 在这个对话中，机器人在识别意图和城市后，请求第三方接口，通过互联网 HTTP API 的形式，查询天气信息，这个第三方接口需要认证，我们使用【环境变量】添加认证信息。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-075200.png"/>
+![添加环境变量](../../../images/products/platform/screenshot-20210914-075200.png)
 
 | 变量名 | 变量值 |
 | --- | --- |
@@ -161,7 +161,7 @@ exports.handleLoseAskWeather = async function() {
 
 那么，根据当天的情况，机器人发送回复内容。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-075524.png"/>
+![测试意图会话](../../../images/products/platform/screenshot-20210914-075524.png)
 
 当看到类似上面的内容，恭喜你，这个查询天气的对话技能就实现了！
 
@@ -213,11 +213,11 @@ exports.get_greetings = async function() {
 __faq_hot_list
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-114056.png"/>
+![测试对话](../../../images/products/platform/screenshot-20210914-114056.png)
 
 如果你得到了以上的回复内容，恭喜你完成本节任务！
 
-<img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
 
 << 上一步：[<3/5> 使用意图识别完成“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | >> 下一步：[<5/5> 查看对话统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html)
 
@@ -227,4 +227,4 @@ __faq_hot_list
 
 注册和风天气开发者：[https://dev.qweather.com/](https://dev.qweather.com/)
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-075951.png"/>
+![和风天气控制台](../../../images/products/platform/screenshot-20210914-075951.png)

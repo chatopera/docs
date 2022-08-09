@@ -6,10 +6,7 @@
 
 已有的系统词典包括：地名(`@LOC`)，人名(`@PER`)、时间(`@TIME`)、组织机构(`@ORG`)和任何字符串(`@ANY`)。在引用系统词典页面中可以看到
 
-<table class="image">
-<caption align="bottom">图：系统词典</caption>
-<tr><td><img width="680" src="../../../images/intent/dict13.png" alt="系统词典"/></td></tr>
-</table>
+![系统词典](../../../images/intent/dict13.png)
 
 各个系统词典的作用
 
@@ -25,8 +22,4 @@
 
 对于系统词典可以引用和取消引用。被引用了的系统词典可以在槽位配置时使用
 
-<table class="image">
-<caption align="bottom">图：引用与取消</caption>
-<tr><td><img width="680" src="../../../images/intent/dict14.png" alt="引用与取消"/></td></tr>
-</table>
-
+![引用与取消](../../../images/intent/dict14.png)

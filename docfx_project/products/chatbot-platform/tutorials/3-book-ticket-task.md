@@ -10,11 +10,11 @@
 
 再次回到春松机器人管理控制台，在机器人菜单上点击【词典】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-014615.png"/>
+![词典管理](../../../images/products/platform/screenshot-20210914-014615.png)
 
 在词典管理页面，点击【引用系统词典】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210915-134251.png"/>
+![引用系统词典](../../../images/products/platform/screenshot-20210915-134251.png)
 
 跳转到新的页面后，找到 `@TIME` 和 `@LOC`，点击【引用】，如上图所示。稍后我们就可以让机器人在意图识别中能“学习”到这些“概念”。
 
@@ -22,11 +22,11 @@
 
 在机器人菜单上点击【意图】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-013637.png"/>
+![意图管理](../../../images/products/platform/screenshot-20210914-013637.png)
 
 此时进入了意图识别管理页面，点击【新建意图】。
 
-<img width="500" src="../../../images/products/platform/screenshot-20210914-013838.png"/>
+![新建意图](../../../images/products/platform/screenshot-20210914-013838.png)
 
 在弹出的表单中填写：
 
@@ -48,7 +48,7 @@ book_airplane_ticket
 
 添加说法，说法就是代表对话用户要发起这个任务的文本。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210915-163124.png"/>
+![添加用户说法](../../../images/products/platform/screenshot-20210915-163124.png)
 
 我们为预约机票添加一些说法，**复制下面三行内容；在机器人控制台的说法输入中粘贴；点击【添加】**。
 
@@ -71,7 +71,7 @@ book_airplane_ticket
 
 这部分编辑好以后，看起来是这样的。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-015710.png"/>
+![添加槽位信息](../../../images/products/platform/screenshot-20210914-015710.png)
 
 ## 使用带有槽位的说法
 
@@ -83,11 +83,11 @@ book_airplane_ticket
 帮我预约{date}的机票
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-020307.png"/>
+![添加说法](../../../images/products/platform/screenshot-20210914-020307.png)
 
 有了用户说法和槽位后，就可以训练了，滚动到槽位表格下面，点击【保存】。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-020455.png"/>
+![训练意图模型](../../../images/products/platform/screenshot-20210914-020455.png)
 
 在保存后，会提示进行模型的训练，大约几秒钟后，提示`训练成功，可进行测试`。
 
@@ -95,7 +95,7 @@ book_airplane_ticket
 
 刚刚的模型效果怎么样？聊几句试试。在春松机器人管理控制台，进入【测试对话】页面。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-020727.png"/>
+![测试意图识别](../../../images/products/platform/screenshot-20210914-020727.png)
 
 这里是另一个可以测试对话的地方，在这里可以对不同问答模块做单独的测试。**但是稍后，我们会处理意图识别的会话，还要使用多轮对话设计器实现。**
 
@@ -107,7 +107,7 @@ book_airplane_ticket
 
 这时候机器人会回答：`您从哪个城市或机场出发？` 或 `您的计划出发日期是什么时候?`。具体机器人问什么，是和之前添加槽位的顺序相关。对话的效果如下：
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-021512.png"/>
+![对话](../../../images/products/platform/screenshot-20210914-021512.png)
 
 现在机器人可以识别意图了，能提取到关键的信息了。
 
@@ -117,7 +117,7 @@ book_airplane_ticket
 
 回到多轮对话设计器，假设还在刚刚的 `greetings` 编辑窗口。点击【新建话题】，话题名称填写`intents`。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-022010.png"/>
+![新建话题](../../../images/products/platform/screenshot-20210914-022010.png)
 
 这时候，进入了一个新的脚本编辑窗口，在脚本编辑区域，添加如下内容：
 
@@ -139,7 +139,7 @@ intent {keep} book_airplane_ticket
     - {keep} ^rebookAirplaneTicket()
 ```
 
-<img width="800" src="../../../images/products/platform/screenshot-20210915-135243.png"/>
+![意图匹配器](../../../images/products/platform/screenshot-20210915-135243.png)
 
 此时，我们看到脚本编辑窗口的内容，比上一节要复杂一些，实际上这些脚本有很好的可读性，同时对人类和机器人友好，很方便解释。在完成新手任务后，你可以继续学习它们：匹配器、回复和上下轮钩子。学习它们也很容易！
 
@@ -230,7 +230,7 @@ exports.rebookAirplaneTicket = async function() {
 
 这时，机器人识别了意图，并追问槽位的信息。我们输入城市和时间。当机器人获得了全部必填的槽位信息后，会弹出操作提示。
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-023036.png"/>
+![测试对话](../../../images/products/platform/screenshot-20210914-023036.png)
 
 我们可以点击操作按钮或发送文本：“出票”，“重新预约”和“取消预约”。我们发送文本：
 
@@ -240,10 +240,10 @@ exports.rebookAirplaneTicket = async function() {
 
 如果你看到了类似下面的消息：
 
-<img width="800" src="../../../images/products/platform/screenshot-20210914-023400.png"/>
+![机器人回复](../../../images/products/platform/screenshot-20210914-023400.png)
 
 恭喜你完成本节任务！距离完成新手任务还有两节内容！
 
-<img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
 
 << 上一步：[<2/5> 使用知识库回答“海口有几个机场”](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)

@@ -16,7 +16,7 @@
 
 在聊天机器人上线后，可能未必达到及格的程度。比如知识库命中率比较低，这时候，就要经常的使用聚类分析功能，优化知识库，常用方案是每天上午执行过去 24 小时或 3 天的对话历史，然后下载聚类结果，进行机器人优化。
 
-<img width="300" src="../../../images/products/platform/lattice-1.png" alt="聚类分析形象图"/>
+![聚类分析形象图](../../../images/products/platform/lattice-1.png)
 
 聚类分析，有如上图，不同颜色的零散的点，使用线段尽量将相同颜色的点汇聚在一个区域，聚类分析算法就是寻找最佳的线段。聚类分析算法使用非监督的机器学习算法，不保证聚类结果的准确无误，通常是聚类后方便进一步的人工标注工作，此处恕不赘述细节。
 
@@ -31,7 +31,7 @@
 在机器人详情页面，在导航菜单中打开“聚类分析”页面。
 点击“创建任务”。
 
-<img width="600" src="../../../images/products/platform/lattice-2.png" alt=""/>
+![创建聚类分析任务](../../../images/products/platform/lattice-2.png)
 
 在弹出的对话窗口中选择聚类针对的时间范围：开始日期距离现在远，结束日期距离现在近。聚类任务分析的数据就是这个时间段内机器人和访客的对话历史数据。
 
@@ -41,7 +41,7 @@
 
 提交聚类结果后，自动回到聚类分析页面，聚类分析页面的主要内容是聚类任务的列表，包括每个聚类任务的创建日期，聚类时间范围，状态。
 
-<img width="600" src="../../../images/products/platform/lattice-4.png" alt=""/>
+![下载聚类结果](../../../images/products/platform/lattice-4.png)
 
 状态分为：执行中、异常结束、执行完成。
 
@@ -55,7 +55,7 @@
 
 将上一步得到的压缩包解压，解压文件内包含如下文件：
 
-<img width="600" src="../../../images/products/platform/lattice-3.png" alt=""/>
+![查看聚类结果](../../../images/products/platform/lattice-3.png)
 
 Chatopera 机器人平台提供聚类输出包括：
 

@@ -20,23 +20,13 @@
 
 创建自定义词典步骤：词典管理页面点击「新建自定义词典」词典类型选择「词汇表」
 
-<table class="image">
-    <caption align="bottom">新建自定义词典</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-15_16-35-6.png" alt="" /></td>
-    </tr>
-</table>
+![新建自定义词典](../../../images/products/faq/image2020-7-15_16-35-6.png)
 
 ### 增加词条
 
 添加词条步骤：自定义词典列表点击「编辑」进入添加词条页面
 
-<table class="image">
-    <caption align="bottom">添加词条</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_18-5-50.png" alt="" /></td>
-    </tr>
-</table>
+![添加词条](../../../images/products/faq/image2020-7-16_18-5-50.png)
 
 ### 知识库同步自定义词典
 
@@ -44,12 +34,7 @@
 
 步骤：知识库页面点击「更新知识库」
 
-<table class="image">
-    <caption align="bottom">知识库同步自定义词典</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-15_16-41-59.png" alt="" /></td>
-    </tr>
-</table>
+![知识库同步自定义词典](../../../images/products/faq/image2020-7-15_16-41-59.png)
 
 ### 验证近义词
 
@@ -57,12 +42,6 @@
 
 用户的问题中包含有「西红柿」的同义词「番茄」，机器人可以识别到。
 
-<table class="image">
-    <caption align="bottom">验证近义词</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/faq/image2020-7-16_18-10-5.png" alt="" /></td>
-    </tr>
-</table>
+![验证近义词](../../../images/products/faq/image2020-7-16_18-10-5.png)
 
 **近义词**，**新词**，**专有名词**都可以通过自定义词典进行维护，维护好自定义词典对机器人智能化水平有着至关重要的作用。
-
