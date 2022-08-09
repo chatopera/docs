@@ -107,9 +107,9 @@ Chatopera 对公银行账户信息：
 
 ## 法律条款
 
-* [服务条款](/products/chatbot-platform/contract/terms.html)
+* [服务条款](https://docs.chatopera.com/products/chatbot-platform/contract/terms.html)
 
-* [服务水平协议](/products/chatbot-platform/contract/sla.html)
+* [服务水平协议](https://docs.chatopera.com/products/chatbot-platform/contract/sla.html)
 
 ### 服务附加条款
 

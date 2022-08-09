@@ -8,7 +8,7 @@
 
 ### 多轮对话内置函数
 
-在 Chatopera 机器人平台中，多轮对话模块，使用[函数](/products/chatbot-platform/conversation/function.html#%E5%87%BD%E6%95%B0)处理请求和回复时，支持在函数中，使用 `this.message.words` 和 `this.message.tags` 访问经过自然语言处理的输入文本信息。
+在 Chatopera 机器人平台中，多轮对话模块，使用[函数](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/index.html)处理请求和回复时，支持在函数中，使用 `this.message.words` 和 `this.message.tags` 访问经过自然语言处理的输入文本信息。
 
 比如输入：商场的开门时间。那么，则有
 
@@ -249,4 +249,3 @@ this.message.tags = ["nis","ude1","vi","n"]
 | MSP                  | web 誤脱 # Misspelling                 |
 | INT                  | 感動詞 # Interjection                  |
 | KYTEA_JA_DEFAULT_TAG | 新規未知語 # Unclassified unknown word |
-

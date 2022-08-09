@@ -21,8 +21,6 @@
 
 为了解决“容错”和表达能力不足的问题，需要提供更多形式的匹配器来解决。
 
-
 ## 下一步
 
-* [在多轮对话中使用模糊匹配器](/products/chatbot-platform/howto-guides/conv-gambit-like.html)
-
+* [在多轮对话中使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)

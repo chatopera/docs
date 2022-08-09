@@ -1,6 +1,5 @@
 # 背景知识
 
-
 Chatopera 机器人平台的定位是低代码上线智能对话机器人的工具和服务。本篇的主要目的是帮助 Chatopera 机器人平台用户从系统的角度理解 Chatopera 的多轮对话的工作机制，尤其是刚刚开始认识 Chatopera 服务的新用户，待阅读背景知识后，相信你可以更好的使用 Chatopera 机器人平台定制出满足各种需求的聊天机器人。
 
 ## 多轮对话的定义
@@ -21,19 +20,17 @@ Chatopera 将问答技术中的不同组成部分构建为基础模块，提供�
 
 基础模块包括：
 
-* [词典：机器人能理解和捕捉的概念](dicts.md)
-* [知识库：以搜索引擎技术为主](faq.md)
-* [意图识别：以机器学习为主，实现任务型对话](intent.md)
-* [对话脚本：以脚本规则为主，设定对话规则同时融合 FAQ 和意图识别](scripts.md)
+* [词典：机器人能理解和捕捉的概念](https://docs.chatopera.com/products/chatbot-platform/explanations/dicts.html)
+* [知识库：以搜索引擎技术为主](https://docs.chatopera.com/products/chatbot-platform/explanations/faq.html)
+* [意图识别：以机器学习为主，实现任务型对话](https://docs.chatopera.com/products/chatbot-platform/explanations/intent.html)
+* [对话脚本：以脚本规则为主，设定对话规则同时融合 FAQ 和意图识别](https://docs.chatopera.com/products/chatbot-platform/explanations/scripts.html)
 
 以对话脚本为中心融合知识库和意图识别，形成多轮对话，实现定制聊天机器人的标准，是 Chatopera 机器人平台的主要特色：
 
-* [多轮对话的检索：Chatopera 多轮对话如何融合基础模块为一个标准技术](query.md)
-* [模糊匹配器](gambit-like.md)
-* [意图匹配器](gambit-intent.md)
-
+* [多轮对话的检索：Chatopera 多轮对话如何融合基础模块为一个标准技术](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)
+* [模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/explanations/gambit-like.html)
+* [意图匹配器](https://docs.chatopera.com/products/chatbot-platform/explanations/gambit-intent.html)
 
 ## 其它资料
 
-* [视频教程](webinars.md)
-
+* [视频教程](https://docs.chatopera.com/products/chatbot-platform/explanations/webinars.html)

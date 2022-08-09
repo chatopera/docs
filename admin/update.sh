@@ -19,6 +19,7 @@ if [ $? -eq 0 ]; then
     if [ -d private ]; then
         cd private
         echo `pwd`
+        echo "Update private docs ..."
          set -x
         ./scripts/update.sh
     fi

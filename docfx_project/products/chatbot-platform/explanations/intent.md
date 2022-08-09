@@ -5,7 +5,6 @@
 - 使用说法定义意图分类模型
 - 利用序列标注识别槽位信息
 
-
 ## 产品特色
 
 - 高性能算法
@@ -39,12 +38,9 @@ Chatopera 机器人平台提供自定义词典和系统词典：
 <tr><td><img width="800" src="../../../images/products/platform/mechanism/image2021-8-19_15-7-12.png" alt="标注意图识别"/></td></tr>
 </table>
 
-
-
 ## 意图匹配器
 
-在 Chatopera 机器人平台，意图识别模块也是集成进入了多轮对话模块，参考使用[意图匹配器](/products/chatbot-platform/howto-guides/conv-gambits/intent.html)。
+在 Chatopera 机器人平台，意图识别模块也是集成进入了多轮对话模块，参考使用[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambits/intent.html)。
 
 <!-- 待补充 -->
 <!-- https://github.com/chatopera/clause/wiki/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0 -->
-
