@@ -12,4 +12,4 @@
 
 ## 准备工作
 
-确保你已经创建了 [Chatopera 云服务账号](/products/chatbot-platform/howto-guides/account-mgr.html)以及[安装了多轮对话设计器](/products/chatbot-platform/howto-guides/cde-install.html)。多轮对话设计器是桌面软件，在撰写本文档时，最新版本是 `v2.x`，在[版本列表](/products/chatbot-platform/howto-guides/cde-install.html#安装)中，获得最新的安装包并升级。然后就发布你在 Chatopera 云服务的第一个聊天机器人吧 - [<1/5> 创建机器人并添加到多轮对话设计器](1-create-bot.md)!
+确保你已经创建了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account-mgr.html)以及[安装了多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)。多轮对话设计器是桌面软件，在撰写本文档时，最新版本是 `v2.x`，在[版本列表](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html#安装)中，获得最新的安装包并升级。然后就发布你在 Chatopera 云服务的第一个聊天机器人吧 - [<1/5> 创建机器人并添加到多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html)!

@@ -1,6 +1,6 @@
 # <4/5> 使用内置函数 http 集成天气查询 API 服务
 
-<< 上一步：[<3/5> 使用意图识别完成“预定机票”](3-book-ticket-task.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
+<< 上一步：[<3/5> 使用意图识别完成“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
 
 现在我们还需要支持一个问答技能：查询天气。比如，对话用户发送“上海天气怎么样？”，机器人回答当天的天气情况。
 
@@ -219,7 +219,7 @@ __faq_hot_list
 
 <img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
 
-<< 上一步：[<3/5> 使用意图识别完成“预定机票”](3-book-ticket-task.md) | >> 下一步：[<5/5> 查看对话统计和历史](5-stats-history.md)
+<< 上一步：[<3/5> 使用意图识别完成“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | >> 下一步：[<5/5> 查看对话统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html)
 
 ## 注意事项
 

@@ -1,6 +1,6 @@
 # <1/5> 创建机器人并添加到多轮对话设计器
 
-<< 上一步：[入门教程首页](index.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
+<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
 
 ## 登录并创建机器人
 
@@ -30,7 +30,7 @@
 
 ## 添加机器人到多轮对话设计器
 
-在电脑应用启动中心，打开【多轮对话设计器】，**如果你还没有安装，使用[链接](/products/chatbot-platform/howto-guides/cde-install.html)进行安装**。
+在电脑应用启动中心，打开【多轮对话设计器】，**如果你还没有安装，使用[链接](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)进行安装**。
 
 <img width="800" src="../../../images/products/platform/screenshot-20210913-192350.png"/>
 
@@ -64,7 +64,7 @@
 
 <img width="800" src="../../../images/products/platform/congr-20210913-195053.png"/>
 
-<< 上一步：[入门教程首页](index.md) | >> 下一步：[<2/5> 使用知识库回答“海口有几个机场”](2-answer-faq.md)
+<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 使用知识库回答“海口有几个机场”](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html)
 
 ## 可能遇到的问题
 

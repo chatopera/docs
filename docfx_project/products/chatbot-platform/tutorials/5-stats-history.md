@@ -1,6 +1,6 @@
 # <5/5> 查看对话统计和历史
 
-<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](4-request-weather-info.md) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 1 mins
+<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 1 mins
 
 ## 查看机器人对话数据
 
@@ -14,8 +14,8 @@
 
 <img width="800" src="../../../images/products/platform/love-20210914-114743.png"/>
 
-<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](4-request-weather-info.md)
+<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
 
 ## 接下来
 
-本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式开始使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！发布机器人到不同渠道、Chatopera 的背景知识、查阅更多信息和获得帮助等，回到 [Chatopera 云服务文档中心首页](/products/chatbot-platform/index.html)。
+本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式开始使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！发布机器人到不同渠道、Chatopera 的背景知识、查阅更多信息和获得帮助等，回到 [Chatopera 云服务文档中心首页](https://docs.chatopera.com/products/chatbot-platform/index.html)。
