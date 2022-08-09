@@ -6,7 +6,7 @@
 
 体验地址：[https://oh-my.cskefu.com/im/text/0nhckh.html](https://oh-my.cskefu.com/im/text/0nhckh.html)
 
-<img width="800" src="../../../images/products/platform/screenshot-20210913-173454.png"/>
+![示例程序-春松机器人](../../../images/products/platform/screenshot-20210913-173454.png)
 
 这个示例对话机器人 - 春松机器人，设计的对话，只是为了方便在入门的过程中理解和学习，待完成《入门教程》，你可以用 Chatopera 云服务开发出具有更强大的对话能力、适用于各种场景的智能对话机器人。
 
