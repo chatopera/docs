@@ -13,8 +13,7 @@
 | v2.5.7 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1124853/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe)|
 
 **点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，会启动下载(操作见下)**
-
-<img width="800" src="../../../../images/products/platform/chatopera-cde-download.gif" alt="下载多轮对话设计器"/>
+![下载多轮对话设计器](../../../../images/products/platform/chatopera-cde-download.gif)
 
 ## 工具介绍
 
@@ -28,34 +27,22 @@
 
 * 安装完打开应用程序，如下图：
 
-<table class="image">
-<caption align="bottom">多轮对话设计器打开后页面</caption>
-<tr><td><img width="800" src="../../../../images/products/cde/mac-homepage.png" alt="多轮对话设计器打开后页面"/></td></tr>
-</table>
+![多轮对话设计器打开后页面](../../../../images/products/cde/mac-homepage.png)
 
 ## 可能遇到的问题
 
 **1. macOS 上首次启动警告**
 
-<table class="image">
-<caption align="bottom">macOS 权限问题</caption>
-<tr><td><img width="600" src="../../../../images/products/cde/mac-install-0.png" alt="macos 权限问题"/></td></tr>
-</table>
+![macos 权限问题](../../../../images/products/cde/mac-install-0.png)
 
 **解决方案**
 
 在应用中心，找到“多轮对话设计器”：
 
-<table class="image">
-<caption align="bottom">应用中心</caption>
-<tr><td><img width="600" src="../../../../images/products/cde-launchpad-1.png" alt="应用中心"/></td></tr>
-</table>
+![应用中心](../../../../images/products/cde-launchpad-1.png)
 
 选择“多轮对话设计器”并且右键：
 
-<table class="image">
-<caption align="bottom">右键打开</caption>
-<tr><td><img width="600" src="../../../../images/products/cde-launchpad-2.png" alt="右键打开"/></td></tr>
-</table>
+![右键打开](../../../../images/products/cde-launchpad-2.png)
 
 点击“打开”(“Open”)。

@@ -15,19 +15,19 @@
 
 知识库通过标准问、相似问、自定义词典和答案维护对话内容，为 Chatopera 机器人平台用户提供标准的、快速的对话检索服务。对话用户的请求文本和问答对里的标准问或扩展问比较，计算相似度，当相似度高于阀值时，即认定该问答对的答案是对话用户需要的回复。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_15-5-27.png"/>
+![实现原理](../../../images/products/platform/mechanism/image2021-8-19_15-5-27.png)
 
 ### 动态答案
 
 将知识库答案路由到多轮对话的话题，然后从多轮对话获得答案。
 
-![image](../../../images/products/platform/QQ截图20220616155233.png)
+![动态答案](../../../images/products/platform/QQ截图20220616155233.png)
 
 目前，知识库路由（routeDirectReply答案）只在[多轮对话检索](/products/chatbot-platform/explanations/query.html) 上支持，多轮对话检索中，自动优先检索知识库。
 
 **Chatopera 多轮对话检索过程，优先级：知识库 > 脚本 > 兜底回复。**
 
-![image](../../../images/products/platform/QQ截图20220616155253.png)
+![Chatopera 多轮对话检索过程](../../../images/products/platform/QQ截图20220616155253.png)
 
 ## 应用场景
 

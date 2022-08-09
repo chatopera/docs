@@ -22,7 +22,7 @@ Chatopera 机器人平台目前支持语言：
 
 智能对话机器人在 Chatopera 的<font color="blue">“聊天即服务”</font>整体系统中，占据重要位置。
 
-![](../../images/products/platform/screenshot-20210912-201141.png)
+![应用场景](../../images/products/platform/screenshot-20210912-201141.png)
 
 Chatopera 融合了不同形式的实现聊天机器人的方法，支持定制多轮对话，从而满足企业各种需求，管理对话机器人对话内容。此外，Chatopera 机器人平台还有聊天历史管理、聚类分析和语音识别等模块，这些服务都是紧紧围绕智能对话机器人的上线展开的。
 

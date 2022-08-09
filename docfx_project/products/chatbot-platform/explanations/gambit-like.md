@@ -6,12 +6,7 @@
 
 举一个例子：
 
-<table class="image">
-    <caption align="bottom">通配符匹配器</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/image2021-8-18_10-27-53.png" alt="通配符匹配器" /></td>
-    </tr>
-</table>
+![通配符匹配器](../../../images/products/platform/image2021-8-18_10-27-53.png)
 
 在上面的脚本中，定义了一个通配符匹配器 "_+（你好|您好|你好啊）_", 它支持三种问法，但是用户可能用更为多变的说法，为了支持这些说法，可以选择使用更宽松的通配符，但很多时候并不好把握：
 

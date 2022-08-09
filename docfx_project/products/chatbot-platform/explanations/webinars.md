@@ -72,10 +72,6 @@
 
 * 后续分享计划
 
-打开[课程](https://www.bilibili.com/read/cv7526530)查看完整内容 ...
+课程地址：[https://www.bilibili.com/read/cv7526530](https://www.bilibili.com/read/cv7526530)
 
-<p align="center">
-  <a href="https://www.bilibili.com/read/cv7526530" target="_blank">
-      <img src="../../../images/products/platform/202009-bot-ke-1.jpg" width="800">
-  </a>
-</p>
+![查看课程指南](../../../images/products/platform/202009-bot-ke-1.jpg)

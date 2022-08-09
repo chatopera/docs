@@ -6,12 +6,7 @@
 
 在多轮对话设计器配置环境变量。
 
-<table class="image">
-    <caption align="bottom">在多轮对话设计器配置环境变量</caption>
-    <tr>
-        <td><img width="600" src="../../../images/products/platform/conversations/image2021-9-3_16-19-2.png" alt="在多轮对话设计器配置环境变量" /></td>
-    </tr>
-</table>
+![在多轮对话设计器配置环境变量](../../../images/products/platform/conversations/image2021-9-3_16-19-2.png)
 
 在函数中，使用全局变量 `config` 从环境变量读取值。
 
@@ -25,12 +20,7 @@ exports.someFunction = async function(){
 
 这样就方便了分发多轮对话，从多轮对话设计器中导出对话应用 c66，Chatopera 机器人平台用户可以将该 c66 文件导入另外一个机器人，并使用环境变量配置属性。
 
-<table class="image">
-    <caption align="bottom">在机器人控制台多轮对话管理页面配置环境变量</caption>
-    <tr>
-        <td><img width="600" src="../../../images/products/platform/conversations/image2021-9-3_16-22-14.png" alt="在机器人控制台多轮对话管理页面配置环境变量" /></td>
-    </tr>
-</table>
+![在机器人控制台多轮对话管理页面配置环境变量](../../../images/products/platform/conversations/image2021-9-3_16-22-14.png)
 
 ## 系统环境变量
 

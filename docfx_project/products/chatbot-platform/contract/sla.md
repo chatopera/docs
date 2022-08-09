@@ -16,7 +16,7 @@
 
 【紧急联系方式】需要快速获得支持，应对服务宕机等，紧急联系方式为企业微信
 
-![](../../../images/products/platform/image-044.png)
+![紧急联系方式](../../../images/products/platform/image-044.png)
 
 ## 投诉
 
@@ -24,6 +24,6 @@
 
 微信或企业微信扫一扫，告知工作人员、服务等问题。
 
-![](../../../images/products/platform/complaint.jpg)
+![投诉](../../../images/products/platform/complaint.jpg)
 
 2020 年 10 月 [北京华夏春松科技有限公司](https://www.chatopera.com/)

@@ -15,10 +15,7 @@
 
 **意图识别**是语义理解的一个重要话题：与机器人对话时，是需要机器首先理解人的意图的；然后，根据这个意图，机器人继续与人进行问答；得到了这个意图的相关信息，机器才去执行这个意图代表的任务。
 
-<table class="image">
-<caption align="bottom">图：意图识别模块工作机制</caption>
-<tr><td><img width="800" src="../../../images/intent/intent-001.png" alt="意图识别模块工作机制"/></td></tr>
-</table>
+![意图识别模块工作机制](../../../images/intent/intent-001.png)
 
 ## 使用过程
 
@@ -33,10 +30,7 @@ Chatopera 机器人平台提供自定义词典和系统词典：
         * 正则表达式词典则用于识别手机号、身份证号、订单号、邮箱等一些具有规则的信息；
         * 系统词典是用机器学习训练的命名实体提取判定的信息，比如人名、地名、组织机构和时间等。
 
-<table class="image">
-<caption align="bottom">图：标注意图识别</caption>
-<tr><td><img width="800" src="../../../images/products/platform/mechanism/image2021-8-19_15-7-12.png" alt="标注意图识别"/></td></tr>
-</table>
+![标注意图识别](../../../images/products/platform/mechanism/image2021-8-19_15-7-12.png)
 
 ## 意图匹配器
 

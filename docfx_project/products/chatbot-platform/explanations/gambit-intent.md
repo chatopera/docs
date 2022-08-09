@@ -6,23 +6,13 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
 
 在没有意图匹配器以前，对话脚本，是按照一个个固定的流程进行的，通过上下轮钩子，比如用户说：我想打车，写好了开始的规则，并匹配上以后，按照脚本顺序问打车的数据：时间、出发地、目的地等。如果机器人问“您想从哪里出发？”，而对话用户发送了时间“今天下午 5 点”，那么在脚本中，处理起来费事，还需要增加学习成本。而针对于类似的场景，机器人需要能识别时间，然后继续追问出发地。智能的处理任务中的关键信息，是普遍存在的需求。而 Chatopera 意图识别对话，就是解决这个问题的。
 
-<table class="image">
-    <caption align="bottom">识别用户意图获取任务信息</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/conversations/intents/image2021-9-1_17-36-27.png" alt="识别用户意图获取任务信息" /></td>
-    </tr>
-</table>
+![识别用户意图获取任务信息](../../../images/products/platform/conversations/intents/image2021-9-1_17-36-27.png)
 
 **意图识别模块，简单说就是识别并分析意图信息，根据意图需要的关键信息进行追问，直到获取到所有必须的关键信息或超过追问限制次数。**
 
 以前，在 Chatopera 机器人平台内，意图识别模块和多轮对话模块，是两个独立模块，Chatopera 提供了[开源项目](https://github.com/chatopera/webchat)的形式提供最佳实践：在业务端，BOT 开发者用 SDK 灵活的使用不同模块。这样的形式，学习成本加大，怎么样通过低代码的方式上线有意图识别能力的机器人呢？现在，这个答案就是意图匹配器。在多轮对话脚本中，借助意图匹配器很好的融合了脚本、函数和意图识别。Chatopera 机器人平台用户，可以用更为简单和快捷的方式，上线更为强大的智能对话机器人。
 
-<table class="image">
-    <caption align="bottom">意图识别模块和多轮对话模块的关系</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/conversations/intents/image2021-9-1_18-58-18.png" alt="意图识别模块和多轮对话模块的关系" /></td>
-    </tr>
-</table>
+![意图识别模块和多轮对话模块的关系](../../../images/products/platform/conversations/intents/image2021-9-1_18-58-18.png)
 
 对话脚本和意图识别二者的结合，至少获得了如下几点好处：
 
@@ -46,23 +36,13 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
 
 在 Chatopera 机器人平台上，也使用如下的术语表达这些概念。
 
-<table class="image">
-    <caption align="bottom">意图识别术语及其概念</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/conversations/intents/image2021-9-1_19-4-42.png" alt="意图识别术语及其概念" /></td>
-    </tr>
-</table>
+![意图识别术语及其概念](../../../images/products/platform/conversations/intents/image2021-9-1_19-4-42.png)
 
 这些对话内容的管理，就在意图识别模块中：**开发者或业务人员，提供说法；在说法中可以写槽位；槽位对应的是不同类型的词典。**
 
 那么对话用户的哪些说法对应了意图呢？哪些词对应了槽位呢？在 Chatopera 意图识别模块中，提供维护意图、说法、槽位和词典的页面。
 
-<table class="image">
-    <caption align="bottom">标注意图</caption>
-    <tr>
-        <td><img width="800" src="../../../images/products/platform/conversations/intents/image2021-9-1_17-11-54.png" alt="标注意图" /></td>
-    </tr>
-</table>
+![标注意图](../../../images/products/platform/conversations/intents/image2021-9-1_17-11-54.png)
 
 词典建设，是意图识别中很重要的方面，在 Chatopera 机器人平台上，词典管理非常完善。词典包括系统词典，自定义词典。系统词典是 Chatopera 机器人平台上开箱即用的词典，包括人名、组织机构名、时间和地点的。自定义词典有词汇表词典和正则表达式词典，是 Chatopera 机器人平台用户自行维护的。
 

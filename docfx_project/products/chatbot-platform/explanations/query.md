@@ -6,11 +6,11 @@
 
 对话用户请求时，多轮对话会先检查是否有进行中的意图识别对话，然后是知识库检索，匹配知识库问答对，当有问答对高于知识库阀值时，机器人回复问答对中的答案内容；未匹配知识库，进入对话脚本，从话题中匹配，匹配上则回复内容；否则则回复兜底回复。从概念上有下图关系。
 
-<img width="600" src="../../../images/products/platform/mechanism/screenshot-20210903-105329.png"/>
+![模块间检索](../../../images/products/platform/mechanism/screenshot-20210903-105329.png)
 
 之所以说是从概念上，是因为整个检索过程更为复杂，不方便理解，先用概念图从直观上快速理解 Chatopera 多轮对话的框架。一个更为详细的检索机制说明见下图。
 
-<img width="600" src="../../../images/products/platform/mechanism/conversations.jpg"/>
+![检索机制](../../../images/products/platform/mechanism/conversations.jpg)
 
 [详细说明图（查看大图）](https://docs.chatopera.com/images/products/platform/mechanism/conversations.jpg) 虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
 
@@ -22,17 +22,17 @@
 
 在创建好机器人后，下载多轮对话设计器，在多轮对话设计器中，创建话题。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_13-54-27.png"/>
+![创建话题](../../../images/products/platform/mechanism/image2021-8-19_13-54-27.png)
 
 话题里使用脚本实现对话逻辑，用一个简单的例子说明脚本语法非常容易掌握。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_14-56-50.png"/>
+![一个简单的例子](../../../images/products/platform/mechanism/image2021-8-19_14-56-50.png)
 
 `+` 开始的是匹配器，目前 Chatopera 多轮对话支持通配符匹配器和模糊匹配器；`-` 开始的是回复，目前支持文本和函数，函数是 JavaScript 脚本；`%` 开始的是上下轮钩子，用以关联规则。
 
 使用多轮对话设计器撰写对话脚本的用户体验，经过了多年的打磨，已经非常成熟和稳定。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_13-56-53.png"/>
+![多轮对话设计器](../../../images/products/platform/mechanism/image2021-8-19_13-56-53.png)
 
 在多轮对话设计内调试对话，现在对于多轮对话设计器还不需要详细了解，本节内容旨在介绍原理，而话题作为重要的概念，需要先介绍如何创建以及在哪里编辑。
 
@@ -42,7 +42,7 @@
 
 话题检索也是有顺序的，匹配到了某一个话题的规则，后续的话题就被跳过。匹配从高优先级到低优先级进行，最高优先级是【前置话题】，话题名称为系统约定：`__pre__`；最低优先级是【后置话题】，话题名称为系统约定：`__post__`。优先级仅低于前置话题的话题是当前话题，就是上一次对话用户匹配到的规则所在的话题；其余的话题根据算法动态的排序。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_14-23-46.png"/>
+![算法动态排序](../../../images/products/platform/mechanism/image2021-8-19_14-23-46.png)
 
 如果使用了上下轮钩子，则最先匹配携带有上下文钩子（就是 `% 上次回复内容`）的规则。
 
@@ -52,13 +52,13 @@
 
 现在，我们从另一个角度，状态机的角度思考多轮对话，因为是在多个连续的交互中，完成一个对话目标，那么就存在一个状态的问题，状态机是状态可以转移的图，两个状态之间的关系通过状态机约束。比如，某个活动通知的对话状态机如下：
 
-<img width="600" src="../../../images/products/platform/mechanism/6.png"/>
+![对话状态机](../../../images/products/platform/mechanism/6.png)
 
 这是个图示，仅为了说明原理。“请求”节点代表每次对话用户发送了文本，“回复”节点代表机器人处理结果，回复文本。因为知识库在检索中最先发生，可以放入一些一问一答的问答对，而一些全局的关键词放入前置话题【`__pre__`】中，图中右侧方框内，则是由其他话题组成的对话脚本，整个对话构成了状态机。
 
 这个问题在对话脚本中，尤其需要注意：Chatopera 对话脚本引擎会考虑过去一段时间内，一定对话轮次的历史，机器人会回看这些记录来分析最合理的回复。这个时间长度和轮次的约束，在 Chatopera 机器人平台管理控制台内可以设定，是每个机器人的属性：`会话回溯最大时长`和`会话回溯最大轮次`。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_14-37-47.png"/>
+![设定参数](../../../images/products/platform/mechanism/image2021-8-19_14-37-47.png)
 
 当对话用户的输入匹配到对话脚本的规则时，即是对话到达了一个状态。
 
@@ -76,7 +76,7 @@ topicRedirect 函数的更多介绍，[参考文档](https://docs.chatopera.com/
 
 对于状态机的状态跳转，Chatopera 多轮对话方案中，还有一个高级方法，通过知识库路由对话到对话状态机任意状态。
 
-<img width="600" src="../../../images/products/platform/mechanism/image2021-8-19_14-46-3.png"/>
+![知识库路由](../../../images/products/platform/mechanism/image2021-8-19_14-46-3.png)
 
 设定知识库的问答对中的答案，内容使用上述格式，将 `TOPIC_NAME` 替换为话题名字，`TOPIC_GAMBIT_ID` 替换为匹配器。就可以切换到该规则下获得回复。
 
