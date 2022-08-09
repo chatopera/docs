@@ -20,9 +20,8 @@ exports.customFn = async function(){
 
 ## 函数库
 
-- [basics](basics.md)
-- [message](message.md)
-- [user](user.md)
-- [maestro](maestro.md)
-- [3rd-party](3rd-party.md)
-
+- [basics](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/basics.html)
+- [message](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/message.html)
+- [user](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/user.html)
+- [maestro](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/maestro.html)
+- [3rd-party](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/3rd-party.html)

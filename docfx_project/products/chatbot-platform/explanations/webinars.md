@@ -6,7 +6,7 @@
 
 * [【初级入门】《Chatopera 机器人平台使用指南》](https://www.bilibili.com/read/cv7526530)
 
-* [【深入介绍】《Chatopera 机器人平台 Deep Dive》](https://www.bilibili.com/video/BV1tz4y1S78k)
+* [【高级深入】《Chatopera 机器人平台 Deep Dive》](https://www.bilibili.com/video/BV1tz4y1S78k)
 
 ## 内容大纲(部分)
 

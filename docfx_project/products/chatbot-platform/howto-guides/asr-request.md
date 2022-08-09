@@ -17,7 +17,6 @@ Chatopera 机器人平台支持语音识别服务，将语音转化为文本内�
 
 ## 系统集成
 
-使用 SDK 发送语音识别请求，[参考文档](/products/chatbot-platform/references/sdk/chatbot/asr.html)。
+使用 SDK 发送语音识别请求，[参考文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/asr.html)。
 
-语音识别模块的服务费用参考[计费及发票](/products/chatbot-platform/contract/billing.html#语音识别)。
-
+语音识别模块的服务费用参考[计费及发票](https://docs.chatopera.com/products/chatbot-platform/contract/billing.html#语音识别)。

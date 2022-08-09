@@ -11,7 +11,7 @@ Precision      : 16-bit
 Sample Encoding: 16-bit Signed Integer PCM
 ```
 
-下载[音频示例](/images/products/platform/asr.sample.001.wav)。
+下载[音频示例](https://docs.chatopera.com/images/products/platform/asr.sample.001.wav)。
 
 语音识别接口可使用两种形式提交语音文件：1）文件路径；2）语音文件 base64 格式字符串。
 
@@ -25,9 +25,9 @@ Chatbot#command("POST", "/asr/recognize", body)
 
 ```JSON
 {
-	"filepath": "{{WAV_FILE_ABS_PATH}}",
-	"nbest": 5,
-	"pos": true
+ "filepath": "{{WAV_FILE_ABS_PATH}}",
+ "nbest": 5,
+ "pos": true
 }
 ```
 
@@ -79,10 +79,10 @@ Chatbot#command("POST", "/asr/recognize", body)
 
 ```JSON
 {
-	"type": "base64",
-	"data": "data:audio/wav;base64,{{BASE64_STRING}}",
-	"nbest": 5,
-	"pos": true
+ "type": "base64",
+ "data": "data:audio/wav;base64,{{BASE64_STRING}}",
+ "nbest": 5,
+ "pos": true
 }
 ```
 
@@ -128,4 +128,3 @@ Chatbot#command("POST", "/asr/recognize", body)
 | `predicts`   | JSONArray | 识别结果                                                       |
 | `text`       | string    | 识别得到的文本                                                 |
 | `confidence` | double    | 置信度，[0-1]，值越大越有可能，`predicts` 按 `confidence` 降序 |
-

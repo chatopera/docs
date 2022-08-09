@@ -100,7 +100,7 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 
 ### 跳转到意图匹配器
 
-在函数中，跳转到指定的意图匹配器有一点特殊，参考[使用说明](/products/chatbot-platform/howto-guides/conv-gambit-intent.html#在回复中跳转到指定意图)。
+在函数中，跳转到指定的意图匹配器有一点特殊，参考[使用说明](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html#在回复中跳转到指定意图)。
 
 ## 知识库路由
 

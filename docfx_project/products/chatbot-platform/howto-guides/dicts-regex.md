@@ -31,7 +31,7 @@
 
 ## 编辑
 
-Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[PCRE](#PCRE) 标准。
+Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[PCRE](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts-regex.html#pcre) 标准。
 
 添加正则表达式定义，进入【词典管理>>自定义词典】列表，选择正则表达式词典，点击"编辑"。
 
@@ -72,8 +72,6 @@ Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[
 1. 如果在`[]`之间需要包含`-`，并且不代表区间，而是`-`代表本身，那么需要将`-`放在末尾或开头，否则会报错；
 2. 在表达式使用中只取第一个匹配的值，如果一个表达式能匹配到输入语句的多个值，其它的值被忽略。
 
-
 ## PCRE
 
 [PCRE](https://www.pcre.org/original/doc/html/pcrepattern.html) 是"Perl-compatible regular expressions"的缩写，广泛的被各种编程语言支持，虽然在不同语言支持时，会有微小的不同，实际使用中仍可参考 PCRE 的说明，Chatopera 机器人平台使用 C++开发，底层的正则表达式接口使用[Boost Regex 库](https://www.boost.org/doc/libs/1_70_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)
-

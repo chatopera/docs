@@ -45,9 +45,9 @@ Chatopera#command("POST", "/chatbot", body)
 }
 ```
 
-_clientId_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.html) 的信息
+_clientId_: 初始化 [Chatbot 类](https://docs.chatopera.com/products/chatbot-platform/integration/api.html) 的信息
 
-_secret_: 初始化 [Chatbot 类](/products/chatbot-platform/integration/api.html) 的信息
+_secret_: 初始化 [Chatbot 类](https://docs.chatopera.com/products/chatbot-platform/integration/api.html) 的信息
 
 ## 获得聊天机器人列表
 

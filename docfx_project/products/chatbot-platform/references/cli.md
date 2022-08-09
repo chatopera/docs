@@ -2,8 +2,8 @@
 
 Chatopera CLI 是连接 Chatopera 机器人平台，管理和维护资源的工具，包括一些常用的命令，辅助开发者实现和管理对话机器人。尤其是在有自动化或批量管理的需要时。CLI 完全基于 [Chatopera Node.js SDK](https://github.com/chatopera/chatopera-nodejs-sdk)。
 
-* [安装和配置 Chatopera CLI](/products/chatbot-platform/howto-guides/cli-install-config.html)
-* [使用 CLI 导入和导出对话语料](/products/chatbot-platform/howto-guides/cli-export-import.html)
+* [安装和配置 Chatopera CLI](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-install-config.html)
+* [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)
 
 ## 命令帮助
 
@@ -145,7 +145,7 @@ bot conversation --action export --filepath /tmp/bot.conversations.c66
 
 ### import
 
-导入多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](/products/chatbot-platform/explanations/index.html)中。
+导入多轮对话脚本，在命令行终端发布脚本文件到[多轮对话](https://docs.chatopera.com/products/chatbot-platform/explanations/index.html)中。
 
 示例：
 
@@ -287,6 +287,4 @@ Chatopera CLI 工具是[开源的](https://github.com/chatopera/chatopera-nodejs
 
 ## 下一步
 
-* [使用 CLI 导入和导出对话语料](/products/chatbot-platform/howto-guides/cli-export-import.html)
-
-
+* [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)

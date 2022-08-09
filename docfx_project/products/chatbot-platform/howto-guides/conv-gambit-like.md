@@ -4,7 +4,7 @@
 
 也称为 Like Gambit，使用容错能力更强的语法定义规则。
 
-* [模糊匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/gambit-like.html)
+* [模糊匹配器的设计初衷和背景知识](https://docs.chatopera.com/products/chatbot-platform/explanations/gambit-like.html)
 
 ## 模糊匹配器的功能
 
@@ -66,7 +66,7 @@
 - {keep} 营业时间：早上八点半至晚上十一点
 ```
 
-详细介绍，参考[文档](/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
+详细介绍，参考[文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
 
 ## 使用调试
 
@@ -159,9 +159,9 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 | 语言                                       | 词性标注集                                                               |
 | ------------------------------------------ | ------------------------------------------------------------------------ |
-| 中文（简体中文 `zh_CN`，繁体中文 `zh_TW`） | [文档](/products/chatbot-platform/appendix/nlp-tags.html#中文)           |
-| 英文 / en_US / Enlgish                     | [文档](/products/chatbot-platform/appendix/nlp-tags.html#english--英语)  |
-| 日语 / Japanese                            | [文档](/products/chatbot-platform/appendix/nlp-tags.html#日语--japanese) |
+| 中文（简体中文 `zh_CN`，繁体中文 `zh_TW`） | [文档](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html#中文)           |
+| 英文 / en_US / Enlgish                     | [文档](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html#english--英语)  |
+| 日语 / Japanese                            | [文档](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html#日语--japanese) |
 
 得到匹配信息，再结合 Chatopera 机器人平台内其它的内置函数库，可以实现更为强大的对话能力！
 
@@ -169,14 +169,14 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 ## 下一步
 
-* [有关更多关于 `this.message` 的使用介绍](/products/chatbot-platform/references/func-builtin/message.html)
+* [有关更多关于 `this.message` 的使用介绍](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/message.html)
 
-* [下载多轮对话设计器](/products/chatbot-platform/howto-guides/cde-install.html)
+* [下载多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)
 
-* [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
+* [理解多轮对话工作机制](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)
 
-* [检索多轮对话：使用多轮对话接口进行系统集成](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)
+* [检索多轮对话：使用多轮对话接口进行系统集成](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)
 
-* [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
+* [通配符匹配器：使用语法建立规则](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
 
-* [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
+* [意图匹配器：借助意图识别模块，轻松实现任务型对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)

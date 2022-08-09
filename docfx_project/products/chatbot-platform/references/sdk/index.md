@@ -55,8 +55,8 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 ## 下一步
 
-- [`Chatopera` 类详细说明](./chatopera/index.md)
+- [`Chatopera` 类详细说明](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatopera/index.html)
 
-- [`Chatbot` 类详细说明：对话检索、机器人信息及更新，etc.](./chatbot/index.md)
+- [`Chatbot` 类详细说明：对话检索、机器人信息及更新，etc.](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/index.html)
 
-- [遇到问题？常看“获得帮助”](/products/chatbot-platform/index.html#帮助)
+- [遇到问题？常看“获得帮助”](https://docs.chatopera.com/products/chatbot-platform/index.html#帮助)

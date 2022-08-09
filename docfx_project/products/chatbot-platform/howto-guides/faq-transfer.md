@@ -7,7 +7,7 @@
 1）备份机器人知识库；
 2）新建机器人快速导入。
 
-本文以 Chatopera 机器人管理控制台为工具进行说明，如果想通过更自动化的方式，参考[使用 CLI 导入和导出对话语料](cli-export-import.md)。
+本文以 Chatopera 机器人管理控制台为工具进行说明，如果想通过更自动化的方式，参考[使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)。
 
 ## 批量导出
 
@@ -36,4 +36,3 @@
         <td><img width="800" src="../../../images/products/faq/image2020-7-16_16-55-26.png" alt="" /></td>
     </tr>
 </table>
-

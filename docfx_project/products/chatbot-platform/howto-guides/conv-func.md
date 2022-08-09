@@ -56,7 +56,7 @@ exports.getUserAccount = async function(account) {
 }
 ```
 
-在[系统集成/多轮对话检索](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)时，返回值`data`内将增加`params`属性，与以上设定的值相同。
+在[系统集成/多轮对话检索](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)时，返回值`data`内将增加`params`属性，与以上设定的值相同。
 
 ## 复合函数
 
@@ -89,8 +89,6 @@ exports.nestedBFunction = function(cb) {
 
 ## 下一步
 
-- [内置函数库](/products/chatbot-platform/references/func-builtin/index.html)
+- [内置函数库](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/index.html)
 
-- [函数返回值](/products/chatbot-platform/references/func-return.html)
-
-
+- [函数返回值](https://docs.chatopera.com/products/chatbot-platform/references/func-return.html)

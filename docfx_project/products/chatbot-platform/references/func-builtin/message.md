@@ -25,7 +25,7 @@ this.message.adjectives // JSONArray, 输入文本包含的形容词
 this.message.pronouns // JSONArray, 输入文本包含的指示代词
 ```
 
-关于 `this.message.tags` 包含了所有的分词对应的词性，可以用来做更多的判断，不同语言的词性集是不同的，参考 [Chatopera 多轮对话 Message 语言词性标注](/products/chatbot-platform/appendix/nlp-tags.html)。
+关于 `this.message.tags` 包含了所有的分词对应的词性，可以用来做更多的判断，不同语言的词性集是不同的，参考 [Chatopera 多轮对话 Message 语言词性标注](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html)。
 
 ## 自定义信息
 
@@ -35,5 +35,4 @@ this.message.pronouns // JSONArray, 输入文本包含的指示代词
 this.message.extras
 ```
 
-传入方法参考，[多轮对话检索接口](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
-
+传入方法参考，[多轮对话检索接口](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。

@@ -10,7 +10,7 @@
 
 ## User
 
-对话用户信息相关，此部分为 `maestro` 内实现的，和对话用户相关的还有 [user](user.md) 库。
+对话用户信息相关，此部分为 `maestro` 内实现的，和对话用户相关的还有 [user](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/user.html) 库。
 
 ### profile
 
@@ -30,7 +30,7 @@ _value_: 属性值
 
 该信息被持久化到数据库里，该接口的目的是设置用户画像，比如用户对一个产品是否有兴趣。
 
-用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](/products/chatbot-platform/references/sdk/chatbot/users.html#获取用户画像信息)获得。
+用户画像可以通过[系统集成/用户管理/获取用户画像信息 API](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/users.html#获取用户画像信息)获得。
 
 ## KeyValue Pairs
 
@@ -180,14 +180,3 @@ let mailSettings = {
 ```
 
 以上 SMTP 邮件服务的配置需要定义在环境变量中，支持的邮箱服务参考[nodemailer](https://nodemailer.com/smtp/well-known/)，可配置 QQ 企业邮箱、163 邮箱等。
-
-## Comments
-
-<script src="https://utteranc.es/client.js"
-        repo="chatopera/docs"
-        issue-term="pathname"
-        label="Comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

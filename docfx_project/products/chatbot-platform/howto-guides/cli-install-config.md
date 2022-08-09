@@ -46,7 +46,6 @@ $ bot --version
 
 如果上述命令 `bot --version` 执行提示错误，检查环境变量 `PATH` 路径，比如 `C:\Users\Administrator\AppData\Roaming\npm` 是否在 `PATH` 内。
 
-
 ## 配置参数
 
 Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`, `clientid` 等常用的变量。
@@ -57,7 +56,7 @@ Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`,
 | ---------------------------------- | ------------------------ | ------------------- | --------------------------------- |
 | clientId, 机器人 ID                | `-c, --clientid [value]` | `BOT_CLIENT_ID`     | 无默认值，必填                    |
 | secret, 机器人密钥                 | `-s, --clientsecret [value]` | `BOT_CLIENT_SECRET` | 无默认值，必填                    |
-| provider, Chatopera 机器人平台地址 | `-p, --provider [value]` | `BOT_PROVIDER`      | 默认值，https://bot.chatopera.com |
+| provider, Chatopera 机器人平台地址 | `-p, --provider [value]` | `BOT_PROVIDER`      | 默认值，<https://bot.chatopera.com> |
 | accessToken, 访客设置密钥          | `无`                     | `BOT_ACCESS_TOKEN`  | 保留值，无默认值                  |
 
 其中， `.env` 文件例子如：
@@ -83,7 +82,6 @@ BOT_ACCESS_TOKEN=
 
 ## 下一步
 
-* [命令行界面（CLI）参考手册：帮助、使用命令参考手册](/products/chatbot-platform/references/cli.html)
+- [命令行界面（CLI）参考手册：帮助、使用命令参考手册](https://docs.chatopera.com/products/chatbot-platform/references/cli.html)
 
-* [使用 CLI 导入和导出对话语料](cli-export-import.md)
-
+- [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)

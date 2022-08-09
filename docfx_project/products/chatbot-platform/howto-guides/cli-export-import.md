@@ -1,12 +1,12 @@
 # 使用 CLI 导入和导出对话语料
 
-[Chatopera CLI](cli-install-config.md) 支持的功能就是对不同[对话语料](/products/chatbot-platform/references/glossary.html#对话语料)的数据导入和导出；外加一些其他命令，辅助自动化管理机器人。
+[Chatopera CLI](cli-install-config.md) 支持的功能就是对不同[对话语料](https://docs.chatopera.com/products/chatbot-platform/references/glossary.html#对话语料)的数据导入和导出；外加一些其他命令，辅助自动化管理机器人。
 
 ## 准备工作
 
-- 安装 Chatopera CLI，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html);
+- 安装 Chatopera CLI，参考文档 [Chatopera CLI](https://docs.chatopera.com/products/chatbot-platform/references/cli.html);
 
-- 配置 Chatopera CLI，使用 `.env` 文件，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
+- 配置 Chatopera CLI，使用 `.env` 文件，参考文档 [Chatopera CLI](https://docs.chatopera.com/products/chatbot-platform/references/cli.html)。
 
 <font color="blue">为简化说明，以下各示例配置使用了 `.env` 文件，因为略去了从命令行传入的一些参数。</font>
 
@@ -58,5 +58,4 @@ bot conversation -a import -f bot.conversations.c66
 
 ## CLI 命令详细介绍
 
-更多命令介绍，参考文档 [Chatopera CLI](/products/chatbot-platform/references/cli.html)。
-
+更多命令介绍，参考文档 [Chatopera CLI](https://docs.chatopera.com/products/chatbot-platform/references/cli.html)。

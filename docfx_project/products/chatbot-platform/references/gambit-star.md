@@ -2,7 +2,7 @@
 
 <img width="800" src="../../../../images/products/platform/screenshot-20210913-130806.png" alt="通配符匹配器" />
 
-为了让 **匹配器** 能适应复杂的需求，Chatopera 机器人平台使用通配符规则，通配符既能让规则具有更好的匹配能力，也能让[回复和函数中使用不同通配符的值，即通配符取值](/products/chatbot-platform/howto-guides/conv-replies.html#通配符取值)，基于通配符的匹配器称为通配符匹配器，也称为 **Star Gambit**。
+为了让 **匹配器** 能适应复杂的需求，Chatopera 机器人平台使用通配符规则，通配符既能让规则具有更好的匹配能力，也能让[回复和函数中使用不同通配符的值，即通配符取值](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-replies.html#通配符取值)，基于通配符的匹配器称为通配符匹配器，也称为 **Star Gambit**。
 
 **注意**：下面的某些通配符左右带有空格，这些空格是必须的。
 
@@ -203,9 +203,8 @@ exports.echoYummy = async function(cap1) {
 
 ## 下一步
 
-- [通配符取值：在回复中使用匹配到的值](/products/chatbot-platform/howto-guides/conv-replies.html#通配符取值)
+- [通配符取值：在回复中使用匹配到的值](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-replies.html#通配符取值)
 
-- [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/howto-guides/conv-gambit-like.html)
+- [模糊匹配器：容错能力更强和智能的匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)
 
-- [意图匹配器：借助意图识别模块，轻松实现任务型对话](/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
-
+- [意图匹配器：借助意图识别模块，轻松实现任务型对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)

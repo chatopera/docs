@@ -20,7 +20,7 @@
 
 ### 解决方案
 
-在 [Chatopera 机器人平台](https://bot.chatopera.com/)管理控制台上 BOT 开发者可以维护知识库的不同类型的答案，除了录入固定的答案，Chatopera 机器人平台知识库也支持通过调用[多轮对话的话题](/products/chatbot-platform/explanations/query.html)来从多轮对话获得答案。在多轮对话中，支持自定义 JavaScript 函数，就使得知识库设置动态抓取的答案可行，称之为：知识库路由。
+在 [Chatopera 机器人平台](https://bot.chatopera.com/)管理控制台上 BOT 开发者可以维护知识库的不同类型的答案，除了录入固定的答案，Chatopera 机器人平台知识库也支持通过调用[多轮对话的话题](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)来从多轮对话获得答案。在多轮对话中，支持自定义 JavaScript 函数，就使得知识库设置动态抓取的答案可行，称之为：知识库路由。
 
 ![image](../../../images/products/platform/QQ截图20220616155220.png)
 
@@ -36,9 +36,9 @@
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID"]
 ```
 
-_TOPIC_NAME_: [对话话题](/products/chatbot-platform/references/glossary.html#对话话题)
+_TOPIC_NAME_: [对话话题](https://docs.chatopera.com/products/chatbot-platform/references/glossary.html#对话话题)
 
-_TOPIC_GAMBIT_ID_: [匹配器](/products/chatbot-platform/references/glossary.html#匹配器)
+_TOPIC_GAMBIT_ID_: [匹配器](https://docs.chatopera.com/products/chatbot-platform/references/glossary.html#匹配器)
 
 ### 使用示例
 

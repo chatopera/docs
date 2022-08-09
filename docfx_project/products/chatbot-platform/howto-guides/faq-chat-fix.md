@@ -24,5 +24,4 @@
     </tr>
 </table>
 
-如果有大量而频繁的评价知识库准确率的需求，可以使用 [系统集成/SDK](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索知识库) 实现。
-
+如果有大量而频繁的评价知识库准确率的需求，可以使用 [系统集成/SDK](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索知识库) 实现。

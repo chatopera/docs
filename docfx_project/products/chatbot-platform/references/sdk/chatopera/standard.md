@@ -10,7 +10,7 @@
 result = chatopera.command(method, path [, body])
 ```
 
-> **提示：** result 返回在 Node.js 中使用`await`或`Promise`，参考[快速开始](/products/chatbot-platform/integration/quick-get-start.html)；其它语言直接用 `=` 便可获取。
+> **提示：** result 返回在 Node.js 中使用`await`或`Promise`，参考[快速开始](https://docs.chatopera.com/products/chatbot-platform/integration/quick-get-start.html)；其它语言直接用 `=` 便可获取。
 
 <h4><font color="purple">参数说明</font></h4>
 
@@ -43,7 +43,7 @@ result = chatopera.command(method, path [, body])
 
 **下文表述时，统一使用`JSON`，`JSON Object`和`JSON Array`代表 JSON 数据结构和其不同语言下的等价数据结构。**
 
-> **提示：** 相对而言，JSON 等价的数据结构，在获取`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration/index.html#下载-sdk)。
+> **提示：** 相对而言，JSON 等价的数据结构，在获取`JSON Object`的键值或`JSON Array`的长度和成员时，语法不同，但都易于掌握。在使用时，参考不同 SDK 的[示例程序](https://docs.chatopera.com/products/chatbot-platform/integration/index.html#下载-sdk)。
 
 **`body`是否必填以及是`JSON Object`还是`JSON Array`，取决于`method`和`path`的值，不同`method`和`path`的组合对应了不同的接口功能，满足不同需求，下文将介绍满足各种需求的`method`和`path`，并各个说明`body`参数。**
 
@@ -63,6 +63,6 @@ result = chatopera.command(method, path [, body])
 
 每次请求结果中，`rc`是必含有的属性，其它属性为可能含有。不同`rc`的正整数形代表不同的异常，`data`、`status`以及分页信息，则因`method`和`path`而异，以下进行详细介绍。
 
-> **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatopera#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](/products/chatbot-platform/integration/index.html#下载-sdk)。
+> **提示：** 不同语言对返回值可能进行了封装，但是不离其宗，都是基于以上定义，比如 Java SDK 中，定义`com.chatopera.bot.sdk.Response`作为`Chatopera#command`接口返回值，`Response`类提供`getRc`、`getData`和`toJSON`等方法，提升代码可读性。在使用时，参考不同 SDK 的[示例程序](https://docs.chatopera.com/products/chatbot-platform/integration/index.html#下载-sdk)。
 
 下文中使用的`method`，`path`，`body`和`result`等均代表以上介绍的概念。

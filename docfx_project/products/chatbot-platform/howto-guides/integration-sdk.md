@@ -1,10 +1,10 @@
 # 使用 SDK 集成 Chatopera BOT
 
-本节以[Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk) 为例子演示使用流程，更多 SDK 下载参考[链接](/products/chatbot-platform/references/sdk/index.html)。
+本节以[Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk) 为例子演示使用流程，更多 SDK 下载参考[链接](https://docs.chatopera.com/products/chatbot-platform/references/sdk/index.html)。
 
 ## 基础知识
 
-[Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。不同语言的 SDK 使用细节大同小异， 因为它们都是调用**Chatopera 机器人平台**的[RestAPIs](https://baike.baidu.com/item/RESTful)，这些 RestAPIs 是标准一致的。每种语言的 SDK 使用流程按照顺序包括：下载 SDK，实例化[`Chatbot`类](/products/chatbot-platform/references/sdk/chatbot/index.html)为对象，请求接口和处理返回结果。
+[Node.js](https://nodejs.org/en/) 是 JavaScript 运行时环境，面向服务器端应用开发，底层使用 Google V8 引擎。[Node.js](https://nodejs.org/en/) 尤其被前端开发者偏爱，因为它让前端开发者以“熟悉”的方式开发后端应用。[Node.js](https://nodejs.org/en/) 的出现一度降低了开发成本，并且成为“快应用”开发趋势出现，[Node.js](https://nodejs.org/en/) 包管理工具 [Npm 站点](https://www.npmjs.com/) 是开源领域最大的包管理服务。不同语言的 SDK 使用细节大同小异， 因为它们都是调用**Chatopera 机器人平台**的[RestAPIs](https://baike.baidu.com/item/RESTful)，这些 RestAPIs 是标准一致的。每种语言的 SDK 使用流程按照顺序包括：下载 SDK，实例化[`Chatbot`类](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/index.html)为对象，请求接口和处理返回结果。
 
 ## 获取 *ClientId* 和 *Secret*
 
@@ -36,7 +36,7 @@ var chatbot = new Chatbot(clientId, secret [, serviceProvider]);
 | --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | clientId        | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
 | secret          | string | &#10004; | 获取办法同上                                                                                                                     |
-| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 https://bot.chatopera.com，也是默认值</font> |
+| serviceProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 <https://bot.chatopera.com>，也是默认值</font> |
 
 <!--  对号和差号， https://www.w3schools.com/charsets/ref_utf_dingbats.asp -->
 
@@ -67,7 +67,6 @@ chatbot.command("GET", "/").then(
 
 此处，不深入探讨`await`和`Promise`的相关知识，它们是和 JavaScript 语言相关的内容。在这个例子中，我们请读者注意，给定一个机器人类的实例，再请求 API 服务是多么的简单，`Chatbot#command`接口提供了一系列的方法，也是下文给您详细介绍的重点。
 
-
 ## 示例程序
 
 示例程序代码库: [https://github.com/chatopera/webchat](https://github.com/chatopera/webchat)
@@ -92,4 +91,3 @@ docker run -it --rm -p 8668:8668 chatopera/webchat:develop
 ```
 
 <img width="600" src="../../../images/products/platform/webchat-1.jpeg" alt="" />
-

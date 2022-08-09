@@ -2,9 +2,9 @@
 
 <img width="800" src="../../../../images/products/platform/conversations/intents/image2021-9-1_16-47-24.png" alt="意图匹配器" />
 
-也称为 Intent Gambit，在多轮对话脚本中使用[意图识别模块](/products/chatbot-platform/explanations/intent.html)实现任务型对话。
+也称为 Intent Gambit，在多轮对话脚本中使用[意图识别模块](https://docs.chatopera.com/products/chatbot-platform/explanations/intent.html)实现任务型对话。
 
-* [意图匹配器的设计初衷和背景知识](/products/chatbot-platform/explanations/gambit-intent.html)
+* [意图匹配器的设计初衷和背景知识](https://docs.chatopera.com/products/chatbot-platform/explanations/gambit-intent.html)
 
 ## 意图匹配器语法
 
@@ -42,7 +42,7 @@ intent book_cab
 
 以上，`orderCab` 是成功函数，`loseOrderCab` 是失败函数。
 
-`成功函数`和`失败函数`的执行时刻的更多信息，参考 [多轮对话工作机制](/products/chatbot-platform/explanations/conversation.html)。
+`成功函数`和`失败函数`的执行时刻的更多信息，参考 [多轮对话工作机制](https://docs.chatopera.com/products/chatbot-platform/explanations/conversation.html)。
 
 以上就是意图匹配器的脚本语法，接下来介绍函数中，使用意图识别信息、配置意图识别分支等更高级功能点。
 
@@ -62,7 +62,7 @@ intent book_cab
 
 ### 意图识别调试分支重新训练
 
-意图匹配器，通过在多轮对话脚本中的环境变量 `@SYS_INTENT_BRANCH` 的值来指定集成[意图识别的版本](/products/chatbot-platform/howto-guides/intent-releases.html)，即调试版本或生产版本，二者的值分别是`pro`和`dev`，默认为 `dev`。
+意图匹配器，通过在多轮对话脚本中的环境变量 `@SYS_INTENT_BRANCH` 的值来指定集成[意图识别的版本](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent-releases.html)，即调试版本或生产版本，二者的值分别是`pro`和`dev`，默认为 `dev`。
 
 调试版本，顾名思义，是开发测试时使用，每次重新训练，其对应的意图会话都会被删除，在使用意图匹配器时，就会造成多轮对话在上下文处理上的失败。所以，每次意图识别重新训练，如果多轮对话集成的是调试分支，则意图会话的逻辑就失败了。
 
@@ -92,7 +92,7 @@ intent book_cab
 
 ## 使用函数完成对话
 
-意图识别可以在多轮对话设计器 v2.2.0+ 中使用，但是基于对多轮对话设计器用户体验的升级，建议使用 v2.3.0+ 版本的多轮对话设计器，最新版本[下载地址链接](/products/chatbot-platform/howto-guides/cde-install.html)。
+意图识别可以在多轮对话设计器 v2.2.0+ 中使用，但是基于对多轮对话设计器用户体验的升级，建议使用 v2.3.0+ 版本的多轮对话设计器，最新版本[下载地址链接](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)。
 
 编辑意图识别对话窗口如下：
 
@@ -238,7 +238,7 @@ if(extractedDates.length > 0){
 }
 ```
 
-更多关于 `extractTime` 的介绍[参考链接](/products/chatbot-platform/references/func-builtin/maestro.html#extracttime)。
+更多关于 `extractTime` 的介绍[参考链接](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/maestro.html#extracttime)。
 
 ### 保存变量信息到意图会话
 
@@ -359,7 +359,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 ### 在回复中跳转到指定意图
 
-**假设在多轮对话脚本中，已经设定了一个意图的意图匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](/products/chatbot-platform/howto-guides/conv-state.html#切换话题) 切换话题。
+**假设在多轮对话脚本中，已经设定了一个意图的意图匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html#切换话题) 切换话题。
 
 #### 文本回复
 
@@ -390,12 +390,12 @@ exports.handleXXFn = async function() {
 
 ## 下一步
 
-* [函数：使用 http 模块请求外部系统 API 服务](/products/chatbot-platform/references/func-builtin/basics.html#http)
+* [函数：使用 http 模块请求外部系统 API 服务](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/basics.html#http)
 
-* [理解多轮对话工作机制](/products/chatbot-platform/explanations/query.html)
+* [理解多轮对话工作机制](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)
 
 * [查看示例程序：预约机票](https://github.com/chatopera/chatbot-samples/blob/master/projects/%E9%A2%84%E5%AE%9A%E6%9C%BA%E7%A5%A8)
 
-* [通配符匹配器：使用语法建立规则](/products/chatbot-platform/references/gambit-star.html)
+* [通配符匹配器：使用语法建立规则](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
 
-* [模糊匹配器：容错能力更强和智能的匹配器](/products/chatbot-platform/howto-guides/conv-gambit-like.html)
+* [模糊匹配器：容错能力更强和智能的匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)

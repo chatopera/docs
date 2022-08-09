@@ -4,7 +4,7 @@
 
 ## this.user.id
 
-当前对话用户标识，在 [多轮对话检索](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)传入的`userId`信息。
+当前对话用户标识，在 [多轮对话检索](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)传入的`userId`信息。
 
 在函数中，获取该唯一标识信息：
 
@@ -60,7 +60,6 @@ this.user.history // 类型：数组
 ```
 
 其中，*original*就是来访者的输入，*reply*是上一轮对话中机器人的回复。
-*extras* 是通过多轮对话接口传入的自定义信息，传入方法参考，[多轮对话检索接口](/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
+*extras* 是通过多轮对话接口传入的自定义信息，传入方法参考，[多轮对话检索接口](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
 
 历史对话按照降序排列，即最近发生的对话在上面，最多存储 100 轮历史对话数据。
-

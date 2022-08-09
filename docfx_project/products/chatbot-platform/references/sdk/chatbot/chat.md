@@ -6,11 +6,11 @@
 - [检索知识库](#检索知识库)：从知识库获得回复
 - [检索意图识别](#检索意图识别)：从意图识别模块获得回复
 
-检索多轮对话，也**同时会从知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式**，使用检索多轮对话接口，可以定制出更为智能的对话机器人。 了解详情，请阅读[《多轮对话的工作机制》](/products/chatbot-platform/explanations/query.html)。
+检索多轮对话，也**同时会从知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式**，使用检索多轮对话接口，可以定制出更为智能的对话机器人。 了解详情，请阅读[《多轮对话的工作机制》](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)。
 
 ## 检索多轮对话
 
-多轮对话是通过脚本规则、函数编程实现问答服务，在*检索多轮对话*接口中，同时融合了知识库参与回复决策，返回结果，尤其是通过知识库答案路由到指定话题的指定触发器，非常实用。为了方便使用，宜先理解[多轮对话的工作机制和工作原理](/products/chatbot-platform/explanations/query.html)，熟悉多轮对话机制可以真正将 Chatopera 机器人平台的能量发挥到最大。
+多轮对话是通过脚本规则、函数编程实现问答服务，在*检索多轮对话*接口中，同时融合了知识库参与回复决策，返回结果，尤其是通过知识库答案路由到指定话题的指定触发器，非常实用。为了方便使用，宜先理解[多轮对话的工作机制和工作原理](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)，熟悉多轮对话机制可以真正将 Chatopera 机器人平台的能量发挥到最大。
 
 ```API
 Chatbot#command("POST", "/conversation/query", body)
@@ -36,7 +36,7 @@ Chatbot#command("POST", "/conversation/query", body)
 | faqBestReplyThreshold | number                  | &#10008; | 知识库最佳回复阈值，知识库中置信度超过该值通过返回值`string`和`params`返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                     |
 | faqSuggReplyThreshold | number                  | &#10008; | 知识库建议回复阈值，知识库中置信度超过该值的问答对通过返回值`faq`属性返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                      |
 | isDebug | boolean | &#10008; | 是否返回调试信息，调试信息包括匹配信息等 |
-| extras                | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory) 中使用 |
+| extras                | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory) 中使用 |
 
 其中，`extras` 用以支持更灵活，自定义的场景，使用[参考](https://github.com/chatopera/chatbot-samples/blob/f93e6dca8e06be8d1da84b42a3b5b16e735e11b1/projects/OSSChatBot/conversations/plugin.js#L104)。
 
@@ -96,7 +96,7 @@ Chatbot#command("POST", "/conversation/query", body)
 |              | docId                | 文档 ID                                                                               |
 |              | post                 | 标准问                                                                                |
 |              | score                | 分数                                                                                  |
-| intent       | 意图识别             | 更多描述参考[意图匹配器](/products/chatbot-platform/conversation/gambits/intent.html) |
+| intent       | 意图识别             | 更多描述参考[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/intent.html) |
 |              | intent.name          | 意图名称                                                                              |
 |              | intent.state         | 意图会话状态                                                                          |
 |              | intent.entities      | 意图中的命名实体                                                                      |
@@ -164,7 +164,7 @@ Chatbot#command("POST", "/faq/query", body)
 
 ## 检索意图识别
 
-意图识别是基于请求者的文本内容分析意图，然后基于意图追问意图槽位信息的对话，这部分的详细介绍参考[https://docs.chatopera.com/products/chatbot-platform/intent.html](/products/chatbot-platform/intent.html)，下面重点介绍在系统集成中，通过意图识别服务提供智能问答。
+意图识别是基于请求者的文本内容分析意图，然后基于意图追问意图槽位信息的对话，这部分的详细介绍参考[https://docs.chatopera.com/products/chatbot-platform/intent.html](https://docs.chatopera.com/products/chatbot-platform/intent.html)，下面重点介绍在系统集成中，通过意图识别服务提供智能问答。
 
 ### 什么是“会话”
 
