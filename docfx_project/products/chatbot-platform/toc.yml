@@ -6,15 +6,15 @@
 - name: 使用指南
   href: howto-guides/toc.yml
   topicHref: howto-guides/index.md
-- name: 背景知识
-  href: explanations/toc.yml
-  topicHref: explanations/index.md
 - name: 参考手册
   href: references/toc.yml
   topicHref: references/index.md
 - name: 计费及保障
   href: contract/toc.yml
   topicHref: contract/index.md
+- name: 背景知识
+  href: explanations/toc.yml
+  topicHref: explanations/index.md
 - name: 附录
   href: appendix/toc.yml
   topicHref: appendix/index.md
