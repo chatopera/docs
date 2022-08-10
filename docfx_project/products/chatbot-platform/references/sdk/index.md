@@ -32,15 +32,21 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 <font color="blue">如不能满足您使用环境或者语言的 SDK，请[创建工单](https://github.com/chatopera/docs/issues/new?template=1_help.md)进行描述，Chatopera 将尽快满足您的需求。</font>
 
-## `Chatopera` 类
+## 核心类
+
+在每个语言的 SDK 中，均实现两个类：`Chatopera` 类和`Chatbot` 类。
+
+### `Chatopera` 类
 
 `Chatopera`类是与 Chatopera 机器人平台集成的一个高级类，因为 Chatopera 云服务为开发者提供聊天机器人服务，`Chatopera`类的对象就是 Chatopera 云服务中一个注册账户的代理。
 
 通过左侧导航菜单了解使用详情。
 
-## `Chatbot` 类
+### `Chatbot` 类
 
 `Chatbot` 类是与 Chatopera 云服务集成的一个核心类，因为 Chatopera 云服务为开发者提供聊天机器人服务，`Chatbot` 类的对象就是 Chatopera 云服务中一个聊天机器人的代理。
+
+<!-- markup:markdown-end -->
 
 通过左侧导航菜单了解使用详情。
 

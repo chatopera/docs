@@ -18,6 +18,8 @@ exports.customFn = async function(){
 
 目前，Chatopera 机器人平台为函数提供的 JavaScript 运行时是 [`node:10.21.0`](https://nodejs.org/fr/blog/release/v10.21.0/)，发布于 2020-06-02。一些微小的[最新的 Node.js](https://nodejs.org/fr/) 的 LTS 上的功能可能并不支持，`v10.21.0` 目前是应用最多的 LTS 版本，更稳定和兼容广泛。
 
+<!-- markup:markdown-end -->
+
 ## 函数库
 
 - [basics](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/basics.html)

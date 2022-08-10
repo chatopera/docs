@@ -1,4 +1,4 @@
-# `Chatopera` 类接口规范
+# `Chatopera` 类接口规范 <!-- markup:skip-line -->
 
 ## 发送请求
 

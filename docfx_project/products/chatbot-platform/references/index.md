@@ -6,3 +6,4 @@
 * [函数返回值](https://docs.chatopera.com/products/chatbot-platform/references/func-return.html)
 * [命令行工具（CLI）](https://docs.chatopera.com/products/chatbot-platform/references/cli.html)
 * [SDK](https://docs.chatopera.com/products/chatbot-platform/references/sdk/index.html)
+* [常见问题](https://docs.chatopera.com/products/chatbot-platform/references/faq.html)

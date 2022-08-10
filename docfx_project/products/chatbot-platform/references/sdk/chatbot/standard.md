@@ -1,4 +1,4 @@
-## `Chatbot` 类接口规范
+## `Chatbot` 类接口规范 <!-- markup:skip-line -->
 
 ### 发送请求
 
