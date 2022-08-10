@@ -1,10 +1,10 @@
-## 使用函数获得动态答案
+# 使用函数获得动态答案
 
-### 目标
+## 目标
 
 通过使用动态答案，联合多轮对话与知识库的整体使用，使机器人更智能。
 
-### 问题描述
+## 问题描述
 
 在智能对话机器人中，知识库管理可能涉及到从业务系统获得答案，实时的同步答案一个是造成延迟，一个是成本高：在多个地方维护。 比如，在业务场景中，有三个子业务系统，分别是【采购系统】/【库存管理系统】/【供应商管理】。每个系统都有一些常见问题，比如**采购部门的负责人及联系方式，库存管理系统的负责人及联系方式，这些信息在不同子系统的某个网页上，或者通过 API 调用可以查询到。**
 
@@ -18,17 +18,17 @@
 
 目前，Chatopera 机器人平台支持这样的使用场景，接下来具体说明。
 
-### 解决方案
+## 解决方案
 
 在 [Chatopera 机器人平台](https://bot.chatopera.com/)管理控制台上 BOT 开发者可以维护知识库的不同类型的答案，除了录入固定的答案，Chatopera 机器人平台知识库也支持通过调用[多轮对话的话题](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)来从多轮对话获得答案。在多轮对话中，支持自定义 JavaScript 函数，就使得知识库设置动态抓取的答案可行，称之为：知识库路由。
 
 ![多轮对话函数](../../../images/products/platform/QQ截图20220616155220.png)
 
-#### 知识库路由
+### 知识库路由
 
 在知识库的答案或多轮对话的函数中设置回复时，可以用 **routeDirectReply** 来指定一个话题和匹配器获得答案。
 
-#### 语法
+### 语法
 
 ==将知识库答案按照如下语法设置==：
 
@@ -40,7 +40,7 @@ _TOPIC_NAME_: [对话话题](https://docs.chatopera.com/products/chatbot-platfor
 
 _TOPIC_GAMBIT_ID_: [匹配器](https://docs.chatopera.com/products/chatbot-platform/references/glossary.html#匹配器)
 
-### 使用示例
+## 使用示例
 
 下面我们用一个示例介绍这个功能的使用。
 
@@ -101,9 +101,9 @@ exports.get_purch_incharge_contact = async function() {
 
 下一步，就可以接入到业务系统，比如春松客服。在返回结果中，除了使用文本的形式，还可以支持自定义的数据结构，在春松客服中，返回结果支持展示为卡片、图文、按钮、列表的形式，详细参考（[https://docs.chatopera.com/products/cskefu/work-chatbot/message-types.html](https://docs.chatopera.com/products/cskefu/work-chatbot/message-types.html)）。
 
-### 高级进阶
+## 高级进阶
 
-#### 使用用户输入作为触发器
+### 使用用户输入作为触发器
 
 在一些情况下，按照用户的输入进入多轮对话匹配器更方便，那么在设置路由答案时，使用如下方法。
 
