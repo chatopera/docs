@@ -378,7 +378,7 @@ exports.handleXXFn = async function() {
 }
 ```
 
-## 下一步
+## 接下来
 
 * [函数：使用 http 模块请求外部系统 API 服务](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/basics.html#http)
 

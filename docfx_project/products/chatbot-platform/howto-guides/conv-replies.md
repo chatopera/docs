@@ -150,7 +150,7 @@
 
 函数的详细使用[参考文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-func.html)。
 
-## 下一步
+## 接下来
 
 - [上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-hooks.html)
 

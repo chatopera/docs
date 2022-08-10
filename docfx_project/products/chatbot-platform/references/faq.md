@@ -1,15 +1,5 @@
 # 常见问题
 
-## 基本问题
-
-### 注册时为什么需要手机号和邮箱？
-
-Chatopera 作为云服务提供商，应数据监管要求，进行实名制登记方可提供服务。同时为像您提供更好的服务，Chatopera 平台使用您的联系方式对与您和 Chatopera 利益相关的事情进行沟通。Chatopera 不会以任何方式和理由将您的数据分享给第三方。
-
-### Chatopera 云服务是否支持私有部署？
-
-支持，参考[文档](https://docs.chatopera.com/products/chatbot-platform/contract/on-premise.html)。
-
 ## SDK
 
 ### 返回错误 invalid appId

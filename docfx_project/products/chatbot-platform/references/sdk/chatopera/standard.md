@@ -19,6 +19,7 @@ result = chatopera.command(method, path [, body])
 | method | string         | &#10004; | 对于资源的具体操作类型，由 HTTP 动词表示。有效值包括`GET`，`POST`，`PUT`，`DELETE`和`HEAD`等 |
 | path   | string         | &#10004; | 资源的执行路径，通常包含资源实体名称或唯一标识，也可能在 `path`中使用`queryString`传递参数   |
 | body   | `JSON`数据结构 | &#10067; | `body` 是请求中的数据，对应 RestAPI 中的 Http Body                                           |
+<!-- markup:table-caption 参数列表 -->
 
 `method`不同动词代表的含义一般如下：
 
@@ -40,6 +41,7 @@ result = chatopera.command(method, path [, body])
 | PHP        | 基本类型`array`                                                                        | 基本类型`array`                                                                       |
 | Python     | 基本类型`dict`                                                                         | 基本类型`list`                                                                        |
 | Go         | `map[string]interface{}`                                                               | `[]map[string]interface{}`                                                            |
+<!-- markup:table-caption 语言对象对应关系 -->
 
 **下文表述时，统一使用`JSON`，`JSON Object`和`JSON Array`代表 JSON 数据结构和其不同语言下的等价数据结构。**
 
@@ -60,6 +62,7 @@ result = chatopera.command(method, path [, body])
 | `total`        | int    | 分页，所有数据记录条数。                                                                                              |
 | `current_page` | int    | 分页，当前页码，（分页从 1 开始）。                                                                                   |
 | `total_page`   | int    | 分页，所有页数。                                                                                                      |
+<!-- markup:table-caption 返回值规范 -->
 
 每次请求结果中，`rc`是必含有的属性，其它属性为可能含有。不同`rc`的正整数形代表不同的异常，`data`、`status`以及分页信息，则因`method`和`path`而异，以下进行详细介绍。
 

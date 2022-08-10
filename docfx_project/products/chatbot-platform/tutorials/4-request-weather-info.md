@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <4/5> 添加函数查询天气 <!-- markup:skip-line -->
 
-<< 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
+<< 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins <!-- markup:skip-line -->
 
 现在我们还需要支持一个问答技能：查询天气。比如，对话用户发送“上海天气怎么样？”，机器人回答当天的天气情况。
 
@@ -30,6 +30,7 @@ ask_weather
 | 槽位名称 | 词典 | 必填 | 追问 |
 | --- | --- | --- | --- |
 | `loc` | `@LOC` | 是 | 您要问哪里的天气信息？ |
+<!-- markup:table-caption 添加槽位表单 -->
 
 ### 用户说法
 
@@ -149,6 +150,7 @@ exports.handleLoseAskWeather = async function() {
 | --- | --- |
 | HEWEATHER_URL | <https://free-api.heweather.com/v5> |
 | HEWEATHER_KEY | 182f1b6826d94c6285a489d2414f3ad0 |
+<!-- markup:table-caption 添加环境变量 -->
 
 点击【确认】，再点击【保存】。
 
@@ -218,9 +220,9 @@ __faq_hot_list
 
 如果你得到了以上的回复内容，恭喜你完成本节任务！
 
-![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-<< 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | >> 下一步：[<5/5> 查看统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html)
+<< 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | >> 下一步：[<5/5> 查看统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html) <!-- markup:skip-line -->
 
 ## 注意事项
 

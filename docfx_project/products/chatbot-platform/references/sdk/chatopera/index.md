@@ -14,6 +14,7 @@ Chatopera(accessToken [, botProvider])
 | ----------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | accessToken | string | &#10004; | 在[机器人控制台/访问设置](https://bot.chatopera.com/dashboard/accesssettings)中获取，即 `Personal Access Token`                  |
 | botProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 <https://bot.chatopera.com>，也是默认值</font> |
+<!-- markup:table-caption 参数列表 -->
 
 在机器人控制台，打开【访问设置】:
 

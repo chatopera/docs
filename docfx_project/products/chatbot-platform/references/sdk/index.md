@@ -21,6 +21,7 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 | Go      | [chatopera-go-sdk](https://github.com/chatopera/chatopera-go-sdk)             | [示例程序](https://github.com/chatopera/chatopera-go-sdk/blob/master/chatopera_test.go) / [技术支持](https://github.com/chatopera/docs/issues/new/choose)                                                 |
 | PHP     | [chatopera-php-sdk](https://packagist.org/packages/chatopera/sdk)             | [示例程序](https://github.com/chatopera/chatopera-php-sdk) / [技术支持](https://github.com/chatopera/docs/issues/new/choose)                                                                              |
 | Node.js | [chatopera-nodejs-sdk](https://www.npmjs.com/package/@chatopera/sdk)          | [示例程序](https://github.com/chatopera/chatopera-sample-node) / [技术支持](https://github.com/chatopera/docs/issues/new/choose)                                                                          |
+<!-- markup:table-caption SDK 下载地址和使用说明 -->
 
 为了方便开发者调用 SDK，每个 SDK 内均有示例程序或测试程序作为参考。
 
@@ -50,7 +51,7 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 通过左侧导航菜单了解使用详情。
 
-## 下一步
+## 接下来
 
 - [`Chatopera` 类详细说明](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatopera/index.html)
 

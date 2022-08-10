@@ -30,7 +30,7 @@
 
 ### 语法
 
-==将知识库答案按照如下语法设置==：
+将知识库答案按照如下语法设置：
 
 ```语法
 routeDirectReply#["TOPIC_NAME", "TOPIC_GAMBIT_ID"]

@@ -132,6 +132,7 @@ bot connect -c xxx -s xxx -u zhangsan
 | 回溯历史                                 | ↑ 上箭头；↓ 下箭头                             |
 | 打印历史                                 | Shift + → 右箭头                               |
 | 使用索引输入历史，索引根据*打印历史*获得 | 输入索引，然后 Ctrl + Shift + Shift + → 右箭头 |
+<!-- markup:table-caption CLI 快捷键 -->
 
 ### export
 

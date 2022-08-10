@@ -58,6 +58,7 @@ Chatopera CLI 命令行工具支持读取文件配置变量，比如 `provider`,
 | secret, 机器人密钥                 | `-s, --clientsecret [value]` | `BOT_CLIENT_SECRET` | 无默认值，必填                    |
 | provider, Chatopera 机器人平台地址 | `-p, --provider [value]` | `BOT_PROVIDER`      | 默认值，<https://bot.chatopera.com> |
 | accessToken, 访客设置密钥          | `无`                     | `BOT_ACCESS_TOKEN`  | 保留值，无默认值                  |
+<!-- markup:table-caption CLI 命令行参数说明 -->
 
 其中， `.env` 文件例子如：
 

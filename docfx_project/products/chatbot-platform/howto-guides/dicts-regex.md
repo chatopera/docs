@@ -47,6 +47,7 @@ Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[
 | 邮箱     | `\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}` |
 | 身份证号 | `\d{15}(\d\d[0-9xX])?`                                   |
 | QQ 号    | `[1-9][0-9]{4,}`                                         |
+<!-- markup:table-caption 正则表达式示例 -->
 
 正则表达式的基础知识参考[链接](https://www.runoob.com/regexp/regexp-tutorial.html)，更多关于正则表达式材料在网络上自行查找，**相关 Perl 正则表达式或 PCRE 正则表达式的适用于 Chatopera 机器人平台的正则表达式词典**。
 
@@ -59,4 +60,4 @@ Chatopera 机器人平台中，正则表达式词典支持的表达式规范为[
 
 ## PCRE
 
-[PCRE](https://www.pcre.org/original/doc/html/pcrepattern.html) 是"Perl-compatible regular expressions"的缩写，广泛的被各种编程语言支持，虽然在不同语言支持时，会有微小的不同，实际使用中仍可参考 PCRE 的说明，Chatopera 机器人平台使用 C++开发，底层的正则表达式接口使用[Boost Regex 库](https://www.boost.org/doc/libs/1_70_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)
+[PCRE](https://www.pcre.org/original/doc/html/pcrepattern.html) 是“Perl-compatible regular expressions”的缩写，广泛的被各种编程语言支持，虽然在不同语言支持时，会有微小的不同，实际使用中仍可参考 PCRE 的说明，Chatopera 机器人平台使用 C++开发，底层的正则表达式接口使用[Boost Regex 库](https://www.boost.org/doc/libs/1_70_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)

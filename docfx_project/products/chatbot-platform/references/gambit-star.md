@@ -130,6 +130,7 @@ exports.echoYummy = async function(cap1) {
 | 副词 / Adverb      | `<adverb>, <adverb1>, <adverb2>...<adverbN>, <adverbs>`                  | 比如：急忙，快速       | 机器人所有语言           |
 | 代词 / Pronoun     | `<pronoun>, <pronoun1>, <pronoun2>... <pronounN>, <pronouns>`            | 比如：我，他，她       | 机器人所有语言           |
 | 人名 / Names       | `<name>, <name1>,<name2>... <nameN>, <names>`                            | 比如：张三，李四       | 简体中文，繁体中文，英文 |
+<!-- markup:table-caption 词性标识 -->
 
 ### 更多例子
 

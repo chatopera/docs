@@ -15,6 +15,7 @@ Chatbot(clientId, secret [, botProvider])
 | clientId    | string | &#10004; | 在[机器人控制台/机器人/设置](https://bot.chatopera.com/dashboard)中获取                                                          |
 | secret      | string | &#10004; | 获取办法同上                                                                                                                     |
 | botProvider | string | &#10008; | Chatopera 机器人平台地址，<br><font color="green">当使用 Chatopera 云服务时，该值为 <https://bot.chatopera.com>，也是默认值</font> |
+<!-- markup:table-caption 参数列表 -->
 
 ## 更多实例化例子
 

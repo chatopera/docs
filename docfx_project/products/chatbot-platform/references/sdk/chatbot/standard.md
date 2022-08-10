@@ -19,6 +19,7 @@ result = chatbot.command(method, path [, body])
 | method | string         | &#10004; | 对于资源的具体操作类型，由 HTTP 动词表示。有效值包括`GET`，`POST`，`PUT`，`DELETE`和`HEAD`等 |
 | path   | string         | &#10004; | 资源的执行路径，通常包含资源实体名称或唯一标识，也可能在 `path`中使用`queryString`传递参数   |
 | body   | `JSON`数据结构 | &#10067; | `body` 是请求中的数据，对应 RestAPI 中的 Http Body                                           |
+<!-- markup:table-caption 参数列表 -->
 
 `method`不同动词代表的含义一般如下：
 
@@ -40,6 +41,7 @@ result = chatbot.command(method, path [, body])
 | PHP        | 基本类型`array`                                                                        | 基本类型`array`                                                                       |
 | Python     | 基本类型`dict`                                                                         | 基本类型`list`                                                                        |
 | Go         | `map[string]interface{}`                                                               | `[]map[string]interface{}`                                                            |
+<!-- markup:table-caption 返回值语言映射关系 -->
 
 **下文表述时，统一使用`JSON`，`JSON Object`和`JSON Array`代表 JSON 数据结构和其不同语言下的等价数据结构。**
 

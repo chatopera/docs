@@ -152,12 +152,13 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 | 中文（简体中文 `zh_CN`，繁体中文 `zh_TW`） | [文档](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html#中文)           |
 | 英文 / en_US / Enlgish                     | [文档](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html#english--英语)  |
 | 日语 / Japanese                            | [文档](https://docs.chatopera.com/products/chatbot-platform/appendix/nlp-tags.html#日语--japanese) |
+<!-- markup:table-caption 语言词性标识集合 -->
 
 得到匹配信息，再结合 Chatopera 机器人平台内其它的内置函数库，可以实现更为强大的对话能力！
 
 通过提供不同形式的匹配器，适合智能对话机器人开发者在不同场景下因地制宜的选择构建规则的方法。
 
-## 下一步
+## 接下来
 
 * [有关更多关于 `this.message` 的使用介绍](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/message.html)
 

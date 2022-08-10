@@ -29,3 +29,4 @@ exports.someFunction = async function(){
 | 系统环境变量 | 默认值 | 取值说明 | 描述 |
 | --- | --- | --- | --- |
 | `@SYS_INTENT_BRANCH` | `dev` | `dev` 或 `pro` | 多轮对话集成意图识别的分支，`dev` 代表调试分支，`pro` 代表生产分支 |
+<!-- markup:table-caption 系统环境变量 -->

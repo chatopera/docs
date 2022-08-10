@@ -20,6 +20,8 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 
 ## 使用教程
 
+使用浏览器打开链接，观看视频：[https://dwz.chatopera.com/A76i8H](https://player.bilibili.com/player.html?aid=244552646&bvid=BV1dv41117sH&cid=235511554&page=1)
+
 <iframe src="//player.bilibili.com/player.html?aid=244552646&bvid=BV1dv41117sH&cid=235511554&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=600 height=350> </iframe>
 </br>
 
@@ -32,6 +34,7 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 | 版本 | 操作系统             | 下载                                                                                                                                 |
 | ---- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | v1.5 | Windows 7 或更高版本 | <a href="https://gitee.com/chatopera/cskefu/attach_files/972109/download/Chatopera%E5%B0%8F%E5%8A%A9%E6%89%8B-v1.5.msi" target="_blank">链接</a> |
+<!-- markup:table-caption 知识库小助手安装地址 -->
 
 在下载后，浏览器可能提示“这种类型的文件可能会损坏您的计算机”或者“Windows Defender SmartScreen 已组织启动一个未识别的应用。”，这时请点击“保留”及“更多信息”进行下一步。
 

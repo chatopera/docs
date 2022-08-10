@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <5/5> 查看统计和历史 <!-- markup:skip-line -->
 
-<< 上一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 1 mins
+<< 上一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 1 mins <!-- markup:skip-line -->
 
 ## 查看机器人对话数据
 
@@ -9,13 +9,15 @@
 
 ![查看机器人对话数据](../../../images/products/platform/screenshot-20210914-080228.png)
 
-## 太棒了
+## 你创造了一个智能对话机器人
 
-你创造出了一个智能对话机器人！
+太棒了！你已经完成了新手入门任务！
 
 ![点赞](../../../images/products/platform/love-20210914-114743.png)
 
-<< 上一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
+<< 上一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) <!-- markup:skip-line -->
+
+<!-- markup:markdown-end -->
 
 ## 接下来
 
