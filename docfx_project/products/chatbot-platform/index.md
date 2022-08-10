@@ -8,7 +8,7 @@
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
 * 浏览 [Chatopera 云服务概述](https://docs.chatopera.com/products/chatbot-platform/overview.html)
-* 下载 [《Chatopera 云服务用户使用文档》](http://cdndownload2.chatopera.com/manuals/Chatopera%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3-20220810.pdf)，内容与 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html) 一致，适应打印和快速查找，当前最新版本 v20220810
+* 下载 [《Chatopera 云服务用户使用文档》(PDF)](http://cdndownload2.chatopera.com/manuals/Chatopera%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3-20220810.pdf)，内容与 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html) 一致，适应打印和快速查找，当前最新版本 v20220810
 * 完成 [新手任务：使用入门教程一步步实现智能对话机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)，完成入门教程共需要四十分钟，包含 5 个小节。
 
 ## 帮助
