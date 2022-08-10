@@ -18,6 +18,8 @@ Chatopera 的多轮对话服务，可以面向不同行业，比如教育、电�
 
 Chatopera 将问答技术中的不同组成部分构建为基础模块，提供每个模块的管理工具、APIs，Chatopera 机器人平台用户可以单独使用。在基础模块之上，再融合为一个多轮对话方案。
 
+<!-- markup:markdown-end -->
+
 基础模块包括：
 
 * [词典：机器人能理解和捕捉的概念](https://docs.chatopera.com/products/chatbot-platform/explanations/dicts.html)
