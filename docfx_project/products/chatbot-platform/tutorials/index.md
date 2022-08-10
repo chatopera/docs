@@ -12,4 +12,16 @@
 
 ## 准备工作
 
-确保你已经创建了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account-mgr.html)以及[安装了多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)。多轮对话设计器是桌面软件，在撰写本文档时，最新版本是 `v2.x`，在[版本列表](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html#安装)中，获得最新的安装包并升级。然后就发布你在 Chatopera 云服务的第一个聊天机器人吧 - [<1/5> 创建机器人并添加到多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html)!
+确保你已经创建了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account-mgr.html)以及[安装了多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)。多轮对话设计器是桌面软件，在撰写本文档时，最新版本是 `v2.x`，在[版本列表](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html#安装)中，获得最新的安装包并升级。然后就发布你在 Chatopera 云服务的第一个聊天机器人吧!
+
+按步骤完成以下任务：
+
+[<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html)!
+
+[<2/5> 添加知识库问答对](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html)
+
+[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html)
+
+[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
+
+[<5/5> 查看统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html)

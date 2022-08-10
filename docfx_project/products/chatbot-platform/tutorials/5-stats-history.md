@@ -1,6 +1,7 @@
-# <5/5> 查看对话统计和历史
+<!-- markup:blank-line -->
+# <5/5> 查看统计和历史 <!-- markup:skip-line -->
 
-<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 1 mins
+<< 上一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 1 mins
 
 ## 查看机器人对话数据
 
@@ -14,7 +15,7 @@
 
 ![点赞](../../../images/products/platform/love-20210914-114743.png)
 
-<< 上一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
+<< 上一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
 
 ## 接下来
 

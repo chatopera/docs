@@ -1,6 +1,7 @@
-# <1/5> 创建机器人并添加到多轮对话设计器
+<!-- markup:blank-line -->
+# <1/5> 创建机器人 <!-- markup:skip-line -->
 
-<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins
+<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins <!-- markup:skip-line -->
 
 ## 登录并创建机器人
 
@@ -62,9 +63,9 @@
 
 恭喜你完成本节任务！
 
-![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 使用知识库回答“海口有几个机场”](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html)
+<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 添加知识库问答对](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) <!-- markup:skip-line -->
 
 ## 可能遇到的问题
 

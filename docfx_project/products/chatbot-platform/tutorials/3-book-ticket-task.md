@@ -1,6 +1,7 @@
-# <3/5> 使用意图识别完成“预定机票”
+<!-- markup:blank-line -->
+# <3/5> 添加意图“预定机票” <!-- markup:skip-line -->
 
-<< 上一步：[<2/5> 使用知识库回答“海口有几个机场”](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins
+<< 上一步：[<2/5> 添加知识库问答对](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins
 
 完成本节内容，春松机器人能够为对话用户提供预约机票的服务：通过自然语言交互的形式获取到了要购买机票相关的信息，假设集成了一个出票接口，完成出票。
 
@@ -246,4 +247,4 @@ exports.rebookAirplaneTicket = async function() {
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png)
 
-<< 上一步：[<2/5> 使用知识库回答“海口有几个机场”](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 使用内置函数 http 集成天气查询 API 服务](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
+<< 上一步：[<2/5> 添加知识库问答对](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
