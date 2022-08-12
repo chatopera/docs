@@ -42,7 +42,9 @@
 
 - 联系人和客户管理：CRM 模块，管理联系人和客户，细粒度维护客户信息，自定义标签和打标签，记录来往历史等
 
-- 网页聊天组件：一分钟接入对话窗口，支持技能组、邀请和关联联系人等
+- 网页渠道组件：一分钟接入对话窗口，支持技能组、邀请和关联联系人等
+
+- Facebook 渠道组件：快速接入 [Facebook Messenger](https://www.messenger.com/) 渠道，通过 Messenger 支持 Facebook 粉丝页、[Shopify](https://www.shopify.com/) 等海外社交、电商平台
 
 - 坐席工作台：汇聚多渠道访客请求，坐席根据策略自动分配，自动弹屏，转接等
 
@@ -106,14 +108,6 @@
 开发者通过学习《春松客服大讲堂》[^cskefudjt2019]来掌握基于春松客服定制开发客服系统，在春松客服基础上添加企业特别需求的功能。
 
 [^cskefudjt2019]: 地址，https://docs.chatopera.com/products/cskefu/osc/training.html
-
-## 付费模块
-
-春松客服从 v5.0.0 版本开始提供如下付费模块：
-
-- Messenger 渠道：集成 [Facebook Messenger Platform](https://docs.chatopera.com/products/cskefu/channels/messenger/index.html)为出海企业服务，满足营销和客服需求，在 Facebook 全家桶中连接亿万消费者、买家、玩家、客户
-
-付费模块代码并不开源，并且使用**插件**的形式安装在源码中，请联系[“商务洽谈”](/products/cskefu/index.html#商业支持)获得插件和商业支持。
 
 ## 更新日志
 

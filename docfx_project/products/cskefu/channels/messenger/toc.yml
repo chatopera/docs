@@ -1,4 +1,4 @@
-- name: "插件安装和配置"
+- name: "配置 Messenger 渠道"
   href: install.md
 - name: "OTN 主动推送指南"
   href: facebook-otn.md
