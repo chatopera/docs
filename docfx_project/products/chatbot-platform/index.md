@@ -1,6 +1,6 @@
 # Chatopera 云服务 <!-- markup:skip-line -->
 
-[Chatopera 云服务（https://bot.chatopera.com/）](https://bot.chatopera.com/) 重新定义聊天机器人服务！上线智能对话机器人时，这里有你需要了解的一切。
+使用 [Chatopera 云服务（https://bot.chatopera.com/）](https://bot.chatopera.com/) 重新定义聊天机器人，上线智能对话机器人，这里有你需要了解的一切。
 
 ## 入门
 <!-- First Steps -->
