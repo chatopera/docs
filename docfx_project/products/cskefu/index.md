@@ -91,6 +91,14 @@
 
 指代熟悉客户业务的人员，业务专家可以提供产品设计的意见，可以参与智能问答的质量评定，也可以作为管理员登录智能客服系统，配置系统，管理智能对话和训练。
 
+## 用户使用文档 PDF
+
+春松客服用户使用指南（PDF） 2022 最新版本[下载链接](https://www.cskefu.com/moment/825.html/)。
+
+<https://www.cskefu.com/moment/825.html/>
+
+用户使用文档（PDF）是与[文档中心](https://docs.chatopera.com/products/cskefu/index.html)的内容一致的 PDF 文件。PDF 格式方便查看、搜索和打印。使用时注意版本更新，相对而言，[网站](https://docs.chatopera.com/products/cskefu/index.html) 是最新的，注册春松客服官网：<https://www.cskefu.com/>，及时获得更新提醒。
+
 ## 质量管理
 
 解读 Chatopera 质量管理体系，上线定制化的客服系统。如何合理的规划测试工作？怎样搭建质量管理的支撑系统？Chatopera 反思、精进产品开发和服务支持体系，认真负责的帮助客户落地客服系统。本视频系 Chatopera 质量保证人员根据实际工作内容总结整理。
