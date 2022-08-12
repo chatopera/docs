@@ -91,6 +91,12 @@
 
 指代熟悉客户业务的人员，业务专家可以提供产品设计的意见，可以参与智能问答的质量评定，也可以作为管理员登录智能客服系统，配置系统，管理智能对话和训练。
 
+## 关注春松客服公众号
+
+及时获得产品更新、活动分享等信息。
+
+![春松客服公众号](../../images/products/cskefu/cskefu-wechat-gzh.png)
+
 ## 用户使用文档 PDF
 
 春松客服用户使用指南（PDF） 2022 最新版本[下载链接](https://www.cskefu.com/moment/825.html/)。
@@ -116,7 +122,3 @@
 开发者通过学习《春松客服大讲堂》[^cskefudjt2019]来掌握基于春松客服定制开发客服系统，在春松客服基础上添加企业特别需求的功能。
 
 [^cskefudjt2019]: 地址，https://docs.chatopera.com/products/cskefu/osc/training.html
-
-## 更新日志
-
-查看[Chatopera 产品更新日志](https://status.chatopera.com/tags?tag=%E6%98%A5%E6%9D%BE%E5%AE%A2%E6%9C%8D)相关内容。
