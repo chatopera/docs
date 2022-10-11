@@ -29,13 +29,13 @@ Chatbot#command("POST", "/conversation/query", body)
 }
 ```
 
-| key                   | type                    | required | description                                                                                                                                                                                                                                                 |
-| --------------------- | ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| fromUserId            | string                  | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                                                                                                                                                                                         |
-| textMessage           | string                  | &#10004; | 用户输入的对话文字                                                                                                                                                                                                                                          |
-| faqBestReplyThreshold | number                  | &#10008; | 知识库最佳回复阈值，知识库中置信度超过该值通过返回值`string`和`params`返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                     |
-| faqSuggReplyThreshold | number                  | &#10008; | 知识库建议回复阈值，知识库中置信度超过该值的问答对通过返回值`faq`属性返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                      |
-| isDebug | boolean | &#10008; | 是否返回调试信息，调试信息包括匹配信息等 |
+| key                   | type                    | required | description                                                                                                                                                                                                                                                                                                     |
+| --------------------- | ----------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| fromUserId            | string                  | &#10004; | 用户唯一 ID，用户 ID 由业务系统传递或生成，保证每个用户用唯一字符串                                                                                                                                                                                                                                             |
+| textMessage           | string                  | &#10004; | 用户输入的对话文字                                                                                                                                                                                                                                                                                              |
+| faqBestReplyThreshold | number                  | &#10008; | 知识库最佳回复阈值，知识库中置信度超过该值通过返回值`string`和`params`返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                                                                         |
+| faqSuggReplyThreshold | number                  | &#10008; | 知识库建议回复阈值，知识库中置信度超过该值的问答对通过返回值`faq`属性返回；可以在机器人平台管理控制台的设置页面设置默认值，使用 API 传递参数覆盖默认值                                                                                                                                                          |
+| isDebug               | boolean                 | &#10008; | 是否返回调试信息，调试信息包括匹配信息等                                                                                                                                                                                                                                                                        |
 | extras                | JSONObject 或 JSONArray | &#10008; | 在消息中，添加自定义的信息，然后在多轮对话脚本的函数 [`this.message.extras`](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/message.html) 和 [`this.user.history`](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/user.html#thisuserhistory) 中使用 |
 
 其中，`extras` 用以支持更灵活，自定义的场景，使用[参考](https://github.com/chatopera/chatbot-samples/blob/f93e6dca8e06be8d1da84b42a3b5b16e735e11b1/projects/OSSChatBot/conversations/plugin.js#L104)。
@@ -55,7 +55,8 @@ Chatbot#command("POST", "/conversation/query", body)
             "docId": "{{doctId}}",
             "score": 0.3781,
             "faqBestReplyThreshold": 0.37,
-            "faqSuggReplyThreshold": 0.1
+            "faqSuggReplyThreshold": 0.1,
+            "categories": ["x", "y"]
         },
         "botName": "小巴巴",
         "faq": [
@@ -63,46 +64,40 @@ Chatbot#command("POST", "/conversation/query", body)
                 "id": "{{doctId}}",
                 "score": 0.3781,
                 "post": "查看相似问题不可能的",
-                "replies": [
-                    {
-                        "rtype": "plain",
-                        "enabled": true,
-                        "content": "方法"
-                    }
-                ]
+                "categories": ["x", "y"]
             }
         ]
     }
 }
 ```
 
-*state*: 业务字段，可以在多轮对话脚本中设置
+_state_: 业务字段，可以在多轮对话脚本中设置
 
-*string*: 机器人回复的文本内容
+_string_: 机器人回复的文本内容
 
-*topicName*: 机器人会话主题
+_topicName_: 机器人会话主题
 
-*logic_is_fallback*: 是否是兜底回复
+_logic_is_fallback_: 是否是兜底回复
 
-*botName*: 机器人的名字
+_botName_: 机器人的名字
 
-*faq*: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
+_faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold**的记录，数组类型
 
 `service`代表返回的数据来源，**provider:conversation**指**多轮对话**，**provider:faq**指**知识库**，**provider:intent**指**意图识别**；不同数据来源也会提供相应信息。
 
-| provider     | key                  | 解释                                                                                  |
-| ------------ | -------------------- | ------------------------------------------------------------------------------------- |
-| faq          |                      |                                                                                       |
-|              | docId                | 文档 ID                                                                               |
-|              | post                 | 标准问                                                                                |
-|              | score                | 分数                                                                                  |
+| provider     | key                  | 解释                                                                                                            |
+| ------------ | -------------------- | --------------------------------------------------------------------------------------------------------------- |
+| faq          |                      |                                                                                                                 |
+|              | docId                | 文档 ID                                                                                                         |
+|              | post                 | 标准问                                                                                                          |
+|              | score                | 分数                                                                                                            |
 | intent       | 意图识别             | 更多描述参考[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/intent.html) |
-|              | intent.name          | 意图名称                                                                              |
-|              | intent.state         | 意图会话状态                                                                          |
-|              | intent.entities      | 意图中的命名实体                                                                      |
-| conversation | 多轮对话             |                                                                                       |
-| fallback     | 兜底回复             |                                                                                       |
-| mute         | 该用户被该机器人屏蔽 |                                                                                       |
+|              | intent.name          | 意图名称                                                                                                        |
+|              | intent.state         | 意图会话状态                                                                                                    |
+|              | intent.entities      | 意图中的命名实体                                                                                                |
+| conversation | 多轮对话             |                                                                                                                 |
+| fallback     | 兜底回复             |                                                                                                                 |
+| mute         | 该用户被该机器人屏蔽 |                                                                                                                 |
 
 ## 检索知识库
 
@@ -139,6 +134,10 @@ Chatbot#command("POST", "/faq/query", body)
                     "enabled": true,
                     "content": "方法"
                 }
+            ],
+            "categories": [
+                "节日",
+                "农历"
             ]
         },
         {
@@ -156,11 +155,14 @@ Chatbot#command("POST", "/faq/query", body)
                     "content": "bar",
                     "enabled": true
                 }
-            ]
+            ],
+            "categories": []
         }
     ]
 }
 ```
+
+`categories` 是分类信息。分类是树状结构，返回值是按照树状结构顺序的数组。
 
 ## 检索意图识别
 
@@ -216,15 +218,15 @@ Chatbot#command("POST", "/clause/prover/session", body)
 }
 ```
 
-*intent_name*: 意图名字
+_intent_name_: 意图名字
 
-*id*: 会话 ID
+_id_: 会话 ID
 
-*resolved*: 该会话是否完成收集参数
+_resolved_: 该会话是否完成收集参数
 
-*entities*: 参数列表，完成填槽或待填槽
+_entities_: 参数列表，完成填槽或待填槽
 
-*ttl*: 该会话信息在多少秒后过期，每个会话默认是 1 小时的空闲周期，在该时间内没有跟进的对话，则会话过期
+_ttl_: 该会话信息在多少秒后过期，每个会话默认是 1 小时的空闲周期，在该时间内没有跟进的对话，则会话过期
 
 ### 检索意图识别
 
