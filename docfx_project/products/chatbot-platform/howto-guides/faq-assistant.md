@@ -95,3 +95,14 @@ Chatopera 知识库话术助手（简称“话术助手”）是面向企业的�
 彻底关闭话术助手，在话术助手的悬浮区域右键，在弹出的菜单中点击“退出”。
 
 ![退出话术助手](../../../images/products/assistant/9.png)
+
+## 开源地址
+
+Chatopera 知识库话术助手程序目前已经开源，项目地址：
+
+[https://github.com/chatopera/assistant](https://github.com/chatopera/assistant)
+
+
+对该工具的任何建议和优化，在 Issues 中和我们交流。
+
+[https://github.com/chatopera/assistant/issues](https://github.com/chatopera/assistant/issues)
