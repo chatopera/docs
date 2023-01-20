@@ -228,11 +228,9 @@ bot intents --action train
 
 ## 语音识别
 
-### asr
+语音识别 SDK 接口使用[参考文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/asr.html)。
 
-```Bash
-bot asr -f 001.wav
-```
+### asr
 
 ```说明
 Usage: bot asr [options]
@@ -249,10 +247,18 @@ Options:
 示例：
 
 ```Bash
-bot asr -c xxx \
-     -s xxxx \
-     -u nodetest \
-     -f ./test/fixtures/001.wav
+bot asr -c clientId \
+     -s secret \
+     -u username \
+     -f ./asr.sample.001.wav
+```
+
+示例语音文件下载，[asr.sample.001.wav](https://docs.chatopera.com/images/products/platform/asr.sample.001.wav)。
+
+当前工作路径如果有 `.env` 文件时，也可以简化为命令：
+
+```Bash
+bot asr -f ./asr.sample.001.wav
 ```
 
 返回结果

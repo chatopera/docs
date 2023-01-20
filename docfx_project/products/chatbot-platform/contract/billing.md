@@ -2,7 +2,7 @@
 
 Chatopera 云服务的计费接口包括：
 
-1）对话检索 API
+1）对话检索 API，**按照 API 调用次数进行计费**
 
 * 检索知识库对话，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#%E6%A3%80%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%BA%93)
 
@@ -10,9 +10,11 @@ Chatopera 云服务的计费接口包括：
 
 * 检索意图识别，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#%E6%A3%80%E7%B4%A2%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB)
 
-2）语音识别 API
+2）语音识别 API, **每秒折合为 1 次，按照 API 调用次数进行计费**
 
 * 语音识别-中文普通话，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/asr.html)
+
+换算时，剩余的末尾时间不足一秒，则剩余时间按照 1 秒算。
 
 ## 计费须知
 
