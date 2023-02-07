@@ -1,6 +1,8 @@
 # Chatopera 云服务 <!-- markup:skip-line -->
 
-[Chatopera 云服务（https://bot.chatopera.com/）](https://bot.chatopera.com/) 重新定义聊天机器人。于 2018 年 11 月上线，持续为您提供稳定、安全、先进的聊天机器人服务。
+[Chatopera 云服务](https://bot.chatopera.com/) 重新定义聊天机器人。Chatopera 云服务于 [2018 年 11 月 8 日](https://mp.weixin.qq.com/s/HMLjWN_ynpJWJx_OiL0GqQ)上线，持续为您提供稳定、安全、先进的聊天机器人服务。
+
+[https://bot.chatopera.com/](https://bot.chatopera.com/)
 
 ## 入门
 <!-- First Steps -->
