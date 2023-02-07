@@ -224,9 +224,11 @@ __faq_hot_list
 
 << 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | >> 下一步：[<5/5> 查看统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html) <!-- markup:skip-line -->
 
-## 注意事项
+## 可能遇到的问题
 
-在这个对话中，天气查询服务使用的提供商是 [和风天气](https://www.qweather.com/)，在环境变量中，我们配置的 `KEY` 每天只有 1,000 次查询权限，你可以注册和风天气并获得私享的密钥信息。
+### 和风天气接口调用异常
+
+在这个对话中，天气查询服务使用的提供商是 [和风天气](https://www.qweather.com/)，在环境变量中，我们配置的 `KEY` 每天只有 1,000 次查询权限，当服务无法返回天气信息时，很可能是超过当天调用配额。解决办法：你可以注册和风天气并获得私享的密钥信息。
 
 注册和风天气开发者：[https://dev.qweather.com/](https://dev.qweather.com/)
 
