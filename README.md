@@ -12,7 +12,7 @@ Chatopera: Chat as a Service. We believe Chatbot is the next application platfor
 
 Chatopera 为开发者提供上线智能对话机器人的工具，帮助企业提升智能化和业务流程自动化，在市场营销、售后服务和企业协作中，应用聊天机器人，在 Chatopera 我们相信，聊天即服务，聊天机器人是下一代服务发布方式。
 
-![](docfx_project/images/products/trademark-chatopera.png)
+![](docfx_project/images/chatopera_logo_2022.png)
 
 ## 反馈建议
 
