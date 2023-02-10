@@ -26,11 +26,26 @@ Chatopera 云服务的计费接口包括：
 
 ![资源包和对应价格](../../../images/platform/chatopera_cloud_pricing_20230210150208.png)
 
-实际资源包信息可能与上有出入，最新的相关信息进入【资源包购买地址查看】- 
+资源包购买地址 -
 
 [https://bot.chatopera.com/billing/purchase](https://bot.chatopera.com/billing/purchase)
 
-## 计费须知
+最终价格以【资源包购买地址】为准。
+
+## 发票
+
+发票管理地址 -
+
+[https://bot.chatopera.com/billing/open-invoice](https://bot.chatopera.com/billing/open-invoice)
+
+在控制台右上角的导航栏进入【费用中心-开具发票】进行申请，点击【发票管理】查看开具状态，在开票过程中，可能通过短信、邮件和电话方式联系，请保证填写正确信息和联系畅通。
+
+提交申请发票如下图：
+
+![申请开发票](../../../images/platform/billing_invoice_20230210150705.png)
+
+
+## 其它使用须知
 
 ### 1. 资源包
 
@@ -44,7 +59,7 @@ API 调用的计数定期从配额中扣除，记录查看【配额扣除】。�
 
 配额扣除的记录如下图：
 
-![资源包和对应价格](../../../images/platform/quota_charge_20230210150931.png)
+![配额扣除信息](../../../images/platform/quota_charge_20230210150931.png)
 
 ### 3. 注册送资源包
 
@@ -58,20 +73,7 @@ API 调用的计数定期从配额中扣除，记录查看【配额扣除】。�
 
 资源包从下单支付后生效。若在有效期内配额未用尽，余量作废。仅剩一个可用资源包，且其余量小于 20% 时，平台会通过短信/邮件向您推送预警消息，消息通知可能有数小时延迟，收到通知后请尽快购买资源包。
 
-## 发票
-
-在控制台右上角的导航栏进入【费用中心-开具发票】进行申请，点击【发票管理】查看开具状态，在开票过程中，可能通过短信、邮件和电话方式联系，请保证填写正确信息和联系畅通。
-
-提交申请发票如下图：
-
-![资源包和对应价格](../../../images/platform/billing_invoice_20230210150705.png)
-
-发票管理地址 -
-
-[https://bot.chatopera.com/billing/open-invoice](https://bot.chatopera.com/billing/open-invoice)
-
-
-## 获得赠送资源包
+### 6. 获得赠送资源包
 
 反馈建议:
 
