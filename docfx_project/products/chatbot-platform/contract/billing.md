@@ -1,5 +1,7 @@
 # 计费及发票
 
+## 服务接口
+
 Chatopera 云服务的计费接口包括：
 
 1）对话检索 API，**按照 API 调用次数进行计费**
@@ -16,6 +18,16 @@ Chatopera 云服务的计费接口包括：
 
 换算时，剩余的末尾时间不足一秒，则剩余时间按照 1 秒算。
 
+## API 按次费用信息
+
+资源包包括次数额度，折合每次 API 请求的价格如下：
+
+![资源包和对应价格](../../../images/platform/chatopera_cloud_pricing_20230210150208.png)
+
+实际资源包信息可能与上有出入，最新的相关信息进入【资源包购买地址查看】- 
+
+[https://bot.chatopera.com/billing/purchase](https://bot.chatopera.com/billing/purchase)
+
 ## 计费须知
 
 ### 1. 资源包
@@ -25,6 +37,9 @@ Chatopera 云服务的计费接口包括：
 ### 2. 配额扣除
 
 API 调用的计数定期从配额中扣除，记录查看【配额扣除】。配额扣除的顺序为“赠送资源包 > 购买资源包”。
+
+[https://bot.chatopera.com/billing/quota](https://bot.chatopera.com/billing/quota)
+
 
 ### 3. 注册送资源包
 
@@ -41,6 +56,13 @@ API 调用的计数定期从配额中扣除，记录查看【配额扣除】。�
 ## 发票
 
 在控制台右上角的导航栏进入【费用中心-开具发票】进行申请，点击【发票管理】查看开具状态，在开票过程中，可能通过短信、邮件和电话方式联系，请保证填写正确信息和联系畅通。
+
+![资源包和对应价格](../../../images/platform/billing_invoice_20230210150705.png)
+
+发票管理地址 -
+
+[https://bot.chatopera.com/billing/open-invoice](https://bot.chatopera.com/billing/open-invoice)
+
 
 ## 获得赠送资源包
 
