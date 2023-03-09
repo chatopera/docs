@@ -75,3 +75,4 @@ docfx_project/obj/
 package-lock.json
 .env
 private/
+.obsidian/

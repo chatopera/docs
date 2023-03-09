@@ -1,3 +1,5 @@
+- name: 深度学习
+  href: deeplearning.md
 - name: 词典
   href: dicts.md
 - name: 知识库

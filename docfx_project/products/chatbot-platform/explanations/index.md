@@ -22,6 +22,7 @@ Chatopera 将问答技术中的不同组成部分构建为基础模块，提供�
 
 基础模块包括：
 
+* [深度学习: 实现语义理解、回答检索、聚类分析等](https://docs.chatopera.com/products/chatbot-platform/explanations/deeplearning.html)
 * [词典：机器人能理解和捕捉的概念](https://docs.chatopera.com/products/chatbot-platform/explanations/dicts.html)
 * [知识库：以搜索引擎技术为主](https://docs.chatopera.com/products/chatbot-platform/explanations/faq.html)
 * [意图识别：以机器学习为主，实现任务型对话](https://docs.chatopera.com/products/chatbot-platform/explanations/intent.html)
