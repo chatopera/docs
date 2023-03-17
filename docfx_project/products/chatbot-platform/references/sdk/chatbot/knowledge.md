@@ -428,3 +428,4 @@ Chatbot#command("GET", "/faq/database/inquiryrank?topN={{topN}}")
 }
 ```
 
+其中，data 内元素按照 `inquiryscore` 的值，降序排列，即该问题越热门，越靠上。

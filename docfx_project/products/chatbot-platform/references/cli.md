@@ -286,6 +286,21 @@ bot asr -f ./asr.sample.001.wav
 }
 ```
 
+## 已知问题
+
+### 在 Windows WSL 内调用 SDK，返回异常 invalid timestamp
+
+错误原因：Windows WSL 的时间同步有 BUG，未能和互联网时间同步。
+
+解决方案：执行手动的时间同步。
+
+假设使用的 WSL 发行版本基于 Ubuntu, 那么可以执行下面的命令解决。
+
+```
+sudo apt-get install ntpdate 
+sudo ntpdate time.windows.com
+```
+
 ## 开源项目
 
 Chatopera CLI 工具是[开源的](https://github.com/chatopera/chatopera-nodejs-sdk)，更多使用示例参考：
