@@ -11,12 +11,9 @@
   href: cli-export-import.md
 
 # 词典
-- name: 管理系统词典
-  href: dicts-sysdicts.md
-- name: 管理词汇表词典
-  href: dicts-vocab.md
-- name: 管理正则表达式词典
-  href: dicts-regex.md
+- name: 词典管理
+  href: dicts/toc.yml
+  topicHref: dicts/dicts-sysdicts.md
 
 # 知识库
 - name: 维护知识库问答对
