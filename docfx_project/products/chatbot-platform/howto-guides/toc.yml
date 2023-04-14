@@ -3,11 +3,7 @@
   href: account-mgr.md
 
 
-# cli
-- name: 安装和配置 CLI
-  href: cli-install-config.md
-- name: 使用 CLI 导入和导出对话语料
-  href: cli-export-import.md
+
 
 # 词典
 - name: 词典
@@ -50,11 +46,3 @@
 # ASR  
 - name: 调用语音识别服务
   href: asr-request.md
-
-# 系统集成
-- name: 在飞书中使用 Chatopera BOT
-  href: https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd
-- name: 在春松客服集成 Chatopera BOT
-  href: /products/cskefu/work-chatbot/bot-agent.html
-- name: 使用 SDK 集成 Chatopera BOT
-  href: integration-sdk.md

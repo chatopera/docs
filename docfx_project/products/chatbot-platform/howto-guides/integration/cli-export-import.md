@@ -18,7 +18,7 @@
 bot [dicts|faq|intents|conversation] --action [import|export] --filepath {{FILE_PATH}}
 ```
 
-![CLI 命令语法](../../../images/products/platform/screenshot-20210906-081057.png)
+![CLI 命令语法](../../../../images/products/platform/screenshot-20210906-081057.png)
 
 如果是导出（`export`），没有加入`--filepath`部分，则会默认保存文件到当前工作目录（`cwd` 目录）。
 

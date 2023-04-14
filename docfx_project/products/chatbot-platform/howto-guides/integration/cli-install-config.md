@@ -88,4 +88,4 @@ BOT_ACCESS_TOKEN=
 
 - [命令行界面（CLI）参考手册：帮助、使用命令参考手册](https://docs.chatopera.com/products/chatbot-platform/references/cli.html)
 
-- [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)
+- [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-export-import.html)
