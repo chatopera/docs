@@ -100,7 +100,7 @@ _topicRedirect_ 是内置的函数，第一个参数是目标主题名字，第�
 
 ### 跳转到意图匹配器
 
-在函数中，跳转到指定的意图匹配器有一点特殊，参考[使用说明](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html#在回复中跳转到指定意图)。
+在函数中，跳转到指定的意图匹配器有一点特殊，参考[使用说明](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html#在回复中跳转到指定意图)。
 
 ## 知识库路由
 
@@ -124,6 +124,6 @@ _TOPIC_GAMBIT_ID_: 匹配器
 routeDirectReply#["class_001_pre", "__C1PRE_GAMBIT_003",true]
 ```
 
-![【知识库或函数】路由多轮对话](../../../images/products/platform/set-faq-route-conversion-reply.jpg)
+![【知识库或函数】路由多轮对话](../../../../images/products/platform/set-faq-route-conversion-reply.jpg)
 
 提示：**routeDirectReply**需要设定为知识库问答对里的第一个答案，答案类型为 纯文本`plain`。

@@ -1,6 +1,6 @@
 # 在多轮对话中使用意图匹配器
 
-![意图匹配器](../../../../images/products/platform/conversations/intents/image2021-9-1_16-47-24.png)
+![意图匹配器](../../../../../images/products/platform/conversations/intents/image2021-9-1_16-47-24.png)
 
 也称为 Intent Gambit，在多轮对话脚本中使用[意图识别模块](https://docs.chatopera.com/products/chatbot-platform/explanations/intent.html)实现任务型对话。
 
@@ -20,7 +20,7 @@ intent INTENT_NAME
 
 `intent INTENT_NAME` 就是意图匹配器，`INTENT_NAME` 是意图识别模块中，意图的名字，大小写不敏感，这意味着 `book_cab` 和 `BOOK_CAB` 是一样的。
 
-![意图列表](../../../../images/products/platform/conversations/intents/image2021-9-1_19-29-33.png)
+![意图列表](../../../../../images/products/platform/conversations/intents/image2021-9-1_19-29-33.png)
 
 然后，在下一行，使用 "`-`" 开始设定回复，因为需要处理意图识别信息，而该信息是传递给函数的，所以，回复设置为自定义的函数。在本文后面的部分，会详细说明在函数中取值。
 
@@ -62,7 +62,7 @@ intent book_cab
 
 ### 意图识别调试分支重新训练
 
-意图匹配器，通过在多轮对话脚本中的环境变量 `@SYS_INTENT_BRANCH` 的值来指定集成[意图识别的版本](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent-releases.html)，即调试版本或生产版本，二者的值分别是`pro`和`dev`，默认为 `dev`。
+意图匹配器，通过在多轮对话脚本中的环境变量 `@SYS_INTENT_BRANCH` 的值来指定集成[意图识别的版本](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent/intent-releases.html)，即调试版本或生产版本，二者的值分别是`pro`和`dev`，默认为 `dev`。
 
 调试版本，顾名思义，是开发测试时使用，每次重新训练，其对应的意图会话都会被删除，在使用意图匹配器时，就会造成多轮对话在上下文处理上的失败。所以，每次意图识别重新训练，如果多轮对话集成的是调试分支，则意图会话的逻辑就失败了。
 
@@ -70,7 +70,7 @@ intent book_cab
 
 1）发布训练好的意图识别调试版本为生产版本，进入机器人意图管理页面，点击【版本管理】，点击【发布上线】。
 
-![发布上线](../../../../images/products/platform/screenshot-20210907-194649.png)
+![发布上线](../../../../../images/products/platform/screenshot-20210907-194649.png)
 
 2）在多轮对话设计器或 Chatopera 机器人平台管理控制台，进入环境变量设置。
 
@@ -96,7 +96,7 @@ intent book_cab
 
 编辑意图识别对话窗口如下：
 
-![多轮对话设计器](../../../../images/products/platform/conversations/intents/image2021-9-1_19-43-43.png)
+![多轮对话设计器](../../../../../images/products/platform/conversations/intents/image2021-9-1_19-43-43.png)
 
 在脚本和函数编辑区域，使用语法匹配意图识别和处理意图识别信息；对话窗口进行测试，在日志中查看日志和 `debug` 信息；在 SDK 中查看返回值 JSON 数据。
 
@@ -283,7 +283,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 在后续的多轮对话中，如果意图对话还没有过期，则依旧会从意图对话中检索。如果追问的信息被匹配到，则做意图对话；否则将不会追问，而是以(知识库->对话脚本->失败函数)这个顺序检索回复。
 
-![多轮对话意图对话最多追问次数](../../../../images/products/platform/conversations/intents/image2021-9-3_11-49-51.png)
+![多轮对话意图对话最多追问次数](../../../../../images/products/platform/conversations/intents/image2021-9-3_11-49-51.png)
 
 ## 设置集成意图识别分支
 
@@ -349,7 +349,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 ### 在回复中跳转到指定意图
 
-**假设在多轮对话脚本中，已经设定了一个意图的意图匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html#切换话题) 切换话题。
+**假设在多轮对话脚本中，已经设定了一个意图的意图匹配器。** 然后在多轮对话中，还可这样开始该意图的对话：使用 [`topicRedirect`](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html#切换话题) 切换话题。
 
 #### 文本回复
 
@@ -388,4 +388,4 @@ exports.handleXXFn = async function() {
 
 * [通配符匹配器：使用语法建立规则](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
 
-* [模糊匹配器：容错能力更强和智能的匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)
+* [模糊匹配器：容错能力更强和智能的匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-like.html)

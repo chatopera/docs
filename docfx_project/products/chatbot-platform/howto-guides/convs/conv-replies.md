@@ -29,7 +29,7 @@
 - 你好，请问遇到什么问题了吗？
 ```
 
-模糊匹配器受机器人记忆模型限制，如果需要在一个记忆周期内一直生效，可以使用 `{keep}` 标记，详细介绍，参考[文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html#重复使用回复)。
+模糊匹配器受机器人记忆模型限制，如果需要在一个记忆周期内一直生效，可以使用 `{keep}` 标记，详细介绍，参考[文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html#重复使用回复)。
 
 也可以在匹配器前添加*{keep}*，就不用在每个回答中都添加了
 
@@ -71,7 +71,7 @@
 
 引用的方式就是 `{@匹配器}`，匹配器中的下划线不是必须的，上面例子中的匹配器`__greeting__`的命名是为了增强脚本的可读性。
 
-将一些常用的回复以约定的匹配器命名方式命名，不但方便复用回复，使脚本可读性好，方便维护，而且更方便使用[**上下轮钩子**](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-hooks.html)实现多轮对话。
+将一些常用的回复以约定的匹配器命名方式命名，不但方便复用回复，使脚本可读性好，方便维护，而且更方便使用[**上下轮钩子**](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-hooks.html)实现多轮对话。
 
 ```脚本
 + 在吗
@@ -131,7 +131,7 @@
 
 此处，上下轮钩子，即`%`开头的句子，代表匹配器“你猜我叫什么？”只服务于“你好，&#60;cap1&#62;”作为回复时，它会被优先匹配。上一轮对话的回复通过(%)的方式指定了接下来的逻辑，形成多轮对话。
 
-关于上下文钩子的[详细介绍文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-hooks.html)。
+关于上下文钩子的[详细介绍文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-hooks.html)。
 
 **提示：**
 **1) +/%/- 前的空格不是必须的，在多轮对话中，空格可以增强脚本的可读性，比如使用上下轮钩子中的段首缩进。**
@@ -148,10 +148,10 @@
 
 那么，在多轮对话设计器内，通过 `exports.getGreetings = async function(){ // do your magic}` 来定制化回复内容。
 
-函数的详细使用[参考文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-func.html)。
+函数的详细使用[参考文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-func.html)。
 
 ## 接下来
 
-- [上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-hooks.html)
+- [上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-hooks.html)
 
-- [函数](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-func.html)
+- [函数](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-func.html)

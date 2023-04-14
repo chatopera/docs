@@ -12,31 +12,31 @@
 
 在词典管理页面点击新建自定义词典，在弹出的对话框里输入正确的自定义词典名称，词典类型选择"词汇表"，点击确定
 
-![新建词汇表词典](../../../images/intent/dict1.png)
+![新建词汇表词典](../../../../images/intent/dict1.png)
 
-![新建词汇表词典](../../../images/intent/dict2.png)
+![新建词汇表词典](../../../../images/intent/dict2.png)
 
 如果创建的自定义词典名称不符合要求，会有相应的提示
 
-![不符合要求](../../../images/intent/dict3.png)
+![不符合要求](../../../../images/intent/dict3.png)
 
 ## 更新
 
 对于已经创建的自定义词典可以修改中文名
 
-![修改中文名](../../../images/intent/dict4.png)
+![修改中文名](../../../../images/intent/dict4.png)
 
 ## 删除
 
 对于不需要的自定义词典点击删除按钮即可
 
-![删除自定义词典](../../../images/intent/dict5.png)
+![删除自定义词典](../../../../images/intent/dict5.png)
 
-![删除自定义词典](../../../images/intent/dict6.png)
+![删除自定义词典](../../../../images/intent/dict6.png)
 
 对于已经绑定了槽位的自定义词典不可删除
 
-![不可删除](../../../images/intent/dict7.png)
+![不可删除](../../../../images/intent/dict7.png)
 
 ## 添加词条
 
@@ -46,25 +46,25 @@
 
 添加词条：编辑完成后点击添加或者回车。
 
-![添加词条](../../../images/intent/dict8.png)
+![添加词条](../../../../images/intent/dict8.png)
 
 删除词条：点击删除按钮即可。
 
 修改词条：一个词条的标准词一旦确定不可修改，但是同义词可以修改，点击编辑按钮，出现输入框，可以对同义词进行修改。
 
-![修改词条](../../../images/intent/dict9.png)
+![修改词条](../../../../images/intent/dict9.png)
 
 查找词条：对于词条较多对词典来说，可以快速搜索词条。在搜索框输入需要搜索的词条之后点击放大镜或者点击回车键即可搜索。搜索完成后搜索框中出现一个清除按钮，点击之后清除本次搜索。
 
-![查找词条](../../../images/intent/dict10.png)
+![查找词条](../../../../images/intent/dict10.png)
 
 ## 保存
 
 **在编辑完所有词条之后，需要进行保存，否则变更不生效。** 比如本页词条有变更的情况下进行翻页或者搜索，都需要先进行保存。保存成功后，会重新训练机器人。
 
-![保存](../../../images/intent/dict11.png)
+![保存](../../../../images/intent/dict11.png)
 
-![保存](../../../images/intent/dict12.png)
+![保存](../../../../images/intent/dict12.png)
 
 ## 维护
 

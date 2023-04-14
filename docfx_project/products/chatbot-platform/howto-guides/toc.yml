@@ -38,24 +38,9 @@
   href: intent-releases.md
 
 # 多轮对话
-- name: 在多轮对话中使用通配符匹配器
-  href: ../references/gambit-star.md
-- name: 在多轮对话中使用模糊匹配器
-  href: conv-gambit-like.md
-- name: 在多轮对话中使用意图匹配器
-  href: conv-gambit-intent.md
-- name: 在多轮对话中设置回复
-  href: conv-replies.md
-- name: 在多轮对话中使用上下轮钩子
-  href: conv-hooks.md
-- name: 在多轮对话中使用函数
-  href: conv-func.md
-- name: 在多轮对话中配置环境变量
-  href: conv-environment.md
-- name: 在多轮对话中管理对话状态
-  href: conv-state.md
-- name: 在多轮对话中设置定时任务
-  href: conv-settimeout.md
+- name: 词典管理
+  href: convs/toc.yml
+  topicHref: convs/conv-gambit-like.md
 
 # 对话
 - name: 使用机器学习分析对话历史
