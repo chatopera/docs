@@ -1,0 +1,15 @@
+# 知识库
+- name: 知识库问答对维护
+  href: faq-qna.md
+- name: 知识库问答及调优测试
+  href: faq-chat-fix.md
+- name: 知识库问答对导入和导出
+  href: faq-transfer.md
+- name: 自定义词典增强知识库
+  href: faq-dicts.md
+- name: 知识库热门问题查看和导出
+  href: faq-hot.md
+- name: 使用函数获得动态答案
+  href: faq-dynamic-function-reply.md
+- name: 话术助手快速检索话术
+  href: faq-assistant.md

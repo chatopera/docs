@@ -2,29 +2,14 @@
 - name: 注册使用 Chatopera 云服务
   href: account-mgr.md
 
-
-
-
 # 词典
 - name: 词典
   href: dicts/toc.yml
   topicHref: dicts/dicts-sysdicts.md
 
-# 知识库
-- name: 维护知识库问答对
-  href: faq-qna.md
-- name: 测试知识库问答及调优
-  href: faq-chat-fix.md
-- name: 使用自定义词典增强知识库
-  href: faq-dicts.md
-- name: 查看和导出知识库热门问题
-  href: faq-hot.md
-- name: 使用函数获得动态答案
-  href: faq-dynamic-function-reply.md
-- name: 导入和导出知识库问答对
-  href: faq-transfer.md
-- name: 使用话术助手快速检索话术
-  href: faq-assistant.md
+- name: 知识库
+  href: faq/toc.yml
+  topicHref: faq/faq-qna.md
 
 # 意图识别
 - name: 创建和训练意图识别模型
@@ -36,6 +21,15 @@
 - name: 多轮对话
   href: convs/toc.yml
   topicHref: convs/conv-gambit-like.md
+
+- name: 渠道
+  href: channels/toc.yml
+  topicHref: channels/webim-setup.md
+
+- name: 系统集成
+  href: integration/toc.yml
+  topicHref: integration/integration-sdk.md
+
 
 # 对话
 - name: 使用机器学习分析对话历史
