@@ -14,7 +14,7 @@
 <!-- markup:table-caption 多轮对话设计器下载地址 -->
 
 **提示：点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，会启动下载。**
-![下载多轮对话设计器](../../../../images/products/platform/chatopera-cde-download.gif) <!-- markup:skip-line -->
+![下载多轮对话设计器](../../../../../images/products/platform/chatopera-cde-download.gif) <!-- markup:skip-line -->
 
 ## 工具介绍
 
@@ -28,22 +28,22 @@
 
 * 安装完打开应用程序，如下图：
 
-![多轮对话设计器打开后页面](../../../../images/products/cde/mac-homepage.png)
+![多轮对话设计器打开后页面](../../../../../images/products/cde/mac-homepage.png)
 
 ## 可能遇到的问题
 
 **1. macOS 上首次启动警告**
 
-![macos 权限问题](../../../../images/products/cde/mac-install-0.png)
+![macos 权限问题](../../../../../images/products/cde/mac-install-0.png)
 
 **解决方案**
 
 在应用中心，找到“多轮对话设计器”：
 
-![应用中心](../../../../images/products/cde-launchpad-1.png)
+![应用中心](../../../../../images/products/cde-launchpad-1.png)
 
 选择“多轮对话设计器”并且右键：
 
-![右键打开](../../../../images/products/cde-launchpad-2.png)
+![右键打开](../../../../../images/products/cde-launchpad-2.png)
 
 点击“打开”(“Open”)。

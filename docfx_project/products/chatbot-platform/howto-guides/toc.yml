@@ -1,8 +1,7 @@
 # 准备工作
 - name: 注册使用 Chatopera 云服务
   href: account-mgr.md
-- name: 安装多轮对话设计器
-  href: cde-install.md
+
 
 # cli
 - name: 安装和配置 CLI
