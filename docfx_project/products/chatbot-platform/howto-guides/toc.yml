@@ -11,7 +11,7 @@
   href: cli-export-import.md
 
 # 词典
-- name: 词典管理
+- name: 词典
   href: dicts/toc.yml
   topicHref: dicts/dicts-sysdicts.md
 
@@ -38,7 +38,7 @@
   href: intent-releases.md
 
 # 多轮对话
-- name: 词典管理
+- name: 多轮对话
   href: convs/toc.yml
   topicHref: convs/conv-gambit-like.md
 
