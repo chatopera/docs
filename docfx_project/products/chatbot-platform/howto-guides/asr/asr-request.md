@@ -20,7 +20,7 @@ Chatopera 机器人平台支持语音识别服务，将语音转化为文本内�
 
 进入语音识别模块，查看语音识别请求历史。
 
-![语音识别列表](../../../images/products/platform/screenshot-20210905-102649.png)
+![语音识别列表](../../../../images/products/platform/screenshot-20210905-102649.png)
 
 ## 计费及发票
 

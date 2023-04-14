@@ -1,8 +1,7 @@
-# 准备工作
-- name: 注册使用 Chatopera 云服务
-  href: account-mgr.md
+- name: 账号
+  href: account/toc.yml
+  topicHref: account/account-mgr.md
 
-# 词典
 - name: 词典
   href: dicts/toc.yml
   topicHref: dicts/dicts-sysdicts.md
@@ -11,16 +10,21 @@
   href: faq/toc.yml
   topicHref: faq/faq-qna.md
 
-# 意图识别
-- name: 创建和训练意图识别模型
-  href: intent-maintain.md
-- name: 发布上线意图识别生产版本
-  href: intent-releases.md
+- name: 意图识别
+  href: intent/toc.yml
+  topicHref: intent/intent-maintain.md
 
-# 多轮对话
 - name: 多轮对话
   href: convs/toc.yml
   topicHref: convs/conv-gambit-like.md
+
+- name: 语音识别
+  href: asr/toc.yml
+  topicHref: asr/asr-request.md
+
+- name: 对话调优
+  href: chats/toc.yml
+  topicHref: chats/chat-test.md
 
 - name: 渠道
   href: channels/toc.yml
@@ -29,14 +33,3 @@
 - name: 系统集成
   href: integration/toc.yml
   topicHref: integration/integration-sdk.md
-
-
-# 对话
-- name: 使用机器学习分析对话历史
-  href: lattice.md
-- name: 在管理控制台测试对话
-  href: chat-test.md
-
-# ASR  
-- name: 调用语音识别服务
-  href: asr-request.md

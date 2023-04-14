@@ -1,0 +1,5 @@
+# 意图识别
+- name: 创建和训练意图识别模型
+  href: intent-maintain.md
+- name: 发布上线意图识别生产版本
+  href: intent-releases.md
