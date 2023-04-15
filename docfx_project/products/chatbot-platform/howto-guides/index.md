@@ -1,16 +1,10 @@
 # 使用指南
 
-## 准备工作
+## 账号
 
 * [注册使用 Chatopera 云服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account-mgr.html)
-* [安装多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)
 
-## CLI
-
-* [安装和配置 CLI](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-install-config.html)
-* [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)
-
-## 词典管理
+## 词典
 
 * [管理系统词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts-sysdicts.html)
 * [管理词汇表词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts-vocab.html)
@@ -33,6 +27,7 @@
 
 ## 多轮对话
 
+* [安装多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)
 * [在多轮对话中使用通配符匹配器](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
 * [在多轮对话中使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)
 * [在多轮对话中使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
@@ -43,17 +38,22 @@
 * [在多轮对话中管理对话状态](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html)
 * [在多轮对话中设置定时任务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-settimeout.html)
 
-## 对话历史
-
-* [使用机器学习分析对话历史](https://docs.chatopera.com/products/chatbot-platform/howto-guides/lattice.html)
-* [在管理控制台测试对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chat-test.html)
-
 ## 语音识别
 
 * [调用语音识别服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/asr-request.html)
 
-## 发布机器人
+## 对话调优
+
+* [在管理控制台测试对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chat-test.html)
+* [使用机器学习分析对话历史](https://docs.chatopera.com/products/chatbot-platform/howto-guides/lattice.html)
+
+## 渠道
 
 * [在飞书中使用 Chatopera BOT](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
 * [在春松客服集成 Chatopera BOT](https://docs.chatopera.com/products/cskefu/work-chatbot/bot-agent.html)
+
+## 系统集成
+
 * [使用 SDK 集成 Chatopera BOT](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration-sdk.html)
+* [安装和配置 CLI](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-install-config.html)
+* [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)
