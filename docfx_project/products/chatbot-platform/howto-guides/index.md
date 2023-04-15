@@ -2,58 +2,61 @@
 
 ## 账号
 
-* [注册使用 Chatopera 云服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account-mgr.html)
+* [注册使用 Chatopera 云服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)
 
 ## 词典
 
-* [管理系统词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts-sysdicts.html)
-* [管理词汇表词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts-vocab.html)
-* [管理正则表达式词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts-regex.html)
+* [系统词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-sysdicts.html)
+* [词汇表词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-vocab.html)
+* [正则表达式词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-regex.html)
 
 ## 知识库
 
-* [维护知识库问答对](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-qna.html)
-* [测试知识库问答及调优](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-chat-fix.html)
-* [使用自定义词典增强知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-dicts.html)
-* [查看和导出知识库热门问题](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-hot.html)
-* [使用函数获得动态答案](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-dynamic-function-reply.html)
-* [导入和导出知识库问答对](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-transfer.html)
-* [使用话术助手快速检索话术](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq-assistant.html)
+* [维护知识库问答对](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-qna.html)
+* [知识库问答及调优测试](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-chat-fix.html)
+* [知识库问答对导入和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-transfer.html)
+* [自定义词典增强知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-dicts.html)
+* [知识库热门问题查看和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-hot.html)
+* [使用函数获得动态答案](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-dynamic-function-reply.html)
+* [话术助手快速检索话术](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-assistant.html)
 
 ## 意图识别
 
-* [创建和训练意图识别模型](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent-maintain.html)
-* [发布上线意图识别生产版本](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent-releases.html)
+* [创建和训练意图识别模型](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent/intent-maintain.html)
+* [发布上线意图识别生产版本](https://docs.chatopera.com/products/chatbot-platform/howto-guides/intent/intent-releases.html)
+
 
 ## 多轮对话
 
-* [安装多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)
-* [在多轮对话中使用通配符匹配器](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
-* [在多轮对话中使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)
-* [在多轮对话中使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
-* [在多轮对话中设置回复](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-replies.html)
-* [在多轮对话中使用上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-hooks.html)
-* [在多轮对话中使用函数](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-func.html)
-* [在多轮对话中配置环境变量](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-environment.html)
-* [在多轮对话中管理对话状态](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-state.html)
-* [在多轮对话中设置定时任务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-settimeout.html)
+* [多轮对话设计器安装](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)
+* [通配符匹配器](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
+* [使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-like.html)
+* [使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)
+* [设置回复](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-replies.html)
+* [使用上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-hooks.html)
+* [使用函数](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-func.html)
+* [配置环境变量](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-environment.html)
+* [管理对话状态](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html)
+* [设置定时任务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-settimeout.html)
+
 
 ## 语音识别
 
-* [调用语音识别服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/asr-request.html)
+* [调用语音识别服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/asr/asr-request.html)
 
 ## 对话调优
 
-* [在管理控制台测试对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chat-test.html)
-* [使用机器学习分析对话历史](https://docs.chatopera.com/products/chatbot-platform/howto-guides/lattice.html)
+* [对话测试](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chats/chat-test.html)
+* [对话历史分析](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chats/lattice.html)
 
 ## 渠道
 
-* [在飞书中使用 Chatopera BOT](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
-* [在春松客服集成 Chatopera BOT](https://docs.chatopera.com/products/cskefu/work-chatbot/bot-agent.html)
+* [H5 聊天控件](https://docs.chatopera.com/products/chatbot-platform/howto-guides/channels/webim-setup.html)
+* [春松客服](https://docs.chatopera.com/products/cskefu/work-chatbot/index.html)
+* [飞书](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
 
 ## 系统集成
 
-* [使用 SDK 集成 Chatopera BOT](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration-sdk.html)
-* [安装和配置 CLI](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-install-config.html)
-* [使用 CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cli-export-import.html)
+* [SDK](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/integration-sdk.html)
+* [CLI 安装和配置](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-install-config.html)
+* [CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-export-import.html)

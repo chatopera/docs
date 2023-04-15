@@ -16,7 +16,7 @@
 
 - name: 多轮对话
   href: convs/toc.yml
-  topicHref: convs/conv-gambit-like.md
+  topicHref: convs/cde-install.md
 
 - name: 语音识别
   href: asr/toc.yml

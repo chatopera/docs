@@ -1,8 +1,7 @@
 # cli
+- name: SDK
+  href: integration-sdk.md
 - name: CLI 安装和配置
   href: cli-install-config.md
 - name: CLI 导入和导出对话语料
   href: cli-export-import.md
-- name: SDK
-  href: integration-sdk.md
-  
