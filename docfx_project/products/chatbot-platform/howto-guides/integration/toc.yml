@@ -3,6 +3,6 @@
   href: cli-install-config.md
 - name: CLI 导入和导出对话语料
   href: cli-export-import.md
-- name: SDK 集成 Chatopera BOT
+- name: SDK
   href: integration-sdk.md
   

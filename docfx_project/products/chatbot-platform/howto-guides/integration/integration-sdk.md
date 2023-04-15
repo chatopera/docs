@@ -1,4 +1,4 @@
-# 使用 SDK 集成 Chatopera BOT
+# SDK
 
 本节以[Node.js SDK](https://www.npmjs.com/package/@chatopera/sdk) 为例子演示使用流程，更多 SDK 下载参考[链接](https://docs.chatopera.com/products/chatbot-platform/references/sdk/index.html)。
 

@@ -1,4 +1,4 @@
-# 安装多轮对话设计器
+# 多轮对话设计器安装
 
 **多轮对话设计器** (Conversation Design Environment, CDE）是以自然语言为输入，开发聊天机器人的集成开发环境。
 

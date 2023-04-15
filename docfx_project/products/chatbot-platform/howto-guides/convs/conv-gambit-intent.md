@@ -1,4 +1,4 @@
-# 在多轮对话中使用意图匹配器
+# 使用意图匹配器
 
 ![意图匹配器](../../../../../images/products/platform/conversations/intents/image2021-9-1_16-47-24.png)
 

@@ -1,6 +1,6 @@
-- name: 管理系统词典
+- name: 系统词典
   href: dicts-sysdicts.md
-- name: 管理词汇表词典
+- name: 词汇表词典
   href: dicts-vocab.md
-- name: 管理正则表达式词典
+- name: 正则表达式词典
   href: dicts-regex.md
