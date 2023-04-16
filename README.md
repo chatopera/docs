@@ -27,6 +27,25 @@ Chatopera 为开发者提供上线智能对话机器人的工具，帮助企业�
 
 [https://github.com/chatopera/docs/issues/new/choose](https://github.com/chatopera/docs/issues/new/choose)
 
+## 撰写文档 
+
+* 使用 Git 下载文档源文件
+* 使用 [Obsidian](https://obsidian.md/) 撰写文档
+* 使用 Git 更新源文件
+
+```
+git clone git@github.com:chatopera/docs.git
+cd docs
+rm -rf .obsidian
+cp -rf templates/_obsidian .obsidian
+# 在 Obsidian 中打开 vault 路径：docs
+# 编辑完成后提交
+git add --all
+git commit -m "YOUR MSG"
+git push origin master
+```
+
+
 ## 文档中心助手机器人
 
 Build with

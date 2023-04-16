@@ -1,0 +1,178 @@
+{
+  "main": {
+    "id": "e88910c097373b4b",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c6380dc098068c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d561b1843e2ccaa1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docfx_project/products/chatbot-platform/howto-guides/channels/webim-setup.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "059c8f6555db09f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7e5b0867d5e942c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2d8cbc62e3b6fcc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "df52df4d3d2a5897",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88584120a26dae5e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d8ee215e883f537f",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd6d36f461093449",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef10f7b95964270e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docfx_project/products/chatbot-platform/howto-guides/channels/webim-setup.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c9061cc66c485716",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docfx_project/products/chatbot-platform/howto-guides/channels/webim-setup.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0241c9a89f7e524c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ac8f8d38486b5d64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docfx_project/products/chatbot-platform/howto-guides/channels/webim-setup.md"
+              }
+            }
+          },
+          {
+            "id": "0c5cc90103bbd911",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "d561b1843e2ccaa1",
+  "lastOpenFiles": [
+    "docfx_project/images/assets/screenshot_20230416110640.png",
+    "docfx_project/images/assets/screenshot_20230416110453.png",
+    "docfx_project/images/assets/screenshot_20230416105743.png",
+    "README.md",
+    "docfx_project/images/assets",
+    "templates/_obsidian/plugins/obsidian-editor-shortcuts/manifest.json",
+    "templates/_obsidian/plugins/obsidian-editor-shortcuts/main.js",
+    "templates/_obsidian/plugins/templater-obsidian/styles.css",
+    "templates/_obsidian/plugins/obsidian-outliner/main.js",
+    "templates/_obsidian/plugins/obsidian-enhancing-mindmap/styles.css",
+    "templates/_obsidian/plugins/templater-obsidian/manifest.json",
+    "templates/_obsidian/plugins/templater-obsidian/main.js",
+    "templates/_obsidian/plugins/templater-obsidian/data.json",
+    "templates/_obsidian/plugins/obsidian-outliner/styles.css",
+    "docfx_project/products/chatbot-platform/explanations/index.md",
+    "docfx_project/products/chatbot-platform/explanations/deeplearning.md",
+    "docfx_project/images/platform/screenshot_20230309183919.png",
+    "docfx_project/images/platform/screenshot_20230309183508.png",
+    "docfx_project/products/chatbot-platform/explanations/faq.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "docfx_project/images/assets",
+  "userIgnoreFilters": [
+    "tmp",
+    ".git",
+    ".fid",
+    "temp",
+    "_build",
+    "dist",
+    "node_moduels",
+    "min.js"
+  ],
+  "promptDelete": false,
+  "livePreview": false,
+  "showLineNumber": true,
+  "autoPairBrackets": true,
+  "autoPairMarkdown": false
+}
