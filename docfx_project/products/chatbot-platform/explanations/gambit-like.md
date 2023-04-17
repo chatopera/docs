@@ -18,4 +18,4 @@
 
 ## 接下来
 
-* [在多轮对话中使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-like.html)
+* [在多轮对话中使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-like.html)

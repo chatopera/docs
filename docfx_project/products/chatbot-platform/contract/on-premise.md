@@ -26,7 +26,7 @@
 
 * 春松客服兼容 Chatopera 机器人平台私有部署实例，使用方法参考[文档](https://docs.chatopera.com/products/cskefu/work-chatbot/install.html)
 
-* 因为没有意图识别模块，专业版中，不支持[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
+* 因为没有意图识别模块，专业版中，不支持[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)
 
 * 每套实例，代表一个独立的软件服务；软件运行在一个固定的操作系统提供访问地址，为一个单独的实例
 

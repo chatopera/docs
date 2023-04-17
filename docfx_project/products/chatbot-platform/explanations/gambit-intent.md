@@ -58,4 +58,4 @@ Chatopera 机器人平台 2019 年就发布了意图识别模块。意图识别�
 
 ## 接下来
 
-* [在多轮对话中使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/conv-gambit-intent.html)
+* [在多轮对话中使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)
