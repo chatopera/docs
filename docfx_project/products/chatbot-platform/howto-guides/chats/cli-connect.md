@@ -11,7 +11,7 @@ Chatopera CLI 是命令行终端工具，[参考安装文档](/products/chatbot-
 
 ## 初始化
 
-```
+```bash
 mkdir YOUR_FOLDER_NAME # 自定义一个目录
 bot env
 ```
@@ -43,7 +43,7 @@ bot env
 
 在完成配置后，在 `.env` 文件所在文件夹下，执行下面命令，进行对话：
 
-```
+```bash
 bot connect
 ```
 
