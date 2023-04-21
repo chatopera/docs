@@ -22,7 +22,7 @@ footer{
     </div>
     <div class="buttons-unit">
       <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
-      <a href="/products/chatbot-platform/howto-guides/cde-install.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
+      <a href="/products/chatbot-platform/howto-guides/convs/cde-install.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
     </div>
   </div>
 </div>
