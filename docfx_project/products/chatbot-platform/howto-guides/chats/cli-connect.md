@@ -35,6 +35,7 @@ bot env
 | BOT_THRESHOLD_FAQ_BEST_REPLY | 机器人知识库最佳回复阈值，默认为 0.8 |
 | BOT_THRESHOLD_FAQ_SUGG_REPLY | 机器人知识库建议回复阈值，默认为 0 |
 
+机器人控制台的设置界面：
 
 ![](../../../../images/assets/screenshot_20230421124612.png)
 
