@@ -48,6 +48,7 @@
 
 * [对话测试](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chats/chat-test.html)
 * [对话历史分析](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chats/lattice.html)
+* [Chatopera CLI 连接多轮对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chats/cli-connect.html)
 
 ## 渠道
 
