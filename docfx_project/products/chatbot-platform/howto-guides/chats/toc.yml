@@ -3,3 +3,5 @@
   href: chat-test.md
 - name: 对话历史分析
   href: lattice.md
+- name: CLI 连接多轮对话
+  href: cli-connect.md
