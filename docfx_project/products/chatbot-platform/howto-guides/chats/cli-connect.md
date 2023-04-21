@@ -13,6 +13,7 @@ Chatopera CLI 是命令行终端工具，[参考安装文档](/products/chatbot-
 
 ```bash
 mkdir YOUR_FOLDER_NAME # 自定义一个目录
+cd YOUR_FOLDER_NAME
 bot env
 ```
 
