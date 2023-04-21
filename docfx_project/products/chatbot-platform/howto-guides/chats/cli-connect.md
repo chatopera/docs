@@ -8,6 +8,10 @@ Chatopera CLI 是命令行终端工具，[参考安装文档](/products/chatbot-
 
 以下的代码是在命令行终端中运行，比如 Windows CMD、PowerShell、Git Bash、Linux Bash 等 Shell 环境。
 
+以下的代码使用 CLI 版本是 [@chatopera./sdk 2.8.12](https://www.npmjs.com/package/@chatopera/sdk)。
+
+* 检查 Chatopera CLI 版本：`bot --version`
+* 升级执行命令 `npm install -g npm install -g @chatopera/sdk`
 
 ## 初始化
 
