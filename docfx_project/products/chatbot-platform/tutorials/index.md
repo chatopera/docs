@@ -12,9 +12,7 @@
 
 ## 准备工作
 
-确保你已经注册了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)。
-
-接下来就发布你在 Chatopera 云服务的第一个聊天机器人吧！
+确保你已经注册了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)。接下来就发布你在 Chatopera 云服务的第一个聊天机器人吧！
 
 [<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html)
 
