@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <3/5> 添加意图“预定机票” <!-- markup:skip-line -->
 
-<< 上一步：[<2/5> 添加知识库问答对](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins <!-- markup:skip-line -->
+<< 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins <!-- markup:skip-line -->
 
 完成本节内容，春松机器人能够为对话用户提供预约机票的服务：通过自然语言交互的形式获取到了要购买机票相关的信息，假设集成了一个出票接口，完成出票。
 
@@ -9,7 +9,7 @@
 
 在预约飞机票的应用场景下，春松机器人需要识别对话用户的输入文本中包含的地名和时间信息，比如最基本的几个信息：出发城市、到达城市和航班时间。
 
-再次回到春松机器人管理控制台，在机器人菜单上点击【词典】。
+再次回到机器人管理控制台，在机器人菜单上点击【词典】。
 
 ![词典管理](../../../images/products/platform/screenshot-20210914-014615.png)
 
@@ -95,7 +95,7 @@ book_airplane_ticket
 
 ## 测试意图识别
 
-刚刚的模型效果怎么样？聊几句试试。在春松机器人管理控制台，进入【测试对话】页面。
+刚刚的模型效果怎么样？聊几句试试。在机器人管理控制台，进入【测试对话】页面。
 
 ![测试意图识别](../../../images/products/platform/screenshot-20210914-020727.png)
 
@@ -248,4 +248,4 @@ exports.rebookAirplaneTicket = async function() {
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-<< 上一步：[<2/5> 添加知识库问答对](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) <!-- markup:skip-line -->
+<< 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) <!-- markup:skip-line -->

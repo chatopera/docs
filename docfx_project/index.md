@@ -21,7 +21,7 @@ footer{
       <a class="version-link" href="https://bot.chatopera.com">使用 Chatopera 云服务，应用机器人到客服、营销、办公自动化等场景</a>
     </div>
     <div class="buttons-unit">
-      <a href="/products/chatbot-platform/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
+      <a href="/products/chatbot-platform/tutorials/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
       <a href="/products/chatbot-platform/howto-guides/convs/cde-install.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
     </div>
   </div>

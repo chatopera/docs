@@ -1,6 +1,6 @@
 - name: <1/5> 创建机器人
   href: 1-create-bot.md
-- name: <2/5> 添加知识库问答对
+- name: <2/5> 添加对话语料
   href: 2-answer-faq.md
 - name: <3/5> 添加意图“预定机票”
   href: 3-book-ticket-task.md
