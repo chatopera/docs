@@ -45,6 +45,27 @@ git commit -m "YOUR MSG"
 git push origin master
 ```
 
+## Preview site on Windows
+
+依赖：1) [docfx](https://dotnet.github.io/docfx/) 2) [WSL](https://github.com/microsoft/WSL)
+
+安装工具
+
+```
+dotnet tool update --global docfx --version 2.60.0 
+```
+
+需要使用 `2.60.0` 版本，更高级版本样式不兼容。
+
+构建和托管站点，在 WSL 内，执行
+
+```
+cd docs
+./admin/build.sh && ./admin/serve.sh
+```
+
+使用浏览器打开：http://localhost:8027/
+
 
 ## 文档中心助手机器人
 
