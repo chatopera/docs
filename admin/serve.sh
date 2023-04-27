@@ -12,9 +12,8 @@ SITE=$baseDir/../dist
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 
 CMD_PATH=docfx
-if [ -f /opt/docfx/docfx.exe ]; then
-    echo "Use docfx with mono"
-    CMD_PATH="mono /opt/docfx/docfx.exe"
+if [ -f /opt/docfx/docfx ]; then
+    CMD_PATH="mono /opt/docfx/docfx"
 elif [ -f /mnt/c/Users/Administrator/.dotnet/tools/docfx.exe ]; then 
     CMD_PATH="/mnt/c/Users/Administrator/.dotnet/tools/docfx.exe"
 fi

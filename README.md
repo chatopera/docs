@@ -52,10 +52,10 @@ git push origin master
 安装工具
 
 ```
-dotnet tool update --global docfx --version 2.60.0 
+dotnet tool update --global docfx --version 2.62.2
 ```
 
-需要使用 `2.60.0` 版本，更高级版本样式不兼容。
+需要使用 `2.62.2` 版本，更高级版本样式不兼容，[维护 docfx 工具版本](https://github.com/chatopera/docs/issues/71)。
 
 构建和托管站点，在 WSL 内，执行
 
