@@ -10,7 +10,7 @@
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
 * 浏览 [Chatopera 云服务概述](https://docs.chatopera.com/products/chatbot-platform/overview.html)
-* 下载 [《Chatopera 云服务用户使用文档》(PDF)](http://cdndownload2.chatopera.com/manuals/Chatopera%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3-20220810.pdf)，内容与 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html) 一致，适应打印和快速查找，当前最新版本 v20220810
+
 * 完成 [新手任务：使用入门教程一步步实现智能对话机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)，完成入门教程共需要四十分钟，包含 5 个小节。
 
 ## 帮助
@@ -19,9 +19,10 @@
 遇到使用困难？在这里获得帮助！
 
 * 搜索 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html)，使用右上角【Search】工具条录入关键词，多个关键词使用空格分隔，比如 "服务 API 计费"
-* 搜索 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助
-* 提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
-* 联系 [Chatopera 技术支持](https://www.chatopera.com/mail.html)，从官方获得服务
+
+* 搜索或创建工单 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助；提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
+
+* 取得技术专家支持，联系 [Chatopera 技术支持](https://www.chatopera.com/mail.html)
 
 ## 文档体系
 <!-- How the documentation is organized  -->
@@ -35,6 +36,8 @@ Chatopera 云服务文档中心包括很多文档，了解这些文档是如何�
 * [背景知识](https://docs.chatopera.com/products/chatbot-platform/explanations/index.html)介绍说明工作机制、主题讨论或核心概念的阐述，这些内容涉及了 [Chatopera 云服务](https://bot.chatopera.com)的工作原理，了解这部分内容对你使用 Chatopera 云服务会有很大的帮助。
 
 * [参考手册](https://docs.chatopera.com/products/chatbot-platform/references/index.html)描述了 [Chatopera 云服务](https://bot.chatopera.com)提供的 CLI / APIs 接口使用，或者其它工具说明，用于系统集成和自动化工作。这部分内容假设你已经具备了基础知识，对一些概念已经了解。
+
+* PDF [《Chatopera 云服务用户使用文档》](http://cdndownload2.chatopera.com/manuals/Chatopera%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3-20220810.pdf)，离线文件，内容与 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html) 一致，适应打印和无网络环境下使用，当前最新版本 v20220810
 
 ## 产品更新
 
