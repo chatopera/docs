@@ -37,7 +37,7 @@ Chatopera 云服务文档中心包括很多文档，了解这些文档是如何�
 
 * [参考手册](https://docs.chatopera.com/products/chatbot-platform/references/index.html)描述了 [Chatopera 云服务](https://bot.chatopera.com)提供的 CLI / APIs 接口使用，或者其它工具说明，用于系统集成和自动化工作。这部分内容假设你已经具备了基础知识，对一些概念已经了解。
 
-* PDF [《Chatopera 云服务用户使用文档》](http://cdndownload2.chatopera.com/manuals/Chatopera%E4%BA%91%E6%9C%8D%E5%8A%A1%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3-20220810.pdf)，离线文件，内容与 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html) 一致，适应打印和无网络环境下使用，当前最新版本 v20220810
+* PDF [《Chatopera 云服务用户使用文档》](/assets/files/chatopera_bot_manual.pdf)，离线文件，内容与 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html) 一致，适应打印和无网络环境下使用，如需更新到最新版本请使用[链接](/assets/files/chatopera_bot_manual.pdf)重新下载
 
 ## 产品更新
 
