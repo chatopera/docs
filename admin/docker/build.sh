@@ -10,4 +10,4 @@ baseDir=$(cd `dirname "$0"`;pwd)
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 cd $baseDir/../..
-docker run --rm --user root --entrypoint /bin/bash -v $PWD:/work chatopera/docfx:2.62.2 -c "/work/admin/build.sh"
+docker run --rm --user root --entrypoint /bin/bash -v $PWD:/work chatopera/docfx:2.61.0 -c "/work/admin/build.sh"

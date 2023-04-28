@@ -22,4 +22,4 @@ pwd
 docker run -it --rm --network="host" -e HOST_IP=$HOST_IP -p 8027:8027 \
     --user root \
     --entrypoint /bin/bash \
-    -v $PWD:/work chatopera/docfx:2.62.2 "/work/admin/serve.sh"
+    -v $PWD:/work chatopera/docfx:2.61.0 "/work/admin/serve.sh"
