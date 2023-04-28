@@ -99,7 +99,7 @@
       }
     ],
     "wkhtmltopdf": {
-      "additionalArguments": "--enable-local-file-access --load-error-handling ignore --header-left [section] --header-right Chatopera --footer-center [page]/[toPage]"
+      "additionalArguments": "--enable-local-file-access --load-error-handling ignore --header-left [section] --header-right \"更新日期：[date]\" --footer-center [page]/[toPage] --footer-right \"https://bot.chatopera.com\""
     }
   }
 }
