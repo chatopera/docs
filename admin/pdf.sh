@@ -1,6 +1,8 @@
 #! /bin/bash 
 ###########################################
-#
+# Currently Only support WSL on Windows
+# chatopera/docfx:2.61.0 does not installed Chinese fonts.
+# Update manually instead, run before build.sh
 ###########################################
 
 # constants
@@ -54,5 +56,5 @@ if [ -f $DIST/docfx_project_products/chatbot-platform.pdf ]; then
         mkdir -p $DIST/_site/assets/files
     fi
 
-    cp $DIST/docfx_project_products/chatbot-platform.pdf $DIST/_site/assets/files/chatopera_bot_manual.pdf
+    cp $DIST/docfx_project_products/chatbot-platform.pdf assets/files/chatopera_bot_manual.pdf
 fi
