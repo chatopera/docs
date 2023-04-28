@@ -259,19 +259,19 @@ $(function () {
         function addSearchEvent() {
             $('body').bind("searchEvent", function () {
                 $('#search-query').keypress(function (e) {
-                    return e.which !== 13;
+                    // trigger search with Enter
+                    if ( e.which == 13 ) {
+                        e.preventDefault();
+                        query = $(this).val();
+                        if (query.length < 2) {
+                            flipContents("show");
+                        } else {
+                            flipContents("hide");
+                            $("body").trigger("queryReady");
+                            $('#search-results>.search-list>span').text('"' + query + '"');
+                        }
+                     }
                 });
-
-                $('#search-query').keyup(function () {
-                    query = $(this).val();
-                    if (query.length < 2) {
-                        flipContents("show");
-                    } else {
-                        flipContents("hide");
-                        $("body").trigger("queryReady");
-                        $('#search-results>.search-list>span').text('"' + query + '"');
-                    }
-                }).off("keydown");
             });
         }
 
