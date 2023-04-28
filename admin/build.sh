@@ -69,6 +69,8 @@ const data = require(file); \
 const keys = Object.keys(data); \
 for(let key of keys) { \
     data[key]['keywordsLower'] = data[key].keywords ? data[key].keywords.toLowerCase():''; \
+    data[key]['titleLower'] = data[key].title ? data[key].title.toLowerCase():''; \
+    delete data[key]['keywords']; \
 } \
 fs.writeFileSync(file, JSON.stringify(data)); \
 "

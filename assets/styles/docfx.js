@@ -187,14 +187,16 @@ $(function () {
                             if (value.keywordsLower.includes(criteria)) {
                                 score++;
                             }
-
+                            if (value.titleLower.includes(criteria)) {
+                                score++;
+                            }
                         }
 
                         if (score > 0) {
                             results.push({
                                 'href': value.href,
                                 'title': value.title,
-                                'keywords': value.keywords,
+                                'keywords': value.keywordsLower,
                                 'score': score
                             });
                         }
