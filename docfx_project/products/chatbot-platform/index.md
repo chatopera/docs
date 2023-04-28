@@ -18,11 +18,10 @@
 
 遇到使用困难？在这里获得帮助！
 
-* 浏览 [FAQ 常见问题](https://docs.chatopera.com/products/chatbot-platform/references/faq.html) 文档中获得常见问题的答案
+* 搜索 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html)，使用右上角【Search】工具条录入关键词，多个关键词使用空格分隔，比如 "SDK Python"
 * 搜索 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助
-* 联系 [Chatopera 技术支持](https://www.chatopera.com/mail.html)，从官方获得服务
 * 提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
-* 产品[更新日志](https://status.chatopera.com)
+* 联系 [Chatopera 技术支持](https://www.chatopera.com/mail.html)，从官方获得服务
 
 ## 文档体系
 <!-- How the documentation is organized  -->
