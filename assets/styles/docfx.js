@@ -171,9 +171,6 @@ $(function () {
                         return;
                     }
                     searchData = JSON.parse(this.responseText);
-                    for (var prop in searchData) {
-                        searchData[prop]["keywordsLower"] = searchData[prop].keywords ? searchData[prop].keywords.toLowerCase() : "";
-                    }
                 }
                 searchDataRequest.send();
             }
@@ -201,7 +198,6 @@ $(function () {
                                 'score': score
                             });
                         }
-
                     }
                 }
 

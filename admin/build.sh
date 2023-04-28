@@ -61,6 +61,18 @@ if [ -d $SITE/_site ]; then
     cp $baseDir/../assets/styles/*.js $SITE/_site/styles
 fi
 
+# Tune index.json for search optimize
+node -e "\
+const fs = require('fs'); \
+const file = '$SITE/_site/index.json'; \
+const data = require(file); \
+const keys = Object.keys(data); \
+for(let key of keys) { \
+    data[key]['keywordsLower'] = data[key].keywords ? data[key].keywords.toLowerCase():''; \
+} \
+fs.writeFileSync(file, JSON.stringify(data)); \
+"
+
 # config to generate pdfs
 # https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#24-generate-pdf-documentation-command-docfx-pdf
 # docfx pdf -o $SITE
