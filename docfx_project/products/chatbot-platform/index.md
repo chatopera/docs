@@ -18,7 +18,7 @@
 
 遇到使用困难？在这里获得帮助！
 
-* 搜索 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html)，使用右上角【Search】工具条录入关键词，多个关键词使用空格分隔，比如 "SDK Python"
+* 搜索 [Chatopera 文档中心](https://docs.chatopera.com/products/chatbot-platform/index.html)，使用右上角【Search】工具条录入关键词，多个关键词使用空格分隔，比如 "服务 API 计费"
 * 搜索 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助
 * 提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
 * 联系 [Chatopera 技术支持](https://www.chatopera.com/mail.html)，从官方获得服务
