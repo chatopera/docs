@@ -22,7 +22,7 @@
 
 * 搜索或创建工单 [Chatopera Issues](https://github.com/chatopera/docs/issues)，历史咨询信息可能会有帮助；提交 BUG、描述新需求、反馈建议或安全漏洞等，创建[工单](https://github.com/chatopera/docs/issues/new/choose)
 
-* 取得技术专家支持，打开 [联系我们](https://www.chatopera.com/mail.html)，在新页面中点击【咨询 Chatopera 云服务使用： 点我开始】
+* 取得技术专家支持，打开[联系我们](https://www.chatopera.com/mail.html)，在新页面中点击【咨询 Chatopera 云服务使用： 点我开始】
 
 ## 文档体系
 <!-- How the documentation is organized  -->
