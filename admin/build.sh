@@ -5,7 +5,7 @@
 
 # constants
 baseDir=$(cd `dirname "$0"`;pwd)
-SITE=$baseDir/../dist
+DIST=$baseDir/../dist
 # functions
 
 # main 
@@ -35,36 +35,36 @@ cd $baseDir/../docfx_project
 
 echo "Start to build ..."
 
-if [ ! -e $SITE ]; then
-    mkdir -p $SITE
+if [ ! -e $DIST ]; then
+    mkdir -p $DIST
 else
-    rm -rf $SITE
-    mkdir -p $SITE
+    rm -rf $DIST
+    mkdir -p $DIST
 fi
 
 if [ ! -d $baseDir/../tmp ]; then
     mkdir -p $baseDir/../tmp
 fi
 
-rm -rf $SITE/_site
+rm -rf $DIST/_site
 # rm -rf obj
 set -x
 
 if [ -x "$(command -v wslpath)" ]; then
     # build on WSL
-    $CMD_PATH build -o `wslpath -w $SITE` ./docfx.json | tee $baseDir/../tmp/log
+    $CMD_PATH build -o `wslpath -w $DIST` ./docfx.json | tee $baseDir/../tmp/log
 else 
-    $CMD_PATH build -o $SITE ./docfx.json | tee $baseDir/../tmp/log
+    $CMD_PATH build -o $DIST ./docfx.json | tee $baseDir/../tmp/log
 fi
 
-if [ -d $SITE/_site ]; then
-    cp $baseDir/../assets/styles/*.js $SITE/_site/styles
+if [ -d $DIST/_site ]; then
+    cp $baseDir/../assets/styles/*.js $DIST/_site/styles
 fi
 
 # Tune index.json for search optimize
 node -e "\
 const fs = require('fs'); \
-const file = '$SITE/_site/index.json'; \
+const file = '$DIST/_site/index.json'; \
 const data = require(file); \
 const keys = Object.keys(data); \
 for(let key of keys) { \
@@ -75,12 +75,12 @@ for(let key of keys) { \
 fs.writeFileSync(file, JSON.stringify(data)); \
 "
 
-cd $SITE/_site
+cd $DIST/_site
 gzip index.json
 
 # config to generate pdfs
 # https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#24-generate-pdf-documentation-command-docfx-pdf
-# docfx pdf -o $SITE
+# docfx pdf -o $DIST
 
 # if [ $? -eq 0 ]; then
 #     start http://localhost:8027/products/chatbot-platform/index.html

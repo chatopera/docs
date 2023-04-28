@@ -9,3 +9,5 @@
 _site
 .*~
 *~
+_raw/
+docfx_project_products/

@@ -70,7 +70,7 @@ _deps
 **/*.cbp
 **/CMakeScripts
 **/compile_commands.json
-dist/_site/
+dist/
 docfx_project/obj/
 package-lock.json
 .env

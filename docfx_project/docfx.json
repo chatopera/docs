@@ -3,7 +3,9 @@
     {
       "src": [
         {
-          "files": ["src/**.csproj"]
+          "files": [
+            "src/**.csproj"
+          ]
         }
       ],
       "dest": "api",
@@ -20,40 +22,84 @@
         ]
       },
       {
-        "files": ["products/cskefu/**.yml", "products/cskefu/**.md"]
+        "files": [
+          "products/cskefu/**.yml",
+          "products/cskefu/**.md"
+        ]
       },
       {
-        "files": ["toc.yml", "*.md"]
+        "files": [
+          "toc.yml",
+          "*.md"
+        ]
       }
     ],
     "resource": [
       {
-        "files": ["images/**", "assets/**"]
+        "files": [
+          "images/**",
+          "assets/**"
+        ]
       }
     ],
     "overwrite": [
       {
         "files": [],
-        "exclude": ["obj/**", "_site/**"]
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": ["global.json"],
-    "fileMetadataFiles": ["file1.json"],
-    "template": ["default", "templates/material"],
+    "globalMetadataFiles": [
+      "global.json"
+    ],
+    "fileMetadataFiles": [
+      "file1.json"
+    ],
+    "template": [
+      "default",
+      "templates/material"
+    ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "markdownEngineProperties": {
-      "markdigExtensions": ["footnotes", "definitionlists", "abbreviations", "tasklists"]
+      "markdigExtensions": [
+        "footnotes",
+        "definitionlists",
+        "abbreviations",
+        "tasklists"
+      ]
     },
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": true,
     "disableGitFeatures": false,
-    "sitemap":{
+    "sitemap": {
       "baseUrl": "https://docs.chatopera.com",
       "priority": 1.0,
       "changefreq": "weekly"
+    }
+  },
+  "pdf": {
+    "content": [
+      {
+        "files": [
+          "products/chatbot-platform/**/*.{md,yml}"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+          "assets/**"
+        ]
+      }
+    ],
+    "wkhtmltopdf": {
+      "additionalArguments": "--enable-local-file-access --load-error-handling ignore --header-left [section] --header-right Chatopera --footer-center [page]/[toPage]"
     }
   }
 }
