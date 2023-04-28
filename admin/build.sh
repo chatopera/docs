@@ -75,6 +75,9 @@ for(let key of keys) { \
 fs.writeFileSync(file, JSON.stringify(data)); \
 "
 
+cd $SITE/_site
+gzip index.json
+
 # config to generate pdfs
 # https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#24-generate-pdf-documentation-command-docfx-pdf
 # docfx pdf -o $SITE

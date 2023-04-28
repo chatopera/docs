@@ -162,18 +162,18 @@ $(function () {
             console.log("using local search");
             var searchData = {};
             var searchDataRequest = new XMLHttpRequest();
+            searchDataRequest.responseType = 'arraybuffer';
 
-            var indexPath = relHref + "index.json";
-            if (indexPath) {
-                searchDataRequest.open('GET', indexPath);
-                searchDataRequest.onload = function () {
-                    if (this.status != 200) {
-                        return;
-                    }
-                    searchData = JSON.parse(this.responseText);
+            var indexPath = relHref + "index.json.gz";
+            searchDataRequest.open('GET', indexPath);
+            searchDataRequest.onload = function () {
+                if (this.status != 200) {
+                    return;
                 }
-                searchDataRequest.send();
+                // searchData = JSON.parse(this.responseText);
+                searchData = JSON.parse(pako.inflate(this.response, { to: 'string' }));
             }
+            searchDataRequest.send();
 
             $("body").bind("queryReady", function () {
                 var results = [];
