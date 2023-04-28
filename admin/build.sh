@@ -57,6 +57,10 @@ else
     $CMD_PATH build -o $SITE ./docfx.json | tee $baseDir/../tmp/log
 fi
 
+if [ -d $SITE/_site ]; then
+    cp $baseDir/../assets/styles/*.js $SITE/_site/styles
+fi
+
 # config to generate pdfs
 # https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html#24-generate-pdf-documentation-command-docfx-pdf
 # docfx pdf -o $SITE

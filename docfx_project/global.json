@@ -4,7 +4,7 @@
   "_appLogoPath": "images/chatopera_logo_2022_1024.png",
   "_appFaviconPath": "images/favicon.ico",
   "_description": "聊天机器人、智能客服、智能问答、对话内容管理、对话机器人、聊天机器人平台。 Chatopera 重新定义聊天机器人",
-  "_enableSearch": false,
+  "_enableSearch": true,
   "_enableNewTab": true,
   "_disableNavbar": false,
   "_disableBreadcrumb": false,
