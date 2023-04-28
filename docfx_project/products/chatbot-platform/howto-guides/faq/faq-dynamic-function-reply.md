@@ -99,7 +99,7 @@ exports.get_purch_incharge_contact = async function() {
 
 ![机器人控制台进行测试](../../../../images/products/platform/QQ截图20220616155438.png)
 
-下一步，就可以接入到业务系统，比如春松客服。在返回结果中，除了使用文本的形式，还可以支持自定义的数据结构，在春松客服中，返回结果支持展示为卡片、图文、按钮、列表的形式，详细参考（[https://docs.chatopera.com/products/cskefu/work-chatbot/message-types.html](https://docs.chatopera.com/products/cskefu/work-chatbot/message-types.html)）。
+下一步，就可以接入到业务系统，比如春松客服。在返回结果中，除了使用文本的形式，还可以支持自定义的数据结构，在春松客服中，返回结果支持展示为卡片、图文、按钮、列表的形式，详细参考（[https://docs.cskefu.com/docs/work-chatbot/message-types](https://docs.cskefu.com/docs/work-chatbot/message-types)）。
 
 ## 高级进阶
 

@@ -1,0 +1,12 @@
+- name: "开源许可协议"
+  href: https://www.cskefu.com/2022/06/24/cskefu-opensource-license/
+- name: "春松客服大讲堂"
+  href: training.md
+- name: "开发环境搭建"
+  href: engineering.md
+- name: "提交代码"
+  href: contribution.md
+- name: "系统维护"
+  href: maintainence.md
+- name: "REST APIs"
+  href: restapi.md
