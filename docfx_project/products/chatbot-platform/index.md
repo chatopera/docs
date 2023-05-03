@@ -1,6 +1,6 @@
-# Chatopera 云服务 <!-- markup:skip-line -->
+# Chatopera 云服务
 
-[Chatopera 云服务](https://bot.chatopera.com/) 重新定义聊天机器人。Chatopera 云服务于 [2018 年 11 月 8 日](https://mp.weixin.qq.com/s/HMLjWN_ynpJWJx_OiL0GqQ)上线，持续为您提供稳定、安全、先进的聊天机器人服务。
+在人工智能时代，Chatopera 相信，再小的个体，也有自己的聊天机器人。过去定制聊天机器人服务成本高、周期长，Chatopera 云服务重新定义聊天机器人。Chatopera 云服务于 [2018 年 11 月 8 日](https://mp.weixin.qq.com/s/HMLjWN_ynpJWJx_OiL0GqQ)上线，提供安全、稳定可靠的定制聊天机器人的云服务。
 
 [https://bot.chatopera.com/](https://bot.chatopera.com/)
 
@@ -9,9 +9,7 @@
 
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
-* 浏览 [Chatopera 云服务概述](https://docs.chatopera.com/products/chatbot-platform/overview.html)
-
-* 完成 [新手任务：使用入门教程一步步实现智能对话机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)，完成入门教程共需要四十分钟，包含 5 个小节。
+* 完成 [新手任务：使用入门教程一步步实现智能对话机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)
 
 ## 帮助
 <!-- Getting Help -->
