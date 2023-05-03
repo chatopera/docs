@@ -4,17 +4,16 @@
 
 ## 安装
 
-* 打开【地址1】的链接后，浏览器提示错误时，请使用【地址2】进行下载
 * 下载后，得到应用安装包，双击后根据提示进行安装
+* 安装过程中遇到问题先查看本文下面的《可能遇到的问题》一节，如有新问题[创建工单](https://github.com/chatopera/docs/issues)
 
 | 版本   | 操作系统 | 下载地址                                                                                                                                                                         |
 | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| v2.5.7 | macOS  | [地址1（快）](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1124929/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) |
-| v2.5.7 | Windows  | [地址1（快）](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe)  \| [地址2（备份）](https://gitee.com/chatopera/cskefu/attach_files/1124853/download/%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe)|
+| v2.5.7 | macOS  | [地址1](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) |
+| v2.5.7 | Windows  | [地址1](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe) |
 <!-- markup:table-caption 多轮对话设计器下载地址 -->
 
-**提示：点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，会启动下载。**
-![下载多轮对话设计器](../../../../../images/products/platform/chatopera-cde-download.gif) <!-- markup:skip-line -->
+**提示：点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，启动下载。**
 
 ## 工具介绍
 
