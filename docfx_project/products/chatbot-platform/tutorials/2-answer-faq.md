@@ -72,7 +72,7 @@
 
 ### 和机器人进行对话
 
-点击 `greetings` 话题的【编辑】按钮，`阿Q`的`greetings` 脚本编辑窗口。
+点击 `greetings` 话题的【编辑】按钮，进入 `阿Q`的`greetings` 脚本编辑窗口。
 
 ![脚本编辑](../../../images/products/platform/screenshot-20210913-195806.png)
 

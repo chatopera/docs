@@ -16,6 +16,6 @@
 
 [<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
-[<4/5> 添加意图“预定机票”](/products/chatbot-platform/tutorials/4-book-ticket-task.html)
+[<4/5> 添加意图对话](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 [<5/5> 查看统计和历史](/products/chatbot-platform/tutorials/5-stats-history.html)

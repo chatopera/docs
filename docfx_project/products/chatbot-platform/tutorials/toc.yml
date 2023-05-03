@@ -4,7 +4,7 @@
   href: 2-answer-faq.md
 - name: <3/5> 添加脚本和函数
   href: 3-add-scripts-function.md
-- name: <4/5> 添加函数查询天气
-  href: 4-request-weather-info.md
+- name: <4/5> 添加意图对话
+  href: 4-add-intent.md
 - name: <5/5> 查看统计和历史
   href: 5-stats-history.md

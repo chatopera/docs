@@ -10,7 +10,7 @@
 
 ![脚本编辑区域](../../../images/products/platform/screenshot-20210913-202526.png)
 
-增加这样的一段内容：
+追加下面的内容：
 
 ```脚本
 + __faq_hot_list
@@ -21,7 +21,7 @@
 
 ## 添加函数
 
-接下来，点击【脚本】旁边的【函数】，进入函数编辑窗口，追加下面一段内容[^function-js]：
+接下来，点击【脚本】旁边的【函数】，进入函数编辑窗口，追加下面的内容[^function-js]：
 
 ```函数
 // 问候语中关联常见问题
@@ -69,6 +69,6 @@ __faq_hot_list
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加意图“预定机票”](/products/chatbot-platform/tutorials/4-book-ticket-task.html)
+<< 上一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加意图对话](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 [^function-js]: 这是一段 JavaScript 代码，JavaScript 是非常容易掌握的编程语言。

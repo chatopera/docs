@@ -25,4 +25,3 @@ fi
 git commit -m "$msg"
 git push origin master
 git push github master
-git push gitee master
