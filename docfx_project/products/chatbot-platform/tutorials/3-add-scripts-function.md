@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <3/5> 使用脚本和函数
+# <3/5> 添加脚本和函数
 << 上一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins 
 
 接下来，我们为 `阿Q`添加个性化的问候语。

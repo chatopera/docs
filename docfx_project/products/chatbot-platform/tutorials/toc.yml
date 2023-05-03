@@ -2,7 +2,7 @@
   href: 1-create-bot.md
 - name: <2/5> 添加对话语料
   href: 2-answer-faq.md
-- name: <3/5> 使用脚本和函数
+- name: <3/5> 添加脚本和函数
   href: 3-add-scripts-function.md
 - name: <4/5> 添加函数查询天气
   href: 4-request-weather-info.md

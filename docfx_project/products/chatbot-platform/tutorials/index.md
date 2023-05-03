@@ -14,7 +14,7 @@
 
 [<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html)
 
-[<3/5> 使用脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
+[<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
 [<4/5> 添加意图“预定机票”](/products/chatbot-platform/tutorials/4-book-ticket-task.html)
 
