@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <1/5> 创建机器人 <!-- markup:skip-line -->
+# <1/5> 创建机器人
 
 << 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 

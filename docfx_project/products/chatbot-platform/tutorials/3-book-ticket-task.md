@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <3/5> 添加意图“预定机票” <!-- markup:skip-line -->
+# <3/5> 添加意图“预定机票” 
 
 << 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
