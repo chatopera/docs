@@ -5,15 +5,14 @@
 ## 安装
 
 * 下载后，得到应用安装包，双击后根据提示进行安装
-* 安装过程中遇到问题先查看本文下面的《可能遇到的问题》一节，如有新问题[创建工单](https://github.com/chatopera/docs/issues)
+* 安装过程中遇到问题先查看本文下面的“可能遇到的问题”一节，如遇新问题[创建工单](https://github.com/chatopera/docs/issues)
 
-| 版本   | 操作系统 | 下载地址                                                                                                                                                                         |
-| ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| v2.5.7 | macOS  | [地址1](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) |
-| v2.5.7 | Windows  | [地址1](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe) |
+| 版本   | 下载地址                                                                                                                                                                         |
+| -----  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v2.5.7 | [macOS](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) \| [Windows](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe) |
 <!-- markup:table-caption 多轮对话设计器下载地址 -->
 
-**提示：点击【地址1】未能开始下载时，将【地址1】拖拽到新的 Tab 页，启动下载。**
+**提示：点击下载地址未能开始下载时，将下载地址拖拽到新的 Tab 页，启动下载。**
 
 ## 工具介绍
 
@@ -31,7 +30,7 @@
 
 ## 可能遇到的问题
 
-**1. macOS 上首次启动警告**
+### macOS 上安装和启动的提示
 
 ![macos 权限问题](../../../../../images/products/cde/mac-install-0.png)
 
