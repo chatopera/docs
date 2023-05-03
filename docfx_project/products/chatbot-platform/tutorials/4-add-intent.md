@@ -23,9 +23,7 @@
 
 ![](../../../images/assets/screenshot_20230503115641.png)
 
-点击【新建意图】。
-
-复制粘贴以下内容到表单中。
+点击【新建意图】，复制粘贴以下内容到表单中。
 
 ```意图标识名
 book_airplane_ticket
@@ -53,9 +51,13 @@ book_airplane_ticket
 | `destPlace` | `@LOC` | 是 | 您要去的目的城市或机场是哪里？ |
 <!-- markup:table-caption 添加槽位表单 -->
 
+添加完成后，看起来是这样的。
+
+![添加槽位信息](../../../images/products/platform/screenshot-20210914-015710.png)
+
 ## 添加说法
 
-接下来，我们为预约机票添加一些说法。复制下面三行内容；粘贴到【用户说法】中；点击【添加】。
+接下来，我们为预约机票添加一些说法。复制下面的内容；粘贴到【用户说法】中；点击【添加】。
 
 ```说法
 预约机票
@@ -65,11 +67,12 @@ book_airplane_ticket
 帮我预约{date}的机票
 ```
 
-![添加用户说法](../../../images/products/platform/screenshot-20210915-163124.png)
+![添加用户说法](../../../images/assets/screenshot_20230503170300.png)
 
 添加完成后，看起来是这样的。
 
-![添加槽位信息](../../../images/products/platform/screenshot-20210914-015710.png)
+![](../../../images/assets/screenshot_20230503170203.png)
+
 
 ## 训练意图识别模型
 
