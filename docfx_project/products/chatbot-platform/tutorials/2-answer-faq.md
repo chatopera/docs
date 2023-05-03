@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <2/5> 添加对话语料 <!-- markup:skip-line -->
 
-<< 上一步：[<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins <!-- markup:skip-line -->
+<< 上一步：[<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
 现在，机器人还不能回答一些实际的问题。我们先从知识库开始，设定问答对，让机器人可以回答知识库里的问题。
 

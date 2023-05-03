@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <4/5> 添加函数查询天气 <!-- markup:skip-line -->
 
-<< 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins <!-- markup:skip-line -->
+<< 上一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
 现在我们还需要支持一个问答技能：查询天气。比如，对话用户发送“上海天气怎么样？”，机器人回答当天的天气情况。
 

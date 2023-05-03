@@ -1,18 +1,14 @@
 # 入门教程
 
-入门教程是一个充满趣味而简单的新手任务，这个过程轻松而且富有知识，**完成入门教程共需要四十分钟，包含 5 个小节**。在开始动手之前，可以先体验示例机器人。完成入门教程后，你会得到一个具有同样对话能力的机器人。
-
-## 体验示例机器人
-
-体验地址：关注微信公众号 Chatopera，公众号 ID: chatopera
-
-![Chatopera 公众号](../../../images/products/chatopera_gzh_20230215072058.png)
-
-我们为这个示例机器人设计的对话，只是为了方便在入门的过程中理解和学习，待完成《入门教程》，你可以用 Chatopera 云服务开发出具有更强大的对话能力、适用于各种场景的智能对话机器人。
+入门教程帮助你系统性的了解 Chatopera 云服务，所以本教程的关键在于读者可以快速完成，而不侧重理解产品的使用细节。
 
 ## 准备工作
 
-确保你已经注册了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)。接下来就发布你在 Chatopera 云服务的第一个聊天机器人吧！
+确保你已经注册了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)。接下来就发布你的第一个聊天机器人吧！
+
+## 新手任务
+
+入门教程包括 5 个简单的任务，你只需要一步步的按照说明操作即可：点击、复制、粘贴。完成入门教程大约需要 25 分钟。
 
 [<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html)
 

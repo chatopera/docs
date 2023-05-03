@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <3/5> 添加意图“预定机票” <!-- markup:skip-line -->
 
-<< 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins <!-- markup:skip-line -->
+<< 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
 完成本节内容，春松机器人能够为对话用户提供预约机票的服务：通过自然语言交互的形式获取到了要购买机票相关的信息，假设集成了一个出票接口，完成出票。
 
