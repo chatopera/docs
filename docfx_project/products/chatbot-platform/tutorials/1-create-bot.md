@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <1/5> 创建机器人
 
-<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
+<< 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
 ## 登录并创建机器人
 
@@ -43,7 +43,7 @@
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-<< 上一步：[入门教程首页](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) <!-- markup:skip-line -->
+<< 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) <!-- markup:skip-line -->
 
 
 [^visitor]: 访客可以是你自己、你的同事或消费者。总之，开始提供服务。

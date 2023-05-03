@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
-# <3/5> 添加意图“预定机票” 
+# <4/5> 添加意图“预定机票” 
 
-<< 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
+<< 上一步：[<3/5> 使用脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins 
 
 完成本节内容，春松机器人能够为对话用户提供预约机票的服务：通过自然语言交互的形式获取到了要购买机票相关的信息，假设集成了一个出票接口，完成出票。
 
@@ -248,4 +248,4 @@ exports.rebookAirplaneTicket = async function() {
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-<< 上一步：[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html) <!-- markup:skip-line -->
+<< 上一步：[<3/5> 使用脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 查看统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html) 

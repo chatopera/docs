@@ -10,12 +10,12 @@
 
 入门教程包括 5 个简单的任务，你只需要一步步的按照说明操作即可：点击、复制、粘贴。完成入门教程大约需要 25 分钟。
 
-[<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html)
+[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html)
 
-[<2/5> 添加对话语料](https://docs.chatopera.com/products/chatbot-platform/tutorials/2-answer-faq.html)
+[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html)
 
-[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html)
+[<3/5> 使用脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
-[<4/5> 添加函数查询天气](https://docs.chatopera.com/products/chatbot-platform/tutorials/4-request-weather-info.html)
+[<4/5> 添加意图“预定机票”](/products/chatbot-platform/tutorials/4-book-ticket-task.html)
 
-[<5/5> 查看统计和历史](https://docs.chatopera.com/products/chatbot-platform/tutorials/5-stats-history.html)
+[<5/5> 查看统计和历史](/products/chatbot-platform/tutorials/5-stats-history.html)

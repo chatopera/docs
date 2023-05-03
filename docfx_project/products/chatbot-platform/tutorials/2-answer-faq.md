@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <2/5> 添加对话语料
 
-<< 上一步：[<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
+<< 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
 现在，`阿Q`还不能回答很多问题，需要我们添加对话语料。我们先从知识库开始，设定问答对。
 
@@ -41,7 +41,14 @@
 
 ### 安装多轮对话设计器
 
-下载并安装[多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)。
+* 下载后，得到应用安装包，双击后根据提示进行安装[^install-cde]
+
+| 版本   | 下载地址                                                                                                                                                                         |
+| -----  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v2.5.7 | [macOS](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) \| [Windows](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe) |
+<!-- markup:table-caption 多轮对话设计器下载地址 -->
+
+**提示：点击下载地址未能开始下载时，将下载地址拖拽到新的 Tab 页，启动下载。**
 
 ### 添加机器人
 
@@ -65,17 +72,17 @@
 
 ### 和机器人进行对话
 
-点击 `greetings` 话题的【编辑】按钮，进入脚本编辑面板。
+点击 `greetings` 话题的【编辑】按钮，`阿Q`的`greetings` 脚本编辑窗口。
 
 ![脚本编辑](../../../images/products/platform/screenshot-20210913-195806.png)
 
-在脚本编辑面板中间，有对话框，在文本发送区域，输入`你好`，然后点击【发送】。
+在脚本编辑窗口中间，有对话框，在文本发送区域，输入`你好`，然后点击【发送】。
 
 当你看到机器人回复了`你好！`，那么本步骤就完成了！恭喜你完成本节任务！
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<1/5> 创建机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 添加意图“预定机票”](https://docs.chatopera.com/products/chatbot-platform/tutorials/3-book-ticket-task.html) <!-- markup:skip-line -->
+<< 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 使用脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
 ## 可能遇到的问题
 
@@ -90,3 +97,4 @@
 
 
 [^help1]: 可能遇到问题，比如提示[【信息不匹配，请确认机器人信息】](#信息不匹配请确认机器人信息)，参考本文后面的[《可能遇到的问题》](#可能遇到的问题)获得解决方案。
+[^install-cde]: 安装过程中遇到问题查看[可能遇到的问题](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html#%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98)，如遇新问题[创建工单](https://github.com/chatopera/docs/issues)
