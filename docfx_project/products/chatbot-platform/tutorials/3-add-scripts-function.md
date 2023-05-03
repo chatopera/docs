@@ -8,8 +8,6 @@
 
 在多轮对话设计器中，打开 `阿Q` 话题 `greetings` 脚本编辑窗口。
 
-![脚本编辑区域](../../../images/products/platform/screenshot-20210913-202526.png)
-
 追加下面的内容：
 
 ```脚本
@@ -19,9 +17,11 @@
 
 点击保存。
 
+![脚本编辑区域](../../../images/products/platform/screenshot-20210913-202526.png)
+
 ## 添加函数
 
-接下来，点击【脚本】旁边的【函数】，进入函数编辑窗口，追加下面的内容[^function-js]：
+点击【脚本】旁边的【函数】，进入函数编辑窗口，追加下面的内容[^function-js]：
 
 ```函数
 // 问候语中关联常见问题
@@ -38,18 +38,15 @@ exports.get_greetings = async function() {
 }
 ```
 
+点击【保存】，此时，得到提示信息: `上传数据成功`。
+
+![上传数据](../../../images/products/platform/screenshot-20210913-203144.png)
 
 添加后，函数编辑区域看起来是这样。
 
 ![函数编辑区域](../../../images/products/platform/screenshot-20210913-202923.png)
 
-点击【保存】，此时，得到提示信息: `上传数据成功`。
-
-![上传数据](../../../images/products/platform/screenshot-20210913-203144.png)
-
 ## 测试对话
-
-![测试对话](../../../images/products/platform/screenshot-20210913-203616.png)
 
 在聊天对话框，输入：
 
@@ -64,6 +61,7 @@ __faq_hot_list
 1. 海口有几个机场
 ```
 
+![测试对话](../../../images/products/platform/screenshot-20210913-203616.png)
 
 当你看到了这样的回答，那么本步骤就完成了！恭喜你完成本节任务！
 

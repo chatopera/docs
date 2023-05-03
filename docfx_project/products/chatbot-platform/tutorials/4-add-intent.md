@@ -3,7 +3,7 @@
 
 << 上一步：[<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
 
-我们希望`阿Q`可以引导访客完成下单机票，这需要使用意图识别模块和多轮对话设计器。
+如何让`阿Q`可以引导访客完成预约机票呢？这需要使用意图识别模块和多轮对话设计器。
 
 ## 引用系统词典
 
@@ -25,8 +25,6 @@
 
 点击【新建意图】。
 
-![新建意图](../../../images/products/platform/screenshot-20210914-013838.png)
-
 复制粘贴以下内容到表单中。
 
 ```意图标识名
@@ -35,15 +33,15 @@ book_airplane_ticket
 
 点击【确定】。现在，就有了一个意图，接下来为这个意图添加训练数据。
 
-## 添加用户说法
+![新建意图](../../../images/products/platform/screenshot-20210914-013838.png)
 
-![](../../../images/assets/screenshot_20230503120254.png)
+## 添加用户说法
 
 在 `book_airplane_ticket` 的操作中，点击【编辑】，进入意图识别编辑页面。
 
-我们为预约机票添加一些说法。
+![](../../../images/assets/screenshot_20230503120254.png)
 
-![添加用户说法](../../../images/products/platform/screenshot-20210915-163124.png)
+我们为预约机票添加一些说法。
 
 复制下面三行内容；粘贴到【用户说法】中；点击【添加】。
 
@@ -52,6 +50,8 @@ book_airplane_ticket
 预定飞机票
 我想预约机票
 ```
+
+![添加用户说法](../../../images/products/platform/screenshot-20210915-163124.png)
 
 ## 添加意图槽位
 
@@ -65,11 +65,15 @@ book_airplane_ticket
 | `destPlace` | `@LOC` | 是 | 您要去的目的城市或机场是哪里？ |
 <!-- markup:table-caption 添加槽位表单 -->
 
-这部分编辑好以后，看起来是这样的。
+添加完成后，看起来是这样的。
 
 ![添加槽位信息](../../../images/products/platform/screenshot-20210914-015710.png)
 
-有了用户说法和槽位后，就可以训练了，滚动到槽位表格下面，点击【保存】。在保存后，会提示进行模型的训练，大约几秒钟后，提示`训练成功，可进行测试`。
+滚动到槽位表格下面，点击【保存】。
+
+![](../../../images/assets/screenshot_20230503154626.png)
+
+在保存后，会提示进行模型的训练，大约几秒钟后，提示`训练成功，可进行测试`。
 
 ## 测试意图
 
@@ -87,20 +91,19 @@ book_airplane_ticket
 
 ![](../../../images/assets/screenshot_20230503120924.png)
 
-现在阿Q可以识别意图了，但是要将意图识别和其它的对话语料融合，还需要按照下面步骤实现。
+现在阿Q可以识别意图了，但是要将意图识别和其它的对话语料融合，还需要按照下面步骤操作。
 
 ## 融合到多轮对话
 
-回到多轮对话设计器，假设还在刚刚的 `greetings` 话题编辑窗口。
+回到多轮对话设计器，在刚刚打开的 `greetings` 话题编辑窗口。
 
 ![新建话题](../../../images/products/platform/screenshot-20210914-022010.png)
-
 
 点击【新建话题】，话题名称填写`intents`。
 
 ![](../../../images/assets/screenshot_20230503121302.png)
 
-此时会进入一个新的脚本编辑窗口，在脚本编辑区域，添加如下内容：
+此时会进入一个新的脚本编辑窗口，在脚本编辑区域，复制粘贴以下的内容：
 
 ```脚本
 // 预约机票 
@@ -122,7 +125,7 @@ intent {keep} book_airplane_ticket
 
 ![意图匹配器](../../../images/products/platform/screenshot-20210915-135243.png)
 
-点击【保存】，然后，点击【函数】，进入函数编辑窗口，在上一节编辑的函数后，追加如下内容：
+点击【保存】。然后，点击【函数】，进入函数编辑窗口，在之前编辑的函数后，复制粘贴下面的内容：
 
 ```函数
 // 提取时间实体
@@ -201,7 +204,7 @@ exports.rebookAirplaneTicket = async function() {
 
 ## 测试意图会话
 
-在多轮对话设计器内的聊天窗口，发送文本：
+在多轮对话设计器内的对话窗口，发送文本：
 
 ```文本
 我想预约机票
@@ -219,4 +222,4 @@ exports.rebookAirplaneTicket = async function() {
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 查看统计和历史](/products/chatbot-platform/tutorials/5-stats-history.html) 
+<< 上一步：[<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 查看使用情况](/products/chatbot-platform/tutorials/5-stats-history.html) 
