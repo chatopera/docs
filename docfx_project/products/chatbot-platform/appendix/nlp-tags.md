@@ -43,7 +43,7 @@ this.message.tags = ["nis","ude1","vi","n"]
 | end   | 仅用于终##终                                         |
 | f     | 方位词                                               |
 | g     | 学术词汇                                             |
-| gb    | 生物相关词汇                                         |
+| gb    | 生物相关词汇；或 Chatopera Built-in 词汇，在 Chatopera 意图识别模块使用该标签作为自定义词汇                                         |
 | gbc   | 生物类别                                             |
 | gc    | 化学相关词汇                                         |
 | gg    | 地理地质相关词汇                                     |
@@ -118,6 +118,7 @@ this.message.tags = ["nis","ude1","vi","n"]
 | rzt   | 时间指示代词                                         |
 | rzv   | 谓词性指示代词                                       |
 | s     | 处所词                                               |
+| st     | 停用词，stopword 缩写                                               |
 | t     | 时间词                                               |
 | tg    | 时间词性语素                                         |
 | u     | 助词                                                 |
