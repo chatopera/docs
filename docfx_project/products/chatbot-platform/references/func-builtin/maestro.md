@@ -121,6 +121,63 @@ let dates = await this.maestro.extractTime("明天和后天是几月几号？", 
 // dates  [ '2021年09月02日', '2021年09月03日' ]
 ```
 
+### extractRegexDicts
+
+提取指定文本中，包含的[自定义正则表达式词典](/products/chatbot-platform/howto-guides/dicts/dicts-regex.html)信息。
+
+
+```JavaScript
+let matches = await this.maestro.extractRegexDicts(string);
+```
+
+
+返回值：
+
+```JavaScript
+{
+    "词典标识": [
+        {
+            "val": 匹配值,
+            "begin": 开始位置,
+            "end": 结束位置,
+        }
+    ],
+    ...
+}
+```
+
+
+举例，比如在函数中使用：
+
+```JavaScript
+exports.getCustomRegexDictnames = async function() {
+    debug("this.message.original %s", this.message.original)
+    let matches = await this.maestro.extractRegexDicts(this.message.original);
+    debug("[extractRegexDicts] matches %j", matches);
+
+    return {
+        text: "hello "
+    }
+}
+```
+
+返回值：
+
+```
+{
+  "email": [
+    {
+      "begin": 18,
+      "end": 28,
+      "val": "doo@cc.com"
+    }
+  ]
+}
+```
+
+查看详细[使用说明](https://github.com/chatopera/docs/issues/79#issuecomment-1549241787)。
+
+
 ### digest
 
 自动生成文本的摘要，假设文本有“.。,!?”等分隔句子的符号。那么 `digest` 将会获得其中最关键的句子作为摘要。
