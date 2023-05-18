@@ -11,6 +11,25 @@ this.message.original // String, 输入文本的原始内容
 this.message.clean // String, 输入文本的改写，经过词根转化的输入字符串
 ```
 
+`this.message` 还包括丰富的自然语言处理信息，如下的函数打印 `words` 对应的 `tags`(词性), `lemms`(词根)。
+
+```函数
+exports.getCustomDictnames = async function() {
+    debug("words %j, %j, %j", this.message.words, this.message.tags, this.message.lemms);
+
+    let terms = _.zip(this.message.words, this.message.tags, this.message.lemms);
+
+    for (let i in terms) {
+        debug("No. %d, word: %s, tag: %s, lemm: %s", i, terms[i][0], terms[i][1], terms[i][2]);
+    }
+
+    return {
+        text: "hello"
+    }
+}
+```
+
+下面是详细介绍。
 
 ## 词性信息
 
@@ -34,24 +53,6 @@ this.message.pronouns // JSONArray, 输入文本包含的指示代词
 
 ```函数
 this.message.lemms // String, 输入文本的改写，经过词根转化的输入字符串
-```
-
-比如，如下的函数打印 `words` 对应的 `tags`(词性), `lemms`(词根)。
-
-```函数
-exports.getCustomDictnames = async function() {
-    debug("words %j, %j, %j", this.message.words, this.message.tags, this.message.lemms);
-
-    let terms = _.zip(this.message.words, this.message.tags, this.message.lemms);
-
-    for (let i in terms) {
-        debug("No. %d, word: %s, tag: %s, lemm: %s", i, terms[i][0], terms[i][1], terms[i][2]);
-    }
-
-    return {
-        text: "hello"
-    }
-}
 ```
 
 当一个词汇(`word`) 不在自定义词汇表词典，或本身就是标准词时，在 `this.message.lemms` 里的对应信息就是自身。
