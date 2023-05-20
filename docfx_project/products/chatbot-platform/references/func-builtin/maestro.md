@@ -201,6 +201,70 @@ let words = await this.maestro.keywords("冬天来了。春天还会远吗?", 5)
 第一个参数文本内容，第二个参数是返回关键词语的数量。
 返回值 `words` 是一个数组，是输入文本中的若干词语，按照重要程度排序。
 
+
+## FAQs Integrations
+
+在 `maestro` 集成[知识库](/products/chatbot-platform/howto-guides/faq/faq-qna.html)的相关功能，知识库是通过问答对的形式管理机器人的语料。
+
+### searchFAQs
+
+在函数中检索该机器人的知识库。
+
+```函数
+let results = await this.maestro.searchFAQs(text, topk);
+debug("results faqs %j", results);
+```
+
+其中，`text` 是搜索条件，不能为 null 或空；topk 是最多检索返回多少相关信息，默认为 20。比如，
+
+```
+let results = await this.maestro.searchFAQs("黄金的主要产地", 10);
+debug("results faq %j", results);
+```
+
+返回值 `results` 是一个数组( JSONArray)，每个成员是一个问答对信息，数据按照 `score` 降序排序。数据结构如下：
+
+```
+[
+  {
+    "id": "{{DOC_ID}}",
+    "score": 1,
+    "post": "黄金的主要产地",
+    "replies": [
+      {
+        "rtype": "plain",
+        "enabled": true,
+        "content": "美国，圣地亚哥"
+      }
+    ],
+    "categories": [
+      "标的"
+    ]
+  }
+]
+```
+
+其中，`score` 为相似度（[0, 1] 区间）；`post` 为问答对标准问；`id` 是问答对 ID；`replies` 为答案信息；`categories` 为分类信息。 
+
+以下介绍更为详细的使用例子：
+
+```
+# 脚本
++ {keep} 查询知识库
+- ^searchBotFAQ()
+
+# 函数
+exports.searchBotFAQ = async function() {
+    let results = await this.maestro.searchFAQs("黄金的主要产地", 1);
+    debug("results faq %j", results);
+
+    return {
+        text: "知识库返回"
+    }
+}
+```
+
+
 ## Notifications
 
 通知服务。
