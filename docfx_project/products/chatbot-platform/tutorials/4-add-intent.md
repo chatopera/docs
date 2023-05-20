@@ -144,7 +144,6 @@ async function extractTimeEntity(maestro, entities, property) {
 
 // 确认订单信息
 exports.handleAirplaneTicketOrder = async function() {
-
     debug("[handleAirplaneTicketOrder] this.intent", JSON.stringify(this.intent))
     let entities = _.keyBy(this.intent.entities, 'name');
     let date = await extractTimeEntity(this.maestro, entities, "date");
@@ -176,7 +175,7 @@ exports.handleAirplaneTicketOrder = async function() {
 
 // 下单
 exports.placeAirplaneTicketOrder = async function() {
-    this.intent.drop = true;
+    this.intent.drop = true; // **关闭当前意图会话**
     let entities = _.keyBy(this.intent.entities, 'name');
 
     return {
@@ -193,7 +192,7 @@ exports.placeAirplaneTicketOrder = async function() {
 
 // 不预约了
 exports.cancelAirplanTicketReservation = async function() {
-    this.intent.drop = true;
+    this.intent.drop = true; // **关闭当前意图会话**
     return {
         text: "{CLEAR} 好的，下次再帮您预约"
     }
@@ -202,7 +201,7 @@ exports.cancelAirplanTicketReservation = async function() {
 // 重新预约机票
 exports.rebookAirplaneTicket = async function() {
     debug("rebookAirplaneTicket this.intent", this.intent);
-    this.intent.drop = true;
+    this.intent.drop = true; // **关闭当前意图会话**
     return "^topicRedirect(\"intents\", \"book_airplane_ticket\", true)"
 }
 ```
