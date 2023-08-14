@@ -9,7 +9,7 @@
 
 | 版本   | 下载地址                                                                                                                                                                         |
 | -----  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| v2.5.7 | [macOS](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) \| [Windows](http://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe) |
+| v2.5.7 | [macOS](https://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.dmg) \| [Windows](https://cdndownload2.chatopera.com/installation%2Fcde%2F%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D%E8%AE%BE%E8%AE%A1%E5%99%A8-2.5.7.exe) |
 <!-- markup:table-caption 多轮对话设计器下载地址 -->
 
 **提示：点击下载地址未能开始下载时，将下载地址拖拽到新的 Tab 页，启动下载。**
