@@ -44,10 +44,6 @@ Chatopera 云服务的计费接口包括：
 
 **购买的资源包数额越大，则 API 调用配额次数越大、资源包周期越长、换算为单次请求越便宜。**
 
-资源包包括次数额度，折合每次 API 请求的价格如下：
-
-![资源包和对应价格](../../../images/platform/chatopera_cloud_pricing_20230210150208.png)
-
 资源包购买地址 -
 
 [https://bot.chatopera.com/billing/purchase](https://bot.chatopera.com/billing/purchase)
