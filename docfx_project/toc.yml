@@ -1,3 +1,6 @@
 - name: 云服务
   href: products/chatbot-platform/
   topicHref: products/chatbot-platform/index.md
+
+- name: 私有部署
+  href: https://docs.chatopera.com/products/chatbot-platform/contract/on-premise.html

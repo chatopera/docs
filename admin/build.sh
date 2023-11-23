@@ -17,8 +17,8 @@ DIST=$baseDir/../dist
 CMD_PATH=docfx
 if [ -f /opt/docfx/docfx ]; then
     CMD_PATH="/opt/docfx/docfx"
-elif [ -f /mnt/c/Users/Administrator/.dotnet/tools/docfx.exe ]; then
-    CMD_PATH="/mnt/c/Users/Administrator/.dotnet/tools/docfx.exe"
+elif [ -f /c/Users/Administrator/.dotnet/tools/docfx.exe ]; then
+    CMD_PATH="/c/Users/Administrator/.dotnet/tools/docfx.exe"
 fi
 $CMD_PATH --version
 
