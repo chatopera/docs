@@ -19,6 +19,7 @@
 * [知识库热门问题查看和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-hot.html)
 * [使用函数获得动态答案](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-dynamic-function-reply.html)
 * [话术助手快速检索话术](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-assistant.html)
+* [集成微信实现转人工客服](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/human-wecom.html)
 
 ## 意图识别
 

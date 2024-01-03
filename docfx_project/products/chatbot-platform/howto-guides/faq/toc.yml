@@ -13,3 +13,5 @@
   href: faq-dynamic-function-reply.md
 - name: 话术助手快速检索话术
   href: faq-assistant.md
+- name: 集成微信实现转人工客服
+  href: human-wecom.md
