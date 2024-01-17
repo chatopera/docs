@@ -87,15 +87,16 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 
 | provider     | key                  | 解释                                                                                                            |
 | ------------ | -------------------- | --------------------------------------------------------------------------------------------------------------- |
-| faq          |                      |                                                                                                                 |
+| faq          | [知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-qna.html)                     |                                                                                                                 |
 |              | docId                | 文档 ID                                                                                                         |
 |              | post                 | 标准问                                                                                                          |
 |              | score                | 分数                                                                                                            |
-| intent       | 意图识别             | 更多描述参考[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/intent.html) |
+| intent       | [意图识别](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)             | 更多描述参考[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/intent.html) |
 |              | intent.name          | 意图名称                                                                                                        |
 |              | intent.state         | 意图会话状态                                                                                                    |
 |              | intent.entities      | 意图中的命名实体                                                                                                |
-| conversation | 多轮对话             |                                                                                                                 |
+| llm | [大语言模型（LLM）](https://docs.chatopera.com/products/chatbot-platform/howto-guides/llm/llm-enable.html)             |                                                                                                                 |
+| conversation | [多轮对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)             |                                                                                                                 |
 | fallback     | 兜底回复             |                                                                                                                 |
 | mute         | 该用户被该机器人屏蔽 |                                                                                                                 |
 
