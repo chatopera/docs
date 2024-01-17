@@ -14,6 +14,10 @@
   href: intent/toc.yml
   topicHref: intent/intent-maintain.md
 
+- name: 大语言模型
+  href: llm/toc.yml
+  topicHref: llm/llm-enable.md
+
 - name: 多轮对话
   href: convs/toc.yml
   topicHref: convs/cde-install.md

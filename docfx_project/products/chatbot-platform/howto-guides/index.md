@@ -40,6 +40,9 @@
 * [管理对话状态](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html)
 * [设置定时任务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-settimeout.html)
 
+## 大语言模型
+
+* [使用大语言模型（LLM）](https://docs.chatopera.com/products/chatbot-platform/howto-guides/llm/llm-enable.html)
 
 ## 语音识别
 
