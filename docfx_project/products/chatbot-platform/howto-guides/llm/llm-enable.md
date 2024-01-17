@@ -13,6 +13,7 @@
 ## 注意事项
 
 * Chatopera 云服务用户可以选择针对机器人开启或关闭大语言模型的检索；
+* 在 Chatopera 的检索算法中，大语言模型排在兜底回复之前，具体参考[多轮对话的检索](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html);
 * 大语言模型会消耗时间，并且因为其返回值较慢（大约 5s ~ 20s），造成了对话的延迟；
 * 推荐优先通过 [Chatopera H5 聊天控件](https://docs.chatopera.com/products/chatbot-platform/howto-guides/channels/webim-setup.html)进行机器人的发布，在 Chatopera H5 中优化了交互体验以适应返回值较慢的问题。
 
