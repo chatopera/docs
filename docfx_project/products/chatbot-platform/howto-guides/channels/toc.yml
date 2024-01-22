@@ -1,5 +1,7 @@
 - name: H5 聊天控件
   href: webim-setup.md
+- name: 机器人聊天码
+  href: chatcode.md
 - name: 飞书
   href: https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd
 - name: 春松客服

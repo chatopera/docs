@@ -57,6 +57,7 @@
 ## 渠道
 
 * [H5 聊天控件](https://docs.chatopera.com/products/chatbot-platform/howto-guides/channels/webim-setup.html)
+* [机器人聊天码](https://docs.chatopera.com/products/chatbot-platform/howto-guides/channels/chatcode.html)
 * [春松客服](https://docs.cskefu.com/docs/work-chatbot/)
 * [飞书](https://chatopera.feishu.cn/docs/doccnnLcv5AuenV1HHSvgVWbJmd)
 
