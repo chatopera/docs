@@ -281,8 +281,8 @@ debug("[getFAQListTest] results faq %j", results);
 
 其中，参数 `params` 中字段的使用如下：
 
-* params.query - 查询语句，模糊匹配问题；非必填，默认为空；
-* params.limit - 每页返回问答对条数；非必填，默认为 10；
+* params.query - 字符串，查询语句，模糊匹配问题；非必填，默认为空；
+* params.limit - 正整数，每页返回问答对条数；非必填，默认为 10；
 * params.page - 返回列表的页码，从 1 开始的正整数；非必填，默认为 1；
 * params.categories - 问答对的分类信息；非必填，默认为 `[]`；填写字符串数组，数组内元素按照顺序，从左到右分别是一级分类，二级分类，三级分类，以此类推，最多支持四级，比如 `["动物", "海洋动物"]`
 
@@ -349,7 +349,7 @@ exports.searchFaqTest = async function(text) {
 
 ```JavaScript
 exports.searchFaqTest2 = async function() {
-    let docId = "foo";
+    let docId = "foo"; // 字符串
     let result = await this.maestro.getFAQDetail(docId);
     debug("[searchFaqTest] result faq %j", result);
     return "hello"
