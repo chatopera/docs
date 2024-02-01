@@ -210,7 +210,7 @@ let words = await this.maestro.keywords("冬天来了。春天还会远吗?", 5)
 
 在函数中检索该机器人的知识库。
 
-```函数
+```JavaScript
 let results = await this.maestro.searchFAQs(text, topk);
 debug("results faqs %j", results);
 ```
@@ -224,7 +224,7 @@ debug("results faq %j", results);
 
 返回值 `results` 是一个数组( JSONArray)，每个成员是一个问答对信息，数据按照 `score` 降序排序。数据结构如下：
 
-```
+```JavaScript
 [
   {
     "id": "{{DOC_ID}}",
@@ -264,6 +264,132 @@ exports.searchBotFAQ = async function() {
 }
 ```
 
+### getFAQList
+
+获得该机器人知识库的问答对列表。
+
+```JavaScript
+let params = {
+    query: {{text}},
+    limit: 10,    
+    page: 1,
+    categories: []
+};
+let results = await this.maestro.getFAQList(params);
+debug("[getFAQListTest] results faq %j", results);
+```
+
+其中，参数 `params` 中字段的使用如下：
+
+* params.query - 查询语句，模糊匹配问题；非必填，默认为空；
+* params.limit - 每页返回问答对条数；非必填，默认为 10；
+* params.page - 返回列表的页码，从 1 开始的正整数；非必填，默认为 1；
+* params.categories - 问答对的分类信息；非必填，默认为 `[]`；填写字符串数组，数组内元素按照顺序，从左到右分别是一级分类，二级分类，三级分类，以此类推，最多支持四级，比如 `["动物", "海洋动物"]`
+
+返回值 `results` 是一个数组( JSONObject)，如下：
+
+
+```JavaScript
+{
+  "total": 1,
+  "current_page": 1,
+  "total_page": 1,
+  "data": [
+    {
+      "createtime": "2024-02-01T05:38:05.853Z",
+      "post": "虎鲸",
+      "categories": [
+        "动物",
+        "海洋动物"
+      ],
+      "updatetime": "2024-02-01T06:00:27.684Z",
+      "enabled": true,
+      "id": "uxQsY40BLFVcfeSHoai6",
+      "inquiryscore": 1
+    }
+  ]
+}
+```
+
+其中，字段的含义如下：
+
+* `total` - 符合查询条件的总的记录条数
+* `current_page` - 当前数据列表的页码
+* `total_page` - 全部符合条件的记录的总页码
+* `data` - JSONArray, 问答对概要信息（`post` 标准问，`categories` 分类，`enabled` 是否启用，`id` docId，`inquiryscore` 问题的热度），docId 可以用于继续检索该问答对的详情，见 `getFAQDetail` 的说明。
+
+#### 使用举例
+
+`getFAQList` 的使用，可以结合脚本语法，下面举一个例子：
+
+```脚本
++ 查询 (*)
+- {keep} ^searchFaqTest(<cap1>)
+```
+
+```JavaScript
+exports.searchFaqTest = async function(text) {
+    let params = {
+        query: text,
+        limit: 10,
+        page: 1,
+    };
+    let results = await this.maestro.getFAQList(params);
+    debug("[searchFaqTest] results faq %j", results);
+
+    return "hello"
+}
+```
+
+由上，注意 `<cap1>` 和 `text` 的用法。用户输入时，[通配符匹配值](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-replies.html#)可以传入到查询语句中。
+
+### getFAQDetail
+
+根据指定的知识库问答对标识（docId）返回问答对详情。
+
+```JavaScript
+exports.searchFaqTest2 = async function() {
+    let docId = "foo";
+    let result = await this.maestro.getFAQDetail(docId);
+    debug("[searchFaqTest] result faq %j", result);
+    return "hello"
+}
+```
+
+其中，`docId` 就是问答对的唯一标识。返回值有两种情况：1）该问答对存在；2）该问答对不存在。
+
+#### 问答对存在的返回值
+
+获得了详情 `(rc = 0)`，`result` 结果类似：
+
+```JavaScript
+{
+  "rc": 0,
+  "id": "uxQsY40BLFVcfeSHoai6",
+  "inquiryscore": 5,
+  "post": "虎鲸",
+  "categories": [
+    "动物",
+    "海洋动物"
+  ],
+  "enabled": true,
+  "replies": [
+    {
+      "rtype": "plain",
+      "enabled": true,
+      "content": "2121"
+    }
+  ]
+}
+```
+
+#### 问答不对存在的返回值
+
+未找到 `(rc = 1)`。
+
+```JavaScript
+ {"rc":1,"error":"Not found."}
+```
 
 ## Notifications
 
