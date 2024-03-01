@@ -1,8 +1,14 @@
 # 函数返回值
 
-**函数的返回值，可以用于自定回复消息内容或状态跳转等。** 在多轮对话中，回复除纯文本外，还可以支持多媒体消息，这样用户交互的体验更佳。不同消息的类型还需要渠道能够兼容，或在业务系统中进行适配，以下各消息类型在 **[春松客服](https://www.cskefu.com)** 和 **多轮对话设计器** 中已经支持。
+**函数的返回值，可以用于自定回复消息内容或状态跳转等。** 在多轮对话中，回复除纯文本外，还可以支持多媒体消息，这样用户交互的体验更佳。不同消息的类型还需要渠道能够兼容，或在业务系统中进行适配。已经默认完成适配的渠道或软件：
+
+* [Chatopera H5 聊天控件](https://docs.chatopera.com/products/chatbot-platform/howto-guides/channels/webim-setup.html)
+* [春松客服](https://docs.cskefu.com/docs/work-chatbot/message-types)
+* [多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)
 
 ## 列表消息
+
+![](../../../images/assets/screenshot_20240301092853.png)
 
 函数返回值中，`params`数组中每个元素约定如下：
 
@@ -32,6 +38,8 @@ exports.get_greetings = async function() {
 
 ## 按钮消息
 
+![](../../../images/assets/screenshot_20240301092911.png)
+
 ```函数
 // 按钮选择消息
 exports.get_products = async function() {
@@ -55,6 +63,8 @@ exports.get_products = async function() {
 类似图文消息，不同的是：1）`type`值为`button`；2）业务上一般会设定一组按钮消息只能有一个按钮被点击一次。
 
 ## 图文消息
+
+![](../../../images/assets/screenshot_20240301092927.png)
 
 ```函数
 // 图文消息
