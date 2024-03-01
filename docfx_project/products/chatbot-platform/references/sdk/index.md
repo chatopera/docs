@@ -51,23 +51,6 @@ SDK 简化了集成的复杂度，某些语言可以通过包管理工具安装�
 
 通过左侧导航菜单了解使用详情。
 
-
-## Postman RestAPIs Documentation
-
-在 Chatopera SDK 的核心类中，最终都是请求 Chatopera 云服务 RestAPIS，比如：
-
-```
-chatbot#command("GET", String.format("/faq/database?q=&&page=%d&limit=%d", page, limit));
-```
-
-会请求 `GET http://{{IP}}:{{PORT}}/api/v1/chatbot/{{chatbotID}}/faq/database`。
-
-RestAPIs 包含大约 100 个接口，使用 Postman 在线文档获取详细介绍：
-
-[https://documenter.getpostman.com/view/244455/VUjPH5DB](https://documenter.getpostman.com/view/244455/VUjPH5DB)
-
-![](../../../../images/assets/screenshot_20230601072602.png)
-
 ## 已知问题
 
 ### 在 Windows WSL 内调用 SDK，返回异常 invalid timestamp
