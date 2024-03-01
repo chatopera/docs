@@ -35,7 +35,7 @@ Chatopera 云服务文档中心包含丰富的内容，了解这些文档是如�
 
 * [参考手册](https://docs.chatopera.com/products/chatbot-platform/references/index.html)描述了 [Chatopera 云服务](https://bot.chatopera.com)提供的 CLI / APIs 接口使用，或者其它工具说明，用于系统集成和自动化工作。这部分内容假设你已经具备了基础知识，对一些概念已经了解。
 
-* 《Chatopera 云服务用户使用文档》PDF 文件，适应于打印或无网络环境使用的离线文件；最新版日期 2024-03-01；下载或更新到最新版，使用[链接](https://gitee.com/chatopera/docs/raw/master/docfx_project/assets/files/chatopera_bot_manual.pdf)
+* 《Chatopera 云服务用户使用文档》PDF 文件，适应于打印或无网络环境使用的离线文件；最新版日期 2024-03-01；下载或更新到最新版，使用[链接](https://docs.chatopera.com/assets/files/chatopera_bot_manual.pdf)
 
 ## 产品更新
 
