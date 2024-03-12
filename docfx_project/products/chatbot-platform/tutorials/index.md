@@ -26,6 +26,6 @@
 您可以通过视频，快速的了解产品的使用和入门。在观看视频后，动手完成新手任务吧！
 
 * [B 站](https://www.bilibili.com/video/BV1cj421U7qu)
-* [YouTube](https://youtu.be/Vcu-J2hhMLU)
+* [YouTube](https://youtu.be/HOuRGvKaWgk)
 
 ![](../../../images/assets/screenshot_20240306171549.png)
