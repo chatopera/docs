@@ -44,10 +44,6 @@
 
 * [使用大语言模型（LLM）](https://docs.chatopera.com/products/chatbot-platform/howto-guides/llm/llm-enable.html)
 
-## 语音识别
-
-* [调用语音识别服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/asr/asr-request.html)
-
 ## 对话调优
 
 * [对话测试](https://docs.chatopera.com/products/chatbot-platform/howto-guides/chats/chat-test.html)

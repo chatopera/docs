@@ -24,21 +24,13 @@ Chatopera 云服务的机器人平台消费情况，按照现有用户统计，9
 
 ## API 计费服务接口
 
-Chatopera 云服务的计费接口包括：
-
-1）对话检索 API，**按照 API 调用次数进行计费**
+Chatopera 云服务的计费接口包括对话检索 API，**按照 API 调用次数进行计费**：
 
 * 检索知识库对话，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#%E6%A3%80%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%BA%93)
 
 * 检索多轮对话，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#%E6%A3%80%E7%B4%A2%E5%A4%9A%E8%BD%AE%E5%AF%B9%E8%AF%9D)
 
 * 检索意图识别，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#%E6%A3%80%E7%B4%A2%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB)
-
-2）语音识别 API, **每秒折合为 1 次，按照 API 调用次数进行计费**
-
-* 语音识别-中文普通话，[说明文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/asr.html)
-
-换算时，剩余的末尾时间不足一秒，则剩余时间按照 1 秒算。
 
 ## API 计费标准
 
@@ -51,7 +43,7 @@ Chatopera 云服务的计费接口包括：
 
 [https://bot.chatopera.com/billing/purchase](https://bot.chatopera.com/billing/purchase)
 
-最终价格以【资源包购买地址】为准。
+最终服务、计费接口和价格以【资源包购买地址】为准。
 
 ## 发票
 
@@ -70,7 +62,7 @@ Chatopera 云服务的计费接口包括：
 
 ### 1. 资源包
 
-资源包有有效期和配额，用户在使用服务过程中，按照 API 调用次数或时长（ASR 语音识别）换算为计数，从配额中扣除。
+资源包有有效期和配额，用户在使用服务过程中，按照 API 调用次数换算为计数，从配额中扣除。
 
 在购买同一款式的多件资源包时，只从配额数量上叠加，而有效期不改变。比如购买【包月 100 元资源包】3 件，那么配额容量就是 `5000 次 x 3`，而有效期依然是 1 个月有效。
 

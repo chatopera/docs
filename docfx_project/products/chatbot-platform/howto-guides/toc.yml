@@ -22,10 +22,6 @@
   href: convs/toc.yml
   topicHref: convs/cde-install.md
 
-- name: 语音识别
-  href: asr/toc.yml
-  topicHref: asr/asr-request.md
-
 - name: 对话调优
   href: chats/toc.yml
   topicHref: chats/chat-test.md

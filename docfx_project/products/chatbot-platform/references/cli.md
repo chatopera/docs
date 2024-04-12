@@ -27,7 +27,6 @@ Commands:
   connect [options]       chat with bot via bot#conversation interface
   conversation [options]  import or export a bot's conversations data
   trace [options]         tail a bot's conversations logging info
-  asr [options]           request Chatopera ASR API
   faq [options]           import or export a bot's faqs data
   dicts [options]         sync, import or export a bot's dicts data
   intents [options]       train, import or export a bot's intents data
@@ -224,66 +223,6 @@ bot intents --action import --filepath /tmp/bot.intents.json
 
 ```Bash
 bot intents --action train
-```
-
-## 语音识别
-
-语音识别 SDK 接口使用[参考文档](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/asr.html)。
-
-### asr
-
-```说明
-Usage: bot asr [options]
-
-Options:
-  -c, --clientid [value]      ClientId of the bot
-  -u, --username [value]      Username to chat with bot
-  -s, --clientsecret [value]  Client Secret of the bot, optional, default null
-  -p, --provider [value]      Chatopera Bot Service URL, optional, default https://bot.chatopera.com
-  -f, --file <value>          Target file to recognize, *required.
-  -h, --help                  display help for command
-```
-
-示例：
-
-```Bash
-bot asr -c clientId \
-     -s secret \
-     -u username \
-     -f ./asr.sample.001.wav
-```
-
-示例语音文件下载，[asr.sample.001.wav](https://docs.chatopera.com/images/products/platform/asr.sample.001.wav)。
-
-当前工作路径如果有 `.env` 文件时，也可以简化为命令：
-
-```Bash
-bot asr -f ./asr.sample.001.wav
-```
-
-返回结果
-
-```JSON
-{
- "rc": 0,
- "data": {
-  "duration": 6250,
-  "predicts": [
-   {
-    "confidence": 0.960783,
-    "text": "上海 浦东机场 入境 房 输入 全 闭 环 管理"
-   },
-   {
-    "confidence": 0.960767,
-    "text": "上海 浦东机场 入境 防 输入 全 闭 环 管理"
-   },
-   {
-    "confidence": 0.960736,
-    "text": "上海 浦东机场 入境 坊 输入 全 闭 环 管理"
-   }
-  ]
- }
-}
 ```
 
 ## 已知问题
