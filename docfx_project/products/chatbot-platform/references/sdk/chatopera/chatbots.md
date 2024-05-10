@@ -87,3 +87,48 @@ Chatopera#command("GET", "/chatbot?limit={{limit}}&page={{page}}")
 _total_: 所有数据条数
 
 _total_page_: 所有页面数
+
+## 获得聊天机器人密钥
+
+```API
+Chatopera#command("GET", "/secret/{{clientId}}")
+```
+
+
+示例代码：[Java](https://github.com/chatopera/chatopera-java-sdk/blob/09ca2eceda5d85e0a37f5de0eca331532edd4fe3/src/test/java/com/chatopera/bot/sdk/ChatoperaTest.java#L94)
+
+<h4><font color="purple">path</font></h4>
+
+| key   | type | default         | description      |
+| ----- | ---- | --------------- | ---------------- |
+| clientId | string  | 无，必填 | 机器人的 clientId     |
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```JSON
+{
+  "rc": 0,
+  "data": {
+    "createdAt": "Fri May 10 2024 17:11:52 GMT+0800 (China Standard Time)",
+    "isDeleted": false,
+    "name": "testdel3",
+    "logo": "",
+    "secret": "xxx",
+    "descriptions": ""
+  }
+}
+```
+
+
+## 删除聊天机器人
+
+删除聊天机器人需要：
+* 聊天机器人的 ClientId，见上文方式或从聊天机器人控制台的设置页面获得；
+* 聊天机器人的密钥，见上文方式或从聊天机器人控制台的设置页面获得。
+
+有了上述两个信息，通过接口：[Chatbot](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/index.html) 类中的[删除聊天机器人](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/basic.html#%E5%88%A0%E9%99%A4%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA)实现。
+
+
+## 更多机器人管理和使用 APIs
+
+更多机器人管理和使用 APIs，参考 [ `Chatbot 类`](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/index.html)。
