@@ -17,5 +17,7 @@
   href: conv-environment.md
 - name: 管理对话状态
   href: conv-state.md
+- name: 集成自定义外部对话系统
+  href: conv-external-chatsys.md
 - name: 设置定时任务
   href: conv-settimeout.md
