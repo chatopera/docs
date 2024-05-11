@@ -100,8 +100,9 @@ exports.getMyChatSystemReply = async function() {
 
 ```JavaScript
 exports.getMyChatSystemReply = async function() {
-
     debug("[getMyChatSystemReply] %s %s", this.user.id, this.message.clean)
+    // this.user.id: 当前对话访客的唯一标识
+    // this.message.clean: 当前对话访客的请求文本
 
     // 使用 http 库请求 API
     let resp = await http.get("https://www.chatopera.com/files/botplt/miscs/dummy.chatsystem.json");
