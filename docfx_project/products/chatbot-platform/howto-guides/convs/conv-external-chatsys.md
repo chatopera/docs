@@ -105,7 +105,8 @@ exports.getMyChatSystemReply = async function() {
 
     // 使用 http 库请求 API
     let resp = await http.get("https://www.chatopera.com/files/botplt/miscs/dummy.chatsystem.json");
-
+	debug("[getMyChatSystemReply] http response %j", resp.data);
+	
     // 使用 resp 进一步的处理逻辑
     let reply = "";
     if (resp.data.reply) {
