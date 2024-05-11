@@ -20,7 +20,7 @@
 ### 多轮对话脚本 Hooks
 使用该方案，需要您了解 JavaScript，下面也提供相关示例代码，任何编程经验都可以很快入门。
 
-首先，了解 Chatopera 云服务的工作原理，尤其是检索的顺序，参考文档：https://docs.chatopera.com/products/chatbot-platform/explanations/query.html
+首先，了解 Chatopera 云服务的工作原理，尤其是检索的顺序，参考文档 [《多轮对话的检索》](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)。
 
 其次，当前面没有得到答案，对话引擎进入多轮对话脚本检索，在检索中，话题也是排序的。排在最后的话题是 `__post__`，检索有下图。
 
@@ -100,7 +100,7 @@ exports.getMyChatSystemReply = async function() {
 
 ```JavaScript
 exports.getMyChatSystemReply = async function() {
-    debug("[getMyChatSystemReply] %s %s", this.user.id, this.message.clean)
+    debug("[getMyChatSystemReply] %s %s", this.user.id, this.message.clean);
     // this.user.id: 当前对话访客的唯一标识
     // this.message.clean: 当前对话访客的请求文本
 
