@@ -63,16 +63,15 @@
 
 编辑 `__post__` 话题
 
-![](../../../../images/assets/Pasted%20image%2020240511140940.png)
-
 
 ```脚本
-+ (*)
++ {keep} (*)
 - {CLEAR} ^getMyChatSystemReply()
 ```
 
 此处，`getMyChatSystemReply` 是函数名，可以自定义，比如改成 `getAnyChatSystemReply`。
 
+![](../../../../images/assets/screenshot_20240511151709.png)
 
 ### 编辑函数
 
