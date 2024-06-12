@@ -12,7 +12,7 @@
 
 [<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html)
 
-[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html)
+[<2/5> 生成预处理问答对](/products/chatbot-platform/tutorials/2-answer-faq.html)
 
 [<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 

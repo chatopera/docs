@@ -1,9 +1,9 @@
 <!-- markup:blank-line -->
-# <2/5> 添加对话语料
+# <2/5> 生成预处理问答对
 
 << 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
-现在我们添加对话语料，让`阿Q`可以回答更多的问题。先从知识库开始：设定问答对。
+现在我们生成预处理问答对，让`阿Q`可以回答更多的问题。
 
 ## 管理知识库问答对
 

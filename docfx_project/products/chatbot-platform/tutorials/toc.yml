@@ -1,6 +1,6 @@
 - name: <1/5> 创建机器人
   href: 1-create-bot.md
-- name: <2/5> 添加对话语料
+- name: <2/5> 生成预处理问答对
   href: 2-answer-faq.md
 - name: <3/5> 添加脚本和函数
   href: 3-add-scripts-function.md

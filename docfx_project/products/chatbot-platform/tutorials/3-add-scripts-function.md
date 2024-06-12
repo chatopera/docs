@@ -1,6 +1,6 @@
 <!-- markup:blank-line -->
 # <3/5> 添加脚本和函数
-<< 上一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins 
+<< 上一步：[<2/5> 生成预处理问答对](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins 
 
 接下来，我们为 `阿Q`添加个性化的问候语。
 
@@ -67,6 +67,6 @@ __faq_hot_list
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加意图对话](/products/chatbot-platform/tutorials/4-add-intent.html)
+<< 上一步：[<2/5> 生成预处理问答对](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 添加意图对话](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 [^function-js]: 这是一段 JavaScript 代码，JavaScript 是非常容易掌握的编程语言。
