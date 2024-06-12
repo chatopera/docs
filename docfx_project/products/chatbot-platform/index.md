@@ -4,7 +4,7 @@
 
 [https://bot.chatopera.com/](https://bot.chatopera.com/)
 
-![](../../images/assets/screenshot_20240612134901.png)
+![](../../images/assets/screenshot_20240612190000.png)
 
 ## 入门
 <!-- First Steps -->
