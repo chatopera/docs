@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <4/5> 添加意图对话 
 
-<< 上一步：[<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
+<< 上一步：[<3/5> 编写多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
 
 如何让`阿Q`可以引导访客完成预约机票呢？这需要使用意图识别模块和多轮对话设计器。
 
@@ -228,4 +228,4 @@ exports.rebookAirplaneTicket = async function() {
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<3/5> 添加脚本和函数](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 查看使用情况](/products/chatbot-platform/tutorials/5-stats-history.html) 
+<< 上一步：[<3/5> 编写多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 查看使用情况](/products/chatbot-platform/tutorials/5-stats-history.html) 
