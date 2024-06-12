@@ -11,10 +11,9 @@
 
 ![](../../../images/assets/screenshot_20240612141031.png)
 
-下载[示例文件](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)得到文件 doc-sample-preprocessing.docx。
+下载[示例文件](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)得到文件 [doc-sample-preprocessing.docx](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)，下载地址 [https://dwz.chatopera.com/k9iO12](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)。
 
-点击网页中的【上传文件】按钮，从操作系统中选择刚刚下载的文件 doc-sample-preprocessing.docx。
-
+点击网页中的【上传文件】按钮，从操作系统中选择刚刚下载的文件 [doc-sample-preprocessing.docx](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)。
 
 ## 启动分析任务
 
@@ -38,6 +37,12 @@
 
 ![](../../../images/assets/screenshot_20240612141744.png)
 
-验证通过。我们继续介绍另外一个强大的对话管理模块：多轮对话。
+验证通过。
+
+恭喜你完成本节任务！
+
+![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
+
+我们继续介绍另外一个强大的对话管理模块：[多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)。
 
 << 上一步：[<1/5> ](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 编写多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
