@@ -35,13 +35,3 @@
 [<4/5> 添加意图对话](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 [<5/5> 查看使用情况](/products/chatbot-platform/tutorials/5-stats-history.html)
-
-
-## 入门教程视频
-
-您可以通过视频，快速的了解产品的使用和入门。在观看视频后，动手完成新手任务吧！
-
-* [B 站](https://www.bilibili.com/video/BV1cj421U7qu)
-* [YouTube](https://youtu.be/HOuRGvKaWgk)
-
-![](../../../images/assets/screenshot_20240306171549.png)
