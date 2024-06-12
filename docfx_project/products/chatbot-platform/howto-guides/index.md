@@ -12,6 +12,7 @@
 
 ## 知识库
 
+* [知识库问答自动生成](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-datapreprocessing.html)
 * [维护知识库问答对](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-qna.html)
 * [知识库问答及调优测试](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-chat-fix.html)
 * [知识库问答对导入和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-transfer.html)

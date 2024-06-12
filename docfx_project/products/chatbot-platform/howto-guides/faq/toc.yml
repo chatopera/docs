@@ -1,4 +1,6 @@
 # 知识库
+- name: 知识库问答自动生成
+  href: faq-datapreprocessing.md
 - name: 知识库问答对维护
   href: faq-qna.md
 - name: 知识库问答及调优测试
