@@ -20,23 +20,19 @@
 
 ![](../../../images/assets/screenshot_20230503085347.png)
 
-创建成功后，会自动跳转到`阿Q`的概况页。
+创建成功后，会自动跳转到`阿Q`的数据预处理。
 
-![机器人详情页](../../../images/assets/screenshot_20230503084438.png)
+![](../../../images/assets/screenshot_20240612094940.png)
+
+后面，我们再介绍数据预处理服务。下一步，我们就可以向消费者发布聊天机器人了！
 
 ## 发布聊天机器人
 
-步骤如下，进入系统集成，点击【H5 聊天控件[^h5-channel] - 接入设置】。
+步骤如下，在菜单中，点击【聊天码】，弹出类似下图的界面。
 
-![](../../../images/assets/screenshot_20230503084820.png)
+![](../../../images/assets/screenshot_20240612095312.png)
 
-找到【文字链代码】，复制该 URL。
-
-![](../../../images/assets/screenshot_20230503084843.png)
-
-将【文字链代码】URL 在你的浏览器地址栏打开，然后就可以作为访客体验聊天机器人了：发送【你好】，机器人有回应，这是一个默认的对话技能。
-
-![](../../../images/assets/screenshot_20230424144739.png)
+该二维码，就是您可以公开发送给消费者的，用来和聊天机器人对话的二维码，Chatopera 称之为【聊天码】。如果您需要 URL 的方式接入，可以点击上图中的【Chatopera H5 聊天控件设置】获得~
 
 恭喜你完成本节任务！
 
@@ -44,4 +40,3 @@
 
 << 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 添加对话语料](/products/chatbot-platform/tutorials/2-answer-faq.html) <!-- markup:skip-line -->
 
-[^h5-channel]: H5 聊天控件是一个面向访客的发布渠道，访客可以是你自己、你的同事或消费者。H5 聊天控件是聊天机器人快速的提供服务的一种方式。
