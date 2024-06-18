@@ -5,7 +5,7 @@
 
 # constants
 baseDir=$(cd `dirname "$0"`;pwd)
-DOCKER_DOCFX_PATH=~/packages/dockers/docker.docfx.tgz
+DOCKER_DOCFX_PATH=~/prod/backups/docfx_base.docker.tgz
 
 # functions
 
