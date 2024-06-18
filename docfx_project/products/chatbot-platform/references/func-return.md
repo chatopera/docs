@@ -14,7 +14,7 @@
 
 ```函数
 // 问候语中关联常见问题
-exports.get_greetings = async function() {
+exports.getGreetings = async function() {
     return {
         text: "请问有什么可以帮到您？",
         params: [{

@@ -391,6 +391,38 @@ exports.searchFaqTest2 = async function() {
  {"rc":1,"error":"Not found."}
 ```
 
+### getHotFAQs
+
+该函数返回知识库热门问题列表，按照热门度降序排列，如果所有热门度分数都是 0，那么随机返回。
+
+```JavaScript
+let results = await this.maestro.getHotFAQs(topk);
+debug("getHotFAQs results %j", results);
+```
+
+其中，`topk` 为大于 0 的正整数。`results` 内容类似：
+
+```
+[
+  {
+    "docId": "OaU-xxx",
+    "inquiryscore": "0",
+    "post": "{{问题1}}",
+    "enabled": true,
+    "categories": []
+  },
+  {
+    "docId": "OKU-yyy",
+    "inquiryscore": "0",
+    "post": "{{问题2}}",
+    "enabled": true,
+    "categories": []
+  }
+]
+```
+
+其中，`inquiryscore` 为热门度分数，`post` 为问答对中的问题。
+
 ## Notifications
 
 通知服务。

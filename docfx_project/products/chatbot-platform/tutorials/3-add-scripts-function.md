@@ -50,22 +50,35 @@
 
 在多轮对话设计器中，打开 `阿Q` 话题 `greetings` 脚本编辑窗口。
 
-追加下面的内容：
+找到下面的内容：
 
 ```脚本
 + __faq_hot_list
-- {keep} ^get_greetings()
+- {keep} ^getGreetings()
 ```
 
-点击保存。
+以上是处理问候语中，热门问题列表的脚本。
 
 ![脚本编辑区域](../../../images/products/platform/screenshot-20210913-202526.png)
 
-点击【脚本】旁边的【函数】，进入函数编辑窗口，追加下面的内容[^function-js]：
+点击【脚本】旁边的【函数】，进入函数编辑窗口，找到函数[^function-js] `getGreetings` 的定义，类似如下：
 
 ```函数
 // 问候语中关联常见问题
-exports.get_greetings = async function() {
+// 更多消息格式，参考 https://dwz.chatopera.com/jQ0F9G
+exports.getGreetings = async function() {
+    let data = await this.maestro.getHotFAQs();
+    debug("getHotFAQs %j", data)
+
+    ...
+}
+```
+
+默认情况下，如果机器人知识已经有了问答对，那么会按照热门度，展示最热门的 10 个问题。现在，我们来调整一下，设置为固定的提示列表。方法如下：更改 `getGreetings` 定义。
+
+```函数
+// 问候语中关联常见问题
+exports.getGreetings = async function() {
     return {
         text: "机器人可以解答或提供的服务",
         params: [{
