@@ -19,6 +19,13 @@
 
 <!-- markup:markdown-end -->
 
-## 接下来
 
-本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！回到 [首页](/products/chatbot-platform/index.html)。
+本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！
+
+## 更多示例程序
+
+继续进阶，请查看更多聊天机器人示例程序 [@Chatopera/chatbot-samples](https://github.com/chatopera/chatbot-samples) - 
+
+* [GitHub](https://github.com/chatopera/chatbot-samples)
+* [Gitee](https://gitee.com/chatopera/chatbot-samples)
+
