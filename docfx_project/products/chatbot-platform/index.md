@@ -43,7 +43,7 @@ Chatopera 云服务文档中心包含丰富的内容，了解这些文档是如�
 
 加入用户社区，与 Chatopera 云服务的用户、平台运营者和 Chatopera 工程师进行交流；**用户社区是社交网络，交流 Chatopera 产品使用心得、建议反馈、以及畅聊人工智能、元宇宙、开源客服系统等话题**。
 
-![](../../images/assets/screenshot_20240621160320.png)
+![](../../images/assets/screenshot_20230428152602.png)
 
 ## 官方公众号
 
