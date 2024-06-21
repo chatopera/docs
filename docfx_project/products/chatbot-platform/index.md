@@ -47,8 +47,6 @@ Chatopera 云服务文档中心包含丰富的内容，了解这些文档是如�
 
 ## 用户社区
 
-加入[用户社区](https://tribe.cskefu.com/public/local)，与 Chatopera 云服务的用户、平台运营者和 Chatopera 工程师进行交流；**用户社区是社交网络，交流 Chatopera 产品使用心得、建议反馈、以及畅聊人工智能、元宇宙、开源客服系统等话题**。Chatopera 云服务的用户社区构建在[春松部落](https://tribe.cskefu.com/public/local)里；春松部落为会员微博服务，介绍及订阅费用见 [Chatopera 证书商店](https://store.chatopera.com/product/cstribe001)。
+加入用户社区，与 Chatopera 云服务的用户、平台运营者和 Chatopera 工程师进行交流；**用户社区是社交网络，交流 Chatopera 产品使用心得、建议反馈、以及畅聊人工智能、元宇宙、开源客服系统等话题**。
 
-Chatopera 云服务在春松部落的标签:
-
-* [#chatopera](https://tribe.cskefu.com/tags/chatopera)
+![](../../images/assets/screenshot_20240621154715.png)
