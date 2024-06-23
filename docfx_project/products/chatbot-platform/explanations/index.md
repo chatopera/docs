@@ -2,7 +2,7 @@
 
 Chatopera 机器人平台的定位是低代码上线智能对话机器人的工具和服务。本篇的主要目的是帮助 Chatopera 机器人平台用户从系统的角度理解 Chatopera 的多轮对话的工作机制。在开始之前，您先要对 Chatopera 云服务有一个系统的认识，那就是下面这张图。
 
-![](../../../images/assets/screenshot_20240612190000.png)
+![](../../images/assets/screenshot_20240623093123.png)
 
 作为定制聊天机器人的工具，Chatopera 将定制机器人的生命周期分成了三个：
 
