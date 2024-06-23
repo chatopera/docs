@@ -18,12 +18,12 @@ footer{
      重新定义聊天机器人
     </div>
     <div class="buttons-unit-small">
-      <a class="version-link" href="https://bot.chatopera.com">使用 Chatopera 云服务，提升客服、营销和办公的智能化</a>
+      <a class="version-link" href="javascript:void(0)">定制智能客服、知识库、AI 办公助手、智能物联网等</a>
     </div>
     <div class="buttons-unit">
-      <a href="/products/chatbot-platform/tutorials/index.html" class="button"><i class="glyphicon glyphicon-send"></i>新手入门</a>
-      <a href="/products/chatbot-platform/howto-guides/convs/cde-install.html" class="button"><i class="glyphicon glyphicon-download"></i>多轮对话设计器</a>
-    </div>
+		<a href="/products/chatbot-platform/overview.html" class="button"><i class="glyphicon glyphicon-flag"></i>应用场景</a>
+		<a href="/products/chatbot-platform/tutorials/index.html" class="button"><i class="glyphicon glyphicon-send"></i>入门教程</a>
+     </div>
   </div>
 </div>
 <div class="key-section">
