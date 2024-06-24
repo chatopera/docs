@@ -18,7 +18,7 @@ footer{
      重新定义聊天机器人
     </div>
     <div class="buttons-unit-small">
-      <a class="version-link" href="javascript:void(0)">定制智能客服、知识库、AI 办公助手、智能物联网等</a>
+      <a class="version-link" href="#">定制智能客服、知识库、AI 助手、智慧家居等智能应用，释放创新潜力。</a>
     </div>
     <div class="buttons-unit">
 		<a href="/products/chatbot-platform/overview.html" class="button"><i class="glyphicon glyphicon-flag"></i>应用场景</a>
