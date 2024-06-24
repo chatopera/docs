@@ -36,7 +36,7 @@
 
 ## 和机器人进行对话
 
-点击 `greetings` 话题的【编辑】按钮，进入 `阿Q`的`greetings` 脚本编辑窗口。
+点击 `greetings` 话题的右侧的【编辑】按钮，进入 `阿Q`的`greetings` 脚本编辑窗口。
 
 ![脚本编辑](../../../images/products/platform/screenshot-20210913-195806.png)
 
@@ -48,20 +48,11 @@
 
 ## 添加个性化的问候语
 
-在多轮对话设计器中，打开 `阿Q` 话题 `greetings` 脚本编辑窗口。
+假如还是在上文的`greetings`脚本编辑页面上，点击【脚本】旁边的【函数】，进入函数编辑窗口。
 
-找到下面的内容：
+![](../../../images/assets/screenshot_20240624182735.png)
 
-```脚本
-+ __faq_hot_list
-- {keep} ^getGreetings()
-```
-
-以上是处理问候语中，热门问题列表的脚本。
-
-![脚本编辑区域](../../../images/products/platform/screenshot-20210913-202526.png)
-
-点击【脚本】旁边的【函数】，进入函数编辑窗口，找到函数[^function-js] `getGreetings` 的定义，类似如下：
+然后，找到函数[^function-js] `getGreetings` 的定义，类似如下：
 
 ```函数
 // 问候语中关联常见问题
@@ -69,35 +60,64 @@
 exports.getGreetings = async function() {
     let data = await this.maestro.getHotFAQs();
     debug("getHotFAQs %j", data)
-
     ...
 }
 ```
 
 默认情况下，如果机器人知识已经有了问答对，那么会按照热门度，展示最热门的 10 个问题。现在，我们来调整一下，设置为固定的提示列表。方法如下：更改 `getGreetings` 定义。
 
+首先，删除全部函数，比如 Windows 上，在函数编辑区域，选择全部（Ctrl + A），然后按【Delete】或【Backspace】键。
+
+然后，复制下面的内容，再粘贴到函数编辑区域。
+
 ```函数
 // 问候语中关联常见问题
+// 更多消息格式，参考 https://dwz.chatopera.com/jQ0F9G
 exports.getGreetings = async function() {
-    return {
-        text: "机器人可以解答或提供的服务",
-        params: [{
-                label: "1. 海口有几个机场",
+    let data = [
+	    // 编辑数组，调整问候语热门问题
+        "海口有几个机场",
+        "美兰国际机场有没有国际航班",
+    ];
+
+    if (data.length > 0) {
+        let params = [];
+        let postIndex = 0;
+        for (let x of data) {
+            params.push({
+                // 展示的文本
+                label: (++postIndex).toString() + ". " + x,
                 type: "qlist",
-                text: "海口有几个机场"
-            }
-        ]
-    };
+                // 点击后，发送给机器人的文本
+                text: x
+            });
+        }
+
+        if (params.length > 0) {
+            return {
+                text: "请问有什么可以帮到您？",
+                params: params
+            };
+        } else {
+            return {
+                string: ""
+            };
+        }
+    } else {
+        return {
+            string: ""
+        };
+    }
 }
 ```
 
-点击【保存】，此时，得到提示信息: `上传数据成功`。
+最后，点击【保存】，此时，得到提示信息: `上传数据成功`。
 
 ![上传数据](../../../images/products/platform/screenshot-20210913-203144.png)
 
 添加后，函数编辑区域看起来是这样。
 
-![函数编辑区域](../../../images/products/platform/screenshot-20210913-202923.png)
+![](../../../images/assets/screenshot_20240624182921.png)
 
 ## 测试对话
 
@@ -110,8 +130,9 @@ __faq_hot_list
 机器人回复：
 
 ```文本
-机器人可以解答或提供的服务
+请问有什么可以帮到您？
 1. 海口有几个机场
+2. 美兰国际机场有没有国际航班
 ```
 
 ![测试对话](../../../images/products/platform/screenshot-20210913-203616.png)

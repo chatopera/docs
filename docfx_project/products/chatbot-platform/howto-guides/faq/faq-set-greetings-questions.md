@@ -9,7 +9,7 @@
 
 ## 联系客服平台设置
 
-使用注册时，使用的邮箱发送邮件到： [info@chatopera.com](mailto:info@chatopera.com?subject=%5BChatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%5D%20%E8%AE%BE%E7%BD%AE%E6%AC%A2%E8%BF%8E%E8%AF%AD%E7%83%AD%E9%97%A8%E9%97%AE%E9%A2%98&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%0D%0A%0D%0A%E6%88%91%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%20clientID%20%E6%98%AF%0D%0A%E6%88%91%E6%83%B3%E4%BD%BF%E7%94%A8%E4%B8%8B%E9%9D%A2%E7%9A%84%E7%83%AD%E9%97%A8%E9%97%AE%E9%A2%98%EF%BC%8C%E6%8C%89%E7%85%A7%E9%A1%BA%E5%BA%8F%EF%BC%9A%0D%0A%0D%0A1.%20...%0D%0A2.%20...%0D%0A3.%20...)
+使用注册时，使用的邮箱发送邮件到： [info@chatopera.com](mailto:info@chatopera.com?subject=%5BChatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%5D%20%E8%AE%BE%E7%BD%AE%E6%AC%A2%E8%BF%8E%E8%AF%AD%E7%83%AD%E9%97%A8%E9%97%AE%E9%A2%98&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%0D%0A%0D%0A%E6%88%91%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%20clientID%20%E6%98%AF%0D%0A%E6%88%91%E6%83%B3%E4%BD%BF%E7%94%A8%E4%B8%8B%E9%9D%A2%E7%9A%84%E7%83%AD%E9%97%A8%E9%97%AE%E9%A2%98%EF%BC%8C%E6%8C%89%E7%85%A7%E9%A1%BA%E5%BA%8F%EF%BC%9A%0D%0A%0D%0A1.%20...%0D%0A2.%20...%0D%0A3.%20...)   `（点击左侧邮箱地址，自动初始化邮件正文）`
 
 ![](../../../../images/assets/screenshot_20240624154347.png)
 
