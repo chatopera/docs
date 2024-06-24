@@ -65,3 +65,12 @@
 * [SDK](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/integration-sdk.html)
 * [CLI 安装和配置](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-install-config.html)
 * [CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-export-import.html)
+
+## 示例程序
+
+* [讲笑话机器人](https://dwz.chatopera.com/F0lX18)
+* [预定机票机器人](https://dwz.chatopera.com/8C1h6Q)
+* [招聘面试机器人](https://dwz.chatopera.com/280tQx)
+* [Feishu天气查询机器人](https://dwz.chatopera.com/a42g9z)
+* [GitHub工单机器人](https://dwz.chatopera.com/Xy345C)
+* [GuessNumberBot](https://dwz.chatopera.com/whgj2c)

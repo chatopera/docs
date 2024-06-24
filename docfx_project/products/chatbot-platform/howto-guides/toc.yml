@@ -33,3 +33,7 @@
 - name: 系统集成
   href: integration/toc.yml
   topicHref: integration/integration-sdk.md
+
+- name: 示例程序
+  href: samples/toc.yml
+  topicHref: samples/index.md
