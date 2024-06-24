@@ -11,6 +11,8 @@
   href: faq-dicts.md
 - name: 知识库热门问题查看和导出
   href: faq-hot.md
+- name: 设置欢迎语热门问题
+  href: faq-set-greetings-questions.md
 - name: 使用函数获得动态答案
   href: faq-dynamic-function-reply.md
 - name: 话术助手快速检索话术

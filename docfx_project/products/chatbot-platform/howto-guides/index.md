@@ -18,6 +18,7 @@
 * [知识库问答对导入和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-transfer.html)
 * [自定义词典增强知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-dicts.html)
 * [知识库热门问题查看和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-hot.html)
+* [设置欢迎语热门问题](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-set-greetings-questions.html)
 * [使用函数获得动态答案](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-dynamic-function-reply.html)
 * [话术助手快速检索话术](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-assistant.html)
 * [集成微信实现转人工客服](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/human-wecom.html)
