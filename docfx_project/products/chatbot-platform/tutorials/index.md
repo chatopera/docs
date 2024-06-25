@@ -28,10 +28,10 @@
 
 [<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html)
 
-[<2/5> 生成预处理问答对](/products/chatbot-platform/tutorials/2-answer-faq.html)
+[<2/5> 上传文件生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html)
 
-[<3/5> 编写多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
+[<3/5> 设置欢迎语中的热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
-[<4/5> 添加意图对话](/products/chatbot-platform/tutorials/4-add-intent.html)
+[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
 
-[<5/5> 查看使用情况](/products/chatbot-platform/tutorials/5-stats-history.html)
+[<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html)
