@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <2/5> 上传文件生成知识库
+# <2/5> 自动生成知识库
 
 << 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
@@ -45,4 +45,4 @@
 
 我们继续介绍另外一个强大的对话管理模块：[多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)。
 
-<< 上一步：[<1/5> ](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 设置欢迎语中的热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
+<< 上一步：[<1/5> ](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html)

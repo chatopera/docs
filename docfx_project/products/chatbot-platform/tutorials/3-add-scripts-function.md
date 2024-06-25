@@ -1,6 +1,6 @@
 <!-- markup:blank-line -->
-# <3/5> 设置欢迎语中的热门问题
-<< 上一步：[<2/5> 上传文件生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
+# <3/5> 设置热门问题
+<< 上一步：[<2/5> 自动生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
 
 ## 安装多轮对话设计器
 
@@ -149,7 +149,7 @@ __faq_hot_list
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<2/5> 上传文件生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
+<< 上一步：[<2/5> 自动生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 
 ## 可能遇到的问题

@@ -1,8 +1,8 @@
 - name: <1/5> 创建机器人
   href: 1-create-bot.md
-- name: <2/5> 上传文件生成知识库
+- name: <2/5> 自动生成知识库
   href: 2-answer-faq.md
-- name: <3/5> 设置欢迎语中的热门问题
+- name: <3/5> 设置热门问题
   href: 3-add-scripts-function.md
 - name: <4/5> 识别订票意图
   href: 4-add-intent.md

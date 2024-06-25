@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <4/5> 识别订票意图
 
-<< 上一步：[<3/5> 设置欢迎语中的热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
+<< 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
 
 如何让`阿Q`可以引导访客完成预约机票呢？这需要使用意图识别模块和多轮对话设计器。
 
@@ -102,4 +102,4 @@ book_airplane_ticket
 
 下面，我们就进入 [<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 完成这个工作~
 
-<< 上一步：[<3/5> 设置欢迎语中的热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 
+<< 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 

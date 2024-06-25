@@ -38,5 +38,5 @@
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-<< 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 上传文件生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) <!-- markup:skip-line -->
+<< 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | >> 下一步：[<2/5> 自动生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) <!-- markup:skip-line -->
 
