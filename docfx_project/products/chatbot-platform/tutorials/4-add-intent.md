@@ -3,7 +3,9 @@
 
 << 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
 
-如何让`阿Q`可以引导访客完成预约机票呢？这需要使用意图识别模块和多轮对话设计器。
+如何让`阿Q`可以引导访客完成预约机票呢？这需要使用意图识别模块。
+
+意图识别，就是让机器人理解访客的意图并在多轮对话中获得上下文中，和意图关联的关键信息。Chatopera 云服务的意图识别模块，让您设计和训练机器人的意图识别能力。
 
 ## 引用系统词典
 

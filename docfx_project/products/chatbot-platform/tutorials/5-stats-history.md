@@ -3,6 +3,8 @@
 
 << 上一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 min
 
+要想让机器人处理用户的意图，将意图会话这个树枝安装到机器人大脑的树干上，就需要使用多轮对话设计器。
+
 ## 处理订票会话表单
 
 回到多轮对话设计器，在刚刚打开的 `greetings` 话题编辑窗口。
@@ -133,9 +135,6 @@ exports.rebookAirplaneTicket = async function() {
 
 << 上一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
 
-<!-- markup:markdown-end -->
-
-
 本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！
 
 ## 更多示例程序
@@ -144,4 +143,3 @@ exports.rebookAirplaneTicket = async function() {
 
 * [GitHub](https://github.com/chatopera/chatbot-samples)
 * [Gitee](https://gitee.com/chatopera/chatbot-samples)
-
