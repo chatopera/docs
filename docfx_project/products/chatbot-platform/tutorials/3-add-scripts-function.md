@@ -17,6 +17,7 @@
 
 提示：
 
+* 如果遇到浏览器提醒安全问题，就需要继续进行：选择忽略、保留下载等选项跳过
 * 点击下载地址未能开始下载时，将下载地址拖拽到新的 Tab 页，启动下载
 * 下载后，得到应用安装包，双击后根据提示进行安装[^install-cde]
 
@@ -26,17 +27,23 @@
 
 ![安装和启动多轮对话设计器](../../../images/products/platform/screenshot-20210913-192350.png)
 
-在多轮对话设计器一级菜单中，点击【添加】，此处需要 `阿Q` 的 `Client Id` 和 `Secret`。
+在多轮对话设计器一级菜单中，点击【添加】，这时会弹出表单。
+
+此处需要 `阿Q` 的 `Client Id` 和 `Secret`，这些信息来自与机器人控制台。
 
 ![添加机器人](../../../images/products/platform/screenshot-20210913-192631.png)
 
-在浏览器中，进入 `阿Q`的设置页。
+回到浏览器，进入机器人控制台： `阿Q`的设置页。
 
 ![设置机器人](../../../images/assets/screenshot_20230503095620.png)
 
 复制 `Client Id` 和 `Secret` 到多轮对话设计器【添加表单】，点击【确认】[^help1]。
 
-回到列表后，找到`阿Q`，点击右侧操作中的【打开】，进入阿Q的话题列表页。这时，可以看到默认的话题：`greetings`。
+回到列表后，找到`阿Q`，点击右侧操作中的【打开】，进入阿Q的话题列表页。
+
+![](../../../images/assets/screenshot_20240626144657.png)
+
+这时，可以看到默认的话题：`greetings`。
 
 ![初始话题](../../../images/assets/screenshot_20230503100156.png)
 
@@ -58,27 +65,13 @@
 
 ![](../../../images/assets/screenshot_20240624182735.png)
 
-然后，找到函数[^function-js] `getGreetings` 的定义，类似如下：
+### 删除当前函数中的全部内容
 
-```函数
-// 问候语中关联常见问题
-// 更多消息格式，参考 https://dwz.chatopera.com/jQ0F9G
-exports.getGreetings = async function() {
-    let data = await this.maestro.getHotFAQs();
-    debug("getHotFAQs %j", data)
-    // 其余函数体内容省略
-    ...
-}
-```
+首先，删除函数编辑窗口中全部内容，比如在 Windows 上，在函数编辑区域，选择全部（Ctrl + A），然后按【Delete】或【Backspace】键。
 
-默认情况下，如果机器人知识库已经有了问答对，那么会按照热门度，展示最热门的 10 个问题。
+删除后，您看到的函数如下图：
 
-现在，我们来调整一下，设置为固定的提示列表。方法如下：更改 `getGreetings` 定义。
-
-### 删除当前函数
-
-首先，删除全部函数，比如 Windows 上，在函数编辑区域，选择全部（Ctrl + A），然后按【Delete】或【Backspace】键。
-
+![](../../../images/assets/screenshot_20240626144926.png)
 
 ### 粘贴函数内容
 
@@ -125,13 +118,13 @@ exports.getGreetings = async function() {
 }
 ```
 
-最后，点击【保存】，此时，得到提示信息: `上传数据成功`。
-
-![上传数据](../../../images/products/platform/screenshot-20210913-203144.png)
-
 添加后，函数编辑区域看起来是这样。
 
 ![](../../../images/assets/screenshot_20240624182921.png)
+
+最后，点击【保存】，此时，得到提示信息: `上传数据成功`。
+
+![上传数据](../../../images/products/platform/screenshot-20210913-203144.png)
 
 ## 测试对话
 

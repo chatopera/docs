@@ -45,6 +45,6 @@
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
 
-接下来，我们通过 Chatopera 中一个强大的对话管理模块 - [多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)来实现欢迎语中的自定义的热门问题。
+接下来，我们通过 Chatopera 中一个强大的对话管理模块 - [多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)来自定义迎语中的热门问题。
 
 << 上一步：[<1/5> ](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html)

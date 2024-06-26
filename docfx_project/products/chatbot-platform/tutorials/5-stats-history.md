@@ -39,7 +39,7 @@ intent {keep} book_airplane_ticket
 
 ![意图匹配器](../../../images/products/platform/screenshot-20210915-135243.png)
 
-点击【保存】。然后，点击【函数】，进入函数编辑窗口，在之前编辑的函数后，复制粘贴下面的内容：
+点击【保存】。然后，点击【函数】，进入函数内容后面，追加下面的内容：
 
 ```函数
 // 提取时间实体
@@ -134,8 +134,6 @@ exports.rebookAirplaneTicket = async function() {
 恭喜你完成本节任务！
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
-
-<< 上一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！
 
