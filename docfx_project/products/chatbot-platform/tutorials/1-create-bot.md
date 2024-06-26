@@ -3,6 +3,8 @@
 
 << 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 3 mins <!-- markup:skip-line -->
 
+> 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
+
 ## 登录
 
 登录 Chatopera 云服务管理控制台：[https://bot.chatopera.com/dashboard](https://bot.chatopera.com/dashboard)。

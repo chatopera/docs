@@ -3,6 +3,8 @@
 
 << 上一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 min
 
+> 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
+
 要想让机器人处理用户的意图，将意图会话这个树枝安装到机器人大脑的树干上，就需要使用多轮对话设计器。
 
 ## 处理订票会话表单
