@@ -20,7 +20,7 @@
 
 ## 前提准备
 
-Chatopera 云服务支持无代码方式定制聊天机器人，是**不需要您具备编程技能和掌握自然语言处理等技术**的，但是如果您使用 JavaScript 的经验，您可以通过低代码的方式定制出更强大的对话技能。
+> Chatopera 云服务支持无代码方式定制聊天机器人，是**不需要您具备编程技能和掌握自然语言处理等技术**的，但是如果您有使用 JavaScript 的经验，那么可以通过低代码的方式定制出更强大的对话技能。
 
 确保您已经注册了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)。
 
