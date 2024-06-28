@@ -2,6 +2,10 @@
   href: glossary.md
 - name: 通配符匹配器
   href: gambit-star.md
+- name: 模糊匹配器
+  href: https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-like.html
+- name: 意图匹配器
+  href: https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html
 - name: 内置函数库
   href: func-builtin/toc.yml
   topicHref: func-builtin/index.md
