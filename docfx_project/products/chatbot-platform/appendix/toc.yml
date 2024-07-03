@@ -1,2 +1,4 @@
 - name: "词性标注"
   href: nlp-tags.md
+- name: "聊天机器人讲师班"
+  href: training-tutors.md
