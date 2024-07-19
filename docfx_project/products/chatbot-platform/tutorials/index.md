@@ -41,3 +41,8 @@
 [<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 [<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html)
+
+
+## 视频课程
+
+* [加入《聊天机器人讲师班》](https://docs.chatopera.com/products/chatbot-platform/appendix/training-tutors.html)
