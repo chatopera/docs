@@ -12,6 +12,7 @@
 如果你刚刚了解 [Chatopera 云服务](https://bot.chatopera.com)，从这里开始入门！
 
 * 完成 [新手任务：使用入门教程一步步实现智能对话机器人](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)
+* 加入[聊天机器人讲师班](https://docs.chatopera.com/products/chatbot-platform/appendix/training-tutors.html)，成为聊天机器人讲师、布道师
 
 ## 帮助
 <!-- Getting Help -->
