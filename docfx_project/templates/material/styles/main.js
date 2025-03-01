@@ -87,4 +87,28 @@ $(function() {
             setTimeout(function() {successAlert.addClass("is-transparent");}, 1000);
         });
     });
+
+    function replaceAll20250301(search,replacement){
+        var xpathResult = document.evaluate(
+          "//*/text()", 
+          document, 
+          null, 
+          XPathResult.ORDERED_NODE_ITERATOR_TYPE, 
+          null
+        );
+        var results = [];
+        // We store the result in an array because if the DOM mutates
+        // during iteration, the iteration becomes invalid.
+        while(res = xpathResult.iterateNext()) {
+          results.push(res);
+        }
+        results.forEach(function(res){
+          res.textContent = res.textContent.replace(search,replacement);
+        })
+    }
+
+    // replace Copyright year automatically.
+    // update copyright text for all
+    replaceAll20250301(/CopyrightYearPlaceholderDONOTCHANGEManually/g, new Date().getFullYear());
+    console.log("To anyone who opens this console, we want to share our purpose: be creative. -- Chatopera, since June 6th 2018.");
 });
