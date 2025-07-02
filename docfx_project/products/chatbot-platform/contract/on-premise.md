@@ -22,7 +22,7 @@
 | 意图识别 | &#10008; | &#10004; |  &#10004; |
 | 聚类分析 | &#10008; |  &#10004; |  &#10004; |
 | 大语言模型 | 配置云服务 API | 配置云服务 API |  配置云服务 API |
-| 第1套<br /> 实例价格 | RMB 450,000 | RMB 750,000 |  RMB 1,050,000 |
+| 第1套<br /> 实例价格 | [联系咨询顾问](https://www.chatopera.com/mail.html) | [联系咨询顾问](https://www.chatopera.com/mail.html) |  [联系咨询顾问](https://www.chatopera.com/mail.html) |
 | 使用年限 | 永久 | 永久 | 永久 |
 
 补充说明：
