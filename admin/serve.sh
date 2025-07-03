@@ -6,6 +6,8 @@
 # constants
 baseDir=$(cd `dirname "$0"`;pwd)
 SITE=$baseDir/../dist
+export PATH=~/.dotnet/tools:$PATH
+
 # functions
 
 # main
