@@ -15,7 +15,7 @@ footer{
       <strong>Chatopera</strong>
     </div>
     <div class="minitext">
-     重新定义聊天机器人
+      AI 智能对话机器人
     </div>
     <div class="buttons-unit-small">
       <a class="version-link" href="#">定制智能客服、知识库、AI 助手、智慧家居等智能应用，释放创新潜力。</a>
