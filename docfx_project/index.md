@@ -33,7 +33,7 @@ footer{
         <i class="glyphicon glyphicon-magnet"></i>
         <section>
           <h2>快速上线聊天机器人</h2>
-          <p class="lead">无代码上线聊天机器人；可低代码实现高级的多轮对话；为开发者节省时间，更专注于创作对话技能，发挥想象力和无限创造力！</p>
+          <p class="lead">无代码上线 AI 智能对话机器人；可低代码实现高级的多轮对话；为开发者节省时间，更专注于创作对话技能，发挥想象力和无限创造力！</p>
         </section>
       </div>
     </div>
