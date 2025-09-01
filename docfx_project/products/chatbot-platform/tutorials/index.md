@@ -34,7 +34,7 @@
 
 [<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html)
 
-[<2/5> 自动生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html)
+[<2/5> 生成 RAG 知识库](/products/chatbot-platform/tutorials/2-answer-faq.html)
 
 [<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
