@@ -32,8 +32,8 @@ footer{
       <div class="col-md-8 col-md-offset-2 text-center">
         <i class="glyphicon glyphicon-magnet"></i>
         <section>
-          <h2>快速上线聊天机器人</h2>
-          <p class="lead">无代码上线 AI 智能对话机器人；可低代码实现高级的多轮对话；为开发者节省时间，更专注于创作对话技能，发挥想象力和无限创造力！</p>
+          <h2>快速上线 AI 智能对话机器人</h2>
+          <p class="lead">支持 RAG 检索增强，大语言模型；可低代码实现高级的多轮对话；为开发者节省时间，更专注于创作对话技能，发挥想象力和无限创造力！</p>
         </section>
       </div>
     </div>
