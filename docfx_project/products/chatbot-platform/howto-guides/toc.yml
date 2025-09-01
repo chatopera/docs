@@ -2,11 +2,11 @@
   href: account/toc.yml
   topicHref: account/account-mgr.md
 
-- name: 词典
-  href: dicts/toc.yml
-  topicHref: dicts/dicts-sysdicts.md
+- name: RAG 知识库
+  href: rag/toc.yml
+  topicHref: rag/rag-uploadfiles.md
 
-- name: 知识库
+- name: FAQ 知识库
   href: faq/toc.yml
   topicHref: faq/faq-qna.md
 
@@ -33,6 +33,10 @@
 - name: 系统集成
   href: integration/toc.yml
   topicHref: integration/integration-sdk.md
+
+- name: 词典
+  href: dicts/toc.yml
+  topicHref: dicts/dicts-sysdicts.md
 
 - name: 示例程序
   href: samples/toc.yml

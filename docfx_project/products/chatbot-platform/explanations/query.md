@@ -7,13 +7,9 @@
 对话用户请求时，多轮对话会先检查是否有进行中的意图识别对话，然后是知识库检索，匹配知识库问答对，当有问答对高于知识库阀值时，机器人回复问答对中的答案内容；未匹配知识库，进入对话脚本，从话题中匹配，匹配上则回复内容；否则则回复兜底回复。从概念上有下图关系。
 
 <!-- 绘图文件 2024_01_17_Chatopera_云服务更新_支持LLM.pptx -->
-![模块间检索](../../../images/assets/screenshot_20240117140029.png)
+![模块间检索](../../../images/assets/screenshot_20250901182216.png)
 
-之所以说是从概念上，是因为整个检索过程更为复杂，不方便理解，先用概念图从直观上快速理解 Chatopera 多轮对话的框架。一个更为详细的检索机制说明见下图。
-
-![检索机制](../../../images/products/platform/mechanism/conversations.jpg)
-
-[详细说明图（查看大图）](https://docs.chatopera.com/images/products/platform/mechanism/conversations.jpg) 虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。
+之所以说是从概念上，是因为整个检索过程更为复杂，不方便理解，先用概念图从直观上快速理解 Chatopera 多轮对话的框架。
 
 关于知识库、对话脚本和意图识别的相互之间的调用关系，后文会有更多介绍。
 
@@ -82,3 +78,8 @@ topicRedirect 函数的更多介绍，[参考文档](https://docs.chatopera.com/
 设定知识库的问答对中的答案，内容使用上述格式，将 `TOPIC_NAME` 替换为话题名字，`TOPIC_GAMBIT_ID` 替换为匹配器。就可以切换到该规则下获得回复。
 
 关于知识库路由的更多介绍，[参考文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html#知识库路由)。
+
+
+## 延申说明
+
+[《对话实现的更多详细说明（查看大图）》](https://docs.chatopera.com/images/products/platform/mechanism/conversations.jpg) 虽然更为复杂，但和概念图含义基本一致，其中的要点是模块间有更多的状态检查和穿透行为（从一个模块进入另外一个模块）。在检索的过程中，涉及到一些参数，这些参数可以在 Chatopera 机器人平台对话机器人设置页面设定或者在 SDK 中传入参数。比如知识库阀值默认为 `0.9`，该阈值可以通过在请求中设定参数来调整，[介绍链接](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)。

@@ -4,7 +4,8 @@
 
 [https://bot.chatopera.com/](https://bot.chatopera.com/)
 
-![](../../images/assets/screenshot_20240624091218.png)
+<!-- 图片来源 2025_09_01_Chatopera云服务.pptx -->
+![](../../images/platform/screenshot_20250901173914.png)
 	
 ## 入门
 <!-- First Steps -->

@@ -1,6 +1,6 @@
 <!-- markup:blank-line -->
 # <3/5> 设置热门问题
-<< 上一步：[<2/5> 自动生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
+<< 上一步：[<2/5> 生成 RAG 知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 

@@ -4,15 +4,12 @@
 
 * [注册使用 Chatopera 云服务](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)
 
-## 词典
+## RAG 知识库
 
-* [系统词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-sysdicts.html)
-* [词汇表词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-vocab.html)
-* [正则表达式词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-regex.html)
+* [生成 RAG 知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/rag/rag-uploadfiles.html)
 
-## 知识库
+## FAQ 知识库
 
-* [知识库问答自动生成](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-datapreprocessing.html)
 * [维护知识库问答对](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-qna.html)
 * [知识库问答及调优测试](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-chat-fix.html)
 * [知识库问答对导入和导出](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-transfer.html)
@@ -65,6 +62,12 @@
 * [SDK](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/integration-sdk.html)
 * [CLI 安装和配置](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-install-config.html)
 * [CLI 导入和导出对话语料](https://docs.chatopera.com/products/chatbot-platform/howto-guides/integration/cli-export-import.html)
+
+## 词典
+
+* [系统词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-sysdicts.html)
+* [词汇表词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-vocab.html)
+* [正则表达式词典](https://docs.chatopera.com/products/chatbot-platform/howto-guides/dicts/dicts-regex.html)
 
 ## 示例程序
 

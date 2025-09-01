@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <2/5> 自动生成知识库
+# <2/5> 生成 RAG 知识库
 
 << 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
@@ -9,9 +9,9 @@
 
 ## 上传文件
 
-点击机器人菜单中【数据预处理】一栏。
+点击机器人菜单中【RAG 知识库】一栏。
 
-![](../../../images/assets/screenshot_20240612141031.png)
+![](../../../images/assets/screenshot_20250901175630.png)
 
 下载[示例文件](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)得到文件 [doc-sample-preprocessing.docx](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)，下载地址 [https://dwz.chatopera.com/k9iO12](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)。
 
@@ -19,25 +19,21 @@
 
 ## 启动分析任务
 
-此时，可以看到文件已经上传成功，继续点击页面右侧的【分析】按钮，如下图。
+此时，可以看到文件已经上传成功，继续点击页面右侧的【生成 RAG 知识库】按钮，如下图。
 
-![](../../../images/assets/screenshot_20240612141240.png)
+![](../../../images/assets/screenshot_20250901175727.png)
 
 然后，页面中弹出对话框，对于选项保持默认即可，点击【确定】。
 
 ![](../../../images/assets/screenshot_20240612141514.png)
 
-此时，分析任务启动，等待大约 10 秒中，界面会自动更新状态，可以看到分析任务变为【分析中】。因为当前文件内容少，大约 1 分钟后，分析状态变成了【分析完成】。进入机器人的知识库。
+此时，分析任务启动，等待大约 10 秒中，界面会自动更新状态，可以看到分析任务变为【分析中】。因为当前文件内容少，大约 1 分钟后，分析状态变成了【分析完成】。
 
-![](../../../images/assets/screenshot_20240624184920.png)
-
-此时，问答对已经根据上传的文件自动生成。
-
-## 测试知识库问答对
+## 测试 RAG 问答
 
 进入 `阿Q`的测试对话页，并在下图 1 位置输入：`海口有几个机场`。点击【发送】。`阿Q` 的回复类似下面。
 
-![](../../../images/assets/screenshot_20240612141744.png)
+![](../../../images/assets/screenshot_20250901180050.png)
 
 验证通过。
 
