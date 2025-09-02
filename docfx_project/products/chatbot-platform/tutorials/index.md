@@ -7,7 +7,8 @@
 
 在开始之前，您先要对 Chatopera 云服务有一个系统的认识，那就是下面这张图。
 
-![](../../../images/assets/screenshot_20240624091218.png)
+<!-- 图片来源 2025_09_01_Chatopera云服务.pptx -->
+![](../../../images/platform/screenshot_20250901173914.png)
 
 作为定制聊天机器人的工具，Chatopera 将定制机器人的生命周期分成了三个：
 
