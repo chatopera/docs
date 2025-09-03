@@ -6,7 +6,7 @@
 - [检索知识库](#检索知识库)：从知识库获得回复
 - [检索意图识别](#检索意图识别)：从意图识别模块获得回复
 
-检索多轮对话，也**同时会从知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式**，使用检索多轮对话接口，可以定制出更为智能的对话机器人。 了解详情，请阅读[《多轮对话的工作机制》](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)。
+检索多轮对话，也**同时会从 FAQ 知识库、RAG 知识库、意图识别、对话脚本中获得答案并按照算法回复最佳答案，也是 Chatopera 官方最推荐的集成形式**，使用检索多轮对话接口，可以定制出更为智能的对话机器人。 了解详情，请阅读[《多轮对话的工作机制》](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)。
 
 ## 检索多轮对话
 
@@ -87,10 +87,13 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 
 | provider     | key                  | 解释                                                                                                            |
 | ------------ | -------------------- | --------------------------------------------------------------------------------------------------------------- |
-| faq          | [知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-qna.html)                     |                                                                                                                 |
+| faq          | [FAQ 知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/faq/faq-qna.html)                     |                                                                                                                 |
 |              | docId                | 文档 ID                                                                                                         |
 |              | post                 | 标准问                                                                                                          |
 |              | score                | 分数                                                                                                            |
+| rag          | [RAG 知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/rag/rag-uploadfiles.html)                     |                                                                                                                 |
+|              | model                | 模型信息，e.g. qwen2.5:14b                                                                                                            |
+|              | think                | 推理信息                                                                                                            |   
 | intent       | [意图识别](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)             | 更多描述参考[意图匹配器](https://docs.chatopera.com/products/chatbot-platform/conversation/gambits/intent.html) |
 |              | intent.name          | 意图名称                                                                                                        |
 |              | intent.state         | 意图会话状态                                                                                                    |
@@ -100,7 +103,39 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 | fallback     | 兜底回复             |                                                                                                                 |
 | mute         | 该用户被该机器人屏蔽 |                                                                                                                 |
 
-## 检索知识库
+
+## 检索 RAG 知识库
+
+RAG 知识库通过用户上传的文档生成答案，结合大语言模型和向量数据库等技术。
+
+```API
+Chatbot#command("POST", "/rag/query", body)
+```
+
+<h4><font color="purple">body / JSON Object</font></h4>
+
+```JSON
+{
+ "query": "海南有几个机场"
+}
+```
+
+<h4><font color="purple">result/ JSON Object</font></h4>
+
+```JSON
+{
+    "rc": 0, // rc = 0 当对话请求正确处理时; rc 等于其它值，对话请求异常，服务未能顺利执行
+    "data": {
+        "think": null, // 机器人推理内容
+        "content": "海南有三个民用机场：海口美兰国际机场、三亚凤凰国际机场和琼海博鳌机场。", // 机器人回复内容
+        "is_logic_fallback": false, // 是否解答问题：1）false - 已经解答; 2) true - 未能解答
+        "model": "qwen2.5:14b", // 本次问答使用的模型
+        "prompt": "1. 使用下面的上下文信息回答末尾的问题\n2. 如果你不知道，就说\"I_DONT_KNOW\", 不要胡说.\n3. 让答案尽量的简洁，只用3、4个句子回答问题.\n\n上下文信息: \n海口有海口美兰国际机场，位于海口市美兰区，航线飞往国内大中城市，也有飞往国际的专机。从海口去美兰国际机场，除了地铁快速到达外，有绕城高速直达，还有琼文高速和223国道，交通非常便利。海南有三个民用机场：海口美兰国际机场、三亚凤凰国际机场和琼海博鳌机场。\n\n\n问题: 海南有几个机场\n答案:" // 系统提示词
+    }
+}
+```
+
+## 检索 FAQ 知识库
 
 ```API
 Chatbot#command("POST", "/faq/query", body)
