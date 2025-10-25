@@ -1,29 +1,19 @@
 # 设置欢迎语热门问题
 
-对于一个新创建的机器人，在 H5 聊天控件中，热门问题列表是根据被检索出来的次数排序的，即热门度。了解更多热门度，[参考文档](/products/chatbot-platform/howto-guides/faq/faq-hot.html)。
+欢迎语热门问题，就是进入 Chatopera H5 网页渠道或机扫一扫聊天码以后，进入访客对话窗口后，机器人发送的打招呼信息包含的热门问题列表。
 
-因此，默认情况下，欢迎语中的热门问题，是动态变化的。但是在应用场景中，**希望将欢迎语中的热门问题固定**，有以下两个方案：
+![alt text](../../../../images/assets/1761356705359.png)
 
-* 联系客服平台设置
-* 使用多轮对话设计器设置
+使用多轮对话设计器，可以绑定欢迎语中的热门问题，有两种形式：
 
-## 联系客服平台设置
+* 自动关联热门问题
+* 手动关联热门问题
 
-使用注册时，使用的邮箱发送邮件到： [info@chatopera.com](mailto:info@chatopera.com?subject=%5BChatopera%20%E4%BA%91%E6%9C%8D%E5%8A%A1%5D%20%E8%AE%BE%E7%BD%AE%E6%AC%A2%E8%BF%8E%E8%AF%AD%E7%83%AD%E9%97%A8%E9%97%AE%E9%A2%98&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%0D%0A%0D%0A%E6%88%91%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA%20clientID%20%E6%98%AF%0D%0A%E6%88%91%E6%83%B3%E4%BD%BF%E7%94%A8%E4%B8%8B%E9%9D%A2%E7%9A%84%E7%83%AD%E9%97%A8%E9%97%AE%E9%A2%98%EF%BC%8C%E6%8C%89%E7%85%A7%E9%A1%BA%E5%BA%8F%EF%BC%9A%0D%0A%0D%0A1.%20...%0D%0A2.%20...%0D%0A3.%20...)   `（点击左侧邮箱地址，自动初始化邮件正文）`
-
-![](../../../../images/assets/screenshot_20240624154347.png)
-
-Chatopera 云服务工作人员会在 1 个工作日内进行处理，回复您。
-
-## 使用多轮对话设计器设置
-
-这种方法是自助完成，稍微麻烦一点。为什么 Chatopera 云服务提供了这样的方案？因为这样帮助您了解 Chatopera 低代码定制聊天机器人的能力，借助多轮对话设计器，您就掌握了更多的开启定制智能对话技能的秘籍，掌握 Chatopera 云服务的高级玩法。
-
-### 下载多轮对话设计器
+## 下载多轮对话设计器
 
 [参考文档](/products/chatbot-platform/howto-guides/convs/cde-install.html)。
 
-### 多轮对话设计器添加机器人
+## 多轮对话设计器添加机器人
 
 安装好多轮对话设计器后，启动多轮对话设计器，可以看到类似如下的界面：
 
@@ -40,9 +30,71 @@ Chatopera 云服务工作人员会在 1 个工作日内进行处理，回复您�
 ![](../../../../images/assets/screenshot_20240624155204.png)
 
 
-### 设置欢迎语热门问题
+## 自动关联热门问题
 
-接下来，就开始真正的编写热门问题欢迎语。首先，在多轮对话设计器中，打开刚刚添加的机器人。
+在机器人平台的知识库，每个问答对会根据被检索出现的次数计算热度，被检索出的次数越高，热度越高。
+
+为了支持在欢迎语中，展示热门问题列表，可以用下面的【脚本】和【函数】，根据知识库问题热度，动态的获取。
+
+
+* 脚本：在脚本中，添加如下内容
+
+```
+// FAQ 热门问题展示
++ __faq_hot_list
+- {keep} ^getGreetings()
+```
+
+
+* 函数：在函数中，添加如下内容
+
+
+```JavaScript
+// 问候语中关联常见问题
+// 更多消息格式，参考 https://dwz.chatopera.com/jQ0F9G
+exports.getGreetings = async function() {
+    let data = await this.maestro.getHotFAQs();
+    debug("getHotFAQs %j", data)
+
+    if (data.length > 0) {
+        let params = [];
+        let postIndex = 0;
+        for (let x of data) {
+            // 跳过 FAQ 中约定的内部命令
+            if (!x["post"].startsWith("__")) {
+                params.push({
+                    label: (++postIndex).toString() + ". " + x["post"],
+                    type: "qlist",
+                    text: x["post"]
+                });
+            }
+        }
+
+        if (params.length > 0) {
+            return {
+                text: "请问有什么可以帮到您？",
+                params: params
+            };
+        } else {
+            return {
+                string: ""
+            };
+        }
+    } else {
+        return {
+            string: ""
+        };
+    }
+}
+```
+
+在多轮对话设计器中保存，并进行测试。
+
+## 手动关联热门问题
+
+手动设置热门问题作为欢迎语，就是通过编辑【脚本】和【函数】，**固定**欢迎语中的热门问题。
+
+首先，在多轮对话设计器中，打开刚刚添加的机器人。
 
 ![](../../../../images/assets/screenshot_20240624155308.png)
 
