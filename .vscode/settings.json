@@ -1,0 +1,5 @@
+{
+    "markdown.copyFiles.destination": {
+        "**/*": "${documentWorkspaceFolder}/docfx_project/images/assets/${unixTime}.${fileExtName}"
+    }
+}
