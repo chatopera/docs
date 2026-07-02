@@ -1,3 +1,5 @@
 # RAG 知识库
 - name: 知识库问答自动生成
   href: rag-uploadfiles.md
+- name: 知识库修改提示词模板
+  href: rag-modifyprompttpl.md

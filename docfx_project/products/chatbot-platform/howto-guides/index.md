@@ -7,6 +7,7 @@
 ## RAG 知识库
 
 * [生成 RAG 知识库](https://docs.chatopera.com/products/chatbot-platform/howto-guides/rag/rag-uploadfiles.html)
+* [修改 RAG 知识库提示词模板](https://docs.chatopera.com/products/chatbot-platform/howto-guides/rag/rag-modifyprompttpl.html)
 
 ## FAQ 知识库
 
