@@ -20,7 +20,7 @@ if [ ! -d dist/_site/ ]; then
     exit 1
 fi
 
-DOCKER_NGINX=~/prod/backups/nginx.docker.tgz
+DOCKER_NGINX=/c/backups/docker/nginx.docker.tgz
 if [ -f $DOCKER_NGINX ]; then
     set -x
     docker load < $DOCKER_NGINX
