@@ -21,7 +21,10 @@ if [ -f /opt/docfx/docfx ]; then
     CMD_PATH="/opt/docfx/docfx"
 elif [ -f /mnt/c/Users/Administrator/.dotnet/tools/docfx.exe ]; then
     CMD_PATH="/mnt/c/Users/Administrator/.dotnet/tools/docfx.exe"
+elif [ -f /d/Windows/apps/docfx/docfx.exe ]; then
+    CMD_PATH="/d/Windows/apps/docfx/docfx.exe"
 fi
+echo "docfx path" $CMD_PATH
 $CMD_PATH --version
 
 cd $baseDir/../docfx_project
