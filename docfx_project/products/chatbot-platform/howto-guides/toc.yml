@@ -2,6 +2,10 @@
   href: account/toc.yml
   topicHref: account/account-mgr.md
 
+- name: 开发者工具
+  href: cde/toc.yml
+  topicHref: cde/guide101_zh.md
+
 - name: RAG 知识库
   href: rag/toc.yml
   topicHref: rag/rag-uploadfiles.md
