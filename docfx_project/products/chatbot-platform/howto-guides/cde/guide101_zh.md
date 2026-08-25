@@ -72,17 +72,21 @@ bot --help
 
 3) 点击 Chatopera 图标，进入插件详情
 
-4）点击 `Install` / `安装`
-
-5）点击【信任】
-
 ![alt text](../../../../images/assets/1787617472862.png)
+
+4）点击 `Install` / `安装`
 
 ![alt text](../../../../images/assets/1787617490886.png)
 
+5）点击【信任】
+
 ![alt text](../../../../images/assets/1787617634875.png)
 
-安装后，能在左侧查看到 CDE 插件图标，安装结束。
+安装后，能在左侧查看到 CDE 插件图标。
+
+![alt text](../../../../images/assets/1787618034291.png)
+
+安装结束。
 
 ## 下一步
 
