@@ -1,6 +1,6 @@
 - name: VSCode 插件
   href: https://marketplace.visualstudio.com/items?itemName=chatopera.chatbot-dev-env
-- name: Get Started(En)
-  href: guide101_en.md
 - name: 快速开始（中文）
   href: guide101_zh.md
+- name: Get Started(En)
+  href: guide101_en.md
