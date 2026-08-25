@@ -66,19 +66,19 @@ bot --help
 
 打开 VSCode, 安装下图：
 
-1) 进入插件管理
+1. 进入插件管理
 
-2）搜索 `chatbot-dev-env`
+2. 搜索 `chatbot-dev-env`
 
-3) 点击 Chatopera 图标，进入插件详情
+3. 点击 Chatopera 图标，进入插件详情
 
 ![alt text](../../../../images/assets/1787617472862.png)
 
-4）点击 `Install` / `安装`
+4. 点击 `Install` / `安装`
 
 ![alt text](../../../../images/assets/1787617490886.png)
 
-5）点击【信任】
+5. 点击【信任】
 
 ![alt text](../../../../images/assets/1787617634875.png)
 

@@ -28,7 +28,9 @@ For example, the [MSI installer](https://nodejs.org/dist/v24.19.0/node-v24.19.0-
 
 After installation is complete, verify that it was successful.
 
-*   **Mac/Linux Users:** Launch a terminal/console, run `echo $PATH` to check if the Node installation path is included in `PATH`, and then run `node --version` and `npm --version` to confirm the installed versions are correct. * Windows users: Launch a Command Prompt (CMD), run `echo %Path%` to verify that the Node.js installation path is included in the `Path` variable. Then, run `node --version` and `npm --version` in the CMD window to confirm the installed versions are correct.
+**Mac/Linux Users:** Launch a terminal/console, run `echo $PATH` to check if the Node installation path is included in `PATH`, and then run `node --version` and `npm --version` to confirm the installed versions are correct. 
+
+**Windows users:** Launch a Command Prompt (CMD), run `echo %Path%` to verify that the Node.js installation path is included in the `Path` variable. Then, run `node --version` and `npm --version` in the CMD window to confirm the installed versions are correct.
 
 ![alt text](../../../../images/assets/1787616975744.png)
 
@@ -64,19 +66,19 @@ Download the installer package for your operating system and proceed with the in
 
 Open VSCode and follow the steps shown in the image below:
 
-1) Go to the Extensions view
+1. Go to the Extensions view
 
-2) Search for `chatbot-dev-env`
+2. Search for `chatbot-dev-env`
 
-3) Click the Chatopera icon to view the extension details
+3. Click the Chatopera icon to view the extension details
 
 ![alt text](../../../../images/assets/1787617472862.png)
 
-4) Click `Install`
+4. Click `Install`
 
 ![alt text](../../../../images/assets/1787617490886.png)
 
-5) Click [Trust]
+5. Click [Trust]
 
 ![alt text](../../../../images/assets/1787617634875.png)
 
