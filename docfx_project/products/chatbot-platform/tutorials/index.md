@@ -2,32 +2,13 @@
 
 入门教程帮助您了解和熟悉 Chatopera 云服务，开始快速的定制聊天机器人。
 
+Chatopera 云服务的主要应用场景是智能客服，因此，我们将引导您实现一个智能门锁的机器人客服示例，在课程的最后，您将得到类似下面的机器人 H5 服务页面~
 
-## 为什么使用
+![](../../../images/products/chatopera_demo_260827.gif)
 
-在开始之前，您先要对 Chatopera 云服务有一个系统的认识，那就是下面这张图。
+您也可以现在去体验试试呢！[DEMO 机器人地址](https://h5.chatopera.com/im/text/0cJJZw.html)
 
-<!-- 图片来源 2025_09_01_Chatopera云服务.pptx -->
-![](../../../images/platform/screenshot_20250901173914.png)
-
-作为定制聊天机器人的工具，Chatopera 将定制机器人的生命周期分成了三个：
-
-* 1、定制对话技能；
-* 2、发布上线；
-* 3、迭代优化。
-* 针对全部活动，进行投入产出的分析。
-
-在入门教程中，是快速的以点带面的方式完成一个聊天机器人，如果您在开始做入门教程之前，先观察上图并建立印象，那么将会大大帮助您掌握 Chatopera 云服务。在遇到具体问题或深入使用，请参考[使用指南](https://docs.chatopera.com/products/chatbot-platform/howto-guides/index.html)、[参考手册](https://docs.chatopera.com/products/chatbot-platform/references/index.html) 和 [背景知识](https://docs.chatopera.com/products/chatbot-platform/explanations/index.html)。
-
-## 前提准备
-
-> Chatopera 云服务支持无代码方式定制聊天机器人，是**不需要您具备编程技能和掌握自然语言处理等技术**的，但是如果您有使用 JavaScript 的经验，那么可以通过低代码的方式定制出更强大的对话技能。
-
-确保您已经注册了 [Chatopera 云服务账号](https://docs.chatopera.com/products/chatbot-platform/howto-guides/account/account-mgr.html)。
-
-接下来就发布第一个聊天机器人吧！
-
-## 新手任务
+<!-- TODO https://github.com/chatopera/docs/issues/114 更新以下-->
 
 入门教程包括 5 个小任务，您只需要一步步的按照提示操作即可，完成入门教程需要 30 分钟。建议中间做一些休息：**任务1、任务2**一次性完成，然后休息一会；完成**任务3**休息一会；最后一次性完成**任务4、任务5**，这两个任务有连续性。
 

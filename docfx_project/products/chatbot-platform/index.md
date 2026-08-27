@@ -4,9 +4,17 @@
 
 [https://bot.chatopera.com/](https://bot.chatopera.com/)
 
+作为定制聊天机器人的工具，Chatopera 将定制机器人的生命周期分成了三个：
+
+* 1、定制对话技能；
+* 2、发布上线；
+* 3、迭代优化。
+* 针对全部活动，进行投入产出的分析。
+
 <!-- 图片来源 2025_09_01_Chatopera云服务.pptx -->
 ![](../../images/platform/screenshot_20250901173914.png)
-	
+
+
 ## 入门
 <!-- First Steps -->
 
