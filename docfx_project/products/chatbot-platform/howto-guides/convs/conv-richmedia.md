@@ -23,7 +23,7 @@
 
 具体的使用方法是，找到 greetings 话题，或创建一个新的话题，设置脚本和函数：
 
-* 脚本
+* 脚本：在脚本中，定义函数返回。
 
 ```脚本
 // FAQ Hotlist
@@ -31,7 +31,7 @@
 - {keep} ^get_greetings()
 ```
 
-* 函数
+* 函数：函数返回一种约定的数据格式。
 
 ```JavaScript
 // 问候语中关联常见问题
@@ -68,7 +68,81 @@ exports.get_greetings = async function() {
 
 `{keep}` 的作用是机器人记忆中，可重复的使用一个回复，参考[文档](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html#%E5%8C%B9%E9%85%8D%E5%99%A8%E5%8F%8A%E5%9B%9E%E5%A4%8D%E5%A4%8D%E7%94%A8)。
 
-
 ## 按钮消息
 
+另外一种情况是机器人回答一个选择列表，访客点选按钮进行选择。
+
+![alt text](../../../../images/assets/1787817582330.png)
+
+* 脚本
+
+```脚本
++ (*) 产品列表 (*)
+- ^get_products()
+```
+
+
+该规则将保证在访客的问题中有 `产品列表` 时，发送函数 `get_products` 返回的内容。
+
+* 函数
+
+```
+// 按钮选择消息
+exports.get_products = async function() {
+    return {
+        text: "您对下面哪个产品感兴趣",
+        params: [{
+                label: "上衣",
+                type: "button",
+                text: "介绍一下上衣"
+            },
+            {
+                label: "服装",
+                type: "button",
+                text: "介绍一下鞋帽"
+            }
+        ]
+    }
+}
+```
+
+在脚本中，只需要设定`params`中的内容作为选型，其他保持默认。
+
 ## 图文消息
+
+Chatopera 云服务还支持的一类消息是图文消息，通过是分享一个链接，展示链接的图片和简介。
+
+![alt text](../../../../images/assets/1787817302714.png)
+
+* 脚本
+
+在脚本中，定义函数返回。
+
+```脚本
++ 介绍一下上衣
+- ^get_shangyi()
+```
+
+该规则将保证在访客的问题中有 介绍一下上衣时，发送函数 `get_shangyi` 返回的内容。
+
+* 函数
+
+```
+// 图文消息
+exports.get_shangyi = async function() {
+    return {
+        text: "{CLEAR} 图文消息",
+        params: [{
+            type: 'card',
+            title: "秋冬上衣优选",
+            thumbnail: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=277597165,2202071991&fm=15&gp=0.jpg",
+            summary: "秋冬上衣优选秋冬上衣优选秋冬上衣优选秋冬上衣优选秋冬上衣优选秋冬上衣优选秋冬上衣优选秋冬上衣优选",
+            hyperlink: "https://www.1688.com/huo/B6F9CDAFD7B0C5AEBAA2CDE2CCD7BCD3BAF1C9CFD2C2C7EFB6AC.html"
+        }]
+    }
+}
+```
+
+其中，title代表大标题，thumbnail是图片，summary是简介，hyperlink是点击图文消息后，跳转的链接，这几项是用户可以自定义的，其它项就使用默认值，比如type的值必须是card。
+
+在掌握了知识库、脚本语法和函数后，用户可以支持各种客服场景。
