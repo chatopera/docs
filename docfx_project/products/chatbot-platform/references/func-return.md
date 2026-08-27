@@ -3,8 +3,6 @@
 **函数的返回值，可以用于自定回复消息内容或状态跳转等。** 在多轮对话中，回复除纯文本外，还可以支持多媒体消息，这样用户交互的体验更佳。不同消息的类型还需要渠道能够兼容，或在业务系统中进行适配。已经默认完成适配的渠道或软件：
 
 * [Chatopera H5 聊天控件](https://docs.chatopera.com/products/chatbot-platform/howto-guides/channels/webim-setup.html)
-* [春松客服](https://docs.cskefu.com/docs/work-chatbot/message-types)
-* [多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)
 
 ## 列表消息
 

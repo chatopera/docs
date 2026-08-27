@@ -36,6 +36,7 @@
 * [设置回复](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-replies.html)
 * [使用上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-hooks.html)
 * [使用函数](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-func.html)
+* [回复富文本内容：设置热门问题、按钮消息、图文消息、列表消息等](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-richmedia.html)
 * [配置环境变量](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-environment.html)
 * [管理对话状态](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-state.html)
 * [集成自定义外部对话系统](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-external-chatsys.html)

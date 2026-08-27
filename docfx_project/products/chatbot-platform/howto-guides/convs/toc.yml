@@ -13,6 +13,8 @@
   href: conv-hooks.md
 - name: 使用函数
   href: conv-func.md
+- name: 回复富文本内容
+  href: conv-richmedia.md
 - name: 配置环境变量
   href: conv-environment.md
 - name: 管理对话状态

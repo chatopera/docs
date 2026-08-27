@@ -1,0 +1,134 @@
+[
+    {
+        "docId": "AaA9TzUYmhT6m4dyRvZ0",
+        "categories": [],
+        "enabled": true,
+        "post": "门锁的权限设计",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "本产品拥有分级权限管理功能，系统将用户类型分成:管理员、普通用户,管理员不仅可以开门，还拥有系统菜单的管理权限;普通用户只具有开门权限。系统将他们存储在不同的区域便于管理。\n\n管理员区可以允许最多存储指纹、密码共9组,普通用户区可以允许最多存储指纹、密码、和IC卡共295组。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9TlsgmhT6m4dyRvZz",
+        "categories": [],
+        "enabled": true,
+        "post": "如何设置门锁的时间",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "时间设置: 门锁内置实时时钟功能,请按门锁的语音提示设置门锁的当前时间,例如“21年10月25日19时22分”请按语音提示依次输入“21年10月25日19时22分”按“#\"键确认。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9TL0vmhT6m4dyRvZx",
+        "categories": [],
+        "enabled": true,
+        "post": "门锁定的方法",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "1.外部锁定:室外把手上提，主锁舌打出锁定。\n\n2.内部锁定:室内把手上提，主锁舌打出锁定。\n\n3.室内反锁:在室内将反锁旋钮旋转90度，打出反锁舌。\n\n室内反锁后门内门外均无法直接开锁，需要将反锁旋钮打回。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9S9W-mhT6m4dyRvZw",
+        "categories": [],
+        "enabled": true,
+        "post": "有几种开锁方法，介绍一下开锁方法",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "本门锁支持三种方式开锁，分别是：指纹开锁，机械钥匙开锁和密码开锁。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9SagWmhT6m4dyRvZv",
+        "categories": [],
+        "enabled": true,
+        "post": "中空木门能进行安装吗？",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "安装前请检查您的门是实木门还是钢门或中空木门，钢门或中空木门使用带天地勾锁体。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9SR3jmhT6m4dyRvZu",
+        "categories": [],
+        "enabled": true,
+        "post": "钢门能安装吗？",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "安装前请检查您的门是实木门还是钢门或中空木门，钢门或中空木门使用带天地勾锁体。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9DLjxmhT6m4dyRvZj",
+        "categories": [],
+        "enabled": true,
+        "post": "实木门能安装吗？",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "安装前请检查您的门是实木门还是钢门或中空木门，实木门采用无天地勾版本锁体。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9C3EkmhT6m4dyRvZi",
+        "categories": [],
+        "enabled": true,
+        "post": "本门锁安装支持的门的厚度范围",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "安装前请先检查您的门厚是否在极限门厚范围内，本锁适用的门厚是：50-100mm。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA9Cf3jmhT6m4dyRvZh",
+        "categories": [],
+        "enabled": true,
+        "post": "门锁是否使用电池，什么型号的电池",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "本锁使用 4节 AA 1.5V 干电池串联供电，安装时请注意型号，更换电池时新旧电池不能混装。"
+            }
+        ],
+        "similarQuestions": []
+    },
+    {
+        "docId": "AaA3w19QmhT6m4dyRvZe",
+        "categories": [],
+        "enabled": true,
+        "post": "联系师傅上门安装的电话",
+        "replies": [
+            {
+                "rtype": "plain",
+                "content": "各区咨询电话 -\n北京地区：1580000xxx\n上海地区：1580000xxx\n\n全国其它地区：400-xxxxxx"
+            }
+        ],
+        "similarQuestions": [
+            "预约上门安装"
+        ]
+    }
+]
