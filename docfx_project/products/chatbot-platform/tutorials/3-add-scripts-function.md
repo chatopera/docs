@@ -144,7 +144,7 @@ __faq_hot_list
 
 ![测试对话](../../../images/products/platform/screenshot-20210913-203616.png)
 
-当你看到了这样的回答，那么本步骤就完成了！恭喜你完成本节任务！
+当你看到了这样的回答，那么本步骤就完成了！恭喜您完成本节任务！
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 

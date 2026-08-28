@@ -131,7 +131,7 @@ exports.rebookAirplaneTicket = async function() {
 
 ![](../../../images/assets/screenshot_20230503121711.png)
 
-恭喜你完成本节任务！
+恭喜您完成本节任务！
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 

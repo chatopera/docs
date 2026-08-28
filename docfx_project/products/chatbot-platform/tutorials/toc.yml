@@ -2,9 +2,9 @@
   href: 1-create-bot.md
 - name: <2/5> 生成 RAG 知识库
   href: 2-answer-faq.md
-- name: <3/5> 设置热门问题
+- name: <3/5> 使用 FAQ 修复回答
   href: 3-add-scripts-function.md
-- name: <4/5> 识别订票意图
+- name: <4/5> 批量导入 FAQ 知识库
   href: 4-add-intent.md
-- name: <5/5> 提交订票表单
+- name: <5/5> 优化欢迎语
   href: 5-stats-history.md

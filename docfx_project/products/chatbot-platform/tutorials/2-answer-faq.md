@@ -5,46 +5,44 @@
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 
-现在我们上传语料文件，让`阿Q`可以回答更多的问题。
+## 回复访客的咨询问题
 
-## 上传文件
+我们设定 小 Q 机器人是一款智能门锁的 AI 客服，为了模拟对话，我们从海尔官网下载了[HFD-T15 智能门锁](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.pdf)的使用说明书[^haier-explain]。
 
-点击机器人菜单中【RAG 知识库】一栏。
+下载说明书：[连接](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.pdf)。
 
-![](../../../images/assets/screenshot_20250901175630.png)
+那么，我们就可以利用这份说明书，升级聊天机器人了，并且，借助这个方法，80% 的访客咨询都可以得到解答。
 
-下载[示例文件](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)得到文件 [doc-sample-preprocessing.docx](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)，下载地址 [https://dwz.chatopera.com/k9iO12](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)。
+## 上传说明书到 RAG 知识库
 
-点击网页中的【上传文件】按钮，从操作系统中选择刚刚下载的文件 [doc-sample-preprocessing.docx](https://docs.chatopera.com/assets/files/doc-sample-preprocessing.docx)。
+首先，我们打开这个说明书 PDF 文件，做一点浏览，感受一下文件的内容：有文字、图片、链接等。可以说，这是一份"普通的文件"，没有特殊的格式。
 
-## 启动分析任务
+下一步，我们从浏览器中，打开小 Q 机器人的【RAG 模块】控制台：点击【上传文件】。
 
-此时，可以看到文件已经上传成功，继续点击页面右侧的【生成 RAG 知识库】按钮，如下图。
+![alt text](../../../images/assets/1787884710516.png)
 
-![](../../../images/assets/screenshot_20250901175727.png)
+然后，选择我们刚刚下载的 haier-HFD-T15-manual-V1.pdf，然后，可以看到文件上传成功。
 
-然后，页面中弹出对话框，对于选项保持默认即可，点击【确定】。
+![alt text](../../../images/assets/1787884784192.png)
 
-![alt text](../../../images/assets/1782977687947.png)
+接着，点击右侧的【生成 RAG 知识库】。
 
-此时，分析任务启动，等待大约 10 秒中，界面会自动更新状态，可以看到分析任务变为【分析中】。因为当前文件内容少，大约 1 分钟后，分析状态变成了【分析完成】。
+![alt text](../../../images/assets/1787884834328.png)
 
-## 测试 RAG 问答
+## 测试对话
 
-在阿Q 的【RAG 知识库】中，点击【测试对话】，进入 `阿Q`的测试对话页。
+![alt text](../../../images/assets/1787884896959.png)
 
-![alt text](../../../images/assets/1782977727051.png)
+点击【测试对话】，这样就进入了如下界面。
 
-并在下图 1 位置输入：`海口有几个机场`。点击【发送】。`阿Q` 的回复类似下面。
+![alt text](../../../images/assets/1787885028499.png)
 
-![](../../../images/assets/screenshot_20250901180050.png)
+这个界面，是给访客使用前，我们调试用途的工具。
 
-验证通过，现在您可以上传更多资料：Word, PPT, 图片，Markdown，HTML 等。丰富阿Q 的聊天能力吧~
+现在您可以上传更多资料：Word, PPT, 图片，Markdown，HTML 等。丰富或者修正小 Q 机器人的聊天能力～
 
-恭喜你完成本节任务！
-
-![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) <!-- markup:skip-line -->
-
-接下来，我们通过 Chatopera 中一个强大的对话管理模块 - [多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)来自定义迎语中的热门问题。
+恭喜您完成本节任务！接下来，我们看看上线后的优化。
 
 << 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 快速修复不好的回答，使用 FAQ 模块](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
+
+[^haier-explain]: 本文档仅使用海尔产品文档作为机器人语料示例，并不代表海尔官方对产品的介绍、承诺保证。关于海尔产品的介绍、更新，请进入海尔官网进行了解。
