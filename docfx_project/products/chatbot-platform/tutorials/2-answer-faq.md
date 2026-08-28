@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <2/5> 生成 RAG 知识库
+# <2/5> 回答 80% 的客服问题，使用 RAG 模块
 
 << 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
 
@@ -47,4 +47,4 @@
 
 接下来，我们通过 Chatopera 中一个强大的对话管理模块 - [多轮对话](/products/chatbot-platform/tutorials/3-add-scripts-function.html)来自定义迎语中的热门问题。
 
-<< 上一步：[<1/5> ](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
+<< 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 快速修复不好的回答，使用 FAQ 模块](/products/chatbot-platform/tutorials/3-add-scripts-function.html)

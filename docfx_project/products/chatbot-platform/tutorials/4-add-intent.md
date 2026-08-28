@@ -1,5 +1,5 @@
 <!-- markup:blank-line -->
-# <4/5> 识别订票意图
+# <4/5> 批量导入 FAQ 知识库，使用 CDE 和 CLI
 
 << 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
 

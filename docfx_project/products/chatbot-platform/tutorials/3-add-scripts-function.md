@@ -1,6 +1,6 @@
 <!-- markup:blank-line -->
-# <3/5> 设置热门问题
-<< 上一步：[<2/5> 生成 RAG 知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
+# <3/5> 快速修复不好的回答，使用 FAQ 模块
+<< 上一步：[<2/5> 回答 80% 的客服问题，使用 RAG 模块](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 
@@ -148,7 +148,7 @@ __faq_hot_list
 
 ![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
 
-<< 上一步：[<2/5> 自动生成知识库](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 识别订票意图](/products/chatbot-platform/tutorials/4-add-intent.html)
+<< 上一步：[<2/5> 回答 80% 的客服问题，使用 RAG 模块](/products/chatbot-platform/tutorials/2-answer-faq.html) | >> 下一步：[<4/5> 批量导入 FAQ 知识库，使用 CDE 和 CLI](/products/chatbot-platform/tutorials/4-add-intent.html)
 
 
 ## 可能遇到的问题
