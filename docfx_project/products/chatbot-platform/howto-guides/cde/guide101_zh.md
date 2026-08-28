@@ -4,15 +4,15 @@ CDE, 即 [Chatbot Development Env](https://marketplace.visualstudio.com/items?it
 
 ![](../../../../images/assets/Pasted%20image%2020260823172005.png)
 
-本教程主要是介绍 CDE 的安装和配置，具体的使用技巧，参考：[入门教程](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)。
+安装过程概述：
 
-## 前置准备
+![alt text](../../../../images/assets/1787881237181.png)
 
 * 安装 Node.js: 使用 CDE 需要结合 Chatopera CLI，安装 CLI 需要 Node.js  
 * 安装 Chatopera CLI: 安装和配置 Node.js 后，使用 `npm` 命令在控制台安装 
 * 安装 VSCode: CDE 是一个 VSCode 插件，所以需要先安装 VSCode
 
-### 安装 Node.js
+## 安装 Node.js
 
 需要使用 Node.js v18 或更高版本，在 [Nodejs 官网](https://nodejs.org/zh-cn/download) 下载安装包。Node.js 安装包支持不同的形式，推荐使用独立安装包。
 
@@ -34,7 +34,7 @@ CDE, 即 [Chatbot Development Env](https://marketplace.visualstudio.com/items?it
 
 ![alt text](../../../../images/assets/1787616975744.png)
 
-### 安装 Chatopera CLI
+## 安装 Chatopera CLI
 
 安装好 Nodejs 后，在命令行终端执行以下命令：
 
@@ -54,7 +54,7 @@ bot --help
 
 ![alt text](../../../../images/assets/1787617205477.png)
 
-### 安装 VSCode
+## 安装 VSCode
 
 进入 VSCode 官方网站： [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
 
@@ -90,4 +90,5 @@ bot --help
 
 ## 下一步
 
-* 使用[入门教程](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html) 进一步学习 CDE 的使用
+* CDE 的具体的使用，参考：[入门教程](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)
+* 在机器人发布时，可以使用 SDK/API 集成到其他软件中，参考：[Chatopera SDK 和 APIs](https://docs.chatopera.com/products/chatbot-platform/references/sdk/index.html)
