@@ -18,17 +18,25 @@ CDE, 即 [Chatbot Development Env](https://marketplace.visualstudio.com/items?it
 
 ## 安装 Node.js
 
+### 下载安装包
+
 需要使用 Node.js v18 或更高版本，在 [Nodejs 官网](https://nodejs.org/zh-cn/download) 下载安装包。Node.js 安装包支持不同的形式，推荐使用独立安装包。
 
 ![alt text](../../../../images/assets/1787616405961.png)
 
 比如，适用于 Windows 平台的 [MSI 安装包](https://nodejs.org/dist/v24.19.0/node-v24.19.0-x64.msi)。
 
-**设置环境变量 Path** ：注意，在安装过程中，设置如下选项。
+下载后，打开安装包，执行安装，注意选择设置环境变量。
+
+### 设置环境变量 Path
+
+在安装过程中，设置如下选项。
 
 > 将 Node 和 npm 设置到 Path 环境变量。
 
 ![alt text](../../../../images/assets/1787616606225.png)
+
+### 检查安装
 
 安装完成后，检查是否安装成功。
 

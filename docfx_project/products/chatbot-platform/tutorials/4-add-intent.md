@@ -107,3 +107,19 @@ book_airplane_ticket
 下面，我们就进入 [<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 完成这个工作~
 
 << 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 
+
+## 可能遇到的问题
+
+### 信息不匹配，请确认机器人信息
+
+提示如下：
+![错误提示](../../../images/products/platform/screenshot-20210913-193815.png)
+
+如果经过验证，你填写的信息没有错误，那么可能是电脑的时间日期与互联网标准时间之间有很大误差，需要先在操作系统上同步互联网时间，以下是 Windows 上同步互联网时间的方法，你也可以手动设置，其它操作系统，都有类似的操作。
+
+![解决方法](../../../images/products/platform/screenshot-20210913-193617.png)
+
+[^help1]: 可能遇到问题，比如提示[【信息不匹配，请确认机器人信息】](#信息不匹配请确认机器人信息)，参考本文后面的[《可能遇到的问题》](#可能遇到的问题)获得解决方案。
+[^install-cde]: 安装过程中遇到问题查看[可能遇到的问题](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html#%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98)，如遇新问题[创建工单](https://github.com/chatopera/docs/issues)
+
+[^function-js]: 这是一段 JavaScript 代码，JavaScript 是非常容易掌握的编程语言。

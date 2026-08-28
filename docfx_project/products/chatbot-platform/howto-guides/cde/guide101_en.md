@@ -18,17 +18,25 @@ When you encounter any problems during the novice tasks, you are welcome to [con
 
 ## Install Node.js
 
+### Download the installation package
+
 You need to use Node.js v18 or higher, download the installation package from [Nodejs official website](https://nodejs.org/zh-cn/download). Node.js installation packages support different forms, and it is recommended to use independent installation packages.
 
 ![alt text](../../../../images/assets/1787616405961.png)
 
 For example, [MSI installation package](https://nodejs.org/dist/v24.19.0/node-v24.19.0-x64.msi) for Windows platform.
 
-**Set environment variable Path**: Note that during the installation process, set the following options.
+After downloading, open the installation package, perform the installation, and pay attention to setting environment variables.
+
+### Set environment variable Path
+
+During the installation process, set the following options.
 
 > Set Node and npm to the Path environment variable.
 
 ![alt text](../../../../images/assets/1787616606225.png)
+
+### Check installation
 
 After the installation is complete, check whether the installation was successful.
 
@@ -62,7 +70,7 @@ If you can see the following output, it means that the Chaopera CLI has been ins
 
 Enter the VSCode official website: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
 
-Download the installation package for your operating system and then install it. After successful installation, you can find VSCode in the Start Center.
+Download the installation package for your operating system and install it. After successful installation, you can find VSCode in the Start Center.
 
 ![alt text](../../../../images/assets/1787617368584.png)
 
