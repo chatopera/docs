@@ -4,13 +4,17 @@ CDE, namely [Chatbot Development Env](https://marketplace.visualstudio.com/items
 
 ![](../../../../images/assets/Pasted%20image%2020260823172005.png)
 
-Overview of the installation process:
+## Overview of the installation process
 
 ![alt text](../../../../images/assets/1787881237181.png)
 
 * Install Node.js: To use CDE, you need to combine it with Chatopera CLI. To install CLI, you need Node.js.
 * Install Chatopera CLI: After installing and configuring Node.js, use the `npm` command to install it in the console
 * Install VSCode: CDE is a VSCode plug-in, so you need to install VSCode first
+
+## Get help
+
+When you encounter any problems during the novice tasks, you are welcome to [contact Chatopera engineers](https://dwz.chatopera.com/s99784) for help and support~
 
 ## Install Node.js
 
@@ -58,7 +62,7 @@ If you can see the following output, it means that the Chaopera CLI has been ins
 
 Enter the VSCode official website: [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download)
 
-Download the installation package of your operating system and then install it. After successful installation, you can find VSCode in the Start Center.
+Download the installation package for your operating system and then install it. After successful installation, you can find VSCode in the Start Center.
 
 ![alt text](../../../../images/assets/1787617368584.png)
 
