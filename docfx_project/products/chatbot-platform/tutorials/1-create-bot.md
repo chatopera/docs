@@ -34,11 +34,15 @@
 
 ![alt text](../../../images/assets/1787877995036.png)
 
-该二维码，就是您可以公开发送给访客的，用来和聊天机器人对话的二维码，Chatopera 称之为**【聊天码】**。
+该二维码，就是您可以公开发送给访客的，用来和聊天机器人对话的二维码，Chatopera 称之为**聊天码**。
 
 如果您需要 URL 的方式接入，可以点击上图中的【Chatopera H5 聊天控件设置】获得。
 
 ![alt text](../../../images/assets/1787883552902.png)
+
+您也可以将机器人集成到其它软件和服务中，参考机器人集成页面。
+
+![alt text](../../../images/assets/1787886065659.png)
 
 恭喜您完成本节任务！接下来，我们继续改进小 Q 机器人：[回答 80% 的客服问题，使用 RAG 模块](/products/chatbot-platform/tutorials/2-answer-faq.html)。
 

@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <2/5> 回答 80% 的客服问题，使用 RAG 模块
 
-<< 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
+<< 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 mins <!-- markup:skip-line -->
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 
@@ -9,9 +9,9 @@
 
 我们设定 小 Q 机器人是一款智能门锁的 AI 客服，为了模拟对话，我们从海尔官网下载了[HFD-T15 智能门锁](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.pdf)的使用说明书[^haier-explain]。
 
-下载说明书：[连接](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.pdf)。
+下载说明书：[haier-HFD-T15-manual-V1.pdf](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.pdf)。
 
-那么，我们就可以利用这份说明书，升级聊天机器人了，并且，借助这个方法，80% 的访客咨询都可以得到解答。
+那么，我们就可以利用这份说明书，升级聊天机器人了。并且借助这个方法，80% 的访客咨询都可以得到解答。
 
 ## 上传说明书到 RAG 知识库
 
@@ -19,9 +19,9 @@
 
 下一步，我们从浏览器中，打开小 Q 机器人的【RAG 模块】控制台：点击【上传文件】。
 
-![alt text](../../../images/assets/1787884710516.png)
+![alt text](../../../images/assets/1787885550455.png)
 
-然后，选择我们刚刚下载的 haier-HFD-T15-manual-V1.pdf，然后，可以看到文件上传成功。
+然后，选择我们刚刚下载的 [haier-HFD-T15-manual-V1.pdf](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.pdf)，然后，可以看到文件上传成功。此处，支持的文件格式很多，比如常用的 Word, PPT, 图片，Markdown，HTML 等。
 
 ![alt text](../../../images/assets/1787884784192.png)
 
@@ -29,7 +29,18 @@
 
 ![alt text](../../../images/assets/1787884834328.png)
 
+分析的过程，大约 3 分钟，在状态栏，会获得实时的进度提示。
+
+![alt text](../../../images/assets/1787885677267.png)
+
+分析完成后的状态，如下图。
+
+![alt text](../../../images/assets/1787885732261.png)
+
+
 ## 测试对话
+
+待分析完成，机器人能回答访客的咨询问题了吗？我们可以借助测试对话模块，试试！
 
 ![alt text](../../../images/assets/1787884896959.png)
 
@@ -37,11 +48,11 @@
 
 ![alt text](../../../images/assets/1787885028499.png)
 
-这个界面，是给访客使用前，我们调试用途的工具。
+**这个界面，是给访客使用前，我们调试用途的工具。**发送了几个问题，感觉很不错～
 
-现在您可以上传更多资料：Word, PPT, 图片，Markdown，HTML 等。丰富或者修正小 Q 机器人的聊天能力～
+智能门锁 AI 客服 - 小 Q 机器人，上线了～
 
-恭喜您完成本节任务！接下来，我们看看上线后的优化。
+接下来，我们看看上线后的优化。
 
 << 上一步：[<1/5> 创建机器人](/products/chatbot-platform/tutorials/1-create-bot.html) | >> 下一步：[<3/5> 快速修复不好的回答，使用 FAQ 模块](/products/chatbot-platform/tutorials/3-add-scripts-function.html)
 
