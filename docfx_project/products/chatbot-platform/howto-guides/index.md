@@ -29,11 +29,11 @@
 
 ## 多轮对话
 
+* [设置多轮对话规则](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-replies.html)
 * [开发者工具](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde/guide101_zh.html)
 * [通配符匹配器](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
 * [使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-like.html)
 * [使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)
-* [设置回复](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-replies.html)
 * [使用上下轮钩子](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-hooks.html)
 * [使用函数](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-func.html)
 * [回复富文本内容：设置热门问题、按钮消息、图文消息、列表消息等](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-richmedia.html)
