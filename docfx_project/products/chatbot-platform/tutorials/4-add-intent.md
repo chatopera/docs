@@ -5,121 +5,144 @@
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 
-如何让`阿Q`可以引导访客完成预约机票呢？这需要使用意图识别模块。
+## 有很多问答对
 
-意图识别，就是让机器人理解访客的意图并在多轮对话中获得上下文中，和意图关联的关键信息。Chatopera 云服务的意图识别模块，让您设计和训练机器人的意图识别能力。
+RAG 知识库和 FAQ 知识库，是小 Q 机器人的两个主要的知识来源，因为 FAQ 知识库有快速、准确的特点，会形成越来越多的问答对。我们在机器人之间迁移，或者对机器人进行备份，都需要执行批量操作。
 
-## 引用系统词典
+加入我们通过程序，能通过访问数据库、爬取网站等形式，构建很多的 FAQ 问答对，是对优化小 Q 的对话能力最好的方式。
 
-`阿Q` 需要识别访客的输入文本中包含的地名和时间信息，比如出发城市、到达城市和航班时间。
+那么，如何快速批量的导入 FAQ 问答对呢？这需要我们了解两个部分：
 
-在浏览器中，进入`阿Q`的词典页，点击【引用系统词典】。
+1. faq 知识库问答对的数据结构 - Chatopera 云服务支持 faq json 文件；
+2. 如何自动化的导入 - 通过在命令行终端执行 Chatopera CLI 指令。
 
-![](../../../images/assets/screenshot_20230503115859.png)
+下面，我们通过实际操作来介绍。
 
-找到 `@TIME` 和 `@LOC`，点击【引用】，如下图所示。
+## 创建机器人项目根目录
 
-![引用系统词典](../../../images/products/platform/screenshot-20210915-134251.png)
+启动一个命令行终端：
 
-## 创建意图
+| 操作系统 | 工具 |
+| --- | --- |
+| Linux | Bash Shell |
+| macOS | Terminal 应用 |
+| Windows PowerShell | PowerShell（本文档示例不支持 CMD Prompt） |
 
-在浏览器中，进入 `阿Q` 的意图管理页面。
+比如，PowerShell 的界面如下：
 
-![](../../../images/assets/screenshot_20230503115641.png)
+![alt text](../../../images/assets/1787983911095.png)
 
-点击【新建意图】，复制粘贴以下内容到表单中。
+打开终端后，执行下面的命令：
 
-```意图标识名
-book_airplane_ticket
+```bash
+mkdir -p ~/chatopera/bot_q
 ```
 
-![新建意图](../../../images/products/platform/screenshot-20210914-013838.png)
 
-点击【确定】。现在，就有了一个意图，接下来为这个意图添加训练数据：说法和槽位。
+这时，我们就创建了一个新的文件夹：`用户的HOME目录/chatopera/bot_q`，后面简称为【机器人项目根目录】。
 
-* 说法：表明意图的开场白。
-* 槽位：该意图中的关键信息。
+继续使用命令行，进入机器人项目根目录。
 
-## 添加槽位
-
-在 `book_airplane_ticket` 的操作中，点击【编辑】，进入意图识别编辑页面。
-
-![](../../../images/assets/screenshot_20230503120254.png)
-
-我们开始添加槽位信息，槽位编辑面板在【用户说法】的下面，按照如下信息**逐个**【添加】：
-
-| 槽位名称 | 词典（下拉选择）| 必填 | 追问 |
-| --- | --- | --- | --- |
-| `fromPlace` | `@LOC` | 是 | 您从哪个城市或机场出发？ |
-| `date` | `@TIME` | 是 | 您的计划出发日期是什么时候? |
-| `destPlace` | `@LOC` | 是 | 您要去的目的城市或机场是哪里？ |
-<!-- markup:table-caption 添加槽位表单 -->
-
-添加完成后，看起来是这样的。
-
-![添加槽位信息](../../../images/products/platform/screenshot-20210914-015710.png)
-
-## 添加说法
-
-接下来，我们为预约机票添加一些说法。复制下面的内容；粘贴到【用户说法】中；点击【添加】。
-
-```说法
-预约机票
-预定飞机票
-我想预约机票
-我要预约从{fromPlace}出发的机票
-帮我预约{date}的机票
+```bash
+cd ~/chatopera/bot_q
 ```
 
-![添加用户说法](../../../images/assets/screenshot_20230503170300.png)
+接下来，使用 Chatopera CLI 创建机器人配置文件 `.env`，过程如下：
 
-添加完成后，看起来是这样的。
+* 在命令行终端，进入机器人项目根目录
+* 运行命令 `bot env`
 
-![](../../../images/assets/screenshot_20230503170203.png)
+![alt text](../../../images/assets/1787984114644.png)
+
+成功运行后，可以得到这样的文件和目录结构：
+
+![alt text](../../../images/assets/1787984155451.png)
 
 
-## 训练意图识别模型
+## 编辑 .env 文件
 
-滚动到槽位表格下面，点击【保存】。
+使用文本编辑工具打开 .env 文件，比如记事本、VSCode 或 Notepad 等。
 
-![](../../../images/assets/screenshot_20230503154626.png)
+![alt text](../../../images/assets/1787984172947.png)
 
-在保存后，会提示进行模型的训练，大约几秒钟后，提示`训练成功，可进行测试`。
 
-## 测试意图识别
+这时，我们要修改 `BOT_CLIENT_ID` 和 `BOT_CLIENT_SECRET`。进入机器人管理控制台，在设置中，找到 clientId 和 secret.
 
-在浏览器中，进入`阿Q`的测试对话页。
+![alt text](../../../images/assets/1787984220491.png)
 
-![](../../../images/assets/screenshot_20230503120725.png)
+将 clientId 和 secret 粘贴到 .env 文件中，类似下图：
 
-在测试对话页面，选择【意图识别】，然后在聊天窗口中，发送：
+![alt text](../../../images/assets/1787984239003.png)
 
-```文本
-我想预约机票
+保存，并关闭 .env 文件，在命令行终端，测试配置成功，执行 `bot details`，此命令要在机器人根目录下运行。
+
+![alt text](../../../images/assets/1787984259459.png)
+
+这就意味着，我们的 Chatopera CLI 工具和 Chatopera 云服务中的机器人连接上了。
+
+## 存储 FAQ JSON 文件
+
+在执行批量导入前，我们先获得一个知识库 JSON 文件示例。
+
+首先，在文件管理器中，打开【机器人项目根目录】。
+
+![alt text](../../../images/assets/1787984516230.png)
+
+
+这一步，也可以通过命令完成：
+
+| 操作系统 | 命令 |
+| --- | --- |
+| Linux/macOS | `open .` |
+| Windows PowerShell | `start .` |
+
+![alt text](../../../images/assets/1787984411149.png)
+
+
+然后，在这个目录下，创建文件夹：`faq`。接着下载保存文件[haier-HFD-T15-manual-V1.faq.json](https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.faq.json) [^20260827082742]，然后将haier-HFD-T15-manual-V1.faq.json保存到 `faq` 文件夹。
+
+![alt text](../../../images/assets/1787984598658.png)
+
+[^20260827082742]: haier-HFD-T15-manual-V1.faq.json 文件下载地址，https://docs.chatopera.com/assets/files/haier-HFD-T15-manual-V1.faq.json
+
+
+## 执行导入命令
+
+在命令行中，运行下面的命令：
+
+```bash
+cd ~/chatopera/bot_q
+bot faq --action import --filepath ./faq/haier-HFD-T15-manual-V1.faq.json
 ```
 
-这时候阿Q会回答：`您从哪个城市或机场出发？` 或 `您的计划出发日期是什么时候?`。
+1. 进入【机器人项目根目录】
+2. 执行导入
 
-![](../../../images/assets/screenshot_20230503120924.png)
 
-现在阿Q 可以识别意图了，这样只是让机器人具备了【听懂】访客订票的意图，在机器人人的大脑中，该能力还是零散的，相当于是一个独立的树枝：要提供一个真正的业务能力，我们还需要将这个树枝安装到树干上！
+![alt text](../../../images/assets/1787984755740.png)
 
-下面，我们就进入 [<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 完成这个工作~
+FAQ 批量导入完成。
 
-<< 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 提交订票表单](/products/chatbot-platform/tutorials/5-stats-history.html) 
+## 回顾一下 JSON 数据结构
 
-## 可能遇到的问题
+FAQ JSON 文件的格式，参考 haier-HFD-T15-manual-V1.faq.json 这个文件。
 
-### 信息不匹配，请确认机器人信息
+![alt text](../../../images/assets/1787985104944.png)
 
-提示如下：
-![错误提示](../../../images/products/platform/screenshot-20210913-193815.png)
+* FAQ JSON 文件的最外层是 `[]`
+* 每条问答对是一个 JSON Object `{}`
+* docId, 选填，为每个问答对分配的唯一标识，如果目前机器人有了这个 docId，那么将会进行更新，而不是新建问答对
+* categories，选填，为问答对指定分类，支持层级，比如 `["动物", "哺乳动物"]`
+* post，必填，问题
+* replies，必填，回答
+* similarQuestions，选填，问题的更多说法，比如 `["高级会员的权益", "VIP 的权益"]`
 
-如果经过验证，你填写的信息没有错误，那么可能是电脑的时间日期与互联网标准时间之间有很大误差，需要先在操作系统上同步互联网时间，以下是 Windows 上同步互联网时间的方法，你也可以手动设置，其它操作系统，都有类似的操作。
+## 祝贺您入门了 CLI 的使用
 
-![解决方法](../../../images/products/platform/screenshot-20210913-193617.png)
+Chatopera CLI 还有很多的用途，通过[命令行界面（CLI）](https://docs.chatopera.com/products/chatbot-platform/references/cli.html)可以进一步的学习！
 
-[^help1]: 可能遇到问题，比如提示[【信息不匹配，请确认机器人信息】](#信息不匹配请确认机器人信息)，参考本文后面的[《可能遇到的问题》](#可能遇到的问题)获得解决方案。
-[^install-cde]: 安装过程中遇到问题查看[可能遇到的问题](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html#%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98)，如遇新问题[创建工单](https://github.com/chatopera/docs/issues)
+现在，我们就进入入门教程的最后一个任务： [<5/5> 优化打招呼和热门问题列表](/products/chatbot-platform/tutorials/5-stats-history.html)。
 
-[^function-js]: 这是一段 JavaScript 代码，JavaScript 是非常容易掌握的编程语言。
+<< 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | >> 下一步：[<5/5> 优化打招呼和热门问题列表](/products/chatbot-platform/tutorials/5-stats-history.html) 
+
+
