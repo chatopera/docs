@@ -29,7 +29,7 @@
 
 ## 多轮对话
 
-* [多轮对话设计器安装](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)
+* [开发者工具](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde/guide101_zh.html)
 * [通配符匹配器](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)
 * [使用模糊匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-like.html)
 * [使用意图匹配器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/conv-gambit-intent.html)

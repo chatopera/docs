@@ -24,7 +24,7 @@
 
 - name: 多轮对话
   href: convs/toc.yml
-  topicHref: convs/cde-install.md
+  topicHref: convs/gambit-star.md
 
 - name: 对话调优
   href: chats/toc.yml

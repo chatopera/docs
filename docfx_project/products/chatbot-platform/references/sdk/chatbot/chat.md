@@ -99,7 +99,7 @@ _faq_: 知识库中匹配 textMessage 的相似度超过 **faqSuggReplyThreshold
 |              | intent.state         | 意图会话状态                                                                                                    |
 |              | intent.entities      | 意图中的命名实体                                                                                                |
 | llm | [大语言模型（LLM）](https://docs.chatopera.com/products/chatbot-platform/howto-guides/llm/llm-enable.html)             |                                                                                                                 |
-| conversation | [多轮对话](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)             |                                                                                                                 |
+| conversation | [多轮对话](https://docs.chatopera.com/products/chatbot-platform/references/gambit-star.html)             |                                                                                                                 |
 | fallback     | 兜底回复             |                                                                                                                 |
 | mute         | 该用户被该机器人屏蔽 |                                                                                                                 |
 

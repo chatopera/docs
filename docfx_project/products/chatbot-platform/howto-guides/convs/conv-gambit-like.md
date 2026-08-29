@@ -162,8 +162,6 @@ getOpenTime tags: ["nis","ude1","vi","n"]
 
 * [有关更多关于 `this.message` 的使用介绍](https://docs.chatopera.com/products/chatbot-platform/references/func-builtin/message.html)
 
-* [下载多轮对话设计器](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde-install.html)
-
 * [理解多轮对话工作机制](https://docs.chatopera.com/products/chatbot-platform/explanations/query.html)
 
 * [检索多轮对话：使用多轮对话接口进行系统集成](https://docs.chatopera.com/products/chatbot-platform/references/sdk/chatbot/chat.html#检索多轮对话)

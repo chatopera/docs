@@ -30,8 +30,8 @@
 
 ## 使用 `__post__` 脚本实现自定义外部对话系统集成
 
-### 下载安装多轮对话设计器
-参考文档[《多轮对话设计器安装》](https://docs.chatopera.com/products/chatbot-platform/howto-guides/convs/cde-install.html)。
+### 安装开发者工具
+参考文档[《安装开发者工具》](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde/guide101_zh.html)。
 
 ### 导入机器人
 

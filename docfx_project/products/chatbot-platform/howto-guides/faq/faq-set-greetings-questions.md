@@ -9,26 +9,9 @@
 * 自动关联热门问题
 * 手动关联热门问题
 
-## 下载多轮对话设计器
+## 完成入门教程
 
-[参考文档](/products/chatbot-platform/howto-guides/convs/cde-install.html)。
-
-## 多轮对话设计器添加机器人
-
-安装好多轮对话设计器后，启动多轮对话设计器，可以看到类似如下的界面：
-
-![](../../../../images/assets/screenshot_20240624154910.png)
-
-在右上角的菜单中，找到【添加】并点击。
-
-这是可以看到填写 【clientId】 和 【secret】的表单，在 Chatopera 云服务中，进入机器人的管理控制台，比如下图。
-
-![](../../../../images/assets/screenshot_20240624155112.png)
-
-分别复制【clientId】和【secret】并填写到添加表单中，点击【确认】。
-
-![](../../../../images/assets/screenshot_20240624155204.png)
-
+阅读和理解以下内容，需要您先完成入门教程：[进入链接](https://docs.chatopera.com/products/chatbot-platform/tutorials/index.html)。
 
 ## 自动关联热门问题
 

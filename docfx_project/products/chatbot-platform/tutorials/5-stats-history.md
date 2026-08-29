@@ -39,6 +39,8 @@
 
 ![alt text](../../../images/assets/1787987066280.png)
 
+## 测试对话
+
 测试对话，点击【Open Chat Test】，这时我们会看到出现了对话面板。
 
 ![alt text](../../../images/assets/1787987084081.png)
@@ -46,6 +48,8 @@
 通过发送消息，获得机器人的回复。
 
 ![alt text](../../../images/assets/1787987107447.png)
+
+## 查看调试日志
 
 当我们想要了解机器人的问答的逻辑的时候，可以点击【Log】，获得调试日志。
 
@@ -124,7 +128,6 @@ exports.getGreetings = async function () {
 * [使用指南](https://docs.chatopera.com/products/chatbot-platform/howto-guides/index.html)中，是回答您可能问的一些问题
 * [参考手册](https://docs.chatopera.com/products/chatbot-platform/references/index.html)是关于 SDK/API/CLI 的使用
 * [背景知识](https://docs.chatopera.com/products/chatbot-platform/explanations/index.html)介绍了有关 Chatopera 云服务的工作原理
-
 
 ## 更多示例程序
 
