@@ -1,141 +1,130 @@
 <!-- markup:blank-line -->
 # <5/5> 优化打招呼和热门问题列表
 
-<< 上一步：[<4/5> 批量导入 FAQ 知识库，使用 CDE 和 CLI](/products/chatbot-platform/tutorials/4-add-intent.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 10 min
+<< 上一步：[<4/5> 批量导入 FAQ 知识库，使用 CDE 和 CLI](/products/chatbot-platform/tutorials/4-add-intent.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 min
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 
-要想让机器人处理用户的意图，将意图会话这个树枝安装到机器人大脑的树干上，就需要使用多轮对话设计器。
+当我们批量导入了知识库问答对，再次以访客的身份打开机器人 H5 页面，我们看到的就是下面的界面。
 
-## 处理订票会话表单
+![alt text](../../../images/assets/1787986885881.png)
 
-回到多轮对话设计器，在刚刚打开的 `greetings` 话题编辑窗口。
+我们发现，机器人的打招呼的信息变了，这是因为，Chatopera 会根据 FAQ 知识库自动识别最常出现的问题，随着越来越多的访客和机器人对话，这个热门问题列表会根据统计信息动态的变化，默认显示最热门的 10 条问答对。
 
-![新建话题](../../../images/products/platform/screenshot-20210914-022010.png)
+这个默认的打招呼的逻辑，可能不符合您的应用场景，比如我们想将问题列表固定，那么如何做呢？
 
-点击【新建话题】，话题名称填写`intents`。
+这个过程分为三个步骤：
 
-![](../../../images/assets/screenshot_20230503121302.png)
+1. 拉取多轮对话
+2. 查看 greetings 话题脚本
+3. 修改函数
 
-此时会进入一个新的脚本编辑窗口，在脚本编辑区域，复制粘贴以下的内容：
+## 拉取多轮对话
 
-```脚本
-// 预约机票 
-intent {keep} book_airplane_ticket
-- ^handleAirplaneTicketOrder()
+在 VSCode[^install-cde]中打开【机器人根目录】，确认在根目录下有 .env 文件，CDE 将使用该文件和机器人服务连接。
 
-    + ${0.6}{没错，出票吧｜出票}
-    % ^handleAirplaneTicketOrder()
-    - {keep} ^placeAirplaneTicketOrder()
-    
-    + ${0.6}{不预约了}
-    % ^handleAirplaneTicketOrder()
-    - {keep} ^cancelAirplanTicketReservation()
-    
-    + ${0.6}{信息有误，重新预约}
-    % ^handleAirplaneTicketOrder()
-    - {keep} ^rebookAirplaneTicket()
-```
+[^install-cde]: 依赖我们已经安装了 [CDE](https://docs.chatopera.com/products/chatbot-platform/howto-guides/cde/guide101_zh.html)
 
-![意图匹配器](../../../images/products/platform/screenshot-20210915-135243.png)
+![alt text](../../../images/assets/1787987014152.png)
 
-点击【保存】。然后，点击【函数】，进入函数内容后面，追加下面的内容：
+然后，点击左侧菜单中的 Chatopera 图标。
 
-```函数
-// 提取时间实体
-async function extractTimeEntity(maestro, entities, property) {
-    debug("extractTimeEntity name %s, value %s", property, entities[property]["val"])
-    let dates = await maestro.extractTime(entities[property]["val"], "YYYY年MM月DD日 HH:mm");
-    return dates.length > 0 ? dates[0] : "";
-}
+![alt text](../../../images/assets/1787987032311.png)
 
-// 确认订单信息
-exports.handleAirplaneTicketOrder = async function() {
-    debug("[handleAirplaneTicketOrder] this.intent", JSON.stringify(this.intent))
-    let entities = _.keyBy(this.intent.entities, 'name');
-    let date = await extractTimeEntity(this.maestro, entities, "date");
+您将看到类似如下的界面。
 
-    this.intent.extras = {
-        date: date
-    }
+![alt text](../../../images/assets/1787987048495.png)
 
+提示连接到了远程的机器人服务，接着点击：pull。这时，CDE 下载了机器人的多轮对话内容，执行完成后，可以看到右下角的通知。
+
+![alt text](../../../images/assets/1787987066280.png)
+
+测试对话，点击【Open Chat Test】，这时我们会看到出现了对话面板。
+
+![alt text](../../../images/assets/1787987084081.png)
+
+通过发送消息，获得机器人的回复。
+
+![alt text](../../../images/assets/1787987107447.png)
+
+当我们想要了解机器人的问答的逻辑的时候，可以点击【Log】，获得调试日志。
+
+![alt text](../../../images/assets/1787987124848.png)
+
+## 查看 greetings 话题脚本
+
+这一步，我们在 VSCode 左侧菜单中，打开文件夹浏览，找到 `conversations/greetings.ms` 文件，并打开，如下图。
+
+![alt text](../../../images/assets/1787987151192.png)
+
+这时，我们可以发现一个叫 `__faq_hot_list` 的匹配器，并且使用了函数 `getGreetings` 的返回值做回复。
+
+## 修改函数
+
+为了实现修改打招呼的热门问题列表，我们只需要在函数中，修改 `getGreetings` 的返回值，过程如下。
+
+首先，打开 plugin.js 文件，找到 `getGreetings` 函数。
+
+![alt text](../../../images/assets/1787987182943.png)
+
+
+修改 `getGreetings` 的定义，让其内容如下：
+
+```JavaScript
+// 问候语中关联常见问题
+// 更多消息格式，参考 https://dwz.chatopera.com/jQ0F9G
+exports.getGreetings = async function () {
     return {
-        text: `和您确认一下信息，出发地${entities["fromPlace"]["val"]}，目的地${entities["destPlace"]["val"]}，出发时间${this.intent.extras.date}`,
-        params: [{
-                label: "没错，出票吧",
-                type: "button",
-                text: "没错，出票吧"
+        text: "请问有什么可以帮到您？",
+        params: [
+            {
+                label: "1. 联系师傅上门安装的电话",
+                type: "qlist",
+                text: "联系师傅上门安装的电话"
             },
             {
-                label: "信息有误，重新预约",
-                type: "button",
-                text: "我想预约机票"
+                label: "2. 门锁的权限设计",
+                type: "qlist",
+                text: "门锁的权限设计"
             },
             {
-                label: "不预约了",
-                type: "button",
-                text: "不预约了"
-            },
+                label: "3. 本门锁安装支持的门的厚度范围",
+                type: "qlist",
+                text: "本门锁安装支持的门的厚度范围"
+            }
         ]
-    }
-}
-
-// 下单
-exports.placeAirplaneTicketOrder = async function() {
-    this.intent.drop = true; // **关闭当前意图会话**
-    let entities = _.keyBy(this.intent.entities, 'name');
-
-    return {
-        text: "{CLEAR} 已帮您购买",
-        params: [{
-            type: 'card',
-            title: "查看详情",
-            thumbnail: "https://gitee.com/chatopera/cskefu/attach_files/1143210/download/AIRPLANE_20220801113300.jpg",
-            summary: `${this.intent.extras.date}，国泰航空 CA001，国泰机场, ${entities["fromPlace"]["val"]} - ${entities["destPlace"]["val"]} `,
-            hyperlink: "https://www.chatopera.com/"
-        }]
-    }
-}
-
-// 不预约了
-exports.cancelAirplanTicketReservation = async function() {
-    this.intent.drop = true; // **关闭当前意图会话**
-    return {
-        text: "{CLEAR} 好的，下次再帮您预约"
-    }
-}
-
-// 重新预约机票
-exports.rebookAirplaneTicket = async function() {
-    debug("rebookAirplaneTicket this.intent", this.intent);
-    this.intent.drop = true; // **关闭当前意图会话**
-    return "^topicRedirect(\"intents\", \"book_airplane_ticket\", true)"
+    };
 }
 ```
 
-点击【保存】。
+保存，然后进行 【push】，如下图点击。
 
-## 测试机票预约对话
+![alt text](../../../images/assets/1787987216935.png)
 
-在多轮对话设计器内的对话窗口，发送文本：
+这时，在右下角，我们得到提示：
 
-```文本
-我想预约机票
-```
+![alt text](../../../images/assets/1787987229335.png)
 
-这时，`阿Q`识别了意图，并进行交互。
+在对话测试窗口，发送 `__faq_hot_list`，看到如下的内容。
 
-![测试对话](../../../images/products/platform/screenshot-20210914-023036.png)
+![alt text](../../../images/assets/1787987243527.png)
 
-如果你看到了类似下面的消息：
+说明，我们的欢迎语更新完成。
 
-![](../../../images/assets/screenshot_20230503121711.png)
+这时，如果我们再回到访客的角色，刷新 H5 的页面，看到的内容则变成了下图。
 
-恭喜您完成本节任务！
+![alt text](../../../images/assets/1787987265839.png)
 
-![恭喜完成任务](../../../images/products/platform/congr-20210913-195053.png) 
+## 入门教程完成
 
 本篇是 Chatopera 云服务入门教程的最后一节，当你看到这里，就可以正式使用 Chatopera 云服务了，衷心的感谢你选择 Chatopera 云服务！
+
+## 使用进阶
+
+* [使用指南](https://docs.chatopera.com/products/chatbot-platform/howto-guides/index.html)中，是回答您可能问的一些问题
+* [参考手册](https://docs.chatopera.com/products/chatbot-platform/references/index.html)是关于 SDK/API/CLI 的使用
+* [背景知识](https://docs.chatopera.com/products/chatbot-platform/explanations/index.html)介绍了有关 Chatopera 云服务的工作原理
+
 
 ## 更多示例程序
 
@@ -143,3 +132,4 @@ exports.rebookAirplaneTicket = async function() {
 
 * [GitHub](https://github.com/chatopera/chatbot-samples)
 * [Gitee](https://gitee.com/chatopera/chatbot-samples)
+

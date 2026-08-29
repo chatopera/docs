@@ -1,6 +1,6 @@
 <!-- markup:blank-line -->
 # <3/5> 快速修复不好的回答，使用 FAQ 模块
-<< 上一步：[<2/5> 回答 80% 的客服问题，使用 RAG 模块](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins 
+<< 上一步：[<2/5> 回答 80% 的客服问题，使用 RAG 模块](/products/chatbot-platform/tutorials/2-answer-faq.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 20 mins 
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 

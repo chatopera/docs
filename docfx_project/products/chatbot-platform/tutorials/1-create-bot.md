@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <1/5> 创建机器人
 
-<< 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 5 mins <!-- markup:skip-line -->
+<< 上一步：[入门教程首页](/products/chatbot-platform/tutorials/index.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 15 mins <!-- markup:skip-line -->
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 

@@ -1,7 +1,7 @@
 <!-- markup:blank-line -->
 # <4/5> 批量导入 FAQ 知识库，使用 CDE 和 CLI
 
-<< 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 7 mins 
+<< 上一步：[<3/5> 设置热门问题](/products/chatbot-platform/tutorials/3-add-scripts-function.html) | <i class="glyphicon glyphicon-time"></i>阅读本节内容大约需要 30 mins 
 
 > 当您在新手任务中，遇到任何问题，欢迎[联系 Chatopera 工程师](https://dwz.chatopera.com/s99784)获得帮助支持~
 
@@ -39,7 +39,7 @@ mkdir -p ~/chatopera/bot_q
 ```
 
 
-这时，我们就创建了一个新的文件夹：`用户的HOME目录/chatopera/bot_q`，后面简称为【机器人项目根目录】。
+这时，我们就创建了一个新的文件夹：`用户的HOME目录/chatopera/bot_q`，后面简称为【**机器人项目根目录**】。
 
 继续使用命令行，进入机器人项目根目录。
 
@@ -74,7 +74,7 @@ cd ~/chatopera/bot_q
 
 ![alt text](../../../images/assets/1787984239003.png)
 
-保存，并关闭 .env 文件，在命令行终端，测试配置成功，执行 `bot details`，此命令要在机器人根目录下运行。
+保存，并关闭 .env 文件，在命令行终端，测试配置成功，执行 `bot details`，**此命令要在机器人项目根目录下运行**。
 
 ![alt text](../../../images/assets/1787984259459.png)
 
